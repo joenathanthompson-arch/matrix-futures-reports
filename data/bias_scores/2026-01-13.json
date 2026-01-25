@@ -1,0 +1,26 @@
+{
+  "date": "2026-01-13",
+  "generated_at": "2026-01-13T06:00:00Z",
+  "scores": {
+    "GC": { "score": 2, "signal": "Bullish", "drivers": ["Dovish Fed", "Weak USD", "Geopolitical tensions"] },
+    "NQ": { "score": 22, "signal": "Strong Bullish", "drivers": ["Low VIX", "Strong growth", "SOX near highs"] },
+    "ES": { "score": 20, "signal": "Strong Bullish", "drivers": ["Low VIX", "Strong growth", "Tight spreads"] },
+    "YM": { "score": 20, "signal": "Strong Bullish", "drivers": ["Low VIX", "Strong growth", "Positive curve"] },
+    "SI": { "score": 13, "signal": "Strong Bullish", "drivers": ["Strong copper", "Dovish Fed", "Tech demand"] },
+    "CL": { "score": 10, "signal": "Strong Bullish", "drivers": ["Strong GDP growth", "Weak dollar"] }
+  },
+  "recommendations": {
+    "GC": { "strategy": "IB_BREAKOUT", "budget_pct": 15, "trade": true, "bias": "long" },
+    "NQ": { "strategy": "IB_BREAKOUT", "budget_pct": 20, "trade": true, "bias": "long" },
+    "ES": { "strategy": "IB_BREAKOUT", "budget_pct": 20, "trade": true, "bias": "long" },
+    "YM": { "strategy": "IB_BREAKOUT", "budget_pct": 15, "trade": true, "bias": "long" },
+    "SI": { "strategy": "IB_BREAKOUT", "budget_pct": 15, "trade": true, "bias": "long" },
+    "CL": { "strategy": "IB_BREAKOUT", "budget_pct": 15, "trade": true, "bias": "long" }
+  },
+  "market_context": {
+    "fed_rate_probability": 0.95,
+    "vix": 15.32,
+    "gdp_now": 5.1,
+    "risk_sentiment": "risk-on"
+  }
+}
