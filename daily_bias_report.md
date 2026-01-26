@@ -1,104 +1,107 @@
-# Macro Bias Scorer - Daily Report
+'''md
+# Macro Bias Scorer - Daily Report (Corrected)
 
-**Generated:** 2026-01-26 14:32 UTC
+**Generated:** 2026-01-26 15:08 UTC
 
-## Overall Market Bias: Strongly Bullish
+## Overall Market Bias: Neutral to Slightly Bearish
 
-The current macro environment exhibits a **strongly bullish** bias for risk assets, particularly equities. This is driven by a confluence of positive factors including a dovish Federal Reserve stance, declining market volatility (VIX and MOVE), robust economic growth signals (GDPNow), and tightening credit spreads. While rising real yields and a weaker dollar present some headwinds, the overwhelming weight of the evidence points towards continued market strength. Gold and Silver show strong bullish signals, while Crude Oil maintains a bullish outlook.
-
----
-
-## Instrument Bias Scores
-
-### GC (Gold): STRONG BULLISH
-
-| Metric                | Value      |
-| --------------------- | ---------- |
-| **Weighted Bias Score** | **+0.300** |
-| **Bias Interpretation** | **STRONG BULLISH** |
-
-**Component Breakdown:**
-
-| Indicator          | Contribution |
-| ------------------ | ------------ |
-| fed_stance         | +0.200       |
-| real_yields        | -0.200       |
-| dxy                | -0.150       |
-| gold_etf_flows     | +0.150       |
-| vix                | +0.100       |
-| gdpnow             | +0.050       |
-| credit_spreads     | +0.050       |
-| sox                | +0.050       |
-| move               | +0.050       |
-
-**Analysis:** Gold's strong bullish bias is primarily supported by a dovish Fed and significant inflows into Gold ETFs. These factors are currently outweighing the negative impact of rising real yields and a weaker dollar.
-
-### SI (Silver): STRONG BULLISH
-
-| Metric                | Value      |
-| --------------------- | ---------- |
-| **Weighted Bias Score** | **+0.500** |
-| **Bias Interpretation** | **STRONG BULLISH** |
-
-**Component Breakdown:**
-
-| Indicator          | Contribution |
-| ------------------ | ------------ |
-| fed_stance         | +0.150       |
-| real_yields        | -0.150       |
-| gold_etf_flows     | +0.150       |
-| sox                | +0.150       |
-| dxy                | -0.100       |
-| vix                | +0.100       |
-| copper             | +0.100       |
-| gdpnow             | +0.050       |
-| credit_spreads     | +0.050       |
-
-**Analysis:** Silver's bias is even more bullish than gold's, benefiting from the same macro tailwinds, plus strong industrial demand signals from the semiconductor (SOX) and copper markets.
-
-### ES (S&P 500), NQ (Nasdaq), YM (Dow): STRONG BULLISH
-
-| Metric                | ES         | NQ         | YM         |
-| --------------------- | ---------- | ---------- | ---------- |
-| **Weighted Bias Score** | **+0.700** | **+0.700** | **+0.700** |
-| **Bias Interpretation** | **STRONG BULLISH** | **STRONG BULLISH** | **STRONG BULLISH** |
-
-**Analysis:** The major equity indices share a uniformly strong bullish outlook. The combination of low volatility, a dovish Fed, strong economic growth, and positive signals from the credit and semiconductor markets creates a powerful tailwind for stocks.
-
-### CL (Crude Oil): BULLISH
-
-| Metric                | Value      |
-| --------------------- | ---------- |
-| **Weighted Bias Score** | **+0.100** |
-| **Bias Interpretation** | **BULLISH**  |
-
-**Component Breakdown:**
-
-| Indicator          | Contribution |
-| ------------------ | ------------ |
-| gdpnow             | +0.200       |
-| dxy                | -0.150       |
-| oil_inventories    | -0.150       |
-| fed_stance         | +0.100       |
-| vix                | +0.100       |
-| real_yields        | -0.050       |
-| credit_spreads     | +0.050       |
-| oil_supply_shock   | +0.000       |
-
-**Analysis:** Crude oil's bullish bias is supported by strong economic growth expectations. However, the recent build in inventories and a weaker dollar are acting as counterweights, resulting in a more moderate bullish signal compared to equities and precious metals.
+The corrected macro analysis now indicates a **neutral to slightly bearish** bias for risk assets. The initial assessment was flawed due to an incorrect application of the scoring methodology. The primary driver of this revised outlook is the significant negative impact of **rising real yields**, which carries a heavy weight in the scoring for most instruments. While some positive factors remain, such as a dovish Fed and narrowing credit spreads, they are not enough to offset the drag from higher yields.
 
 ---
 
-## Summary
+## Instrument Bias Scores (Corrected)
 
-| Instrument | Score  | Bias             |
-| ---------- | ------ | ---------------- |
-| GC         | +0.300 | STRONG BULLISH   |
-| SI         | +0.500 | STRONG BULLISH   |
-| ES         | +0.700 | STRONG BULLISH   |
-| NQ         | +0.700 | STRONG BULLISH   |
-| YM         | +0.700 | STRONG BULLISH   |
-| CL         | +0.100 | BULLISH          |
+### GC (Gold): NEUTRAL
+
+| Metric                | Value      |
+| --------------------- | ---------- |
+| **Weighted Bias Score** | **-1**     |
+| **Bias Interpretation** | **NEUTRAL**  |
+
+**Component Breakdown:**
+
+| Indicator          | Contribution |
+| ------------------ | ------------ |
+| real_yields        | -4           |
+| fed_stance         | +1           |
+| dxy                | +1           |
+| risk_mood          | +1           |
+| growth_narrative   | -1           |
+| gold_etf_flows     | +1           |
+| oil_supply_shock   | +0           |
+
+**Analysis:** Gold's bias is now **Neutral**. The strong negative pressure from a 2-point rise in real yields (weighted at 2x) is the dominant factor, offsetting the bullish inputs from a dovish Fed, a weaker dollar, and positive ETF flows.
+
+### SI (Silver): SLIGHT BULLISH
+
+| Metric                | Value      |
+| --------------------- | ---------- |
+| **Weighted Bias Score** | **+2**     |
+| **Bias Interpretation** | **SLIGHT BULLISH** |
+
+**Component Breakdown:**
+
+| Indicator          | Contribution |
+| ------------------ | ------------ |
+| real_yields        | -2           |
+| fed_stance         | +1           |
+| dxy                | +1           |
+| risk_mood          | +1           |
+| growth_narrative   | -1           |
+| copper             | +1           |
+| gold_etf_flows     | +1           |
+
+**Analysis:** Silver maintains a **Slightly Bullish** bias. While still impacted by rising real yields, the negative effect is less pronounced (1x weight). This allows the positive contributions from industrial demand (copper) and precious metals sentiment (gold flows) to give it a slight edge.
+
+### ES (S&P 500) & NQ (Nasdaq): NEUTRAL
+
+| Metric                | ES / NQ    |
+| --------------------- | ---------- |
+| **Weighted Bias Score** | **+0**     |
+| **Bias Interpretation** | **NEUTRAL**  |
+
+**Analysis:** The major equity indices are now rated **Neutral**. Similar to gold, the heavily weighted (2x) negative impact of rising real yields completely neutralizes the combined positive effects of a dovish Fed, low volatility, and narrowing credit spreads.
+
+### YM (Dow): SLIGHT BULLISH
+
+| Metric                | Value      |
+| --------------------- | ---------- |
+| **Weighted Bias Score** | **+1**     |
+| **Bias Interpretation** | **SLIGHT BULLISH** |
+
+**Analysis:** The Dow Jones Industrial Average shows a **Slightly Bullish** bias. Its scoring is less sensitive to real yields (1x weight) and gives a heavier weight (2x) to the positive growth narrative, allowing it to maintain a slight positive score.
+
+### CL (Crude Oil): SLIGHT BEARISH
+
+| Metric                | Value      |
+| --------------------- | ---------- |
+| **Weighted Bias Score** | **-2**     |
+| **Bias Interpretation** | **SLIGHT BEARISH** |
+
+**Component Breakdown:**
+
+| Indicator          | Contribution |
+| ------------------ | ------------ |
+| growth_narrative   | -2           |
+| inventories        | -1           |
+| dxy                | +1           |
+| oil_supply_shock   | +0           |
+| geopolitical_risk  | +0           |
+
+**Analysis:** Crude oil now has a **Slightly Bearish** bias. The negative impact of a strong growth narrative (which implies less need for stimulus and potentially higher rates) combined with a build in inventories outweighs the positive impact of a weaker dollar.
+
+---
+
+## Summary (Corrected)
+
+| Instrument | Score | Bias             |
+| ---------- | ----- | ---------------- |
+| GC         | -1    | NEUTRAL          |
+| SI         | +2    | SLIGHT BULLISH   |
+| ES         | +0    | NEUTRAL          |
+| NQ         | +0    | NEUTRAL          |
+| YM         | +1    | SLIGHT BULLISH   |
+| CL         | -2    | SLIGHT BEARISH   |
 
 ---
 
@@ -106,17 +109,17 @@ The current macro environment exhibits a **strongly bullish** bias for risk asse
 
 [1] CME FedWatch Tool: [https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html)
 [2] FRED 10-Year TIPS Real Yield (DFII10): [https://fred.stlouisfed.org/series/DFII10](https://fred.stlouisfed.org/series/DFII10)
-[3] CNBC 10Y TIPS Real-Time Yield: [https://www.cnbc.com/quotes/US10YTIP](https://www.cnbc.com/quotes/US10YTIP)
-[4] TradingView DXY Index: [https://www.tradingview.com/symbols/TVC-DXY/](https://www.tradingview.com/symbols/TVC-DXY/)
-[5] CNBC VIX Index: [https://www.cnbc.com/quotes/.VIX](https://www.cnbc.com/quotes/.VIX)
-[6] Atlanta Fed GDPNow: [https://www.atlantafed.org/cqer/research/gdpnow](https://www.atlantafed.org/cqer/research/gdpnow)
-[7] FRED High Yield OAS (BAMLH0A0HYM2): [https://fred.stlouisfed.org/series/BAMLH0A0HYM2](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)
-[8] FRED 2s10s Yield Curve (T10Y2Y): [https://fred.stlouisfed.org/series/T10Y2Y](https://fred.stlouisfed.org/series/T10Y2Y)
-[9] TradingView SOX Index: [https://www.tradingview.com/symbols/SOX/](https://www.tradingview.com/symbols/SOX/)
-[10] TradingView MOVE Index: [https://www.tradingview.com/symbols/TVC-MOVE/](https://www.tradingview.com/symbols/TVC-MOVE/)
-[11] Investing.com Copper Futures: [https://www.investing.com/commodities/copper](https://www.investing.com/commodities/copper)
-[12] World Gold Council Gold ETF Flows: [https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/01](https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/01)
-[13] EIA Weekly Petroleum Status Report: [https://www.eia.gov/petroleum/supply/weekly/](https://www.eia.gov/petroleum/supply/weekly/)
-[14] EIA Weekly Natural Gas Storage Report: [https://ir.eia.gov/secure/ngs/ngs.html](https://ir.eia.gov/secure/ngs/ngs.html)
-[15] USDA Grain Stocks Report: [https://esmis.nal.usda.gov/sites/default/release-files/795726/grst0126.pdf](https://esmis.nal.usda.gov/sites/default/release-files/795726/grst0126.pdf)
-[16] ICCO Statistics: [https://www.icco.org/statistics/](https://www.icco.org/statistics/)
+[3] TradingView DXY Index: [https://www.tradingview.com/symbols/TVC-DXY/](https://www.tradingview.com/symbols/TVC-DXY/)
+[4] CNBC VIX Index: [https://www.cnbc.com/quotes/.VIX](https://www.cnbc.com/quotes/.VIX)
+[5] Atlanta Fed GDPNow: [https://www.atlantafed.org/cqer/research/gdpnow](https://www.atlantafed.org/cqer/research/gdpnow)
+[6] FRED High Yield OAS (BAMLH0A0HYM2): [https://fred.stlouisfed.org/series/BAMLH0A0HYM2](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)
+[7] FRED 2s10s Yield Curve (T10Y2Y): [https://fred.stlouisfed.org/series/T10Y2Y](https://fred.stlouisfed.org/series/T10Y2Y)
+[8] TradingView SOX Index: [https://www.tradingview.com/symbols/SOX/](https://www.tradingview.com/symbols/SOX/)
+[9] TradingView MOVE Index: [https://www.tradingview.com/symbols/TVC-MOVE/](https://www.tradingview.com/symbols/TVC-MOVE/)
+[10] Investing.com Copper Futures: [https://www.investing.com/commodities/copper](https://www.investing.com/commodities/copper)
+[11] World Gold Council Gold ETF Flows: [https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/01](https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/01)
+[12] EIA Weekly Petroleum Status Report: [https://www.eia.gov/petroleum/supply/weekly/](https://www.eia.gov/petroleum/supply/weekly/)
+[13] EIA Weekly Natural Gas Storage Report: [https://ir.eia.gov/secure/ngs/ngs.html](https://ir.eia.gov/secure/ngs/ngs.html)
+[14] USDA Grain Stocks Report: [https://esmis.nal.usda.gov/sites/default/release-files/795726/grst0126.pdf](https://esmis.nal.usda.gov/sites/default/release-files/795726/grst0126.pdf)
+[15] ICCO Statistics: [https://www.icco.org/statistics/](https://www.icco.org/statistics/)
+'''
