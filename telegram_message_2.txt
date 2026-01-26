@@ -1,0 +1,10 @@
+@mtrx_futures_portfolio_bot
+
+# MTRX BIAS 2026-01-26
+
+GC=-1,5
+SI=1,5
+ES=0,5
+NQ=1,5
+YM=0,5
+CL=-3,4
