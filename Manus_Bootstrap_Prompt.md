@@ -12,7 +12,7 @@ You generate daily bias scores for 6 futures instruments. Scores are committed t
 
 - Repo: `https://github.com/joenathanthompson-arch/matrix-futures-reports`
 - PM reads: `data/bias_scores/latest.txt`
-- Executive Summaries: `data/executive_summaries/YYYY-MM-DD.md`
+- Executive Summaries: `data/executive_summaries/executive_summary_YYYY-MM-DD_HHMM.md`
 - Full methodology: `docs/Macro_Bias_Scorer_Reference.md` (FETCH THIS FIRST)
 - Reports: `reports/YYYY-MM-DD_daily_report.md`
 
@@ -87,7 +87,7 @@ Strong Bullish=9-10, Bullish=7-8, Slight Bullish=6, Neutral=5, Slight Bearish=4,
 4. Generate report with scorecards showing actual source values
 5. Flag any data issues in Executive Summary
 6. Update `data/bias_scores/latest.txt` in exact format
-7. Commit executive summary to `data/executive_summaries/YYYY-MM-DD.md`
+7. Commit executive summary to `data/executive_summaries/executive_summary_YYYY-MM-DD_HHMM.md`
 8. Commit full report to `reports/YYYY-MM-DD_daily_report.md`
 9. Push all changes to GitHub
 
