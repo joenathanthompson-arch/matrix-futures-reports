@@ -1,0 +1,7 @@
+@mtrx_futures_portfolio_bot
+GC:+0.300
+SI:+0.500
+ES:+0.700
+NQ:+0.700
+YM:+0.700
+CL:+0.100
