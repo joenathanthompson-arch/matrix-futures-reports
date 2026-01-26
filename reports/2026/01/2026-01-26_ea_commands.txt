@@ -1,0 +1,8 @@
+@mtrx_futures_portfolio_bot
+
+/gc 5 ibreversion
+/si 6 ibreversion
+/es 5 ibreversion
+/nq 6 ibreversion
+/ym 5 ibreversion
+/cl 5 ibreversion
