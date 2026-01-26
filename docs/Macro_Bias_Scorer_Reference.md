@@ -439,6 +439,50 @@ After calculating the **Total Weighted Score**, interpret the bias:
 
 ---
 
+## FALLBACK DATA SOURCES (When Primary is Stale)
+
+**FRED data often lags 1-2 business days.** If primary source shows data older than 1 day, use these real-time alternatives:
+
+### 10Y Real Yields (DFII10 alternatives)
+| Source | URL | Update Frequency |
+|--------|-----|------------------|
+| **CNBC** | https://www.cnbc.com/quotes/US10YTIP | **Real-time** |
+| TradingEconomics | https://tradingeconomics.com/united-states/10-year-tips-yield | Daily |
+| U.S. Treasury Direct | https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve | Daily ~3:30 PM ET |
+| Federal Reserve H.15 | https://www.federalreserve.gov/releases/h15/ | Daily 4:15 PM ET |
+
+### High Yield OAS (BAMLH0A0HYM2 alternatives)
+| Source | URL | Update Frequency |
+|--------|-----|------------------|
+| **TradingEconomics** | https://tradingeconomics.com/united-states/bofa-merrill-lynch-us-high-yield-option-adjusted-spread-fed-data.html | Daily |
+| YCharts | https://ycharts.com/indicators/us_high_yield_master_ii_optionadjusted_spread | Daily |
+| TradingView | https://www.tradingview.com/symbols/FRED-BAMLH0A0HYM2/ | Daily |
+
+### 2s10s Yield Curve (T10Y2Y alternatives)
+| Source | URL | Update Frequency |
+|--------|-----|------------------|
+| **CNBC** | https://www.cnbc.com/quotes/10Y2YS | **Real-time intraday** |
+| Investing.com | https://www.investing.com/rates-bonds/10-2-year-treasury-yield-spread | Real-time |
+| YCharts | https://ycharts.com/indicators/10_2_year_treasury_yield_spread | Daily |
+| MacroMicro | https://en.macromicro.me/collections/34/us-stock-relative/398/us-10-2-yield-curve-gspc | Daily |
+
+### MOVE Index (Bond Volatility)
+| Source | URL | Update Frequency |
+|--------|-----|------------------|
+| **TradingView** | https://www.tradingview.com/symbols/TVC-MOVE/ | **Near real-time** |
+| **CNBC** | https://www.cnbc.com/quotes/.MOVE | Real-time |
+| MacroMicro | https://en.macromicro.me/charts/35584/us-treasury-move-index | Daily |
+
+### SOX (Semiconductors)
+| Source | URL | Update Frequency |
+|--------|-----|------------------|
+| **TradingView** | https://www.tradingview.com/symbols/SOX/ | Real-time |
+| Yahoo Finance | https://finance.yahoo.com/quote/%5ESOX/ | Delayed |
+
+**Priority Order:** CNBC → TradingView → TradingEconomics → FRED
+
+**STALENESS RULE:** If FRED/Yahoo data is >1 business day old, you MUST check a fallback source before scoring. Document which source you used.
+
 ## HOW TO USE THIS SCORER
 
 ### Step 1: User Specifies Instrument
@@ -469,7 +513,7 @@ Category             │ Input          │ Weight │ Score │ Weighted
 ─────────────────────┴────────────────┴────────┴───────┴──────────
                                     TOTAL BIAS SCORE:   [±N]
 
-SIGNAL: [Strong Bullish / Bullish / Slight Bullish / Neutral / 
+SIGNAL: [Strong Bullish / Bullish / Slight Bullish / Neutral /
          Slight Bearish / Bearish / Strong Bearish]
 
 KEY DRIVERS: [List top 2-3 factors moving the score]
