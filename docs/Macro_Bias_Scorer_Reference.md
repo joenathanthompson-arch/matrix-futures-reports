@@ -483,6 +483,61 @@ After calculating the **Total Weighted Score**, interpret the bias:
 
 **STALENESS RULE:** If FRED/Yahoo data is >1 business day old, you MUST check a fallback source before scoring. Document which source you used.
 
+---
+
+## ⚠️ CRITICAL: INTEGER MATH ONLY - NO DECIMALS
+
+**ALL scores in this system are WHOLE INTEGERS. Never use decimals.**
+
+### Why This Matters
+The Portfolio Manager EA expects whole numbers. Decimal scores like +0.300 or +0.700 will break the system.
+
+### Correct Calculation Method
+
+**Raw Scores are integers:**
+- Fed Stance: -2, -1, 0, +1, +2, or +3
+- Real Yields: -2, 0, or +2
+- All others: -1, 0, or +1
+
+**Weights are integers:** 1 or 2
+
+**Weighted Score = Raw Score × Weight (integer × integer = integer)**
+
+**Total = Sum of all Weighted Scores (integer)**
+
+### Worked Example: GC (Gold)
+
+| Category | Input | Raw Score | Weight | Weighted Score |
+|----------|-------|-----------|--------|----------------|
+| Fed stance | Dovish hold | +1 | 1 | **+1** |
+| Real yields | Down | +2 | 2 | **+4** |
+| USD (DXY) | Down | +1 | 1 | **+1** |
+| Risk mood | Risk-off | +1 | 1 | **+1** |
+| Growth narrative | Stable | 0 | 1 | **0** |
+| Oil supply shock | Neutral | 0 | 1 | **0** |
+| Gold ETF flows | Up | +1 | 1 | **+1** |
+| | | | **TOTAL:** | **+8** |
+
+**Total = +8** → Signal = **Strong Bullish** (≥+5) → PM Score = **9**
+
+### ❌ WRONG (What Manus Did Before)
+```
+fed_stance: +0.200
+real_yields: -0.200
+dxy: -0.150
+Total: +0.300 ← WRONG! This is a decimal!
+```
+
+### ✅ CORRECT
+```
+fed_stance: +1 × 1 = +1
+real_yields: +2 × 2 = +4
+dxy: +1 × 1 = +1
+Total: +8 ← CORRECT! This is an integer!
+```
+
+---
+
 ## HOW TO USE THIS SCORER
 
 ### Step 1: User Specifies Instrument
