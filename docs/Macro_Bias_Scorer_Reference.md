@@ -454,19 +454,82 @@ Rate your confidence 1-10 based on:
 
 ## CRITICAL RULES
 
+### NO HALLUCINATION - VERIFY ALL DATA
+
+**THIS IS THE MOST IMPORTANT RULE.**
+
+1. **NEVER guess, estimate, or fabricate data values.** Every number you use MUST come from an actual data source you accessed.
+
+2. **ALWAYS fetch real-time data** from the URLs provided. Do not rely on memory or assumptions about current market conditions.
+
+3. **If you cannot access a data source**, explicitly state this in the `data_quality.stale_sources` field and reduce confidence accordingly. DO NOT make up a value.
+
+4. **Document every source used.** If challenged, you must be able to point to the exact URL where you obtained each data point.
+
+5. **When in doubt, say "UNKNOWN"** rather than guess. An honest "I couldn't verify this" is infinitely better than a fabricated number.
+
+**Example of WRONG behavior:**
+```
+"I'll estimate real yields are flat based on recent trends..."
+"The VIX is probably around 15..."
+"Gold ETF flows have likely been positive..."
+```
+
+**Example of CORRECT behavior:**
+```
+"Checking CNBC US10YTIP... current 10Y TIPS yield is 2.15%, up from 2.08% yesterday = RISING"
+"Checking CBOE VIX... current level is 18.42 = BALANCED (15-20 range)"
+"Unable to access World Gold Council data - marking as stale, reducing confidence"
+```
+
+---
+
 ### Integer Math Only
+
 ALL scores are WHOLE INTEGERS. Never use decimals.
 - Raw scores: integers from lookup table
 - Weights: 1 or 2
 - Total: sum of (raw × weight)
 
+**Worked Example (GC Gold):**
+
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Dovish hold | +1 | 1 | **+1** |
+| Real yields | Down | +2 | 2 | **+4** |
+| USD (DXY) | Down | +1 | 1 | **+1** |
+| Risk mood | Risk-off | +1 | 1 | **+1** |
+| Growth | Stable | 0 | 1 | **0** |
+| Oil supply | Neutral | 0 | 1 | **0** |
+| Gold ETFs | Up | +1 | 1 | **+1** |
+| | | | **TOTAL:** | **+8** |
+
+**WRONG:** `fed: +0.200, yields: -0.200, total: +0.300` ← Decimals!
+**CORRECT:** `fed: +1, yields: +4, total: +8` ← Integers!
+
+---
+
 ### Data Staleness Protocol
+
 1. FRED data often lags 1-2 business days
-2. If data is >1 day old, use fallback sources
+2. **If data is >1 business day old, you MUST check a fallback source**
 3. Document stale sources in `data_quality` field
 4. Reduce confidence by 1-2 points for stale data
+5. **Never score based on stale data without attempting fallbacks**
 
 **Fallback Priority:** CNBC → TradingView → TradingEconomics → FRED
+
+**Fallback URLs (when primary is stale):**
+
+| Data Point | Primary | Fallback (Real-time) |
+|------------|---------|---------------------|
+| 10Y Real Yields | FRED DFII10 | CNBC US10YTIP |
+| HY OAS | FRED BAMLH0A0HYM2 | TradingEconomics |
+| 2s10s Curve | FRED T10Y2Y | CNBC 10Y2YS |
+| MOVE Index | Yahoo Finance | TradingView TVC:MOVE |
+| SOX | Yahoo Finance | TradingView SOX |
+
+---
 
 ### FX Quoting Conventions
 - **M6E (EUR/USD):** Bullish = EUR up, USD down
