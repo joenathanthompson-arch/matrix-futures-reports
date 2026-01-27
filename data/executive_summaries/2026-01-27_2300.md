@@ -37,4 +37,4 @@ All primary data sources were available and up-to-date. No fallbacks were used.
 
 ## Watch List
 - **FOMC Meeting (Jan 28):** Any deviation from the expected dovish hold could significantly impact all asset classes.
-- **Next GDPNow Update (Jan 29):** Continued strength in the growth forecast could increase pressure on the Fed and weigh on bonds and bonds and bonds.
+- **Next GDPNow Update (Jan 29):** Continued strength in the growth forecast could increase pressure on the Fed and weigh on bonds.
