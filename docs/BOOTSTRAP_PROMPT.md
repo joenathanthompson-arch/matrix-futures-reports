@@ -60,10 +60,13 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 "data_quality":{"stale_sources":[],"fallbacks_used":[]}}
 ```
 
-2. **CRITICAL: Copy to** `data/bias_scores/latest.json` (PM reads this!)
+2. **CRITICAL: Copy to** `data/bias_scores/latest.json` (PM reads this for scores!)
 
-3. **Summary** `data/executive_summaries/YYYY-MM-DD_HHMM.md`:
-   **CRITICAL: Also copy to** `data/executive_summaries/latest.md` (PM /summary reads this!)
+3. **Summary** `data/executive_summaries/YYYY-MM-DD_HHMM.md`
+
+4. **CRITICAL: Copy to** `data/executive_summaries/latest.md` (PM /summary reads this!)
+
+YOU MUST CREATE BOTH `latest.json` AND `latest.md` - PM needs both files!
    - Per-symbol narrative paragraphs (PM displays these via /summary)
    - Format: "**GC (Gold):** [2-3 sentences with score, key drivers, recommended approach (e.g., IB_BREAKOUT 7/10)]"
    - Include all 10 symbols with individual paragraphs

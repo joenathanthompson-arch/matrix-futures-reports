@@ -76,6 +76,10 @@ Multiple reports per day are expected. Use 24-hour time format.
 
 **CRITICAL:** Also copy to `data/executive_summaries/latest.md` - this is what PM's `/summary` command reads!
 
+**YOU MUST CREATE BOTH:**
+- `data/bias_scores/latest.json` - PM reads for scores
+- `data/executive_summaries/latest.md` - PM reads for /summary command
+
 **Format:**
 ```markdown
 # Executive Summary - [Date]
