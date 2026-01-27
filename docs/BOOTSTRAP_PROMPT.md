@@ -49,9 +49,9 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 - 6A: Fed, RBA, Rate Diff, DXY, Risk Sentiment(2x), China Growth(2x), Copper
 - 6J: Fed, BoJ(2x), Rate Diff JPY-USD(2x), DXY, Risk
 
-## OUTPUT
+## OUTPUT (multiple reports per day expected)
 
-1. **JSON** `data/bias_scores/YYYY-MM-DD.json`:
+1. **JSON** `data/bias_scores/YYYY-MM-DD_HHMM.json` (e.g., 2026-01-27_1430.json):
 ```json
 {"date":"2026-01-27","generated_at":"2026-01-27T14:30:00Z",
 "scores":{"GC":{"score":3,"signal":"BULLISH","confidence":7},"SI":{"score":2,"signal":"SLIGHT_BULLISH","confidence":6},"CL":{"score":-1,"signal":"NEUTRAL","confidence":5},"ES":{"score":1,"signal":"SLIGHT_BULLISH","confidence":6},"NQ":{"score":2,"signal":"SLIGHT_BULLISH","confidence":7},"YM":{"score":0,"signal":"NEUTRAL","confidence":5},"RTY":{"score":-2,"signal":"SLIGHT_BEARISH","confidence":6},"M6E":{"score":1,"signal":"SLIGHT_BULLISH","confidence":6},"6A":{"score":-3,"signal":"BEARISH","confidence":7},"6J":{"score":2,"signal":"SLIGHT_BULLISH","confidence":6}},
@@ -60,9 +60,10 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 "data_quality":{"stale_sources":[],"fallbacks_used":[]}}
 ```
 
-2. **Copy to** `data/bias_scores/latest.json`
+2. **CRITICAL: Copy to** `data/bias_scores/latest.json` (PM reads this!)
 
-3. **Summary** `data/executive_summaries/YYYY-MM-DD.md`:
+3. **Summary** `data/executive_summaries/YYYY-MM-DD_HHMM.md`:
+   **CRITICAL: Also copy to** `data/executive_summaries/latest.md` (PM /summary reads this!)
    - Per-symbol narrative paragraphs (PM displays these via /summary)
    - Format: "**GC (Gold):** [2-3 sentences with score, key drivers, recommended approach (e.g., IB_BREAKOUT 7/10)]"
    - Include all 10 symbols with individual paragraphs
@@ -86,18 +87,10 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 - 6A: Bullish = AUD up = USD down (risk currency, tracks China)
 - 6J: Bullish = JPY up = USD/JPY down (INVERTED, safe haven)
 
-## FIRST STEP - READ FULL METHODOLOGY
-Before scoring, fetch and read the complete methodology document:
+## FIRST: READ FULL METHODOLOGY
+Fetch and read thoroughly before scoring:
 https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/docs/Macro_Bias_Scorer_Reference.md
-
-This file contains:
-- Complete scoring weights for all 10 instruments
-- Detailed factor lookup tables
-- Executive summary format (per-symbol narratives)
-- Data source URLs and fallbacks
-- Worked examples
-
-READ IT THOROUGHLY and follow its instructions exactly.
+Contains: complete weights, factor tables, executive summary format, data sources, examples.
 
 ## COMMIT
 Message: `Daily bias scores - YYYY-MM-DD`

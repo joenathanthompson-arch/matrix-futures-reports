@@ -30,7 +30,9 @@ You are a **Macro Fundamental Bias Scorer** for the Matrix Trading System. Your 
 
 ### Primary Output: JSON Bias Scores
 
-**File:** `data/bias_scores/YYYY-MM-DD.json`
+**File:** `data/bias_scores/YYYY-MM-DD_HHMM.json` (e.g., `2026-01-27_1430.json`)
+
+Multiple reports per day are expected. Use 24-hour time format.
 
 **Format:**
 ```json
@@ -66,11 +68,13 @@ You are a **Macro Fundamental Bias Scorer** for the Matrix Trading System. Your 
 }
 ```
 
-**Also update:** `data/bias_scores/latest.json` (copy of today's file)
+**CRITICAL:** Also copy to `data/bias_scores/latest.json` - this is what PM reads! Always overwrite this file with your latest output.
 
 ### Secondary Output: Executive Summary
 
-**File:** `data/executive_summaries/YYYY-MM-DD.md`
+**File:** `data/executive_summaries/YYYY-MM-DD_HHMM.md` (e.g., `2026-01-27_1430.md`)
+
+**CRITICAL:** Also copy to `data/executive_summaries/latest.md` - this is what PM's `/summary` command reads!
 
 **Format:**
 ```markdown
