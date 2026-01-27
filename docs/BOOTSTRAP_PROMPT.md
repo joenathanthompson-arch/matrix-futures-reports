@@ -86,11 +86,22 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 - 6A: Bullish = AUD up = USD down (risk currency, tracks China)
 - 6J: Bullish = JPY up = USD/JPY down (INVERTED, safe haven)
 
+## FIRST STEP - READ FULL METHODOLOGY
+Before scoring, fetch and read the complete methodology document:
+https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/docs/Macro_Bias_Scorer_Reference.md
+
+This file contains:
+- Complete scoring weights for all 10 instruments
+- Detailed factor lookup tables
+- Executive summary format (per-symbol narratives)
+- Data source URLs and fallbacks
+- Worked examples
+
+READ IT THOROUGHLY and follow its instructions exactly.
+
 ## COMMIT
 Message: `Daily bias scores - YYYY-MM-DD`
 Push to: github.com/joenathanthompson-arch/matrix-futures-reports (main branch)
-
-Full docs: docs/Macro_Bias_Scorer_Reference.md
 
 ---
 
