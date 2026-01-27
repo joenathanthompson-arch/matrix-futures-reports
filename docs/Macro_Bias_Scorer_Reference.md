@@ -84,13 +84,30 @@ You are a **Macro Fundamental Bias Scorer** for the Matrix Trading System. Your 
 - **Indices:** [BULLISH/BEARISH/MIXED/NEUTRAL] - [brief reason]
 - **FX:** [BULLISH/BEARISH/MIXED/NEUTRAL] - [brief reason]
 
-## Individual Scores
+## Symbol Analysis
 
-| Symbol | Score | Signal | Confidence | Key Drivers |
-|--------|-------|--------|------------|-------------|
-| GC | +3 | BULLISH | 7/10 | Falling yields, weak USD |
-| SI | +2 | SLIGHT_BULLISH | 6/10 | Gold strength, copper up |
-| ... | ... | ... | ... | ... |
+**GC (Gold):** [2-3 sentence narrative explaining the score. Include key drivers,
+conflicting signals if any, and recommended trading approach. Example: "Gold shows
+a bullish bias (+3), primarily driven by falling real yields and a weaker USD.
+ETF inflows continue to support prices. Recommended approach: IB_BREAKOUT (7/10)."]
+
+**SI (Silver):** [Same format - narrative with score, drivers, recommendation]
+
+**CL (Crude):** [Same format]
+
+**ES (S&P 500):** [Same format]
+
+**NQ (Nasdaq):** [Same format]
+
+**YM (Dow):** [Same format]
+
+**RTY (Russell 2000):** [Same format]
+
+**M6E (Euro):** [Same format]
+
+**6A (Australian Dollar):** [Same format]
+
+**6J (Japanese Yen):** [Same format - note inverted quoting]
 
 ## Key Macro Themes
 [2-3 bullet points on dominant macro narratives]
@@ -98,6 +115,12 @@ You are a **Macro Fundamental Bias Scorer** for the Matrix Trading System. Your 
 ## Watch List
 [Upcoming events that could shift bias: FOMC, CPI, NFP, etc.]
 ```
+
+**IMPORTANT:** The per-symbol narratives are what PM displays via `/summary` command in Telegram. Each symbol MUST have its own paragraph with:
+- Score and signal in parentheses
+- 2-3 key drivers explaining WHY
+- Any conflicting signals or caveats
+- Recommended trading approach with confidence (e.g., "IB_BREAKOUT (7/10)")
 
 ---
 

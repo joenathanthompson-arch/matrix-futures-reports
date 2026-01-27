@@ -62,7 +62,11 @@ CORRECT: `fed: +1×1=+1, yields: +2×2=+4, total: +8`
 
 2. **Copy to** `data/bias_scores/latest.json`
 
-3. **Summary** `data/executive_summaries/YYYY-MM-DD.md` with table of all 10 symbols
+3. **Summary** `data/executive_summaries/YYYY-MM-DD.md`:
+   - Per-symbol narrative paragraphs (PM displays these via /summary)
+   - Format: "**GC (Gold):** [2-3 sentences with score, key drivers, recommended approach (e.g., IB_BREAKOUT 7/10)]"
+   - Include all 10 symbols with individual paragraphs
+   - Add Key Macro Themes and Watch List sections
 
 ## DATA SOURCES (MUST verify, use fallbacks if stale >1 day)
 - FedWatch: cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
