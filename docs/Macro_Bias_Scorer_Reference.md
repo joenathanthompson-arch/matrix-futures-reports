@@ -610,20 +610,30 @@ ALL scores are WHOLE INTEGERS. Never use decimals.
 matrix-futures-reports/
 ├── data/
 │   ├── bias_scores/
-│   │   ├── YYYY-MM-DD.json    ← PRIMARY OUTPUT (PM reads this)
-│   │   └── latest.json        ← Copy of today's file
+│   │   ├── YYYY-MM-DD_HHMM.json  ← Timestamped archive
+│   │   └── latest.json           ← ⚠️ PM READS THIS - MUST UPDATE!
 │   └── executive_summaries/
-│       └── YYYY-MM-DD.md      ← Human-readable summary
+│       ├── YYYY-MM-DD_HHMM.md    ← Timestamped archive
+│       └── latest.md             ← ⚠️ PM /summary READS THIS - MUST UPDATE!
 ├── docs/
 │   └── Macro_Bias_Scorer_Reference.md  ← This file
 └── README.md
 ```
 
+### What PM Reads (CRITICAL)
+- **`data/bias_scores/latest.json`** - PM fetches this every 5 minutes for scores
+- **`data/executive_summaries/latest.md`** - PM displays this via `/summary` command
+
+**If you don't update these `latest.*` files, PM will show STALE DATA to traders!**
+
 ### Commit Protocol
-1. Create both files (JSON + MD)
-2. Copy JSON to `latest.json`
-3. Commit with message: `Daily bias scores - YYYY-MM-DD`
-4. Push to main branch
+1. Create timestamped JSON: `data/bias_scores/YYYY-MM-DD_HHMM.json`
+2. Create timestamped MD: `data/executive_summaries/YYYY-MM-DD_HHMM.md`
+3. **Copy JSON to `latest.json`** (overwrite existing)
+4. **Copy MD to `latest.md`** (overwrite existing)
+5. Commit with message: `Daily bias scores - YYYY-MM-DD HHMM`
+6. Push to main branch
+7. **VERIFY files were updated** (see Verification Protocol below)
 
 ---
 
@@ -689,7 +699,56 @@ matrix-futures-reports/
 4. **Map to Signals:** Convert scores to signal labels
 5. **Assess Confidence:** Rate 1-10 based on data quality
 6. **Aggregate Asset Classes:** Majority vote for class bias
-7. **Output JSON:** Create `data/bias_scores/YYYY-MM-DD.json`
-8. **Output Summary:** Create `data/executive_summaries/YYYY-MM-DD.md`
-9. **Update Latest:** Copy JSON to `latest.json`
+7. **Output JSON:** Create `data/bias_scores/YYYY-MM-DD_HHMM.json`
+8. **Output Summary:** Create `data/executive_summaries/YYYY-MM-DD_HHMM.md`
+9. **Update Latest:** Copy JSON to `latest.json` AND summary to `latest.md`
 10. **Commit & Push:** Push to main branch
+11. **VERIFY:** Read back files from GitHub and confirm they match (see below)
+
+---
+
+## MANDATORY VERIFICATION PROTOCOL
+
+**THIS STEP IS NOT OPTIONAL - PM DEPENDS ON IT**
+
+After committing and pushing, you MUST verify the files were correctly updated:
+
+### Step 1: Fetch and Read the Latest Files
+
+Fetch these URLs and read their contents:
+- `https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/data/bias_scores/latest.json`
+- `https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/data/executive_summaries/latest.md`
+
+### Step 2: Compare Against Your Output
+
+Check that:
+1. The `generated_at` timestamp matches what you just created
+2. The scores for all 10 symbols match your calculations
+3. The executive summary content matches your output
+
+### Step 3: Handle Mismatches
+
+**If the files show OLD data or don't match:**
+1. Your commit/push may have failed or only partially succeeded
+2. Re-create the `latest.json` and `latest.md` files
+3. Commit again with message: `Fix: Update latest files - YYYY-MM-DD HHMM`
+4. Push again
+5. **Verify again** - repeat until confirmed
+
+### Step 4: Confirm Success
+
+Only report completion when you have VERIFIED that:
+- `latest.json` contains your new scores with the correct `generated_at` timestamp
+- `latest.md` contains your new executive summary
+
+**Example Verification Output:**
+```
+VERIFICATION COMPLETE:
+✓ latest.json: generated_at=2026-01-27T19:39:00Z (matches)
+✓ latest.json: GC=+5, SI=+4, CL=-1, ES=+4, NQ=+6, YM=+3, RTY=+4, M6E=+1, 6A=+6, 6J=+5 (all match)
+✓ latest.md: Executive Summary dated 2026-01-27 19:39 EST (matches)
+Files verified - PM will receive updated scores.
+```
+
+**WHY THIS MATTERS:**
+The Portfolio Manager EA reads `latest.json` every 5 minutes. If you create timestamped files but forget to update `latest.json`, traders will receive STALE scores. This has happened before. Always verify.

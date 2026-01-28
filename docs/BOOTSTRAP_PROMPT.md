@@ -106,10 +106,26 @@ Fetch and read thoroughly before scoring:
 https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/docs/Macro_Bias_Scorer_Reference.md
 Contains: complete weights, factor tables, executive summary format, data sources, examples.
 
-## COMMIT
-Message: `Daily bias scores - YYYY-MM-DD`
-Push to: github.com/joenathanthompson-arch/matrix-futures-reports (main branch)
+## COMMIT & VERIFY (MANDATORY)
+
+### Step 1: Create & Commit Files
+1. Create `data/bias_scores/YYYY-MM-DD_HHMM.json`
+2. Create `data/bias_scores/latest.json` (EXACT COPY)
+3. Create `data/executive_summaries/YYYY-MM-DD_HHMM.md`
+4. Create `data/executive_summaries/latest.md` (EXACT COPY)
+5. Commit with message: `Daily bias scores - YYYY-MM-DD HHMM`
+6. Push to main branch
+
+### Step 2: VERIFY (DO NOT SKIP)
+After pushing, you MUST:
+1. Fetch and READ `https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/data/bias_scores/latest.json`
+2. Fetch and READ `https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/data/executive_summaries/latest.md`
+3. Compare the `generated_at` timestamp and scores to what you just created
+4. **If they don't match or show old data:** Re-commit and push again, then verify again
+5. **Only report success when verified files match your output**
+
+This verification is CRITICAL - PM reads these files and will use stale data if you don't update them!
 
 ---
 
-**Character count:** ~3,900 characters (under 5,000 limit)
+**Character count:** ~4,500 characters (under 5,000 limit)
