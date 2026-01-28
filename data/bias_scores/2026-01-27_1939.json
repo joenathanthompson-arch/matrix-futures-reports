@@ -1,0 +1,30 @@
+{
+  "date": "2026-01-27",
+  "generated_at": "2026-01-28T00:39:03Z",
+  "scores": {
+    "GC": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
+    "SI": {"score": 4, "signal": "BULLISH", "confidence": 6},
+    "CL": {"score": -1, "signal": "NEUTRAL", "confidence": 5},
+    "ES": {"score": 4, "signal": "BULLISH", "confidence": 7},
+    "NQ": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7},
+    "YM": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "RTY": {"score": 4, "signal": "BULLISH", "confidence": 6},
+    "M6E": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "6A": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "STRONG_BULLISH",
+    "FX": "STRONG_BULLISH"
+  },
+  "key_drivers": [
+    "Falling real yields are providing a strong tailwind for gold and growth-sensitive assets like technology stocks.",
+    "A broadly weaker U.S. Dollar is lifting commodity prices and strengthening foreign currencies against the greenback.",
+    "Increasingly hawkish stances from the Reserve Bank of Australia and the Bank of Japan are creating significant policy divergence against a neutral Federal Reserve, boosting the Australian Dollar and Japanese Yen."
+  ],
+  "data_quality": {
+    "stale_sources": ["DFII10"],
+    "fallbacks_used": ["CNBC for real yields"]
+  }
+}
