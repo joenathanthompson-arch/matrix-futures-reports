@@ -1,0 +1,230 @@
+MACRO DATA COLLECTION - 2026-01-28
+===================================
+
+1. FED STANCE (CME FedWatch)
+Source: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+Date accessed: 2026-01-28
+Next FOMC meeting: 28 Jan 2026 (TODAY)
+Current probabilities:
+- 325-350 bps: 2.8%
+- 350-375 bps (Current): 97.2%
+Interpretation: Market expects Fed to HOLD at current 350-375 bps range with 97.2% probability
+Fed Stance: NEUTRAL HOLD (0 score per lookup table)
+
+2. REAL YIELDS (10Y TIPS - DFII10)
+Source: https://fred.stlouisfed.org/series/DFII10
+Latest observation: 2026-01-26: 1.90%
+Updated: Jan 27, 2026 3:16 PM CST
+Previous value (need to check for trend): Looking at chart, appears to be relatively flat around 1.90% range
+Interpretation: Data is 1 day old (acceptable). Need to check CNBC for today's value to determine trend.
+
+CNBC US10YTIP: 1.892% (as of 7:33 AM EST 2026-01-28)
+Previous close: 1.897%
+Change: -0.004 (down 0.5 bps)
+Trend: FLAT (±5bps threshold per methodology)
+Score: 0 (Flat per lookup table)
+
+3. USD (DXY)
+Checking TradingView...
+
+Source: https://www.tradingview.com/symbols/TVC-DXY/
+Current: 96.127 USD
+Change: +0.309 (+0.32%)
+Previous close: 95.818 USD
+5 days: -2.24%
+1 month: -1.96%
+Trend: WEAK/FALLING (down over recent periods)
+Score: +1 (Weak/Falling per lookup table)
+
+4. VIX (Risk Mood)
+Checking CNBC...
+
+Source: https://www.cnbc.com/quotes/.VIX
+Current: 16.50
+Change: +0.15 (+0.92%)
+Previous close: 16.35
+Range: VIX 15-20 = BALANCED
+Risk Mood Score: 0 (Balanced per lookup table)
+VIX Direction: FLAT (small increase)
+VIX Direction Score: 0 (Flat per lookup table)
+
+5. GROWTH NARRATIVE (GDPNow)
+Checking Atlanta Fed...
+
+Source: https://www.atlantafed.org/cqer/research/gdpnow
+Latest estimate: 5.4% (January 26, 2026)
+Q4 2025 real GDP growth (SAAR)
+Previous: Unchanged from January 22
+Interpretation: 5.4% is STRONG growth, indicating ACCELERATING economy
+Growth Narrative Score: -1 (Accelerating per lookup table - negative for gold/safe havens)
+
+6. CREDIT SPREADS (HY OAS)
+Checking FRED...
+
+Source: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+Latest: 2.69% (January 26, 2026)
+Updated: Jan 27, 2026 9:31 AM CST
+Looking at chart: Spreads have been declining (narrowing) from ~3.0% area
+Trend: NARROWING (bullish for risk assets)
+Credit Spreads Score: +1 (Narrowing per lookup table)
+
+7. SOX (Semiconductors)
+Checking TradingView...
+
+Source: https://www.tradingview.com/symbols/SOX/
+Current: 8,117.18 USD
+Change: +190.14 (+2.40%)
+1 day: +2.40%
+1 month: +12.28%
+6 months: +41.87%
+1 year: +62.09%
+Trend: RISING (strong uptrend)
+SOX Score: +1 (Rising per lookup table)
+
+8. MOVE Index (Rate Volatility)
+Checking TradingView...
+
+Source: https://www.tradingview.com/symbols/TVC-MOVE/
+Current: 56.12 USD
+Change: +0.35 (+0.64%)
+5 days: -5.78%
+1 month: -5.64%
+6 months: -31.46%
+1 year: -35.31%
+Trend: FALLING (declining rate volatility)
+MOVE Score: +1 (Falling per lookup table - bullish for risk assets)
+
+9. 2s10s YIELD CURVE
+Checking FRED...
+
+Source: https://fred.stlouisfed.org/series/T10Y2Y
+Latest: 0.71% (January 27, 2026)
+Updated: Jan 27, 2026 4:04 PM CST
+Looking at chart: Curve has been steepening from ~0.5% area to 0.71%
+Trend: STEEPENING (bullish for reflation trades, cyclicals)
+2s10s Score: +1 (Steepening per lookup table)
+
+10. COPPER
+Checking Investing.com...
+
+Source: https://www.investing.com/commodities/copper
+Current: $5.9145/lb
+Change: +0.0530 (+0.90%)
+1 week: +2.54%
+1 month: +1.28%
+3 months: +14.95%
+1 year: +40.00%
+Trend: RISING (strong uptrend)
+Copper Score: +1 (Rising per lookup table)
+
+11. OIL INVENTORIES (EIA Weekly)
+Checking EIA...
+
+Source: https://www.eia.gov/petroleum/supply/weekly/
+Week ending January 16, 2026
+U.S. commercial crude oil inventories: INCREASED by 3.6 million barrels
+Interpretation: BUILD (bearish for oil)
+Oil Inventories Score: -1 (Build per lookup table)
+
+12. GEOPOLITICAL RISK
+Checking recent news for geopolitical developments...
+
+Sources: Recent news - Reuters, CNBC, WSJ
+Key developments:
+- US sending military armada to Iran (Middle East tensions)
+- Trump renewed threats against Iran
+- Oil supply disruption concerns
+- Kazakhstan production issues
+Interpretation: RISING geopolitical risk (Iran tensions, Middle East focus)
+Geopolitical Risk Score: +1 (Rising per lookup table)
+
+13. GOLD ETF FLOWS
+Checking World Gold Council or recent news...
+
+Sources: Reuters, Cresset Capital, World Gold Council
+Key data:
+- iShares Gold Trust (IAU): ~$12 billion inflows since early 2025
+- Global gold ETFs: $89B inflows in 2025
+- January 2026 MTD: ~$4.4 billion across US-listed gold ETFs
+- SPDR Gold Shares (GLD): $1.7 billion inflows week of 1/21/2026
+Interpretation: STRONG INFLOWS (very bullish for gold)
+Gold ETF Flows Score: +1 (Inflows per lookup table)
+
+=== FX-SPECIFIC FACTORS ===
+
+14. ECB STANCE (for M6E - Euro)
+Checking recent ECB communications...
+
+Sources: Reuters, Bloomberg, ECB
+Key developments:
+- ECB deposit rate currently at 2.00%
+- Next meeting: February 5, 2026
+- Expected to hold rates steady
+- ECB officials concerned about strong euro (EUR appreciation)
+- May consider rate cuts if euro keeps strengthening
+Interpretation: DOVISH HOLD (concerned about strong EUR, may cut if needed)
+ECB Stance Score: 0 (Neutral hold, but dovish tilt)
+
+15. RBA STANCE (for 6A - Australian Dollar)
+Checking RBA...
+
+Sources: Reuters, Bloomberg, CommBank, Westpac
+Key developments:
+- Australia CPI: 3.8% (December), above RBA 2-3% target
+- Trimmed mean: 3.3%
+- Next RBA meeting: February 3, 2026
+- Market expects RATE HIKE to 3.85% (from current 3.60%)
+- All big four banks expect hike
+- First hike since November 2023
+Interpretation: HAWKISH - Rate hike expected (bullish for AUD)
+RBA Stance Score: +1 (Hawkish/Tightening per lookup table)
+
+16. BOJ STANCE (for 6J - Japanese Yen)
+Checking BoJ...
+
+Sources: CNBC, Reuters, WSJ, BoJ
+Key developments:
+- BoJ held rates at 0.75% (January 22-23, 2026 meeting)
+- Previously hiked from 0.50% to 0.75% in December
+- Upgraded GDP forecasts (FY2025: 0.9%, FY2026: 1.0%)
+- Minutes suggest need to continue raising rates
+- Weak yen and labor shortages key factors
+- Market expects further hikes (possibly to 1% by July)
+Interpretation: HAWKISH - Tightening cycle continues (bullish for JPY)
+BoJ Stance Score: +1 (Hawkish/Tightening per lookup table)
+
+17. CHINA GROWTH (for 6A - Australian Dollar)
+Checking China PMI and growth indicators...
+
+Sources: CNBC, Reuters, NBS China
+Key data:
+- Manufacturing PMI: 50.1 (December 2025)
+- Emerging Industries PMI: 50.0 (January 2026)
+- Industrial profits: +0.6% in 2025 (first growth in 3 years)
+- 2026 GDP growth target: 4.5%-5.0%
+- High-tech manufacturing profits: +13.3% YoY
+Interpretation: STABLE (PMI at 50, modest growth, not accelerating)
+China Growth Score: 0 (Stable per lookup table)
+
+=== DATA COLLECTION COMPLETE ===
+
+SUMMARY OF SCORES:
+1. Fed Stance: 0 (Neutral hold)
+2. Real Yields: 0 (Flat)
+3. USD (DXY): +1 (Weak/Falling)
+4. Risk Mood (VIX): 0 (Balanced)
+5. VIX Direction: 0 (Flat)
+6. Growth Narrative: -1 (Accelerating)
+7. Credit Spreads: +1 (Narrowing)
+8. SOX: +1 (Rising)
+9. MOVE: +1 (Falling)
+10. 2s10s Curve: +1 (Steepening)
+11. Copper: +1 (Rising)
+12. Oil Inventories: -1 (Build)
+13. Geopolitical Risk: +1 (Rising)
+14. Gold ETF Flows: +1 (Inflows)
+15. ECB Stance: 0 (Neutral hold)
+16. RBA Stance: +1 (Hawkish)
+17. BoJ Stance: +1 (Hawkish)
+18. China Growth: 0 (Stable)
+
