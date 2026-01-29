@@ -1,0 +1,492 @@
+[
+    {
+        "instrument": "6A",
+        "name": "Australian Dollar",
+        "bias_score": 0.85,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.15,
+                "contribution": 0.0
+            },
+            {
+                "factor": "rba_stance",
+                "score": 1,
+                "weight": 0.25,
+                "contribution": 0.25
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "copper",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "china_growth",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.05,
+                "contribution": 0.05
+            }
+        ]
+    },
+    {
+        "instrument": "CNH",
+        "name": "Chinese Yuan (Offshore)",
+        "bias_score": 0.8,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.2,
+                "contribution": 0.0
+            },
+            {
+                "factor": "china_growth",
+                "score": 1,
+                "weight": 0.25,
+                "contribution": 0.25
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "copper",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.05,
+                "contribution": 0.05
+            }
+        ]
+    },
+    {
+        "instrument": "6J",
+        "name": "Japanese Yen",
+        "bias_score": 0.7,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.2,
+                "contribution": 0.0
+            },
+            {
+                "factor": "boj_stance",
+                "score": 1,
+                "weight": 0.25,
+                "contribution": 0.25
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "vix",
+                "score": 0,
+                "weight": 0.1,
+                "contribution": 0.0
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            }
+        ]
+    },
+    {
+        "instrument": "SI",
+        "name": "Silver",
+        "bias_score": 0.65,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.15,
+                "contribution": 0.0
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "sox",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "copper",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.1,
+                "contribution": -0.1
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            }
+        ]
+    },
+    {
+        "instrument": "GC",
+        "name": "Gold",
+        "bias_score": 0.6,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.2,
+                "contribution": 0.0
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "vix",
+                "score": 0,
+                "weight": 0.1,
+                "contribution": 0.0
+            },
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.05,
+                "contribution": -0.05
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.05,
+                "contribution": 0.05
+            },
+            {
+                "factor": "gold_etf_flows",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            }
+        ]
+    },
+    {
+        "instrument": "HG",
+        "name": "Copper",
+        "bias_score": 0.6,
+        "factor_details": [
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.2,
+                "contribution": -0.2
+            },
+            {
+                "factor": "china_growth",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "sox",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "copper",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "2s10s",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            }
+        ]
+    },
+    {
+        "instrument": "CL",
+        "name": "Crude Oil",
+        "bias_score": 0.6,
+        "factor_details": [
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.2,
+                "contribution": -0.2
+            },
+            {
+                "factor": "china_growth",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "oil_inventories",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "2s10s",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            }
+        ]
+    },
+    {
+        "instrument": "NG",
+        "name": "Natural Gas",
+        "bias_score": 0.5,
+        "factor_details": [
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.25,
+                "contribution": -0.25
+            },
+            {
+                "factor": "oil_inventories",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "2s10s",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            }
+        ]
+    },
+    {
+        "instrument": "M6E",
+        "name": "Euro FX",
+        "bias_score": 0.5,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.2,
+                "contribution": 0.0
+            },
+            {
+                "factor": "ecb_stance",
+                "score": 0,
+                "weight": 0.2,
+                "contribution": 0.0
+            },
+            {
+                "factor": "dxy",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "vix",
+                "score": 0,
+                "weight": 0.1,
+                "contribution": 0.0
+            },
+            {
+                "factor": "geopolitical_risk",
+                "score": 1,
+                "weight": 0.05,
+                "contribution": 0.05
+            }
+        ]
+    },
+    {
+        "instrument": "ZN",
+        "name": "10-Year Treasury Note",
+        "bias_score": 0.35,
+        "factor_details": [
+            {
+                "factor": "fed_stance",
+                "score": 0,
+                "weight": 0.25,
+                "contribution": 0.0
+            },
+            {
+                "factor": "real_yields",
+                "score": 1,
+                "weight": 0.2,
+                "contribution": 0.2
+            },
+            {
+                "factor": "2s10s",
+                "score": 1,
+                "weight": 0.15,
+                "contribution": 0.15
+            },
+            {
+                "factor": "move",
+                "score": 0,
+                "weight": 0.1,
+                "contribution": 0.0
+            },
+            {
+                "factor": "gdpnow",
+                "score": -1,
+                "weight": 0.1,
+                "contribution": -0.1
+            },
+            {
+                "factor": "hy_spreads",
+                "score": 1,
+                "weight": 0.1,
+                "contribution": 0.1
+            },
+            {
+                "factor": "vix",
+                "score": 0,
+                "weight": 0.1,
+                "contribution": 0.0
+            }
+        ]
+    }
+]
