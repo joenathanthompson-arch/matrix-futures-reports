@@ -1,0 +1,76 @@
+{
+  "date": "2026-01-29",
+  "generated_at": "2026-01-29T07:45:33Z",
+  "scores": {
+    "GC": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 8
+    },
+    "SI": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "ES": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7
+    },
+    "NQ": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "YM": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7
+    },
+    "RTY": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "M6E": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6
+    },
+    "6A": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Fed dovish hold supporting risk assets",
+    "Geopolitical tensions (Iran-US) elevating gold and oil",
+    "USD weakness benefiting commodities and FX"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "DFII10",
+      "BAMLH0A0HYM2",
+      "T10Y2Y"
+    ],
+    "fallbacks_used": [
+      "CNBC for real yields confirmation"
+    ]
+  }
+}
