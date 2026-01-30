@@ -1,0 +1,107 @@
+OVERNIGHT DATA UPDATE - January 30, 2026 (2:43 AM EST)
+======================================================
+
+KEY CHANGES FROM YESTERDAY'S REPORT (Jan 29, 5:32 PM EST):
+
+1. USD (DXY):
+   - Yesterday: Weak, down 2.2% over 5 days
+   - Overnight: REVERSAL - DXY up 0.45% (Kevin Warsh as new Fed favorite)
+   - Current level: 96.43 (up from ~95.55 low yesterday)
+   - Assessment: USD weakness PAUSING, not reversing fully yet
+   - Impact: Reduces bullish bias for all non-USD assets slightly
+
+2. Tokyo CPI (Japan):
+   - Released overnight: 1.5% YoY (down from 2.0% previous month)
+   - This is BELOW expectations
+   - Impact: Slightly reduces BoJ hawkish conviction
+   - BUT: BoJ still hawkish overall (meeting Jan 22-23 confirmed stance)
+
+3. Australian CPI:
+   - Report: "CPI Falls Short of Guarantee" for RBA hike
+   - Impact: Reduces certainty of Feb 3 RBA hike
+   - BUT: RBA still expected to hike, just less certain
+
+4. Equity Markets:
+   - Microsoft had worst drop in nearly 6 years
+   - Asian shares mostly lower
+   - Impact: Risk mood slightly negative
+
+5. Gold/Silver:
+   - "Blistering rally" continues
+   - Impact: Precious metals strength persists
+
+SCORING IMPACT ASSESSMENT:
+=========================
+
+6J (Japanese Yen):
+- OLD SCORE (yesterday): +5
+- NEW METHODOLOGY (yesterday): Would be +7
+- AFTER OVERNIGHT DATA: +6 (Tokyo CPI weaker than expected)
+- Reasoning: BoJ still hawkish but Tokyo CPI reduces conviction slightly
+
+6A (Australian Dollar):
+- OLD SCORE (yesterday): +4
+- NEW METHODOLOGY (yesterday): Would be +8 (RBA hike Feb 3)
+- AFTER OVERNIGHT DATA: +7 (CPI "falls short of guarantee")
+- Reasoning: RBA still likely to hike but less certain, catalyst still imminent
+
+M6E (Euro):
+- OLD SCORE (yesterday): +1
+- NEW METHODOLOGY (yesterday): Would be 0
+- AFTER OVERNIGHT DATA: 0 (no change)
+- Reasoning: USD reversal reduces EUR support, ECB still concerned
+
+ALL OTHER INSTRUMENTS:
+- USD reversal reduces bullish bias slightly
+- Reduce scores by 1 point across the board where USD was a factor
+- GC, SI, CL, ES, NQ, YM, RTY: All reduce by 1 point
+
+FINAL SCORES FOR JAN 30, 2:43 AM EST REPORT:
+============================================
+
+Using NEW RECALIBRATED METHODOLOGY with OVERNIGHT DATA:
+
+GC (Gold): +1 (was +2 yesterday, USD reversal reduces)
+SI (Silver): +2 (was +3 yesterday, USD reversal reduces)
+CL (Crude): 0 (was +1 yesterday, USD reversal reduces)
+ES (S&P 500): +1 (was +2 yesterday, USD reversal reduces)
+NQ (Nasdaq): +3 (was +4 yesterday, USD reversal reduces)
+YM (Dow): +1 (was +2 yesterday, USD reversal reduces)
+RTY (Russell): +2 (was +3 yesterday, USD reversal reduces)
+M6E (Euro): 0 (no change, USD reversal confirms neutral)
+6A (AUD): +7 (was +8 yesterday, CPI reduces certainty)
+6J (JPY): +6 (was +7 yesterday, Tokyo CPI reduces conviction)
+
+ENVIRONMENT CODE DISTRIBUTION:
+==============================
+
+Code 30 (NEUTRAL): 2 instruments (CL, M6E)
+Code 12 (LONG_BIAS): 6 instruments (GC, SI, ES, YM, NQ, RTY)
+Code 10 (LONGS_ONLY): 1 instrument (6J)
+Code 14 (MAX_LONG): 1 instrument (6A)
+
+BETTER THAN YESTERDAY: Still have differentiation (4 distinct codes)
+
+KEY DRIVERS (UPDATED):
+=====================
+
+1. USD reversal (Kevin Warsh as Fed favorite) - reduces bullish bias across board
+2. RBA still likely to hike Feb 3 (4 days away) - 6A remains MAX_LONG
+3. BoJ still hawkish but Tokyo CPI weaker - 6J remains LONGS_ONLY
+4. Credit spreads still supportive - indices maintain LONG_BIAS
+5. Risk mood slightly negative (Microsoft drop) - reduces conviction
+
+CONFIDENCE LEVELS (UNCHANGED FROM YESTERDAY):
+=============================================
+
+GC: 7/10 (good data, mixed signals)
+SI: 6/10 (hybrid metal)
+CL: 6/10 (mixed signals)
+ES: 6/10 (credit spreads supportive)
+NQ: 7/10 (SOX strong)
+YM: 6/10 (curve steepening)
+RTY: 6/10 (credit spreads key)
+M6E: 5/10 (conflicting signals)
+6A: 7/10 (RBA hike likely but less certain)
+6J: 8/10 (BoJ hawkish but Tokyo CPI weaker) → REDUCE TO 7/10
+
