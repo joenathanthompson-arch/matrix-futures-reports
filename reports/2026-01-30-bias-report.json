@@ -1,0 +1,405 @@
+{
+  "report_date": "2026-01-30",
+  "report_time": "2026-01-30 17:44:24 UTC",
+  "macro_factors": {
+    "FED_STANCE": 0,
+    "REAL_YIELDS": 1,
+    "VIX": 1,
+    "DXY": 1,
+    "GDPNOW": 1,
+    "CREDIT_SPREADS": -1,
+    "SOX": -1,
+    "MOVE_INDEX": 1,
+    "CURVE_2S10S": 1,
+    "OIL_INVENTORIES": 1,
+    "COPPER": -1,
+    "GOLD_ETF_FLOWS": 1,
+    "ECB_STANCE": 0,
+    "BOJ_STANCE": 1,
+    "BOE_STANCE": -1,
+    "RBA_STANCE": 1,
+    "SNB_STANCE": 0
+  },
+  "instruments": [
+    {
+      "instrument": "ES",
+      "name": "S&P 500 E-mini Futures",
+      "asset_class": "Equity Index",
+      "bias_score": 0.3,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "REAL_YIELDS": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "GDPNOW": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.15,
+          "contribution": -0.15
+        },
+        "SOX": {
+          "value": -1,
+          "weight": 0.1,
+          "contribution": -0.1
+        },
+        "CURVE_2S10S": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        }
+      }
+    },
+    {
+      "instrument": "NQ",
+      "name": "NASDAQ-100 E-mini Futures",
+      "asset_class": "Equity Index",
+      "bias_score": 0.1,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "REAL_YIELDS": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "SOX": {
+          "value": -1,
+          "weight": 0.25,
+          "contribution": -0.25
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.1,
+          "contribution": -0.1
+        },
+        "CURVE_2S10S": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        }
+      }
+    },
+    {
+      "instrument": "GC",
+      "name": "Gold Futures",
+      "asset_class": "Precious Metal",
+      "bias_score": 0.75,
+      "bias_direction": "BULLISH",
+      "components": {
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "REAL_YIELDS": {
+          "value": 1,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "GOLD_ETF_FLOWS": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "GDPNOW": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        }
+      }
+    },
+    {
+      "instrument": "CL",
+      "name": "Crude Oil Futures",
+      "asset_class": "Energy",
+      "bias_score": 0.6,
+      "bias_direction": "BULLISH",
+      "components": {
+        "OIL_INVENTORIES": {
+          "value": 1,
+          "weight": 0.3,
+          "contribution": 0.3
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "GDPNOW": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "COPPER": {
+          "value": -1,
+          "weight": 0.15,
+          "contribution": -0.15
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.05,
+          "contribution": -0.05
+        }
+      }
+    },
+    {
+      "instrument": "HG",
+      "name": "Copper Futures",
+      "asset_class": "Industrial Metal",
+      "bias_score": -0.1,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "COPPER": {
+          "value": -1,
+          "weight": 0.3,
+          "contribution": -0.3
+        },
+        "GDPNOW": {
+          "value": 1,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "SOX": {
+          "value": -1,
+          "weight": 0.15,
+          "contribution": -0.15
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.1,
+          "contribution": -0.1
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        }
+      }
+    },
+    {
+      "instrument": "6E",
+      "name": "Euro FX Futures",
+      "asset_class": "Currency",
+      "bias_score": 0.2,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "ECB_STANCE": {
+          "value": 0,
+          "weight": 0.35,
+          "contribution": 0.0
+        },
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.1,
+          "contribution": -0.1
+        }
+      }
+    },
+    {
+      "instrument": "6J",
+      "name": "Japanese Yen Futures",
+      "asset_class": "Currency",
+      "bias_score": 0.75,
+      "bias_direction": "BULLISH",
+      "components": {
+        "BOJ_STANCE": {
+          "value": 1,
+          "weight": 0.35,
+          "contribution": 0.35
+        },
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "REAL_YIELDS": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        }
+      }
+    },
+    {
+      "instrument": "6B",
+      "name": "British Pound Futures",
+      "asset_class": "Currency",
+      "bias_score": -0.15,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "BOE_STANCE": {
+          "value": -1,
+          "weight": 0.35,
+          "contribution": -0.35
+        },
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.1,
+          "contribution": -0.1
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        }
+      }
+    },
+    {
+      "instrument": "6A",
+      "name": "Australian Dollar Futures",
+      "asset_class": "Currency",
+      "bias_score": 0.4,
+      "bias_direction": "BULLISH",
+      "components": {
+        "RBA_STANCE": {
+          "value": 1,
+          "weight": 0.35,
+          "contribution": 0.35
+        },
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "COPPER": {
+          "value": -1,
+          "weight": 0.2,
+          "contribution": -0.2
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "GDPNOW": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        }
+      }
+    },
+    {
+      "instrument": "6S",
+      "name": "Swiss Franc Futures",
+      "asset_class": "Currency",
+      "bias_score": 0.3,
+      "bias_direction": "NEUTRAL",
+      "components": {
+        "SNB_STANCE": {
+          "value": 0,
+          "weight": 0.35,
+          "contribution": 0.0
+        },
+        "FED_STANCE": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "VIX": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "DXY": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "CREDIT_SPREADS": {
+          "value": -1,
+          "weight": 0.05,
+          "contribution": -0.05
+        }
+      }
+    }
+  ]
+}
