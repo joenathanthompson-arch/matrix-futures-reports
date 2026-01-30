@@ -1,0 +1,183 @@
+BIAS SCORE CALCULATIONS - 2026-01-30
+======================================
+
+MACRO FACTOR SCORES (from data collection):
+1. Fed Stance: 0 (Neutral hold)
+2. Real Yields: 0 (Flat)
+3. USD (DXY): +1 (Weak/Falling)
+4. Risk Mood (VIX): 0 (Balanced)
+5. VIX Direction: 0 (Flat)
+6. Growth Narrative: 0 (Stable)
+7. Credit Spreads: +1 (Narrowing)
+8. SOX: +1 (Rising)
+9. MOVE: 0 (Mixed/Flat)
+10. 2s10s Curve: +1 (Steepening)
+11. Copper: +1 (Rising)
+12. Oil Inventories: +1 (Draw)
+13. Geopolitical Risk: +1 (Rising)
+14. Gold ETF Flows: +1 (Inflows)
+15. ECB Stance: 0 (Neutral hold)
+16. RBA Stance: +1 (Hawkish)
+17. BoJ Stance: +1 (Hawkish)
+18. China Growth: 0 (Stable)
+19. Oil Supply Shock: 0 (Neutral - no major disruption, but tensions rising)
+
+======================================
+INSTRUMENT CALCULATIONS
+======================================
+
+1. GC (GOLD) - Max Range: -14 to +16
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (1): 0 × 1 = 0
+- Oil supply shock (1): 0 × 1 = 0
+- Gold ETF flows (1): +1 × 1 = +1
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH
+CONFIDENCE: 7 (fresh data, clear ETF inflows, USD weakness supportive)
+
+2. SI (SILVER) - Max Range: -10 to +12
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (1): 0 × 1 = 0
+- Copper (1): +1 × 1 = +1
+- Gold ETF flows (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH
+CONFIDENCE: 6 (follows gold, copper supportive, but more volatile)
+
+3. CL (CRUDE OIL) - Max Range: -9 to +9
+Factors (Weight):
+- Oil supply shock (2): 0 × 2 = 0
+- Inventories (1): +1 × 1 = +1
+- Growth narrative (2): 0 × 2 = 0
+- Geopolitical risk (1): +1 × 1 = +1
+- USD (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH
+CONFIDENCE: 7 (inventory draw, geopolitical risk, USD weakness all supportive)
+
+4. ES (S&P 500) - Max Range: -12 to +14
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (1): 0 × 1 = 0
+- Credit spreads (1): +1 × 1 = +1
+- VIX direction (1): 0 × 1 = 0
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH
+CONFIDENCE: 6 (credit supportive, but VIX elevated, mixed signals)
+
+5. NQ (NASDAQ 100) - Max Range: -12 to +14
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (1): 0 × 1 = 0
+- SOX (1): +1 × 1 = +1
+- MOVE (1): 0 × 1 = 0
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH
+CONFIDENCE: 7 (SOX at all-time highs, tech strong)
+
+6. YM (DOW JONES) - Max Range: -10 to +12
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (2): 0 × 2 = 0
+- Credit spreads (1): +1 × 1 = +1
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH
+CONFIDENCE: 6 (curve steepening, credit supportive, reflation trade)
+
+7. RTY (RUSSELL 2000) - Max Range: -12 to +14
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth narrative (2): 0 × 2 = 0
+- Credit spreads (2): +1 × 2 = +2
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +4
+SIGNAL: BULLISH
+CONFIDENCE: 7 (credit spreads narrowing strongly supportive for small caps)
+
+8. M6E (EURO) - Max Range: -10 to +10
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- ECB stance (1): 0 × 1 = 0
+- Rate differential EUR-USD (2): 0 × 2 = 0 (both on hold, no change)
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Eurozone growth (1): 0 × 1 = 0
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH
+CONFIDENCE: 5 (USD weakness supportive, but ECB concerns about strong euro)
+
+9. 6A (AUSTRALIAN DOLLAR) - Max Range: -12 to +12
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- RBA stance (1): +1 × 1 = +1
+- Rate differential AUD-USD (1): +1 × 1 = +1 (RBA hiking, Fed on hold)
+- USD (1): +1 × 1 = +1
+- Risk sentiment (2): 0 × 2 = 0 (VIX balanced)
+- China growth (2): 0 × 2 = 0
+- Copper (1): +1 × 1 = +1
+TOTAL: +4
+SIGNAL: BULLISH
+CONFIDENCE: 7 (RBA hike expected, copper strong, USD weak)
+
+10. 6J (JAPANESE YEN) - Max Range: -10 to +10
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- BoJ stance (2): +1 × 2 = +2
+- Rate differential JPY-USD (2): +1 × 2 = +2 (BoJ hiking, Fed on hold)
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+TOTAL: +5
+SIGNAL: STRONG_BULLISH
+CONFIDENCE: 7 (BoJ hawkish, rate differential narrowing, USD weak)
+
+======================================
+ASSET CLASS BIAS AGGREGATION
+======================================
+
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BULLISH (+2)
+- SI: BULLISH (+3)
+- CL: BULLISH (+3)
+Majority: 2 out of 3 BULLISH or above → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: SLIGHT_BULLISH (+2)
+- NQ: SLIGHT_BULLISH (+2)
+- YM: BULLISH (+3)
+- RTY: BULLISH (+4)
+Result: 2 BULLISH, 2 SLIGHT_BULLISH → SLIGHT_BULLISH (not 3+ bullish for BULLISH classification)
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+1)
+- 6A: BULLISH (+4)
+- 6J: STRONG_BULLISH (+5)
+Majority: 3 out of 3 BULLISH or above → BULLISH
+
+======================================
+KEY DRIVERS (2-3 bullet points)
+======================================
+1. USD weakness benefiting commodities and FX, with DXY down over 10% year-over-year
+2. Central bank divergence: RBA and BoJ hiking while Fed on hold, supporting AUD and JPY
+3. Credit spreads narrowing and curve steepening supporting risk assets, especially small caps
+
