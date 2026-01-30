@@ -1,4 +1,4 @@
-'''# Executive Summary - 2026-01-29 19:37 EST
+# Executive Summary - 2026-01-29 19:37 EST
 
 ## Data Quality Notes
 All data sources were fresh and no fallbacks were used.
@@ -39,4 +39,3 @@ All data sources were fresh and no fallbacks were used.
 - Upcoming US CPI and PPI data for inflation trends.
 - Next FOMC meeting for any change in the Fed's dovish hold stance.
 - Further developments in geopolitical tensions.
-'''
