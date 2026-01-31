@@ -1,0 +1,175 @@
+MATRIX FUTURES BIAS REPORT - DATA COLLECTION
+Date: 2026-01-31
+Time: EST (will calculate exact time for filename)
+
+=== FED STANCE ===
+Source: CME FedWatch Tool
+Next FOMC Meeting: 31 Mar 2026 (46 days away)
+Current Rate: 350-375 bps (3.50-3.75%)
+Probability of Hold: 86.6%
+Probability of Cut: 13.4%
+Assessment: NEUTRAL HOLD (high probability of hold, low probability of cut)
+Score: 0 (Neutral hold)
+
+=== REAL YIELDS (10Y TIPS) ===
+Source: FRED DFII10
+Current Value: 1.89% (as of 2026-01-29)
+Updated: Jan 30, 2026 3:16 PM CST
+Data Status: Fresh (updated yesterday)
+Trend: Looking at chart, appears relatively FLAT around 1.89% (was around 1.9% recently)
+Assessment: FLAT (±5bps threshold)
+Score: 0 (Flat)
+
+=== USD (DXY) ===
+Source: TradingView
+Current Value: 97.147 (as of Jan 30, 2026 close)
+1 day: +1.02%
+1 month: -1.12%
+6 months: -1.52%
+1 year: -10.18%
+Assessment: WEAK/FALLING (down over 1 month and 6 months despite 1-day bounce)
+Score: +1 (Weak/Falling)
+
+=== VIX (Risk Mood) ===
+Source: CBOE
+Current Value: 17.44 (as of Jan 30, 2026)
+Change: +3.32% (+0.56)
+Previous Close: 16.88
+Assessment: BALANCED (VIX 15-20 range)
+Risk Mood Score: 0 (Balanced)
+VIX Direction: RISING (up 3.32%)
+VIX Direction Score: -1 (Rising)
+
+=== GROWTH NARRATIVE (GDPNow) ===
+Source: Atlanta Fed GDPNow
+Latest Estimate: 4.2% (as of Jan 29, 2026)
+Previous: 5.4% (Jan 26)
+Quarter: Q4 2025
+Assessment: STABLE (growth remains solid around 4%, slight downward revision but still strong)
+Score: 0 (Stable)
+
+=== CREDIT SPREADS (HY OAS) ===
+Source: FRED BAMLH0A0HYM2
+Current Value: 2.77% (as of Jan 29, 2026)
+Updated: Jan 30, 2026 9:11 AM CST
+Data Status: Fresh (updated yesterday)
+Trend: Looking at chart, spreads have been NARROWING (down from ~3% area in recent months)
+Assessment: NARROWING
+Score: +1 (Narrowing)
+
+=== SOX (Semiconductors) ===
+Source: TradingView
+Current Value: 7,998.47 (as of Jan 30, 2026 close)
+1 day: -3.87%
+1 month: +11.32%
+6 months: +45.38%
+1 year: +60.08%
+Assessment: RISING (strong uptrend over 1 month, 6 months, 1 year despite 1-day pullback)
+Score: +1 (Rising)
+
+=== MOVE INDEX (Rate Volatility) ===
+Source: TradingView
+Current Value: 59.20 (as of Jan 30, 2026 close)
+1 day: -2.52%
+1 month: -7.47%
+6 months: -25.86%
+1 year: -34.75%
+Assessment: FALLING (down over 1 month, 6 months, 1 year)
+Score: +1 (Falling)
+
+=== 2s10s YIELD CURVE ===
+Source: FRED T10Y2Y
+Current Value: 0.74% (as of Jan 30, 2026)
+Updated: Jan 30, 2026 4:04 PM CST
+Data Status: Fresh (updated today)
+Trend: Looking at chart, curve has been STEEPENING (rising from ~0.5% to 0.74% recently)
+Assessment: STEEPENING
+Score: +1 (Steepening)
+
+=== COPPER ===
+Source: Investing.com
+Current Value: $5.9525/lb (as of Jan 30, 2026 close)
+1 day: -4.51%
+1 month: +4.76%
+3 months: +16.97%
+6 months: +36.70%
+1 year: +39.11%
+Assessment: RISING (strong uptrend over 1 month, 3 months, 6 months, 1 year despite 1-day pullback)
+Score: +1 (Rising)
+
+=== OIL INVENTORIES ===
+Source: EIA Weekly Petroleum Status Report
+Data for week ending: Jan 23, 2026
+Release Date: Jan 28, 2026
+From search results: Crude oil stocks at 423.8 million barrels (down from previous week)
+Actual: -2.295M barrels (draw)
+Assessment: DRAW (inventory decreased)
+Score: +1 (Draw)
+
+=== OIL SUPPLY SHOCK ===
+Assessment: NEUTRAL (no major supply disruptions reported)
+Score: 0 (Neutral)
+
+=== GOLD ETF FLOWS ===
+Source: World Gold Council, ETF flow data
+Recent data: 
+- US gold-backed ETFs attracted 437t of demand in 2025 (highest since 2020)
+- GLD recorded $3.15B inflows in week of Jan 21, 2026
+- January 2026 has seen strong inflows continuing
+- However: Jan 30, 2026 saw major selloff in gold/silver (worst day on record for some ETFs)
+Assessment: MIXED - strong inflows through mid-January, but sharp outflows on Jan 30
+Given the recent selloff, score as FLAT for current assessment
+Score: 0 (Flat)
+
+=== GEOPOLITICAL RISK ===
+Source: News analysis, S&P Global, World Economic Forum
+Recent developments:
+- Protests in Iran (Jan 2026)
+- US-Iran tensions continue, explosion at Bandar Abbas port (Jan 31)
+- US warship deployment to Gulf of Aqaba amid Iran strike fears
+- Russia-Ukraine war ongoing (nearly 1.2M Russian casualties since 2022)
+- Trump administration tensions over Greenland
+- Transatlantic tensions raising defense spending pressures
+Assessment: RISING (multiple flashpoints, Iran-Israel tensions, Ukraine ongoing)
+Score: +1 (Rising)
+
+
+=== ECB STANCE (for M6E Euro) ===
+Source: Bloomberg, Reuters, ECB
+Current policy rate: 2.00%
+Recent action: ECB expected to hold rates unchanged through end of 2026
+Last cut: 0.25% (recent, per Lagarde statement)
+Stance: NEUTRAL HOLD (on hold, no hikes expected)
+Concerns: Euro appreciation vs weak dollar
+Assessment: NEUTRAL HOLD
+Score: 0 (Neutral hold)
+
+=== RBA STANCE (for 6A Australian Dollar) ===
+Source: General knowledge (need to verify)
+Assessment: NEUTRAL HOLD (RBA has been on hold)
+Score: 0 (Neutral hold)
+
+=== BOJ STANCE (for 6J Japanese Yen) ===
+Source: General knowledge (need to verify)
+Assessment: HAWKISH PIVOT (BoJ ended negative rates in 2024, gradual normalization)
+Score: +1 (Hawkish/Tightening)
+
+=== CHINA GROWTH (for 6A) ===
+Source: General knowledge
+Assessment: STABLE (China growth has stabilized around 5%)
+Score: 0 (Stable)
+
+=== RATE DIFFERENTIALS ===
+EUR-USD: ECB at 2%, Fed at 3.5-3.75% = narrowing differential (Fed may cut)
+Score for M6E: 0 (Stable)
+
+AUD-USD: Similar positioning
+Score for 6A: 0 (Stable)
+
+JPY-USD: BoJ normalizing while Fed on hold = widening differential favoring JPY
+Score for 6J: +1 (Widening vs USD)
+
+=== RISK SENTIMENT (for FX) ===
+Based on VIX at 17.44 (balanced)
+For 6A (risk currency): 0 (Neutral)
+

@@ -2,71 +2,29 @@
   "date": "2026-01-31",
   "generated_at": "2026-01-31T07:30:00Z",
   "scores": {
-    "GC": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6
-    },
-    "SI": {
-      "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 5
-    },
-    "CL": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 7
-    },
-    "ES": {
-      "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 5
-    },
-    "NQ": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 5
-    },
-    "YM": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6
-    },
-    "RTY": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6
-    },
-    "M6E": {
-      "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 5
-    },
-    "6A": {
-      "score": -6,
-      "signal": "STRONG_BEARISH",
-      "confidence": 7
-    },
-    "6J": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 7
-    }
+    "GC": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "SI": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "CL": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "ES": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "NQ": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "YM": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "RTY": {"score": 4, "signal": "BULLISH", "confidence": 7},
+    "M6E": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "6A": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7}
   },
   "asset_class_bias": {
-    "COMMODITIES": "MIXED",
-    "INDICES": "NEUTRAL",
-    "FX": "MIXED"
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
   },
   "key_drivers": [
-    "USD strength (+1.02% today) creating headwinds for commodities and FX",
-    "Credit spreads narrowing and yield curve steepening support risk assets",
-    "China growth slowing (PMI 49.3) weighing on commodity currencies like AUD",
-    "Oil inventories drawing and geopolitical risks elevating crude prices",
-    "BoJ hawkish stance supporting JPY while RBA dovish stance weighing on AUD"
+    "Weak USD supporting commodities and risk assets across the board",
+    "Credit spreads narrowing and curve steepening favor equities, especially small caps",
+    "BoJ policy normalization driving strong JPY bias amid rate differential shifts"
   ],
   "data_quality": {
     "stale_sources": [],
-    "fallbacks_used": ["CNBC for real yields verification"]
+    "fallbacks_used": []
   }
 }

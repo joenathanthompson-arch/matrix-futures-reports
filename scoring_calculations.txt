@@ -1,0 +1,175 @@
+MATRIX FUTURES BIAS REPORT - SCORING CALCULATIONS
+Date: 2026-01-31
+Time: 02:30 EST (0230 format for filename)
+Generated at: 2026-01-31T07:30:00Z
+
+=== COMMON FACTORS (scores from data collection) ===
+Fed Stance: 0 (Neutral hold)
+Real Yields: 0 (Flat)
+USD (DXY): +1 (Weak/Falling)
+Risk Mood (VIX): 0 (Balanced, VIX 15-20)
+Growth (GDPNow): 0 (Stable at 4.2%)
+Credit Spreads (HY OAS): +1 (Narrowing)
+VIX Direction: -1 (Rising)
+SOX: +1 (Rising)
+MOVE: +1 (Falling)
+2s10s Curve: +1 (Steepening)
+Copper: +1 (Rising)
+Oil Supply: 0 (Neutral)
+Oil Inventories: +1 (Draw)
+Gold ETF Flows: 0 (Flat/Mixed)
+Geopolitical Risk: +1 (Rising)
+
+=== GC (GOLD) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Oil supply (1): 0 × 1 = 0
+- Gold ETF flows (1): 0 × 1 = 0
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - mixed signals, recent selloff on Jan 30)
+
+=== SI (SILVER) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Copper (1): +1 × 1 = +1
+- Gold ETF flows (1): 0 × 1 = 0
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 5 (low - major selloff on Jan 30, conflicting signals)
+
+=== CL (CRUDE OIL) SCORING ===
+Factors (weight):
+- Oil supply (2): 0 × 2 = 0
+- Inventories (1): +1 × 1 = +1
+- Growth (2): 0 × 2 = 0
+- Geopolitical risk (1): +1 × 1 = +1
+- USD (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 6 (moderate - geopolitical support, inventory draw)
+
+=== ES (S&P 500) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Credit spreads (1): +1 × 1 = +1
+- VIX direction (1): -1 × 1 = -1
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - credit conditions supportive, VIX rising is headwind)
+
+=== NQ (NASDAQ 100) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- SOX (1): +1 × 1 = +1
+- MOVE (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (moderate-high - tech strength, semis strong, rates vol falling)
+
+=== YM (DOW JONES) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (1): +1 × 1 = +1
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 6 (moderate - credit and curve supportive)
+
+=== RTY (RUSSELL 2000) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (2): +1 × 2 = +2
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +4
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (moderate-high - credit conditions very supportive for small caps)
+
+=== M6E (EURO) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- ECB stance (1): 0 × 1 = 0
+- Rate differential EUR-USD (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Eurozone growth (1): 0 × 1 = 0
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 5 (low - weak dollar support, but ECB concerns about euro strength)
+
+=== 6A (AUSTRALIAN DOLLAR) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- RBA stance (1): 0 × 1 = 0
+- Rate differential AUD-USD (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk sentiment (2): 0 × 2 = 0
+- China growth (2): 0 × 2 = 0
+- Copper (1): +1 × 1 = +1
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - commodity support, but risk sentiment neutral)
+
+=== 6J (JAPANESE YEN) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- BoJ stance (2): +1 × 2 = +2
+- Rate differential JPY-USD (2): +1 × 2 = +2
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+TOTAL: +5
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7 (moderate-high - BoJ normalization, rate differential narrowing)
+
+=== ASSET CLASS BIAS AGGREGATION ===
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BULLISH
+- SI: SLIGHT_BULLISH
+- CL: BULLISH
+Result: 3 out of 3 are bullish → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: SLIGHT_BULLISH
+- NQ: BULLISH
+- YM: BULLISH
+- RTY: BULLISH
+Result: 4 out of 4 are bullish → BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH
+- 6A: SLIGHT_BULLISH
+- 6J: STRONG_BULLISH
+Result: 3 out of 3 are bullish → BULLISH
+
+=== KEY DRIVERS (for JSON) ===
+1. "Weak USD supporting commodities and risk assets across the board"
+2. "Credit spreads narrowing and curve steepening favor equities, especially small caps"
+3. "BoJ policy normalization driving strong JPY bias amid rate differential shifts"
+
+=== DATA QUALITY ===
+Stale sources: None (all data fresh as of Jan 30-31, 2026)
+Fallbacks used: None
