@@ -1,175 +1,200 @@
 MATRIX FUTURES BIAS REPORT - SCORING CALCULATIONS
-Date: 2026-01-31
-Time: 02:30 EST (0230 format for filename)
-Generated at: 2026-01-31T07:30:00Z
+Date: 2026-02-01
+Time: 17:30 EST (1730 format for filename)
+Generated at: 2026-02-01T22:30:00Z
 
 === COMMON FACTORS (scores from data collection) ===
-Fed Stance: 0 (Neutral hold)
-Real Yields: 0 (Flat)
-USD (DXY): +1 (Weak/Falling)
-Risk Mood (VIX): 0 (Balanced, VIX 15-20)
-Growth (GDPNow): 0 (Stable at 4.2%)
-Credit Spreads (HY OAS): +1 (Narrowing)
-VIX Direction: -1 (Rising)
-SOX: +1 (Rising)
-MOVE: +1 (Falling)
-2s10s Curve: +1 (Steepening)
-Copper: +1 (Rising)
+Fed Stance: +1 (Dovish hold, 98% probability of no change)
+Real Yields: 0 (Flat at 2.28%)
+USD (DXY): -1 (Rising to 97.147, +1.02%)
+Risk Mood (VIX): 0 (Balanced, VIX 17.43, in 15-20 range)
+VIX Direction: -1 (Rising +3.32%)
+Growth (GDPNow): +1 (Slowing from 5.4% to 4.2%)
+Credit Spreads (HY OAS): +1 (Narrowing to 2.77%)
+SOX: -1 (Falling -3.87% to 7,998.47)
+MOVE: +1 (Falling -2.52% to 59.20)
+2s10s Curve: +1 (Steepening to 0.74%)
+Copper: -1 (Falling -4.51% to $5.924/lb)
 Oil Supply: 0 (Neutral)
-Oil Inventories: +1 (Draw)
-Gold ETF Flows: 0 (Flat/Mixed)
-Geopolitical Risk: +1 (Rising)
+Oil Inventories: +1 (Draw of 2.3M barrels)
+Gold ETF Flows: +1 (Strong inflows, record holdings)
+Geopolitical Risk: +1 (Rising - Russia-Ukraine, US-China, Middle East)
+
+FX-SPECIFIC:
+ECB Stance: 0 (Neutral, concerned about euro strength)
+RBA Stance: +1 (Hawkish, expected to hike to 3.85%)
+BoJ Stance: +1 (Hawkish/Tightening, continuing to raise)
+China Growth: -1 (Slowing, PMI 49.3 in contraction)
+EUR-USD Rate Diff: +1 (Widening favors EUR)
+AUD-USD Rate Diff: +1 (Widening favors AUD)
+JPY-USD Rate Diff: +2 (Widening favors JPY)
 
 === GC (GOLD) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - Real yields (2): 0 × 2 = 0
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-- Growth (1): 0 × 1 = 0
+- Growth (1): +1 × 1 = +1
 - Oil supply (1): 0 × 1 = 0
-- Gold ETF flows (1): 0 × 1 = 0
-TOTAL: +1
+- Gold ETF flows (1): +1 × 1 = +1
+TOTAL: +2
 SIGNAL: SLIGHT_BULLISH (+1 to +2)
-CONFIDENCE: 6 (moderate - mixed signals, recent selloff on Jan 30)
+CONFIDENCE: 7 (good data quality, clear drivers)
+RATIONALE: Dovish Fed and slowing growth support gold, but rising USD is a headwind. Strong ETF inflows provide additional support.
 
 === SI (SILVER) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - Real yields (1): 0 × 1 = 0
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-- Growth (1): 0 × 1 = 0
-- Copper (1): +1 × 1 = +1
-- Gold ETF flows (1): 0 × 1 = 0
-TOTAL: +2
+- Growth (1): +1 × 1 = +1
+- Copper (1): -1 × 1 = -1
+- Gold ETF flows (1): +1 × 1 = +1
+TOTAL: +1
 SIGNAL: SLIGHT_BULLISH (+1 to +2)
-CONFIDENCE: 5 (low - major selloff on Jan 30, conflicting signals)
+CONFIDENCE: 6 (mixed signals from copper weakness)
+RATIONALE: Similar to gold but with industrial exposure. Copper weakness (-4.51%) is a concern for silver's industrial demand.
 
 === CL (CRUDE OIL) SCORING ===
 Factors (weight):
 - Oil supply (2): 0 × 2 = 0
 - Inventories (1): +1 × 1 = +1
-- Growth (2): 0 × 2 = 0
+- Growth (2): +1 × 2 = +2
 - Geopolitical risk (1): +1 × 1 = +1
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 TOTAL: +3
 SIGNAL: BULLISH (+3 to +4)
-CONFIDENCE: 6 (moderate - geopolitical support, inventory draw)
+CONFIDENCE: 7 (inventory draw and geopolitical support)
+RATIONALE: Inventory draw (2.3M barrels) and elevated geopolitical risk support oil. Rising USD is a headwind.
 
 === ES (S&P 500) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - Real yields (2): 0 × 2 = 0
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-- Growth (1): 0 × 1 = 0
+- Growth (1): +1 × 1 = +1
 - Credit spreads (1): +1 × 1 = +1
 - VIX direction (1): -1 × 1 = -1
 TOTAL: +1
 SIGNAL: SLIGHT_BULLISH (+1 to +2)
-CONFIDENCE: 6 (moderate - credit conditions supportive, VIX rising is headwind)
+CONFIDENCE: 6 (conflicting signals, VIX rising)
+RATIONALE: Dovish Fed and narrowing credit spreads support equities, but rising VIX (+3.32%) and USD are headwinds.
 
 === NQ (NASDAQ 100) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - Real yields (2): 0 × 2 = 0
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-- Growth (1): 0 × 1 = 0
-- SOX (1): +1 × 1 = +1
+- Growth (1): +1 × 1 = +1
+- SOX (1): -1 × 1 = -1
 - MOVE (1): +1 × 1 = +1
-TOTAL: +3
-SIGNAL: BULLISH (+3 to +4)
-CONFIDENCE: 7 (moderate-high - tech strength, semis strong, rates vol falling)
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (SOX weakness a concern for tech)
+RATIONALE: Dovish Fed and falling rate volatility support tech, but SOX weakness (-3.87%) is a concern for semiconductor-heavy NASDAQ.
 
 === YM (DOW JONES) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - Real yields (1): 0 × 1 = 0
-- USD (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-- Growth (2): 0 × 2 = 0
+- Growth (2): +1 × 2 = +2
 - Credit spreads (1): +1 × 1 = +1
-- 2s10s curve (1): +1 × 1 = +1
-TOTAL: +3
-SIGNAL: BULLISH (+3 to +4)
-CONFIDENCE: 6 (moderate - credit and curve supportive)
-
-=== RTY (RUSSELL 2000) SCORING ===
-Factors (weight):
-- Fed stance (1): 0 × 1 = 0
-- Real yields (1): 0 × 1 = 0
-- USD (1): +1 × 1 = +1
-- Risk mood (1): 0 × 1 = 0
-- Growth (2): 0 × 2 = 0
-- Credit spreads (2): +1 × 2 = +2
 - 2s10s curve (1): +1 × 1 = +1
 TOTAL: +4
 SIGNAL: BULLISH (+3 to +4)
-CONFIDENCE: 7 (moderate-high - credit conditions very supportive for small caps)
+CONFIDENCE: 7 (strong growth and credit signals)
+RATIONALE: Slowing growth narrative benefits value-oriented Dow. Narrowing credit spreads and steepening curve are strong positives.
+
+=== RTY (RUSSELL 2000) SCORING ===
+Factors (weight):
+- Fed stance (1): +1 × 1 = +1
+- Real yields (1): 0 × 1 = 0
+- USD (1): -1 × 1 = -1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): +1 × 2 = +2
+- Credit spreads (2): +1 × 2 = +2
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +5
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7 (credit spreads narrowing strongly supports small caps)
+RATIONALE: Small caps benefit most from narrowing credit spreads (2.77%) and steepening curve. Dovish Fed is highly supportive.
 
 === M6E (EURO) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - ECB stance (1): 0 × 1 = 0
-- Rate differential EUR-USD (2): 0 × 2 = 0
-- USD (1): +1 × 1 = +1
+- Rate differential (2): +1 × 2 = +2
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
 - Eurozone growth (1): 0 × 1 = 0
-TOTAL: +1
+TOTAL: +2
 SIGNAL: SLIGHT_BULLISH (+1 to +2)
-CONFIDENCE: 5 (low - weak dollar support, but ECB concerns about euro strength)
+CONFIDENCE: 6 (rate differential favors EUR)
+RATIONALE: Rate differential widening favors EUR, but rising DXY is a headwind. ECB concerned about euro strength.
 
 === 6A (AUSTRALIAN DOLLAR) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
-- RBA stance (1): 0 × 1 = 0
-- Rate differential AUD-USD (1): 0 × 1 = 0
-- USD (1): +1 × 1 = +1
+- Fed stance (1): +1 × 1 = +1
+- RBA stance (1): +1 × 1 = +1
+- Rate differential (1): +1 × 1 = +1
+- USD (1): -1 × 1 = -1
 - Risk sentiment (2): 0 × 2 = 0
-- China growth (2): 0 × 2 = 0
-- Copper (1): +1 × 1 = +1
-TOTAL: +2
-SIGNAL: SLIGHT_BULLISH (+1 to +2)
-CONFIDENCE: 6 (moderate - commodity support, but risk sentiment neutral)
+- China growth (2): -1 × 2 = -2
+- Copper (1): -1 × 1 = -1
+TOTAL: -1
+SIGNAL: NEUTRAL (-1 to +1)
+CONFIDENCE: 6 (China weakness offsets RBA hawkishness)
+RATIONALE: RBA hawkishness (+1) is offset by China PMI contraction (49.3) and copper weakness (-4.51%). Rising DXY is additional headwind.
 
 === 6J (JAPANESE YEN) SCORING ===
 Factors (weight):
-- Fed stance (1): 0 × 1 = 0
+- Fed stance (1): +1 × 1 = +1
 - BoJ stance (2): +1 × 2 = +2
-- Rate differential JPY-USD (2): +1 × 2 = +2
-- USD (1): +1 × 1 = +1
+- Rate differential (2): +2 × 2 = +4
+- USD (1): -1 × 1 = -1
 - Risk mood (1): 0 × 1 = 0
-TOTAL: +5
+TOTAL: +6
 SIGNAL: STRONG_BULLISH (≥+5)
-CONFIDENCE: 7 (moderate-high - BoJ normalization, rate differential narrowing)
+CONFIDENCE: 8 (strong rate differential and BoJ hawkishness)
+RATIONALE: BoJ continuing to raise rates while Fed holds dovish. Rate differential widening strongly favors JPY despite rising DXY.
 
 === ASSET CLASS BIAS AGGREGATION ===
 COMMODITIES (GC, SI, CL):
-- GC: SLIGHT_BULLISH
-- SI: SLIGHT_BULLISH
-- CL: BULLISH
+- GC: SLIGHT_BULLISH (+2)
+- SI: SLIGHT_BULLISH (+1)
+- CL: BULLISH (+3)
 Result: 3 out of 3 are bullish → BULLISH
 
 INDICES (ES, NQ, YM, RTY):
-- ES: SLIGHT_BULLISH
-- NQ: BULLISH
-- YM: BULLISH
-- RTY: BULLISH
+- ES: SLIGHT_BULLISH (+1)
+- NQ: SLIGHT_BULLISH (+1)
+- YM: BULLISH (+4)
+- RTY: STRONG_BULLISH (+5)
 Result: 4 out of 4 are bullish → BULLISH
 
 FX (M6E, 6A, 6J):
-- M6E: SLIGHT_BULLISH
-- 6A: SLIGHT_BULLISH
-- 6J: STRONG_BULLISH
-Result: 3 out of 3 are bullish → BULLISH
+- M6E: SLIGHT_BULLISH (+2)
+- 6A: NEUTRAL (-1)
+- 6J: STRONG_BULLISH (+6)
+Result: 2 out of 3 are bullish → BULLISH
 
 === KEY DRIVERS (for JSON) ===
-1. "Weak USD supporting commodities and risk assets across the board"
-2. "Credit spreads narrowing and curve steepening favor equities, especially small caps"
-3. "BoJ policy normalization driving strong JPY bias amid rate differential shifts"
+1. "Fed dovish hold and narrowing credit spreads support risk assets across the board"
+2. "Strong rate differentials favoring foreign currencies vs USD, especially JPY with BoJ tightening"
+3. "Growth slowing narrative (GDPNow 4.2% from 5.4%) benefits defensive positioning and value stocks"
 
 === DATA QUALITY ===
-Stale sources: None (all data fresh as of Jan 30-31, 2026)
-Fallbacks used: None
+Stale sources: None (all data current as of Jan 30-31, 2026)
+Fallbacks used: CNBC for real yields (FRED data 1 day old)
+
+=== SIGNAL DECAY CONSIDERATION ===
+High conviction scores (+8 to +10): None in this report
+Strong bullish scores (≥+5): RTY (+5), 6J (+6)
+- RTY signal valid for 1-2 weeks given credit spread dynamics
+- 6J signal valid for 2-4 weeks given central bank policy divergence

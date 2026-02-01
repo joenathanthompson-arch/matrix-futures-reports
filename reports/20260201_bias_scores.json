@@ -1,0 +1,78 @@
+{
+  "report_date": "2026-02-01",
+  "report_time_est": "17:30",
+  "generated_at_utc": "2026-02-01T22:30:00Z",
+  "author": "Manus AI",
+  "bias_scores": [
+    {
+      "instrument": "Gold",
+      "ticker": "GC",
+      "bias_signal": "SLIGHT_BULLISH",
+      "score": 2,
+      "confidence": 7
+    },
+    {
+      "instrument": "Silver",
+      "ticker": "SI",
+      "bias_signal": "SLIGHT_BULLISH",
+      "score": 1,
+      "confidence": 6
+    },
+    {
+      "instrument": "Crude Oil",
+      "ticker": "CL",
+      "bias_signal": "BULLISH",
+      "score": 3,
+      "confidence": 7
+    },
+    {
+      "instrument": "S&P 500",
+      "ticker": "ES",
+      "bias_signal": "SLIGHT_BULLISH",
+      "score": 1,
+      "confidence": 6
+    },
+    {
+      "instrument": "Nasdaq 100",
+      "ticker": "NQ",
+      "bias_signal": "SLIGHT_BULLISH",
+      "score": 1,
+      "confidence": 6
+    },
+    {
+      "instrument": "Dow Jones",
+      "ticker": "YM",
+      "bias_signal": "BULLISH",
+      "score": 4,
+      "confidence": 7
+    },
+    {
+      "instrument": "Russell 2000",
+      "ticker": "RTY",
+      "bias_signal": "STRONG_BULLISH",
+      "score": 5,
+      "confidence": 7
+    },
+    {
+      "instrument": "Euro",
+      "ticker": "M6E",
+      "bias_signal": "SLIGHT_BULLISH",
+      "score": 2,
+      "confidence": 6
+    },
+    {
+      "instrument": "Australian Dollar",
+      "ticker": "6A",
+      "bias_signal": "NEUTRAL",
+      "score": -1,
+      "confidence": 6
+    },
+    {
+      "instrument": "Japanese Yen",
+      "ticker": "6J",
+      "bias_signal": "STRONG_BULLISH",
+      "score": 6,
+      "confidence": 8
+    }
+  ]
+}

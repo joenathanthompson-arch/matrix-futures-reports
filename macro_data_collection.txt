@@ -1,0 +1,168 @@
+MACRO DATA COLLECTION - Feb 01, 2026
+=====================================
+
+1. FED STANCE (CME FedWatch)
+   - Current rate: 350-375 bps (3.50-3.75%)
+   - Next meeting (31 Mar 2026): 85.2% probability of hold at 350-375, 14.8% probability of cut to 325-350
+   - 1 week out: 84.6% hold
+   - 1 month out: 51.3% hold
+   - Assessment: DOVISH HOLD (market pricing in potential cuts ahead)
+   - Score: +1
+
+
+2. REAL YIELDS (10Y TIPS)
+   - FRED DFII10 (Jan 29): 1.89%
+   - CNBC US10YTIP (Feb 1, 5:05 PM EST): 1.901%
+   - Previous close: 1.901%
+   - Change: Flat (within ±5bps threshold)
+   - Assessment: FLAT
+   - Score: 0
+
+
+3. USD (DXY)
+   - Current: 97.147 (Jan 30, 21:59 GMT)
+   - Previous close: 96.162
+   - Change: +0.985 (+1.02%)
+   - 1 month: -1.12%
+   - 1 year: -10.18%
+   - Assessment: RISING (up +1.02% on the day, but down over longer term)
+   - Score: -1 (Strong/Rising)
+
+
+4. VIX (Risk Mood)
+   - Current: 17.44 (Jan 30, 2026)
+   - Previous close: 16.88
+   - Change: +3.32% (+0.56)
+   - Assessment: BALANCED (VIX 15-20 range)
+   - Risk Mood Score: 0
+   - VIX Direction: RISING (+3.32%)
+   - VIX Direction Score: -1
+
+
+5. GROWTH NARRATIVE (GDPNow)
+   - Latest estimate: 4.2% (Jan 29, 2026) for Q4 2025
+   - Previous estimate: 5.4% (Jan 26)
+   - Change: Down from 5.4% to 4.2%
+   - Assessment: SLOWING (forecast revised down)
+   - Score: +1 (Slowing = positive for gold, bonds)
+
+
+6. CREDIT SPREADS (HY OAS)
+   - Current: 2.77% (Jan 29, 2026)
+   - Updated: Jan 30, 2026 9:11 AM CST
+   - Trend: Narrowing (down from ~3% range in recent months)
+   - Assessment: NARROWING (credit conditions improving)
+   - Score: +1
+
+
+7. SOX (Semiconductors)
+   - Current: 7,998.47 (Jan 30, 21:00 GMT)
+   - Previous close: 8,320.39
+   - Change: -321.92 (-3.87%)
+   - 1 month: +11.32%
+   - 1 year: +60.08%
+   - Assessment: FALLING (down -3.87% on the day, but strong longer-term trend)
+   - Score: -1
+
+
+8. MOVE INDEX (Rate Volatility)
+   - Current: 59.20 (Jan 31, 01:04 GMT)
+   - Previous close: 60.73
+   - Change: -1.53 (-2.52%)
+   - 1 month: -7.47%
+   - 1 year: -34.75%
+   - Assessment: FALLING (rate volatility declining)
+   - Score: +1
+
+
+9. 2s10s YIELD CURVE
+   - Current: 0.74% (Jan 30, 2026)
+   - Trend: Steepening (up from ~0.5% range in recent months)
+   - Assessment: STEEPENING
+   - Score: +1
+
+10. COPPER
+   - Need to check Investing.com
+
+11. OIL INVENTORIES & SUPPLY
+   - Need to check EIA Weekly
+
+12. GOLD ETF FLOWS
+   - Need to check World Gold Council or Bloomberg
+
+13. GEOPOLITICAL RISK
+   - Need to assess from news
+
+14. FX CENTRAL BANKS
+   - ECB stance (for M6E)
+   - RBA stance (for 6A)
+   - BoJ stance (for 6J)
+   - China growth (for 6A)
+
+
+10. COPPER (UPDATED)
+   - Current: $5.924/lb (Jan 30, 2026)
+   - Change: -0.2795 (-4.51%)
+   - 1 month: +2.92%
+   - 1 year: +38.44%
+   - Assessment: FALLING (down -4.51% on the day, but strong longer-term trend)
+   - Score: -1
+
+
+11. OIL INVENTORIES & SUPPLY (UPDATED - EIA Week ending Jan 23, 2026)
+   - U.S. commercial crude oil inventories: DECREASED by 2.3 million barrels
+   - Assessment: DRAW (inventory decline = bullish for oil)
+   - Inventories Score: +1
+   - Supply shock assessment: NEUTRAL (no major disruptions mentioned)
+   - Supply Shock Score: 0
+
+
+12. GOLD ETF FLOWS (UPDATED)
+   - World Gold Council: 2025 saw record ETF inflows (801t, second strongest year on record)
+   - US-listed ETFs added 437t, pushing holdings to record 2,019t ($280bn AUM) as of Jan 29, 2026
+   - Recent week (ending Jan 30): Net outflows of $0.62B
+   - Assessment: INFLOWS (strong longer-term trend, recent weekly outflow)
+   - Score: +1 (overall trend is positive)
+
+13. GEOPOLITICAL RISK (UPDATED)
+   - Russia-Ukraine war ongoing
+   - US-China tensions heightened
+   - Middle East tensions entrenched
+   - Fitch Ratings: "Geopolitical risks could have ramifications for emerging markets" (Jan 29, 2026)
+   - Assessment: RISING
+   - Score: +1
+
+
+14. FX CENTRAL BANKS & FACTORS (UPDATED)
+
+ECB STANCE (for M6E):
+- ECB policymakers flagged concerns over euro's quick appreciation vs dollar (Jan 28, 2026)
+- Euro strengthening could lower inflation forecasts
+- Assessment: NEUTRAL (no rate change signaled, but concerned about euro strength)
+- Score: 0
+
+RBA STANCE (for 6A):
+- RBA expected to HIKE rates in February 2026 to 3.85% (from current level)
+- Stronger-than-forecast underlying inflation
+- Assessment: HAWKISH (rate hike expected)
+- Score: +1
+
+BOJ STANCE (for 6J):
+- BoJ considering mounting inflationary pressures from weak yen and labor shortages
+- Continuing to raise rates (Jan 2026 outlook)
+- US Treasury removed call for BoJ to raise rates (Jan 30)
+- Assessment: HAWKISH/TIGHTENING
+- Score: +1
+
+CHINA GROWTH (for 6A):
+- China January PMI: 49.3 (down from 50.1 in December) - CONTRACTION
+- Non-manufacturing PMI: 49.4 (down 0.8pp)
+- Forecast: GDP growth to slow to 4.5% in 2026 from 5% in 2025
+- Assessment: SLOWING
+- Score: -1
+
+RATE DIFFERENTIALS:
+- EUR-USD: ECB neutral, Fed dovish hold = narrowing spread favors EUR
+- AUD-USD: RBA hawkish, Fed dovish = widening spread favors AUD
+- JPY-USD: BoJ hawkish, Fed dovish = widening spread favors JPY
+

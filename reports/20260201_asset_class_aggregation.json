@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-02-01",
+  "report_time_est": "17:30",
+  "asset_class_aggregation": [
+    {
+      "asset_class": "Commodities",
+      "bias": "BULLISH",
+      "rationale": "Inventory draws in crude oil and strong gold ETF inflows are supportive, though a stronger dollar and falling copper prices present headwinds."
+    },
+    {
+      "asset_class": "Indices",
+      "bias": "BULLISH",
+      "rationale": "Dovish Fed policy and supportive credit conditions are the primary drivers. Small caps (RTY) show the strongest bullish signal due to high sensitivity to credit."
+    },
+    {
+      "asset_class": "FX",
+      "bias": "BULLISH",
+      "rationale": "Policy divergence is the key theme, with the hawkish stances of the RBA and BoJ creating strong bullish signals against the dovish Fed, despite broad USD strength."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-02-01",
+  "report_time_est": "17:30",
+  "key_drivers": [
+    {
+      "driver_id": 1,
+      "description": "Fed dovish hold and narrowing credit spreads support risk assets across the board",
+      "impacted_assets": ["ES", "NQ", "YM", "RTY", "GC", "SI"]
+    },
+    {
+      "driver_id": 2,
+      "description": "Strong rate differentials favoring foreign currencies vs USD, especially JPY with BoJ tightening",
+      "impacted_assets": ["M6E", "6A", "6J"]
+    },
+    {
+      "driver_id": 3,
+      "description": "Growth slowing narrative (GDPNow 4.2% from 5.4%) benefits defensive positioning and value stocks",
+      "impacted_assets": ["YM", "GC"]
+    }
+  ]
+}
