@@ -1,0 +1,48 @@
+# Matrix Futures Daily Bias Report - 2026-02-01
+
+## Overview
+
+This report provides a quantitative daily bias for 10 key futures instruments across commodities, equity indices, and foreign exchange. The bias is derived from a weighted model of real-time macroeconomic factors, designed to provide a directional signal for the upcoming trading session.
+
+## Key Drivers & Market Narrative
+
+The current market landscape is characterized by three primary themes:
+
+1.  **Narrowing Credit Spreads:** High-yield credit spreads continue to tighten, signaling reduced risk aversion and providing a supportive backdrop for risk assets, particularly small-cap equities which are more sensitive to credit conditions.
+
+2.  **Slowing but Positive Growth:** While the growth narrative is showing signs of deceleration, it remains in positive territory. This environment tends to benefit defensive assets and commodities like gold, which can hold their value during periods of economic uncertainty.
+
+3.  **Strong US Dollar:** The US Dollar Index (DXY) is exhibiting strength, which is creating headwinds for foreign currencies and dollar-denominated commodities. The impact on equities is mixed, as a strong dollar can negatively affect multinational corporations with significant foreign earnings.
+
+## Asset Class Bias Aggregation
+
+| Asset Class | Bias | Rationale |
+| :--- | :--- | :--- |
+| **Commodities** | MIXED | The outlook for commodities is mixed. Crude oil shows a bullish bias due to a clear inventory draw and geopolitical risk premium. Gold is slightly bullish, supported by a slowing growth narrative and safe-haven demand. However, silver is neutral, caught between its precious metal and industrial characteristics, with the latter being weighed down by a falling copper price. |
+| **Indices** | MIXED | The equity index space is also presenting a mixed picture. The Dow Jones and Russell 2000 are bullish, benefiting from the narrowing credit spreads and a still-positive growth outlook. Conversely, the S&P 500 and Nasdaq 100 are neutral, with the tech-heavy Nasdaq being particularly affected by weakness in the semiconductor sector (SOX). |
+| **FX** | NEUTRAL | The foreign exchange market is broadly neutral. The Australian Dollar is the only currency with a slight bearish bias, driven by slowing growth in China and declining commodity prices, which is offsetting the hawkish stance of the Reserve Bank of Australia. The Euro and Japanese Yen are neutral, with their direction being primarily influenced by the strength of the US Dollar. |
+
+## Instrument-Level Bias Matrix
+
+| Instrument | Symbol | Bias | Score | Confidence | Key Drivers |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Gold | GC | SLIGHT_BULLISH | +1 | 6/10 | Growth narrative, Gold ETF inflows, Geopolitical risk |
+| Silver | SI | NEUTRAL | 0 | 5/10 | Conflicting signals from gold and copper |
+| WTI Crude | CL | BULLISH | +3 | 7/10 | Inventory draw, Geopolitical risk, Growth narrative |
+| S&P 500 | ES | NEUTRAL | 0 | 6/10 | Mixed signals from VIX and credit spreads |
+| Nasdaq 100 | NQ | NEUTRAL | 0 | 5/10 | SOX weakness offset by falling rate volatility |
+| Dow Jones | YM | BULLISH | +3 | 7/10 | Growth narrative, Credit spreads, 2s10s curve steepening |
+| Russell 2000 | RTY | BULLISH | +4 | 7/10 | Credit spreads, Growth narrative |
+| Euro | M6E | NEUTRAL | -1 | 6/10 | DXY strength, Stable rate differentials |
+| Australian Dollar | 6A | SLIGHT_BEARISH | -2 | 7/10 | China growth, Copper prices, RBA hawkishness |
+| Japanese Yen | 6J | NEUTRAL | -1 | 6/10 | DXY strength, Safe-haven flows |
+
+## Data Quality & Confidence Notes
+
+- **Confidence Score:** The confidence score reflects the quality and timeliness of the data used in the model. Several data points, including real yields and credit spreads, were 1-2 days old, which slightly reduces the confidence in the overall signal.
+- **Gold ETF Volatility:** Gold's confidence score was specifically impacted by recent volatility in ETF flows, with a sharp selloff on January 30th following a period of strong inflows.
+- **Signal Decay:** High-conviction signals (scores of +5 or higher) are expected to have a shorter time horizon, with the underlying catalyst likely to play out within a few trading sessions. The current report does not contain any high-conviction signals.
+
+## Disclaimer
+
+This report is for informational purposes only and does not constitute financial advice. The model and its outputs are based on historical data and statistical analysis, and future performance is not guaranteed. All trading decisions should be made with careful consideration of your own risk tolerance and financial situation.

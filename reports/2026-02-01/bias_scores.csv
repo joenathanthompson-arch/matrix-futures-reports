@@ -1,0 +1,11 @@
+Instrument,Symbol,Bias,Score,Confidence,Key Drivers
+Gold,GC,SLIGHT_BULLISH,+1,6/10,"Growth narrative, Gold ETF inflows, Geopolitical risk"
+Silver,SI,NEUTRAL,0,5/10,Conflicting signals from gold and copper
+WTI Crude,CL,BULLISH,+3,7/10,"Inventory draw, Geopolitical risk, Growth narrative"
+S&P 500,ES,NEUTRAL,0,6/10,Mixed signals from VIX and credit spreads
+Nasdaq 100,NQ,NEUTRAL,0,5/10,SOX weakness offset by falling rate volatility
+Dow Jones,YM,BULLISH,+3,7/10,"Growth narrative, Credit spreads, 2s10s curve steepening"
+Russell 2000,RTY,BULLISH,+4,7/10,"Credit spreads, Growth narrative"
+Euro,M6E,NEUTRAL,-1,6/10,"DXY strength, Stable rate differentials"
+Australian Dollar,6A,SLIGHT_BEARISH,-2,7/10,"China growth, Copper prices, RBA hawkishness"
+Japanese Yen,6J,NEUTRAL,-1,6/10,"DXY strength, Safe-haven flows"
