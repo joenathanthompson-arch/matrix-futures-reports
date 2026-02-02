@@ -1,41 +1,40 @@
-# Executive Summary - 2026-02-01
+# Executive Summary - 2026-02-02 02:30 EST
 
 ## Data Quality Notes
-- Fallback source (CNBC) was used for real-time 10-year TIPS yield as FRED data was stale.
+- All data sources were fresh and accessible. Oil inventories data is 10 days old, which is slightly stale but acceptable for weekly data.
 
 ## Asset Class Overview
-- **Commodities:** BULLISH - Broad strength led by a strong bullish signal in Gold, supported by falling real yields.
-- **Indices:** BULLISH - All four major US indices show a bullish bias, with the Nasdaq 100 leading the way on the back of falling real yields and strong semiconductor performance.
-- **FX:** BEARISH - The US Dollar is showing strength against the major currency pairs, with the Euro, Aussie Dollar, and Yen all showing neutral or bearish signals.
+- **Commodities:** MIXED - Gold is slightly bullish, crude is bullish, but silver is neutral with conflicting signals.
+- **Indices:** BULLISH - All four indices are showing bullish or strong bullish signals, led by the Russell 2000.
+- **FX:** NEUTRAL - The Yen is bullish, but the Euro and Aussie dollar are neutral, resulting in a mixed picture.
 
 ## Symbol Analysis
 
-**GC (Gold):** BULLISH (+4) - Gold shows a bullish bias, primarily driven by significantly falling real yields (+4 weighted score) and continued ETF inflows (+1). A rising US dollar (-1) provides a headwind, but the overall picture remains supportive. Recommended approach: IB_BREAKOUT (7/10).
+**GC (Gold):** Gold shows a slight bullish bias (+2), supported by a slowing growth narrative and continued ETF inflows. However, with flat real yields and a flat dollar, there are no strong catalysts. Recommended approach: RANGE_TRADE (6/10).
 
-**SI (Silver):** BULLISH (+3) - Silver has a bullish bias, benefiting from the same tailwinds as gold, including falling real yields (+2) and a weaker growth narrative (+1). Rising copper prices (+1) also provide support. Recommended approach: MEAN_REVERSION (7/10).
+**SI (Silver):** Silver is neutral (0), caught between bullish factors for precious metals and bearish factors for industrial metals. The falling price of copper is a significant headwind. Recommended approach: AVOID (5/10).
 
-**CL (Crude):** SLIGHT_BULLISH (+1) - Crude oil has a slight bullish bias. A draw in inventories (+1) and rising geopolitical risk (+1) are supportive, but a strengthening USD (-1) and stable growth narrative (0) are limiting factors. Recommended approach: RANGE (6/10).
+**CL (Crude Oil):** Crude oil has a bullish bias (+4), driven by a draw in inventories, rising geopolitical risk, and a slowing growth narrative that is not yet signaling demand destruction. Recommended approach: IB_BREAKOUT (6/10).
 
-**ES (S&P 500):** BULLISH (+3) - The S&P 500 shows a bullish bias, driven by falling real yields (+4 weighted score) and narrowing credit spreads (+1). A rising VIX (-1) and strengthening USD (-1) are minor headwinds. Recommended approach: IB_BREAKOUT (7/10).
+**ES (S&P 500):** The S&P 500 shows a slight bullish bias (+2), with narrowing credit spreads providing support. However, the overall picture is muted with many factors remaining neutral. Recommended approach: MEAN_REVERSION (6/10).
 
-**NQ (Nasdaq):** STRONG_BULLISH (+5) - The Nasdaq 100 has a strong bullish bias, as it is the most sensitive to falling real yields (+4 weighted score). Strong performance in the semiconductor sector (SOX) (+1) and falling rate volatility (MOVE) (+1) are also key drivers. Recommended approach: IB_BREAKOUT (8/10).
+**NQ (Nasdaq 100):** The Nasdaq 100 has a slight bullish bias (+1), but with low conviction. While falling rate volatility is a positive, the decline in the semiconductor index (SOX) is a major headwind for the tech-heavy index. Recommended approach: MEAN_REVERSION (5/10).
 
-**YM (Dow):** BULLISH (+3) - The Dow Jones shows a bullish bias, supported by falling real yields (+2), narrowing credit spreads (+1), and a steepening yield curve (+1). The stable growth narrative (0) is a neutral factor. Recommended approach: MEAN_REVERSION (7/10).
+**YM (Dow Jones):** The Dow Jones has a bullish bias (+4), benefiting from a slowing growth narrative that favors its defensive-value orientation. A steepening yield curve and narrowing credit spreads are also supportive. Recommended approach: IB_BREAKOUT (6/10).
 
-**RTY (Russell 2000):** BULLISH (+4) - The Russell 2000 has a bullish bias, benefiting from narrowing credit spreads (+2 weighted score) and a steepening yield curve (+1). The stable growth narrative (0) is also supportive for small caps. Recommended approach: IB_BREAKOUT (7/10).
+**RTY (Russell 2000):** The Russell 2000 shows a strong bullish bias (+5), as small caps are the primary beneficiaries of narrowing credit spreads. A steepening yield curve also provides a strong tailwind. Recommended approach: IB_BREAKOUT (7/10).
 
-**M6E (Euro):** NEUTRAL (-1) - The Euro is neutral with a slight bearish tilt. A strengthening USD (-1) is the primary driver. The ECB's neutral stance (0) and stable Eurozone growth (0) are not providing any clear direction. Recommended approach: RANGE (6/10).
+**M6E (Euro):** The Euro is neutral (0), with no clear directional signals. The ECB has expressed concern about the Euro's strength, which is acting as a headwind. Recommended approach: AVOID (5/10).
 
-**6A (Australian Dollar):** NEUTRAL (0) - The Australian Dollar is neutral. A hawkish RBA (+1) and widening rate differentials (+1) are supportive, but slowing growth in China (-2 weighted score) and a stronger USD (-1) are significant headwinds. Recommended approach: RANGE (5/10).
+**6A (Australian Dollar):** The Australian Dollar is neutral (-1), with a hawkish RBA offset by a slowing Chinese economy and falling copper prices. Recommended approach: AVOID (5/10).
 
-**6J (Japanese Yen):** NEUTRAL (-1) - The Japanese Yen is neutral with a slight bearish tilt. A strengthening USD (-1) is the main driver, with the BoJ's neutral stance (0) and stable rate differentials (0) offering no counter-pressure. Recommended approach: RANGE (6/10).
+**6J (Japanese Yen):** The Japanese Yen has a bullish bias (+4), driven by a hawkish Bank of Japan and a widening rate differential against the US dollar. Recommended approach: IB_BREAKOUT (7/10).
 
 ## Key Macro Themes
-- **Falling Real Yields:** The drop in real yields is a major tailwind for gold and long-duration assets like tech stocks.
-- **USD Strength:** The US Dollar is showing broad strength, which is a headwind for commodities and foreign currencies.
-- **Mixed Growth Signals:** While US growth remains stable, China's economy is showing signs of slowing, creating a mixed picture for global growth.
+- Credit spreads are narrowing, which is a positive signal for risk assets, particularly small-cap stocks.
+- The economic growth narrative is one of slowing, but not collapsing, which is keeping the "soft landing" scenario in play.
+- Central bank policies are diverging, with the Bank of Japan and Reserve Bank of Australia turning more hawkish, while the Federal Reserve remains on hold. This is creating opportunities in FX markets.
 
 ## Watch List
-- **RBA Meeting (Feb 3):** The market is pricing in a 25bps hike, but any deviation could cause volatility in the AUD.
-- **EIA Weekly Report (Feb 4):** Continued draws in oil inventories could provide a further boost to crude prices.
-- **US CPI/NFP:** Upcoming inflation and jobs data will be critical for the Fed's next move.
+- Upcoming inflation data (CPI, PCE) will be critical for the Fed's next move.
+- Geopolitical developments, particularly in the Middle East and Ukraine, could impact oil prices and risk sentiment.
