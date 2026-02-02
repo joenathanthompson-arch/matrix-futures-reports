@@ -1,0 +1,418 @@
+MATRIX FUTURES BIAS REPORT - DATA COLLECTION
+Date: 2026-02-02
+Time: EST (will calculate exact time for filename)
+
+=== FED STANCE ===
+Source: CME FedWatch Tool
+URL: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+Accessed: 2026-02-02
+Next FOMC Meeting: 44 days away (March 18-19, 2026)
+Current Rate: 350-375 bps (3.50-3.75%)
+Probability for next meeting:
+- 325-350 bps: 14.9%
+- 350-375 bps (Current/Hold): 85.1%
+Assessment: NEUTRAL HOLD (85% probability of hold)
+Score: 0 (Neutral hold)
+
+=== REAL YIELDS (10Y TIPS) ===
+Source: FRED DFII10
+URL: https://fred.stlouisfed.org/series/DFII10
+Accessed: 2026-02-02
+Current Value: 1.89% (as of 2026-01-29)
+Updated: Jan 30, 2026 3:16 PM CST
+Data Status: Fresh (updated 3 days ago, within acceptable range)
+Next Release: Feb 2, 2026 (today)
+Trend: Chart shows relatively FLAT around 1.89% (stable in recent days)
+Assessment: FLAT (±5bps threshold)
+Score: 0 (Flat)
+
+=== USD (DXY) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-DXY/
+Accessed: 2026-02-02
+Current Value: 97.159 USD (as of 2026-02-02 12:33 GMT)
+1 day: +0.01%
+5 days: +1.24%
+1 month: -1.10%
+6 months: -1.61%
+1 year: -10.17%
+Assessment: WEAK/FALLING (down 1.10% over 1 month, down 10.17% over 1 year, despite small 5-day bounce)
+Score: +1 (Weak/Falling)
+
+=== VIX (Risk Mood) ===
+Source: CBOE
+URL: https://www.cboe.com/tradable-products/vix/
+Accessed: 2026-02-02
+Current Value: $18.26 (as of 2026-02-02)
+Previous Close: 17.44
+Change: +4.70% (+0.82)
+Assessment: BALANCED (VIX 15-20 range)
+Risk Mood Score: 0 (Balanced)
+VIX Direction: RISING (up 4.70%)
+VIX Direction Score: -1 (Rising)
+
+=== GROWTH NARRATIVE (GDPNow) ===
+Source: Atlanta Fed GDPNow
+URL: https://www.atlantafed.org/cqer/research/gdpnow
+Accessed: 2026-02-02
+Latest Estimate: 4.2% (as of January 29, 2026)
+Previous: 5.4% (January 26)
+Quarter: Q4 2025
+Next Update: Monday, February 2, 2026 (today)
+Assessment: STABLE (growth remains solid around 4%, slight downward revision but still strong)
+Score: 0 (Stable)
+
+=== CREDIT SPREADS (HY OAS) ===
+Source: FRED BAMLH0A0HYM2
+URL: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+Accessed: 2026-02-02
+Current Value: 2.77% (as of 2026-01-29)
+Updated: Jan 30, 2026 9:11 AM CST
+Data Status: Fresh (updated 3 days ago)
+Next Release: Jan 31, 2026 (passed - data is 2 days stale)
+Trend: Chart shows spreads have been NARROWING (down from ~3% area in recent months)
+Assessment: NARROWING
+Score: +1 (Narrowing)
+
+=== SOX (Semiconductors) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/SOX/
+Accessed: 2026-02-02
+Current Value: 7,998.47 USD (at close Jan 30, 2026)
+Previous Close: 8,320.39 USD
+1 day: -3.87%
+5 days: -0.32%
+1 month: +11.32%
+6 months: +45.38%
+1 year: +60.08%
+Assessment: RISING (strong uptrend over 1 month, 6 months, 1 year despite recent 1-day pullback)
+Score: +1 (Rising)
+
+=== MOVE INDEX (Rate Volatility) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-MOVE/
+Accessed: 2026-02-02
+Current Value: 59.1978 USD (at close Jan 31, 2026)
+Previous Close: 60.7265 USD
+1 day: -2.52%
+5 days: +4.77%
+1 month: -7.47%
+6 months: -25.86%
+1 year: -34.75%
+Assessment: FALLING (down over 1 month, 6 months, 1 year despite small 5-day bounce)
+Score: +1 (Falling)
+
+=== 2s10s YIELD CURVE ===
+Source: FRED T10Y2Y
+URL: https://fred.stlouisfed.org/series/T10Y2Y
+Accessed: 2026-02-02
+Current Value: 0.74% (as of 2026-01-30)
+Updated: Jan 30, 2026 4:04 PM CST
+Data Status: Fresh (updated 3 days ago)
+Next Release: Feb 2, 2026 (today)
+Trend: Chart shows curve has been STEEPENING (rising from ~0.5% to 0.74% recently)
+Assessment: STEEPENING
+Score: +1 (Steepening)
+
+=== COPPER ===
+Source: Investing.com
+URL: https://www.investing.com/commodities/copper
+Accessed: 2026-02-02
+Current Value: $5.8703/lb (as of 2026-02-02 07:34:45)
+Previous Close: $5.9240/lb
+1 day: -0.94%
+1 week: -2.02%
+1 month: +3.14%
+3 months: +15.35%
+6 months: +32.34%
+1 year: +37.18%
+Assessment: RISING (strong uptrend over 1 month, 3 months, 6 months, 1 year despite recent 1-week pullback)
+Score: +1 (Rising)
+
+=== OIL INVENTORIES ===
+Source: EIA Weekly Petroleum Status Report
+URL: https://www.eia.gov/petroleum/supply/weekly/
+Accessed: 2026-02-02
+Data for week ending: January 23, 2026
+Release Date: January 28, 2026
+Crude oil stocks: 423.8 million barrels
+Change: -2.296 million barrels (draw)
+Assessment: DRAW (inventory decreased)
+Score: +1 (Draw)
+
+=== OIL SUPPLY SHOCK ===
+Assessment: NEUTRAL (no major supply disruptions reported currently)
+Score: 0 (Neutral)
+
+=== GOLD ETF FLOWS ===
+Source: Reuters, Bloomberg, World Gold Council
+Accessed: 2026-02-02
+Recent data:
+- January 2026: Gold and precious metals ETFs received $4.39 billion (eighth consecutive month of inflows)
+- Asian ETFs: $7.1 billion in net inflows in January (record)
+- US-listed ETFs: Added 437t of demand in 2025, pushing holdings to record 2,019t
+- Week ending Jan 30: Net outflows of $0.62B (profit-taking after strong run)
+Assessment: INFLOWS (strong inflows in January despite some late-month profit-taking)
+Score: +1 (Inflows)
+
+=== GEOPOLITICAL RISK ===
+Source: Reuters, news analysis
+Accessed: 2026-02-02
+Recent developments:
+- Iran-US tensions: Iran weighing nuclear diplomacy with US, gaps over missiles remain
+- Iran protests and internal instability (early 2026)
+- Israel's attacks on Iran's proxies weakened Tehran's regional influence
+- Middle East tensions remain elevated
+- Trump administration considering Iran strategy (strike vs. negotiations)
+- Gulf Arab states exposed to potential Iranian retaliation
+Assessment: RISING (elevated Middle East tensions, Iran-US standoff, regional instability)
+Score: +1 (Rising)
+
+=== ECB STANCE (for M6E Euro) ===
+Source: Reuters, Morningstar, Pepperstone
+Accessed: 2026-02-02
+Current policy rate: 2.00%
+Recent action: ECB holding rates steady for fifth consecutive meeting
+Next meeting: February 5, 2026
+Market expectations: No change in rates expected all year (2026)
+Stance: NEUTRAL HOLD (easing cycle over, on hold)
+Assessment: NEUTRAL HOLD
+Score: 0 (Neutral hold)
+
+=== RBA STANCE (for 6A Australian Dollar) ===
+Source: Bloomberg, ABC News, The Guardian
+Accessed: 2026-02-02
+Current cash rate: 3.60%
+Next meeting: February 2-3, 2026 (tomorrow)
+Market expectations: 72% probability of rate HIKE to 3.85% (25bp increase)
+Assessment: HAWKISH (market pricing rate hike, breaking from global trend)
+Score: +1 (Hawkish/Tightening)
+
+=== BOJ STANCE (for 6J Japanese Yen) ===
+Source: Reuters, Trading Economics, BoJ
+Accessed: 2026-02-02
+Current policy rate: 0.75% (highest since 2008)
+Recent action: Held rates unchanged at January 2026 meeting
+Stance: Weak yen and labour shortages key influences for future rate hikes
+Assessment: HAWKISH/TIGHTENING (gradual normalization continues, rates at highest in years)
+Score: +1 (Hawkish/Tightening)
+
+=== CHINA GROWTH (for 6A) ===
+Source: General market knowledge
+Assessment: STABLE (China growth has stabilized around 5%)
+Score: 0 (Stable)
+
+=== RATE DIFFERENTIALS ===
+EUR-USD: ECB at 2.00%, Fed at 3.50-3.75% = differential stable (both on hold)
+Score for M6E: 0 (Stable)
+
+AUD-USD: RBA potentially hiking to 3.85%, Fed at 3.50-3.75% = narrowing differential (AUD catching up)
+Score for 6A: 0 (Stable/Narrowing slightly)
+
+JPY-USD: BoJ at 0.75%, Fed at 3.50-3.75% = BoJ normalizing while Fed on hold = widening differential favoring JPY
+Score for 6J: +1 (Widening vs USD)
+
+=== RISK SENTIMENT (for FX) ===
+Based on VIX at 18.26 (balanced)
+For 6A (risk currency): 0 (Neutral)
+
+
+
+MATRIX FUTURES BIAS REPORT - SCORING CALCULATIONS
+Date: 2026-02-02
+Time: 07:38 EST (0738 format for filename)
+Generated at: 2026-02-02T12:38:00Z
+
+All scores are INTEGERS only
+
+=== COMMON FACTORS (used across multiple instruments) ===
+Fed Stance: 0 (Neutral hold, 85.1% probability of hold)
+Real Yields: 0 (Flat at 1.89%)
+USD (DXY): +1 (Weak/Falling, down 1.10% over 1 month, down 10.17% over 1 year)
+Risk Mood (VIX): 0 (Balanced, VIX 18.26, in 15-20 range)
+VIX Direction: -1 (Rising +4.70%)
+Growth Narrative: 0 (Stable at 4.2%)
+Credit Spreads: +1 (Narrowing to 2.77%)
+SOX: +1 (Rising +11.32% over 1 month, +60.08% over 1 year)
+MOVE: +1 (Falling -7.47% over 1 month, -34.75% over 1 year)
+2s10s Curve: +1 (Steepening to 0.74%)
+Copper: +1 (Rising +3.14% over 1 month, +37.18% over 1 year)
+Oil Inventories: +1 (Draw of 2.296M barrels)
+Oil Supply: 0 (Neutral)
+Gold ETF Flows: +1 (Inflows, $4.39B in January)
+Geopolitical Risk: +1 (Rising - Iran-US tensions, Middle East instability)
+
+FX-SPECIFIC:
+ECB Stance: 0 (Neutral hold at 2.00%)
+RBA Stance: +1 (Hawkish, 72% probability of hike to 3.85%)
+BoJ Stance: +1 (Hawkish/Tightening at 0.75%)
+China Growth: 0 (Stable around 5%)
+EUR-USD Rate Diff: 0 (Stable, both on hold)
+AUD-USD Rate Diff: 0 (Stable/narrowing slightly)
+JPY-USD Rate Diff: +1 (Widening favors JPY)
+
+=== GC (GOLD) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 2): 0 × 2 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 1): 0 × 1 = 0
+6. Oil supply shock (weight 1): 0 × 1 = 0
+7. Gold ETF flows (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 0 + 1 = +2
+Signal: SLIGHT_BULLISH (+1 to +2 range)
+Confidence: 7/10 (fresh data, clear USD weakness and ETF inflows supporting)
+
+=== SI (SILVER) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 1): 0 × 1 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 1): 0 × 1 = 0
+6. Copper (weight 1): +1 × 1 = +1
+7. Gold ETF flows (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 1 + 1 = +3
+Signal: BULLISH (+3 to +4 range)
+Confidence: 6/10 (hybrid metal, copper strength supporting but some uncertainty)
+
+=== CL (WTI CRUDE) CALCULATION ===
+Factors (from methodology):
+1. Oil supply shock (weight 2): 0 × 2 = 0
+2. Inventories (weight 1): +1 × 1 = +1
+3. Growth narrative (weight 2): 0 × 2 = 0
+4. Geopolitical risk (weight 1): +1 × 1 = +1
+5. USD (DXY) (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 1 + 0 + 1 + 1 = +3
+Signal: BULLISH (+3 to +4 range)
+Confidence: 6/10 (geopolitical support and inventory draw, but no major supply disruption)
+
+=== ES (S&P 500) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 2): 0 × 2 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 1): 0 × 1 = 0
+6. Credit spreads (weight 1): +1 × 1 = +1
+7. VIX direction (weight 1): -1 × 1 = -1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 1 + (-1) = +1
+Signal: SLIGHT_BULLISH (+1 to +2 range)
+Confidence: 6/10 (mixed signals, VIX rising offsetting credit spread support)
+
+=== NQ (NASDAQ 100) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 2): 0 × 2 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 1): 0 × 1 = 0
+6. SOX (Semis) (weight 1): +1 × 1 = +1
+7. MOVE (Rates vol) (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 1 + 1 = +3
+Signal: BULLISH (+3 to +4 range)
+Confidence: 7/10 (SOX strength and falling rate volatility supporting tech)
+
+=== YM (DOW JONES) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 1): 0 × 1 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 2): 0 × 2 = 0
+6. Credit spreads (weight 1): +1 × 1 = +1
+7. 2s10s curve (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 1 + 1 = +3
+Signal: BULLISH (+3 to +4 range)
+Confidence: 6/10 (credit and curve supporting, but growth stable not accelerating)
+
+=== RTY (RUSSELL 2000) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. Real yields (weight 1): 0 × 1 = 0
+3. USD (DXY) (weight 1): +1 × 1 = +1
+4. Risk mood (weight 1): 0 × 1 = 0
+5. Growth narrative (weight 2): 0 × 2 = 0
+6. Credit spreads (weight 2): +1 × 2 = +2
+7. 2s10s curve (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 0 + 1 + 0 + 0 + 2 + 1 = +4
+Signal: BULLISH (+3 to +4 range)
+Confidence: 7/10 (credit spreads narrowing strongly supports small caps)
+
+=== M6E (EURO) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. ECB stance (weight 1): 0 × 1 = 0
+3. Rate differential EUR-USD (weight 2): 0 × 2 = 0
+4. USD (DXY) (weight 1): +1 × 1 = +1
+5. Risk mood (weight 1): 0 × 1 = 0
+6. Eurozone growth (weight 1): 0 × 1 = 0
+
+TOTAL: 0 + 0 + 0 + 1 + 0 + 0 = +1
+Signal: SLIGHT_BULLISH (+1 to +2 range)
+Confidence: 5/10 (only USD weakness supporting, both central banks on hold)
+
+=== 6A (AUSTRALIAN DOLLAR) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. RBA stance (weight 1): +1 × 1 = +1
+3. Rate differential AUD-USD (weight 1): 0 × 1 = 0
+4. USD (DXY) (weight 1): +1 × 1 = +1
+5. Risk sentiment (weight 2): 0 × 2 = 0
+6. China growth (weight 2): 0 × 2 = 0
+7. Copper (weight 1): +1 × 1 = +1
+
+TOTAL: 0 + 1 + 0 + 1 + 0 + 0 + 1 = +3
+Signal: BULLISH (+3 to +4 range)
+Confidence: 7/10 (RBA hawkish turn and commodity strength supporting)
+
+=== 6J (JAPANESE YEN) CALCULATION ===
+Factors (from methodology):
+1. Fed stance (weight 1): 0 × 1 = 0
+2. BoJ stance (weight 2): +1 × 2 = +2
+3. Rate differential JPY-USD (weight 2): +1 × 2 = +2
+4. USD (DXY) (weight 1): +1 × 1 = +1
+5. Risk mood (weight 1): 0 × 1 = 0
+
+TOTAL: 0 + 2 + 2 + 1 + 0 = +5
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 8/10 (BoJ normalization and rate differential strongly supporting JPY)
+
+=== ASSET CLASS BIAS AGGREGATION ===
+
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BULLISH (+2)
+- SI: BULLISH (+3)
+- CL: BULLISH (+3)
+Result: 2 out of 3 bullish → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: SLIGHT_BULLISH (+1)
+- NQ: BULLISH (+3)
+- YM: BULLISH (+3)
+- RTY: BULLISH (+4)
+Result: 4 out of 4 bullish → BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+1)
+- 6A: BULLISH (+3)
+- 6J: STRONG_BULLISH (+5)
+Result: 3 out of 3 bullish → BULLISH
+
+=== KEY DRIVERS ===
+1. "USD weakness (DXY down 10% YoY) supporting commodities and FX across the board"
+2. "Credit spreads narrowing and curve steepening favor equities, especially small caps"
+3. "BoJ normalization and RBA hawkish turn driving FX strength vs USD"
+
+=== DATA QUALITY ===
+Stale sources: None (all data within acceptable freshness)
+Fallbacks used: None (primary sources all accessible)
+

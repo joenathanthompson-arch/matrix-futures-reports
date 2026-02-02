@@ -1,0 +1,11 @@
+Instrument,Symbol,Numeric Bias Score,Signal,Confidence (1-10)
+Gold,GC,2,SLIGHT_BULLISH,7
+Silver,SI,3,BULLISH,6
+WTI Crude Oil,CL,3,BULLISH,6
+S&P 500,ES,1,SLIGHT_BULLISH,6
+Nasdaq 100,NQ,3,BULLISH,7
+Dow Jones,YM,3,BULLISH,6
+Russell 2000,RTY,4,BULLISH,7
+Euro,M6E,1,SLIGHT_BULLISH,5
+Australian Dollar,6A,3,BULLISH,7
+Japanese Yen,6J,5,STRONG_BULLISH,8
