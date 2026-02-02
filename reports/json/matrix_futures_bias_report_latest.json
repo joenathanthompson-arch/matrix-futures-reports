@@ -1,0 +1,116 @@
+{
+  "report_metadata": {
+    "report_name": "Matrix Futures Daily Bias Report",
+    "report_date": "2026-02-02",
+    "report_time_est": "14:36",
+    "generation_timestamp_utc": "2026-02-02T19:36:00Z"
+  },
+  "market_bias_summary": {
+    "key_drivers": [
+      "Rising real yields (+2.2bps to 1.923%) creating headwinds for gold and growth equities",
+      "Weak USD (down 1.2% over 1 month) supporting commodities and FX",
+      "Narrowing credit spreads and steepening curve favoring small caps and value"
+    ],
+    "asset_class_bias": {
+      "commodities": "MIXED",
+      "indices": "SLIGHT_BULLISH",
+      "fx": "BULLISH"
+    }
+  },
+  "instrument_bias_details": [
+    {
+      "instrument": "GC",
+      "instrument_name": "Gold",
+      "bias_score": -2,
+      "bias_signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "rationale": "Mixed signals, real yields rising is bearish but USD weak is bullish",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "SI",
+      "instrument_name": "Silver",
+      "bias_score": 1,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "Hybrid metal, conflicting signals",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "CL",
+      "instrument_name": "WTI Crude Oil",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Inventory draw + geopolitical risk support prices",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "ES",
+      "instrument_name": "S&P 500",
+      "bias_score": -2,
+      "bias_signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "rationale": "Rising real yields are headwind for equities",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "NQ",
+      "instrument_name": "Nasdaq 100",
+      "bias_score": 0,
+      "bias_signal": "NEUTRAL",
+      "confidence": 6,
+      "rationale": "Rising real yields offset by strong semis",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "YM",
+      "instrument_name": "Dow Jones",
+      "bias_score": 2,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "Steepening curve supports value stocks",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "RTY",
+      "instrument_name": "Russell 2000",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Narrowing credit spreads very bullish for small caps",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "M6E",
+      "instrument_name": "Micro Euro FX",
+      "bias_score": 2,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "Weak USD supports EUR",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "6A",
+      "instrument_name": "Australian Dollar",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Weak USD + rising copper support AUD",
+      "signal_decay_horizon": null
+    },
+    {
+      "instrument": "6J",
+      "instrument_name": "Japanese Yen",
+      "bias_score": 6,
+      "bias_signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "rationale": "BoJ normalization + weak USD very bullish for JPY",
+      "signal_decay_horizon": "2-4 weeks"
+    }
+  ],
+  "data_quality_assessment": {
+    "stale_sources": "None (all sources fresh or within 1 business day)",
+    "fallbacks_used": "CNBC for real yields (FRED was 1 day old)"
+  }
+}
