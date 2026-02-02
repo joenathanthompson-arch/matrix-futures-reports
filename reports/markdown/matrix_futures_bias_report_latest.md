@@ -7,19 +7,22 @@
 
 | Instrument | Name              | Numeric Bias Score | Bias Signal      | Confidence |
 |------------|-------------------|--------------------|------------------|------------|
-| GC         | GOLD              | 0                  | SLIGHT_BEARISH   | 6/10       |
-| SI         | SILVER            | 0                  | SLIGHT_BULLISH   | 6/10       |
-| CL         | WTI CRUDE         | 0                  | BULLISH          | 7/10       |
-| ES         | S&P 500           | 0                  | SLIGHT_BEARISH   | 6/10       |
-| NQ         | NASDAQ 100        | 0                  | NEUTRAL          | 6/10       |
-| YM         | DOW JONES         | 0                  | SLIGHT_BULLISH   | 6/10       |
-| RTY        | RUSSELL 2000      | 0                  | BULLISH          | 7/10       |
-| M6E        | MICRO EURO FX     | 0                  | SLIGHT_BULLISH   | 6/10       |
-| 6A         | AUSTRALIAN DOLLAR | 0                  | BULLISH          | 7/10       |
-| 6J         | JAPANESE YEN      | 0                  | STRONG_BULLISH   | 8/10       |
+| GC         | Gold              | -2                 | SLIGHT_BEARISH   | 6/10       |
+| SI         | Silver            | 1                  | SLIGHT_BULLISH   | 6/10       |
+| CL         | WTI Crude Oil     | 3                  | BULLISH          | 7/10       |
+| ES         | S&P 500           | -2                 | SLIGHT_BEARISH   | 6/10       |
+| NQ         | Nasdaq 100        | 0                  | NEUTRAL          | 6/10       |
+| YM         | Dow Jones         | 2                  | SLIGHT_BULLISH   | 6/10       |
+| RTY        | Russell 2000      | 3                  | BULLISH          | 7/10       |
+| M6E        | Micro Euro FX     | 2                  | SLIGHT_BULLISH   | 6/10       |
+| 6A         | Australian Dollar | 3                  | BULLISH          | 7/10       |
+| 6J         | Japanese Yen      | 6                  | STRONG_BULLISH   | 8/10       |
 
 ## Key Market Drivers
 
+- Rising real yields (+2.2bps to 1.923%) creating headwinds for gold and growth equities
+- Weak USD (down 1.2% over 1 month) supporting commodities and FX
+- Narrowing credit spreads and steepening curve favoring small caps and value
 
 ## Disclaimer
 
