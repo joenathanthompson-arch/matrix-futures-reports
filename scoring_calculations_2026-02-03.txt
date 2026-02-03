@@ -1,0 +1,201 @@
+MATRIX FUTURES DAILY BIAS REPORT - SCORING CALCULATIONS
+Date: February 3, 2026
+Time: 02:30 EST (0230 format for filename)
+Generated at: 2026-02-03T07:30:00Z
+
+=== COMMON FACTORS (scores from data collection) ===
+Fed Stance: 0 (Neutral hold, 91.1% probability of hold)
+Real Yields: 0 (Flat at 1.90%)
+USD (DXY): +1 (Weak/Falling, 97.357, -0.25%, down over 1 month/6 months/1 year)
+Risk Mood (VIX): 0 (Balanced, VIX 16.34, in 15-20 range)
+VIX Direction: 0 (Flat, unchanged)
+Growth (GDPNow): 0 (Stable at 4.2%)
+Credit Spreads (HY OAS): +1 (Narrowing to 2.88%)
+SOX: +1 (Rising +1.70% to 8,134.49, strong uptrend)
+MOVE: +1 (Falling -7.29% over 1 month)
+2s10s Curve: +1 (Steepening to 0.72%)
+Copper: +1 (Rising +4.12% to $6.07/lb, strong uptrend)
+Oil Supply: 0 (Neutral)
+Oil Inventories: +1 (Draw of 2.3M barrels)
+Gold ETF Flows: 0 (Flat/Mixed - strong inflows Jan, but late-month selloff)
+Geopolitical Risk: +1 (Rising - Iran, Venezuela, NATO/Greenland tensions)
+
+FX-SPECIFIC:
+ECB Stance: 0 (Neutral hold at 2.00%, no cuts expected)
+RBA Stance: +1 (HAWKISH HIKE - just raised 25bps to 3.85% TODAY Feb 3!)
+BoJ Stance: +1 (Hawkish/Tightening, concerns about being behind curve)
+China Growth: 0 (Stable around 5%)
+EUR-USD Rate Diff: 0 (Stable, both on hold)
+AUD-USD Rate Diff: +1 (Widening favors AUD - RBA just hiked!)
+JPY-USD Rate Diff: +1 (Widening favors JPY - BoJ normalizing)
+Risk Sentiment (for 6A): 0 (Neutral, VIX balanced)
+Eurozone Growth: 0 (Stable)
+
+=== GC (GOLD) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Oil supply (1): 0 × 1 = 0
+- Gold ETF flows (1): 0 × 1 = 0
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - USD weakness supportive, but ETF flows mixed)
+RATIONALE: USD weakness (+1) is the primary driver. Gold ETF flows have been volatile with strong inflows in January but a historic selloff late in the month. Geopolitical tensions provide some support but are not in the gold scoring model.
+
+=== SI (SILVER) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Copper (1): +1 × 1 = +1
+- Gold ETF flows (1): 0 × 1 = 0
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - copper strength supportive, but precious metals saw recent selloff)
+RATIONALE: USD weakness and copper strength (+4.12%) support silver. However, silver experienced a historic 34% one-day drop recently alongside gold's selloff.
+
+=== CL (CRUDE OIL) SCORING ===
+Factors (weight):
+- Oil supply (2): 0 × 2 = 0
+- Inventories (1): +1 × 1 = +1
+- Growth (2): 0 × 2 = 0
+- Geopolitical risk (1): +1 × 1 = +1
+- USD (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (good - inventory draw, geopolitical support, USD weakness)
+RATIONALE: Inventory draw (2.3M barrels), elevated geopolitical risk (Iran, Venezuela), and USD weakness all support oil. Growth remains stable at 4.2%.
+
+=== ES (S&P 500) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Credit spreads (1): +1 × 1 = +1
+- VIX direction (1): 0 × 1 = 0
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - credit conditions supportive, but Fed neutral)
+RATIONALE: Narrowing credit spreads (2.88%) and USD weakness support equities. VIX is balanced and stable, indicating calm market conditions.
+
+=== NQ (NASDAQ 100) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- SOX (1): +1 × 1 = +1
+- MOVE (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (good - semis strong, rate vol falling, USD weak)
+RATIONALE: SOX strength (+1.70%, +11.60% over 1 month, +60.81% over 1 year) is highly supportive for tech. Falling rate volatility (MOVE -7.29% over 1 month) and USD weakness also support NASDAQ.
+
+=== YM (DOW JONES) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (1): +1 × 1 = +1
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (good - credit and curve supportive, stable growth)
+RATIONALE: Narrowing credit spreads and steepening yield curve (0.72%) support value-oriented Dow. Stable growth at 4.2% is constructive.
+
+=== RTY (RUSSELL 2000) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (2): +1 × 2 = +2
+- 2s10s curve (1): +1 × 1 = +1
+TOTAL: +4
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7 (good - credit spreads narrowing strongly supports small caps)
+RATIONALE: Small caps benefit most from narrowing credit spreads (2.88%, 2x weight). Steepening curve and USD weakness also supportive. Stable growth is constructive.
+
+=== M6E (EURO) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- ECB stance (1): 0 × 1 = 0
+- Rate differential (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Eurozone growth (1): 0 × 1 = 0
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6 (moderate - USD weakness supportive, but both central banks on hold)
+RATIONALE: USD weakness is the primary driver for EUR. Both Fed and ECB are on hold, so rate differential is stable. Eurozone growth is stabilizing.
+
+=== 6A (AUSTRALIAN DOLLAR) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- RBA stance (1): +1 × 1 = +1  (JUST HIKED TODAY!)
+- Rate differential (1): +1 × 1 = +1  (widening favoring AUD)
+- USD (1): +1 × 1 = +1
+- Risk sentiment (2): 0 × 2 = 0
+- China growth (2): 0 × 2 = 0
+- Copper (1): +1 × 1 = +1
+TOTAL: +4
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 8 (high - RBA just hiked today, copper strong, USD weak)
+RATIONALE: RBA delivered a surprise 25bps hike to 3.85% TODAY (Feb 3, 2026), the first hike in two years. This is a major hawkish move. Copper strength (+4.12%, +41.45% over 1 year) and USD weakness provide additional support. China growth is stable.
+
+=== 6J (JAPANESE YEN) SCORING ===
+Factors (weight):
+- Fed stance (1): 0 × 1 = 0
+- BoJ stance (2): +1 × 2 = +2  (hawkish, concerns about being behind curve)
+- Rate differential (2): +1 × 2 = +2  (JPY strengthening as BoJ normalizes)
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+TOTAL: +5
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 8 (high - BoJ hawkish pivot, USD weak, JPY safe haven)
+RATIONALE: BoJ policymakers are debating being "behind the curve" on inflation, suggesting further tightening ahead. Rate differential is widening in favor of JPY as BoJ normalizes while Fed stays on hold. USD weakness provides additional support.
+
+=== ASSET CLASS BIAS AGGREGATION ===
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BULLISH (+1)
+- SI: SLIGHT_BULLISH (+2)
+- CL: BULLISH (+3)
+Result: 3 out of 3 are bullish → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: SLIGHT_BULLISH (+2)
+- NQ: BULLISH (+3)
+- YM: BULLISH (+3)
+- RTY: BULLISH (+4)
+Result: 4 out of 4 are bullish → BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+1)
+- 6A: BULLISH (+4)
+- 6J: STRONG_BULLISH (+5)
+Result: 3 out of 3 are bullish → BULLISH
+
+=== KEY DRIVERS (for JSON) ===
+1. "USD weakness benefiting all asset classes across commodities, equities, and FX"
+2. "Credit spreads narrowing to 2.88%, supportive for risk assets especially small caps"
+3. "RBA surprise hike and BoJ hawkish stance driving strong AUD and JPY performance"
+
+=== DATA QUALITY ===
+Stale sources: None (all data fresh from Feb 2-3, 2026)
+Fallbacks used: None needed
+
+=== SIGNAL DECAY CONSIDERATION ===
+High conviction scores (+8 to +10): None in this report
+Strong bullish scores (≥+5): 6J (+5)
+- 6J signal valid for 2-4 weeks given central bank policy divergence and BoJ normalization trajectory

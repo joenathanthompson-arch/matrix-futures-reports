@@ -1,0 +1,11 @@
+Symbol,Name,Asset_Class,Bias_Score,Bias_Signal,Confidence,Rationale
+GC,Gold,Commodities,1,SLIGHT_BULLISH,6,"USD weakness (+1) is the primary driver. Gold ETF flows have been volatile with strong inflows in January but a historic selloff late in the month. Geopolitical tensions provide some support but are not in the gold scoring model."
+SI,Silver,Commodities,2,SLIGHT_BULLISH,6,"USD weakness and copper strength (+4.12%) support silver. However, silver experienced a historic 34% one-day drop recently alongside gold's selloff."
+CL,WTI Crude,Commodities,3,BULLISH,7,"Inventory draw (2.3M barrels), elevated geopolitical risk (Iran, Venezuela), and USD weakness all support oil. Growth remains stable at 4.2%."
+ES,S&P 500,Indices,2,SLIGHT_BULLISH,6,"Narrowing credit spreads (2.88%) and USD weakness support equities. VIX is balanced and stable, indicating calm market conditions."
+NQ,NASDAQ 100,Indices,3,BULLISH,7,"SOX strength (+1.70%, +11.60% over 1 month, +60.81% over 1 year) is highly supportive for tech. Falling rate volatility (MOVE -7.29% over 1 month) and USD weakness also support NASDAQ."
+YM,Dow Jones,Indices,3,BULLISH,7,"Narrowing credit spreads and steepening yield curve (0.72%) support value-oriented Dow. Stable growth at 4.2% is constructive."
+RTY,Russell 2000,Indices,4,BULLISH,7,"Small caps benefit most from narrowing credit spreads (2.88%, 2x weight). Steepening curve and USD weakness also supportive. Stable growth is constructive."
+M6E,Euro,FX,1,SLIGHT_BULLISH,6,"USD weakness is the primary driver for EUR. Both Fed and ECB are on hold, so rate differential is stable. Eurozone growth is stabilizing."
+6A,Australian Dollar,FX,4,BULLISH,8,"RBA delivered a surprise 25bps hike to 3.85% TODAY (Feb 3, 2026), the first hike in two years. This is a major hawkish move. Copper strength (+4.12%, +41.45% over 1 year) and USD weakness provide additional support. China growth is stable."
+6J,Japanese Yen,FX,5,STRONG_BULLISH,8,"BoJ policymakers are debating being 'behind the curve' on inflation, suggesting further tightening ahead. Rate differential is widening in favor of JPY as BoJ normalizes while Fed stays on hold. USD weakness provides additional support."

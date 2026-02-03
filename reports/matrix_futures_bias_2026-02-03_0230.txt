@@ -1,0 +1,199 @@
+================================================================================
+                    MATRIX FUTURES DAILY BIAS REPORT
+================================================================================
+
+Date: February 3, 2026
+Time: 02:30 EST (Pre-Market)
+Generated: 2026-02-03T07:30:00Z
+
+================================================================================
+                           EXECUTIVE SUMMARY
+================================================================================
+
+All asset classes show BULLISH bias across the board, driven by USD weakness,
+narrowing credit spreads, and hawkish central bank moves outside the US. The
+strongest signals come from Japanese Yen (6J) at +5 and Australian Dollar (6A)
+at +4, both benefiting from surprise hawkish policy shifts. Equities are
+supported by narrowing credit spreads, with small caps (RTY) leading at +4.
+Commodities are uniformly bullish, with crude oil (CL) at +3 supported by
+inventory draws and geopolitical tensions.
+
+================================================================================
+                              KEY DRIVERS
+================================================================================
+
+1. USD weakness benefiting all asset classes across commodities, equities,
+   and FX
+
+2. Credit spreads narrowing to 2.88%, supportive for risk assets especially
+   small caps
+
+3. RBA surprise hike and BoJ hawkish stance driving strong AUD and JPY
+   performance
+
+================================================================================
+                        INSTRUMENT BIAS SUMMARY
+================================================================================
+
+COMMODITIES
+-----------
+
+GC (Gold)
+  Score: +1 | Signal: SLIGHT_BULLISH | Confidence: 6/10
+  USD weakness (+1) is the primary driver. Gold ETF flows have been volatile
+  with strong inflows in January but a historic selloff late in the month.
+  Geopolitical tensions provide some support but are not in the gold scoring
+  model.
+
+SI (Silver)
+  Score: +2 | Signal: SLIGHT_BULLISH | Confidence: 6/10
+  USD weakness and copper strength (+4.12%) support silver. However, silver
+  experienced a historic 34% one-day drop recently alongside gold's selloff.
+
+CL (WTI Crude)
+  Score: +3 | Signal: BULLISH | Confidence: 7/10
+  Inventory draw (2.3M barrels), elevated geopolitical risk (Iran, Venezuela),
+  and USD weakness all support oil. Growth remains stable at 4.2%.
+
+INDICES
+-------
+
+ES (S&P 500)
+  Score: +2 | Signal: SLIGHT_BULLISH | Confidence: 6/10
+  Narrowing credit spreads (2.88%) and USD weakness support equities. VIX is
+  balanced and stable, indicating calm market conditions.
+
+NQ (NASDAQ 100)
+  Score: +3 | Signal: BULLISH | Confidence: 7/10
+  SOX strength (+1.70%, +11.60% over 1 month, +60.81% over 1 year) is highly
+  supportive for tech. Falling rate volatility (MOVE -7.29% over 1 month) and
+  USD weakness also support NASDAQ.
+
+YM (Dow Jones)
+  Score: +3 | Signal: BULLISH | Confidence: 7/10
+  Narrowing credit spreads and steepening yield curve (0.72%) support value-
+  oriented Dow. Stable growth at 4.2% is constructive.
+
+RTY (Russell 2000)
+  Score: +4 | Signal: BULLISH | Confidence: 7/10
+  Small caps benefit most from narrowing credit spreads (2.88%, 2x weight).
+  Steepening curve and USD weakness also supportive. Stable growth is
+  constructive.
+
+FX
+--
+
+M6E (Euro)
+  Score: +1 | Signal: SLIGHT_BULLISH | Confidence: 6/10
+  USD weakness is the primary driver for EUR. Both Fed and ECB are on hold,
+  so rate differential is stable. Eurozone growth is stabilizing.
+
+6A (Australian Dollar)
+  Score: +4 | Signal: BULLISH | Confidence: 8/10
+  RBA delivered a surprise 25bps hike to 3.85% TODAY (Feb 3, 2026), the first
+  hike in two years. This is a major hawkish move. Copper strength (+4.12%,
+  +41.45% over 1 year) and USD weakness provide additional support. China
+  growth is stable.
+
+6J (Japanese Yen)
+  Score: +5 | Signal: STRONG_BULLISH | Confidence: 8/10
+  BoJ policymakers are debating being "behind the curve" on inflation,
+  suggesting further tightening ahead. Rate differential is widening in favor
+  of JPY as BoJ normalizes while Fed stays on hold. USD weakness provides
+  additional support.
+
+================================================================================
+                        ASSET CLASS BREAKDOWN
+================================================================================
+
+COMMODITIES: BULLISH
+  Average Score: +2.0
+  All three commodities show bullish bias. USD weakness is a common supportive
+  factor across gold, silver, and crude oil.
+
+INDICES: BULLISH
+  Average Score: +3.0
+  All four indices show bullish bias. Narrowing credit spreads and USD weakness
+  are key drivers.
+
+FX: BULLISH
+  Average Score: +3.3
+  All three FX pairs show bullish bias against USD. JPY is strongest due to
+  BoJ hawkishness, followed by AUD on RBA surprise hike.
+
+================================================================================
+                        MACRO FACTOR SNAPSHOT
+================================================================================
+
+Fed Stance:              0 (Neutral) - 91.1% hold probability
+Real Yields (10Y TIPS):  0 (Flat) - 1.90%
+USD (DXY):              +1 (Weak) - 97.357 (-0.25%)
+VIX:                     0 (Balanced) - 16.34 (-6.20%)
+Growth (GDPNow):         0 (Stable) - 4.2%
+Credit Spreads (HY OAS): +1 (Narrowing) - 2.88%
+SOX (Semiconductors):   +1 (Rising) - 8,134.49 (+1.70%)
+MOVE (Rate Vol):        +1 (Falling) - 59.30 (-7.29% 1M)
+2s10s Curve:            +1 (Steepening) - 0.72%
+Copper:                 +1 (Rising) - $6.0728/lb (+4.12%)
+Oil Inventories:        +1 (Draw) - -2.3M barrels
+Gold ETF Flows:          0 (Flat) - Mixed
+Geopolitical Risk:      +1 (Rising)
+RBA Stance:             +1 (Hawkish) - Hiked 25bps to 3.85% TODAY
+BoJ Stance:             +1 (Hawkish) - Behind curve concerns
+ECB Stance:              0 (Neutral) - Hold at 2.00%
+
+================================================================================
+                      SIGNAL INTERPRETATION GUIDE
+================================================================================
+
+Score Range          Signal                  Interpretation
+-----------          ------                  --------------
++8 to +10            VERY STRONG BULLISH     High conviction long bias
++5 to +7             STRONG BULLISH          Strong long bias
++3 to +4             BULLISH                 Moderate long bias
++1 to +2             SLIGHT BULLISH          Weak long bias
+-1 to +1             NEUTRAL                 No clear directional bias
+-2 to -1             SLIGHT BEARISH          Weak short bias
+-4 to -3             BEARISH                 Moderate short bias
+-7 to -5             STRONG BEARISH          Strong short bias
+-10 to -8            VERY STRONG BEARISH     High conviction short bias
+
+Confidence Scale: 1-10, where 10 = highest confidence based on data quality,
+factor alignment, and historical reliability.
+
+================================================================================
+                          DATA QUALITY NOTES
+================================================================================
+
+Stale Sources: None
+Fallbacks Used: None
+Data Freshness: All data current as of Feb 2-3, 2026
+
+================================================================================
+                            METHODOLOGY
+================================================================================
+
+This report uses a weighted factor scoring system based on the Matrix Futures
+Macro Bias Scorer methodology. Each instrument is scored based on relevant
+macroeconomic factors, with weights assigned according to their historical
+impact on price movements. Scores are aggregated to produce a directional bias
+signal and confidence level.
+
+For full methodology details, see:
+https://github.com/joenathanthompson-arch/matrix-futures-reports/blob/main/docs/Macro_Bias_Scorer_Reference.md
+
+================================================================================
+                              DISCLAIMER
+================================================================================
+
+This report is for informational purposes only and does not constitute
+investment advice. Trading futures involves substantial risk of loss and is
+not suitable for all investors. Past performance is not indicative of future
+results.
+
+================================================================================
+
+Report Generated by Matrix Futures Bias Scorer v1.0
+Timestamp: 2026-02-03T07:30:00Z
+
+================================================================================

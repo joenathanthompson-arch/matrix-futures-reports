@@ -1,0 +1,230 @@
+MATRIX FUTURES DAILY BIAS REPORT - DATA COLLECTION
+Date: February 3, 2026
+Collection Time: 02:36 UTC (21:36 EST Feb 2, 2026)
+
+=== FED STANCE (CME FedWatch) ===
+Source: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+Accessed: Feb 3, 2026 02:36 UTC
+Current Rate: 350-375 bps (3.50-3.75%)
+Next FOMC Meeting: 43 days away
+
+Probabilities for next meeting:
+- 300-325 bps: 0.0%
+- 325-350 bps: 8.9%
+- 350-375 bps (Current): 91.1%
+
+Interpretation: 91.1% probability of HOLD at current rate
+Fed Stance: NEUTRAL HOLD (no cut expected, no hike expected)
+Score: 0 (Neutral hold)
+
+
+=== REAL YIELDS (10Y TIPS - DFII10) ===
+Source: https://fred.stlouisfed.org/series/DFII10
+Accessed: Feb 3, 2026 02:37 UTC
+Current Value: 1.90% (as of Jan 30, 2026)
+Updated: Feb 2, 2026 3:17 PM CST
+Data Status: Fresh (updated yesterday)
+Previous observation: Need to check trend
+Looking at chart: Appears FLAT around 1.90% (similar to recent levels)
+Assessment: FLAT (±5bps threshold)
+Score: 0 (Flat)
+
+
+=== USD (DXY) ===
+Source: https://www.tradingview.com/symbols/TVC-DXY/
+Accessed: Feb 3, 2026 02:37 UTC
+Current Value: 97.357 USD
+Change: -0.247 (-0.25%)
+1 day: -0.25%
+5 days: +1.24%
+1 month: -0.89%
+6 months: -0.85%
+1 year: -10.27%
+Assessment: WEAK/FALLING (down over 1 month, 6 months, and 1 year)
+Score: +1 (Weak/Falling)
+
+
+=== VIX (Risk Mood) ===
+Source: https://www.cnbc.com/quotes/.VIX
+Accessed: Feb 3, 2026 02:38 UTC
+Current Value: 16.34 (as of Feb 2, 2026 EST)
+Change: UNCH (unchanged)
+Previous Close: 16.34
+52 Week Range: 13.38 - 60.13
+Assessment: BALANCED (VIX 15-20 range)
+Risk Mood Score: 0 (Balanced)
+VIX Direction: FLAT (unchanged)
+VIX Direction Score: 0 (Flat)
+
+
+=== GROWTH NARRATIVE (GDPNow) ===
+Source: https://www.atlantafed.org/cqer/research/gdpnow
+Accessed: Feb 3, 2026 02:39 UTC
+Latest Estimate: 4.2% (as of February 2, 2026)
+Quarter: Q4 2025
+Previous: Unchanged from January 29
+Assessment: STABLE (growth remains solid at 4.2%, unchanged)
+Score: 0 (Stable)
+
+
+=== CREDIT SPREADS (HY OAS - BAMLH0A0HYM2) ===
+Source: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+Accessed: Feb 3, 2026 02:39 UTC
+Current Value: 2.88% (as of Jan 31, 2026)
+Updated: Feb 2, 2026 10:14 AM CST
+Data Status: Fresh (updated yesterday)
+Looking at chart: Spreads have been NARROWING (down from ~3% area in recent months)
+Assessment: NARROWING
+Score: +1 (Narrowing)
+
+
+=== SOX (Semiconductors) ===
+Source: https://www.tradingview.com/symbols/SOX/
+Accessed: Feb 3, 2026 02:40 UTC
+Current Value: 8,134.49 USD (at close Feb 2, 2026)
+Change: +136.02 (+1.70%)
+1 day: +1.70%
+5 days: -1.85%
+1 month: +11.60%
+6 months: +47.21%
+1 year: +60.81%
+Assessment: RISING (strong uptrend over 1 month, 6 months, 1 year)
+Score: +1 (Rising)
+
+
+=== MOVE INDEX (Rate Volatility) ===
+Source: https://www.tradingview.com/symbols/TVC-MOVE/
+Accessed: Feb 3, 2026 02:40 UTC
+Current Value: 59.30 USD (at close)
+Change: +0.10 (+0.17%)
+1 day: +0.17%
+5 days: +5.67%
+1 month: -7.29%
+6 months: -33.52%
+1 year: -34.50%
+Assessment: FALLING (down over 1 month, 6 months, 1 year despite recent 5-day uptick)
+Score: +1 (Falling)
+
+
+=== 2s10s YIELD CURVE (T10Y2Y) ===
+Source: https://fred.stlouisfed.org/series/T10Y2Y
+Accessed: Feb 3, 2026 02:40 UTC
+Current Value: 0.72% (as of Feb 2, 2026)
+Updated: Feb 2, 2026 4:03 PM CST
+Data Status: Fresh (updated yesterday)
+Looking at chart: Curve has been STEEPENING (rising from ~0.5% to 0.72% recently)
+Assessment: STEEPENING
+Score: +1 (Steepening)
+
+
+=== COPPER ===
+Source: https://www.investing.com/commodities/copper
+Accessed: Feb 3, 2026 02:41 UTC
+Current Value: $6.0728/lb
+Change: +0.2405 (+4.12%)
+1 day: +4.54%
+1 week: +4.40%
+1 month: +7.00%
+3 months: +20.14%
+6 months: +37.30%
+1 year: +41.45%
+Assessment: RISING (strong uptrend across all timeframes)
+Score: +1 (Rising)
+
+
+=== OIL INVENTORIES (EIA Weekly) ===
+Source: https://www.eia.gov/petroleum/supply/weekly/
+Accessed: Feb 3, 2026 02:41 UTC
+Data for week ending: January 23, 2026
+Release Date: Jan 28, 2026
+U.S. commercial crude oil inventories: DECREASED by 2.3 million barrels from previous week
+At 423.8 million barrels, U.S. crude oil inventories about 3% below five year average
+Assessment: DRAW (inventory decreased)
+Score: +1 (Draw)
+
+=== OIL SUPPLY SHOCK ===
+Assessment: NEUTRAL (no major supply disruptions reported)
+Score: 0 (Neutral)
+
+
+=== GOLD ETF FLOWS ===
+Source: Reuters, World Gold Council, ETF flow data
+Accessed: Feb 3, 2026 02:42 UTC
+Recent data:
+- SPDR Gold Shares (GLD) received $2.58B inflows in January 2026
+- iShares Gold Trust received $1.79B inflows in January 2026
+- Global gold ETFs saw $89B inflows in 2025, doubling AUM to $559B
+- US gold demand rose 140% y/y to 679t in 2025
+- However: Late January saw historic selloff (GLD fell 13% in one day after Trump Fed pick)
+- Recent week saw profit-taking and outflows
+Assessment: MIXED - strong inflows through mid-January, but sharp outflows late January
+Given recent volatility, score as FLAT
+Score: 0 (Flat)
+
+=== GEOPOLITICAL RISK ===
+Source: News analysis, S&P Global, market reports
+Accessed: Feb 3, 2026 02:42 UTC
+Recent developments:
+- Rising tensions around Iran, Venezuela
+- NATO/Greenland tensions (Trump administration)
+- US-Iran tensions continue
+- Russia-Ukraine war ongoing
+- Middle East instability
+- S&P Global: "Continuing geopolitical risks present large potential for sudden destabilization"
+- Precious metals rising on geopolitical risk premium
+Assessment: RISING (multiple flashpoints, elevated tensions)
+Score: +1 (Rising)
+
+
+=== ECB STANCE (for M6E Euro) ===
+Source: ECB, Reuters, market reports
+Accessed: Feb 3, 2026 02:43 UTC
+Current deposit rate: 2.00%
+Recent action: ECB held rates unchanged since June 2025
+Feb 5, 2026 meeting: Expected to hold rates unchanged
+Market pricing: No cuts expected in 2026, next move likely a hike after extended hold
+Assessment: NEUTRAL HOLD (on hold, no cuts expected)
+Score: 0 (Neutral hold)
+
+=== RBA STANCE (for 6A Australian Dollar) ===
+Source: RBA, ABC News, Bloomberg, Reuters
+Accessed: Feb 3, 2026 02:43 UTC
+Current cash rate: 3.85% (JUST RAISED TODAY Feb 3, 2026)
+Recent action: RBA HIKED rates by 25bps today (first hike in two years)
+Reason: Inflation rose "materially" in second half of 2025
+Assessment: HAWKISH HIKE (just raised rates)
+Score: +1 (Hawkish/Tightening) - NOTE: This is a significant hawkish move!
+
+=== BOJ STANCE (for 6J Japanese Yen) ===
+Source: BoJ, Reuters, Nippon.com
+Accessed: Feb 3, 2026 02:43 UTC
+Current policy rate: 0.75% (raised in December 2025)
+Recent discussion: Some policymakers warned of being "behind the curve" on inflation
+Weak yen driving price pressures
+Real policy rate at lowest level globally
+Assessment: HAWKISH/TIGHTENING (gradual normalization continues, concerns about being behind curve)
+Score: +1 (Hawkish/Tightening)
+
+=== CHINA GROWTH (for 6A) ===
+Source: General market knowledge
+Assessment: STABLE (China growth has stabilized around 5%)
+Score: 0 (Stable)
+
+=== RATE DIFFERENTIALS (for FX) ===
+EUR-USD: ECB at 2%, Fed at 3.5-3.75% = stable differential (both on hold)
+Score for M6E: 0 (Stable)
+
+AUD-USD: RBA just hiked to 3.85%, Fed at 3.5-3.75% on hold = widening differential favoring AUD
+Score for 6A: +1 (Widening vs USD)
+
+JPY-USD: BoJ at 0.75% normalizing, Fed at 3.5-3.75% on hold = narrowing differential favoring JPY
+Score for 6J: +1 (Widening vs USD - JPY strengthening as BoJ normalizes)
+
+=== RISK SENTIMENT (for FX) ===
+Based on VIX at 16.34 (balanced)
+For 6A (risk currency): 0 (Neutral)
+
+=== EUROZONE GROWTH (for M6E) ===
+Assessment: STABLE (eurozone showing signs of stabilization)
+Score: 0 (Stable)
+

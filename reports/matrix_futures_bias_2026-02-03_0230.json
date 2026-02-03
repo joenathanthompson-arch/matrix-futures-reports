@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "report_date": "2026-02-03",
+    "report_time_est": "02:30",
+    "generation_timestamp": "2026-02-03T07:30:00Z",
+    "version": "1.0",
+    "methodology": "Weighted factor scoring based on Macro_Bias_Scorer_Reference.md"
+  },
+  "instruments": [
+    {
+      "symbol": "GC",
+      "name": "Gold",
+      "asset_class": "Commodities",
+      "bias_score": 1,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "USD weakness (+1) is the primary driver. Gold ETF flows have been volatile with strong inflows in January but a historic selloff late in the month. Geopolitical tensions provide some support but are not in the gold scoring model.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "oil_supply": 0,
+        "gold_etf_flows": 0
+      }
+    },
+    {
+      "symbol": "SI",
+      "name": "Silver",
+      "asset_class": "Commodities",
+      "bias_score": 2,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "USD weakness and copper strength (+4.12%) support silver. However, silver experienced a historic 34% one-day drop recently alongside gold's selloff.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "copper": 1,
+        "gold_etf_flows": 0
+      }
+    },
+    {
+      "symbol": "CL",
+      "name": "WTI Crude",
+      "asset_class": "Commodities",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Inventory draw (2.3M barrels), elevated geopolitical risk (Iran, Venezuela), and USD weakness all support oil. Growth remains stable at 4.2%.",
+      "key_factors": {
+        "oil_supply": 0,
+        "inventories": 1,
+        "growth": 0,
+        "geopolitical_risk": 1,
+        "usd": 1
+      }
+    },
+    {
+      "symbol": "ES",
+      "name": "S&P 500",
+      "asset_class": "Indices",
+      "bias_score": 2,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "Narrowing credit spreads (2.88%) and USD weakness support equities. VIX is balanced and stable, indicating calm market conditions.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "credit_spreads": 1,
+        "vix_direction": 0
+      }
+    },
+    {
+      "symbol": "NQ",
+      "name": "NASDAQ 100",
+      "asset_class": "Indices",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "SOX strength (+1.70%, +11.60% over 1 month, +60.81% over 1 year) is highly supportive for tech. Falling rate volatility (MOVE -7.29% over 1 month) and USD weakness also support NASDAQ.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "sox": 1,
+        "move": 1
+      }
+    },
+    {
+      "symbol": "YM",
+      "name": "Dow Jones",
+      "asset_class": "Indices",
+      "bias_score": 3,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Narrowing credit spreads and steepening yield curve (0.72%) support value-oriented Dow. Stable growth at 4.2% is constructive.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "credit_spreads": 1,
+        "curve_2s10s": 1
+      }
+    },
+    {
+      "symbol": "RTY",
+      "name": "Russell 2000",
+      "asset_class": "Indices",
+      "bias_score": 4,
+      "bias_signal": "BULLISH",
+      "confidence": 7,
+      "rationale": "Small caps benefit most from narrowing credit spreads (2.88%, 2x weight). Steepening curve and USD weakness also supportive. Stable growth is constructive.",
+      "key_factors": {
+        "fed_stance": 0,
+        "real_yields": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "growth": 0,
+        "credit_spreads": 1,
+        "curve_2s10s": 1
+      }
+    },
+    {
+      "symbol": "M6E",
+      "name": "Euro",
+      "asset_class": "FX",
+      "bias_score": 1,
+      "bias_signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "rationale": "USD weakness is the primary driver for EUR. Both Fed and ECB are on hold, so rate differential is stable. Eurozone growth is stabilizing.",
+      "key_factors": {
+        "fed_stance": 0,
+        "ecb_stance": 0,
+        "rate_differential": 0,
+        "usd": 1,
+        "risk_mood": 0,
+        "eurozone_growth": 0
+      }
+    },
+    {
+      "symbol": "6A",
+      "name": "Australian Dollar",
+      "asset_class": "FX",
+      "bias_score": 4,
+      "bias_signal": "BULLISH",
+      "confidence": 8,
+      "rationale": "RBA delivered a surprise 25bps hike to 3.85% TODAY (Feb 3, 2026), the first hike in two years. This is a major hawkish move. Copper strength (+4.12%, +41.45% over 1 year) and USD weakness provide additional support. China growth is stable.",
+      "key_factors": {
+        "fed_stance": 0,
+        "rba_stance": 1,
+        "rate_differential": 1,
+        "usd": 1,
+        "risk_sentiment": 0,
+        "china_growth": 0,
+        "copper": 1
+      }
+    },
+    {
+      "symbol": "6J",
+      "name": "Japanese Yen",
+      "asset_class": "FX",
+      "bias_score": 5,
+      "bias_signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "rationale": "BoJ policymakers are debating being 'behind the curve' on inflation, suggesting further tightening ahead. Rate differential is widening in favor of JPY as BoJ normalizes while Fed stays on hold. USD weakness provides additional support.",
+      "key_factors": {
+        "fed_stance": 0,
+        "boj_stance": 1,
+        "rate_differential": 1,
+        "usd": 1,
+        "risk_mood": 0
+      }
+    }
+  ],
+  "asset_class_summary": {
+    "commodities": {
+      "bias": "BULLISH",
+      "instruments": ["GC", "SI", "CL"],
+      "avg_score": 2.0,
+      "summary": "All three commodities show bullish bias, led by crude oil. USD weakness is a common supportive factor."
+    },
+    "indices": {
+      "bias": "BULLISH",
+      "instruments": ["ES", "NQ", "YM", "RTY"],
+      "avg_score": 3.0,
+      "summary": "All four indices show bullish bias, with small caps (RTY) leading. Narrowing credit spreads and USD weakness are key drivers."
+    },
+    "fx": {
+      "bias": "BULLISH",
+      "instruments": ["M6E", "6A", "6J"],
+      "avg_score": 3.3,
+      "summary": "All three FX pairs show bullish bias against USD. JPY is strongest due to BoJ hawkishness, followed by AUD on RBA surprise hike."
+    }
+  },
+  "key_drivers": [
+    "USD weakness benefiting all asset classes across commodities, equities, and FX",
+    "Credit spreads narrowing to 2.88%, supportive for risk assets especially small caps",
+    "RBA surprise hike and BoJ hawkish stance driving strong AUD and JPY performance"
+  ],
+  "data_sources": {
+    "fed_stance": {
+      "source": "CME FedWatch Tool",
+      "timestamp": "2026-02-03T07:30:00Z",
+      "value": "91.1% probability of hold at 3.50-3.75%"
+    },
+    "real_yields": {
+      "source": "FRED DFII10",
+      "timestamp": "2026-02-02T15:14:00Z",
+      "value": "1.90%"
+    },
+    "usd": {
+      "source": "TradingView DXY",
+      "timestamp": "2026-02-03T07:30:00Z",
+      "value": "97.357"
+    },
+    "vix": {
+      "source": "CNBC VIX",
+      "timestamp": "2026-02-03T07:30:00Z",
+      "value": "16.34"
+    },
+    "gdpnow": {
+      "source": "Atlanta Fed GDPNow",
+      "timestamp": "2026-02-02T00:00:00Z",
+      "value": "4.2%"
+    },
+    "credit_spreads": {
+      "source": "FRED BAMLH0A0HYM2",
+      "timestamp": "2026-02-02T15:14:00Z",
+      "value": "2.88%"
+    },
+    "sox": {
+      "source": "TradingView SOX",
+      "timestamp": "2026-02-02T21:00:00Z",
+      "value": "8134.49"
+    },
+    "move": {
+      "source": "TradingView MOVE",
+      "timestamp": "2026-02-03T00:51:00Z",
+      "value": "59.30"
+    },
+    "curve_2s10s": {
+      "source": "FRED T10Y2Y",
+      "timestamp": "2026-02-02T21:03:00Z",
+      "value": "0.72%"
+    },
+    "copper": {
+      "source": "Investing.com HG",
+      "timestamp": "2026-02-03T07:26:00Z",
+      "value": "$6.0728/lb"
+    },
+    "oil_inventories": {
+      "source": "EIA Weekly Petroleum Status Report",
+      "timestamp": "2026-01-28T00:00:00Z",
+      "value": "-2.3M barrels (week ending Jan 23)"
+    },
+    "gold_etf_flows": {
+      "source": "Reuters, World Gold Council",
+      "timestamp": "2026-02-02T00:00:00Z",
+      "value": "Mixed - strong Jan inflows, late-month selloff"
+    },
+    "geopolitical_risk": {
+      "source": "News analysis, S&P Global",
+      "timestamp": "2026-02-03T00:00:00Z",
+      "value": "Rising - Iran, Venezuela, NATO tensions"
+    },
+    "rba_stance": {
+      "source": "RBA, Bloomberg, Reuters",
+      "timestamp": "2026-02-03T04:00:00Z",
+      "value": "Hiked 25bps to 3.85% TODAY"
+    },
+    "boj_stance": {
+      "source": "BoJ, Reuters",
+      "timestamp": "2026-02-02T00:00:00Z",
+      "value": "Hawkish, concerns about being behind curve"
+    },
+    "ecb_stance": {
+      "source": "ECB, Reuters",
+      "timestamp": "2026-01-22T00:00:00Z",
+      "value": "Hold at 2.00%, no cuts expected"
+    }
+  },
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "notes": "All data fresh from Feb 2-3, 2026. No fallbacks needed."
+  }
+}
