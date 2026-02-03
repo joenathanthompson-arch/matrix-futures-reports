@@ -1,0 +1,217 @@
+BIAS SCORE CALCULATIONS - 2026-02-03
+======================================
+
+DATA SUMMARY:
+- Fed Stance: 0 (Neutral hold)
+- Real Yields: 0 (Flat)
+- USD (DXY): +1 (Weak/Falling)
+- Risk Mood (VIX): 0 (Balanced)
+- VIX Direction: +1 (Falling)
+- Growth: 0 (Stable)
+- Credit Spreads: +1 (Narrowing)
+- SOX: +1 (Rising)
+- MOVE: +1 (Falling)
+- 2s10s Curve: +1 (Steepening)
+- Copper: +1 (Rising)
+- Oil Inventories: +1 (Draw)
+- Oil Supply Shock: 0 (Neutral)
+- Gold ETF Flows: +1 (Inflows)
+- Geopolitical Risk: +1 (Rising)
+- ECB Stance: 0 (Neutral hold)
+- RBA Stance: 0 (Neutral hold)
+- BoJ Stance: +1 (Hawkish)
+- China Growth: 0 (Stable)
+- Rate Differentials (M6E): 0 (Stable)
+- Rate Differentials (6A): 0 (Stable)
+- Rate Differentials (6J): +1 (Widening vs USD)
+- Risk Sentiment (6A): 0 (Neutral)
+
+======================================
+1. GC (GOLD) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Oil supply shock (1): 0 × 1 = 0
+- Gold ETF flows (1): +1 × 1 = +1
+
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 7/10 (fresh data, clear ETF inflows and weak USD supporting)
+
+======================================
+2. SI (SILVER) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Copper (1): +1 × 1 = +1
+- Gold ETF flows (1): +1 × 1 = +1
+
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7/10 (copper strength and gold flows supporting, USD weak)
+
+======================================
+3. CL (WTI CRUDE) BIAS SCORER
+======================================
+Factors (Weight):
+- Oil supply shock (2): 0 × 2 = 0
+- Inventories (1): +1 × 1 = +1
+- Growth (2): 0 × 2 = 0
+- Geopolitical risk (1): +1 × 1 = +1
+- USD (1): +1 × 1 = +1
+
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 6/10 (inventory draw and geopolitical risk support, but no supply shock)
+
+======================================
+4. ES (S&P 500) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- Credit spreads (1): +1 × 1 = +1
+- VIX direction (1): +1 × 1 = +1
+
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7/10 (credit spreads narrowing, VIX falling, positive backdrop)
+
+======================================
+5. NQ (NASDAQ 100) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (1): 0 × 1 = 0
+- SOX (1): +1 × 1 = +1
+- MOVE (1): +1 × 1 = +1
+
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7/10 (semis strong, rate vol falling, supportive for tech)
+
+======================================
+6. YM (DOW JONES) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (1): +1 × 1 = +1
+- 2s10s curve (1): +1 × 1 = +1
+
+TOTAL: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 6/10 (credit and curve supportive, but growth neutral)
+
+======================================
+7. RTY (RUSSELL 2000) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- Real yields (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Growth (2): 0 × 2 = 0
+- Credit spreads (2): +1 × 2 = +2
+- 2s10s curve (1): +1 × 1 = +1
+
+TOTAL: +4
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 7/10 (credit spreads critical for small caps, narrowing is bullish)
+
+======================================
+8. M6E (EURO) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- ECB stance (1): 0 × 1 = 0
+- Rate differential (2): 0 × 2 = 0
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+- Eurozone growth (1): 0 × 1 = 0
+
+TOTAL: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 5/10 (only USD weakness supporting, rate differentials neutral)
+
+======================================
+9. 6A (AUSTRALIAN DOLLAR) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- RBA stance (1): 0 × 1 = 0
+- Rate differential (1): 0 × 1 = 0
+- USD (1): +1 × 1 = +1
+- Risk sentiment (2): 0 × 2 = 0
+- China growth (2): 0 × 2 = 0
+- Copper (1): +1 × 1 = +1
+
+TOTAL: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6/10 (copper strength and USD weakness support, but risk neutral)
+
+======================================
+10. 6J (JAPANESE YEN) BIAS SCORER
+======================================
+Factors (Weight):
+- Fed stance (1): 0 × 1 = 0
+- BoJ stance (2): +1 × 2 = +2
+- Rate differential (2): +1 × 2 = +2
+- USD (1): +1 × 1 = +1
+- Risk mood (1): 0 × 1 = 0
+
+TOTAL: +5
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (BoJ normalization and rate differential widening strongly support JPY)
+
+======================================
+ASSET CLASS AGGREGATION
+======================================
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BULLISH
+- SI: BULLISH
+- CL: BULLISH
+→ 2 out of 3 bullish → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: BULLISH
+- NQ: BULLISH
+- YM: BULLISH
+- RTY: BULLISH
+→ 4 out of 4 bullish → BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH
+- 6A: SLIGHT_BULLISH
+- 6J: STRONG_BULLISH
+→ 3 out of 3 bullish → BULLISH
+
+======================================
+KEY DRIVERS:
+1. Credit conditions improving (spreads narrowing) - bullish for equities and small caps
+2. USD weakness benefiting commodities and FX
+3. BoJ policy normalization strongly supporting JPY
+4. Semiconductors and tech showing strength
+5. Gold ETF inflows continuing, geopolitical risk elevated
+
+DATA QUALITY:
+- All data sources fresh (within 1-2 business days)
+- No stale sources requiring fallbacks
+- No fallbacks used
