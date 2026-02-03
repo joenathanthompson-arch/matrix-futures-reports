@@ -1,0 +1,17 @@
+Fed Stance - Feb 2, 2026
+
+Source: CME FedWatch Tool
+URL: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+
+Current Target Rate: 350-375 bps (3.50-3.75%)
+
+Next FOMC Meeting (31 Mar 2026):
+- Hold at 350-375: 89.0%
+- Cut to 325-350: 11.0%
+
+Assessment: DOVISH HOLD
+- Market pricing 89% probability of hold at current 3.50-3.75% range
+- 11% probability of 25bp cut
+- This represents a dovish hold stance (hold with cut expectations building)
+
+Score: +1 (Dovish hold)

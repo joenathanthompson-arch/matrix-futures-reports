@@ -1,0 +1,23 @@
+DXY (US Dollar Index) - Feb 2, 2026
+
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-DXY/
+
+Current Value: 97.604
+Change: +0.457 (+0.47%)
+Previous Close: 97.147
+Last Update: Feb 2, 23:04 GMT
+
+Recent Performance:
+- 1 day: +0.47%
+- 5 days: +1.71%
+- 1 month: -0.64%
+- 1 year: -10.04%
+
+Assessment: FLAT/WEAK
+- Up slightly today (+0.47%) but down over 1 month (-0.64%)
+- Down significantly over 1 year (-10.04%)
+- Currently at 4-year lows
+- Overall trend is weak/falling
+
+Score: +1 (Weak/Falling USD - bullish for commodities and FX)

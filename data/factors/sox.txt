@@ -1,0 +1,28 @@
+SOX (Philadelphia Semiconductor Index) - Feb 2, 2026
+
+Source: TradingView
+URL: https://www.tradingview.com/symbols/SOX/
+
+Current Value: 8,134.49
+Change: +136.02 (+1.70%)
+Previous Close: 7,998.47
+At close: Feb 2, 21:00 GMT
+
+Recent Performance:
+- 1 day: +1.70%
+- 5 days: -1.85%
+- 1 month: +11.60%
+- 6 months: +47.21%
+- 1 year: +60.81%
+
+All-Time High: 8,386.98 (Jan 29, 2026)
+
+Assessment: RISING
+- Up strongly today (+1.70%)
+- Up significantly over 1 month (+11.60%)
+- Near all-time highs (just 3% below)
+- Strong uptrend in semiconductors
+
+SOX Score: +1 (Rising - bullish for tech/NQ)
+
+Note: Semiconductors are in a strong uptrend, which is bullish for Nasdaq and tech-heavy indices.

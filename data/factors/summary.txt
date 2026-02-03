@@ -1,0 +1,76 @@
+Macro Factors Summary - Feb 2, 2026
+
+CORE FACTORS:
+
+1. Fed Stance: DOVISH HOLD (+1)
+   - 89% probability of hold, 11% cut probability
+   - Dovish hold with cut expectations building
+
+2. Real Yields (10Y TIPS): RISING (-2)
+   - Current: 1.944% (up from 1.90%)
+   - Rising >5bps = bearish for gold/tech
+
+3. USD (DXY): WEAK/FALLING (+1)
+   - Current: 97.604 (at 4-year lows)
+   - Down 10% over 1 year = bullish for commodities
+
+4. VIX: BALANCED/FALLING
+   - Risk Mood: -1 (Risk-on, VIX at 16.34)
+   - VIX Direction: +1 (Falling -6.31% today)
+
+5. Growth (GDPNow): STABLE (0)
+   - Current: 4.2% (strong but unchanged)
+   - Not accelerating or slowing
+
+6. Credit Spreads (HY OAS): NARROWING (+1)
+   - Current: 2.88% (near multi-year lows)
+   - Narrowing = risk-on
+
+7. SOX (Semiconductors): RISING (+1)
+   - Current: 8,134.49 (+1.70% today)
+   - Near all-time highs, strong uptrend
+
+8. MOVE (Bond Vol): FALLING (+1)
+   - Current: 59.30 (down 34.5% over 1 year)
+   - Low bond volatility = stable rates
+
+9. 2s10s Yield Curve: STEEPENING (+1)
+   - Current: +0.72%
+   - Steepening from inversion = growth optimism
+
+10. Copper: RISING (+1)
+    - Current: $5.8843/lb (+0.89% today)
+    - Up 37% over 1 year = strong demand
+
+11. Gold ETF Flows: INFLOWS (+1)
+    - January 2026: $2.58B+ inflows in GLD
+    - Continued strong demand
+
+12. Oil Inventories: DRAW (+1)
+    - Latest: -2.3M barrels (Jan 28)
+    - Draw = bullish for oil
+
+ADDITIONAL FACTORS:
+
+13. Geopolitical Risk: STABLE (0)
+    - No major escalations noted
+    - Market focused on Fed/growth
+
+14. Oil Supply: NEUTRAL (0)
+    - No major disruptions
+    - OPEC maintaining cuts
+
+FX-SPECIFIC FACTORS (to be added for FX scoring):
+- ECB Stance: TBD
+- RBA Stance: TBD
+- BoJ Stance: TBD
+- China Growth: Copper strength suggests stable/improving
+- Rate Differentials: TBD
+
+OVERALL MACRO ENVIRONMENT:
+- Risk-on sentiment (VIX falling, credit spreads tight)
+- Dovish Fed expectations building
+- USD weakness supporting commodities
+- Strong growth (4.2% GDPNow)
+- Rising real yields = headwind for gold/tech
+- Semiconductors and copper strong = tech/growth bid

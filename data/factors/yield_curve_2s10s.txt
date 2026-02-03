@@ -1,0 +1,24 @@
+2s10s Yield Curve - Feb 2, 2026
+
+Source: FRED T10Y2Y
+URL: https://fred.stlouisfed.org/series/T10Y2Y
+
+Current Value: 0.72% (as of Feb 2, 2026)
+Updated: Feb 2, 2026 4:03 PM CST
+Next Release: Feb 3, 2026
+
+Recent Trend (from chart):
+- Current: 0.72%
+- Positive and steepening from 2023-2024 inversion
+- Curve has been steepening since mid-2024
+- Currently at highest levels since 2022
+
+Assessment: STEEPENING
+- Spread at +0.72% indicates normal positive curve
+- Has been steepening from inverted levels in 2023
+- Steeper curve = improving growth expectations
+- Bullish for cyclical/value stocks (YM, RTY)
+
+2s10s Curve Score: +1 (Steepening - bullish for cyclicals)
+
+Note: The curve has normalized from inversion and continues to steepen, which is typically bullish for economically-sensitive sectors and small caps.

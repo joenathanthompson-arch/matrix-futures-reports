@@ -1,0 +1,27 @@
+VIX (CBOE Volatility Index) - Feb 2, 2026
+
+Source: CNBC
+URL: https://www.cnbc.com/quotes/.VIX
+
+Current Value: 16.34
+Change: -1.10 (-6.31%)
+Previous Close: 17.44
+Last Update: 4:15 PM EST Feb 2, 2026
+
+52 Week Range: 13.38 - 60.13
+
+Recent Performance:
+- 1 day: -6.31%
+- 5 days: +1.18%
+- 1 month: +12.61%
+- YTD: +9.30%
+
+Assessment: BALANCED (VIX 15-20 range)
+- Current level of 16.34 is in the balanced range (15-20)
+- Down today but elevated from recent lows
+- Risk-on environment
+
+Risk Mood Score: -1 (Risk-on, VIX <15 threshold but close)
+VIX Direction Score: +1 (Falling today -6.31%)
+
+Note: VIX at 16.34 is technically in the 15-20 "balanced" range but very close to the <15 "risk-on" threshold. Given it's falling sharply today, this suggests improving risk sentiment.

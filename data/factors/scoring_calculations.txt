@@ -1,0 +1,194 @@
+BIAS SCORING CALCULATIONS - Feb 2, 2026 19:42 EST
+
+==================================================
+GC (GOLD) - Weight 2 on Real Yields
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   2    |   -4
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   1    |    0
+Oil supply (neutral)    |  0  |   1    |    0
+Gold ETF flows (inflows)| +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   -2
+Signal: SLIGHT_BEARISH | Confidence: 7
+
+==================================================
+SI (SILVER) - All weights 1
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   1    |   -2
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   1    |    0
+Copper (rising)         | +1  |   1    |   +1
+Gold ETF flows (inflows)| +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +1
+Signal: SLIGHT_BULLISH | Confidence: 7
+
+==================================================
+CL (CRUDE OIL) - Weight 2 on Oil Supply & Growth
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Oil supply (neutral)    |  0  |   2    |    0
+Inventories (draw)      | +1  |   1    |   +1
+Growth (stable)         |  0  |   2    |    0
+Geopolitical (stable)   |  0  |   1    |    0
+USD (weak/falling)      | +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +2
+Signal: SLIGHT_BULLISH | Confidence: 6
+
+==================================================
+ES (S&P 500) - Weight 2 on Real Yields
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   2    |   -4
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   1    |    0
+Credit spreads (narrow) | +1  |   1    |   +1
+VIX direction (falling) | +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   -1
+Signal: NEUTRAL | Confidence: 6
+
+==================================================
+NQ (NASDAQ) - Weight 2 on Real Yields
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   2    |   -4
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   1    |    0
+SOX (rising)            | +1  |   1    |   +1
+MOVE (falling)          | +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   -1
+Signal: NEUTRAL | Confidence: 6
+
+==================================================
+YM (DOW) - Weight 2 on Growth
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   1    |   -2
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   2    |    0
+Credit spreads (narrow) | +1  |   1    |   +1
+2s10s curve (steepening)| +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +1
+Signal: SLIGHT_BULLISH | Confidence: 6
+
+==================================================
+RTY (RUSSELL 2000) - Weight 2 on Growth & Credit
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+Real yields (rising)    | -2  |   1    |   -2
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Growth (stable)         |  0  |   2    |    0
+Credit spreads (narrow) | +1  |   2    |   +2
+2s10s curve (steepening)| +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +2
+Signal: SLIGHT_BULLISH | Confidence: 7
+
+==================================================
+M6E (EURO FX) - Weight 2 on Rate Differential
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+ECB stance (assume neut)|  0  |   1    |    0
+Rate diff EUR-USD (flat)|  0  |   2    |    0
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+Eurozone growth (stable)|  0  |   1    |    0
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +1
+Signal: SLIGHT_BULLISH | Confidence: 5
+
+==================================================
+6A (AUD) - Weight 2 on Risk Sentiment & China
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+RBA stance (assume neut)|  0  |   1    |    0
+Rate diff AUD-USD (flat)|  0  |   1    |    0
+USD (weak/falling)      | +1  |   1    |   +1
+Risk sentiment (risk-on)| +1  |   2    |   +2
+China growth (copper up)| +1  |   2    |   +2
+Copper (rising)         | +1  |   1    |   +1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +7
+Signal: STRONG_BULLISH | Confidence: 7
+
+==================================================
+6J (YEN) - Weight 2 on BoJ Stance & Rate Diff
+==================================================
+Factor                  | Raw | Weight | Weighted
+------------------------|-----|--------|----------
+Fed stance (dovish hold)| +1  |   1    |   +1
+BoJ stance (assume neut)|  0  |   2    |    0
+Rate diff JPY-USD (flat)|  0  |   2    |    0
+USD (weak/falling)      | +1  |   1    |   +1
+Risk mood (risk-on)     | -1  |   1    |   -1
+------------------------|-----|--------|----------
+TOTAL                   |     |        |   +1
+Signal: SLIGHT_BULLISH | Confidence: 5
+
+==================================================
+ASSET CLASS AGGREGATION
+==================================================
+COMMODITIES (GC, SI, CL):
+- GC: SLIGHT_BEARISH (-2)
+- SI: SLIGHT_BULLISH (+1)
+- CL: SLIGHT_BULLISH (+2)
+Result: 2 out of 3 bullish → MIXED (not majority)
+
+INDICES (ES, NQ, YM, RTY):
+- ES: NEUTRAL (-1)
+- NQ: NEUTRAL (-1)
+- YM: SLIGHT_BULLISH (+1)
+- RTY: SLIGHT_BULLISH (+2)
+Result: 2 out of 4 bullish → MIXED (not 3+ majority)
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+1)
+- 6A: STRONG_BULLISH (+7)
+- 6J: SLIGHT_BULLISH (+1)
+Result: 3 out of 3 bullish → BULLISH
+
+==================================================
+DATA QUALITY NOTES
+==================================================
+Stale Sources:
+- Real Yields: FRED data from Jan 30, used CNBC fallback (Feb 2)
+- Credit Spreads: FRED data from Jan 31 (acceptable, 1 day old)
+- 2s10s Curve: FRED data from Feb 2 (current)
+
+Fallbacks Used:
+- CNBC US10YTIP for real yields (primary FRED was 1 day stale)
+
+Confidence Adjustments:
+- M6E, 6J: Reduced to 5 due to lack of current ECB/BoJ policy data
+- CL: Reduced to 6 due to mixed inventory signals
+- All others: 6-7 based on data freshness and signal clarity

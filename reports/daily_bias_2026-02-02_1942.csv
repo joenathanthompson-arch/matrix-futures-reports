@@ -1,0 +1,11 @@
+Symbol,Name,Asset_Class,Bias_Score,Signal,Confidence,Key_Driver,Fed_Stance,Real_Yields,USD,Risk_Mood,Growth,Other_Factor_1,Other_Factor_2
+GC,Gold Futures,Commodities,-2,SLIGHT_BEARISH,7,Rising Real Yields,+1,-4 (w2),+1,-1,0,Gold ETF Flows +1,
+SI,Silver Futures,Commodities,1,SLIGHT_BULLISH,7,Industrial Demand,+1,-2,+1,-1,0,Copper +1,Gold ETF Flows +1
+CL,Crude Oil Futures,Commodities,2,SLIGHT_BULLISH,6,Inventory Draw + USD,0 (w2),N/A,+1,N/A,0 (w2),Inventories +1,
+ES,S&P 500 E-mini,Indices,-1,NEUTRAL,6,Real Yields vs Credit,+1,-4 (w2),+1,-1,0,Credit Spreads +1,VIX Direction +1
+NQ,NASDAQ 100 E-mini,Indices,-1,NEUTRAL,6,Real Yields vs SOX,+1,-4 (w2),+1,-1,0,SOX +1,MOVE +1
+YM,Dow Jones E-mini,Indices,1,SLIGHT_BULLISH,6,Curve Steepening,+1,-2,+1,-1,0 (w2),Credit Spreads +1,2s10s Curve +1
+RTY,Russell 2000 E-mini,Indices,2,SLIGHT_BULLISH,7,Credit Conditions,+1,-2,+1,-1,0 (w2),Credit Spreads +2 (w2),2s10s Curve +1
+M6E,Euro FX Futures,FX,1,SLIGHT_BULLISH,5,USD Weakness,+1,N/A,+1,-1,N/A,Rate Diff 0 (w2),ECB Stance 0
+6A,Australian Dollar Futures,FX,7,STRONG_BULLISH,7,Risk-On + China Growth,+1,N/A,+1,+2 (w2),N/A,China Growth +2 (w2),Copper +1
+6J,Japanese Yen Futures,FX,1,SLIGHT_BULLISH,5,USD Weakness,+1,N/A,+1,-1,N/A,Rate Diff 0 (w2),BoJ Stance 0 (w2)

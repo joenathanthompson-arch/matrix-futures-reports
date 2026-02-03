@@ -1,0 +1,29 @@
+Oil Inventories (EIA Weekly) - Feb 2, 2026
+
+Source: EIA Weekly Petroleum Status Report
+URL: https://www.eia.gov/petroleum/supply/weekly/
+
+Latest Data (Week ending Jan 28, 2026):
+- Change: -2.295 million barrels (DRAW)
+- Previous: +3.602 million barrels (BUILD in week of Jan 21)
+
+Recent Trend:
+- Jan 28: -2.295M (draw)
+- Jan 22: +3.602M (build)
+- Jan 16: +3.602M (build)
+- Earlier January: Mixed with some draws (-2.8M on Jan 2)
+
+Commercial Crude Stocks:
+- Current level: ~423.8 million barrels (as of Jan 23)
+- Down from previous week
+
+Assessment: MIXED/RECENT DRAW
+- Latest week (Jan 28) showed a draw of 2.3M barrels
+- Previous weeks had builds
+- Recent trend is turning to draws after early January builds
+
+Oil Inventories Score: +1 (Draw - bullish for oil prices)
+
+Note: Most recent data shows inventory draw, which is supportive for crude prices. However, earlier in January there were builds, so the trend is mixed. Using the latest data point (draw) for scoring.
+
+Next Release: Feb 4, 2026 (Wednesday 10:30 AM ET)

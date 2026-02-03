@@ -1,0 +1,26 @@
+MOVE Index (Bond Market Volatility) - Feb 2, 2026
+
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-MOVE/
+
+Current Value: 59.30
+Change: +0.10 (+0.17%)
+Previous Close: 59.20
+At close: Feb 2, 21:30 GMT
+
+Recent Performance:
+- 1 day: +0.17%
+- 5 days: +5.67%
+- 1 month: -7.29%
+- 6 months: -33.52%
+- 1 year: -34.50%
+
+Assessment: FLAT/FALLING (over medium term)
+- Current level of 59.30 is relatively low (down 34.5% over 1 year)
+- Down significantly over 1 month (-7.29%) and 6 months (-33.52%)
+- Slight uptick over 5 days but overall trend is lower
+- Low bond volatility = stable rate environment
+
+MOVE Score: +1 (Falling - bullish for rate-sensitive assets like tech)
+
+Note: MOVE at 59.30 is well below stress levels (100+). Falling bond volatility suggests stable/improving rate expectations, which is bullish for growth assets.

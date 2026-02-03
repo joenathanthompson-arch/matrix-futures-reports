@@ -1,0 +1,23 @@
+Credit Spreads (HY OAS) - Feb 2, 2026
+
+Source: FRED BAMLH0A0HYM2
+URL: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+
+Current Value: 2.88% (as of Jan 31, 2026)
+Updated: Feb 2, 2026 10:14 AM CST
+Next Release: Feb 3, 2026
+
+Recent Trend (from chart):
+- Current: 2.88%
+- Recent range: 2.5-3.0%
+- Trending lower from 2025 highs around 4.5%
+
+Assessment: NARROWING
+- Spreads at 2.88% are near multi-year lows
+- Down from 3.0%+ levels in late 2025
+- Narrowing spreads indicate improving credit conditions
+- Low spreads = risk-on environment
+
+Credit Spreads Score: +1 (Narrowing - bullish for risk assets)
+
+Note: Data is 1 business day old but within acceptable range. Spreads continue to narrow, indicating strong credit conditions and risk appetite.

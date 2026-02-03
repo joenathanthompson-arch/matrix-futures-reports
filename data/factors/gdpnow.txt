@@ -1,0 +1,17 @@
+GDPNow (Atlanta Fed Growth Forecast) - Feb 2, 2026
+
+Source: Atlanta Fed GDPNow
+URL: https://www.atlantafed.org/cqer/research/gdpnow
+
+Latest Estimate: 4.2% (Q4 2025)
+Date: February 2, 2026
+Status: Unchanged from January 29
+
+Assessment: STABLE/STRONG
+- Current forecast of 4.2% is strong growth
+- Unchanged from previous estimate (stable)
+- Above trend growth (trend is ~2%)
+
+Growth Narrative Score: 0 (Stable - not accelerating or slowing)
+
+Note: Growth is strong at 4.2% but stable (not accelerating). This is positive for the economy but neutral for the scoring since we're looking for changes in trajectory.

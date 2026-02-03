@@ -1,0 +1,27 @@
+Real Yields (10Y TIPS) - Feb 2, 2026
+
+Source: FRED DFII10
+URL: https://fred.stlouisfed.org/series/DFII10
+
+Current Value: 1.90% (as of Jan 30, 2026)
+Updated: Feb 2, 2026 3:17 PM CST
+Next Release: Feb 3, 2026
+
+Recent Trend:
+- Data is 1 business day old (Jan 30)
+- Need to check fallback source for more current data
+
+Fallback Source: CNBC US10YTIP
+URL: https://www.cnbc.com/quotes/US10YTIP
+
+Current Value (CNBC): 1.944% (as of 7:37 PM EST Feb 2, 2026)
+Previous Close: 1.942%
+Change: +0.003 (+0.02%)
+
+Comparison:
+- FRED (Jan 30): 1.90%
+- CNBC (Feb 2): 1.944%
+- Change: +4.4 bps (rising)
+
+Assessment: RISING (up >5bps from Jan 30)
+Score: -2 (Rising real yields)

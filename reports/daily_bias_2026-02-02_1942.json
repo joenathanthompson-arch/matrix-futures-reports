@@ -1,0 +1,204 @@
+{
+  "report_metadata": {
+    "report_type": "daily_bias",
+    "generated_at": "2026-02-03T00:43:00Z",
+    "report_date": "2026-02-02",
+    "version": "1.0",
+    "methodology_reference": "docs/Macro_Bias_Scorer_Reference.md"
+  },
+  "instruments": [
+    {
+      "symbol": "GC",
+      "name": "Gold Futures",
+      "asset_class": "Commodities",
+      "bias_score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-4", "weight": 2},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"},
+        {"factor": "Risk Mood", "value": "Risk-On", "impact": "-1"},
+        {"factor": "Gold ETF Flows", "value": "Strong Inflows", "impact": "+1"}
+      ],
+      "rationale": "Rising real yields (weight 2) are the dominant bearish factor for gold, outweighing dovish Fed stance and USD weakness. Gold ETF inflows provide support but cannot overcome the real yield headwind."
+    },
+    {
+      "symbol": "SI",
+      "name": "Silver Futures",
+      "asset_class": "Commodities",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-2"},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"},
+        {"factor": "Copper", "value": "Rising ($5.88/lb)", "impact": "+1"},
+        {"factor": "Gold ETF Flows", "value": "Strong Inflows", "impact": "+1"}
+      ],
+      "rationale": "Silver benefits from industrial demand (copper strength) and USD weakness, offsetting the real yield headwind. Risk-on environment favors industrial metals component."
+    },
+    {
+      "symbol": "CL",
+      "name": "Crude Oil Futures",
+      "asset_class": "Commodities",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "key_factors": [
+        {"factor": "Oil Supply", "value": "Neutral", "impact": "0", "weight": 2},
+        {"factor": "Inventories", "value": "Draw (-2.3M bbl)", "impact": "+1"},
+        {"factor": "Growth", "value": "Stable (4.2%)", "impact": "0", "weight": 2},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"}
+      ],
+      "rationale": "Recent inventory draw and USD weakness support crude prices. Stable growth at 4.2% maintains demand. Neutral supply conditions and geopolitics provide no additional directional bias."
+    },
+    {
+      "symbol": "ES",
+      "name": "S&P 500 E-mini Futures",
+      "asset_class": "Indices",
+      "bias_score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-4", "weight": 2},
+        {"factor": "Credit Spreads", "value": "Narrowing (2.88%)", "impact": "+1"},
+        {"factor": "VIX", "value": "Falling (16.34)", "impact": "+1"},
+        {"factor": "Risk Mood", "value": "Risk-On", "impact": "-1"}
+      ],
+      "rationale": "Rising real yields create headwind for equities despite dovish Fed and strong credit conditions. Falling VIX and narrow spreads provide support. Score of -1 indicates neutral with slight bearish tilt."
+    },
+    {
+      "symbol": "NQ",
+      "name": "NASDAQ 100 E-mini Futures",
+      "asset_class": "Indices",
+      "bias_score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-4", "weight": 2},
+        {"factor": "SOX", "value": "Rising (8,134)", "impact": "+1"},
+        {"factor": "MOVE", "value": "Falling (59.30)", "impact": "+1"},
+        {"factor": "Risk Mood", "value": "Risk-On", "impact": "-1"}
+      ],
+      "rationale": "Tech-heavy NQ faces same real yield headwind as ES. Strong semiconductor performance (SOX near ATH) and falling bond volatility provide support. Neutral overall with slight bearish tilt."
+    },
+    {
+      "symbol": "YM",
+      "name": "Dow Jones E-mini Futures",
+      "asset_class": "Indices",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-2"},
+        {"factor": "Growth", "value": "Stable (4.2%)", "impact": "0", "weight": 2},
+        {"factor": "Credit Spreads", "value": "Narrowing (2.88%)", "impact": "+1"},
+        {"factor": "2s10s Curve", "value": "Steepening (0.72%)", "impact": "+1"}
+      ],
+      "rationale": "Value-heavy Dow benefits from steepening yield curve and strong credit conditions. Less sensitive to real yields than growth indices. Strong growth supports cyclicals."
+    },
+    {
+      "symbol": "RTY",
+      "name": "Russell 2000 E-mini Futures",
+      "asset_class": "Indices",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "Real Yields", "value": "Rising (1.944%)", "impact": "-2"},
+        {"factor": "Credit Spreads", "value": "Narrowing (2.88%)", "impact": "+2", "weight": 2},
+        {"factor": "2s10s Curve", "value": "Steepening (0.72%)", "impact": "+1"},
+        {"factor": "Growth", "value": "Stable (4.2%)", "impact": "0", "weight": 2}
+      ],
+      "rationale": "Small caps benefit most from tight credit conditions (weight 2) and steepening curve. Dovish Fed and USD weakness support domestic-focused companies. Best setup among equity indices."
+    },
+    {
+      "symbol": "M6E",
+      "name": "Euro FX Futures",
+      "asset_class": "FX",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "ECB Stance", "value": "Assumed Neutral", "impact": "0"},
+        {"factor": "Rate Differential", "value": "Flat", "impact": "0", "weight": 2},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"},
+        {"factor": "Risk Mood", "value": "Risk-On", "impact": "-1"}
+      ],
+      "rationale": "EUR benefits from broad USD weakness. Dovish Fed expectations support EUR/USD. Lack of current ECB policy data reduces confidence. Risk-on environment typically favors USD over EUR."
+    },
+    {
+      "symbol": "6A",
+      "name": "Australian Dollar Futures",
+      "asset_class": "FX",
+      "bias_score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"},
+        {"factor": "Risk Sentiment", "value": "Risk-On", "impact": "+2", "weight": 2},
+        {"factor": "China Growth", "value": "Stable/Improving (copper)", "impact": "+2", "weight": 2},
+        {"factor": "Copper", "value": "Rising ($5.88/lb)", "impact": "+1"}
+      ],
+      "rationale": "AUD is strongest setup across all instruments. Benefits from risk-on environment (weight 2), strong copper prices indicating healthy China demand (weight 2), and broad USD weakness. All factors aligned bullishly."
+    },
+    {
+      "symbol": "6J",
+      "name": "Japanese Yen Futures",
+      "asset_class": "FX",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "key_factors": [
+        {"factor": "Fed Stance", "value": "Dovish Hold", "impact": "+1"},
+        {"factor": "BoJ Stance", "value": "Assumed Neutral", "impact": "0", "weight": 2},
+        {"factor": "Rate Differential", "value": "Flat", "impact": "0", "weight": 2},
+        {"factor": "USD", "value": "Weak (97.604)", "impact": "+1"},
+        {"factor": "Risk Mood", "value": "Risk-On", "impact": "-1"}
+      ],
+      "rationale": "JPY benefits from USD weakness but risk-on environment typically favors USD over safe-haven yen. Lack of current BoJ policy data reduces confidence. Slight bullish bias from Fed dovishness."
+    }
+  ],
+  "aggregate_views": {
+    "commodities": {
+      "bias": "MIXED",
+      "rationale": "2 out of 3 bullish (SI, CL) but not unanimous. Gold bearish on real yields. Overall commodity complex lacks clear direction."
+    },
+    "indices": {
+      "bias": "MIXED",
+      "rationale": "2 out of 4 bullish (YM, RTY) but not 3+ majority. Large caps (ES, NQ) neutral on real yield headwinds. Small caps and value outperform growth."
+    },
+    "fx": {
+      "bias": "BULLISH",
+      "rationale": "All 3 FX instruments bullish (M6E +1, 6A +7, 6J +1). Broad USD weakness theme. AUD strongest on risk-on and China growth."
+    }
+  },
+  "macro_summary": {
+    "key_themes": [
+      "Rising real yields create headwind for rate-sensitive assets (gold, tech)",
+      "Broad USD weakness supports commodities and non-USD currencies",
+      "Risk-on environment (VIX falling, credit spreads tight) favors cyclicals",
+      "Strong growth (4.2% GDPNow) and dovish Fed expectations",
+      "Small caps and value outperform on credit conditions and curve steepening",
+      "AUD strongest setup on risk-on sentiment and China growth proxy (copper)"
+    ],
+    "data_quality": {
+      "stale_sources": [
+        "Real Yields: FRED data from Jan 30, used CNBC fallback (Feb 2)",
+        "Credit Spreads: FRED data from Jan 31 (acceptable, 1 day old)"
+      ],
+      "confidence_notes": [
+        "M6E, 6J: Reduced confidence (5) due to lack of current ECB/BoJ policy data",
+        "CL: Reduced confidence (6) due to mixed inventory signals in January"
+      ]
+    }
+  }
+}
