@@ -1,0 +1,76 @@
+{
+    "date": "2026-02-04",
+    "time": "1730",
+    "instruments": [
+        {
+            "instrument": "GC",
+            "bias_score": 0,
+            "signal": "NEUTRAL",
+            "confidence": 6
+        },
+        {
+            "instrument": "SI",
+            "bias_score": 1,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "CL",
+            "bias_score": 1,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "ES",
+            "bias_score": -1,
+            "signal": "NEUTRAL",
+            "confidence": 5
+        },
+        {
+            "instrument": "NQ",
+            "bias_score": -1,
+            "signal": "NEUTRAL",
+            "confidence": 5
+        },
+        {
+            "instrument": "YM",
+            "bias_score": 1,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "RTY",
+            "bias_score": 2,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "M6E",
+            "bias_score": -1,
+            "signal": "NEUTRAL",
+            "confidence": 5
+        },
+        {
+            "instrument": "6A",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "6J",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        }
+    ],
+    "asset_class_aggregation": {
+        "commodities": "MIXED",
+        "indices": "MIXED",
+        "fx": "BULLISH"
+    },
+    "key_drivers": [
+        "Central bank divergence driving FX: RBA surprise hike and BoJ hawkish tilt supporting AUD and JPY",
+        "Credit conditions remain supportive: Tight HY spreads (2.85%) benefiting equities, especially small caps",
+        "USD strength creating headwinds: DXY +0.27% pressuring commodities and risk assets"
+    ]
+}

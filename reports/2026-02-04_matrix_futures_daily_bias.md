@@ -1,42 +1,40 @@
 # Matrix Futures Daily Bias Report
 
-**Report Date:** February 4, 2026
-**Generated At:** 07:45 EST
+**Report Date:** 2026-02-04
+**Generated At:** 1730 EST
 
 ## Executive Summary
 
-This report provides a quantitative, macro-driven directional bias for ten key futures instruments across commodities, equity indices, and foreign exchange. The bias is determined by a weighted scoring system of over 14 macroeconomic factors, designed to provide a short-term (1-3 day) outlook. Today's report indicates a **bullish bias for equity indices**, a **slight bullish bias for commodities**, and a **neutral stance on FX**.
+This report provides a quantitative, macro-driven directional bias for ten key futures instruments across commodities, equity indices, and foreign exchange. The bias is determined by a weighted scoring system of over 14 macroeconomic factors, designed to provide a short-term (1-3 day) outlook. Today's report indicates a **BULLISH bias for FX**, a **MIXED bias for commodities**, and a **MIXED stance on indices**.
 
-The primary drivers for this outlook are supportive credit conditions, with high-yield spreads near multi-year lows, and a continued decline in both equity and bond market volatility. These factors are creating a favorable environment for risk assets. A surprise hawkish rate hike from the Reserve Bank of Australia is providing support for the Australian Dollar, though this is tempered by signs of slowing growth in China. Weakness in the semiconductor sector is a notable headwind for the Nasdaq 100, leading to a neutral rating for that index.
+The primary drivers for this outlook are the significant central bank policy divergences, with the RBA's surprise hike and the BoJ's hawkish tilt providing a strong tailwind for the AUD and JPY. Credit conditions remain supportive, benefiting value and small-cap stocks. However, a stronger US Dollar and weakness in the semiconductor sector are creating headwinds for the broader market and commodities.
 
 ### Daily Bias Summary
 
 | Instrument | Symbol | Daily Bias | Numeric Score | Confidence |
 | :--- | :--- | :--- | :--- | :--- |
-| Gold | GC | SLIGHT_BULLISH | +1 | 6/10 |
-| Silver | SI | SLIGHT_BULLISH | +2 | 6/10 |
-| Crude Oil | CL | NEUTRAL | -1 | 5/10 |
-| S&P 500 | ES | SLIGHT_BULLISH | +2 | 7/10 |
-| Nasdaq 100 | NQ | NEUTRAL | 0 | 5/10 |
-| Dow Jones | YM | SLIGHT_BULLISH | +2 | 7/10 |
-| Russell 2000 | RTY | BULLISH | +3 | 7/10 |
-| Euro | M6E | NEUTRAL | 0 | 5/10 |
-| Australian Dollar | 6A | SLIGHT_BULLISH | +1 | 6/10 |
-| Japanese Yen | 6J | NEUTRAL | 0 | 5/10 |
+| GC | GC | NEUTRAL | 0 | 6/10 |
+| SI | SI | SLIGHT_BULLISH | 1 | 6/10 |
+| CL | CL | SLIGHT_BULLISH | 1 | 6/10 |
+| ES | ES | NEUTRAL | -1 | 5/10 |
+| NQ | NQ | NEUTRAL | -1 | 5/10 |
+| YM | YM | SLIGHT_BULLISH | 1 | 6/10 |
+| RTY | RTY | SLIGHT_BULLISH | 2 | 6/10 |
+| M6E | M6E | NEUTRAL | -1 | 5/10 |
+| 6A | 6A | BULLISH | 3 | 7/10 |
+| 6J | 6J | BULLISH | 3 | 7/10 |
 
 ### Asset Class Bias
 
-*   **Commodities:** SLIGHT_BULLISH
-*   **Indices:** BULLISH
-*   **FX:** NEUTRAL
+*   **Commodities:** MIXED
+*   **Indices:** MIXED
+*   **FX:** BULLISH
 
 ### Key Macro Drivers
 
-1.  **Supportive Credit Conditions:** High-yield option-adjusted spreads have narrowed to 2.81%, near multi-year lows, indicating tight credit conditions which are supportive for risk assets, particularly small-cap equities (Russell 2000).
-2.  **Falling Volatility:** Both the VIX (equity volatility) and the MOVE index (bond volatility) are declining, suggesting a decrease in perceived risk and creating a favorable backdrop for equities.
-3.  **RBA Hawkish Surprise:** The Reserve Bank of Australia delivered a surprise 25 basis point rate hike, its first in over two years, providing a bullish catalyst for the Australian Dollar.
-4.  **Persistent Gold Inflows:** Gold-backed ETFs saw their eighth consecutive month of inflows in January, a strong sign of continued investor demand for the precious metal.
-5.  **Semiconductor Weakness:** The Philadelphia Semiconductor Index (SOX) has shown recent weakness, falling over 2% in the last session. This acts as a headwind for the tech-heavy Nasdaq 100 index.
+1.  **Central bank divergence driving FX: RBA surprise hike and BoJ hawkish tilt supporting AUD and JPY**
+1.  **Credit conditions remain supportive: Tight HY spreads (2.85%) benefiting equities, especially small caps**
+1.  **USD strength creating headwinds: DXY +0.27% pressuring commodities and risk assets**
 
 ---
 
@@ -44,32 +42,32 @@ The primary drivers for this outlook are supportive credit conditions, with high
 
 ### Commodities
 
-*   **Gold (GC): SLIGHT_BULLISH (+1)**
-    *   The primary driver for the bullish bias is the strong and consistent inflow into Gold ETFs. However, the overall macro environment is neutral for gold, with a stable Fed, flat real yields, and a steady US Dollar, leading to a moderate confidence score.
-*   **Silver (SI): SLIGHT_BULLISH (+2)**
-    *   Silver benefits from the same positive ETF flows as gold, and also draws support from the strength in industrial metals, as indicated by rising copper prices. This gives it a slightly stronger bullish bias than gold.
-*   **Crude Oil (CL): NEUTRAL (-1)**
-    *   The bias for crude oil is neutral. A recent build in inventories is a bearish factor, but this is counteracted by stable global growth projections and a lack of significant geopolitical risk premium. The outlook is balanced, resulting in a low confidence score.
+*   **Gold (GC): NEUTRAL (0)**
+    *   Gold is caught between a stronger US Dollar, which is a headwind, and supportive ETF inflows. Real yields are flat, providing no strong directional signal.
+*   **Silver (SI): SLIGHT_BULLISH (+1)**
+    *   Silver benefits from the same positive ETF flows as gold, and also gets a boost from the industrial metals side with copper's continued strength. The stronger USD is a headwind.
+*   **Crude Oil (CL): SLIGHT_BULLISH (+1)**
+    *   Crude oil is supported by a reported draw in inventories and elevated geopolitical risk. However, a stronger USD and a stable (not accelerating) growth narrative are capping the upside.
 
 ### Equity Indices
 
-*   **S&P 500 (ES): SLIGHT_BULLISH (+2)**
-    *   The S&P 500 has a slight bullish bias, supported by narrowing credit spreads and falling volatility. The stable growth outlook provides a solid foundation for large-cap equities.
-*   **Nasdaq 100 (NQ): NEUTRAL (0)**
-    *   The Nasdaq 100 is rated neutral due to conflicting signals. While falling bond market volatility (MOVE Index) is a positive factor, the recent downturn in the semiconductor sector (SOX) is a significant headwind for this tech-focused index.
-*   **Dow Jones (YM): SLIGHT_BULLISH (+2)**
-    *   The Dow Jones shows a slight bullish bias. It benefits from supportive credit conditions and a steepening yield curve, which is often a positive signal for the more value-oriented and cyclical stocks in the index.
-*   **Russell 2000 (RTY): BULLISH (+3)**
-    *   The Russell 2000 has the strongest bullish bias among the indices. Small-cap stocks are particularly sensitive to credit conditions, and the current tight spreads are highly supportive. The steepening yield curve further reinforces the positive outlook for this segment of the market.
+*   **S&P 500 (ES): NEUTRAL (-1)**
+    *   The S&P 500 is showing a neutral bias. While credit spreads remain tight and supportive, a rising VIX and a stronger USD are creating headwinds for the broader market.
+*   **Nasdaq 100 (NQ): NEUTRAL (-1)**
+    *   The Nasdaq 100 has a neutral bias, with significant weakness in the semiconductor sector (SOX) acting as a major drag. While falling bond market volatility (MOVE) is a positive, the tech sector is clearly underperforming.
+*   **Dow Jones (YM): SLIGHT_BULLISH (+1)**
+    *   The Dow Jones shows a slight bullish bias, benefiting from tight credit spreads and a steepening yield curve. It is outperforming the tech-heavy Nasdaq, reflecting a rotation to value.
+*   **Russell 2000 (RTY): SLIGHT_BULLISH (+2)**
+    *   The Russell 2000 has a slight bullish bias, strongly supported by narrowing credit spreads, which is particularly beneficial for smaller companies. The steepening yield curve is also a positive.
 
 ### Foreign Exchange
 
-*   **Euro (M6E): NEUTRAL (0)**
-    *   The Euro has a neutral bias. Both the US Federal Reserve and the European Central Bank are in a holding pattern, leading to no clear directional signal from interest rate differentials. The overall risk environment is balanced, providing no strong catalyst for the currency.
-*   **Australian Dollar (6A): SLIGHT_BULLISH (+1)**
-    *   The Australian Dollar has a slight bullish bias following the RBA's surprise rate hike. This hawkish move has created a positive rate differential against the US Dollar. However, the bullish case is tempered by signs of slowing growth in China, a key trading partner for Australia.
-*   **Japanese Yen (6J): NEUTRAL (0)**
-    *   The Japanese Yen is rated neutral. With both the Bank of Japan and the Federal Reserve on hold, there is no significant driver from monetary policy divergence. The balanced risk environment also fails to provide a clear directional cue for this safe-haven currency.
+*   **Euro (M6E): NEUTRAL (-1)**
+    *   The Euro is neutral against the US Dollar. With both the Fed and the ECB on hold, there is no strong catalyst for a directional move. The stronger USD is a headwind.
+*   **Australian Dollar (6A): BULLISH (+3)**
+    *   The Australian Dollar has a strong bullish bias following a surprise 25bps rate hike by the RBA. This hawkish turn is a major catalyst, further supported by copper's strength.
+*   **Japanese Yen (6J): BULLISH (+3)**
+    *   The Japanese Yen has a bullish bias, driven by the BoJ's hawkish hold and signals of future rate hikes. This is narrowing the rate differential against the US Dollar.
 
 ---
 
@@ -92,8 +90,8 @@ This report is generated using a proprietary quantitative model that analyzes ov
 [11] Investing.com Copper Prices: https://www.investing.com/commodities/copper
 [12] Reuters Gold ETF Flows: https://www.reuters.com/markets/wealth/investors-flock-gold-gold-miner-etfs-january-bid-safety-2026-02-02/
 [13] EIA Weekly Petroleum Status Report: https://www.eia.gov/petroleum/supply/weekly/
-[14] BBVA Research Geopolitics Monitor: https://www.bbvaresearch.com/en/publicaciones/global-bbva-research-big-data-geopolitics-monitor-3-february-2026/
-[15] ECB Monetary Policy: https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260122~5ca84e0f51.en.html
+[14] MacroMicro Geopolitical Risk Index: https://en.macromicro.me/charts/55589/global-geopolitical-risk-index
+[15] Reuters ECB Policy: https://www.reuters.com/business/ecb-is-not-any-hurry-change-policy-accounts-show-2026-01-22/
 [16] RBA Monetary Policy Statement: https://www.rba.gov.au/media-releases/2026/mr-26-03.html
 [17] Bank of Japan Monetary Policy Statement: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260123a.pdf
-[18] Reuters China Manufacturing PMI: https://www.reuters.com/world/asia-pacific/china-january-official-manufacturing-pmi-drops-493-2026-01-31/
+[18] Reuters China Manufacturing PMI: https://www.reuters.com/world/asia-pacific/chinas-factory-activity-expansion-accelerates-january-private-pmi-shows-2026-02-02/
