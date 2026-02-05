@@ -1,0 +1,11 @@
+Instrument,Bias,Signal,Confidence,Score,Key Drivers
+GC,BULLISH,IB_BREAKOUT,7/10,3,"USD weakness, risk-off, ETF inflows"
+SI,SLIGHT_BULLISH,FADE_EXTREMES,6/10,2,"USD weakness, gold strength, copper weakness"
+CL,BULLISH,IB_BREAKOUT,6/10,3,"Inventory draw, geopolitical risk, USD weakness"
+ES,SLIGHT_BULLISH,MEAN_REVERSION,5/10,2,"Credit spreads narrowing, VIX rising, risk-off"
+NQ,SLIGHT_BULLISH,MEAN_REVERSION,5/10,2,"MOVE falling, SOX falling, risk-off"
+YM,BULLISH,IB_BREAKOUT,6/10,4,"Credit spreads narrowing, curve steepening, value tilt"
+RTY,STRONG_BULLISH,IB_BREAKOUT,7/10,5,"Credit spreads narrowing, curve steepening, domestic focus"
+M6E,SLIGHT_BULLISH,FADE_EXTREMES,5/10,2,"USD weakness, stable rate differentials"
+6A,SLIGHT_BEARISH,IB_BREAKOUT_REVERSAL,6/10,-2,"Risk-off, China weakness, copper weakness"
+6J,STRONG_BULLISH,IB_BREAKOUT,7/10,6,"BoJ hawkish, risk-off, USD weakness"
