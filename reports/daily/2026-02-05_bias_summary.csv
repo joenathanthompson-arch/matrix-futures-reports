@@ -1,0 +1,11 @@
+Date,Instrument,Name,Asset_Class,Bias_Score,Bias_Label,Conviction
+2026-02-05,ES,E-mini S&P 500,Equity Index,0.3,Neutral,Very Low
+2026-02-05,NQ,E-mini Nasdaq-100,Equity Index,-1.0,Weak Bearish,Very Low
+2026-02-05,RTY,E-mini Russell 2000,Equity Index,1.5,Weak Bullish,Very Low
+2026-02-05,GC,Gold,Precious Metal,3.5,Weak Bullish,Low
+2026-02-05,SI,Silver,Precious Metal,0.4,Neutral,Very Low
+2026-02-05,CL,Crude Oil WTI,Energy,4.8,Bullish,Moderate
+2026-02-05,HG,Copper,Industrial Metal,-2.5,Weak Bearish,Low
+2026-02-05,M6E,Micro EUR/USD,FX,1.5,Weak Bullish,Very Low
+2026-02-05,6A,Australian Dollar,FX,0.7,Neutral,Very Low
+2026-02-05,6J,Japanese Yen,FX,3.7,Weak Bullish,Low
