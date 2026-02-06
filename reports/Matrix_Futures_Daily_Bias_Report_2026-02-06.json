@@ -1,0 +1,72 @@
+[
+  {
+    "instrument": "Gold",
+    "symbol": "GC",
+    "signal": "BULLISH",
+    "score": 3,
+    "confidence": 7
+  },
+  {
+    "instrument": "Silver",
+    "symbol": "SI",
+    "signal": "BULLISH",
+    "score": 4,
+    "confidence": 6
+  },
+  {
+    "instrument": "Crude Oil",
+    "symbol": "CL",
+    "signal": "BULLISH",
+    "score": 3,
+    "confidence": 6
+  },
+  {
+    "instrument": "S&P 500",
+    "symbol": "ES",
+    "signal": "BULLISH",
+    "score": 4,
+    "confidence": 7
+  },
+  {
+    "instrument": "Nasdaq 100",
+    "symbol": "NQ",
+    "signal": "BULLISH",
+    "score": 4,
+    "confidence": 7
+  },
+  {
+    "instrument": "Dow Jones",
+    "symbol": "YM",
+    "signal": "BULLISH",
+    "score": 4,
+    "confidence": 6
+  },
+  {
+    "instrument": "Russell 2000",
+    "symbol": "RTY",
+    "signal": "STRONG_BULLISH",
+    "score": 5,
+    "confidence": 7
+  },
+  {
+    "instrument": "Euro FX",
+    "symbol": "M6E",
+    "signal": "NEUTRAL",
+    "score": 0,
+    "confidence": 5
+  },
+  {
+    "instrument": "AUD/USD",
+    "symbol": "6A",
+    "signal": "BULLISH",
+    "score": 3,
+    "confidence": 6
+  },
+  {
+    "instrument": "JPY/USD",
+    "symbol": "6J",
+    "signal": "STRONG_BULLISH",
+    "score": 6,
+    "confidence": 7
+  }
+]
