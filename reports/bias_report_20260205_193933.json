@@ -1,0 +1,333 @@
+{
+  "report_date": "2026-02-05",
+  "generated_at": "2026-02-05T19:39:33.494706",
+  "version": "1.0",
+  "methodology": "weighted_macro_factor_scoring",
+  "instrument_scores": {
+    "ES": {
+      "name": "E-mini S&P 500",
+      "bias_score": -1.7,
+      "bias_label": "SLIGHTLY BEARISH",
+      "raw_score": -2,
+      "max_possible": 12,
+      "factors": {
+        "fed_stance": {
+          "score": -1,
+          "weight": 3,
+          "weighted_contribution": -3
+        },
+        "real_yields": {
+          "score": 0,
+          "weight": 2,
+          "weighted_contribution": 0
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -1,
+          "weighted_contribution": -1
+        },
+        "vix": {
+          "score": 1,
+          "weight": -2,
+          "weighted_contribution": -2
+        },
+        "gdpnow": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "credit_spreads": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        }
+      }
+    },
+    "NQ": {
+      "name": "E-mini Nasdaq-100",
+      "bias_score": -4.6,
+      "bias_label": "BEARISH",
+      "raw_score": -6,
+      "max_possible": 13,
+      "factors": {
+        "fed_stance": {
+          "score": -1,
+          "weight": 3,
+          "weighted_contribution": -3
+        },
+        "real_yields": {
+          "score": 0,
+          "weight": 3,
+          "weighted_contribution": 0
+        },
+        "sox": {
+          "score": -1,
+          "weight": 3,
+          "weighted_contribution": -3
+        },
+        "move": {
+          "score": -1,
+          "weight": -2,
+          "weighted_contribution": 2
+        },
+        "vix": {
+          "score": 1,
+          "weight": -2,
+          "weighted_contribution": -2
+        }
+      }
+    },
+    "YM": {
+      "name": "E-mini Dow",
+      "bias_score": 4.0,
+      "bias_label": "BULLISH",
+      "raw_score": 4,
+      "max_possible": 10,
+      "factors": {
+        "fed_stance": {
+          "score": -1,
+          "weight": 2,
+          "weighted_contribution": -2
+        },
+        "gdpnow": {
+          "score": 1,
+          "weight": 3,
+          "weighted_contribution": 3
+        },
+        "curve_2s10s": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "credit_spreads": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -1,
+          "weighted_contribution": -1
+        }
+      }
+    },
+    "RTY": {
+      "name": "E-mini Russell 2000",
+      "bias_score": 4.0,
+      "bias_label": "BULLISH",
+      "raw_score": 4,
+      "max_possible": 10,
+      "factors": {
+        "fed_stance": {
+          "score": -1,
+          "weight": 3,
+          "weighted_contribution": -3
+        },
+        "credit_spreads": {
+          "score": 1,
+          "weight": 3,
+          "weighted_contribution": 3
+        },
+        "curve_2s10s": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "gdpnow": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        }
+      }
+    },
+    "CL": {
+      "name": "Crude Oil",
+      "bias_score": -1.0,
+      "bias_label": "SLIGHTLY BEARISH",
+      "raw_score": -1,
+      "max_possible": 10,
+      "factors": {
+        "oil_inventories": {
+          "score": 1,
+          "weight": 3,
+          "weighted_contribution": 3
+        },
+        "oil_supply": {
+          "score": 0,
+          "weight": 3,
+          "weighted_contribution": 0
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -2,
+          "weighted_contribution": -2
+        },
+        "china_growth": {
+          "score": -1,
+          "weight": 2,
+          "weighted_contribution": -2
+        }
+      }
+    },
+    "GC": {
+      "name": "Gold",
+      "bias_score": 3.0,
+      "bias_label": "SLIGHTLY BULLISH",
+      "raw_score": 3,
+      "max_possible": 10,
+      "factors": {
+        "real_yields": {
+          "score": 0,
+          "weight": -3,
+          "weighted_contribution": 0
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -2,
+          "weighted_contribution": -2
+        },
+        "gold_etf_flows": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "geopolitical_risk": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        },
+        "vix": {
+          "score": 1,
+          "weight": 1,
+          "weighted_contribution": 1
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver",
+      "bias_score": -2.5,
+      "bias_label": "SLIGHTLY BEARISH",
+      "raw_score": -2,
+      "max_possible": 8,
+      "factors": {
+        "real_yields": {
+          "score": 0,
+          "weight": -2,
+          "weighted_contribution": 0
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -2,
+          "weighted_contribution": -2
+        },
+        "copper": {
+          "score": -1,
+          "weight": 2,
+          "weighted_contribution": -2
+        },
+        "gdpnow": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "bias_score": -4.0,
+      "bias_label": "BEARISH",
+      "raw_score": -4,
+      "max_possible": 10,
+      "factors": {
+        "rba_stance": {
+          "score": 1,
+          "weight": 3,
+          "weighted_contribution": 3
+        },
+        "china_growth": {
+          "score": -1,
+          "weight": 2,
+          "weighted_contribution": -2
+        },
+        "copper": {
+          "score": -1,
+          "weight": 2,
+          "weighted_contribution": -2
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -3,
+          "weighted_contribution": -3
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro",
+      "bias_score": -1.2,
+      "bias_label": "SLIGHTLY BEARISH",
+      "raw_score": -1,
+      "max_possible": 8,
+      "factors": {
+        "ecb_stance": {
+          "score": 0,
+          "weight": 3,
+          "weighted_contribution": 0
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -3,
+          "weighted_contribution": -3
+        },
+        "fed_stance": {
+          "score": -1,
+          "weight": -2,
+          "weighted_contribution": 2
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "bias_score": 2.5,
+      "bias_label": "SLIGHTLY BULLISH",
+      "raw_score": 2,
+      "max_possible": 8,
+      "factors": {
+        "boj_stance": {
+          "score": 1,
+          "weight": 3,
+          "weighted_contribution": 3
+        },
+        "dxy": {
+          "score": 1,
+          "weight": -3,
+          "weighted_contribution": -3
+        },
+        "vix": {
+          "score": 1,
+          "weight": 2,
+          "weighted_contribution": 2
+        }
+      }
+    }
+  },
+  "macro_factors": {
+    "fed_stance": -1,
+    "real_yields": 0,
+    "dxy": 1,
+    "vix": 1,
+    "gdpnow": 1,
+    "credit_spreads": 1,
+    "sox": -1,
+    "move": -1,
+    "curve_2s10s": 1,
+    "copper": -1,
+    "oil_inventories": 1,
+    "oil_supply": 0,
+    "gold_etf_flows": 1,
+    "geopolitical_risk": 1,
+    "ecb_stance": 0,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": -1
+  }
+}
