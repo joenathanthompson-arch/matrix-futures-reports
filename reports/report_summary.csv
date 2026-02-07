@@ -1,0 +1,11 @@
+Instrument,Name,Bias,Conviction,Normalized Score
+6A,Australian Dollar,BULLISH,3,2.0
+6J,Japanese Yen,NEUTRAL,1,0.0
+BTC,Bitcoin (Micro),BULLISH,5,4.0
+CL,Crude Oil,BULLISH,6,5.0
+ES,E-mini S&P 500,BULLISH,6,5.0
+GC,Gold,NEUTRAL,1,0.0
+M6E,Micro EUR/USD,BULLISH,1,0.83
+NQ,E-mini Nasdaq-100,BULLISH,6,5.0
+RTY,E-mini Russell 2000,BULLISH,5,4.76
+ZN,10-Year T-Note,BEARISH,2,-1.76

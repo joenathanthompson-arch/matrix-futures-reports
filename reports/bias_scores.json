@@ -1,0 +1,632 @@
+{
+  "generated_at": "2026-02-07T00:42:14.614867Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "dxy": 0,
+    "vix": -1,
+    "growth_narrative": 0,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": -1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": 1,
+    "gold_etf_flows": 1,
+    "geopolitical_risk": 0,
+    "ecb_policy": 0,
+    "rba_policy": 1,
+    "boj_policy": 1,
+    "china_growth": -1
+  },
+  "results": [
+    {
+      "instrument": "6A",
+      "name": "Australian Dollar",
+      "raw_score": 3,
+      "max_possible": 15,
+      "normalized_score": 2.0,
+      "bias": "BULLISH",
+      "conviction": 3,
+      "breakdown": [
+        [
+          "dxy",
+          0,
+          -3,
+          0
+        ],
+        [
+          "fed_stance",
+          0,
+          -2,
+          0
+        ],
+        [
+          "rba_policy",
+          1,
+          3,
+          3
+        ],
+        [
+          "china_growth",
+          -1,
+          3,
+          -3
+        ],
+        [
+          "copper",
+          1,
+          2,
+          2
+        ],
+        [
+          "credit_spreads",
+          1,
+          1,
+          1
+        ],
+        [
+          "growth_narrative",
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "6J",
+      "name": "Japanese Yen",
+      "raw_score": 0,
+      "max_possible": 13,
+      "normalized_score": 0.0,
+      "bias": "NEUTRAL",
+      "conviction": 1,
+      "breakdown": [
+        [
+          "dxy",
+          0,
+          -2,
+          0
+        ],
+        [
+          "fed_stance",
+          0,
+          -2,
+          0
+        ],
+        [
+          "boj_policy",
+          1,
+          3,
+          3
+        ],
+        [
+          "real_yields",
+          0,
+          -2,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          2,
+          -2
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          1,
+          0
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "instrument": "BTC",
+      "name": "Bitcoin (Micro)",
+      "raw_score": 6,
+      "max_possible": 15,
+      "normalized_score": 4.0,
+      "bias": "BULLISH",
+      "conviction": 5,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          2,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -3,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -2,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          -2,
+          2
+        ],
+        [
+          "credit_spreads",
+          1,
+          2,
+          2
+        ],
+        [
+          "sox",
+          1,
+          2,
+          2
+        ],
+        [
+          "growth_narrative",
+          0,
+          1,
+          0
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "CL",
+      "name": "Crude Oil",
+      "raw_score": 7,
+      "max_possible": 14,
+      "normalized_score": 5.0,
+      "bias": "BULLISH",
+      "conviction": 6,
+      "breakdown": [
+        [
+          "growth_narrative",
+          0,
+          3,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -2,
+          0
+        ],
+        [
+          "oil_inventories",
+          1,
+          3,
+          3
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          2,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          1,
+          1
+        ],
+        [
+          "copper",
+          1,
+          2,
+          2
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "instrument": "ES",
+      "name": "E-mini S&P 500",
+      "raw_score": 9,
+      "max_possible": 18,
+      "normalized_score": 5.0,
+      "bias": "BULLISH",
+      "conviction": 6,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          3,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -2,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -1,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          -3,
+          3
+        ],
+        [
+          "growth_narrative",
+          0,
+          2,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          2,
+          2
+        ],
+        [
+          "sox",
+          1,
+          2,
+          2
+        ],
+        [
+          "move_index",
+          -1,
+          -1,
+          1
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          1,
+          1
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "GC",
+      "name": "Gold",
+      "raw_score": 0,
+      "max_possible": 17,
+      "normalized_score": 0.0,
+      "bias": "NEUTRAL",
+      "conviction": 1,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          -2,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -3,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -3,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          2,
+          -2
+        ],
+        [
+          "growth_narrative",
+          0,
+          -1,
+          0
+        ],
+        [
+          "gold_etf_flows",
+          1,
+          3,
+          3
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          2,
+          0
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "instrument": "M6E",
+      "name": "Micro EUR/USD",
+      "raw_score": 1,
+      "max_possible": 12,
+      "normalized_score": 0.83,
+      "bias": "BULLISH",
+      "conviction": 1,
+      "breakdown": [
+        [
+          "dxy",
+          0,
+          -3,
+          0
+        ],
+        [
+          "fed_stance",
+          0,
+          -2,
+          0
+        ],
+        [
+          "ecb_policy",
+          0,
+          2,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -2,
+          0
+        ],
+        [
+          "growth_narrative",
+          0,
+          1,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          1,
+          1
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "NQ",
+      "name": "E-mini Nasdaq-100",
+      "raw_score": 10,
+      "max_possible": 20,
+      "normalized_score": 5.0,
+      "bias": "BULLISH",
+      "conviction": 6,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          3,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -3,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -1,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          -3,
+          3
+        ],
+        [
+          "growth_narrative",
+          0,
+          2,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          2,
+          2
+        ],
+        [
+          "sox",
+          1,
+          3,
+          3
+        ],
+        [
+          "move_index",
+          -1,
+          -1,
+          1
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          1,
+          1
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "RTY",
+      "name": "E-mini Russell 2000",
+      "raw_score": 10,
+      "max_possible": 21,
+      "normalized_score": 4.76,
+      "bias": "BULLISH",
+      "conviction": 5,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          3,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -2,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -2,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          -3,
+          3
+        ],
+        [
+          "growth_narrative",
+          0,
+          3,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          3,
+          3
+        ],
+        [
+          "sox",
+          1,
+          1,
+          1
+        ],
+        [
+          "move_index",
+          -1,
+          -1,
+          1
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          2,
+          2
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "instrument": "ZN",
+      "name": "10-Year T-Note",
+      "raw_score": -3,
+      "max_possible": 17,
+      "normalized_score": -1.76,
+      "bias": "BEARISH",
+      "conviction": 2,
+      "breakdown": [
+        [
+          "fed_stance",
+          0,
+          -3,
+          0
+        ],
+        [
+          "real_yields",
+          0,
+          -3,
+          0
+        ],
+        [
+          "dxy",
+          0,
+          -1,
+          0
+        ],
+        [
+          "vix",
+          -1,
+          2,
+          -2
+        ],
+        [
+          "growth_narrative",
+          0,
+          -2,
+          0
+        ],
+        [
+          "credit_spreads",
+          1,
+          -1,
+          -1
+        ],
+        [
+          "move_index",
+          -1,
+          -2,
+          2
+        ],
+        [
+          "yield_curve_2s10s",
+          1,
+          -2,
+          -2
+        ],
+        [
+          "geopolitical_risk",
+          0,
+          1,
+          0
+        ]
+      ]
+    }
+  ]
+}
