@@ -1,0 +1,24 @@
+factor_id,factor_name,source,value,assessment,score,notes
+1,Fed Stance,CME FedWatch,76.8% hold,NEUTRAL HOLD,0,Next meeting March 18-19 2026
+2,Real Yields,CNBC,1.878%,FLAT,0,Used CNBC fallback as FRED was stale
+3,USD (DXY),TradingView,97.681,WEAK/FALLING,1,Down over 1m 6m and 1y
+4,VIX (Risk Mood),CBOE,17.76,BALANCED,0,VIX is in the 15-20 balanced range
+5,VIX Direction,CBOE,-18.42%,FALLING,1,Significant drop from previous close
+6,Growth (GDPNow),Atlanta Fed,4.2%,STABLE,0,Q4 2025 estimate unchanged
+7,Credit Spreads (HY OAS),FRED,2.97%,NARROWING,1,Trend is narrowing over the past year
+8,SOX (Semiconductors),TradingView,8048.62,RISING,1,Strong uptrend over 1m 6m and 1y
+9,MOVE INDEX (Rate Volatility),TradingView,63.62,FALLING,1,Down over 1m 6m and 1y
+10,2s10s Yield Curve,FRED,0.72%,STEEPENING,1,Rising from negative territory
+11,Copper,Investing.com,5.8820,RISING,1,Strong uptrend over 3m 6m and 1y
+12,Gold ETF Flows,World Gold Council,$19bn Jan inflows,INFLOWS,1,Strongest month on record
+13,Oil Inventories,EIA,-3.455M barrels,DRAW,1,Significant draw vs forecast
+14,Geopolitical Risk,News Analysis,N/A,RISING,1,Elevated US-Iran and Israel-Iran tensions
+15,Oil Supply Shock,Internal Assessment,N/A,NEUTRAL,0,No major supply disruptions currently
+16,ECB Stance,ECB,Rates unchanged,NEUTRAL HOLD,0,No rate moves expected in 2026
+17,RBA Stance,News Analysis,Rates unchanged,NEUTRAL HOLD,0,Rates expected to stay higher for longer
+18,BoJ Stance,General Knowledge,N/A,HAWKISH/TIGHTENING,1,BoJ normalizing policy
+19,China Growth,Internal Assessment,N/A,STABLE,0,Growth has stabilized around 5%
+20,Rate Differential EUR-USD,Internal Assessment,N/A,STABLE,0,ECB and Fed both on hold
+21,Rate Differential AUD-USD,Internal Assessment,N/A,STABLE,0,RBA and Fed both on hold
+22,Rate Differential JPY-USD,Internal Assessment,N/A,WIDENING,1,BoJ tightening while Fed on hold
+23,Risk Sentiment (for 6A),Internal Assessment,VIX 17.76,NEUTRAL,0,VIX in balanced range

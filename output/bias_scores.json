@@ -1,0 +1,80 @@
+{
+    "date": "2026-02-07",
+    "key_drivers": [
+        "USD weakness benefiting all asset classes across commodities, equities, and FX",
+        "Credit spreads narrowing and VIX falling support risk assets and equities",
+        "BoJ policy normalization driving strong JPY strength vs USD"
+    ],
+    "bias_scores": [
+        {
+            "instrument": "GC",
+            "asset_class": "Commodities",
+            "bias_score": 2,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "SI",
+            "asset_class": "Commodities",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "CL",
+            "asset_class": "Commodities",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "ES",
+            "asset_class": "Indices",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "NQ",
+            "asset_class": "Indices",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "YM",
+            "asset_class": "Indices",
+            "bias_score": 3,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "RTY",
+            "asset_class": "Indices",
+            "bias_score": 4,
+            "signal": "BULLISH",
+            "confidence": 7
+        },
+        {
+            "instrument": "M6E",
+            "asset_class": "FX",
+            "bias_score": 1,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "6A",
+            "asset_class": "FX",
+            "bias_score": 2,
+            "signal": "SLIGHT_BULLISH",
+            "confidence": 6
+        },
+        {
+            "instrument": "6J",
+            "asset_class": "FX",
+            "bias_score": 5,
+            "signal": "STRONG_BULLISH",
+            "confidence": 7
+        }
+    ]
+}
