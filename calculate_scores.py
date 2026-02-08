@@ -1,314 +1,281 @@
 #!/usr/bin/env python3
 """
-Matrix Futures Daily Bias Scorer
+Matrix Futures Bias Scorer
 Calculates weighted bias scores for 10 futures instruments
 """
-
-from datetime import datetime, timezone
 import json
+from datetime import datetime, timezone
 
-# Data from collection (2026-01-29)
-fed_stance = 1  # Dovish hold
-real_yields = 0  # Flat
-usd_dxy = 1  # Weak/Falling
-risk_mood = 0  # Balanced (VIX 15-20)
-vix_direction = 0  # Flat
-growth = -1  # Accelerating
-credit_spreads = 1  # Narrowing
-sox = 1  # Rising
-move = 1  # Falling
-curve_2s10s = 1  # Steepening
-copper = 1  # Rising
-oil_inventories = 1  # Draw
-geopolitical = 1  # Rising
-gold_etf_flows = 1  # Inflows
-ecb_stance = 0  # Neutral hold
-rba_stance = 1  # Hawkish
-boj_stance = 1  # Hawkish
-china_growth = 0  # Stable
-
-# Calculate GC (Gold) - Max Range: -14 to +16
-gc_score = (
-    fed_stance * 1 +
-    real_yields * 2 +  # Weight 2
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 1 +
-    geopolitical * 1 +  # Using geopolitical as proxy for oil supply shock
-    gold_etf_flows * 1
-)
-print(f"GC (Gold): {gc_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*2={real_yields*2}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*1={growth}")
-print(f"  Geopolitical: {geopolitical}*1={geopolitical}")
-print(f"  Gold ETF: {gold_etf_flows}*1={gold_etf_flows}")
-print()
-
-# Calculate SI (Silver) - Max Range: -10 to +12
-si_score = (
-    fed_stance * 1 +
-    real_yields * 1 +
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 1 +
-    copper * 1 +
-    gold_etf_flows * 1
-)
-print(f"SI (Silver): {si_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*1={real_yields}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*1={growth}")
-print(f"  Copper: {copper}*1={copper}")
-print(f"  Gold ETF: {gold_etf_flows}*1={gold_etf_flows}")
-print()
-
-# Calculate CL (Crude) - Max Range: -9 to +9
-cl_score = (
-    geopolitical * 2 +  # Weight 2 (oil supply shock)
-    oil_inventories * 1 +
-    growth * 2 +  # Weight 2
-    geopolitical * 1 +  # Geopolitical risk
-    usd_dxy * 1
-)
-print(f"CL (Crude): {cl_score}")
-print(f"  Oil Supply Shock: {geopolitical}*2={geopolitical*2}")
-print(f"  Inventories: {oil_inventories}*1={oil_inventories}")
-print(f"  Growth: {growth}*2={growth*2}")
-print(f"  Geopolitical: {geopolitical}*1={geopolitical}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print()
-
-# Calculate ES (S&P 500) - Max Range: -12 to +14
-es_score = (
-    fed_stance * 1 +
-    real_yields * 2 +  # Weight 2
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 1 +
-    credit_spreads * 1 +
-    vix_direction * 1
-)
-print(f"ES (S&P 500): {es_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*2={real_yields*2}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*1={growth}")
-print(f"  Credit Spreads: {credit_spreads}*1={credit_spreads}")
-print(f"  VIX Direction: {vix_direction}*1={vix_direction}")
-print()
-
-# Calculate NQ (Nasdaq) - Max Range: -12 to +14
-nq_score = (
-    fed_stance * 1 +
-    real_yields * 2 +  # Weight 2
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 1 +
-    sox * 1 +
-    move * 1
-)
-print(f"NQ (Nasdaq): {nq_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*2={real_yields*2}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*1={growth}")
-print(f"  SOX: {sox}*1={sox}")
-print(f"  MOVE: {move}*1={move}")
-print()
-
-# Calculate YM (Dow) - Max Range: -10 to +12
-ym_score = (
-    fed_stance * 1 +
-    real_yields * 1 +
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 2 +  # Weight 2
-    credit_spreads * 1 +
-    curve_2s10s * 1
-)
-print(f"YM (Dow): {ym_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*1={real_yields}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*2={growth*2}")
-print(f"  Credit Spreads: {credit_spreads}*1={credit_spreads}")
-print(f"  2s10s: {curve_2s10s}*1={curve_2s10s}")
-print()
-
-# Calculate RTY (Russell 2000) - Max Range: -12 to +14
-rty_score = (
-    fed_stance * 1 +
-    real_yields * 1 +
-    usd_dxy * 1 +
-    risk_mood * 1 +
-    growth * 2 +  # Weight 2
-    credit_spreads * 2 +  # Weight 2
-    curve_2s10s * 1
-)
-print(f"RTY (Russell 2000): {rty_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  Real Yields: {real_yields}*1={real_yields}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*2={growth*2}")
-print(f"  Credit Spreads: {credit_spreads}*2={credit_spreads*2}")
-print(f"  2s10s: {curve_2s10s}*1={curve_2s10s}")
-print()
-
-# Calculate M6E (Euro) - Max Range: -10 to +10
-# For EUR/USD: Bullish M6E = Bullish EUR = Bearish USD
-# Fed dovish (+1) vs ECB neutral (0) = slight EUR advantage
-# USD weak (+1) = EUR strong = bullish M6E
-m6e_score = (
-    fed_stance * 1 +  # Dovish Fed = bullish EUR
-    ecb_stance * 1 +  # Neutral
-    (fed_stance - ecb_stance) * 2 +  # Rate differential (Fed dovish vs ECB neutral) Weight 2
-    usd_dxy * 1 +  # Weak USD = strong EUR
-    risk_mood * 1 +
-    growth * 1  # Using US growth as proxy for Eurozone
-)
-print(f"M6E (Euro): {m6e_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  ECB: {ecb_stance}*1={ecb_stance}")
-print(f"  Rate Differential: ({fed_stance}-{ecb_stance})*2={(fed_stance-ecb_stance)*2}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood: {risk_mood}*1={risk_mood}")
-print(f"  Growth: {growth}*1={growth}")
-print()
-
-# Calculate 6A (Australian Dollar) - Max Range: -12 to +12
-# Risk-on sentiment: VIX low = risk-on, but VIX is balanced (0)
-# For risk sentiment, use inverse of risk_mood for AUD (risk-off = -1 for AUD)
-risk_sentiment = -risk_mood  # Risk-off (VIX >20) = -1 for AUD, Risk-on (VIX <15) = +1 for AUD
-# Currently VIX balanced = 0
-aud_6a_score = (
-    fed_stance * 1 +  # Dovish Fed = bullish AUD
-    rba_stance * 1 +  # Hawkish RBA = bullish AUD
-    (rba_stance - fed_stance) * 1 +  # Rate differential (RBA hawkish vs Fed dovish)
-    usd_dxy * 1 +  # Weak USD = strong AUD
-    risk_sentiment * 2 +  # Weight 2 - AUD is risk currency
-    china_growth * 2 +  # Weight 2 - China is major trade partner
-    copper * 1  # Commodity proxy
-)
-print(f"6A (Australian Dollar): {aud_6a_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  RBA: {rba_stance}*1={rba_stance}")
-print(f"  Rate Differential: ({rba_stance}-{fed_stance})*1={(rba_stance-fed_stance)*1}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Sentiment: {risk_sentiment}*2={risk_sentiment*2}")
-print(f"  China Growth: {china_growth}*2={china_growth*2}")
-print(f"  Copper: {copper}*1={copper}")
-print()
-
-# Calculate 6J (Japanese Yen) - Max Range: -10 to +10
-# IMPORTANT: 6J quotes are inverted - Bullish 6J = Bullish JPY = Bearish USD/JPY
-# Risk-off = bullish JPY, so we use inverse of risk_mood
-jpy_risk_mood = -risk_mood  # Risk-off (VIX >20) = +1 for JPY
-jpy_6j_score = (
-    fed_stance * 1 +  # Dovish Fed = bullish JPY (narrows differential)
-    boj_stance * 2 +  # Weight 2 - Hawkish BoJ = bullish JPY
-    (boj_stance - fed_stance) * 2 +  # Weight 2 - Rate differential
-    usd_dxy * 1 +  # Weak USD = strong JPY
-    jpy_risk_mood * 1  # Risk-off = bullish JPY
-)
-print(f"6J (Japanese Yen): {jpy_6j_score}")
-print(f"  Fed: {fed_stance}*1={fed_stance}")
-print(f"  BoJ: {boj_stance}*2={boj_stance*2}")
-print(f"  Rate Differential: ({boj_stance}-{fed_stance})*2={(boj_stance-fed_stance)*2}")
-print(f"  USD: {usd_dxy}*1={usd_dxy}")
-print(f"  Risk Mood (JPY): {jpy_risk_mood}*1={jpy_risk_mood}")
-print()
-
-# Map scores to signals
-def map_signal(score):
-    if score >= 5:
-        return "STRONG_BULLISH"
-    elif score >= 3:
-        return "BULLISH"
-    elif score >= 1:
-        return "SLIGHT_BULLISH"
-    elif score >= -1:
-        return "NEUTRAL"
-    elif score >= -3:
-        return "SLIGHT_BEARISH"
-    elif score >= -5:
-        return "BEARISH"
-    else:
-        return "STRONG_BEARISH"
-
-# Assign confidence scores (1-10)
-# Based on data freshness, signal clarity, and catalyst proximity
-scores = {
-    "GC": {"score": gc_score, "signal": map_signal(gc_score), "confidence": 8},
-    "SI": {"score": si_score, "signal": map_signal(si_score), "confidence": 7},
-    "CL": {"score": cl_score, "signal": map_signal(cl_score), "confidence": 7},
-    "ES": {"score": es_score, "signal": map_signal(es_score), "confidence": 7},
-    "NQ": {"score": nq_score, "signal": map_signal(nq_score), "confidence": 7},
-    "YM": {"score": ym_score, "signal": map_signal(ym_score), "confidence": 7},
-    "RTY": {"score": rty_score, "signal": map_signal(rty_score), "confidence": 7},
-    "M6E": {"score": m6e_score, "signal": map_signal(m6e_score), "confidence": 6},
-    "6A": {"score": aud_6a_score, "signal": map_signal(aud_6a_score), "confidence": 7},
-    "6J": {"score": jpy_6j_score, "signal": map_signal(jpy_6j_score), "confidence": 7}
+# Data collected from sources (2026-02-08)
+macro_data = {
+    "fed_stance": 0,  # Neutral hold (3.5-3.75%, on hold, no changes expected)
+    "real_yields": +2,  # Falling (1.98% on 2/3, down from previous)
+    "usd_dxy": -1,  # Weak/Falling (97.51, down -0.19%)
+    "risk_mood": 0,  # Balanced (VIX 17.76, in 15-20 range)
+    "vix_direction": +1,  # Falling (down -18.42%)
+    "growth_narrative": 0,  # Stable (GDPNow 4.2%, unchanged)
+    "credit_spreads": +1,  # Narrowing (2.97%, near multi-year lows, downtrend)
+    "sox": +1,  # Rising (8048.62, +5.70% 1d, +6.54% 1m, +58.99% 1y)
+    "move_index": +1,  # Falling (63.62, down -32.81% 1y, -20.62% 6m)
+    "yield_curve_2s10s": +1,  # Steepening (0.72%, up from deeply inverted)
+    "copper": +1,  # Rising (5.8820, +18.66% 3m, +28.18% 1y)
+    "oil_inventories": +1,  # Draw (-3.5M barrels)
+    "oil_supply_shock": 0,  # Neutral (no major disruptions)
+    "geopolitical_risk": 0,  # Stable (no major new escalations)
+    "gold_etf_flows": +1,  # Inflows ($4.39B in Jan, 8th consecutive month)
+    "ecb_stance": 0,  # Neutral hold (2%, on hold)
+    "rba_stance": 0,  # Neutral hold
+    "boj_stance": +1,  # Hawkish/Tightening (normalizing policy)
+    "china_growth": 0,  # Stable (~5% target)
+    "rate_diff_eur_usd": 0,  # Stable (both on hold)
+    "rate_diff_aud_usd": 0,  # Stable (both on hold)
+    "rate_diff_jpy_usd": +1,  # Widening vs USD (BoJ normalizing, Fed on hold)
+    "risk_sentiment_aud": 0,  # Neutral (VIX balanced)
+    "eurozone_growth": 0,  # Stable (inflation 1.7%, below target)
 }
 
-# Asset class bias aggregation
-commodities_bullish = sum(1 for sym in ["GC", "SI", "CL"] if "BULLISH" in scores[sym]["signal"])
-indices_bullish = sum(1 for sym in ["ES", "NQ", "YM", "RTY"] if "BULLISH" in scores[sym]["signal"])
-fx_bullish = sum(1 for sym in ["M6E", "6A", "6J"] if "BULLISH" in scores[sym]["signal"])
+# Instrument scoring configurations
+instruments = {
+    "GC": {
+        "name": "Gold Futures",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 2,  # Double weight
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 1,
+            "oil_supply_shock": 1,
+            "gold_etf_flows": 1,
+        }
+    },
+    "SI": {
+        "name": "Silver Futures",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 1,
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 1,
+            "copper": 1,
+            "gold_etf_flows": 1,
+        }
+    },
+    "CL": {
+        "name": "WTI Crude Oil",
+        "factors": {
+            "oil_supply_shock": 2,  # Double weight
+            "oil_inventories": 1,
+            "growth_narrative": 2,  # Double weight
+            "geopolitical_risk": 1,
+            "usd_dxy": 1,
+        }
+    },
+    "ES": {
+        "name": "S&P 500 E-mini",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 2,  # Double weight
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 1,
+            "credit_spreads": 1,
+            "vix_direction": 1,
+        }
+    },
+    "NQ": {
+        "name": "Nasdaq 100 E-mini",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 2,  # Double weight
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 1,
+            "sox": 1,
+            "move_index": 1,
+        }
+    },
+    "YM": {
+        "name": "Dow Jones E-mini",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 1,
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 2,  # Double weight
+            "credit_spreads": 1,
+            "yield_curve_2s10s": 1,
+        }
+    },
+    "RTY": {
+        "name": "Russell 2000 E-mini",
+        "factors": {
+            "fed_stance": 1,
+            "real_yields": 1,
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "growth_narrative": 2,  # Double weight
+            "credit_spreads": 2,  # Double weight
+            "yield_curve_2s10s": 1,
+        }
+    },
+    "M6E": {
+        "name": "Micro Euro FX",
+        "factors": {
+            "fed_stance": 1,
+            "ecb_stance": 1,
+            "rate_diff_eur_usd": 2,  # Double weight
+            "usd_dxy": 1,
+            "risk_mood": 1,
+            "eurozone_growth": 1,
+        }
+    },
+    "6A": {
+        "name": "Australian Dollar",
+        "factors": {
+            "fed_stance": 1,
+            "rba_stance": 1,
+            "rate_diff_aud_usd": 1,
+            "usd_dxy": 1,
+            "risk_sentiment_aud": 2,  # Double weight
+            "china_growth": 2,  # Double weight
+            "copper": 1,
+        }
+    },
+    "6J": {
+        "name": "Japanese Yen",
+        "factors": {
+            "fed_stance": 1,
+            "boj_stance": 2,  # Double weight
+            "rate_diff_jpy_usd": 2,  # Double weight
+            "usd_dxy": 1,
+            "risk_mood": 1,
+        }
+    },
+}
 
-def aggregate_bias(bullish_count, total_count, threshold):
-    if bullish_count >= threshold:
+def calculate_score(symbol, config):
+    """Calculate weighted bias score for an instrument"""
+    total_score = 0
+    for factor, weight in config["factors"].items():
+        raw_score = macro_data[factor]
+        weighted_score = raw_score * weight
+        total_score += weighted_score
+    return total_score
+
+def get_signal(score):
+    """Map score to signal label"""
+    if score >= 5:
+        return "STRONG_BULLISH", 3
+    elif score >= 3:
+        return "BULLISH", 2
+    elif score >= 1:
+        return "SLIGHT_BULLISH", 1
+    elif score >= -1:
+        return "NEUTRAL", 0
+    elif score >= -3:
+        return "SLIGHT_BEARISH", -1
+    elif score >= -5:
+        return "BEARISH", -2
+    else:
+        return "STRONG_BEARISH", -3
+
+def get_confidence(score, signal):
+    """Estimate confidence based on score magnitude and data quality"""
+    # Data is fresh (collected today), signals are relatively clear
+    abs_score = abs(score)
+    if abs_score >= 5:
+        return 8  # High conviction
+    elif abs_score >= 3:
+        return 7  # Good conviction
+    elif abs_score >= 1:
+        return 6  # Moderate conviction
+    else:
+        return 5  # Low conviction (neutral)
+
+# Calculate scores for all instruments
+results = {}
+for symbol, config in instruments.items():
+    score = calculate_score(symbol, config)
+    signal, pm_code = get_signal(score)
+    confidence = get_confidence(score, signal)
+    
+    results[symbol] = {
+        "score": pm_code,
+        "signal": signal,
+        "confidence": confidence,
+        "raw_weighted_score": score
+    }
+
+# Determine asset class bias
+def get_asset_class_bias(symbols):
+    """Determine bias for a group of symbols"""
+    bullish = sum(1 for s in symbols if results[s]["score"] > 0)
+    bearish = sum(1 for s in symbols if results[s]["score"] < 0)
+    
+    if bullish > len(symbols) / 2:
         return "BULLISH"
-    elif bullish_count == 0:
+    elif bearish > len(symbols) / 2:
         return "BEARISH"
+    elif bullish == bearish:
+        return "NEUTRAL"
     else:
         return "MIXED"
 
 asset_class_bias = {
-    "COMMODITIES": aggregate_bias(commodities_bullish, 3, 2),
-    "INDICES": aggregate_bias(indices_bullish, 4, 3),
-    "FX": aggregate_bias(fx_bullish, 3, 2)
+    "COMMODITIES": get_asset_class_bias(["GC", "SI", "CL"]),
+    "INDICES": get_asset_class_bias(["ES", "NQ", "YM", "RTY"]),
+    "FX": get_asset_class_bias(["M6E", "6A", "6J"])
 }
 
-# Generate timestamp
-now = datetime.now(timezone.utc)
-date_str = now.strftime("%Y-%m-%d")
-timestamp_str = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-filename_timestamp = now.strftime("%Y-%m-%d_%H%M")
+# Generate output
+now_utc = datetime.now(timezone.utc)
+date_str = now_utc.strftime("%Y-%m-%d")
+time_str = now_utc.strftime("%H%M")
+iso_str = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-# Create JSON output
 output = {
     "date": date_str,
-    "generated_at": timestamp_str,
-    "scores": scores,
+    "generated_at": iso_str,
+    "scores": {k: {kk: vv for kk, vv in v.items() if kk != "raw_weighted_score"} 
+               for k, v in results.items()},
     "asset_class_bias": asset_class_bias,
     "key_drivers": [
-        "Fed dovish hold supporting risk assets",
-        "Geopolitical tensions (Iran-US) elevating gold and oil",
-        "USD weakness benefiting commodities and FX"
+        "Falling real yields (+2 weight) supporting gold and tech",
+        "Weak USD (-1) benefiting commodities and risk assets",
+        "Narrowing credit spreads (+1) and falling VIX (+1) supporting equities",
+        "BoJ policy normalization (+1) supporting JPY strength"
     ],
     "data_quality": {
-        "stale_sources": ["DFII10", "BAMLH0A0HYM2", "T10Y2Y"],
-        "fallbacks_used": ["CNBC for real yields confirmation"]
+        "stale_sources": ["T10Y2Y (2 days old)", "BAMLH0A0HYM2 (3 days old)"],
+        "fallbacks_used": []
     }
 }
 
-print("\n=== FINAL SCORES ===")
-for symbol, data in scores.items():
-    print(f"{symbol}: {data['score']:+d} ({data['signal']}) - Confidence: {data['confidence']}/10")
-
-print(f"\n=== ASSET CLASS BIAS ===")
+# Print results for verification
+print("=" * 80)
+print("MATRIX FUTURES BIAS SCORES")
+print(f"Generated: {iso_str}")
+print("=" * 80)
+print()
+for symbol, data in results.items():
+    print(f"{symbol:6s} | Score: {data['raw_weighted_score']:+3d} → {data['signal']:20s} | Confidence: {data['confidence']}/10")
+print()
+print("ASSET CLASS BIAS:")
 for asset_class, bias in asset_class_bias.items():
-    print(f"{asset_class}: {bias}")
+    print(f"  {asset_class:15s}: {bias}")
+print()
+print("=" * 80)
 
-print(f"\n=== OUTPUT ===")
-print(f"Filename: {filename_timestamp}.json")
-print(json.dumps(output, indent=2))
+# Save to file
+output_file = f"data/bias_scores/{date_str}_{time_str}.json"
+print(f"Saving to: {output_file}")
+with open(output_file, 'w') as f:
+    json.dump(output, f, indent=2)
+
+# Also save as latest.json
+latest_file = "data/bias_scores/latest.json"
+print(f"Copying to: {latest_file}")
+with open(latest_file, 'w') as f:
+    json.dump(output, f, indent=2)
+
+print("✓ Bias scores calculated successfully")
