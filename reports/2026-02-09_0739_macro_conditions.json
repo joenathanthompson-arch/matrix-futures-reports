@@ -1,0 +1,105 @@
+
+{
+  "generated_at": "2026-02-09T12:39:20Z",
+  "factors": [
+    {
+      "name": "Fed Stance",
+      "value": "Neutral Hold",
+      "score": 0,
+      "trend": "Neutral",
+      "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    },
+    {
+      "name": "Real Yields (10Y)",
+      "value": "1.899%",
+      "score": 0,
+      "trend": "Flat",
+      "source": "https://www.cnbc.com/quotes/US10YTIP"
+    },
+    {
+      "name": "USD (DXY)",
+      "value": "97.235",
+      "score": 1,
+      "trend": "Falling",
+      "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+    },
+    {
+      "name": "Risk Mood (VIX)",
+      "value": "18.60",
+      "score": 0,
+      "trend": "Balanced",
+      "source": "https://www.cnbc.com/quotes/.VIX"
+    },
+    {
+      "name": "VIX Direction",
+      "value": "+4.73%",
+      "score": -1,
+      "trend": "Rising",
+      "source": "https://www.cnbc.com/quotes/.VIX"
+    },
+    {
+      "name": "Growth Narrative (GDPNow)",
+      "value": "4.2%",
+      "score": -1,
+      "trend": "Accelerating",
+      "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+    },
+    {
+      "name": "Credit Spreads (HY OAS)",
+      "value": "2.97%",
+      "score": 1,
+      "trend": "Narrowing",
+      "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    },
+    {
+      "name": "SOX (Semiconductors)",
+      "value": "8048.62",
+      "score": 1,
+      "trend": "Rising",
+      "source": "https://www.tradingview.com/symbols/SOX/"
+    },
+    {
+      "name": "MOVE (Bond Volatility)",
+      "value": "63.6164",
+      "score": -1,
+      "trend": "Rising",
+      "source": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    {
+      "name": "2s10s Yield Curve",
+      "value": "0.72%",
+      "score": 1,
+      "trend": "Steepening",
+      "source": "https://fred.stlouisfed.org/series/T10Y2Y"
+    },
+    {
+      "name": "Copper",
+      "value": "5.8883",
+      "score": 1,
+      "trend": "Rising",
+      "source": "https://www.investing.com/commodities/copper"
+    },
+    {
+      "name": "Gold ETF Flows",
+      "value": "+$19B",
+      "score": 1,
+      "trend": "Inflows",
+      "source": "https://www.gold.org/goldhub/data/global-gold-backed-etf-holdings-and-flows"
+    },
+    {
+      "name": "Oil Inventories (EIA)",
+      "value": "-3.455M",
+      "score": 1,
+      "trend": "Draw",
+      "source": "https://www.eia.gov/petroleum/supply/weekly/"
+    },
+    {
+      "name": "Geopolitical Risk",
+      "value": "High",
+      "score": 1,
+      "trend": "Rising",
+      "source": "News analysis"
+    }
+  ]
+}
+
