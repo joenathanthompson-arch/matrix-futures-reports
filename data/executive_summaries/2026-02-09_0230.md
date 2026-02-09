@@ -1,4 +1,4 @@
-_# Executive Summary - 2026-02-09 02:30 EST
+# Executive Summary - 2026-02-09 02:30 EST
 
 ## Data Quality Notes
 - FRED data for 10-Year TIPS (DFII10) was stale (3 days old). Real-time data from CNBC was used as a fallback.
@@ -38,4 +38,4 @@ _# Executive Summary - 2026-02-09 02:30 EST
 ## Watch List
 - Upcoming commentary from Fed officials for any change in tone regarding the recent rise in real yields.
 - Next EIA petroleum report to see if inventory draws continue.
-- Developments in US-Iran and US-Europe relations._
+- Developments in US-Iran and US-Europe relations.
