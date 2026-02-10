@@ -42,7 +42,7 @@ matrix-futures-reports/
     "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
     "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
     "RTY": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
-    "M6E": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6E": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
     "6A": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
     "6J": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
@@ -131,7 +131,7 @@ Your role is **Macro Advisor (Input Layer)** - your recommendations **inform** t
 **SWING Persistence:** Once in SWING mode with open position, system stays in SWING until position closed or NO_TRADE called. This prevents mid-day downgrades from disrupting multi-day trades.
 
 ### 10 Required Symbols:
-`GC`, `SI`, `CL`, `ES`, `NQ`, `YM`, `RTY`, `M6E`, `6A`, `6J`
+`GC`, `SI`, `CL`, `ES`, `NQ`, `YM`, `RTY`, `6E`, `6A`, `6J`
 
 ---
 
@@ -201,7 +201,7 @@ Your role is **Macro Advisor (Input Layer)** - your recommendations **inform** t
 **Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
 [Analysis]
 
-### M6E (Euro): +2 SLIGHT_BULLISH (5/10)
+### 6E (Euro): +2 SLIGHT_BULLISH (5/10)
 **Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
 [Analysis]
 
@@ -257,7 +257,7 @@ ES,S&P 500,+1,SLIGHT_BULLISH,6
 NQ,Nasdaq 100,+1,SLIGHT_BULLISH,6
 YM,Dow Jones,+2,SLIGHT_BULLISH,6
 RTY,Russell 2000,+3,BULLISH,7
-M6E,Euro,+2,SLIGHT_BULLISH,5
+6E,Euro,+2,SLIGHT_BULLISH,5
 6A,Australian Dollar,+3,BULLISH,7
 6J,Japanese Yen,+6,STRONG_BULLISH,7
 ```
@@ -279,7 +279,7 @@ Manus correctly computed asset class biases. Include them in `latest.json` under
 **Asset Class Grouping:**
 - **COMMODITIES:** GC, SI, CL (average their signals)
 - **INDICES:** ES, NQ, YM, RTY (average their signals)
-- **FX:** M6E, 6A, 6J (average their signals)
+- **FX:** 6E, 6A, 6J (average their signals)
 
 ---
 
@@ -393,7 +393,7 @@ If format is wrong, PM silently fails to update bias data.
 curl -s https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/data/bias_scores/latest.json | python3 -c "
 import json, sys
 data = json.load(sys.stdin)
-required_symbols = ['GC', 'SI', 'CL', 'ES', 'NQ', 'YM', 'RTY', 'M6E', '6A', '6J']
+required_symbols = ['GC', 'SI', 'CL', 'ES', 'NQ', 'YM', 'RTY', '6E', '6A', '6J']
 required_fields = ['score', 'signal', 'confidence', 'recommended_approach', 'recommended_mode', 'hold_expectation']
 valid_approaches = ['IB_BREAKOUT', 'TREND_FOLLOW', 'MEAN_REVERSION', 'FADE_RANGE', 'RANGE_TRADE', 'NO_TRADE', 'NEWS_FADE', 'SESSION_OPEN_GAP', 'VWAP_REVERSION']
 valid_modes = ['INTRADAY', 'SWING']
