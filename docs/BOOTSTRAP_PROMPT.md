@@ -106,6 +106,10 @@ Fetch and read thoroughly before scoring:
 https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/docs/Macro_Bias_Scorer_Reference.md
 Contains: complete weights, factor tables, executive summary format, data sources, examples.
 
+## ALSO READ: JSON FORMAT SPEC (V3.0 - STRATEGY RECOMMENDATIONS)
+https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-reports/main/MANUS_INSTRUCTIONS.md
+Contains: NEW required fields per symbol - recommended_approach, recommended_mode, hold_expectation.
+
 ## COMMIT & VERIFY (MANDATORY)
 
 ### Step 1: Create & Commit Files
