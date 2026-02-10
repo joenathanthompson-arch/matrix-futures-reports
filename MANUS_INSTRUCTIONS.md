@@ -1,7 +1,7 @@
 # Manus AI Bias Report Format Specification
 
-**Last Updated:** January 30, 2026
-**Version:** 2.0
+**Last Updated:** February 10, 2026
+**Version:** 3.0
 
 ## Problem
 Manus is producing reports in the wrong format. PM cannot read them.
@@ -33,18 +33,18 @@ matrix-futures-reports/
 {
   "date": "2026-01-30",
   "generated_at": "2026-01-30T07:30:00Z",
-  "methodology_version": "2.0_RECALIBRATED",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
-    "SI": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
-    "CL": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 7},
-    "ES": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "M6E": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "6A": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "6J": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7}
+    "GC": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"},
+    "SI": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"},
+    "CL": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"},
+    "ES": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "M6E": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
   "asset_class_bias": {
     "COMMODITIES": "STRONG_BULLISH",
@@ -79,6 +79,9 @@ matrix-futures-reports/
 | `scores.[SYM].score` | integer | YES | -10 to +10 (INTEGER, no decimals) |
 | `scores.[SYM].signal` | string | YES | See signal mapping below |
 | `scores.[SYM].confidence` | integer | YES | 1-10 (separate from score!) |
+| `scores.[SYM].recommended_approach` | string | YES | See approach mapping below |
+| `scores.[SYM].recommended_mode` | string | YES | `INTRADAY` or `SWING` |
+| `scores.[SYM].hold_expectation` | string | YES | `session`, `1-2 days`, or `2-5 days` |
 | `asset_class_bias` | object | YES | COMMODITIES, INDICES, FX |
 | `key_drivers` | array | YES | 3-5 string items |
 | `data_quality` | object | NO | Optional tracking |
@@ -96,6 +99,36 @@ matrix-futures-reports/
 | -1 to -2 | `SLIGHT_BEARISH` |
 | -3 to -4 | `BEARISH` |
 | -5 to -10 | `STRONG_BEARISH` |
+
+### Strategy Approach Mapping (MUST USE EXACTLY):
+
+Your role is **Macro Advisor (Input Layer)** - your recommendations **inform** the system, not override it. Real-time technicals have final authority on entry/exit (except NO_TRADE).
+
+| Approach | When to Recommend |
+|----------|------------------|
+| `IB_BREAKOUT` | Directional bias, expecting range expansion |
+| `TREND_FOLLOW` | Strong sustained bias (conviction >= 6), ride momentum |
+| `MEAN_REVERSION` | Overextended move, expect pullback to mean |
+| `FADE_RANGE` | Range-bound, fade extremes |
+| `RANGE_TRADE` | Neutral, no clear direction, straddle both sides |
+| `NO_TRADE` | **ABSOLUTE** - unclear/risky, stay out completely |
+| `NEWS_FADE` | Fade spike after major news event (future) |
+| `SESSION_OPEN_GAP` | Trade gap fill at session open (future) |
+| `VWAP_REVERSION` | Fade to VWAP (future) |
+
+**Critical Rules:**
+1. **NO_TRADE is absolute** - Like a pilot saying "go around", no override from technicals. Budget goes to 0%, redistributed to other symbols.
+2. **Mode is a suggestion** - Trader can downgrade SWING to INTRADAY if ALMA is choppy
+3. **Approach is guidance** - Real-time ALMA/IB state has final say on exact strategy code
+
+### Mode Selection (MUST USE EXACTLY):
+
+| Mode | When to Recommend | Hold Expectation |
+|------|------------------|------------------|
+| `SWING` | Conviction >= 6, macro theme expected to persist 2+ days | `1-2 days` or `2-5 days` |
+| `INTRADAY` | Lower conviction, event-driven, or uncertain duration | `session` |
+
+**SWING Persistence:** Once in SWING mode with open position, system stays in SWING until position closed or NO_TRADE called. This prevents mid-day downgrades from disrupting multi-day trades.
 
 ### 10 Required Symbols:
 `GC`, `SI`, `CL`, `ES`, `NQ`, `YM`, `RTY`, `M6E`, `6A`, `6J`
@@ -141,33 +174,43 @@ matrix-futures-reports/
 ## Full Instrument Breakdown
 
 ### GC (Gold): +5 STRONG_BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
 [2-3 sentence analysis with key drivers]
 
 ### SI (Silver): +5 STRONG_BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
 [Analysis]
 
 ### CL (Crude Oil): +7 STRONG_BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
 [Analysis]
 
 ### ES (S&P 500): +1 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
 [Analysis]
 
 ### NQ (Nasdaq 100): +1 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
 [Analysis]
 
 ### YM (Dow Jones): +2 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
 [Analysis]
 
 ### RTY (Russell 2000): +3 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
 [Analysis]
 
 ### M6E (Euro): +2 SLIGHT_BULLISH (5/10)
+**Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
 [Analysis]
 
 ### 6A (Australian Dollar): +3 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
 [Analysis]
 
 ### 6J (Japanese Yen): +6 STRONG_BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
 [Analysis]
 
 ---
@@ -282,6 +325,9 @@ Before committing, verify:
 - [ ] JSON has all 10 symbols with score, signal, confidence
 - [ ] All scores are integers (-10 to +10)
 - [ ] Signal strings match exactly (STRONG_BULLISH, BULLISH, etc.)
+- [ ] Each symbol has `recommended_approach` field with valid value
+- [ ] Each symbol has `recommended_mode` field (INTRADAY or SWING)
+- [ ] Each symbol has `hold_expectation` field (session, 1-2 days, or 2-5 days)
 - [ ] `data/executive_summaries/latest.md` exists
 - [ ] Timestamped copies created for both files
 - [ ] `asset_class_bias` included in JSON
@@ -348,6 +394,11 @@ curl -s https://raw.githubusercontent.com/joenathanthompson-arch/matrix-futures-
 import json, sys
 data = json.load(sys.stdin)
 required_symbols = ['GC', 'SI', 'CL', 'ES', 'NQ', 'YM', 'RTY', 'M6E', '6A', '6J']
+required_fields = ['score', 'signal', 'confidence', 'recommended_approach', 'recommended_mode', 'hold_expectation']
+valid_approaches = ['IB_BREAKOUT', 'TREND_FOLLOW', 'MEAN_REVERSION', 'FADE_RANGE', 'RANGE_TRADE', 'NO_TRADE', 'NEWS_FADE', 'SESSION_OPEN_GAP', 'VWAP_REVERSION']
+valid_modes = ['INTRADAY', 'SWING']
+valid_holds = ['session', '1-2 days', '2-5 days']
+
 scores = data.get('scores', {})
 missing = [s for s in required_symbols if s not in scores]
 if missing:
@@ -355,13 +406,22 @@ if missing:
     sys.exit(1)
 for sym in required_symbols:
     s = scores[sym]
-    if not all(k in s for k in ['score', 'signal', 'confidence']):
+    if not all(k in s for k in required_fields):
         print(f'ERROR: {sym} missing required fields')
         sys.exit(1)
     if not isinstance(s['score'], int):
         print(f'ERROR: {sym} score must be integer, got {type(s[\"score\"])}')
         sys.exit(1)
-print('✅ Validation PASSED')
+    if s.get('recommended_approach') not in valid_approaches:
+        print(f'ERROR: {sym} has invalid recommended_approach: {s.get(\"recommended_approach\")}')
+        sys.exit(1)
+    if s.get('recommended_mode') not in valid_modes:
+        print(f'ERROR: {sym} has invalid recommended_mode: {s.get(\"recommended_mode\")}')
+        sys.exit(1)
+    if s.get('hold_expectation') not in valid_holds:
+        print(f'ERROR: {sym} has invalid hold_expectation: {s.get(\"hold_expectation\")}')
+        sys.exit(1)
+print('✅ Validation PASSED - All fields valid including strategy recommendations')
 "
 ```
 
