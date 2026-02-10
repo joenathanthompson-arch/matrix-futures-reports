@@ -132,4 +132,4 @@ This verification is CRITICAL - PM reads these files and will use stale data if 
 
 ---
 
-**Character count:** ~4,500 characters (under 5,000 limit)
+**Character count:** ~4,750 characters (under 5,000 limit)
