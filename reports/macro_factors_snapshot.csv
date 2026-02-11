@@ -1,0 +1,16 @@
+Report Date,Factor,Value,Raw Score,Description,Source,Timestamp
+2026-02-11,Fed Stance,NEUTRAL_HOLD,0,Market pricing 95.8% probability of no change at next meeting,CME FedWatch Tool,2026-02-10
+2026-02-11,Real Yields (10Y TIPS),2.14%,0,"Flat, -4.5bps within ±5bps threshold",CNBC,2026-02-10
+2026-02-11,USD (DXY),96.893,+1,"Weak/Falling, down 10.54% YoY",TradingView,2026-02-10
+2026-02-11,VIX (Risk Mood),17.79,0,"Balanced (15-20 range)",CNBC,2026-02-10
+2026-02-11,VIX Direction,+2.48%,-1,Rising today,CNBC,2026-02-10
+2026-02-11,Growth (GDPNow),3.7%,0,"Stable, solid growth above trend",Atlanta Fed GDPNow,2026-02-10
+2026-02-11,Credit Spreads (HY OAS),2.84%,+1,"Narrowing, declining from ~3.0% range",FRED (BAMLH0A0HYM2),2026-02-09
+2026-02-11,SOX (Semiconductor Index),8107.13,+1,"Rising, up 60.28% YoY",TradingView,2026-02-10
+2026-02-11,MOVE (Rate Volatility),64.55,-1,"Rising, up 12.25% over 5 days",TradingView,2026-02-11
+2026-02-11,2s10s Yield Curve,0.71%,+1,"Steepening, positive and rising",FRED (T10Y2Y),2026-02-10
+2026-02-11,Copper,$5.9083/lb,+1,"Rising, up 28.40% YoY",Investing.com,2026-02-10
+2026-02-11,Oil Inventories,-3.5M barrels,+1,Draw (inventories decreased),EIA Weekly Petroleum Status Report,2026-01-30
+2026-02-11,Oil Supply,420.3M barrels,+1,"Tightening, 4% below 5-year average",EIA,2026-01-30
+2026-02-11,Gold ETF Flows,INFLOWS,+1,"Record inflows, pushing AUM to all-time highs",World Gold Council,2026-01
+2026-02-11,Geopolitical Risk,STABLE,0,"GPR index at moderate levels, no major spike",GPR Index (Caldara & Iacoviello),2026-02-09

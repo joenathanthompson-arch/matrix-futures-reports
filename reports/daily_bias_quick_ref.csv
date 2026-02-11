@@ -1,0 +1,11 @@
+Report Date,Symbol,Name,Asset Class,Bias Score,Bias Signal,Confidence,Key Driver 1,Key Driver 2,Key Driver 3
+2026-02-11,GC,Gold,Commodities,3,BULLISH,7,Gold ETF Flows (+1),Weak USD (+1),Oil Supply Tightening (+1)
+2026-02-11,SI,Silver,Commodities,3,BULLISH,7,Copper Strength (+1),Weak USD (+1),Gold ETF Flows (+1)
+2026-02-11,CL,WTI Crude Oil,Commodities,4,BULLISH,7,Oil Supply Tightening (+2),Inventory Draw (+1),Weak USD (+1)
+2026-02-11,ES,S&P 500,Indices,1,SLIGHT_BULLISH,6,Credit Spreads Narrowing (+1),Weak USD (+1),VIX Rising (-1)
+2026-02-11,NQ,NASDAQ 100,Indices,1,SLIGHT_BULLISH,7,SOX Strong (+1),Weak USD (+1),MOVE Rising (-1)
+2026-02-11,YM,Dow Jones,Indices,3,BULLISH,7,Curve Steepening (+1),Credit Spreads Narrowing (+1),Weak USD (+1)
+2026-02-11,RTY,Russell 2000,Indices,4,BULLISH,7,Credit Spreads Narrowing (+2),Curve Steepening (+1),Weak USD (+1)
+2026-02-11,M6E,Euro FX,FX,1,SLIGHT_BULLISH,5,Weak USD (+1),,
+2026-02-11,6A,Australian Dollar,FX,2,SLIGHT_BULLISH,6,Copper Strength (+1),Weak USD (+1),
+2026-02-11,6J,Japanese Yen,FX,1,SLIGHT_BULLISH,5,Weak USD (+1),,
