@@ -1,0 +1,470 @@
+{
+  "report_date": "2026-02-11",
+  "generated_at": "2026-02-11 02:38:53 UTC",
+  "macro_factors": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd": -1,
+    "vix": 0,
+    "growth_narrative": 0,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": 0,
+    "curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": 1,
+    "oil_supply_shock": 0,
+    "gold_etf_flows": 1,
+    "geopolitical_risk": 0,
+    "ecb_stance": 0,
+    "rba_stance": 2,
+    "boj_stance": 1
+  },
+  "instruments": {
+    "ES": {
+      "name": "E-mini S&P 500",
+      "score": 0.35,
+      "bias": "Slightly Bullish",
+      "breakdown": {
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "credit_spreads": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "sox": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "move_index": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "curve_2s10s": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "copper": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        }
+      }
+    },
+    "NQ": {
+      "name": "E-mini Nasdaq-100",
+      "score": 0.3,
+      "bias": "Slightly Bullish",
+      "breakdown": {
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "sox": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "credit_spreads": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "move_index": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "curve_2s10s": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        }
+      }
+    },
+    "RTY": {
+      "name": "E-mini Russell 2000",
+      "score": 0.45,
+      "bias": "Slightly Bullish",
+      "breakdown": {
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "credit_spreads": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "curve_2s10s": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "copper": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "sox": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        }
+      }
+    },
+    "YM": {
+      "name": "E-mini Dow Jones",
+      "score": 0.4,
+      "bias": "Slightly Bullish",
+      "breakdown": {
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "credit_spreads": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "curve_2s10s": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "copper": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "sox": {
+          "value": 1,
+          "weight": 0.05,
+          "contribution": 0.05
+        }
+      }
+    },
+    "GC": {
+      "name": "Gold Futures",
+      "score": -0.05,
+      "bias": "Neutral",
+      "breakdown": {
+        "real_yields": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "usd": {
+          "value": -1,
+          "weight": 0.2,
+          "contribution": -0.2
+        },
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "gold_etf_flows": {
+          "value": 1,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "move_index": {
+          "value": 0,
+          "weight": 0.05,
+          "contribution": 0.0
+        }
+      }
+    },
+    "CL": {
+      "name": "Crude Oil Futures",
+      "score": 0.2,
+      "bias": "Neutral",
+      "breakdown": {
+        "oil_inventories": {
+          "value": 1,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "usd": {
+          "value": -1,
+          "weight": 0.15,
+          "contribution": -0.15
+        },
+        "oil_supply_shock": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "copper": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        }
+      }
+    },
+    "M6E": {
+      "name": "Euro FX",
+      "score": -0.2,
+      "bias": "Neutral",
+      "breakdown": {
+        "ecb_stance": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "usd": {
+          "value": -1,
+          "weight": 0.2,
+          "contribution": -0.2
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "score": 0.55,
+      "bias": "Slightly Bullish",
+      "breakdown": {
+        "rba_stance": {
+          "value": 2,
+          "weight": 0.25,
+          "contribution": 0.5
+        },
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "copper": {
+          "value": 1,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "usd": {
+          "value": -1,
+          "weight": 0.15,
+          "contribution": -0.15
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "score": 0.05,
+      "bias": "Neutral",
+      "breakdown": {
+        "boj_stance": {
+          "value": 1,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "usd": {
+          "value": -1,
+          "weight": 0.2,
+          "contribution": -0.2
+        },
+        "vix": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      }
+    },
+    "ZN": {
+      "name": "10-Year Treasury Note",
+      "score": 0.2,
+      "bias": "Neutral",
+      "breakdown": {
+        "fed_stance": {
+          "value": 0,
+          "weight": 0.25,
+          "contribution": 0.0
+        },
+        "real_yields": {
+          "value": 0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "move_index": {
+          "value": 0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "growth_narrative": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "credit_spreads": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "curve_2s10s": {
+          "value": 1,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "geopolitical_risk": {
+          "value": 0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      }
+    }
+  }
+}

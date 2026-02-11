@@ -1,94 +1,113 @@
 #!/usr/bin/env python3
 """
-Generates the final JSON and Markdown report files from the calculated bias scores.
+Matrix Futures Daily Bias Report - File Generator
+Generates all 4 required output files from the bias_scores.json data
 """
 
 import json
 from datetime import datetime
+import pandas as pd
 
-# Get the current date for file naming
-REPORT_DATE = datetime.now().strftime("%Y-%m-%d")
-
+# Get current date for filenames
+report_date = datetime.now().strftime('%Y-%m-%d')
 
 def generate_markdown_report(data):
-    """Generates the full Markdown report content."""
-    report_time = data["report_time"]
-    instruments = data["instruments"]
+    """Generates the main report in Markdown format"""
+    filename = f"/home/ubuntu/matrix-futures-reports/{report_date}_Matrix-Futures-Daily-Bias-Report.md"
+    
+    with open(filename, 'w') as f:
+        f.write(f"# Matrix Futures Daily Bias Report\n\n")
+        f.write(f"**Report Date:** {data['report_date']}\n")
+        f.write(f"**Generated At:** {data['generated_at']}\n\n")
+        f.write("## I. Executive Summary\n\n")
+        f.write("This report provides a quantitative, macro-driven daily bias for 10 key futures instruments across equities, commodities, and foreign exchange. The bias is derived from a weighted model of over 14 macroeconomic factors, designed to provide a directional perspective for the upcoming trading session.\n\n")
+        
+        # Summary Table
+        f.write("### Bias Summary\n\n")
+        summary_df = pd.DataFrame([
+            {
+                "Instrument": code,
+                "Name": details["name"],
+                "Bias Score": details["score"],
+                "Bias": details["bias"]
+            } for code, details in data["instruments"].items()
+        ])
+        f.write(summary_df.to_markdown(index=False))
+        f.write("\n\n")
+        
+        f.write("## II. Detailed Instrument Breakdown\n\n")
+        for code, details in data["instruments"].items():
+            f.write(f"### {code} - {details['name']}\n\n")
+            f.write(f"- **Final Bias Score:** {details['score']:+.2f}\n")
+            f.write(f"- **Directional Bias:** {details['bias']}\n\n")
+            f.write("#### Factor Contribution Breakdown\n\n")
+            breakdown_df = pd.DataFrame([
+                {
+                    "Factor": factor,
+                    "Value": f_details["value"],
+                    "Weight": f_details["weight"],
+                    "Contribution": f_details["contribution"]
+                } for factor, f_details in details["breakdown"].items()
+            ])
+            f.write(breakdown_df.to_markdown(index=False))
+            f.write("\n\n")
+            
+        f.write("## III. Macro Factor Inputs\n\n")
+        f.write("The following table details the raw scores assigned to each macroeconomic factor based on the data collected for this report.\n\n")
+        factors_df = pd.DataFrame(list(data['macro_factors'].items()), columns=['Factor', 'Score'])
+        f.write(factors_df.to_markdown(index=False))
+        f.write("\n\n")
+        
+        f.write("## IV. Methodology & Disclaimer\n\n")
+        f.write("The bias scores are calculated using a proprietary weighted model. The weights for each instrument are defined in the project's methodology document. The model is intended to provide a directional bias and is not a trading signal or financial advice. All data is sourced from publicly available information and is subject to change. The concept of 'signal decay' should be considered, as the relevance of this report diminishes over time.\n")
 
-    md_content = f"# Matrix Futures Daily Bias Report\n\n"
-    md_content += f"**Report Generated:** {report_time}\n\n"
-    md_content += "This report provides a quantitative daily bias for 10 key futures instruments based on a weighted analysis of over 14 real-time macroeconomic factors. The bias score indicates the directional pressure on the instrument, with positive scores suggesting bullish sentiment and negative scores suggesting bearish sentiment.\n\n"
+    print(f"Markdown report generated: {filename}")
 
-    # --- Summary Table ---
-    md_content += "## Bias Summary\n\n"
-    md_content += "| Instrument | Name                        | Asset Class      | Bias Score | Direction |\n"
-    md_content += "|:-----------|:----------------------------|:-----------------|-----------:|:----------|\n"
-    for inst in sorted(instruments, key=lambda x: x["instrument"]):
-        md_content += f"| {inst['instrument']:<10} | {inst['name']:<27} | {inst['asset_class']:<16} | {inst['bias_score']:>+9.2f} | **{inst['bias_direction']}** |\n"
+def generate_csv_summary(data):
+    """Generates a summary of the scores in CSV format"""
+    filename = f"/home/ubuntu/matrix-futures-reports/{report_date}_Matrix-Futures-Daily-Bias-Summary.csv"
+    summary_df = pd.DataFrame([
+        {
+            "Instrument": code,
+            "Name": details["name"],
+            "Bias Score": details["score"],
+            "Bias": details["bias"]
+        } for code, details in data["instruments"].items()
+    ])
+    summary_df.to_csv(filename, index=False)
+    print(f"CSV summary generated: {filename}")
 
-    md_content += "\n\n"
-
-    # --- Detailed Instrument Breakdown ---
-    md_content += "## Detailed Instrument Analysis\n\n"
-    for inst in sorted(instruments, key=lambda x: x["instrument"]):
-        md_content += f"### {inst['instrument']} - {inst['name']}\n\n"
-        md_content += f"**Final Bias Score: {inst['bias_score']:.2f} ({inst['bias_direction']})**\n\n"
-        md_content += "| Macro Factor        | Value | Weight | Contribution |\n"
-        md_content += "|:--------------------|------:|-------:|-------------:|\n"
-        total_contribution = 0
-        for factor, details in inst["components"].items():
-            value = details["value"]
-            weight = details["weight"]
-            contribution = details["contribution"]
-            total_contribution += contribution
-            md_content += f"| {factor:<19} | {value:>5} | {weight:>6.2f} | {contribution:>+12.3f} |\n"
-        md_content += f"| **Total**           |       |        | **{total_contribution:>+12.3f}** |\n\n"
-
-    # --- Methodology & Signal Decay ---
-    md_content += "## Methodology and Important Notes\n\n"
-    md_content += "The bias score is calculated by multiplying the normalized score of each macroeconomic factor (typically -2 to +2) by its assigned weight for a specific instrument. The sum of these weighted scores produces the final bias score. The weights are derived from the reference methodology document and reflect the relative importance of each factor to the instrument.\n\n"
-    md_content += "> **Signal Decay Concept:** The conviction level of a signal, particularly for high scores, is time-sensitive. A high bias score suggests a catalyst is expected within a short timeframe (e.g., a few trading sessions). The validity of these signals decays over time. This report is intended for the current trading day and should be re-evaluated with fresh data daily.\n\n"
-
-    # --- Data Sources ---
-    md_content += "## Data Sources\n\n"
-    md_content += "Data is collected from over 14 sources, including but not limited to: CME Group (FedWatch), FRED (St. Louis Fed), CBOE (VIX), TradingView (DXY, SOX, MOVE), Atlanta Fed (GDPNow), EIA, World Gold Council, and the official websites of the ECB, BoJ, BoE, RBA, and SNB. All data was collected on the report generation date to ensure timeliness.\n\n"
-
-    return md_content
-
+def generate_conviction_txt(data):
+    """Generates a plain text file with the conviction scores"""
+    filename = f"/home/ubuntu/matrix-futures-reports/{report_date}_Matrix-Futures-Daily-Bias-Conviction.txt"
+    with open(filename, 'w') as f:
+        f.write(f"Matrix Futures Daily Bias Conviction - {data['report_date']}\n")
+        f.write("="*50 + "\n")
+        for code, details in data["instruments"].items():
+            f.write(f"{code:<5} | {details['bias']:<16} | Score: {details['score']:+.2f}\n")
+    print(f"Conviction text file generated: {filename}")
 
 def main():
-    """Main function to generate all report files."""
-    # Load the calculated data
-    with open("/home/ubuntu/matrix-futures-reports/bias_scores_calculated.json", "r") as f:
-        data = json.load(f)
+    """Load data and generate all report files"""
+    try:
+        with open('/home/ubuntu/matrix-futures-reports/bias_scores.json', 'r') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("Error: bias_scores.json not found. Please run the calculation script first.")
+        return
 
-    # --- Generate JSON Files ---
-    # Timestamped JSON
-    timestamped_json_path = f"/home/ubuntu/matrix-futures-reports/reports/{REPORT_DATE}-bias-report.json"
-    with open(timestamped_json_path, "w") as f:
+    # Rename the JSON file to the final dated format
+    json_filename = f"/home/ubuntu/matrix-futures-reports/{report_date}_Matrix-Futures-Daily-Bias-Scores.json"
+    with open(json_filename, 'w') as f:
         json.dump(data, f, indent=2)
-    print(f"Generated: {timestamped_json_path}")
+    print(f"JSON report generated: {json_filename}")
 
-    # Latest JSON
-    latest_json_path = "/home/ubuntu/matrix-futures-reports/reports/latest-bias-report.json"
-    with open(latest_json_path, "w") as f:
-        json.dump(data, f, indent=2)
-    print(f"Generated: {latest_json_path}")
+    # Generate other report formats
+    generate_markdown_report(data)
+    generate_csv_summary(data)
+    generate_conviction_txt(data)
 
-    # --- Generate Markdown Files ---
-    md_report = generate_markdown_report(data)
-
-    # Timestamped Markdown
-    timestamped_md_path = f"/home/ubuntu/matrix-futures-reports/reports/{REPORT_DATE}-bias-report.md"
-    with open(timestamped_md_path, "w") as f:
-        f.write(md_report)
-    print(f"Generated: {timestamped_md_path}")
-
-    # Latest Markdown
-    latest_md_path = "/home/ubuntu/matrix-futures-reports/reports/latest-bias-report.md"
-    with open(latest_md_path, "w") as f:
-        f.write(md_report)
-    print(f"Generated: {latest_md_path}")
+    print("\nAll report files generated successfully.")
 
 if __name__ == "__main__":
     main()

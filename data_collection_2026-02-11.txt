@@ -1,0 +1,296 @@
+Matrix Futures Daily Bias Report - Data Collection
+Date: 2026-02-11 (February 11, 2026)
+Time: 02:32 UTC (21:32 EST Feb 10, 2026)
+
+=== FED STANCE ===
+Source: CME FedWatch Tool
+URL: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+Next FOMC Meeting: March 18-19, 2026 (35 days away)
+
+Current Probabilities:
+- 350-375 bps (Current): 78.9%
+- 325-350 bps: 21.1%
+- 300-325 bps: 0.0%
+
+1 Month Forward (March 18, 2026):
+- 350-375 bps: 71.3%
+- 325-350 bps: 27.6%
+- 300-325 bps: 1.1%
+
+Analysis: Market pricing shows 78.9% probability of rates staying at current 350-375 bps range (3.50-3.75%) with 21.1% chance of a 25 bps cut. This indicates a NEUTRAL HOLD to slightly DOVISH HOLD stance. Given the 21% probability of a cut within the next meeting, this leans toward DOVISH HOLD.
+
+Fed Stance Score: +1 (Dovish hold)
+
+
+=== REAL YIELDS (10Y TIPS) ===
+Source: FRED DFII10
+URL: https://fred.stlouisfed.org/series/DFII10
+Latest Data: 2026-02-09: 1.87%
+Updated: Feb 10, 2026 3:16 PM CST
+Next Release Date: Feb 11, 2026
+
+Note: Data is 2 days old (as of Feb 11, 2026). Need to check fallback source CNBC for real-time data.
+
+
+=== REAL YIELDS (10Y TIPS) - FALLBACK SOURCE ===
+Source: CNBC US10YTIP
+URL: https://www.cnbc.com/quotes/US10YTIP
+Current Yield: 1.822%
+Change: -0.003
+Previous Close: 1.825%
+Time: 2:32 AM EST (Feb 11, 2026)
+
+Comparison with FRED data (Feb 9): 1.87% → 1.822% = DOWN 4.8 bps
+Recent trend: FALLING (down from 1.825% previous close)
+
+Real Yields Score: +2 (Falling - Down >5bps from Feb 9)
+
+
+=== USD (DXY) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-DXY/
+Current Level: 96.611
+Change: -0.280 (-0.29%)
+Previous Close: 96.891
+Time: 07:33 GMT (Feb 11, 2026)
+
+Recent Performance:
+- 1 day: -0.29%
+- 5 days: -1.39%
+- 1 month: -2.58%
+- 1 year: -10.82%
+
+Analysis: DXY is clearly WEAK/FALLING with consistent downtrend across all timeframes. Down 10.82% over the past year and down 2.58% over the past month.
+
+USD Score: +1 (Weak/Falling)
+
+
+=== VIX (Risk Mood) ===
+Source: CNBC
+URL: https://www.cnbc.com/quotes/.VIX
+Current Level: 17.79
+Change: UNCH (UNCH)
+Date: 02/10/26 EST
+52 Week Range: 13.38 - 60.13
+
+Recent Performance:
+- 5 Day: -4.56%
+- 1 Month: +22.77%
+- YTD: +19.00%
+
+Analysis: VIX at 17.79 falls in the BALANCED range (15-20). This indicates neither strong risk-on nor risk-off sentiment.
+
+VIX Direction: Recent 5-day decline (-4.56%) suggests VIX is FALLING.
+
+Risk Mood Score (for Gold): 0 (Balanced, VIX 15-20)
+VIX Direction Score (for Indices): +1 (Falling)
+
+
+=== GROWTH NARRATIVE (GDPNow) ===
+Source: Atlanta Fed GDPNow
+URL: https://www.atlantafed.org/cqer/research/gdpnow
+Latest Estimate: 3.7% for 2025:Q4
+Updated: February 10, 2026
+Next Update: February 18, 2026
+
+Analysis: GDPNow forecast of 3.7% for Q4 2025 indicates STABLE to ACCELERATING growth. This is a healthy growth rate, above the long-term trend of ~2%. Need to compare with previous forecast to determine trend direction. Based on the strong 3.7% reading, this suggests growth is STABLE (not slowing).
+
+Growth Narrative Score: 0 (Stable)
+
+
+=== CREDIT SPREADS (HY OAS) ===
+Source: FRED BAMLH0A0HYM2
+URL: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+Latest Data: 2026-02-09: 2.84%
+Updated: Feb 10, 2026 9:25 AM CST
+Next Release Date: Feb 11, 2026
+
+Analysis: HY credit spreads at 2.84% are historically low (chart shows range from ~2.5% to 6.0% over past 5 years). Recent trend shows spreads have been NARROWING (declining from ~3.0% range to 2.84%). This indicates healthy credit conditions and risk appetite.
+
+Credit Spreads Score: +1 (Narrowing)
+
+
+=== SOX (Semiconductors) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/SOX/
+Current Level: 8,107.13
+Change: -55.45 (-0.68%)
+Previous Close: 8,162.58
+Time: At close Feb 10, 21:00 GMT
+
+Recent Performance:
+- 1 day: -0.68%
+- 5 days: +7.64%
+- 1 month: +8.51%
+- 6 months: +39.10%
+- 1 year: +60.28%
+
+Analysis: Despite minor daily decline, SOX shows strong RISING trend across all meaningful timeframes. Up 7.64% over 5 days, 8.51% over 1 month, and 60.28% over 1 year. Semiconductors are clearly in an uptrend.
+
+SOX Score: +1 (Rising)
+
+
+=== MOVE INDEX (Rate Volatility) ===
+Source: TradingView
+URL: https://www.tradingview.com/symbols/TVC-MOVE/
+Current Level: 64.5522
+Change: +1.8158 (+2.89%)
+Previous Close: 62.7364
+Time: At close 00:32 GMT
+
+Recent Performance:
+- 1 day: +2.89%
+- 5 days: +12.25%
+- 1 month: -3.57%
+- 6 months: -16.50%
+- 1 year: -30.69%
+
+Analysis: Mixed signals. Short-term (1-5 days) shows RISING rate volatility (+12.25% over 5 days), but longer-term trend (1 month, 6 months, 1 year) shows FALLING. Given the recent spike, score as FLAT/NEUTRAL for now, as the short-term rise may be temporary noise against the longer-term declining trend.
+
+MOVE Score: 0 (Flat - mixed signals)
+
+
+=== 2s10s YIELD CURVE ===
+Source: FRED T10Y2Y
+URL: https://fred.stlouisfed.org/series/T10Y2Y
+Latest Data: 2026-02-10: 0.71%
+Updated: Feb 10, 2026 4:04 PM CST
+Next Release Date: Feb 11, 2026
+
+Analysis: The 2s10s spread at 0.71% (71 bps) is positive and has been STEEPENING over the past year (chart shows recovery from inverted levels around -1.0% in 2023 to current +0.71%). The curve is in a clear steepening trend, which is typically bullish for cyclical stocks and the economy.
+
+2s10s Curve Score: +1 (Steepening)
+
+
+=== COPPER ===
+Source: Investing.com
+URL: https://www.investing.com/commodities/copper
+Current Price: $5.9385/lb
+Change: +0.0325 (+0.55%)
+Previous Close: $5.9060
+Time: Real-time Data 02:35:22
+
+Recent Performance:
+- 1 Day: +0.55%
+- 1 Week: +1.51%
+- 1 Month: +0.61%
+- 3 Months: +17.22%
+- 6 Months: +33.75%
+- 1 Year: +29.07%
+
+Technical Analysis: Strong Buy (across multiple timeframes)
+
+Analysis: Copper is clearly RISING with strong gains across all timeframes. Up 29.07% over the past year and 33.75% over 6 months. Technical indicators show "Strong Buy" signal. This is a strong bullish indicator for global growth and industrial activity.
+
+Copper Score: +1 (Rising)
+
+
+=== OIL INVENTORIES (EIA Weekly) ===
+Source: EIA Weekly Petroleum Status Report
+URL: https://www.eia.gov/petroleum/supply/weekly/
+Report Date: Week ending January 30, 2026
+Released: Feb 4, 2026
+
+Key Data:
+- U.S. commercial crude oil inventories (excluding SPR): DECREASED by 3.5 million barrels from previous week
+- At 420.3 million barrels, U.S. crude oil inventories are about 4% below the five year average for this time of year
+- Total motor gasoline inventories: INCREASED by 0.7 million barrels
+- Distillate fuel inventories: DECREASED by 5.6 million barrels
+- Total commercial petroleum inventories: DECREASED by 25.3 million barrels last week
+
+Analysis: Crude oil inventories showed a DRAW of 3.5 million barrels, which is bullish for oil prices. The larger draw in distillate (5.6 million barrels) also supports tightening supply conditions.
+
+Oil Inventories Score: +1 (Draw)
+Oil Supply Shock Score: 0 (Neutral - no major disruptions reported)
+
+
+=== GOLD ETF FLOWS ===
+Source: World Gold Council, Reuters, Bloomberg
+Multiple sources from February 2026
+
+Key Data:
+- Global gold ETFs continued to attract INFLOWS in January 2026
+- Total AUM and collective holdings reached ALL-TIME HIGHS
+- SPDR Gold Shares ETF received inflows of $2.58 billion in January
+- India gold ETFs saw record inflows of ₹24,050 crore in January
+- 2025 was the strongest year of inflows on record
+- Inflows continue into 2026
+
+Analysis: Gold ETF flows show strong INFLOWS across all regions, with record-breaking levels. This is a clear bullish signal for gold prices as institutional and retail investors continue to accumulate gold exposure.
+
+Gold ETF Flows Score: +1 (Inflows)
+
+
+=== GEOPOLITICAL RISK ===
+Source: Multiple news sources, World Economic Forum, CFR
+Date: February 2026
+
+Key Developments:
+- World Economic Forum's 2026 Global Risks Report frames current moment as "age of competition" marked by geoeconomic confrontation
+- Ongoing conflicts: Ukraine, Sudan, Myanmar, Sahel, Haiti gang violence
+- Gaza war winding down
+- Taiwan Strait tensions remain but not expected to escalate significantly in 2026
+- Russia-NATO tensions continue
+- Multiple watchlists highlight elevated global conflict risk
+- Border tensions and election uncertainties
+
+Analysis: Geopolitical risk remains ELEVATED but STABLE. No major new escalations in February 2026, but background tensions persist across multiple regions. This represents a continuation of the elevated risk environment rather than easing or rising. Score as STABLE (0).
+
+Geopolitical Risk Score: 0 (Stable)
+
+
+=== ECB STANCE (for M6E Euro) ===
+Source: European Central Bank
+Date: February 5, 2026
+
+Latest Decision:
+- ECB kept three key interest rates UNCHANGED
+- Deposit rate: 2.00% (unchanged since June 2025)
+- Main refinancing rate: 2.15%
+- Marginal lending facility: 2.40%
+- Eurozone inflation: 1.7% (below 2% target)
+- ECB on hold since ending rate cuts spree in June 2025
+- Expected to keep rates steady through 2026
+
+Analysis: ECB is in a NEUTRAL HOLD stance. Rates have been unchanged since June 2025 after completing a cutting cycle. With inflation at 1.7% (below target), the ECB is neither hawkish nor dovish - just maintaining current policy. This is similar to the Fed's stance.
+
+ECB Stance Score: 0 (Neutral hold)
+
+
+=== RBA STANCE (for 6A Australian Dollar) ===
+Source: Reserve Bank of Australia
+Date: February 3, 2026
+
+Latest Decision:
+- RBA INCREASED cash rate by 25 basis points to 3.85%
+- First rate hike since 2023
+- Unanimous decision
+- Shift from easing in 2025 to tightening in 2026
+- Headline inflation forecast at 4.2% by mid-2026 (above target)
+- RBA expects to do "whatever it takes" to lower inflation
+- Market expects potential for additional rate hikes in 2026
+
+Analysis: RBA has taken a HAWKISH HIKE stance. This is the first rate increase since 2023, marking a clear policy shift from easing to tightening. With inflation running hot at 4.2% forecast, the RBA is actively tightening monetary policy.
+
+RBA Stance Score: +2 (Hawkish hike - using the Fed scale, this would be a hike)
+
+Note: For scoring purposes, using Fed stance scale: Hawkish hike = -2 for gold/commodities (tightening is bearish), but for AUD itself, a hawkish RBA relative to Fed is BULLISH for AUD.
+
+
+=== BOJ STANCE (for 6J Japanese Yen) ===
+Source: Bank of Japan
+Date: January 23, 2026
+
+Latest Decision:
+- BoJ kept key short-term interest rate UNCHANGED at 0.75%
+- Rate was last raised in December 2025 from 0.5% to 0.75%
+- Highest level in about 30 years
+- BoJ policymaker calls for "timely rate hike" to manage inflation (Feb 6)
+- Economic growth forecast upgraded to 1.0% for fiscal 2026
+- Inflation outlook also raised
+- Market expects further gradual rate hikes
+
+Analysis: BoJ is in a GRADUAL TIGHTENING stance. While rates were held steady in January, the December 2025 hike to 0.75% and policymaker comments calling for "timely rate hikes" indicate a hawkish tilt. The BoJ is normalizing policy but at a very gradual pace.
+
+BoJ Stance Score: +1 (Hawkish tilt - gradual normalization)
+

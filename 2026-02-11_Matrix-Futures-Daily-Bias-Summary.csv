@@ -1,0 +1,11 @@
+Instrument,Name,Bias Score,Bias
+ES,E-mini S&P 500,0.35,Slightly Bullish
+NQ,E-mini Nasdaq-100,0.3,Slightly Bullish
+RTY,E-mini Russell 2000,0.45,Slightly Bullish
+YM,E-mini Dow Jones,0.4,Slightly Bullish
+GC,Gold Futures,-0.05,Neutral
+CL,Crude Oil Futures,0.2,Neutral
+M6E,Euro FX,-0.2,Neutral
+6A,Australian Dollar,0.55,Slightly Bullish
+6J,Japanese Yen,0.05,Neutral
+ZN,10-Year Treasury Note,0.2,Neutral

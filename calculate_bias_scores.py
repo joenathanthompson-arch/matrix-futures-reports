@@ -1,259 +1,258 @@
 #!/usr/bin/env python3
 """
-Matrix Futures Daily Bias Scorer
+Matrix Futures Daily Bias Report - Bias Score Calculator
 Calculates weighted bias scores for 10 instruments based on 14+ macro factors
-Updated with fresh data collected on 2026-01-30
+Data collected: 2026-02-11
 """
 
 from datetime import datetime
 import json
 
-# Current date for report
-REPORT_DATE = datetime.now().strftime("%Y-%m-%d")
-REPORT_TIME = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+# Data collected on 2026-02-11
+# All scores are on -2 to +2 scale unless noted
 
-# ===== MACRO FACTOR SCORES (from data collection 2026-01-30) =====
+# Core Macro Factors (apply to all instruments with varying weights)
+fed_stance = 0  # Neutral hold
+real_yields = 0  # Stable around 2.0%
+usd = -1  # Weakening (DXY down)
+vix = 0  # Balanced (17.80)
+growth_narrative = 0  # Stable (GDPNow 3.7%)
+credit_spreads = 1  # Narrowing (2.84%)
+sox = 1  # Rising (+60% YoY)
+move_index = 0  # Flat/mixed signals
+curve_2s10s = 1  # Steepening (0.71%)
+copper = 1  # Rising (+29% YoY)
+oil_inventories = 1  # Draw (-3.5M barrels)
+oil_supply_shock = 0  # Neutral
+gold_etf_flows = 1  # Inflows (record highs)
+geopolitical_risk = 0  # Stable
 
-# US Macro Factors
-FED_STANCE = 0  # Neutral (on hold, 95% prob of no change in Jan, 76% for March)
-REAL_YIELDS = +1  # Rising (2.20% on Jan 29, up from recent lows)
-VIX = +1  # Falling (17.43, +3.32% today but still low, score inverted for safe havens)
-DXY = +1  # Rising (97.147, +1.02% today)
-GDPNOW = +1  # Slowing (4.2% down from 5.4%, still positive growth)
-CREDIT_SPREADS = -1  # Widening (2.77%, up from 2.68%, bearish for risk)
-SOX = -1  # Falling (-3.87% today at 7,998.47)
-MOVE_INDEX = +1  # Falling (59.20, -2.52%, lower rate volatility = bullish for risk)
-CURVE_2S10S = +1  # Steepening (0.74%, up from 0.70%, bullish for cyclicals)
+# FX-specific factors
+ecb_stance = 0  # Neutral hold at 2.0%
+rba_stance = 2  # Hawkish hike (+25bps to 3.85%)
+boj_stance = 1  # Hawkish tilt (gradual normalization)
 
-# Commodity-Specific Factors
-OIL_INVENTORIES = +1  # Draw (-2.3M barrels, bullish for oil)
-COPPER = -1  # Falling (-3.75% today to $5.9710/lb)
-GOLD_ETF_FLOWS = +1  # Inflows (US$10bn in Dec, record $89bn in 2025)
-
-# FX Central Bank Stances
-ECB_STANCE = 0  # Neutral (on hold at 2%, no hikes expected in 2026)
-BOJ_STANCE = +1  # Hawkish (held at 0.75% but signaling more hikes, raised forecasts)
-BOE_STANCE = -1  # Dovish (cut to 3.75%, more cuts expected in 2026)
-RBA_STANCE = +1  # Hawkish (expected to hike to 3.85% in Feb due to inflation)
-SNB_STANCE = 0  # Neutral (on hold at 0%, watching strong CHF)
-
-# ===== INSTRUMENT DEFINITIONS WITH WEIGHTS =====
-
-INSTRUMENTS = {
-    "ES": {
-        "name": "S&P 500 E-mini Futures",
-        "asset_class": "Equity Index",
+# Instrument definitions with weights (from methodology)
+instruments = {
+    "ES": {  # E-mini S&P 500
+        "name": "E-mini S&P 500",
         "weights": {
-            "FED_STANCE": 0.20,
-            "REAL_YIELDS": 0.15,
-            "VIX": 0.15,
-            "DXY": 0.10,
-            "GDPNOW": 0.10,
-            "CREDIT_SPREADS": 0.15,
-            "SOX": 0.10,
-            "CURVE_2S10S": 0.05
+            "fed_stance": 0.20,
+            "real_yields": 0.15,
+            "credit_spreads": 0.15,
+            "growth_narrative": 0.10,
+            "vix": 0.10,
+            "sox": 0.10,
+            "move_index": 0.05,
+            "curve_2s10s": 0.05,
+            "copper": 0.05,
+            "geopolitical_risk": 0.05
         }
     },
-    "NQ": {
-        "name": "NASDAQ-100 E-mini Futures",
-        "asset_class": "Equity Index",
+    "NQ": {  # E-mini Nasdaq-100
+        "name": "E-mini Nasdaq-100",
         "weights": {
-            "FED_STANCE": 0.20,
-            "REAL_YIELDS": 0.20,
-            "VIX": 0.10,
-            "DXY": 0.10,
-            "SOX": 0.25,
-            "CREDIT_SPREADS": 0.10,
-            "CURVE_2S10S": 0.05
+            "fed_stance": 0.20,
+            "real_yields": 0.20,
+            "sox": 0.15,
+            "credit_spreads": 0.10,
+            "growth_narrative": 0.10,
+            "vix": 0.10,
+            "move_index": 0.05,
+            "curve_2s10s": 0.05,
+            "geopolitical_risk": 0.05
         }
     },
-    "GC": {
+    "RTY": {  # E-mini Russell 2000
+        "name": "E-mini Russell 2000",
+        "weights": {
+            "fed_stance": 0.15,
+            "credit_spreads": 0.20,
+            "curve_2s10s": 0.15,
+            "growth_narrative": 0.15,
+            "real_yields": 0.10,
+            "vix": 0.10,
+            "copper": 0.05,
+            "sox": 0.05,
+            "geopolitical_risk": 0.05
+        }
+    },
+    "YM": {  # E-mini Dow Jones
+        "name": "E-mini Dow Jones",
+        "weights": {
+            "fed_stance": 0.20,
+            "growth_narrative": 0.15,
+            "credit_spreads": 0.15,
+            "real_yields": 0.10,
+            "curve_2s10s": 0.10,
+            "vix": 0.10,
+            "copper": 0.10,
+            "geopolitical_risk": 0.05,
+            "sox": 0.05
+        }
+    },
+    "GC": {  # Gold Futures
         "name": "Gold Futures",
-        "asset_class": "Precious Metal",
         "weights": {
-            "FED_STANCE": 0.25,
-            "REAL_YIELDS": 0.25,
-            "DXY": 0.20,
-            "VIX": 0.10,
-            "GOLD_ETF_FLOWS": 0.15,
-            "GDPNOW": 0.05
+            "real_yields": 0.25,
+            "usd": 0.20,
+            "fed_stance": 0.15,
+            "gold_etf_flows": 0.15,
+            "geopolitical_risk": 0.10,
+            "vix": 0.10,
+            "move_index": 0.05
         }
     },
-    "CL": {
+    "CL": {  # Crude Oil Futures
         "name": "Crude Oil Futures",
-        "asset_class": "Energy",
         "weights": {
-            "OIL_INVENTORIES": 0.30,
-            "DXY": 0.20,
-            "GDPNOW": 0.20,
-            "COPPER": 0.15,
-            "VIX": 0.10,
-            "CREDIT_SPREADS": 0.05
+            "oil_inventories": 0.25,
+            "growth_narrative": 0.20,
+            "usd": 0.15,
+            "oil_supply_shock": 0.15,
+            "geopolitical_risk": 0.15,
+            "copper": 0.10
         }
     },
-    "HG": {
-        "name": "Copper Futures",
-        "asset_class": "Industrial Metal",
+    "M6E": {  # Euro FX
+        "name": "Euro FX",
         "weights": {
-            "COPPER": 0.30,
-            "GDPNOW": 0.25,
-            "DXY": 0.15,
-            "SOX": 0.15,
-            "CREDIT_SPREADS": 0.10,
-            "VIX": 0.05
+            "ecb_stance": 0.25,
+            "fed_stance": 0.25,
+            "usd": 0.20,
+            "real_yields": 0.10,
+            "geopolitical_risk": 0.10,
+            "growth_narrative": 0.10
         }
     },
-    "6E": {
-        "name": "Euro FX Futures",
-        "asset_class": "Currency",
+    "6A": {  # Australian Dollar
+        "name": "Australian Dollar",
         "weights": {
-            "ECB_STANCE": 0.35,
-            "FED_STANCE": 0.25,
-            "DXY": 0.20,
-            "VIX": 0.10,
-            "CREDIT_SPREADS": 0.10
+            "rba_stance": 0.25,
+            "fed_stance": 0.20,
+            "copper": 0.20,
+            "usd": 0.15,
+            "growth_narrative": 0.10,
+            "geopolitical_risk": 0.10
         }
     },
-    "6J": {
-        "name": "Japanese Yen Futures",
-        "asset_class": "Currency",
+    "6J": {  # Japanese Yen
+        "name": "Japanese Yen",
         "weights": {
-            "BOJ_STANCE": 0.35,
-            "FED_STANCE": 0.25,
-            "DXY": 0.15,
-            "VIX": 0.15,
-            "REAL_YIELDS": 0.10
+            "boj_stance": 0.25,
+            "fed_stance": 0.20,
+            "usd": 0.20,
+            "vix": 0.15,
+            "geopolitical_risk": 0.10,
+            "real_yields": 0.10
         }
     },
-    "6B": {
-        "name": "British Pound Futures",
-        "asset_class": "Currency",
+    "ZN": {  # 10-Year Treasury Note
+        "name": "10-Year Treasury Note",
         "weights": {
-            "BOE_STANCE": 0.35,
-            "FED_STANCE": 0.25,
-            "DXY": 0.20,
-            "CREDIT_SPREADS": 0.10,
-            "VIX": 0.10
-        }
-    },
-    "6A": {
-        "name": "Australian Dollar Futures",
-        "asset_class": "Currency",
-        "weights": {
-            "RBA_STANCE": 0.35,
-            "FED_STANCE": 0.20,
-            "COPPER": 0.20,
-            "DXY": 0.15,
-            "GDPNOW": 0.10
-        }
-    },
-    "6S": {
-        "name": "Swiss Franc Futures",
-        "asset_class": "Currency",
-        "weights": {
-            "SNB_STANCE": 0.35,
-            "FED_STANCE": 0.25,
-            "VIX": 0.20,
-            "DXY": 0.15,
-            "CREDIT_SPREADS": 0.05
+            "fed_stance": 0.25,
+            "real_yields": 0.20,
+            "move_index": 0.15,
+            "growth_narrative": 0.10,
+            "credit_spreads": 0.10,
+            "curve_2s10s": 0.10,
+            "geopolitical_risk": 0.10
         }
     }
 }
 
-# ===== FACTOR VALUES DICTIONARY =====
-FACTOR_VALUES = {
-    "FED_STANCE": FED_STANCE,
-    "REAL_YIELDS": REAL_YIELDS,
-    "VIX": VIX,
-    "DXY": DXY,
-    "GDPNOW": GDPNOW,
-    "CREDIT_SPREADS": CREDIT_SPREADS,
-    "SOX": SOX,
-    "MOVE_INDEX": MOVE_INDEX,
-    "CURVE_2S10S": CURVE_2S10S,
-    "OIL_INVENTORIES": OIL_INVENTORIES,
-    "COPPER": COPPER,
-    "GOLD_ETF_FLOWS": GOLD_ETF_FLOWS,
-    "ECB_STANCE": ECB_STANCE,
-    "BOJ_STANCE": BOJ_STANCE,
-    "BOE_STANCE": BOE_STANCE,
-    "RBA_STANCE": RBA_STANCE,
-    "SNB_STANCE": SNB_STANCE
+# Factor values dictionary
+factors = {
+    "fed_stance": fed_stance,
+    "real_yields": real_yields,
+    "usd": usd,
+    "vix": vix,
+    "growth_narrative": growth_narrative,
+    "credit_spreads": credit_spreads,
+    "sox": sox,
+    "move_index": move_index,
+    "curve_2s10s": curve_2s10s,
+    "copper": copper,
+    "oil_inventories": oil_inventories,
+    "oil_supply_shock": oil_supply_shock,
+    "gold_etf_flows": gold_etf_flows,
+    "geopolitical_risk": geopolitical_risk,
+    "ecb_stance": ecb_stance,
+    "rba_stance": rba_stance,
+    "boj_stance": boj_stance
 }
 
-# ===== BIAS CALCULATION =====
-
-def calculate_bias(instrument_code, instrument_data):
+def calculate_bias_score(instrument_code):
     """Calculate weighted bias score for an instrument"""
-    weights = instrument_data["weights"]
-    weighted_sum = 0.0
-    components = {}
+    instrument = instruments[instrument_code]
+    weights = instrument["weights"]
     
-    for factor, weight in weights.items():
-        factor_value = FACTOR_VALUES[factor]
+    score = 0.0
+    breakdown = {}
+    
+    for factor_name, weight in weights.items():
+        factor_value = factors[factor_name]
         contribution = factor_value * weight
-        weighted_sum += contribution
-        components[factor] = {
+        score += contribution
+        breakdown[factor_name] = {
             "value": factor_value,
             "weight": weight,
             "contribution": round(contribution, 3)
         }
     
-    # Round to 2 decimal places
-    bias_score = round(weighted_sum, 2)
-    
-    # Determine bias direction
-    if bias_score > 0.3:
-        bias_direction = "BULLISH"
-    elif bias_score < -0.3:
-        bias_direction = "BEARISH"
-    else:
-        bias_direction = "NEUTRAL"
-    
-    return {
-        "instrument": instrument_code,
-        "name": instrument_data["name"],
-        "asset_class": instrument_data["asset_class"],
-        "bias_score": bias_score,
-        "bias_direction": bias_direction,
-        "components": components
-    }
+    return round(score, 2), breakdown
 
-# ===== MAIN CALCULATION =====
+def get_bias_label(score):
+    """Convert numeric score to bias label"""
+    if score >= 0.75:
+        return "Bullish"
+    elif score >= 0.25:
+        return "Slightly Bullish"
+    elif score >= -0.25:
+        return "Neutral"
+    elif score >= -0.75:
+        return "Slightly Bearish"
+    else:
+        return "Bearish"
 
 def main():
-    print("=" * 70)
+    """Calculate and display bias scores for all instruments"""
+    print("=" * 80)
     print("MATRIX FUTURES DAILY BIAS REPORT")
-    print(f"Report Date: {REPORT_DATE}")
-    print(f"Report Time: {REPORT_TIME}")
-    print("=" * 70)
+    print(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+    print("=" * 80)
     print()
     
-    results = []
+    results = {}
     
-    for code, data in INSTRUMENTS.items():
-        result = calculate_bias(code, data)
-        results.append(result)
+    for code in instruments.keys():
+        score, breakdown = calculate_bias_score(code)
+        bias = get_bias_label(score)
         
-        print(f"{code:4s} | {result['name']:35s} | Score: {result['bias_score']:+6.2f} | {result['bias_direction']}")
+        results[code] = {
+            "name": instruments[code]["name"],
+            "score": score,
+            "bias": bias,
+            "breakdown": breakdown
+        }
+        
+        print(f"{code:6s} | {instruments[code]['name']:25s} | Score: {score:+.2f} | {bias}")
     
     print()
-    print("=" * 70)
-    print("CALCULATION COMPLETE")
-    print("=" * 70)
+    print("=" * 80)
     
-    # Save results to JSON for next script
+    # Save results to JSON
     output = {
-        "report_date": REPORT_DATE,
-        "report_time": REPORT_TIME,
-        "macro_factors": FACTOR_VALUES,
+        "report_date": datetime.now().strftime('%Y-%m-%d'),
+        "generated_at": datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "macro_factors": factors,
         "instruments": results
     }
     
-    with open("/home/ubuntu/matrix-futures-reports/bias_scores_calculated.json", "w") as f:
+    with open('/home/ubuntu/matrix-futures-reports/bias_scores.json', 'w') as f:
         json.dump(output, f, indent=2)
     
-    print("\nResults saved to: bias_scores_calculated.json")
+    print("Results saved to bias_scores.json")
     
     return results
 

@@ -1,0 +1,12 @@
+Matrix Futures Daily Bias Conviction - 2026-02-11
+==================================================
+ES    | Slightly Bullish | Score: +0.35
+NQ    | Slightly Bullish | Score: +0.30
+RTY   | Slightly Bullish | Score: +0.45
+YM    | Slightly Bullish | Score: +0.40
+GC    | Neutral          | Score: -0.05
+CL    | Neutral          | Score: +0.20
+M6E   | Neutral          | Score: -0.20
+6A    | Slightly Bullish | Score: +0.55
+6J    | Neutral          | Score: +0.05
+ZN    | Neutral          | Score: +0.20
