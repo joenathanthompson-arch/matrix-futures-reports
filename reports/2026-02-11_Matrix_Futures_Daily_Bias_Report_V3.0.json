@@ -1,0 +1,114 @@
+{
+  "date": "2026-02-11",
+  "generated_at": "2026-02-11T12:41:20Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "SI": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "ES": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "NQ": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "YM": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Weak US Dollar (DXY down 1.26% week, 2.44% month)",
+    "Neutral Fed Stance (78.3% hold probability for March)",
+    "Strong Copper Rally (+3.29% week, +19.27% quarter)",
+    "Crude Oil Inventory Draw (-3.5M barrels)",
+    "Rising Bond Volatility (MOVE +12.25% week)"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": [],
+    "near_term": [
+      "FOMC Meeting March 18, 2026"
+    ],
+    "background": [
+      "GDP growth at 3.7%",
+      "Copper at multi-year highs"
+    ]
+  }
+}
