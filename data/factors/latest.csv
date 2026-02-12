@@ -1,0 +1,24 @@
+factor,score,source,timestamp
+fed_stance,0,CME FedWatch Tool,2026-02-12T00:44:05Z
+real_yields,+1,FRED (DFII10),2026-02-12T00:44:05Z
+usd_dxy,0,TradingView (DXY),2026-02-12T00:44:05Z
+risk_mood,+1,CNBC (VIX),2026-02-12T00:44:05Z
+vix_direction,+1,CNBC (VIX),2026-02-12T00:44:05Z
+growth_narrative,0,Atlanta Fed (GDPNow),2026-02-12T00:44:05Z
+credit_spreads,+1,FRED (BAMLH0A0HYM2),2026-02-12T00:44:05Z
+sox,+1,TradingView (SOX),2026-02-12T00:44:05Z
+move_index,+1,TradingView (MOVE),2026-02-12T00:44:05Z
+yield_curve_2s10s,+1,FRED (T10Y2Y),2026-02-12T00:44:05Z
+copper,+1,Investing.com,2026-02-12T00:44:05Z
+oil_inventories,-1,EIA,2026-02-12T00:44:05Z
+oil_supply_shock,0,Internal Assessment,2026-02-12T00:44:05Z
+geopolitical_risk,+1,BBVA/WEF/News,2026-02-12T00:44:05Z
+gold_etf_flows,+1,World Gold Council,2026-02-12T00:44:05Z
+ecb_stance,0,Internal Assessment,2026-02-12T00:44:05Z
+rba_stance,0,Internal Assessment,2026-02-12T00:44:05Z
+boj_stance,+1,Internal Assessment,2026-02-12T00:44:05Z
+china_growth,0,Internal Assessment,2026-02-12T00:44:05Z
+rate_diff_eur_usd,0,Internal Assessment,2026-02-12T00:44:05Z
+rate_diff_aud_usd,0,Internal Assessment,2026-02-12T00:44:05Z
+rate_diff_jpy_usd,+1,Internal Assessment,2026-02-12T00:44:05Z
+risk_sentiment_aud,+1,Internal Assessment,2026-02-12T00:44:05Z

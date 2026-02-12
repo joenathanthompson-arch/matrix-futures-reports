@@ -1,0 +1,11 @@
+symbol,instrument,bias_score,signal,confidence,recommended_approach,recommended_mode,hold_expectation
+GC,Gold Futures,3,STRONG_BULLISH,8,TREND_FOLLOW,SWING,2-5 days
+SI,Silver Futures,2,BULLISH,7,TREND_FOLLOW,SWING,1-2 days
+CL,WTI Crude Oil,0,NEUTRAL,5,RANGE_TRADE,INTRADAY,session
+ES,S&P 500 E-mini,3,STRONG_BULLISH,8,TREND_FOLLOW,SWING,1-2 days
+NQ,Nasdaq 100 E-mini,3,STRONG_BULLISH,8,TREND_FOLLOW,SWING,1-2 days
+YM,Dow Jones E-mini,2,BULLISH,7,TREND_FOLLOW,SWING,1-2 days
+RTY,Russell 2000 E-mini,3,STRONG_BULLISH,8,TREND_FOLLOW,SWING,1-2 days
+6E,Euro FX,1,SLIGHT_BULLISH,6,IB_BREAKOUT,INTRADAY,session
+6A,Australian Dollar,2,BULLISH,7,TREND_FOLLOW,SWING,1-2 days
+6J,Japanese Yen,3,STRONG_BULLISH,8,TREND_FOLLOW,SWING,2-5 days
