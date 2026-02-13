@@ -1,0 +1,249 @@
+BIAS SCORE CALCULATIONS - 2026-02-13
+=====================================
+
+SCORING SUMMARY FROM DATA COLLECTION:
+- Fed Stance: 0 (Neutral hold)
+- Real Yields: +2 (Falling)
+- USD (DXY): +1 (Weak/Falling)
+- Risk Mood (VIX-based): +1 (Risk-off, VIX >20)
+- Growth Narrative: 0 (Stable)
+- Credit Spreads: +1 (Narrowing)
+- VIX Direction: 0 (Flat)
+- SOX: +1 (Rising)
+- MOVE: -1 (Rising - short term spike)
+- 2s10s Curve: +1 (Steepening)
+- Copper: +1 (Rising)
+- Gold ETF Flows: +1 (Inflows)
+- Oil Inventories: -1 (Build)
+- Geopolitical Risk: +1 (Rising)
+- Oil Supply Shock: 0 (Neutral)
+- ECB Stance: 0 (Neutral hold)
+- RBA Stance: 0 (Neutral hold)
+- BoJ Stance: +1 (Hawkish/Tightening)
+- China Growth: 0 (Stable)
+- Rate Diff EUR-USD: 0 (Stable)
+- Rate Diff AUD-USD: 0 (Stable)
+- Rate Diff JPY-USD: +1 (Widening vs USD)
+- Risk Sentiment (for 6A): -1 (Risk-off)
+- Eurozone Growth: 0 (Stable)
+
+=====================================
+1. GC (GOLD) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 2 | +4 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 1 | 0 |
+| Oil supply | Neutral | 0 | 1 | 0 |
+| Gold ETFs | Inflows | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+7** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 7/10 (good data quality, clear bullish signals, used fallback for real yields)
+
+=====================================
+2. SI (SILVER) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 1 | 0 |
+| Copper | Rising | +1 | 1 | +1 |
+| Gold ETFs | Inflows | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+6** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 7/10 (good data quality, clear bullish signals)
+
+=====================================
+3. CL (WTI CRUDE) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Oil supply shock | Neutral | 0 | 2 | 0 |
+| Inventories | Build | -1 | 1 | -1 |
+| Growth | Stable | 0 | 2 | 0 |
+| Geopolitical | Rising | +1 | 1 | +1 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+1** |
+
+Signal: SLIGHT_BULLISH (+1 to +2)
+Confidence: 6/10 (mixed signals, inventory build offset by geopolitical risk)
+
+=====================================
+4. ES (S&P 500) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 2 | +4 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 1 | 0 |
+| Credit spreads | Narrowing | +1 | 1 | +1 |
+| VIX direction | Flat | 0 | 1 | 0 |
+| | | | **TOTAL:** | **+7** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 6/10 (VIX at 20.82 shows some caution, but falling real yields very supportive)
+
+=====================================
+5. NQ (NASDAQ 100) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 2 | +4 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 1 | 0 |
+| SOX | Rising | +1 | 1 | +1 |
+| MOVE | Rising | -1 | 1 | -1 |
+| | | | **TOTAL:** | **+6** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 6/10 (falling real yields very supportive for tech, but MOVE spike is a concern)
+
+=====================================
+6. YM (DOW JONES) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 2 | 0 |
+| Credit spreads | Narrowing | +1 | 1 | +1 |
+| 2s10s curve | Steepening | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+6** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 7/10 (solid fundamentals, curve steepening supportive)
+
+=====================================
+7. RTY (RUSSELL 2000) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth | Stable | 0 | 2 | 0 |
+| Credit spreads | Narrowing | +1 | 2 | +2 |
+| 2s10s curve | Steepening | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+7** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 7/10 (credit spreads very supportive for small caps)
+
+=====================================
+8. M6E (MICRO EURO FX) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| ECB stance | Neutral hold | 0 | 1 | 0 |
+| Rate diff EUR-USD | Stable | 0 | 2 | 0 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Eurozone growth | Stable | 0 | 1 | 0 |
+| | | | **TOTAL:** | **+2** |
+
+Signal: SLIGHT_BULLISH (+1 to +2)
+Confidence: 6/10 (weak USD supportive, but no rate differential advantage)
+
+=====================================
+9. 6A (AUSTRALIAN DOLLAR) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| RBA stance | Neutral hold | 0 | 1 | 0 |
+| Rate diff AUD-USD | Stable | 0 | 1 | 0 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk sentiment | Risk-off | -1 | 2 | -2 |
+| China growth | Stable | 0 | 2 | 0 |
+| Copper | Rising | +1 | 1 | +1 |
+| | | | **TOTAL:** | **0** |
+
+Signal: NEUTRAL (-1 to +1)
+Confidence: 6/10 (risk-off environment hurts AUD despite weak USD and rising copper)
+
+=====================================
+10. 6J (JAPANESE YEN) BIAS SCORER
+=====================================
+
+Factors and Weights:
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| BoJ stance | Hawkish/Tightening | +1 | 2 | +2 |
+| Rate diff JPY-USD | Widening vs USD | +1 | 2 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| | | | **TOTAL:** | **+6** |
+
+Signal: STRONG_BULLISH (≥+5)
+Confidence: 7/10 (BoJ normalization and risk-off environment very supportive for JPY)
+
+=====================================
+ASSET CLASS BIAS AGGREGATION
+=====================================
+
+COMMODITIES (GC, SI, CL):
+- GC: STRONG_BULLISH (+7)
+- SI: STRONG_BULLISH (+6)
+- CL: SLIGHT_BULLISH (+1)
+Result: 2 out of 3 are STRONG_BULLISH → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: STRONG_BULLISH (+7)
+- NQ: STRONG_BULLISH (+6)
+- YM: STRONG_BULLISH (+6)
+- RTY: STRONG_BULLISH (+7)
+Result: 4 out of 4 are STRONG_BULLISH → STRONG_BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+2)
+- 6A: NEUTRAL (0)
+- 6J: STRONG_BULLISH (+6)
+Result: 2 out of 3 are bullish (1 slight, 1 strong) → MIXED
+
+=====================================
+KEY DRIVERS (for JSON)
+=====================================
+1. Falling real yields supporting gold, tech, and equities
+2. Weak USD benefiting commodities and risk assets
+3. Risk-off sentiment (VIX >20) supporting safe havens like gold and JPY
+
+=====================================
+DATA QUALITY NOTES
+=====================================
+Stale Sources: DFII10 (2 days old), BAMLH0A0HYM2 (2 days old)
+Fallbacks Used: CNBC US10YTIP for real yields

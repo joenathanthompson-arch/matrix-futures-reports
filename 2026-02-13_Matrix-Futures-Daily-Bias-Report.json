@@ -1,0 +1,171 @@
+{
+  "report_date": "2026-02-13",
+  "generated_at": "2026-02-13T02:38:00Z",
+  "key_drivers": [
+    "Falling real yields supporting gold, tech, and equities",
+    "Weak USD benefiting commodities and risk assets",
+    "Risk-off sentiment (VIX >20) supporting safe havens like gold and JPY"
+  ],
+  "asset_class_bias": {
+    "commodities": "BULLISH",
+    "equity_indices": "STRONG_BULLISH",
+    "fx": "MIXED"
+  },
+  "instrument_bias": [
+    {
+      "ticker": "GC",
+      "instrument": "Gold",
+      "bias": "STRONG_BULLISH",
+      "score": 7,
+      "confidence": 0.7,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "Oil supply",
+        "Gold ETFs"
+      ]
+    },
+    {
+      "ticker": "SI",
+      "instrument": "Silver",
+      "bias": "STRONG_BULLISH",
+      "score": 6,
+      "confidence": 0.7,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "Copper",
+        "Gold ETFs"
+      ]
+    },
+    {
+      "ticker": "CL",
+      "instrument": "WTI Crude Oil",
+      "bias": "SLIGHT_BULLISH",
+      "score": 1,
+      "confidence": 0.6,
+      "key_drivers": [
+        "Oil supply shock",
+        "Inventories",
+        "Growth",
+        "Geopolitical",
+        "USD (DXY)"
+      ]
+    },
+    {
+      "ticker": "ES",
+      "instrument": "S&P 500",
+      "bias": "STRONG_BULLISH",
+      "score": 7,
+      "confidence": 0.6,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "Credit spreads",
+        "VIX direction"
+      ]
+    },
+    {
+      "ticker": "NQ",
+      "instrument": "Nasdaq 100",
+      "bias": "STRONG_BULLISH",
+      "score": 6,
+      "confidence": 0.6,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "SOX",
+        "MOVE"
+      ]
+    },
+    {
+      "ticker": "YM",
+      "instrument": "Dow Jones",
+      "bias": "STRONG_BULLISH",
+      "score": 6,
+      "confidence": 0.7,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "Credit spreads",
+        "2s10s curve"
+      ]
+    },
+    {
+      "ticker": "RTY",
+      "instrument": "Russell 2000",
+      "bias": "STRONG_BULLISH",
+      "score": 7,
+      "confidence": 0.7,
+      "key_drivers": [
+        "Fed stance",
+        "Real yields",
+        "USD (DXY)",
+        "Risk mood",
+        "Growth",
+        "Credit spreads",
+        "2s10s curve"
+      ]
+    },
+    {
+      "ticker": "M6E",
+      "instrument": "Micro Euro FX",
+      "bias": "SLIGHT_BULLISH",
+      "score": 2,
+      "confidence": 0.6,
+      "key_drivers": [
+        "Fed stance",
+        "ECB stance",
+        "Rate diff EUR-USD",
+        "USD (DXY)",
+        "Risk mood",
+        "Eurozone growth"
+      ]
+    },
+    {
+      "ticker": "6A",
+      "instrument": "Australian Dollar",
+      "bias": "NEUTRAL",
+      "score": 0,
+      "confidence": 0.6,
+      "key_drivers": [
+        "Fed stance",
+        "RBA stance",
+        "Rate diff AUD-USD",
+        "USD (DXY)",
+        "Risk sentiment",
+        "China growth",
+        "Copper"
+      ]
+    },
+    {
+      "ticker": "6J",
+      "instrument": "Japanese Yen",
+      "bias": "STRONG_BULLISH",
+      "score": 6,
+      "confidence": 0.7,
+      "key_drivers": [
+        "Fed stance",
+        "BoJ stance",
+        "Rate diff JPY-USD",
+        "USD (DXY)",
+        "Risk mood"
+      ]
+    }
+  ]
+}
