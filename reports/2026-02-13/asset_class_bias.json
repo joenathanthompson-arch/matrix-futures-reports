@@ -1,0 +1,14 @@
+[
+  {
+    "asset_class": "Commodities",
+    "bias": "BULLISH"
+  },
+  {
+    "asset_class": "Indices",
+    "bias": "BULLISH"
+  },
+  {
+    "asset_class": "FX",
+    "bias": "SLIGHT_BULLISH"
+  }
+]

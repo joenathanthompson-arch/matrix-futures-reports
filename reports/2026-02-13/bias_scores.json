@@ -1,0 +1,62 @@
+[
+  {
+    "instrument": "GC",
+    "bias_score": 3,
+    "signal": "BULLISH",
+    "confidence": 7
+  },
+  {
+    "instrument": "SI",
+    "bias_score": 2,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 6
+  },
+  {
+    "instrument": "CL",
+    "bias_score": 1,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 5
+  },
+  {
+    "instrument": "ES",
+    "bias_score": 2,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 6
+  },
+  {
+    "instrument": "NQ",
+    "bias_score": 2,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 6
+  },
+  {
+    "instrument": "YM",
+    "bias_score": 4,
+    "signal": "BULLISH",
+    "confidence": 7
+  },
+  {
+    "instrument": "RTY",
+    "bias_score": 6,
+    "signal": "STRONG_BULLISH",
+    "confidence": 7
+  },
+  {
+    "instrument": "M6E",
+    "bias_score": 2,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 6
+  },
+  {
+    "instrument": "6A",
+    "bias_score": 2,
+    "signal": "SLIGHT_BULLISH",
+    "confidence": 6
+  },
+  {
+    "instrument": "6J",
+    "bias_score": -2,
+    "signal": "SLIGHT_BEARISH",
+    "confidence": 6
+  }
+]
