@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "report_date": "2026-02-13",
+    "report_time": "12:40 UTC",
+    "version": "3.0",
+    "generated_by": "Matrix Futures Bias Scorer V3.0"
+  },
+  "macro_summary": {
+    "fed_stance": "Neutral hold, 75% probability of hold in March",
+    "real_yields": "Flat at 2.16%",
+    "usd_direction": "Weak/falling, DXY at 97.04",
+    "risk_mood": "Risk-off, VIX at 21.07 (+1.15%)",
+    "growth_outlook": "Stable, GDPNow at 2.3%",
+    "credit_conditions": "Narrowing spreads, HY at 2.82%",
+    "rate_volatility": "Rising, MOVE at 68.57 (+11.77%)",
+    "geopolitical_risk": "Rising, US-Iran tensions elevated"
+  },
+  "instruments": [
+    {
+      "symbol": "GC",
+      "name": "Gold Futures",
+      "bias_score": 2,
+      "bias_label": "Mildly Bullish",
+      "strategy": {
+        "rationale": "Weak USD and risk-off sentiment (VIX >20) provide support for gold. Fed neutral stance and flat real yields limit upside. Geopolitical tensions (US-Iran) add safe-haven bid.",
+        "entry": "Look for dips toward $2,650-2,660 support for long entries",
+        "target": "$2,700-2,720 resistance zone",
+        "stop_loss": "Below $2,640 (daily close)",
+        "risk_management": "Use 1-2% account risk per trade. Consider scaling in on pullbacks.",
+        "time_horizon": "3-5 trading sessions"
+      }
+    },
+    {
+      "symbol": "SI",
+      "name": "Silver Futures",
+      "bias_score": 3,
+      "bias_label": "Moderately Bullish",
+      "strategy": {
+        "rationale": "Silver benefits from weak USD, risk-off mood, and rising copper (industrial demand proxy). Stronger than gold due to copper correlation. Limited by flat growth outlook.",
+        "entry": "Long on pullbacks to $31.50-32.00 support",
+        "target": "$33.50-34.00 resistance",
+        "stop_loss": "Below $31.00 (daily close)",
+        "risk_management": "Silver is more volatile than gold; reduce position size by 30-40% vs gold trades.",
+        "time_horizon": "3-5 trading sessions"
+      }
+    },
+    {
+      "symbol": "CL",
+      "name": "Crude Oil Futures",
+      "bias_score": 1,
+      "bias_label": "Mildly Bullish",
+      "strategy": {
+        "rationale": "Geopolitical risk (US-Iran tensions) supports oil, but inventory build (-1) and weak USD offset. Neutral growth outlook limits demand expectations.",
+        "entry": "Long above $73.50 with confirmation",
+        "target": "$76.00-77.00",
+        "stop_loss": "Below $72.00",
+        "risk_management": "Oil is headline-sensitive; use tight stops and monitor geopolitical news closely.",
+        "time_horizon": "2-4 trading sessions"
+      }
+    },
+    {
+      "symbol": "ES",
+      "name": "S&P 500 E-mini Futures",
+      "bias_score": 4,
+      "bias_label": "Bullish",
+      "strategy": {
+        "rationale": "Strong score driven by narrowing credit spreads (+1), weak USD, and risk-off paradox (VIX rising but equities resilient). Fed neutral and flat yields supportive. Broad market strength.",
+        "entry": "Long on dips to 6,800-6,820 support",
+        "target": "6,900-6,950 (new highs possible)",
+        "stop_loss": "Below 6,750",
+        "risk_management": "ES is liquid; use standard 1-2% risk. Watch for VIX spikes above 25 as exit signal.",
+        "time_horizon": "5-7 trading sessions"
+      }
+    },
+    {
+      "symbol": "NQ",
+      "name": "Nasdaq 100 E-mini Futures",
+      "bias_score": 2,
+      "bias_label": "Mildly Bullish",
+      "strategy": {
+        "rationale": "Weak USD and risk-off mood support, but rising MOVE index (-1, rate volatility) pressures tech. SOX rising (+1) is bullish for semis. Lower than ES due to rate sensitivity.",
+        "entry": "Long above 24,500 with SOX confirmation",
+        "target": "25,200-25,500",
+        "stop_loss": "Below 24,000",
+        "risk_management": "NQ is volatile; reduce size by 20% vs ES. Monitor 10Y yields and MOVE index.",
+        "time_horizon": "3-5 trading sessions"
+      }
+    },
+    {
+      "symbol": "YM",
+      "name": "Dow Jones E-mini Futures",
+      "bias_score": 4,
+      "bias_label": "Bullish",
+      "strategy": {
+        "rationale": "Strong score from steepening yield curve (+1), narrowing credit spreads, weak USD, and risk-off resilience. Value/cyclical tilt benefits from curve steepening.",
+        "entry": "Long on pullbacks to 49,200-49,400",
+        "target": "50,000-50,200 (psychological resistance)",
+        "stop_loss": "Below 48,800",
+        "risk_management": "YM less volatile than NQ; can use slightly larger position size. Watch financials sector.",
+        "time_horizon": "5-7 trading sessions"
+      }
+    },
+    {
+      "symbol": "RTY",
+      "name": "Russell 2000 E-mini Futures",
+      "bias_score": 4,
+      "bias_label": "Bullish",
+      "strategy": {
+        "rationale": "Strongest equity bias alongside ES/YM. Narrow credit spreads (2x weight, +2) and steepening curve (+1) highly bullish for small caps. Risk-off mood offset by credit strength.",
+        "entry": "Long above 2,600 with volume confirmation",
+        "target": "2,680-2,720",
+        "stop_loss": "Below 2,550",
+        "risk_management": "RTY is highly volatile; reduce position size by 30-40% vs ES. Requires strong risk appetite.",
+        "time_horizon": "5-7 trading sessions"
+      }
+    },
+    {
+      "symbol": "6E",
+      "name": "Euro FX Futures",
+      "bias_score": 2,
+      "bias_label": "Mildly Bullish",
+      "strategy": {
+        "rationale": "Weak USD (+1) and risk-off mood (+1) support EUR. ECB neutral hold (0) and flat rate differential (0) limit upside. Eurozone growth data missing but assumed stable.",
+        "entry": "Long above 1.0420-1.0440",
+        "target": "1.0550-1.0600",
+        "stop_loss": "Below 1.0350",
+        "risk_management": "EUR/USD is liquid; standard position sizing. Watch ECB speakers for policy shifts.",
+        "time_horizon": "3-5 trading sessions"
+      }
+    },
+    {
+      "symbol": "6A",
+      "name": "Australian Dollar Futures",
+      "bias_score": 1,
+      "bias_label": "Mildly Bullish",
+      "strategy": {
+        "rationale": "Weak score due to RBA hawkish hike (-2) and narrowing rate differential (-1). Risk-off mood (2x, +2) and rising copper (+1) provide support. Conflicting signals.",
+        "entry": "Wait for clarity; if long, enter above 0.6450 with strong risk-on confirmation",
+        "target": "0.6550-0.6600",
+        "stop_loss": "Below 0.6350",
+        "risk_management": "AUD is volatile and conflicted; reduce size by 50%. Monitor RBA rhetoric and China data closely.",
+        "time_horizon": "2-4 trading sessions (low conviction)"
+      }
+    },
+    {
+      "symbol": "6J",
+      "name": "Japanese Yen Futures",
+      "bias_score": 8,
+      "bias_label": "Strongly Bullish",
+      "strategy": {
+        "rationale": "Highest score (+8) driven by BoJ hawkish tightening (2x, +2), widening rate differential (2x, +4), weak USD (+1), and risk-off mood (+1). JPY strength is multi-factor and high conviction.",
+        "entry": "Long on any dip to 0.00680-0.00685 (JPY futures) or USD/JPY short below 147.00",
+        "target": "0.00710-0.00720 (JPY futures) or USD/JPY 140.00-142.00",
+        "stop_loss": "Below 0.00665 (JPY futures) or USD/JPY above 149.00",
+        "risk_management": "High conviction trade; can use 2-3% risk. Monitor BoJ speakers and spring rate hike expectations. Signal decay: 1-2 weeks.",
+        "time_horizon": "7-10 trading sessions (high conviction)"
+      }
+    }
+  ]
+}
