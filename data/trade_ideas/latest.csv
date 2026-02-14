@@ -1,0 +1,11 @@
+symbol,bias_signal,bias_score,confidence,recommended_approach,notes
+GC,SLIGHT_BULLISH,2,7,IB_BREAKOUT,"Supported by weaker USD and strong ETF inflows."
+SI,SLIGHT_BULLISH,2,6,MEAN_REVERSION,"Follows gold, but flat copper tempers conviction."
+CL,NEUTRAL,0,5,RANGE,"Conflicting signals: inventory build vs. USD weakness."
+ES,SLIGHT_BULLISH,2,6,IB_BREAKOUT,"Improving credit conditions suggest healthy risk appetite."
+NQ,SLIGHT_BULLISH,1,6,MEAN_REVERSION,"Strong SOX vs. rising MOVE creates uncertainty."
+YM,BULLISH,3,7,IB_BREAKOUT,"Steepening curve and narrowing spreads favor value/cyclicals."
+RTY,BULLISH,4,7,IB_BREAKOUT,"Narrowing credit spreads provide a strong tailwind for small caps."
+M6E,SLIGHT_BULLISH,1,5,FADE,"Only USD weakness supporting; rate differentials neutral."
+6A,BULLISH,3,7,IB_BREAKOUT,"Hawkish RBA and weak USD provide strong support."
+6J,STRONG_BULLISH,5,8,IB_BREAKOUT,"BoJ hawkish, narrowing rate differentials, and weak USD create a powerful trifecta."
