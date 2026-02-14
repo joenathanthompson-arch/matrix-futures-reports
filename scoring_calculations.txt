@@ -1,0 +1,257 @@
+BIAS SCORE CALCULATIONS - 2026-02-14
+=====================================
+
+SUMMARY OF MACRO FACTOR SCORES:
+- Fed Stance: 0 (Neutral hold)
+- Real Yields: +2 (Falling, down 12 bps)
+- USD (DXY): +1 (Weak/Falling)
+- Risk Mood (VIX 20.60): +1 (Risk-off, VIX >20)
+- Growth (GDPNow 3.7%): +1 (Slowing from 4.2%)
+- Credit Spreads (HY OAS): +1 (Narrowing)
+- VIX Direction: +1 (Falling)
+- SOX: +1 (Rising)
+- MOVE: 0 (Mixed - recent rise but longer-term falling)
+- 2s10s Curve: +1 (Steepening)
+- Copper: 0 (Flat - recent pullback but longer-term uptrend)
+- Oil Supply Shock: 0 (Neutral)
+- Oil Inventories: -1 (Build)
+- Geopolitical Risk: +1 (Rising - Iran tensions)
+- Gold ETF Flows: +1 (Inflows)
+- ECB Stance: 0 (Neutral hold)
+- RBA Stance: +1 (Hawkish/Tightening)
+- BoJ Stance: 0 (Neutral - gradual normalization)
+- EUR-USD Rate Diff: 0 (Stable)
+- AUD-USD Rate Diff: +1 (Widening vs USD)
+- JPY-USD Rate Diff: 0 (Stable)
+- Risk Sentiment (for 6A): -1 (Risk-off)
+- China Growth: 0 (Stable)
+- Eurozone Growth: 0 (Stable)
+
+===================================
+GC (GOLD) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling (down 12 bps) | +2 | **2** | **+4** |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off (VIX 20.60) | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | 1 | +1 |
+| Oil supply shock | Neutral | 0 | 1 | 0 |
+| Gold ETF flows | Inflows | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +8
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (good data quality, clear bullish signals, but some data 1-2 days old)
+
+===================================
+SI (SILVER) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | 1 | +1 |
+| Copper | Flat | 0 | 1 | 0 |
+| Gold ETF flows | Inflows | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +6
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (follows gold strength, copper neutral)
+
+===================================
+CL (WTI CRUDE) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Oil supply shock | Neutral | 0 | **2** | 0 |
+| Inventories | Build (8.5M barrels) | -1 | 1 | -1 |
+| Growth narrative | Slowing | +1 | **2** | **+2** |
+| Geopolitical risk | Rising (Iran) | +1 | 1 | +1 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +3
+SIGNAL: BULLISH (+3 to +4)
+CONFIDENCE: 6/10 (mixed signals - inventory build vs geopolitical risk)
+
+===================================
+ES (S&P 500) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | **2** | **+4** |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | 1 | +1 |
+| Credit spreads | Narrowing | +1 | 1 | +1 |
+| VIX direction | Falling | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +9
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (strong bullish signals across factors)
+
+===================================
+NQ (NASDAQ 100) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | **2** | **+4** |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | 1 | +1 |
+| SOX (Semis) | Rising | +1 | 1 | +1 |
+| MOVE (Rates vol) | Mixed | 0 | 1 | 0 |
+
+TOTAL WEIGHTED SCORE: +8
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (tech-positive factors, SOX strong)
+
+===================================
+YM (DOW JONES) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | **2** | **+2** |
+| Credit spreads | Narrowing | +1 | 1 | +1 |
+| 2s10s curve | Steepening | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +8
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (broad-based bullish signals)
+
+===================================
+RTY (RUSSELL 2000) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| Real yields | Falling | +2 | 1 | +2 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Growth narrative | Slowing | +1 | **2** | **+2** |
+| Credit spreads | Narrowing | +1 | **2** | **+2** |
+| 2s10s curve | Steepening | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +9
+SIGNAL: STRONG_BULLISH (≥+5)
+CONFIDENCE: 7/10 (credit spreads tight, supportive for small caps)
+
+===================================
+M6E (MICRO EURO FX) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| ECB stance | Neutral hold | 0 | 1 | 0 |
+| Rate differential (EUR-USD) | Stable | 0 | **2** | 0 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off | +1 | 1 | +1 |
+| Eurozone growth | Stable | 0 | 1 | 0 |
+
+TOTAL WEIGHTED SCORE: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6/10 (limited drivers, mainly USD weakness)
+
+===================================
+6A (AUSTRALIAN DOLLAR) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| RBA stance | Hawkish (just hiked) | +1 | 1 | +1 |
+| Rate differential (AUD-USD) | Widening vs USD | +1 | 1 | +1 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk sentiment | Risk-off | -1 | **2** | **-2** |
+| China growth | Stable | 0 | **2** | 0 |
+| Copper | Flat | 0 | 1 | 0 |
+
+TOTAL WEIGHTED SCORE: +1
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6/10 (RBA hawkish but risk-off is negative for AUD)
+
+===================================
+6J (JAPANESE YEN) BIAS SCORER
+===================================
+
+Factors (from methodology):
+| Category | Input | Raw Score | Weight | Weighted |
+|----------|-------|-----------|--------|----------|
+| Fed stance | Neutral hold | 0 | 1 | 0 |
+| BoJ stance | Neutral | 0 | **2** | 0 |
+| Rate differential (JPY-USD) | Stable | 0 | **2** | 0 |
+| USD (DXY) | Weak/Falling | +1 | 1 | +1 |
+| Risk mood | Risk-off (VIX >20) | +1 | 1 | +1 |
+
+TOTAL WEIGHTED SCORE: +2
+SIGNAL: SLIGHT_BULLISH (+1 to +2)
+CONFIDENCE: 6/10 (safe-haven bid from risk-off, USD weakness)
+
+===================================
+ASSET CLASS BIAS AGGREGATION
+===================================
+
+COMMODITIES (GC, SI, CL):
+- GC: STRONG_BULLISH (+8)
+- SI: STRONG_BULLISH (+6)
+- CL: BULLISH (+3)
+Result: 3 out of 3 are bullish/strong bullish → BULLISH
+
+INDICES (ES, NQ, YM, RTY):
+- ES: STRONG_BULLISH (+9)
+- NQ: STRONG_BULLISH (+8)
+- YM: STRONG_BULLISH (+8)
+- RTY: STRONG_BULLISH (+9)
+Result: 4 out of 4 are strong bullish → STRONG_BULLISH
+
+FX (M6E, 6A, 6J):
+- M6E: SLIGHT_BULLISH (+2)
+- 6A: SLIGHT_BULLISH (+1)
+- 6J: SLIGHT_BULLISH (+2)
+Result: 3 out of 3 are slight bullish → SLIGHT_BULLISH
+
+===================================
+KEY DRIVERS (Top 3):
+===================================
+
+1. "Falling real yields and Fed on hold supporting risk assets and gold"
+2. "USD weakness benefiting commodities, equities, and foreign currencies"
+3. "Tight credit spreads and falling VIX supporting equity markets"
+
+===================================
+DATA QUALITY NOTES:
+===================================
+
+Stale Sources:
+- FRED BAMLH0A0HYM2 (2 days old, but trend clear)
+- Some FRED data 1-2 days old
+
+Fallbacks Used:
+- CNBC US10YTIP for real yields (FRED was acceptable but CNBC more current)
+
+Overall Data Quality: GOOD (most data within 1-2 days, key sources verified)

@@ -1,0 +1,301 @@
+MACRO DATA COLLECTION - 2026-02-14
+====================================
+
+=== FED STANCE ===
+Source: CME FedWatch Tool + News
+Date: 2026-02-14
+Next FOMC: March 17-18, 2026 (32 days away)
+
+Market Probabilities:
+- 94% probability Fed holds rates at 3.5%-3.75% range in March (per multiple news sources)
+- Fed is expected to hold through May
+- Market pricing 1-2 cuts in 2026
+
+INTERPRETATION: Fed is in NEUTRAL HOLD mode. High probability (94%) of maintaining current rates.
+SCORE: 0 (Neutral hold)
+
+---
+
+=== REAL YIELDS (10Y TIPS) ===
+Source: CNBC US10YTIP
+Date: 2026-02-13 (5:05 PM EST)
+Current Value: 1.758%
+Previous Close: 1.758%
+
+INTERPRETATION: Real yields UNCHANGED at 1.758%. Need to compare to earlier data to determine trend.
+Comparing to Feb 7 data (1.878%), yields have FALLEN by 12 bps.
+SCORE: +2 (Falling - down >5bps)
+
+---
+
+=== USD (DXY) ===
+Source: TradingView
+Date: 2026-02-13 (close)
+Current Value: 96.884
+
+Performance:
+- 1 day: -0.04%
+- 5 days: -0.84%
+- 1 month: -2.26%
+- 6 months: -0.93%
+- Year to date: -1.38%
+- 1 year: -9.56%
+
+INTERPRETATION: DXY is WEAK/FALLING across all timeframes. Clear downtrend.
+SCORE: +1 (Weak/Falling)
+
+---
+
+=== VIX (VOLATILITY INDEX) ===
+Source: CBOE
+Date: 2026-02-13 (close)
+Current Value: 20.60
+Change: -1.06% (-0.22)
+Previous Close: 20.82
+
+INTERPRETATION:
+- VIX at 20.60 is in the RISK-OFF range (>20)
+- Risk Mood Score: +1 (Risk-off, VIX >20)
+- VIX fell -1.06%, indicating declining volatility
+- VIX Direction: FALLING
+- VIX Direction Score: +1 (Falling)
+
+---
+
+=== GROWTH NARRATIVE (Atlanta Fed GDPNow) ===
+Source: Atlanta Fed GDPNow
+Date: February 10, 2026
+Latest Estimate: 3.7% (Q4 2025, seasonally adjusted annual rate)
+Next Update: February 18, 2026
+
+INTERPRETATION: Growth at 3.7% is solid. Need to compare to previous estimate to determine if accelerating/stable/slowing.
+Comparing to Feb 2 estimate of 4.2%, growth has SLOWED from 4.2% to 3.7% (-0.5 percentage points).
+SCORE: +1 (Slowing)
+
+---
+
+=== CREDIT SPREADS (HY OAS - BAMLH0A0HYM2) ===
+Source: FRED
+Date: 2026-02-12 (most recent)
+Updated: Feb 13, 2026 9:30 AM CST
+Current Value: 2.92%
+
+INTERPRETATION: HY spreads at 2.92% are near multi-year lows. Trend has been NARROWING (down from ~3% area).
+SCORE: +1 (Narrowing)
+Data Quality: Data is 2 days old but trend is clear
+
+---
+
+=== 2s10s YIELD CURVE (T10Y2Y) ===
+Source: FRED
+Date: 2026-02-13 (most recent)
+Updated: Feb 13, 2026 5:13 PM CST
+Current Value: 0.64%
+
+INTERPRETATION: Curve at +0.64% is positively sloped. Trend has been STEEPENING (rising from deeply inverted levels).
+SCORE: +1 (Steepening)
+
+---
+
+=== SOX (Philadelphia Semiconductor Index) ===
+Source: TradingView
+Date: 2026-02-13 (close)
+Current Value: 8,137.86
+
+Performance:
+- 1 day: +0.66%
+- 5 days: +4.84%
+- 1 month: +5.84%
+- 6 months: +39.58%
+- Year to date: +11.65%
+- 1 year: +59.95%
+
+INTERPRETATION: SOX is RISING strongly across all timeframes. Clear uptrend.
+SCORE: +1 (Rising)
+
+---
+
+=== MOVE INDEX (Bond Market Volatility) ===
+Source: TradingView
+Date: 2026-02-13 (close at 00:40 GMT = Feb 13)
+Current Value: 70.1041
+
+Performance:
+- 1 day: +2.24%
+- 5 days: +12.79%
+- 1 month: +15.32%
+- 6 months: -8.69%
+- Year to date: +9.60%
+- 1 year: -19.03%
+
+INTERPRETATION: MOVE has RISEN recently (1 day +2.24%, 5 days +12.79%, 1 month +15.32%), but longer-term trend is DOWN (6 months -8.69%, 1 year -19.03%).
+Overall assessment: Recent spike is concerning, but longer-term trend is FALLING.
+SCORE: 0 (Mixed - recent rise but longer-term falling trend)
+
+---
+
+=== COPPER ===
+Source: Investing.com
+Date: 2026-02-13 (close)
+Current Value: $5.8030/lb
+
+Performance:
+- 1 day: +0.30%
+- 1 week: -1.34%
+- 1 month: -3.54%
+- 3 months: +13.74%
+- 6 months: +29.03%
+- 1 year: +21.45%
+
+INTERPRETATION: Copper has pulled back recently (1 week -1.34%, 1 month -3.54%) after hitting all-time highs. However, longer-term trend remains RISING (3 months +13.74%, 6 months +29.03%, 1 year +21.45%).
+Overall assessment: FLAT to SLIGHTLY FALLING in near term, but strong longer-term uptrend.
+SCORE: 0 (Flat - recent pullback but longer-term uptrend)
+
+---
+
+=== OIL INVENTORIES (EIA Weekly) ===
+Source: EIA Weekly Petroleum Status Report + News
+Date: Week ending February 6, 2026
+Release Date: February 11, 2026
+
+U.S. commercial crude oil inventories:
+- INCREASED by 8.5 million barrels (largest increase in a year)
+- Now at 428.8 million barrels
+- API reported even larger build of 13.4 million barrels
+
+INTERPRETATION: BUILD (large inventory increase of 8.5 million barrels)
+SCORE: -1 (Build)
+
+---
+
+=== OIL SUPPLY SHOCK ===
+Assessment: No major supply disruptions currently. OPEC+ production stable. However, geopolitical tensions with Iran are elevated.
+
+INTERPRETATION: NEUTRAL (no current supply shock, but elevated risk)
+SCORE: 0 (Neutral)
+
+---
+
+=== GOLD ETF FLOWS ===
+Sources: World Gold Council, Bloomberg, Reuters, VanEck
+Date: February 2026
+
+Key Data:
+- Global gold bullion ETF holdings rose by 801 tonnes in 2025 (second-largest annual increase on record)
+- Gold ETF inflows have accounted for bulk of investment demand increase over past year
+- India gold ETF inflows surged to record 240.4 billion rupees in January 2026
+- China gold ETFs saw outflows in early February as price fell, but demand picked up since
+- Overall trend: INFLOWS continue, though some recent volatility
+
+INTERPRETATION: INFLOWS (strong and sustained inflows continuing, though some recent volatility)
+SCORE: +1 (Inflows)
+
+---
+
+=== GEOPOLITICAL RISK ===
+Sources: Reuters, MEES, Geopolitical Futures
+Date: February 13-14, 2026
+
+Key Developments:
+- US military preparing for potentially weeks-long Iran operations
+- Iran risks dominate oil markets discussions
+- Severe internal turmoil in Iran amid economic collapse
+- Risk of disruption at Strait of Hormuz (one-fifth of global oil)
+- US fully expects Iran to retaliate
+
+INTERPRETATION: RISING (significant escalation in Middle East tensions, Iran conflict risk)
+SCORE: +1 (Rising)
+
+---
+
+=== ECB STANCE (for M6E Euro) ===
+Source: ECB, Bloomberg, FXStreet
+Date: February 6, 2026 (last meeting)
+
+Decision: ECB kept three key interest rates UNCHANGED
+Current Rates:
+- Deposit facility: 2.00%
+
+Market Expectations:
+- Nordea: Rates seen unchanged through 2026, next move a hike in H2 2027
+- Capital Group: Expects at least one hike in 2026
+- Consensus: Rates likely to remain at 2% through 2026
+
+INTERPRETATION: NEUTRAL HOLD (on hold, mixed views on next move)
+SCORE: 0 (Neutral hold)
+
+---
+
+=== RBA STANCE (for 6A Australian Dollar) ===
+Source: RBA, Reuters, Bloomberg
+Date: February 2026
+
+Decision: RBA RAISED cash rate by 25 bps to 3.85%
+- Reversed one of three cuts made last year
+- Underlying inflation picked up to 3.4%
+- RBA open to hike again if inflation proves sticky
+- Majority of economists expect RBA will hike again
+
+INTERPRETATION: HAWKISH/TIGHTENING (just hiked rates, may hike again)
+SCORE: +1 (Hawkish/Tightening)
+
+---
+
+=== BOJ STANCE (for 6J Japanese Yen) ===
+Source: BoJ, Japan Times, investingLive
+Date: February 2026
+
+Current Status:
+- BoJ likely to avoid March rate hike
+- Adviser expects 0.25% hike "in the not-so-distant future" but not in spring
+- Markets trimming near-term rate hike bets
+- BoJ continuing gradual normalization
+
+INTERPRETATION: NEUTRAL to SLIGHTLY HAWKISH (gradual normalization continuing, but no immediate hike expected)
+SCORE: 0 (Neutral - gradual normalization but no immediate action)
+
+---
+
+=== RATE DIFFERENTIALS (for FX) ===
+
+EUR-USD (for M6E):
+- ECB at 2%, Fed at 3.5-3.75%
+- Both on hold
+- Differential: Fed higher by ~150-175 bps
+Score: 0 (Stable)
+
+AUD-USD (for 6A):
+- RBA at 3.85% (just hiked, may hike again)
+- Fed at 3.5-3.75% (on hold)
+- Differential: Narrowing (RBA hiking while Fed on hold)
+Score: +1 (Widening vs USD - favorable for AUD)
+
+JPY-USD (for 6J):
+- BoJ continuing gradual normalization
+- Fed on hold
+- Differential: Gradually narrowing but slowly
+Score: 0 (Stable - gradual change)
+
+---
+
+=== RISK SENTIMENT (for FX Commodity Currencies) ===
+Based on VIX at 20.60 (risk-off, >20)
+For 6A (risk currency): -1 (Risk-off is negative for AUD)
+
+---
+
+=== CHINA GROWTH (for 6A) ===
+Assessment: China growth stable around 5% target, no major changes
+
+INTERPRETATION: STABLE
+SCORE: 0 (Stable)
+
+---
+
+=== EUROZONE GROWTH (for M6E) ===
+Assessment: Eurozone growth stable, inflation at 1.7% (below 2% target)
+
+SCORE: 0 (Stable)
+
+---
+
