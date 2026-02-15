@@ -1,0 +1,34 @@
+{
+  "date": "2026-02-15",
+  "generated_at": "2026-02-15T02:40:16Z",
+  "scores": {
+    "GC": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "SI": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "CL": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "ES": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "YM": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "RTY": {"score": 4, "signal": "BULLISH", "confidence": 7},
+    "M6E": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "6A": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Weak USD supporting commodities and foreign currencies",
+    "Credit spreads narrowing, bullish for equities especially small caps",
+    "Central bank divergence: BoJ and RBA hawkish, Fed on hold",
+    "Gold ETF inflows at record levels supporting precious metals",
+    "Rising bond volatility (MOVE) creates some uncertainty"
+  ],
+  "data_quality": {
+    "stale_sources": ["DFII10", "T10Y2Y"],
+    "fallbacks_used": ["CNBC for real yields"]
+  }
+}
+}
+}
