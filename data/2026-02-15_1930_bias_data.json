@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "report_date": "2026-02-15",
+    "report_time": "19:30 EST",
+    "report_time_utc": "00:30 UTC",
+    "generated_by": "Matrix Futures Bias Scorer v1.0",
+    "methodology_version": "1.0",
+    "data_quality": {
+      "stale_sources": ["FRED DFII10"],
+      "fallbacks_used": ["CNBC US10YTIP for real yields"],
+      "all_sources_verified": true
+    }
+  },
+  "market_regime": {
+    "overall": "Risk-On with Strong Bullish Bias",
+    "asset_class_bias": {
+      "indices": "STRONG_BULLISH",
+      "commodities": "BULLISH",
+      "fx": "BULLISH"
+    },
+    "top_conviction_trades": [
+      {"symbol": "ES", "score": 9},
+      {"symbol": "RTY", "score": 8},
+      {"symbol": "GC", "score": 8}
+    ]
+  },
+  "macro_factors": {
+    "fed_stance": {
+      "state": "Dovish hold",
+      "rate": "3.50-3.75%",
+      "score": 1,
+      "impact": "Supportive for risk assets",
+      "source": "CME FedWatch Tool"
+    },
+    "real_yields": {
+      "state": "Falling",
+      "value": "1.89%",
+      "score": 2,
+      "impact": "Very bullish for equities/gold",
+      "source": "CNBC US10YTIP"
+    },
+    "usd_dxy": {
+      "state": "Weak/falling",
+      "value": 96.88,
+      "score": 1,
+      "impact": "Bullish for commodities/EM",
+      "source": "TradingView"
+    },
+    "vix": {
+      "state": "Risk-on returning",
+      "value": 20.60,
+      "direction": "Falling",
+      "score": 1,
+      "impact": "Risk-on sentiment",
+      "source": "CNBC"
+    },
+    "growth_gdpnow": {
+      "state": "Stable",
+      "value": "3.7%",
+      "score": 0,
+      "impact": "Neutral, no recession risk",
+      "source": "Atlanta Fed"
+    },
+    "credit_spreads_hy_oas": {
+      "state": "Narrowing",
+      "value": "2.92%",
+      "score": 1,
+      "impact": "Bullish for credit-sensitive assets",
+      "source": "FRED BAMLH0A0HYM2"
+    },
+    "sox": {
+      "state": "Rising",
+      "value": 8137.86,
+      "change_1y": "+59.95%",
+      "score": 1,
+      "impact": "Tech sector strength",
+      "source": "TradingView"
+    },
+    "move_index": {
+      "state": "Rising",
+      "value": 70.10,
+      "score": -1,
+      "impact": "Bond volatility elevated",
+      "source": "TradingView"
+    },
+    "yield_curve_2s10s": {
+      "state": "Steepening",
+      "value": "0.64%",
+      "score": 1,
+      "impact": "Positive for financials/cyclicals",
+      "source": "FRED T10Y2Y"
+    },
+    "copper": {
+      "state": "Rising",
+      "value": "$5.80/lb",
+      "change_1y": "+24.41%",
+      "score": 1,
+      "impact": "Industrial demand signal",
+      "source": "Investing.com"
+    },
+    "oil_inventories": {
+      "state": "Build",
+      "change": "+8.5M barrels",
+      "score": -1,
+      "impact": "Bearish for crude",
+      "source": "EIA Weekly Petroleum Status Report"
+    },
+    "gold_etf_flows": {
+      "state": "Strong inflows",
+      "value": "$19bn (January 2026)",
+      "score": 1,
+      "impact": "Strong bullish for gold",
+      "source": "World Gold Council"
+    },
+    "geopolitical_risk": {
+      "state": "Rising",
+      "factors": ["US-China tensions", "Middle East", "Russia-Ukraine"],
+      "score": 1,
+      "impact": "Safe-haven bid",
+      "source": "Multiple news sources"
+    }
+  },
+  "instruments": [
+    {
+      "name": "Gold",
+      "symbol": "GC",
+      "asset_class": "Commodities",
+      "bias_score": 8,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "key_drivers": [
+        "Falling real yields (weight 2)",
+        "Weak USD",
+        "Record gold ETF inflows"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 1, "weighted": 0},
+        "oil_supply_shock": {"raw": 0, "weight": 1, "weighted": 0},
+        "gold_etf_flows": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above $2,930",
+        "target": "$3,000+",
+        "stop": "Below $2,900"
+      }
+    },
+    {
+      "name": "Silver",
+      "symbol": "SI",
+      "asset_class": "Commodities",
+      "bias_score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Following gold strength",
+        "Industrial demand positive",
+        "Rising copper"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 1, "weighted": 0},
+        "copper": {"raw": 1, "weight": 1, "weighted": 1},
+        "gold_etf_flows": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above $32.50",
+        "target": "$34.00",
+        "stop": "Below $32.00"
+      }
+    },
+    {
+      "name": "Crude Oil",
+      "symbol": "CL",
+      "asset_class": "Commodities",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "key_drivers": [
+        "Geopolitical risk support",
+        "Inventory build headwind",
+        "Weak USD"
+      ],
+      "calculation": {
+        "oil_supply_shock": {"raw": 0, "weight": 2, "weighted": 0},
+        "inventories": {"raw": -1, "weight": 1, "weighted": -1},
+        "growth_narrative": {"raw": 0, "weight": 2, "weighted": 0},
+        "geopolitical_risk": {"raw": 1, "weight": 1, "weighted": 1},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Neutral to slight long",
+        "note": "Watch for inventory draws in next report"
+      }
+    },
+    {
+      "name": "S&P 500",
+      "symbol": "ES",
+      "asset_class": "Indices",
+      "bias_score": 9,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "key_drivers": [
+        "Falling real yields (weight 2)",
+        "Dovish Fed",
+        "Narrowing credit spreads"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 1, "weighted": 0},
+        "credit_spreads": {"raw": 1, "weight": 1, "weighted": 1},
+        "vix_direction": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above 6,830",
+        "target": "6,900-6,950",
+        "stop": "Below 6,800"
+      }
+    },
+    {
+      "name": "NASDAQ",
+      "symbol": "NQ",
+      "asset_class": "Indices",
+      "bias_score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Tech-positive environment",
+        "Rising SOX",
+        "Falling real yields"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 1, "weighted": 0},
+        "sox": {"raw": 1, "weight": 1, "weighted": 1},
+        "move": {"raw": -1, "weight": 1, "weighted": -1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above 24,700",
+        "target": "25,000",
+        "stop": "Below 24,500"
+      }
+    },
+    {
+      "name": "Dow Jones",
+      "symbol": "YM",
+      "asset_class": "Indices",
+      "bias_score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Broad-based bullish factors",
+        "Steepening curve",
+        "Narrowing spreads"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 2, "weighted": 0},
+        "credit_spreads": {"raw": 1, "weight": 1, "weighted": 1},
+        "yield_curve_2s10s": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above 49,450",
+        "target": "49,750",
+        "stop": "Below 49,200"
+      }
+    },
+    {
+      "name": "Russell 2000",
+      "symbol": "RTY",
+      "asset_class": "Indices",
+      "bias_score": 8,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "key_drivers": [
+        "Credit conditions favorable (weight 2)",
+        "Steepening curve",
+        "Dovish Fed"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "growth_narrative": {"raw": 0, "weight": 2, "weighted": 0},
+        "credit_spreads": {"raw": 1, "weight": 2, "weighted": 2},
+        "yield_curve_2s10s": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above 2,640",
+        "target": "2,700",
+        "stop": "Below 2,620"
+      }
+    },
+    {
+      "name": "Euro",
+      "symbol": "M6E",
+      "asset_class": "FX",
+      "bias_score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "key_drivers": [
+        "Weak USD helps",
+        "Rate differential still negative",
+        "ECB neutral"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "ecb_stance": {"raw": 0, "weight": 1, "weighted": 0},
+        "rate_differential": {"raw": -1, "weight": 2, "weighted": -2},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1},
+        "eurozone_growth": {"raw": 0, "weight": 1, "weighted": 0}
+      },
+      "trade_idea": {
+        "direction": "Slight long bias",
+        "note": "Range-bound trading likely"
+      }
+    },
+    {
+      "name": "Australian Dollar",
+      "symbol": "6A",
+      "asset_class": "FX",
+      "bias_score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "key_drivers": [
+        "Commodity currency",
+        "Weak USD",
+        "Copper strength"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "rba_stance": {"raw": 0, "weight": 1, "weighted": 0},
+        "rate_differential": {"raw": 0, "weight": 1, "weighted": 0},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_sentiment": {"raw": 1, "weight": 2, "weighted": 2},
+        "china_growth": {"raw": 0, "weight": 2, "weighted": 0},
+        "copper": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Long",
+        "entry": "Above 0.6400",
+        "target": "0.6500",
+        "stop": "Below 0.6350"
+      }
+    },
+    {
+      "name": "Japanese Yen",
+      "symbol": "6J",
+      "asset_class": "FX",
+      "bias_score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "key_drivers": [
+        "BoJ ultra-dovish (weight 2)",
+        "Wide rate differential",
+        "Mixed signals"
+      ],
+      "calculation": {
+        "fed_stance": {"raw": 1, "weight": 1, "weighted": 1},
+        "boj_stance": {"raw": -1, "weight": 2, "weighted": -2},
+        "rate_differential": {"raw": -1, "weight": 2, "weighted": -2},
+        "usd": {"raw": 1, "weight": 1, "weighted": 1},
+        "risk_mood": {"raw": 1, "weight": 1, "weighted": 1}
+      },
+      "trade_idea": {
+        "direction": "Neutral",
+        "note": "Wait for BoJ policy clarity"
+      }
+    }
+  ],
+  "risk_factors": {
+    "upside_risks": [
+      "Fed signals more aggressive dovish pivot",
+      "Real yields fall further below 1.8%",
+      "Gold ETF inflows accelerate",
+      "Oil inventory draws in next report",
+      "Geopolitical tensions escalate further"
+    ],
+    "downside_risks": [
+      "Fed turns more hawkish than expected",
+      "Real yields reverse higher",
+      "Credit spreads widen (recession signal)",
+      "China growth deteriorates",
+      "VIX spikes above 25 (risk-off)"
+    ]
+  },
+  "next_key_events": [
+    "EIA petroleum report (Feb 19)",
+    "FOMC minutes release",
+    "CPI/PPI data",
+    "ECB policy meeting",
+    "China economic data"
+  ]
+}

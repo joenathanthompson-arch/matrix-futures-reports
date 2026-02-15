@@ -1,0 +1,11 @@
+Instrument,Symbol,Asset_Class,Bias_Score,Signal,Confidence,Key_Driver_1,Key_Driver_2,Key_Driver_3,Trade_Direction,Entry,Target,Stop
+S&P 500,ES,Indices,9,STRONG_BULLISH,8,Falling real yields,Dovish Fed,Narrowing credit spreads,Long,Above 6830,6900-6950,Below 6800
+Russell 2000,RTY,Indices,8,STRONG_BULLISH,8,Credit conditions favorable,Steepening curve,Dovish Fed,Long,Above 2640,2700,Below 2620
+Gold,GC,Commodities,8,STRONG_BULLISH,8,Falling real yields,Weak USD,Gold ETF inflows,Long,Above 2930,3000+,Below 2900
+NASDAQ,NQ,Indices,7,STRONG_BULLISH,7,Tech-positive,Rising SOX,Falling real yields,Long,Above 24700,25000,Below 24500
+Dow Jones,YM,Indices,7,STRONG_BULLISH,7,Broad bullish factors,Steepening curve,Narrowing spreads,Long,Above 49450,49750,Below 49200
+Silver,SI,Commodities,7,STRONG_BULLISH,7,Gold strength,Industrial demand,Rising copper,Long,Above 32.50,34.00,Below 32.00
+Australian Dollar,6A,FX,5,STRONG_BULLISH,6,Commodity currency,Weak USD,Copper strength,Long,Above 0.6400,0.6500,Below 0.6350
+Euro,M6E,FX,1,SLIGHT_BULLISH,5,Weak USD,Rate differential negative,ECB neutral,Slight Long,Range-bound,Range-bound,Range-bound
+Crude Oil,CL,Commodities,1,SLIGHT_BULLISH,5,Geopolitical risk,Inventory build,Weak USD,Neutral to Slight Long,Watch inventories,Watch inventories,Watch inventories
+Japanese Yen,6J,FX,-1,NEUTRAL,5,BoJ ultra-dovish,Wide rate differential,Mixed signals,Neutral,Wait for clarity,Wait for clarity,Wait for clarity
