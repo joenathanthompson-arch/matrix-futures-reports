@@ -1,0 +1,280 @@
+{
+  "report_metadata": {
+    "report_date": "2026-02-16",
+    "generated_timestamp": "2026-02-16T00:40:00Z",
+    "methodology_version": "1.0",
+    "data_sources_count": 14
+  },
+  "macro_factors": {
+    "fed_stance": {
+      "score": 0,
+      "status": "Neutral Hold",
+      "value": "350-375 bps",
+      "probability_no_change": 90.2,
+      "next_meeting": "2026-03-31",
+      "source": "CME FedWatch",
+      "timestamp": "2026-02-15"
+    },
+    "real_yields": {
+      "score": 0,
+      "status": "Flat",
+      "value": 1.758,
+      "unit": "percent",
+      "source": "CNBC US10YTIP",
+      "timestamp": "2026-02-15T17:05:00-05:00",
+      "fallback_used": true
+    },
+    "usd": {
+      "score": 1,
+      "status": "Weak/Falling",
+      "value": 96.966,
+      "change_1m": -2.42,
+      "change_1y": -9.48,
+      "source": "TradingView DXY",
+      "timestamp": "2026-02-16T00:34:00Z"
+    },
+    "vix_risk_mood": {
+      "score": 1,
+      "status": "Risk-Off",
+      "value": 20.60,
+      "threshold": 20,
+      "source": "CNBC VIX",
+      "timestamp": "2026-02-13"
+    },
+    "vix_direction": {
+      "score": 0,
+      "status": "Flat",
+      "change": -0.22,
+      "source": "CNBC VIX",
+      "timestamp": "2026-02-13"
+    },
+    "growth_narrative": {
+      "score": 0,
+      "status": "Stable",
+      "value": 3.7,
+      "unit": "percent",
+      "period": "2025:Q4",
+      "source": "Atlanta Fed GDPNow",
+      "timestamp": "2026-02-10"
+    },
+    "credit_spreads": {
+      "score": 1,
+      "status": "Narrowing",
+      "value": 2.84,
+      "unit": "percent",
+      "historical_low": 2.41,
+      "historical_high": 21.82,
+      "source": "Trading Economics BAMLH0A0HYM2",
+      "timestamp": "2026-02"
+    },
+    "sox": {
+      "score": 1,
+      "status": "Rising",
+      "value": 8137.86,
+      "change_1d": 0.66,
+      "change_1m": 5.84,
+      "change_1y": 59.95,
+      "all_time_high": 8400.02,
+      "source": "TradingView SOX",
+      "timestamp": "2026-02-13"
+    },
+    "move_index": {
+      "score": -1,
+      "status": "Rising",
+      "value": 70.1041,
+      "change_1m": 15.32,
+      "source": "TradingView MOVE",
+      "timestamp": "2026-02-14"
+    },
+    "yield_curve_2s10s": {
+      "score": 1,
+      "status": "Steepening",
+      "value": 0.64,
+      "unit": "percent",
+      "source": "FRED T10Y2Y",
+      "timestamp": "2026-02-13"
+    },
+    "copper": {
+      "score": 0,
+      "status": "Flat",
+      "value": 5.7775,
+      "unit": "USD/lb",
+      "change_1w": -3.10,
+      "change_1m": -0.92,
+      "change_3m": 14.11,
+      "source": "Investing.com",
+      "timestamp": "2026-02-15T19:37:27"
+    },
+    "oil_inventories": {
+      "score": -1,
+      "status": "Build",
+      "change": 8.5,
+      "unit": "million barrels",
+      "total": 428.8,
+      "vs_5y_avg": "3% below",
+      "week_ending": "2026-02-06",
+      "source": "EIA WPSR",
+      "timestamp": "2026-02-11"
+    },
+    "gold_etf_flows": {
+      "score": 1,
+      "status": "Inflows",
+      "value": 19.0,
+      "unit": "billion USD",
+      "period": "January 2026",
+      "record": "Strongest month on record",
+      "holdings": 4145,
+      "holdings_unit": "tonnes",
+      "source": "World Gold Council",
+      "timestamp": "2026-02-05"
+    },
+    "china_pmi": {
+      "score": -1,
+      "status": "Contracting",
+      "value": 49.3,
+      "threshold": 50,
+      "previous": 50.1,
+      "period": "January 2026",
+      "source": "China NBS",
+      "timestamp": "2026-02-01"
+    },
+    "us_ism_pmi": {
+      "score": 1,
+      "status": "Expanding",
+      "value": 52.6,
+      "threshold": 50,
+      "previous": 47.9,
+      "forecast": 48.5,
+      "beat_forecast": true,
+      "period": "January 2026",
+      "source": "ISM",
+      "timestamp": "2026-02-02"
+    }
+  },
+  "instrument_scores": [
+    {
+      "instrument": "6J",
+      "name": "Japanese Yen",
+      "score": -3.4,
+      "bias": "BEARISH",
+      "conviction": "Moderate",
+      "top_drivers": [
+        {"factor": "usd", "contribution": -2.0},
+        {"factor": "credit_spreads", "contribution": -0.8},
+        {"factor": "yield_curve_2s10s", "contribution": -0.8},
+        {"factor": "move_index", "contribution": -0.8}
+      ]
+    },
+    {
+      "instrument": "RTY",
+      "name": "Russell 2000 E-mini",
+      "score": 2.9,
+      "bias": "BULLISH",
+      "conviction": "Moderate",
+      "top_drivers": [
+        {"factor": "credit_spreads", "contribution": 1.5},
+        {"factor": "us_ism_pmi", "contribution": 1.0},
+        {"factor": "yield_curve_2s10s", "contribution": 0.8},
+        {"factor": "move_index", "contribution": 0.6}
+      ]
+    },
+    {
+      "instrument": "YM",
+      "name": "Dow Jones E-mini",
+      "score": 2.3,
+      "bias": "BULLISH",
+      "conviction": "Moderate",
+      "top_drivers": [
+        {"factor": "us_ism_pmi", "contribution": 1.2},
+        {"factor": "credit_spreads", "contribution": 1.0},
+        {"factor": "yield_curve_2s10s", "contribution": 0.5},
+        {"factor": "move_index", "contribution": 0.4}
+      ]
+    },
+    {
+      "instrument": "6E",
+      "name": "Euro FX",
+      "score": -2.2,
+      "bias": "BEARISH",
+      "conviction": "Moderate",
+      "top_drivers": [
+        {"factor": "usd", "contribution": -2.0},
+        {"factor": "vix_risk_mood", "contribution": -0.5},
+        {"factor": "yield_curve_2s10s", "contribution": -0.5}
+      ]
+    },
+    {
+      "instrument": "NQ",
+      "name": "Nasdaq 100 E-mini",
+      "score": 1.6,
+      "bias": "BULLISH",
+      "conviction": "Low",
+      "top_drivers": [
+        {"factor": "sox", "contribution": 1.5},
+        {"factor": "credit_spreads", "contribution": 0.8},
+        {"factor": "move_index", "contribution": 0.5}
+      ]
+    },
+    {
+      "instrument": "ES",
+      "name": "S&P 500 E-mini",
+      "score": 1.3,
+      "bias": "BULLISH",
+      "conviction": "Low",
+      "top_drivers": [
+        {"factor": "credit_spreads", "contribution": 1.0},
+        {"factor": "sox", "contribution": 0.8},
+        {"factor": "move_index", "contribution": 0.5},
+        {"factor": "yield_curve_2s10s", "contribution": 0.5}
+      ]
+    },
+    {
+      "instrument": "CL",
+      "name": "Crude Oil WTI",
+      "score": 0.9,
+      "bias": "BULLISH",
+      "conviction": "Low",
+      "top_drivers": [
+        {"factor": "oil_inventories", "contribution": 1.5},
+        {"factor": "usd", "contribution": -1.0},
+        {"factor": "vix_risk_mood", "contribution": -0.5}
+      ]
+    },
+    {
+      "instrument": "GC",
+      "name": "Gold",
+      "score": -0.6,
+      "bias": "BEARISH",
+      "conviction": "Low",
+      "top_drivers": [
+        {"factor": "gold_etf_flows", "contribution": 1.5},
+        {"factor": "usd", "contribution": -1.5},
+        {"factor": "real_yields", "contribution": 0.0}
+      ]
+    },
+    {
+      "instrument": "HG",
+      "name": "Copper",
+      "score": -0.4,
+      "bias": "BEARISH",
+      "conviction": "Low",
+      "top_drivers": [
+        {"factor": "china_pmi", "contribution": -1.5},
+        {"factor": "us_ism_pmi", "contribution": 1.2},
+        {"factor": "usd", "contribution": -1.2}
+      ]
+    },
+    {
+      "instrument": "SI",
+      "name": "Silver",
+      "score": 0.0,
+      "bias": "NEUTRAL",
+      "conviction": "None",
+      "top_drivers": [
+        {"factor": "gold_etf_flows", "contribution": 1.2},
+        {"factor": "usd", "contribution": -1.5},
+        {"factor": "real_yields", "contribution": 0.0}
+      ]
+    }
+  ]
+}

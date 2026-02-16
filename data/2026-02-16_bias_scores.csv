@@ -1,0 +1,11 @@
+Report Date,Instrument,Name,Score,Bias,Conviction,Top Driver 1,Top Driver 2,Top Driver 3
+2026-02-16,6J,Japanese Yen,-3.4,BEARISH,Moderate,USD (-2.0),Credit Spreads (-0.8),Yield Curve (-0.8)
+2026-02-16,RTY,Russell 2000 E-mini,2.9,BULLISH,Moderate,Credit Spreads (+1.5),US ISM PMI (+1.0),Yield Curve (+0.8)
+2026-02-16,YM,Dow Jones E-mini,2.3,BULLISH,Moderate,US ISM PMI (+1.2),Credit Spreads (+1.0),Yield Curve (+0.5)
+2026-02-16,6E,Euro FX,-2.2,BEARISH,Moderate,USD (-2.0),VIX Risk (-0.5),Yield Curve (-0.5)
+2026-02-16,NQ,Nasdaq 100 E-mini,1.6,BULLISH,Low,SOX (+1.5),Credit Spreads (+0.8),MOVE Index (+0.5)
+2026-02-16,ES,S&P 500 E-mini,1.3,BULLISH,Low,Credit Spreads (+1.0),SOX (+0.8),MOVE Index (+0.5)
+2026-02-16,CL,Crude Oil WTI,0.9,BULLISH,Low,Oil Inventories (+1.5),USD (-1.0),VIX Risk (-0.5)
+2026-02-16,GC,Gold,-0.6,BEARISH,Low,Gold ETF Flows (+1.5),USD (-1.5),Real Yields (0.0)
+2026-02-16,HG,Copper,-0.4,BEARISH,Low,China PMI (-1.5),US ISM PMI (+1.2),USD (-1.2)
+2026-02-16,SI,Silver,0.0,NEUTRAL,None,Gold ETF Flows (+1.2),USD (-1.5),Real Yields (0.0)
