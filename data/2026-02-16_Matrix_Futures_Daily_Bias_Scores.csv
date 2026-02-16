@@ -1,0 +1,11 @@
+instrument,ticker,asset_class,bias_score,signal,confidence
+GC,GC,Commodities,4,BULLISH,7
+SI,SI,Commodities,5,STRONG_BULLISH,7
+CL,CL,Commodities,0,NEUTRAL,6
+ES,ES,Indices,2,SLIGHT_BULLISH,6
+NQ,NQ,Indices,1,SLIGHT_BULLISH,6
+YM,YM,Indices,3,BULLISH,6
+RTY,RTY,Indices,4,BULLISH,6
+M6E,M6E,FX,1,SLIGHT_BULLISH,5
+6A,6A,FX,2,SLIGHT_BULLISH,6
+6J,6J,FX,7,STRONG_BULLISH,7
