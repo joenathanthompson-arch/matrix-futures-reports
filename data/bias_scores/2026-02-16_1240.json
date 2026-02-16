@@ -1,0 +1,115 @@
+{
+  "date": "2026-02-16",
+  "generated_at": "2026-02-16T12:40:58Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "SI": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "RTY": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6E": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6A": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Weak US Dollar (DXY down 2.35% month, supporting commodities and FX)",
+    "Hawkish Foreign Central Banks (RBA hiked 25bps, BoJ signaling spring hike)",
+    "Risk-On Sentiment (VIX falling, credit spreads narrowing despite elevated levels)",
+    "Fed Hawkish Hold (92% probability of no March cut, limiting equity upside)",
+    "Strong Semiconductor Sector (SOX up 5.84% month, supporting tech indices)"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": [],
+    "near_term": [
+      "BoJ Rate Decision (Spring 2026)",
+      "FOMC Meeting (March 18-19)"
+    ],
+    "background": [
+      "RBA hawkish stance continues",
+      "China growth slowing (PMI 49.3)"
+    ]
+  }
+}
