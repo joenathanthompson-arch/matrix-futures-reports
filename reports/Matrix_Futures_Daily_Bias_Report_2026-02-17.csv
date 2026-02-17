@@ -1,0 +1,11 @@
+Instrument,Ticker,Asset Class,Bias Signal,Score,Confidence
+Gold,GC,Commodities,STRONG_BULLISH,7,7
+Silver,SI,Commodities,BULLISH,4,6
+WTI Crude Oil,CL,Commodities,NEUTRAL,0,6
+S&P 500,ES,Indices,STRONG_BULLISH,7,7
+Nasdaq 100,NQ,Indices,STRONG_BULLISH,6,7
+Dow Jones,YM,Indices,STRONG_BULLISH,6,7
+Russell 2000,RTY,Indices,STRONG_BULLISH,7,7
+Euro,M6E,FX,SLIGHT_BULLISH,2,6
+Australian Dollar,6A,FX,BULLISH,4,7
+Japanese Yen,6J,FX,SLIGHT_BULLISH,2,6
