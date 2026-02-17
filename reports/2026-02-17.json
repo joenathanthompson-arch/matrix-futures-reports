@@ -1,0 +1,125 @@
+{
+  "date": "2026-02-17",
+  "generated_at": "2026-02-17T12:41:45Z",
+  "methodology_version": "3.0_STRATEGY",
+  "instruments": [
+    {
+      "symbol": "GC",
+      "bias_score": 3,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    {
+      "symbol": "SI",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "CL",
+      "bias_score": 1,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "ES",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "NQ",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "YM",
+      "bias_score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    {
+      "symbol": "RTY",
+      "bias_score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    {
+      "symbol": "6E",
+      "bias_score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "6A",
+      "bias_score": 1,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    {
+      "symbol": "6J",
+      "bias_score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  ],
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "Weak US Dollar (DXY down 2.14% month, down 8.95% year)",
+    "Rising Risk-Off Sentiment (VIX at 22.01, up 3.82%)",
+    "Hawkish BoJ and RBA (BoJ at 0.75%, RBA raised to 3.85%)",
+    "Strong Gold ETF Inflows (Record $18.7bn in January)",
+    "China Growth Slowing (PMI at 49.3, below 50 threshold)"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": [],
+    "near_term": [
+      "BoJ Rate Hike Expected April 2026",
+      "RBA Further Hikes Possible"
+    ],
+    "background": [
+      "Fed Neutral Hold",
+      "ECB Holding at 2.00%"
+    ]
+  }
+}
