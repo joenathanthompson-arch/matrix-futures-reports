@@ -1,114 +1,531 @@
 {
-  "date": "2026-02-10",
-  "generated_at": "2026-02-10T17:52:32Z",
-  "methodology_version": "3.0_STRATEGY",
-  "scores": {
+  "date": "2026-02-18",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "dxy": 1,
+    "risk_mood_vix": 1,
+    "growth_narrative": 0,
+    "oil_supply": -1,
+    "gold_etf_flows": 1,
+    "credit_spreads": 1,
+    "vix_direction": 0,
+    "sox": 1,
+    "move": -1,
+    "oil_inventories": -1,
+    "geopolitical_risk": 1,
+    "curve_2s10s": 1,
+    "copper": 0,
+    "ecb_stance": 0,
+    "rate_diff_eur_usd": 0,
+    "eurozone_growth": 0,
+    "rba_stance": 0,
+    "rate_diff_aud_usd": 0,
+    "china_growth": 0,
+    "risk_sentiment_aud": -1,
+    "boj_stance": 0,
+    "rate_diff_jpy_usd": 0
+  },
+  "results": {
     "GC": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
+      "name": "Gold",
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "max_range": [
+        -14,
+        16
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "oil_supply",
+          "value": -1,
+          "weight": 1,
+          "contribution": -1
+        },
+        {
+          "factor": "gold_etf_flows",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
     },
     "SI": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "name": "Silver",
+      "score": 3,
+      "signal": "BULLISH",
+      "max_range": [
+        -10,
+        12
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "copper",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "gold_etf_flows",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
     },
     "CL": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
+      "name": "Crude Oil",
+      "score": -1,
+      "signal": "NEUTRAL",
+      "max_range": [
+        -9,
+        9
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "oil_supply",
+          "value": -1,
+          "weight": 2,
+          "contribution": -2
+        },
+        {
+          "factor": "oil_inventories",
+          "value": -1,
+          "weight": 1,
+          "contribution": -1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "geopolitical_risk",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
     },
     "ES": {
+      "name": "S&P 500",
       "score": 3,
       "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
+      "max_range": [
+        -12,
+        14
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "credit_spreads",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "vix_direction",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        }
+      ]
     },
     "NQ": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "YM": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "RTY": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "M6E": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "6A": {
-      "score": -3,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "6J": {
+      "name": "Nasdaq",
       "score": 2,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "max_range": [
+        -12,
+        14
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "sox",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "move",
+          "value": -1,
+          "weight": 1,
+          "contribution": -1
+        }
+      ]
+    },
+    "YM": {
+      "name": "Dow Jones",
+      "score": 4,
+      "signal": "BULLISH",
+      "max_range": [
+        -10,
+        12
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "credit_spreads",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "curve_2s10s",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
+    },
+    "RTY": {
+      "name": "Russell 2000",
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "max_range": [
+        -12,
+        14
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "real_yields",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "growth_narrative",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "credit_spreads",
+          "value": 1,
+          "weight": 2,
+          "contribution": 2
+        },
+        {
+          "factor": "curve_2s10s",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
+    },
+    "M6E": {
+      "name": "Euro",
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "max_range": [
+        -10,
+        10
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "ecb_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "rate_diff_eur_usd",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "eurozone_growth",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        }
+      ]
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "score": -1,
+      "signal": "NEUTRAL",
+      "max_range": [
+        -12,
+        12
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "rba_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "rate_diff_aud_usd",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_sentiment_aud",
+          "value": -1,
+          "weight": 2,
+          "contribution": -2
+        },
+        {
+          "factor": "china_growth",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "copper",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        }
+      ]
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "max_range": [
+        -10,
+        10
+      ],
+      "factor_breakdown": [
+        {
+          "factor": "fed_stance",
+          "value": 0,
+          "weight": 1,
+          "contribution": 0
+        },
+        {
+          "factor": "boj_stance",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "rate_diff_jpy_usd",
+          "value": 0,
+          "weight": 2,
+          "contribution": 0
+        },
+        {
+          "factor": "dxy",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        },
+        {
+          "factor": "risk_mood_vix",
+          "value": 1,
+          "weight": 1,
+          "contribution": 1
+        }
+      ]
     }
-  },
-  "asset_class_bias": {
-    "COMMODITIES": "BULLISH",
-    "INDICES": "BULLISH",
-    "FX": "NEUTRAL"
-  },
-  "key_drivers": [
-    "Weak US Dollar (DXY down 2.07% month, 10.39% year)",
-    "Risk-On Sentiment (VIX falling to 17.16, -1.15%)",
-    "Credit Spreads Tightening (HY OAS 2.84%, narrowing)",
-    "Real Yields Declining (10Y TIPS 1.88%, down from 2.0%)",
-    "Oil Inventories Drawing (down 3.5M barrels)"
-  ],
-  "data_quality": {
-    "stale_sources": [],
-    "fallbacks_used": [],
-    "overnight_changes": []
-  },
-  "catalyst_proximity": {
-    "imminent": [],
-    "near_term": [
-      "FOMC Meeting March 31"
-    ],
-    "background": [
-      "BoJ hawkish stance continues",
-      "ECB dovish cuts"
-    ]
   }
 }
