@@ -1,0 +1,11 @@
+instrument,ticker,bias_score,bias_text
+E-mini S&P 500,ES,+3,Bullish
+E-mini NASDAQ 100,NQ,-1,Bearish
+E-mini Dow Jones,YM,+3,Bullish
+E-mini Russell 2000,RTY,+1,Bullish
+Gold,GC,-1,Bearish
+Silver,SI,0,Neutral
+Crude Oil,CL,-5,Bearish
+Australian Dollar,6A,+1,Bullish
+Euro,M6E,-2,Bearish
+Japanese Yen,6J,-3,Bearish

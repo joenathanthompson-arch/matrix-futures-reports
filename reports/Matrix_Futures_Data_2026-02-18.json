@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "report_date": "2026-02-18",
+    "report_name": "Matrix Futures Daily Bias Report",
+    "author": "Manus AI"
+  },
+  "macro_factors": [
+    {"factor": "FED STANCE", "score": 0, "narrative": "Neutral hold, 67% probability of hold in March"},
+    {"factor": "REAL YIELDS", "score": 1, "narrative": "Rising - 2.53%, up from recent levels"},
+    {"factor": "DXY", "score": 1, "narrative": "Rising - 97.18, up +0.12%"},
+    {"factor": "VIX RISK MOOD", "score": 1, "narrative": "VIX >20 = risk-off, bullish for gold/safe havens"},
+    {"factor": "VIX DIRECTION", "score": 0, "narrative": "Flat - unchanged at 20.29"},
+    {"factor": "GROWTH NARRATIVE", "score": 0, "narrative": "Stable - GDPNow 3.7%"},
+    {"factor": "CREDIT SPREADS", "score": 1, "narrative": "Narrowing - 2.94%, tightening"},
+    {"factor": "SOX", "score": 1, "narrative": "Rising - 8,136.04, +0.57%, strong uptrend"},
+    {"factor": "MOVE", "score": 0, "narrative": "Flat - 68.84, down on day but up over month"},
+    {"factor": "2s10s CURVE", "score": 1, "narrative": "Steepening - 0.63, +1.78%"},
+    {"factor": "COPPER", "score": 0, "narrative": "Flat - mixed signals, up on day but down over week"},
+    {"factor": "OIL INVENTORIES", "score": -1, "narrative": "Build - +8.5M barrels, bearish for oil"},
+    {"factor": "GOLD ETF FLOWS", "score": 1, "narrative": "Inflows - $19B in January, record highs"},
+    {"factor": "GEOPOLITICAL RISK", "score": 0, "narrative": "Stable - elevated but not escalating"},
+    {"factor": "ECB STANCE", "score": 0, "narrative": "Neutral hold at 2.00%"},
+    {"factor": "RBA STANCE", "score": 1, "narrative": "Hawkish hike - raised to 3.85%"},
+    {"factor": "BOJ STANCE", "score": 0, "narrative": "Neutral hold at 0.75%, but hawkish tilt"},
+    {"factor": "CHINA GROWTH", "score": 0, "narrative": "Stable - mixed PMI signals"}
+  ],
+  "instrument_scores": [
+    {"instrument": "E-mini S&P 500", "ticker": "ES", "bias_score": 3, "bias_text": "Bullish"},
+    {"instrument": "E-mini NASDAQ 100", "ticker": "NQ", "bias_score": -1, "bias_text": "Bearish"},
+    {"instrument": "E-mini Dow Jones", "ticker": "YM", "bias_score": 3, "bias_text": "Bullish"},
+    {"instrument": "E-mini Russell 2000", "ticker": "RTY", "bias_score": 1, "bias_text": "Bullish"},
+    {"instrument": "Gold", "ticker": "GC", "bias_score": -1, "bias_text": "Bearish"},
+    {"instrument": "Silver", "ticker": "SI", "bias_score": 0, "bias_text": "Neutral"},
+    {"instrument": "Crude Oil", "ticker": "CL", "bias_score": -5, "bias_text": "Bearish"},
+    {"instrument": "Australian Dollar", "ticker": "6A", "bias_score": 1, "bias_text": "Bullish"},
+    {"instrument": "Euro", "ticker": "M6E", "bias_score": -2, "bias_text": "Bearish"},
+    {"instrument": "Japanese Yen", "ticker": "6J", "bias_score": -3, "bias_text": "Bearish"}
+  ]
+}
