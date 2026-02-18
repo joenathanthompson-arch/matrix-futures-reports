@@ -1,75 +1,37 @@
 {
-  "date": "2026-02-17",
-  "generated_at": "2026-02-18T00:40:07Z",
+  "date": "2026-02-18",
+  "generated_at": "2026-02-18T07:44:00Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 7
-    },
-    "SI": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6
-    },
-    "CL": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 5
-    },
-    "ES": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7
-    },
-    "NQ": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7
-    },
-    "YM": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7
-    },
-    "RTY": {
-      "score": 5,
-      "signal": "STRONG_BULLISH",
-      "confidence": 7
-    },
-    "M6E": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6
-    },
-    "6A": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6
-    },
-    "6J": {
-      "score": 6,
-      "signal": "STRONG_BULLISH",
-      "confidence": 8
-    }
+    "GC": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "SI": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 0, "signal": "NEUTRAL", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6E": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": 0, "signal": "NEUTRAL", "confidence": 4, "recommended_approach": "NO_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
   "asset_class_bias": {
-    "COMMODITIES": "BULLISH",
+    "COMMODITIES": "SLIGHT_BULLISH",
     "INDICES": "BULLISH",
     "FX": "BULLISH"
   },
   "key_drivers": [
-    "Weak USD supporting all asset classes - DXY down 9% YoY, near 97 level",
-    "Credit conditions remain favorable - HY spreads at 2.94%, narrowing trend supports risk assets",
-    "Central bank divergence favoring non-USD currencies - RBA and BoJ tightening while Fed on hold"
+    "Weak US Dollar (DXY down 2.25% over 1 month)",
+    "BoJ Hawkish Stance (recent hike, more expected)",
+    "Narrowing Credit Spreads (HY OAS at 2.94%)"
   ],
   "data_quality": {
-    "stale_sources": [
-      "DFII10 (Feb 13, 5 days old)",
-      "BAMLH0A0HYM2 (Feb 16, 2 days old)"
-    ],
-    "fallbacks_used": [
-      "CNBC US10YTIP for real yields (confirmed flat trend)"
-    ]
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": [],
+    "near_term": ["Next FOMC meeting (28 days)"],
+    "background": ["BoJ hawkish stance continues"]
   }
 }
