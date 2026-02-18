@@ -1,0 +1,35 @@
+MATRIX FUTURES DAILY BIAS - Feb 17, 2026 (7:40 PM EST)
+========================================================
+
+ASSET CLASS BIAS: ALL BULLISH
+- Commodities: BULLISH
+- Indices: BULLISH  
+- FX: BULLISH
+
+TOP SIGNALS:
+1. 6J (Japanese Yen): +6 STRONG_BULLISH (Conf: 8/10)
+   → BoJ hawkish, IMF urging more hikes, risk-off flows
+   
+2. RTY (Russell 2000): +5 STRONG_BULLISH (Conf: 7/10)
+   → HY spreads at 2.94%, curve steepening
+   
+3. ES/NQ/YM (Equity Indices): +4 BULLISH (Conf: 7/10)
+   → Credit spreads narrowing, VIX falling, SOX near ATH
+
+WEAKEST:
+- CL (Crude Oil): +1 SLIGHT_BULLISH (Conf: 5/10)
+  → Inventory build (+8.5M barrels) vs geopolitical risk
+
+KEY DRIVERS:
+1. Weak USD (DXY 97, -9% YoY) supporting all assets
+2. Credit conditions favorable (HY OAS 2.94%, narrowing)
+3. Central bank divergence (RBA/BoJ tightening, Fed hold)
+
+FULL SCORES:
+GC: +3 | SI: +3 | CL: +1 | ES: +4 | NQ: +4 | YM: +4 | RTY: +5 | M6E: +2 | 6A: +3 | 6J: +6
+
+DATA QUALITY: Fresh (most within 1-3 days). Stale: DFII10 (5d), BAMLH0A0HYM2 (2d).
+
+SIGNAL DECAY: Valid 1-5 sessions (Feb 18-24). Watch: EIA report (Feb 19), RBA meeting (Mar 17).
+
+RISK DISCLOSURE: For informational purposes only. Not investment advice. Futures trading involves substantial risk of loss.
