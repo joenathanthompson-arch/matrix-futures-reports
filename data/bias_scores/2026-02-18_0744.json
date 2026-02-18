@@ -1,0 +1,75 @@
+{
+  "date": "2026-02-17",
+  "generated_at": "2026-02-18T00:40:07Z",
+  "scores": {
+    "GC": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "SI": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6
+    },
+    "CL": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5
+    },
+    "ES": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "NQ": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "YM": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "RTY": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7
+    },
+    "M6E": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6
+    },
+    "6A": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6
+    },
+    "6J": {
+      "score": 6,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Weak USD supporting all asset classes - DXY down 9% YoY, near 97 level",
+    "Credit conditions remain favorable - HY spreads at 2.94%, narrowing trend supports risk assets",
+    "Central bank divergence favoring non-USD currencies - RBA and BoJ tightening while Fed on hold"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "DFII10 (Feb 13, 5 days old)",
+      "BAMLH0A0HYM2 (Feb 16, 2 days old)"
+    ],
+    "fallbacks_used": [
+      "CNBC US10YTIP for real yields (confirmed flat trend)"
+    ]
+  }
+}
