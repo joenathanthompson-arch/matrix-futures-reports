@@ -1,0 +1,45 @@
+{
+  "date": "2026-02-19",
+  "scores": {
+    "NQ": {
+      "score": 5.5,
+      "bias": "BULLISH"
+    },
+    "ES": {
+      "score": 4.0,
+      "bias": "BULLISH"
+    },
+    "RTY": {
+      "score": 4.5,
+      "bias": "BULLISH"
+    },
+    "ZN": {
+      "score": 4.0,
+      "bias": "BULLISH"
+    },
+    "GC": {
+      "score": 5.0,
+      "bias": "BULLISH"
+    },
+    "CL": {
+      "score": 0.0,
+      "bias": "NEUTRAL"
+    },
+    "HG": {
+      "score": 0.0,
+      "bias": "NEUTRAL"
+    },
+    "6E": {
+      "score": 0.0,
+      "bias": "NEUTRAL"
+    },
+    "6A": {
+      "score": -3.0,
+      "bias": "BEARISH"
+    },
+    "6J": {
+      "score": 5.5,
+      "bias": "BULLISH"
+    }
+  }
+}
