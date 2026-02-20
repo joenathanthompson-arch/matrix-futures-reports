@@ -1,0 +1,11 @@
+instrument,ticker,class,bias_score,bias_direction
+S&P 500 E-mini,ES,Equity,+2,BULLISH
+Nasdaq 100 E-mini,NQ,Equity,+2,BULLISH
+Dow Jones E-mini,YM,Equity,+2,BULLISH
+Russell 2000 E-mini,RTY,Equity,+2,BULLISH
+Gold,GC,Commodity,+3,BULLISH
+Silver,SI,Commodity,+3,BULLISH
+WTI Crude Oil,CL,Commodity,+4,BULLISH
+Euro/USD,M6E,FX,0,NEUTRAL
+AUD/USD,6A,FX,+6,BULLISH
+JPY/USD (Inv),6J,FX,+4,BULLISH
