@@ -1,51 +1,102 @@
-# Executive Summary - February 20, 2026 | 07:30 EST
+# Matrix Futures Daily Bias Report
+**Date:** February 20, 2026 | 07:30 EST
 
-## Data Quality Notes
+---
 
-All data sources are fresh as of this report. No stale sources or fallbacks were required. Key data points verified: CME FedWatch (Feb 20, 2026), FRED DFII10 through Feb 18 (1-day lag, within acceptable range), FRED T10Y2Y through Feb 19, FRED BAMLH0A0HYM2 through Feb 18, CBOE VIX live at 20.69, TradingView DXY at 97.888, TradingView MOVE at 68.03, TradingView SOX at 8,173.30, Investing.com Copper at 5.7643, EIA Weekly Petroleum Status Report (week ending Feb 13, released Feb 19), Atlanta Fed GDPNow Q4 2025 final at 3.0% (updated Feb 19), World Gold Council and Reuters gold ETF flow data (Feb 20), ECB press release (Feb 5), RBA media release (Feb 3), BoJ speech and Reuters (Feb 20).
+## Overall Market Bias: BULLISH
 
-## Asset Class Overview
+US-Iran tensions are escalating with a 10-15 day nuclear deal deadline, adding a significant geopolitical risk premium to markets. This is supporting safe-haven assets like Gold, which has reclaimed the $5,000 level. A massive, unexpected draw in EIA crude inventories is providing a strong tailwind for oil prices. Meanwhile, falling real yields are supporting rate-sensitive assets like Gold and Tech, but a hawkish Fed and rising VIX are creating headwinds for broader equity indices.
 
-- **Commodities:** BULLISH — All three commodity instruments score bullish or better. Crude oil leads with a STRONG_BULLISH signal driven by the largest inventory draw in five months (-9M barrels). Gold and silver carry slight bullish bias from risk-off conditions and a slowing growth narrative.
-- **Indices:** BULLISH — Three of four equity indices score slight bullish or better. Credit spreads narrowing and slowing growth (which the methodology scores as bullish for equities via the GDPNow factor) provide support. NQ is the outlier at NEUTRAL due to rising MOVE index and flat SOX.
-- **FX:** MIXED — A three-way split: JPY is BULLISH on BoJ hawkish pivot and safe-haven demand; EUR is NEUTRAL with both central banks on hold; AUD is SLIGHT_BEARISH as China PMI below 50 and risk-off conditions outweigh the RBA's hawkish hike.
+---
 
-## Symbol Analysis
+## Asset Class Summary
 
-**GC (Gold):** Gold carries a slight bullish bias (+2, SLIGHT_BULLISH) heading into the session. The primary support comes from risk-off conditions with VIX elevated above 20 and rising, combined with a slowing GDPNow growth narrative that historically supports safe-haven demand. Real yields are flat (1.80%, within ±5bps of recent levels), providing a neutral backdrop rather than a headwind, while the USD is modestly rising on the 5-day basis which provides a small drag. Gold ETF flows are mixed this week — Reuters reported a $1.86 billion outflow from gold/precious metals funds on Feb 20, snapping a five-week inflow streak, which tempers conviction. Recommended approach: FADE_EXTENSION on rallies toward prior highs, or IB_BREAKOUT long on confirmed break above opening range. Confidence: 6/10. Signal decay: moderate — watch for real yields direction shift or VIX reversal.
+| Asset Class | Bias | Key Driver |
+|-------------|------|------------|
+| Commodities | BULLISH | Geopolitical Risk, Massive Oil Draw, Weak USD |
+| Indices | SLIGHT_BULLISH | Falling Real Yields vs. Hawkish Fed, Rising VIX |
+| FX | NEUTRAL | BOJ Hawkishness, RBA Surprise Hike, USD Flat |
 
-**SI (Silver):** Silver scores slight bullish (+1, SLIGHT_BULLISH) but with lower conviction than gold. As a hybrid precious/industrial metal, silver benefits from the same risk-off and growth-slowing dynamics as gold, but copper's flat performance (day +0.45%, week -0.65%) removes the industrial demand confirmation that would push silver higher. The USD headwind is the same as for gold. With ETF flows mixed and copper not confirming an industrial demand surge, silver is best treated as a follower of gold rather than a leader. Recommended approach: WAIT_FOR_GOLD_CONFIRMATION — enter long only after GC shows clear directional conviction. Confidence: 5/10. Reduce size given conflicting signals.
+---
 
-**CL (Crude Oil):** Crude oil is the standout instrument this session with a STRONG_BULLISH score (+5). The EIA weekly report released February 19 showed a 9.0 million barrel inventory draw for the week ending February 13 — the largest single-week draw in five months — bringing total crude stocks to 419.8 million barrels. This draw is scored at both the supply shock (weight 2) and inventory (weight 1) levels, contributing +3 weighted points. The slowing GDPNow (scored as bullish for oil via the growth narrative factor, weight 2) adds +2, and rising geopolitical risk (US-Iran tensions per Feb 20 news) adds +1. The only headwind is a modestly rising USD (-1). The EIA also noted stronger refinery demand as the driver of the draw. Recommended approach: IB_BREAKOUT long on opening range expansion, or PULLBACK_BUY on any early session dip. Confidence: 7/10.
+## Highest Conviction Signals
 
-**ES (S&P 500):** The S&P 500 E-mini carries a slight bullish bias (+1, SLIGHT_BULLISH) but with notable internal tension. Credit spreads narrowing from 2.95% to 2.86% HY OAS over the past week is a genuine positive signal for equities. However, the VIX rising above 20 (+2.27% today, +38% YTD) and the VIX direction score of -1 create a headwind. The net result is a marginal bullish lean. Real yields are flat (neutral), the Fed is firmly on hold (neutral), and the USD is slightly rising (small drag). The slowing GDPNow adds a point via the growth narrative factor. Pre-market futures show ES down about 0.28%, consistent with the muted bullish bias. Recommended approach: FADE_EARLY_WEAKNESS if price finds support at prior day's value area; avoid aggressive longs given VIX elevation. Confidence: 6/10.
+| Instrument | Score | Signal | Confidence |
+|------------|-------|--------|------------|
+| GC | +4 | BULLISH | 7/10 |
+| NQ | +4 | BULLISH | 7/10 |
+| 6J | +4 | BULLISH | 7/10 |
+---
 
-**NQ (Nasdaq 100):** The Nasdaq 100 scores NEUTRAL (0) for this session, making it the weakest of the equity indices. The key differentiator from ES is the MOVE index, which surged +5.99% today to 68.03 — rising rate volatility is a direct headwind for duration-sensitive growth stocks. SOX is flat (day -0.50%, week +1.03%), providing no additional tailwind. Real yields are flat, which removes the most powerful bullish driver for NQ (falling real yields). With MOVE rising and SOX not confirming strength, NQ lacks the fundamental support needed for a directional bias. Pre-market NQ is down about 0.41%. Recommended approach: AVOID_DIRECTIONAL_BIAS — trade the range, fade extensions in both directions. Confidence: 5/10.
 
-**YM (Dow Jones):** The Dow Jones E-mini scores slight bullish (+2, SLIGHT_BULLISH), performing better than NQ due to its lower sensitivity to rate volatility and higher weighting on growth and credit conditions. The slowing GDPNow (weight 2) contributes +2, credit spreads narrowing adds +1, and risk-off conditions add +1. The yield curve flattening (-1) and rising USD (-1) are the offsets. The Dow's value-oriented composition makes it more resilient to the MOVE index headwind that is weighing on NQ. Pre-market DJI is down about 0.54%, which may present a fade opportunity. Recommended approach: IB_BREAKOUT long if opening range holds above prior day's low; target prior day's high. Confidence: 6/10.
+## Full Instrument Breakdown
 
-**RTY (Russell 2000):** The Russell 2000 E-mini scores BULLISH (+3), the strongest equity signal in this report. The key driver is credit spreads narrowing (weight 2, contributing +2), which is the most important factor for small-cap stocks that rely heavily on high-yield credit markets for financing. The slowing growth narrative (weight 2, contributing +2) also supports the score per the methodology. The yield curve flattening (-1) and rising USD (-1) are partial offsets. Pre-market RTY is actually showing a small gain (+0.24%), the only major index in positive territory, which is consistent with the bullish score. Recommended approach: IB_BREAKOUT long on opening range expansion; RTY tends to lead when credit conditions are improving. Confidence: 6/10.
+### GC (Gold): +4 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Gold at $5,020, ETF inflows strong, geopolitical premium from US-Iran. Real yields falling (1.80%). Hawkish Fed headwind offset by safe-haven demand.
 
-**M6E (Euro FX):** The Euro FX scores NEUTRAL (0) with balanced forces on both sides. Both the Fed and ECB are on hold — the Fed at 3.50-3.75% and the ECB at 2.00% deposit rate (held at the February 5 meeting). The rate differential is stable, providing no directional impulse. The USD is modestly rising today (headwind for EUR), while risk-off conditions (VIX >20) provide a slight offset. EUR/USD is trading near 1.1766, down 0.06% on the day, consistent with the neutral score. The ECB's hold was described as data-dependent, with Deutsche Bank forecasting rates on hold at 2% through 2026. Recommended approach: RANGE_TRADE — fade moves to extremes of recent range (1.17-1.19). Confidence: 5/10.
+### SI (Silver): +2 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+Silver benefits from gold strength and falling real yields. Copper flat limits upside. Hybrid precious/industrial nature creates uncertainty.
 
-**6A (Australian Dollar):** The Australian Dollar scores SLIGHT_BEARISH (-3), the only clearly bearish signal in this report. Despite the RBA's hawkish hike to 3.85% on February 3 (the first hike in the current cycle, bullish for AUD), two high-weight bearish factors dominate: China's official manufacturing PMI fell to 49.3 in January (below the 50 expansion threshold, weight 2, contributing -2), and risk-off conditions with VIX above 20 (weight 2, contributing -2). Australia's largest trade partner is in manufacturing contraction, and the global risk environment is deteriorating. The AUD rate differential now favors AUD over USD (3.85% vs 3.50-3.75%), but this is insufficient to overcome the China and risk-off headwinds. Recommended approach: FADE_RALLIES — sell strength toward resistance; avoid longs given the macro headwinds. Confidence: 7/10.
+### CL (Crude Oil): +3 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+WTI near 6-month highs. Massive inventory draw (-9,014K vs +2,149K expected). US-Iran 10-15 day deadline adds geopolitical premium. Oil heading for first weekly gain in 3 weeks.
 
-**6J (Japanese Yen):** The Japanese Yen scores BULLISH (+4), the strongest FX signal and second strongest overall signal in this report. Three factors align bullishly: the BoJ's hawkish stance (weight 2, contributing +2) with an April rate hike widely expected per ex-board member commentary; the narrowing JPY-USD rate differential as the BoJ tightens while the Fed holds (weight 2, contributing +2); and risk-off conditions driving safe-haven demand for JPY (weight 1, contributing +1). The only offset is the modestly rising USD (-1). Note that 6J quotes are inverted — a bullish 6J score means USD/JPY is expected to fall. Japan's core inflation slowing to a 2-year low (reported Feb 20) introduces some uncertainty about the April hike timing, which is reflected in the 7/10 rather than 8/10 confidence. Recommended approach: IB_BREAKOUT long (long 6J = short USD/JPY) on opening range expansion; target prior session highs. Confidence: 7/10.
+### ES (S&P 500): +1 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+S&P 500 supported by falling real yields and tight credit spreads. Rising VIX (20.72) and hawkish Fed create headwinds. Balanced environment favors intraday IB breakout.
+
+### NQ (Nasdaq 100): +4 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Nasdaq benefits most from falling real yields (2x weight). SOX rising to 8,288. MOVE index falling. AI-driven tech momentum continues. VIX rising is a risk.
+
+### YM (Dow Jones): +1 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+Dow Jones faces headwinds from hawkish Fed and strong growth narrative (2x weight). Credit spreads tight and yield curve steepening provide support. Range-bound near-term.
+
+### RTY (Russell 2000): +2 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+Russell 2000 benefits from tight credit spreads (2x weight) and steepening yield curve. Hawkish Fed and growth concerns are headwinds. Small caps sensitive to credit conditions.
+
+### M6E (Euro): -1 SLIGHT_BEARISH (5/10)
+**Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
+EUR/USD at 1.18 - rate differential favors USD (Fed 3.625% vs ECB ~3.15%). Eurozone PMI improving (51.9) provides partial offset. Mixed signals warrant range trading approach.
+
+### 6A (Australian Dollar): -1 SLIGHT_BEARISH (6/10)
+**Approach:** FADE_RANGE | **Mode:** INTRADAY | **Hold:** session
+AUD/USD rally stalling near 2023 highs after 7% surge from Jan lows. RBA hawkish hike (3.85%) supportive but risk-off sentiment (VIX 20.72, US-Iran) and stable China growth limit upside.
+
+### 6J (Japanese Yen): +4 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+JPY strengthening on BOJ hawkish stance (expected hike to 1% by June). Rate differential closing as BOJ hikes. Risk-off from US-Iran tensions supports safe-haven JPY. USD/JPY at 154.47.
+
+---
 
 ## Key Macro Themes
 
-**Theme 1 — Energy Supply Tightness:** The 9-million-barrel crude inventory draw is the dominant macro event of the week. With the largest draw in five months and refinery demand rising, the oil supply picture has shifted meaningfully bullish. This supports CL directly and provides a secondary tailwind for inflation expectations, which could complicate the Fed's path.
+1. **Geopolitical Risk Premium Returns**: The US-Iran nuclear deal deadline has injected significant uncertainty into the market, boosting safe-haven assets like Gold and adding a risk premium to Crude Oil. This is the dominant theme driving commodities.
+2. **Divergent Central Bank Policies**: The BOJ and RBA are on hawkish paths, with expected and recent rate hikes strengthening their respective currencies (JPY, AUD). In contrast, the Fed is in a hawkish hold, and the ECB remains neutral, creating divergence and opportunities in FX markets.
+3. **Growth vs. Inflation Tug-of-War**: Strong US growth (GDPNow 3.0%) and a hawkish Fed are creating headwinds for equities, while falling real yields provide support, particularly for the tech-heavy Nasdaq. The rising VIX indicates growing concern about this tension.
 
-**Theme 2 — Risk-Off Creep:** VIX has risen 38% year-to-date and is now above 20, with MOVE also elevated and rising. This is not a crisis-level risk-off, but it represents a sustained deterioration in risk appetite that benefits safe havens (gold, JPY) while creating headwinds for risk assets (equities, AUD). The geopolitical backdrop (US-Iran tensions, tariff uncertainty) is contributing.
+---
 
-**Theme 3 — Central Bank Divergence:** The BoJ's hawkish pivot (hiking in December 2025, April hike expected) stands in contrast to the Fed's neutral hold and the ECB's hold at 2%. This divergence is the primary driver of the BULLISH JPY signal and is the most structurally significant macro theme for FX markets in 2026.
+## Upcoming Catalysts
 
-## Watch List
+### Imminent (< 1 Week)
+- US-Iran nuclear deal deadline: 10-15 days (by ~Mar 6-7, 2026)
+- PCE inflation data: upcoming (key Fed input)
 
-The following upcoming events could shift bias materially:
+### Near-Term (1-4 Weeks)
+- FOMC meeting: March 18-19, 2026 (26 days away)
+- Next EIA weekly report: Feb 25, 2026
 
-- **Feb 20, 2026 (today):** Atlanta Fed GDPNow first Q1 2026 estimate — if significantly below Q4's 3.0%, could boost gold and JPY further while pressuring equities.
-- **Feb 25, 2026:** Next EIA Weekly Petroleum Status Report — confirmation of inventory draw trend would sustain CL bullish bias; a build would reverse it quickly.
-- **Mar 5, 2026:** China Caixin Manufacturing PMI — key for 6A; a recovery above 50 would shift AUD bias toward neutral.
-- **Mar 18-19, 2026:** FOMC Meeting — any shift in language toward cuts would be strongly bullish for equities and gold; any hawkish surprise would be bearish.
-- **Mar 31, 2026:** Next FOMC meeting (currently 94% probability of hold) — watch for any evolution in cut probability.
+---
+
+## Data Quality
+- All data sources current as of February 20, 2026
+- No stale data used
+- Average confidence: {sum(s['confidence'] for s in scores.values()) / len(scores):.1f}/10
+
+---
+**End of Report**

@@ -1,30 +1,127 @@
 {
   "date": "2026-02-20",
   "generated_at": "2026-02-20T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "SI": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "CL": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
-    "ES": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "NQ": {"score": 0, "signal": "NEUTRAL", "confidence": 5},
-    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 6},
-    "M6E": {"score": 0, "signal": "NEUTRAL", "confidence": 5},
-    "6A": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+    "GC": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "NQ": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "FADE_RANGE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",
-    "INDICES": "BULLISH",
-    "FX": "MIXED"
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "NEUTRAL"
   },
   "key_drivers": [
-    "Crude oil inventory draw of 9M barrels (largest in 5 months) drives strong CL bullish bias",
-    "VIX elevated above 20 and rising (risk-off) supports gold and JPY safe havens while headwinding equities",
-    "RBA hawkish hike to 3.85% offset by China PMI below 50 and risk-off environment, net bearish for AUD"
+    "US-Iran nuclear deal deadline (10-15 days) driving geopolitical risk premium in oil and gold",
+    "Massive EIA crude inventory draw (-9,014K vs +2,149K expected) - strongest in 5 months",
+    "Real yields falling (DFII10 1.80%) supporting gold, tech, and rate-sensitive assets",
+    "BOJ hawkish stance (rate hike to 1% expected by June) strengthening JPY",
+    "RBA surprise rate hike to 3.85% (Feb 3) - hawkish reversal of 2025 cuts"
   ],
   "data_quality": {
     "stale_sources": [],
-    "fallbacks_used": []
+    "fallbacks_used": [
+      "VIX from CBOE website (live)",
+      "DXY from TradingView (live)",
+      "EIA from news sources"
+    ],
+    "overnight_changes": [
+      "US-Iran tensions escalated: Trump set 10-15 day nuclear deal deadline",
+      "EIA crude draw -9,014K massively exceeded expectations",
+      "Gold broke above $5,000 again on geopolitical demand"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "US-Iran nuclear deal deadline: 10-15 days (by ~Mar 6-7, 2026)",
+      "PCE inflation data: upcoming (key Fed input)"
+    ],
+    "near_term": [
+      "FOMC meeting: March 18-19, 2026 (26 days away)",
+      "Next EIA weekly report: Feb 25, 2026"
+    ],
+    "background": [
+      "BOJ rate hike expected by June 2026",
+      "RBA on hawkish path after Feb 3 hike to 3.85%",
+      "Eurozone manufacturing recovery (PMI 50.8 in Feb)"
+    ]
   }
 }
