@@ -59,7 +59,7 @@ The Dow is supported by the broad risk-on sentiment, a steepening yield curve, a
 **Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
 Small-cap stocks are highly sensitive to domestic growth and credit conditions. The combination of a steepening yield curve, extremely tight credit spreads, and falling real yields creates a potent bullish cocktail for the Russell 2000, despite the mixed signals from recent GDP data.
 
-### M6E (Micro Euro FX): +2 SLIGHT_BULLISH (6/10)
+### 6E (Micro Euro FX): +2 SLIGHT_BULLISH (6/10)
 **Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
 The Euro shows a slight bullish bias, primarily as a function of broad US Dollar weakness. While the ECB remains on hold, improving economic data out of the Eurozone (Manufacturing PMI at a 44-month high) provides a supportive floor for the currency.
 
