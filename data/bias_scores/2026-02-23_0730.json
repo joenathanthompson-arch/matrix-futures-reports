@@ -1,0 +1,37 @@
+{
+  "date": "2026-02-23",
+  "generated_at": "2026-02-23T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "SI": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": 0, "signal": "NEUTRAL", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "M6E": {"score": 4, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6A": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "BoJ hawkish stance (0.75% rate, further hikes expected) and narrowing JPY-USD rate differential are primary drivers for STRONG_BULLISH 6J bias.",
+    "ECB on hold while Fed is expected to cut, narrowing the EUR-USD rate differential and supporting a BULLISH M6E bias.",
+    "Large 9M barrel crude oil inventory draw and rising geopolitical risk are creating a bullish backdrop for commodities, despite a stronger dollar."
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": ["Next FOMC meeting (March 19, 2026)"],
+    "near_term": ["BoJ next rate hike (expected by June 2026)"],
+    "background": ["Ongoing US-Iran tensions"]
+  }
+}
