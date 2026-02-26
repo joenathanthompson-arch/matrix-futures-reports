@@ -60,7 +60,7 @@ The Dow shows a slight bullish bias, supported by the general risk-on environmen
 **Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
 The Russell 2000 has a bullish outlook, strongly supported by tight credit spreads and a steepening yield curve. This indicates a healthy environment for smaller, domestically-focused companies.
 
-### M6E (Euro): -1 SLIGHT_BEARISH (6/10)
+### 6E (Euro): -1 SLIGHT_BEARISH (6/10)
 **Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
 The Euro has a slight bearish tilt due to the negative interest rate differential with the US dollar. While Eurozone growth is showing signs of improvement, the Fed's higher policy rate remains a headwind.
 
