@@ -1,60 +1,111 @@
 {
   "date": "2026-02-26",
-  "generated_at": "2026-02-26T12:30:00Z",
+  "generated_at": "2026-02-26T12:40:46Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 3, "signal": "BULLISH", "confidence": 8},
-    "SI": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "CL": {"score": -4, "signal": "BEARISH", "confidence": 8},
-    "ES": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "NQ": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8},
-    "YM": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "RTY": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "M6E": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "6A": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+    "GC": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "ES": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "NQ": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "YM": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
   },
   "asset_class_bias": {
-    "COMMODITIES": "MIXED",
-    "INDICES": "MIXED",
-    "FX": "BULLISH"
+    "COMMODITIES": "NEUTRAL",
+    "INDICES": "BULLISH",
+    "FX": "SLIGHT_BULLISH"
   },
   "key_drivers": [
-    "Real yields falling to 1.766% (CNBC real-time) — primary bullish driver for gold, tech, and risk assets; TIPS yield down ~9bps over 2 weeks",
-    "Crude oil deeply bearish: EIA reported +16.0MB inventory build (week ending Feb 20) with easing supply conditions; geopolitical offset from US-Iran tensions",
-    "NQ STRONG_BULLISH: SOX +1.62% session / +4.42% week, MOVE index -4.35% day / -8.23% week (rate vol collapsing), real yields falling — tech regime intact",
-    "YM and RTY corrected to SLIGHT_BEARISH: HY OAS widening (2.84 → 2.97), 2s10s curve flattening (0.64 → 0.60) — credit and curve headwinds for cyclicals and small caps",
-    "6J upgraded to BULLISH (+4): BoJ policymaker Takata called for continuing rate hikes (Feb 26), ex-BoJ Kuroda also hawkish (Feb 25) — BoJ tightening cycle intact",
-    "RBA hiked to 3.85% (Feb 3) and widening AUD-USD rate differential supporting 6A; Eurozone PMI 51.9 (14-month high) supporting M6E"
+    "Falling real yields and declining bond volatility (MOVE Index) providing a tailwind for risk assets.",
+    "Massive +16M barrel build in crude oil inventories signals oversupply, weighing heavily on oil prices.",
+    "Continued hawkish stance from the Bank of Japan is providing a strong bullish driver for the Yen (6J)."
   ],
-  "factor_inputs": {
-    "fed_stance": {"value": "Neutral hold", "score": 0, "source": "CME FedWatch — 98% no-change probability at March FOMC"},
-    "real_yields": {"value": "1.766% (CNBC US10YTIP real-time 7:39 AM EST), falling from ~1.86% on Feb 11 = -9.4bps over 2 weeks", "score": 2, "source": "CNBC US10YTIP (2026-02-26 07:39 EST)"},
-    "usd_dxy": {"value": "97.706, +0.06% day / -0.21% week", "score": 0, "source": "TradingView (2026-02-26)"},
-    "risk_mood": {"value": "VIX 17.78 — Balanced (15-20 range)", "score": 0, "source": "TradingView (2026-02-26)"},
-    "growth_narrative": {"value": "GDPNow 3.1% Q1 2026 — Accelerating", "score": -1, "source": "Atlanta Fed GDPNow (2026-02-24)"},
-    "oil_supply": {"value": "Easing/Oversupply — +16.0MB crude build", "score": -1, "source": "EIA Weekly (week ending 2026-02-20)"},
-    "oil_inventories": {"value": "Build +16.0MB — 435.8MB total, 3% below 5-year avg", "score": -1, "source": "EIA Weekly (week ending 2026-02-20)"},
-    "gold_etf_flows": {"value": "Strong inflows — AUM at all-time highs, GLD +$276M last week", "score": 1, "source": "World Gold Council (2026-02-23) / Seeking Alpha (2026-02-24)"},
-    "credit_spreads": {"value": "HY OAS 2.97% — Widening (from 2.84% on Feb 11, +13bps over 2 weeks)", "score": -1, "source": "FRED BAMLH0A0HYM2 (2026-02-24)"},
-    "vix_direction": {"value": "17.78, falling -0.84% today", "score": 1, "source": "TradingView (2026-02-26)"},
-    "sox": {"value": "8,467 — Rising (+1.62% day, +4.42% week)", "score": 1, "source": "TradingView (2026-02-25 close)"},
-    "move_index": {"value": "62.43 — Falling (-4.35% day, -8.23% week)", "score": 1, "source": "TradingView (2026-02-25 close)"},
-    "yield_curve_2s10s": {"value": "0.60% — Flattening (from 0.64% on Feb 13, -4bps over 2 weeks)", "score": -1, "source": "FRED T10Y2Y (2026-02-25)"},
-    "copper": {"value": "$6.027/lb — Rising (+3.94% week, +16.04% 3M)", "score": 1, "source": "Investing.com (2026-02-26)"},
-    "geopolitical_risk": {"value": "Rising — US-Iran nuclear talks, US officials warn of Iranian threat, potential military strikes", "score": 1, "source": "Reuters/News analysis (2026-02-26)"},
-    "ecb_stance": {"value": "Neutral hold — 5th consecutive hold at 2.00%", "score": 0, "source": "ECB (2026-02-05)"},
-    "rate_diff_eur_usd": {"value": "Stable — ECB 2.00% vs Fed 3.50-3.75%, both on hold, no change in differential direction", "score": 0, "source": "ECB/CME FedWatch"},
-    "eurozone_growth": {"value": "Accelerating — Composite PMI 51.9 (Feb, 14-month high), manufacturing PMI 44-month high", "score": 1, "source": "S&P Global Flash PMI (2026-02-20)"},
-    "rba_stance": {"value": "Hawkish — RBA hiked 25bps to 3.85% on 2026-02-03 (unanimous decision)", "score": 1, "source": "RBA (2026-02-03)"},
-    "rate_diff_aud_usd": {"value": "Widening — AUD 3.85% vs USD 3.50-3.75%; AUD now above Fed funds rate", "score": 1, "source": "RBA/CME FedWatch"},
-    "china_growth": {"value": "Stable/Mixed — Official NBS PMI 49.3 (contraction), Caixin PMI 50.3 (slight expansion)", "score": 0, "source": "NBS/S&P Global (2026-02-02)"},
-    "risk_sentiment": {"value": "Neutral — VIX 17.78 balanced (15-20 range)", "score": 0, "source": "TradingView (2026-02-26)"},
-    "boj_stance": {"value": "Hawkish/Tightening — BoJ at 1.0% (Jan 2026 hike); policymaker Takata called for continuing hikes (Feb 26); ex-BoJ Kuroda also hawkish (Feb 25)", "score": 1, "source": "BoJ/Reuters/Nippon.com (2026-02-26)"},
-    "rate_diff_jpy_usd": {"value": "Widening (JPY improving) — BoJ hiking path intact while Fed on hold; BoJ 1.0% vs Fed 3.50-3.75%, differential narrowing", "score": 1, "source": "BoJ/CME FedWatch (2026-02-26)"}
-  },
   "data_quality": {
-    "stale_sources": ["FRED DFII10 (1 business day lag — 2026-02-24; confirmed with CNBC real-time 1.766%)", "FRED BAMLH0A0HYM2 (1 business day lag — 2026-02-24)", "FRED T10Y2Y (1 business day lag — 2026-02-25)", "SOX (prior session close — 2026-02-25)", "MOVE (prior session close — 2026-02-25)"],
-    "fallbacks_used": ["CNBC US10YTIP for real-time real yields (confirmed FRED trend)"],
-    "notes": "0730 EST report. Real yields confirmed with CNBC real-time data at 1.766% (down from 1.768% prev close). Credit spreads and yield curve corrected vs 0235 report: HY OAS is WIDENING (2.84→2.97), 2s10s is FLATTENING (0.64→0.60). BoJ stance upgraded to HAWKISH based on Feb 26 policymaker statements."
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "US-Iran Nuclear Talks (Ongoing)"
+    ],
+    "near_term": [],
+    "background": [
+      "BoJ hawkish stance continues"
+    ]
   }
 }
