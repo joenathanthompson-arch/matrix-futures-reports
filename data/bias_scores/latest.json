@@ -59,7 +59,7 @@
       "recommended_mode": "SWING",
       "hold_expectation": "1-2 days"
     },
-    "M6E": {
+    "6E": {
       "score": -1,
       "signal": "SLIGHT_BEARISH",
       "confidence": 6,
@@ -103,7 +103,7 @@
     "imminent": [
       "US-Iran Nuclear Talks (Ongoing)"
     ],
-    "near_term": [],
+    "near_term": ["FOMC Meeting (March 18-19, 2026)"],
     "background": [
       "BoJ hawkish stance continues"
     ]
