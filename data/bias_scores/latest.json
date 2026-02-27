@@ -1,32 +1,68 @@
 {
   "date": "2026-02-27",
-  "generated_at": "2026-02-27T12:41:00Z",
+  "generated_at": "2026-02-27T07:30:00Z",
+  "report_slot": "0730_EST",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 8},
-    "SI": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7},
-    "CL": {"score": -1, "signal": "NEUTRAL", "confidence": 7},
-    "ES": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 6},
-    "NQ": {"score": 4, "signal": "BULLISH", "confidence": 6},
-    "YM": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 6},
-    "RTY": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 5},
-    "M6E": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
-    "6A": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
-    "6J": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 8}
+    "GC": {"score": 3, "signal": "BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"},
+    "SI": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "CL": {"score": -3, "signal": "BEARISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6E": {"score": 0, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
   "asset_class_bias": {
-    "COMMODITIES": "BULLISH",
-    "INDICES": "BULLISH",
-    "FX": "BULLISH"
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "SLIGHT_BULLISH"
   },
   "key_drivers": [
-    "10Y TIPS real yields falling (1.698%, -2.8bps intraday) providing broad macro tailwind for gold, tech, and risk assets",
-    "VIX elevated above 20 (+7.68%) in risk-off mode, supporting safe-haven flows into gold and JPY while creating headwinds for risk assets",
-    "DXY weak at 97.70 (-0.09%) supporting commodities, EUR, and JPY; BoJ hawkish pivot (Takata calling for more hikes) and RBA hike to 3.85% reshaping FX differentials",
-    "Trump 10% global tariff in effect; trade war uncertainty elevating geopolitical risk premium across all asset classes",
-    "EIA crude inventory build of +16.0M barrels (week ending Feb 20) is a significant bearish signal for CL, offsetting geopolitical support"
+    "Falling real yields (DFII10 1.77%) - primary bullish driver for gold, silver, and equities",
+    "Large EIA crude oil inventory build (+16.0M bbls week ending Feb 20) - strongly bearish CL",
+    "Elevated geopolitical risk from US tariffs (15% global import tariff) and US-Iran tensions - safe-haven gold and JPY support",
+    "BoJ hawkish pivot accelerating (Takata calls for hikes, Ueda hints at more) - strong 6J tailwind",
+    "RBA hawkish hike to 3.85% and rising copper (+3.8% week) - supportive for 6A",
+    "Nvidia-led tech rout and SOX -3.19% - headwinds for NQ; futures pointing lower pre-market"
   ],
+  "macro_snapshot": {
+    "fed_rate": "3.50-3.75%",
+    "fed_stance": "Neutral hold",
+    "ecb_rate": "2.00%",
+    "ecb_stance": "Neutral hold",
+    "rba_rate": "3.85%",
+    "rba_stance": "Hawkish hike",
+    "boj_stance": "Hawkish/Tightening",
+    "gdpnow_q1_2026": "3.1%",
+    "dfii10_real_yield": "1.77%",
+    "hy_oas": "2.94%",
+    "vix": "20.04",
+    "move_index": "63.93",
+    "dxy": "97.71",
+    "sox": "8197.26",
+    "copper_usd": "6.12",
+    "wti_crude_usd": "66.38",
+    "eia_crude_build_mbbls": "+16.0",
+    "2s10s_spread_bps": "60",
+    "gold_spot_usd": "5209",
+    "silver_spot_usd": "90.52",
+    "eurusd": "1.1801",
+    "audusd": "0.713",
+    "usdjpy": "155.79",
+    "gold_etf_flows": "Inflows ($18B+ YTD)",
+    "geopolitical_risk": "Rising (US tariffs 15%, US-Iran tensions)"
+  },
+  "signal_decay": {
+    "GC": "High-conviction signal valid 2-5 days; monitor real yields and tariff headlines for catalyst shift",
+    "6J": "High-conviction signal valid 2-5 days; next BoJ meeting Mar 20 is key catalyst; signal may decay if BoJ signals pause",
+    "CL": "Bearish signal valid session-to-session; OPEC+ meeting Mar 4-5 is key catalyst that could reverse bias"
+  },
   "data_quality": {
-    "stale_sources": [],
-    "fallbacks_used": ["CNBC US10YTIP for real yields (primary FRED DFII10 confirmed same direction)", "TradingEconomics attempted for HY OAS (unavailable); FRED BAMLH0A0HYM2 used at 2.94% Feb 25"]
+    "stale_sources": ["BAMLH0A0HYM2 (Feb 25 close, 2 days old)", "DFII10 (Feb 25 close, 2 days old)"],
+    "fallbacks_used": ["TradingView for MOVE and SOX real-time", "Investing.com for copper real-time", "Search news for RBA/BoJ/ECB stance"],
+    "notes": "FRED data lags 1-2 business days as expected. VIX updated to 20.04 (from 18.62 in 0230 slot) reflecting pre-market conditions. WTI updated to $66.38 (from $66.69). Gold updated to $5,209 (from $5,165 at 9am EST yesterday). USD/JPY at 155.79, AUD/USD at 0.713."
   }
 }
