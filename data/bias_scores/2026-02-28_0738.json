@@ -1,0 +1,148 @@
+{
+  "date": "2026-02-28",
+  "generated_at": "2026-02-28T07:38:00Z",
+  "report_session": "0730",
+  "scores": {
+    "GC": {"score": 3, "signal": "BULLISH", "confidence": 8},
+    "SI": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "CL": {"score": -4, "signal": "BEARISH", "confidence": 8},
+    "ES": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "RTY": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "M6E": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
+    "6A": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Real yields falling sharply (DFII10 at 1.74%, down from ~2.0%) - strongly bullish for gold, silver, and equities",
+    "Massive crude oil inventory build (+16M barrels week ending Feb 20) drives CL bearish despite geopolitical risk support",
+    "RBA hawkish hike to 3.85% (Feb 3) and BoJ policy normalization path intact - supporting AUD and JPY vs USD"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": []
+  },
+  "scoring_detail": {
+    "GC": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold - 92.6% no change probability (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4, "input": "Falling - DFII10 at 1.74%, down from ~2.0% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65, -0.05% 5-day (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (15-20 range) (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 1, "weighted": -1, "input": "Accelerating - GDPNow 3.0% Q1 2026 (Atlanta Fed)"},
+        "oil_supply_shock": {"raw": -1, "weight": 1, "weighted": -1, "input": "Easing - 16M barrel inventory build (EIA)"},
+        "gold_etf_flows": {"raw": 1, "weight": 1, "weighted": 1, "input": "Inflows - $18B+ YTD through Feb 20 (World Gold Council)"}
+      },
+      "total": 3
+    },
+    "SI": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2, "input": "Falling - DFII10 1.74% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 1, "weighted": -1, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "copper": {"raw": 1, "weight": 1, "weighted": 1, "input": "Rising - $6.089/lb, +3.20% week (Investing.com)"},
+        "gold_etf_flows": {"raw": 1, "weight": 1, "weighted": 1, "input": "Inflows - $18B+ YTD (World Gold Council)"}
+      },
+      "total": 3
+    },
+    "CL": {
+      "factors": {
+        "oil_supply_shock": {"raw": -1, "weight": 2, "weighted": -2, "input": "Easing/Oversupply - massive 16M barrel build (EIA)"},
+        "inventories": {"raw": -1, "weight": 1, "weighted": -1, "input": "Build - +16M barrels week ending Feb 20 (EIA)"},
+        "growth_narrative": {"raw": -1, "weight": 2, "weighted": -2, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "geopolitical_risk": {"raw": 1, "weight": 1, "weighted": 1, "input": "Rising - tariffs, Middle East, Ukraine (news)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"}
+      },
+      "total": -4
+    },
+    "ES": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4, "input": "Falling - DFII10 1.74% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 1, "weighted": -1, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "credit_spreads": {"raw": 1, "weight": 1, "weighted": 1, "input": "Narrowing - HY OAS 2.98% near lows (FRED)"},
+        "vix_direction": {"raw": -1, "weight": 1, "weighted": -1, "input": "Rising - VIX +6.61% today (CBOE)"}
+      },
+      "total": 3
+    },
+    "NQ": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 2, "weighted": 4, "input": "Falling - DFII10 1.74% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 1, "weighted": -1, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "sox_semis": {"raw": -1, "weight": 1, "weighted": -1, "input": "Falling - SOX 8,098 (-1.21% day, -2.28% month) (TradingView)"},
+        "move_rate_vol": {"raw": -1, "weight": 1, "weighted": -1, "input": "Rising - MOVE 73.38 (+14.79% day) (TradingView)"}
+      },
+      "total": 1
+    },
+    "YM": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2, "input": "Falling - DFII10 1.74% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 2, "weighted": -2, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "credit_spreads": {"raw": 1, "weight": 1, "weighted": 1, "input": "Narrowing - HY OAS 2.98% (FRED)"},
+        "yield_curve_2s10s": {"raw": 1, "weight": 1, "weighted": 1, "input": "Steepening - T10Y2Y 0.59% (FRED)"}
+      },
+      "total": 2
+    },
+    "RTY": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "real_yields": {"raw": 2, "weight": 1, "weighted": 2, "input": "Falling - DFII10 1.74% (FRED)"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "growth_narrative": {"raw": -1, "weight": 2, "weighted": -2, "input": "Accelerating - GDPNow 3.0% (Atlanta Fed)"},
+        "credit_spreads": {"raw": 1, "weight": 2, "weighted": 2, "input": "Narrowing - HY OAS 2.98% (FRED)"},
+        "yield_curve_2s10s": {"raw": 1, "weight": 1, "weighted": 1, "input": "Steepening - T10Y2Y 0.59% (FRED)"}
+      },
+      "total": 3
+    },
+    "M6E": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "ecb_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold - ECB kept rates unchanged Feb 5 (ECB)"},
+        "rate_differential_eur_usd": {"raw": 0, "weight": 2, "weighted": 0, "input": "Stable - ECB and Fed both holding, no differential change"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"},
+        "eurozone_growth": {"raw": 0, "weight": 1, "weighted": 0, "input": "Stable - ECB core inflation 2.1%, stable growth outlook"}
+      },
+      "total": 0
+    },
+    "6A": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "rba_stance": {"raw": 1, "weight": 1, "weighted": 1, "input": "Hawkish hike - RBA raised to 3.85% Feb 3 (RBA)"},
+        "rate_differential_aud_usd": {"raw": 1, "weight": 1, "weighted": 1, "input": "Widening vs USD - RBA hiking, Fed holding"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_sentiment": {"raw": 0, "weight": 2, "weighted": 0, "input": "Neutral - VIX balanced at 19.86 (CBOE)"},
+        "china_growth": {"raw": 0, "weight": 2, "weighted": 0, "input": "Stable - NBS PMI 49.3, Caixin 50.3 (mixed signals)"},
+        "copper": {"raw": 1, "weight": 1, "weighted": 1, "input": "Rising - $6.089/lb, +3.20% week (Investing.com)"}
+      },
+      "total": 3
+    },
+    "6J": {
+      "factors": {
+        "fed_stance": {"raw": 0, "weight": 1, "weighted": 0, "input": "Neutral hold (CME FedWatch)"},
+        "boj_stance": {"raw": 1, "weight": 2, "weighted": 2, "input": "Hawkish/Tightening - BoJ leaving door open for near-term hikes (Reuters/CNBC)"},
+        "rate_differential_jpy_usd": {"raw": 1, "weight": 2, "weighted": 2, "input": "Widening vs USD - BoJ hiking path intact, Fed holding"},
+        "usd_dxy": {"raw": 0, "weight": 1, "weighted": 0, "input": "Flat - DXY 97.65 (TradingView)"},
+        "risk_mood": {"raw": 0, "weight": 1, "weighted": 0, "input": "Balanced - VIX 19.86 (CBOE)"}
+      },
+      "total": 4
+    }
+  }
+}
