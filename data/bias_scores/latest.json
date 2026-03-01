@@ -1,10 +1,10 @@
 {
   "date": "2026-03-01",
-  "generated_at": "2026-03-01T07:33:00Z",
+  "generated_at": "2026-03-01T12:39:52Z",
   "scores": {
     "GC": {
-      "score": 4,
-      "signal": "BULLISH",
+      "score": 7,
+      "signal": "STRONG_BULLISH",
       "confidence": 8,
       "factors": {
         "fed_stance": 0,
@@ -14,12 +14,15 @@
         "growth_narrative": -1,
         "oil_supply": -1,
         "gold_etf_flows": 1
-      }
+      },
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
     },
     "SI": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 7,
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
       "factors": {
         "fed_stance": 0,
         "real_yields": 2,
@@ -28,23 +31,29 @@
         "growth_narrative": -1,
         "copper": 1,
         "gold_etf_flows": 1
-      }
+      },
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
     },
     "CL": {
-      "score": -3,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 8,
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
       "factors": {
         "oil_supply_2x": -2,
         "inventories": -1,
         "growth_narrative_2x": -2,
         "geopolitical_risk": 1,
         "usd_dxy": 1
-      }
+      },
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "ES": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
+      "score": 3,
+      "signal": "BULLISH",
       "confidence": 6,
       "factors": {
         "fed_stance": 0,
@@ -54,7 +63,10 @@
         "growth_narrative": -1,
         "credit_spreads": -1,
         "vix_direction": -1
-      }
+      },
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "NQ": {
       "score": 2,
@@ -68,10 +80,13 @@
         "growth_narrative": -1,
         "sox_semis": -1,
         "move_rates_vol": -1
-      }
+      },
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "YM": {
-      "score": 1,
+      "score": 2,
       "signal": "SLIGHT_BULLISH",
       "confidence": 6,
       "factors": {
@@ -82,12 +97,15 @@
         "growth_narrative_2x": -2,
         "credit_spreads": -1,
         "curve_2s10s": 1
-      }
+      },
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "RTY": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 5,
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
       "factors": {
         "fed_stance": 0,
         "real_yields": 2,
@@ -96,9 +114,44 @@
         "growth_narrative_2x": -2,
         "credit_spreads_2x": -2,
         "curve_2s10s": 1
-      }
+      },
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
-    "M6E": {
+    "6A": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "factors": {
+        "fed_stance": 0,
+        "rba_stance": 2,
+        "rate_differential": 1,
+        "usd_dxy": 1,
+        "risk_sentiment_2x": 0,
+        "china_growth_2x": -2,
+        "copper": 1
+      },
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 6,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "factors": {
+        "fed_stance": 0,
+        "boj_stance_2x": 2,
+        "rate_differential_2x": 2,
+        "usd_dxy": 1,
+        "risk_mood": 0
+      },
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "6E": {
       "score": 1,
       "signal": "SLIGHT_BULLISH",
       "confidence": 5,
@@ -109,55 +162,32 @@
         "usd_dxy": 1,
         "risk_mood": 0,
         "eurozone_growth": 0
-      }
-    },
-    "6A": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 7,
-      "factors": {
-        "fed_stance": 0,
-        "rba_stance": 2,
-        "rate_differential": 1,
-        "usd_dxy": 1,
-        "risk_sentiment_2x": 0,
-        "china_growth_2x": -2,
-        "copper": 1
-      }
-    },
-    "6J": {
-      "score": 5,
-      "signal": "STRONG_BULLISH",
-      "confidence": 8,
-      "factors": {
-        "fed_stance": 0,
-        "boj_stance_2x": 2,
-        "rate_differential_2x": 2,
-        "usd_dxy": 1,
-        "risk_mood": 0
-      }
+      },
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     }
   },
   "asset_class_bias": {
-    "COMMODITIES": "BULLISH",
+    "COMMODITIES": "STRONG_BULLISH",
     "INDICES": "SLIGHT_BULLISH",
     "FX": "BULLISH"
   },
   "key_drivers": [
     "Falling real yields (DFII10 1.74%, declining from ~2.1%) remain the dominant structural tailwind for gold, silver, and growth equities",
-    "BoJ hawkish pivot intensifying — Governor Ueda flagged March/April hike on Feb 25-26; BoJ-Fed differential narrowing = STRONG_BULLISH 6J",
+    "BoJ hawkish pivot intensifying \u2014 Governor Ueda flagged March/April hike on Feb 25-26; BoJ-Fed differential narrowing = STRONG_BULLISH 6J",
     "Crude oil under heavy bearish pressure: EIA reported +16.0 mb build (week ending Feb 20); RTY neutral as credit spread widening offsets falling yields"
   ],
   "data_quality": {
     "stale_sources": [
-      "DFII10 (2026-02-26 data, last available business day before weekend — next release Mar 2)",
-      "BAMLH0A0HYM2 HY OAS (2026-02-26 data, last available business day — next release Mar 2)",
-      "T10Y2Y (2026-02-27 data, 1 day old — next release Mar 2)",
-      "Atlanta Fed GDPNow (2026-02-27 estimate — next update Mar 2)"
+      "DFII10 (2026-02-26 data, last available business day before weekend \u2014 next release Mar 2)",
+      "BAMLH0A0HYM2 HY OAS (2026-02-26 data, last available business day \u2014 next release Mar 2)",
+      "T10Y2Y (2026-02-27 data, 1 day old \u2014 next release Mar 2)",
+      "Atlanta Fed GDPNow (2026-02-27 estimate \u2014 next update Mar 2)"
     ],
     "fallbacks_used": [
       "VIX confirmed via TradingView (19.86 at Feb 27 close, +6.61% on day)",
-      "MOVE confirmed via TradingView (73.38, +14.79% on day — significant spike)",
+      "MOVE confirmed via TradingView (73.38, +14.79% on day \u2014 significant spike)",
       "EIA crude inventory data from official EIA PDF highlights (week ending Feb 20, +16.0 mb)",
       "Gold ETF flows from World Gold Council via news sources (8th consecutive month of inflows, all-time high AUM)",
       "RBA hike confirmed via RBA media release Feb 3, 2026 (+25bps to 3.85%)",
@@ -176,8 +206,8 @@
     "gdpnow_q1_2026": 3.0,
     "eia_crude_build_mbbls": 16.0,
     "fed_rate_pct": "3.50-3.75",
-    "ecb_rate_pct": 2.00,
+    "ecb_rate_pct": 2.0,
     "rba_rate_pct": 3.85,
-    "boj_rate_pct": 1.00
+    "boj_rate_pct": 1.0
   }
 }
