@@ -2,16 +2,86 @@
   "date": "2026-03-02",
   "generated_at": "2026-03-02T07:38:00Z",
   "scores": {
-    "GC": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 8},
-    "SI": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
-    "CL": {"score": 3, "signal": "BULLISH", "confidence": 6},
-    "ES": {"score": 3, "signal": "BULLISH", "confidence": 5},
-    "NQ": {"score": 3, "signal": "BULLISH", "confidence": 5},
-    "YM": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "RTY": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "M6E": {"score": 0, "signal": "NEUTRAL", "confidence": 5},
-    "6A": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+    "GC": {
+      "score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "FADE_RANGE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "ES": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "NQ": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "YM": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "1-2 days"
+    }
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",

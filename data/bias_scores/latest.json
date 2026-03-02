@@ -1,53 +1,52 @@
 {
   "date": "2026-03-02",
-  "generated_at": "2026-03-02T07:30:00Z",
-  "methodology_version": "3.0_STRATEGY",
+  "generated_at": "2026-03-02T07:38:00Z",
   "scores": {
     "GC": {
+      "score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
       "score": 5,
       "signal": "STRONG_BULLISH",
       "confidence": 7,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "2-5 days"
-    },
-    "SI": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
       "hold_expectation": "1-2 days"
     },
     "CL": {
-      "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "FADE_RANGE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "ES": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
+      "score": 3,
+      "signal": "BULLISH",
       "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
+      "recommended_approach": "MEAN_REVERSION",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "NQ": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "MEAN_REVERSION",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "YM": {
-      "score": 1,
+      "score": 2,
       "signal": "SLIGHT_BULLISH",
       "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
+      "recommended_approach": "MEAN_REVERSION",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
@@ -55,70 +54,47 @@
       "score": 1,
       "signal": "SLIGHT_BULLISH",
       "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
+      "recommended_approach": "RANGE_TRADE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "6E": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "6A": {
       "score": -2,
       "signal": "SLIGHT_BEARISH",
-      "confidence": 5,
+      "confidence": 7,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "hold_expectation": "1-2 days"
     },
     "6J": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "hold_expectation": "1-2 days"
     }
   },
   "asset_class_bias": {
-    "COMMODITIES": "SLIGHT_BULLISH",
-    "INDICES": "SLIGHT_BULLISH",
-    "FX": "NEUTRAL"
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "MIXED"
   },
   "key_drivers": [
-    "Major Geopolitical Shock: US/Israel attack Iran, killing Supreme Leader Khamenei.",
-    "Risk-Off Dominates: VIX surges to 23.45 (+18%), MOVE Index spikes +15%.",
-    "Safe Haven Flows: Gold surges to $5,400/oz, DXY rises +0.72%.",
-    "Oil Supply Disruption: WTI jumps ~10% on Iran conflict and Hormuz fears.",
-    "Central Bank Divergence: RBA hikes to 3.85%, BoJ hawkish, ECB/Fed on hold."
+    "US/Israel strikes on Iran driving geopolitical risk premium - bullish gold, silver, crude; bearish risk assets",
+    "Real yields falling (DFII10 at 1.74%, down from 1.80%) supporting gold, silver, and long-duration equities",
+    "VIX spiking to 23.33 (+17%) and MOVE at 73.38 (+15%) signaling elevated market stress and risk-off rotation"
   ],
   "data_quality": {
-    "stale_sources": [],
-    "fallbacks_used": [],
-    "overnight_changes": [
-      "VIX +18.04% to 23.45",
-      "MOVE +14.79% to 73.38",
-      "Gold +4% to ~$5,382/oz",
-      "WTI +10% to ~$72-75/barrel",
-      "DXY +0.72% to 98.35"
-    ]
-  },
-  "catalyst_proximity": {
-    "imminent": [
-      "Ongoing US/Iran military conflict (active)"
-    ],
-    "near_term": [
-      "EIA Weekly Petroleum Report (Mar 4, 2026)",
-      "China PMI Release (Mar 2, 2026)"
-    ],
-    "background": [
-      "BoJ hawkish stance continues",
-      "RBA tightening cycle (rate at 3.85%)",
-      "FOMC Meeting (Mar 31, 2026)"
-    ]
+    "stale_sources": ["DFII10 (last updated 2026-02-26)", "BAMLH0A0HYM2 (last updated 2026-02-26)", "T10Y2Y (last updated 2026-02-27)"],
+    "fallbacks_used": ["Real yields confirmed falling via gold ATH and risk-off market context", "HY OAS widening confirmed via VIX spike to 23.33"]
   }
 }
