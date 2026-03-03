@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-03",
+  "generated_at": "2026-03-03T12:41:34Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"},
+    "SI": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6E": {"score": -4, "signal": "BEARISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6A": {"score": -4, "signal": "BEARISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "SLIGHT_BEARISH",
+    "FX": "SLIGHT_BEARISH"
+  },
+  "key_drivers": [
+    "US-Israel airstrikes on Iran (Feb 28) driving safe-haven demand and oil supply fears",
+    "VIX surging to 25.18 (+17.4%) as Iran threatens Strait of Hormuz closure",
+    "USD safe-haven bid (DXY +0.62%) competing with JPY/Gold as risk-off vehicles",
+    "Real yields falling (1.72%) supporting gold and growth assets structurally",
+    "China PMI 49.1 (contraction) and risk-off environment pressuring AUD and EUR"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "DFII10 (2026-02-27, 4 days old)",
+      "BAMLH0A0HYM2 (2026-02-28, 3 days old)"
+    ],
+    "fallbacks_used": [
+      "VIX from CBOE direct",
+      "DXY from TradingView",
+      "MOVE from TradingView"
+    ],
+    "overnight_changes": [
+      "VIX +17.4% (Iran escalation)",
+      "Gold futures -2% from Monday close (profit taking)",
+      "Silver -5.78% (industrial demand concerns)",
+      "ES futures -1.5% pre-market",
+      "NQ futures -2.3% pre-market",
+      "WTI crude +$4+ (Iran supply fears)"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "EIA Weekly Petroleum Report (Mar 4, 2026)",
+      "Iran conflict escalation - Strait of Hormuz threat ongoing",
+      "China NPC opening (Mar 5) - growth target announcement"
+    ],
+    "near_term": [
+      "FOMC Meeting (Mar 18-19, 2026)",
+      "ECB Meeting (Mar 19, 2026)",
+      "RBA Meeting (Mar 17, 2026) - possible rate hike",
+      "BoJ Meeting (Mar 18-19, 2026)"
+    ],
+    "background": [
+      "US ISM Manufacturing PMI at 52.4 (Feb) - expansion",
+      "Eurozone Manufacturing PMI at 50.8 (Feb) - 44-month high",
+      "GDPNow Q1 2026 at 3.0% - stable US growth"
+    ]
+  }
+}
