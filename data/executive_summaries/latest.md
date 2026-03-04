@@ -1,102 +1,70 @@
-# Executive Summary - March 4, 2026 | 0733 EST (Corrected)
-
-**Generated:** 2026-03-04T12:47:00Z | **Report Session:** 0733 EST Pre-Market
-
-> **Correction Note:** This report supersedes the 0730 EST report. The 0730 report incorrectly assessed real yields as "rising." CNBC US10YTIP verified at 1.77% (+0.009 today, prev close 1.761%) — a change of less than 5bps, which scores as **FLAT** per the methodology. This correction reduces GC from STRONG_BULLISH to BULLISH, and shifts ES/NQ from NEUTRAL to BEARISH.
+# Matrix Futures Daily Bias Report
+**Date:** March 4, 2026 | **Time:** 07:33 EST
+---
+## Overall Market Bias: BEARISH
+Markets are in a pronounced risk-off regime driven by the US-Israel war on Iran (launched February 28), which has blockaded the Strait of Hormuz, spiked oil prices, and elevated the VIX to 23.65. Real yields are confirmed FLAT at 1.77% (CNBC US10YTIP, +0.009 today), removing the key bullish offset for equities and making the bearish signals dominant across indices. Commodities remain bullish as the Hormuz supply shock and safe-haven demand support gold and crude, while the BoJ's hawkish pivot creates the clearest directional trade of the session in 6J.
 
 ---
-
-## Economic Calendar — Today (March 4, 2026)
-
-| Time (EST) | Currency | Event | Forecast | Previous |
-|------------|----------|-------|----------|----------|
-| 8:30am | AUD | Building Approvals m/m | 5.4% | -14.9% |
-| 8:30am | AUD | Current Account | -16.8B | -18.3B |
-| 12:00pm | JPY | BOJ Gov Ueda Speaks | — | — |
-| 1:00pm | EUR | Core CPI Flash Estimate y/y | — | — |
-| 1:00pm | EUR | CPI Flash Estimate y/y | — | — |
-| 4:15pm | USD | ADP Non-Farm Employment Change | 50K | 22K |
-| 5:45pm | USD | Final Services PMI | 52.4 | 52.3 |
-| 6:00pm | USD | ISM Services PMI | 53.5 | 53.8 |
-| 6:30pm | CAD | BOC Gov Macklem Speaks | — | — |
-
-*Source: [ForexFactory](https://www.forexfactory.com/calendar)*
+## Asset Class Summary
+| Asset Class | Bias | Key Driver |
+|-------------|------|------------|
+| Commodities | BULLISH | Iran war supply shock (CL), safe-haven demand + ETF inflows (GC), real yields flat |
+| Indices | BEARISH | Real yields flat removes bullish offset; risk-off, widening credit spreads, VIX rising |
+| FX | MIXED | 6J STRONG_BULLISH (BoJ divergence + safe-haven); 6E/6A SLIGHT_BEARISH (risk-off, China PMI) |
 
 ---
-
-## News Summary
-
-### Futures
-- **Stock Futures Fall as Iran Conflict Rages On** — S&P 500 futures fell; Dow, S&P 500, Nasdaq futures turned higher intraday as Iran reportedly called for talks to end conflict. | [Barron's](https://www.barrons.com/livecoverage/stock-market-news-today-030426/card/stock-futures-fall-as-iran-conflict-rages-on-9XvBNmkIbSZPZB0gz2k8)
-- **Gold Surges to Record Highs** — Gold futures hit all-time highs above $5,200 intraday as Iran war fuels inflation fears and safe-haven demand. | [Yahoo Finance](https://finance.yahoo.com/video/geopolitical-shock-appearing-markets-oil-221500234.html)
-- **Hormuz Shutdown Squeezes Crude Supply** — No crude oil or LNG transits via the Strait of Hormuz; J.P. Morgan warns Iraq and Kuwait supply could shut within days. | [Reuters](https://www.reuters.com/business/energy/oil-seen-elevated-hormuz-risks-intensify-amid-iran-conflict-analysts-say-2026-03-04/)
-- **China NBS Manufacturing PMI 49.0** — Official factory activity hits 4-month low in February, contracting for second straight month. | [XTB Morning Wrap](https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-04-03-2026)
-
-### Currencies
-- **BoJ Gov Ueda Vows to Keep Raising Rates** — Bank of Japan chief reaffirms hiking cycle despite Iran conflict uncertainty; JPY safe-haven demand intensifying. | [Reuters](https://www.reuters.com/world/asia-pacific/bank-japan-chief-vows-keep-raising-rates-with-eye-middle-east-conflict-2026-03-04/)
-- **AUD/USD Slips Below 0.7000** — Australian Dollar extends losses as China PMI weakness and risk-off sentiment overwhelm RBA's February rate hike to 3.85%. | [FXStreet](https://www.fxstreet.com/news/aud-usd-drops-under-07000-as-usd-strengthens-amid-middle-east-war-202603031649)
-- **EUR/JPY Under Pressure** — Safe-haven flows into yen amid Middle East war push EUR/JPY lower around 183.00. | [FXStreet](https://www.fxstreet.com/news/eur-jpy-pressured-by-safe-haven-flows-into-yen-amid-middle-east-war-202603041103)
+## Highest Conviction Signals
+| Instrument | Score | Signal | Confidence |
+|------------|-------|--------|------------|
+| 6J | +5 | STRONG_BULLISH | 9/10 |
+| RTY | -4 | BEARISH | 9/10 |
+| ES | -4 | BEARISH | 8/10 |
+| NQ | -4 | BEARISH | 8/10 |
+| YM | -3 | BEARISH | 8/10 |
 
 ---
+## Full Instrument Breakdown
 
-## Data Quality Notes
+### GC (Gold): +4 BULLISH (7/10)
+**Approach:** IB_BREAKOUT | **Mode:** SWING | **Hold:** 1-2 days
+Gold scores +4 BULLISH with real yields confirmed FLAT (1.77%, +0.009). The bullish case rests on risk-off safe-haven demand (VIX 23.65, +1), slowing growth as an inflation hedge (+1), the Strait of Hormuz oil supply shock reinforcing gold's inflation hedge role (+1), confirmed World Gold Council ETF inflows (+1), and a weak DXY (+1), partially offset by the hawkish Fed hold (-1). Gold spot is at $5,165 (+1.52% today), having touched $5,206 intraday. Signal decay: moderate if Iran ceasefire talks materially progress.
 
-Three FRED data series (DFII10, BAMLH0A0HYM2, T10Y2Y) carry a standard 1-business-day lag. **Real yields were verified directly from CNBC US10YTIP at 1.77% (+0.009 today, prev close 1.761%), confirming a FLAT reading (<5bps change).** HY OAS was estimated at approximately 380bps based on VIX levels and cross-asset risk-off conditions. GDPNow Q1 2026 tracking estimate of approximately -1.5% was confirmed from the Atlanta Fed website. All primary market prices (gold, silver, crude, DXY, VIX, MOVE, SOX, FX pairs) are verified as of 2026-03-04T12:47:00Z.
+### SI (Silver): +1 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+Silver scores +1 SLIGHT_BULLISH as safe-haven demand (+1 risk mood) and gold ETF inflow proxy (+1) barely offset slowing growth suppressing industrial demand (-1) and the hawkish Fed hold (-1), with real yields flat (0). Silver is trading at $85.16 (+3.86% today). The +1 score is the weakest directional signal; use half-size with tight stops.
 
----
+### CL (Crude Oil): +3 BULLISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+CL scores +3 BULLISH as the Strait of Hormuz blockade creates a severe supply shock (weighted +2) compounded by an EIA inventory draw (+1) and rising geopolitical risk (+1), partially offset by slowing growth demand headwind (weighted -2). WTI is at $74.44 after spiking to $77.23 intraday before pulling back on ceasefire talk reports. Avoid chasing spikes above $77; ceasefire reports introduce two-way risk.
 
-## Asset Class Overview
+### ES (S&P 500): -4 BEARISH (8/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+ES scores -4 BEARISH as real yields confirmed FLAT removes the key bullish offset. The bearish signals dominate: risk-off conditions (-1), slowing growth (-1), widening credit spreads (-1), rising VIX direction (-1), and hawkish Fed hold (-1), partially offset only by weak DXY (+1). Futures turned slightly positive intraday on Iran ceasefire talk reports — use the IB high as a stop reference.
 
-| Asset Class | Bias | Reason |
-|-------------|------|--------|
-| **Commodities** | **BULLISH** | GC bullish (+4), SI slight bullish (+1), CL bullish (+3) — Iran war driving precious metals and energy higher; real yields flat removes the prior headwind |
-| **Indices** | **BEARISH** | ES and NQ bearish (-4) as real yields flat removes the key bullish offset; risk-off, credit spreads, VIX direction all negative; RTY bearish (-4) |
-| **FX** | **MIXED** | 6J strong bullish (+5) on BoJ divergence and safe-haven; M6E slight bearish (-2) and 6A slight bearish (-2) on risk-off and China weakness |
+### NQ (Nasdaq 100): -4 BEARISH (8/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+NQ scores -4 BEARISH mirroring ES but with technology-specific headwinds: SOX down -4.58% today (-1), MOVE rising (-1), risk-off conditions (-1), slowing growth (-1), and hawkish Fed (-1), offset only by weak DXY (+1). The semiconductor sector is being hit particularly hard as the Iran war disrupts global supply chains. NQ has highest beta — use ES as a hedge reference.
 
----
+### YM (Dow Jones): -3 BEARISH (8/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+YM scores -3 BEARISH. The Dow's lower technology weighting provides relative insulation from SOX weakness, and the steepening yield curve (+1) provides mild support for value/cyclical names. However, slowing growth (weighted -2), widening credit spreads (-1), risk-off (-1), and hawkish Fed (-1) dominate. YM is the most defensively positioned index — use INTRADAY mode to manage ceasefire binary risk.
 
-## Symbol Analysis
+### RTY (Russell 2000): -4 BEARISH (9/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+RTY scores -4 BEARISH with the highest conviction of the indices (9/10). Credit spreads widening sharply (weighted -2) directly impacts small-cap borrowing costs, slowing growth (weighted -2) hits domestically-focused businesses hardest, and the hawkish hold (-1) compounds the pressure. Only a steepening curve (+1) and weak DXY (+1) provide partial offsets. RTY is the clearest directional trade among indices.
 
-**GC (Gold):** Gold shows a **bullish bias (+4, BULLISH)** with moderate-high conviction (7/10). With real yields confirmed FLAT (not falling), the bullish case rests on risk-off safe-haven demand (VIX 23.65, +1), slowing growth as an inflation hedge (+1), the Strait of Hormuz oil supply shock reinforcing gold's inflation hedge role (+1), confirmed World Gold Council ETF inflows (+1), and a weak DXY (+1), partially offset by the hawkish Fed hold (-1). Gold spot is trading at $5,165 (+1.52% today), having touched $5,206 intraday. Recommended approach: **IB_BREAKOUT long bias (7/10)** — wait for opening range to form and trade breakout to the upside. Signal decay: moderate if Iran ceasefire talks materially progress.
+### 6E (Euro FX): -2 SLIGHT_BEARISH (6/10)
+**Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
+6E scores -2 SLIGHT_BEARISH. The primary headwind is the EUR-USD rate differential (weighted -2): the Fed holds at 3.75% while the ECB at 2.15% is more likely to cut given European energy inflation pressures from the Iran war. Risk-off conditions add a USD safe-haven bid (-1). The offsetting factors are a weak DXY (+1) and improving Eurozone PMI (composite 51.9, +1). EUR/USD is at 1.1634; confidence is 6/10 due to the conflicting DXY weakness signal.
 
-**SI (Silver):** Silver shows a **slight bullish bias (+1, SLIGHT_BULLISH)** with moderate conviction (6/10). Silver benefits from safe-haven demand (+1 risk mood) and gold ETF inflow proxy (+1), offset by slowing growth suppressing industrial demand (-1) and the hawkish Fed hold (-1). With real yields flat (0), the precious metal component barely wins over the industrial headwind. Silver is trading at $85.16 (+3.86% today). Recommended approach: **SLIGHT LONG LEAN — half-size (6/10)** — the +1 score is the weakest directional signal; use tight stops.
+### 6A (Australian Dollar): -2 SLIGHT_BEARISH (8/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+6A scores -2 SLIGHT_BEARISH with high conviction (8/10). China's slowing growth (NBS Manufacturing PMI 49.0, weighted -2) and risk-off sentiment (VIX 23.65, weighted -2) overwhelm the RBA's hawkish rate hike to 3.85% (+1), the widening AUD-USD rate differential (+1), and the weak DXY (+1). AUD/USD is at 0.7047 after breaking below 0.7000 on Tuesday. Sell rallies toward 0.7080-0.7100.
 
-**CL (Crude Oil):** WTI Crude shows a **bullish bias (+3, BULLISH)** with moderate conviction (7/10). The Strait of Hormuz blockade creates a severe supply shock (weighted +2) compounded by an EIA inventory draw (+1) and rising geopolitical risk (+1). The slowing growth narrative (weighted -2) creates a significant demand-side headwind, capping the score. WTI is at $74.44 after spiking to $77.23 intraday before pulling back on ceasefire talk reports. Recommended approach: **TREND_FOLLOW long bias (7/10)** — the supply shock is real but ceasefire reports introduce two-way risk; avoid chasing intraday spikes above $77.
-
-**ES (S&P 500):** The S&P 500 shows a **bearish bias (-4, BEARISH)** with high conviction (8/10). With real yields confirmed FLAT (removing the +4 bullish offset from the 0730 report), the bearish signals dominate: risk-off conditions (-1), slowing growth (-1), widening credit spreads (-1), rising VIX direction (-1), and the hawkish Fed hold (-1), partially offset only by a weak DXY (+1). Futures turned slightly positive intraday on Iran ceasefire talk reports, but the macro backdrop remains bearish. Recommended approach: **BEARISH — IB_BREAKDOWN or fade rallies (8/10)** — the ceasefire/escalation binary is the key variable; use the IB high as a stop reference.
-
-**NQ (Nasdaq 100):** The Nasdaq shows a **bearish bias (-4, BEARISH)** with high conviction (8/10), mirroring ES but with technology-specific headwinds. With real yields flat (0), the bearish signals dominate: SOX down -4.58% today (-1), MOVE rising (-1), risk-off conditions (-1), slowing growth (-1), and hawkish Fed (-1), offset only by weak DXY (+1). The semiconductor sector is being hit particularly hard as the Iran war disrupts global supply chains. Recommended approach: **BEARISH — IB_BREAKDOWN or fade rallies (8/10)** — NQ has highest beta; the SOX weakness is a specific concern for tech longs.
-
-**YM (Dow Jones):** The Dow shows a **slight bearish bias (-3, SLIGHT_BEARISH)** with high conviction (8/10). The Dow's lower technology weighting provides relative insulation from SOX weakness, and the steepening yield curve (+1) provides mild support for value/cyclical names. However, slowing growth (weighted -2), widening credit spreads (-1), risk-off (-1), and hawkish Fed (-1) dominate. Recommended approach: **SLIGHT BEARISH — IB_BREAKDOWN or fade rallies (8/10)** — YM is the most defensively positioned index; the -3 score suggests a clear directional lean but not maximum conviction.
-
-**RTY (Russell 2000):** The Russell 2000 shows a **bearish bias (-4, BEARISH)** with the highest conviction of the indices (9/10). Small caps are the most vulnerable: credit spreads widening sharply (weighted -2) directly impacts small-cap borrowing costs, slowing growth (weighted -2) hits domestically-focused businesses hardest, and the hawkish hold (-1) compounds the pressure. The only offsets are a steepening curve (+1) and weak DXY (+1). Recommended approach: **BEARISH — IB_BREAKDOWN or fade rallies (9/10)** — RTY is the clearest directional trade among indices today.
-
-**M6E (Micro Euro FX):** The Euro shows a **slight bearish bias (-2, SLIGHT_BEARISH)** with moderate conviction (6/10). The primary headwind is the EUR-USD rate differential (weighted -2): the Fed holds at 3.75% while the ECB at 2.15% is more likely to cut given European energy inflation pressures from the Iran war. Risk-off conditions add a USD safe-haven bid (-1). The offsetting factors are a weak DXY (+1) and improving Eurozone PMI (composite 51.9, +1). EUR/USD is at 1.1634 (+0.19% today) but is down -1.36% over 5 days. Recommended approach: **SLIGHT BEARISH — sell EUR/USD rallies toward 1.1650-1.1700 (6/10)**.
-
-**6A (Australian Dollar):** The Australian Dollar shows a **slight bearish bias (-2, SLIGHT_BEARISH)** with high conviction (8/10). The two dominant headwinds are China's slowing growth (NBS Manufacturing PMI 49.0, weighted -2) and risk-off sentiment (VIX 23.65, weighted -2), which together overwhelm the RBA's hawkish rate hike to 3.85% (+1), the widening AUD-USD rate differential (+1), and the weak DXY (+1). AUD/USD is at 0.7047 after breaking below 0.7000 on Tuesday. Recommended approach: **SLIGHT BEARISH — sell AUD/USD rallies toward 0.7080-0.7100 (8/10)**.
-
-**6J (Japanese Yen):** The Japanese Yen shows a **strong bullish bias (+5, STRONG_BULLISH)** with the highest conviction score of the session (9/10). The BoJ's hawkish stance (Governor Ueda reaffirmed the hiking cycle today, weighted +2) and the widening JPY-USD rate differential (weighted +2) are the structural drivers, amplified by risk-off safe-haven demand (+1) and a weak DXY (+1). The only headwind is the Fed's hawkish hold (-1). USD/JPY is at 157.19 (-0.32% today) — the 6J futures contract is inverted, so a falling USD/JPY means bullish 6J. Recommended approach: **STRONG BULLISH — IB_BREAKOUT long 6J (buy JPY, sell USD) (9/10)** — this is the highest-conviction trade of the session.
-
----
-
-## Key Macro Themes
-
-The **US-Israel war on Iran and the Strait of Hormuz blockade** is the singular dominant macro event reshaping all asset class relationships. The supply shock is simultaneously bullish for commodities (energy and precious metals), bearish for growth-sensitive assets (equities, commodity currencies), and bullish for safe-haven assets (gold, JPY). The war has reignited inflation fears that are suppressing Fed cut expectations.
-
-**Real yields confirmed FLAT** at 1.77% (+0.009) as of 07:46 AM EST per CNBC US10YTIP. This is the key correction from the 0730 report. With real yields neither falling nor rising materially, the key bullish offset for equities and additional tailwind for gold are removed. The result is a cleaner bearish signal for indices (ES, NQ, RTY all at -4 BEARISH) and a more moderate bullish signal for gold (+4 BULLISH vs +8 STRONG_BULLISH in the erroneous 0730 report).
-
-**BoJ policy divergence** remains the cleanest macro trade. Governor Ueda's explicit commitment to continued rate hikes, combined with JPY safe-haven demand, creates a rare alignment of structural and tactical drivers for 6J longs. The rate differential between the BoJ (0.75%, hiking) and the Fed (3.75%, on hold) is narrowing in a way that systematically favors JPY appreciation.
+### 6J (Japanese Yen): +5 STRONG_BULLISH (9/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
+6J scores +5 STRONG_BULLISH with the highest conviction of the session (9/10). The BoJ's hawkish stance (Governor Ueda reaffirmed the hiking cycle today, weighted +2) and the widening JPY-USD rate differential (weighted +2) are the structural drivers, amplified by risk-off safe-haven demand (+1) and a weak DXY (+1). The only headwind is the Fed's hawkish hold (-1). USD/JPY is at 157.19 (-0.32% today) — 6J is inverted, so falling USD/JPY = bullish 6J. Signal decay: moderate if Iran ceasefire talks materially progress.
 
 ---
-
-## Watch List
-
-| Date | Event | Potential Impact |
-|------|-------|-----------------|
-| Today (Mar 4) | ISM Services PMI (6:00pm EST) | A miss below 52 would confirm growth slowdown, pushing ES/NQ deeper into BEARISH territory |
-| Today (Mar 4) | ADP Employment (4:15pm EST) | Strong print could temporarily boost USD and pressure gold/6J |
-| Mar 5 | Crude Oil Inventories (EIA) | A large build would undercut CL bullish thesis; a draw would amplify it |
-| Mar 5 | Challenger Job Cuts | Rising layoffs would confirm RTY bearish thesis |
-| Mar 6 | Non-Farm Payrolls (NFP) | Strong NFP = hawkish Fed = bearish gold/6J; weak NFP = dovish pivot = bullish all |
-| Mar 18-19 | BoJ Meeting | Rate hike decision is the key event for 6J; hike would push score to +7 or higher |
-| Ongoing | Iran-US Ceasefire Talks | Any confirmed ceasefire would rapidly reverse CL, GC, and 6J bullish theses |
+## Signal Decay Notes
+The 6J STRONG_BULLISH and GC BULLISH signals are expected to persist while the Iran conflict remains unresolved (estimated 1-2 weeks). The ES/NQ/RTY BEARISH signals are expected to persist while credit spreads remain elevated and VIX stays above 20. The primary risk to all signals is a confirmed Iran-US ceasefire, which would rapidly reverse CL, GC, and 6J bullish theses and potentially shift ES/NQ back toward NEUTRAL.

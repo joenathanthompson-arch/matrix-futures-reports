@@ -1,19 +1,18 @@
 {
   "date": "2026-03-04",
   "generated_at": "2026-03-04T12:47:00Z",
-  "report_session": "0733 EST",
-  "correction_note": "Corrects 0730 report: real yields verified as FLAT (CNBC US10YTIP 1.77%, +0.009, prev 1.761%) not falling",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 4, "signal": "BULLISH", "confidence": 7},
-    "SI": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
-    "CL": {"score": 3, "signal": "BULLISH", "confidence": 7},
-    "ES": {"score": -4, "signal": "BEARISH", "confidence": 8},
-    "NQ": {"score": -4, "signal": "BEARISH", "confidence": 8},
-    "YM": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 8},
-    "RTY": {"score": -4, "signal": "BEARISH", "confidence": 9},
-    "M6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6},
-    "6A": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 8},
-    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 9}
+    "GC": {"score": 4, "signal": "BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "SI": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "ES": {"score": -4, "signal": "BEARISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "NQ": {"score": -4, "signal": "BEARISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "YM": {"score": -3, "signal": "BEARISH", "confidence": 8, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": -4, "signal": "BEARISH", "confidence": 9, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 8, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 9, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",
@@ -21,54 +20,27 @@
     "FX": "MIXED"
   },
   "key_drivers": [
-    "US-Israel war on Iran: Strait of Hormuz blockade driving oil supply shock and global risk-off",
-    "Real yields FLAT (CNBC US10YTIP 1.77%, +0.009) — no longer a tailwind for gold or equities",
-    "BoJ hawkish divergence + JPY safe-haven demand creating strong 6J tailwind; DXY weak at 98.86",
-    "China NBS Manufacturing PMI 49.0 (4-month low) crushing AUD and commodity demand outlook",
-    "Credit spreads widening sharply (~380bps HY OAS) and VIX at 23.65 creating severe headwinds for equities"
+    "US-Israel war on Iran: Strait of Hormuz blockade driving oil supply shock and global risk-off (VIX 23.65)",
+    "Real yields FLAT (CNBC US10YTIP 1.77%, +0.009) — removes key bullish offset for equities, indices now BEARISH",
+    "BoJ Gov Ueda vows to keep raising rates — 6J STRONG_BULLISH on BoJ divergence + JPY safe-haven demand",
+    "China NBS Manufacturing PMI 49.0 (4-month low) — 6A SLIGHT_BEARISH on China weakness + risk-off",
+    "Credit spreads widening (~380bps HY OAS) + VIX rising — RTY and ES/NQ BEARISH with high conviction"
   ],
-  "scoring_breakdown": {
-    "GC": {"fed": -1, "real_yields_w2": 0, "usd": 1, "risk_mood": 1, "growth": 1, "oil_supply": 1, "gold_etf": 1},
-    "SI": {"fed": -1, "real_yields": 0, "usd": 1, "risk_mood": 1, "growth": -1, "copper": 0, "gold_etf": 1},
-    "CL": {"oil_supply_w2": 2, "inventories": 1, "growth_w2": -2, "geo_risk": 1, "usd": 1},
-    "ES": {"fed": -1, "real_yields_w2": 0, "usd": 1, "risk_mood": -1, "growth": -1, "credit_spreads": -1, "vix_dir": -1},
-    "NQ": {"fed": -1, "real_yields_w2": 0, "usd": 1, "risk_mood": -1, "growth": -1, "sox": -1, "move": -1},
-    "YM": {"fed": -1, "real_yields": 0, "usd": 1, "risk_mood": -1, "growth_w2": -2, "credit_spreads": -1, "curve": 1},
-    "RTY": {"fed": -1, "real_yields": 0, "usd": 1, "risk_mood": -1, "growth_w2": -2, "credit_spreads_w2": -2, "curve": 1},
-    "M6E": {"fed": -1, "ecb": 0, "rate_diff_w2": -2, "usd": 1, "risk_mood": -1, "ez_growth": 1},
-    "6A": {"fed": -1, "rba": 1, "rate_diff": 1, "usd": 1, "risk_sentiment_w2": -2, "china_w2": -2, "copper": 0},
-    "6J": {"fed": -1, "boj_w2": 2, "rate_diff_w2": 2, "usd": 1, "risk_mood": 1}
-  },
-  "macro_snapshot": {
-    "gold_spot": 5165.64,
-    "silver_spot": 85.16,
-    "wti_crude": 74.44,
-    "dxy": 98.86,
-    "vix": 23.65,
-    "move_index": 77.75,
-    "sox_change_pct": -4.58,
-    "real_yield_10y_tips": 1.77,
-    "eurusd": 1.1634,
-    "audusd": 0.7047,
-    "usdjpy": 157.19,
-    "china_nbs_mfg_pmi": 49.0,
-    "china_composite_pmi": 49.5,
-    "eurozone_composite_pmi": 51.9,
-    "hy_oas_approx": 380,
-    "gdpnow_q1_2026": -1.5,
-    "fed_rate": 3.75,
-    "ecb_rate": 2.15,
-    "rba_rate": 3.85,
-    "boj_rate": 0.75
-  },
   "data_quality": {
     "stale_sources": ["FRED DFII10 (1-day lag)", "FRED BAMLH0A0HYM2 (1-day lag)", "FRED T10Y2Y (1-day lag)"],
     "fallbacks_used": [
       "Real yields: CNBC US10YTIP verified at 1.77% (+0.009) — FLAT determination confirmed",
-      "HY OAS: TradingEconomics estimate ~380bps based on VIX 23.65 and risk-off conditions",
-      "GDPNow: Atlanta Fed website confirmed Q1 2026 tracking ~-1.5%",
-      "Gold ETF flows: World Gold Council confirmed Jan/Feb 2026 positive inflows"
+      "HY OAS: ~380bps estimated from VIX/risk-off cross-asset conditions",
+      "GDPNow: Atlanta Fed Q1 2026 tracking ~-1.5%"
     ],
-    "data_freshness": "All primary market prices verified as of 2026-03-04T12:47:00Z"
+    "overnight_changes": [
+      "Iran reportedly called for talks to end conflict — ceasefire risk to CL/GC/6J bullish theses",
+      "BoJ Gov Ueda reaffirmed hiking cycle despite Iran conflict"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": ["ISM Services PMI (6:00pm EST today)", "ADP Employment (4:15pm EST today)"],
+    "near_term": ["EIA Crude Oil Inventories (Mar 5)", "Non-Farm Payrolls (Mar 6)"],
+    "background": ["BoJ Meeting Mar 18-19 — rate hike decision key for 6J", "Iran-US ceasefire talks ongoing"]
   }
 }
