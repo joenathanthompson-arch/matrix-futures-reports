@@ -1,135 +1,138 @@
 {
   "date": "2026-03-05",
-  "generated_at": "2026-03-05T07:30:00Z",
+  "generated_at": "2026-03-05T12:35:00Z",
   "methodology_version": "3.0_STRATEGY",
   "scores": {
     "GC": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 6,
-      "recommended_approach": "RANGE_TRADE",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "SI": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
       "confidence": 6,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "CL": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 7,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "ES": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 6,
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 8,
       "recommended_approach": "TREND_FOLLOW",
       "recommended_mode": "SWING",
       "hold_expectation": "1-2 days"
     },
-    "NQ": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 6,
-      "recommended_approach": "RANGE_TRADE",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "YM": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
+    "ES": {
+      "score": 3,
+      "signal": "BULLISH",
       "confidence": 6,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
-    "RTY": {
-      "score": 0,
-      "signal": "NEUTRAL",
+    "NQ": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
       "confidence": 6,
-      "recommended_approach": "RANGE_TRADE",
+      "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
-    "M6E": {
-      "score": -3,
-      "signal": "BEARISH",
+    "YM": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "RTY": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
       "confidence": 7,
       "recommended_approach": "TREND_FOLLOW",
       "recommended_mode": "SWING",
       "hold_expectation": "2-5 days"
     },
+    "M6E": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
     "6A": {
-      "score": -3,
-      "signal": "BEARISH",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "6J": {
-      "score": 3,
+      "score": 4,
       "signal": "BULLISH",
-      "confidence": 8,
+      "confidence": 7,
       "recommended_approach": "TREND_FOLLOW",
       "recommended_mode": "SWING",
       "hold_expectation": "2-5 days"
     }
   },
   "asset_class_bias": {
-    "COMMODITIES": "SLIGHT_BEARISH",
-    "INDICES": "MIXED",
-    "FX": "SLIGHT_BEARISH"
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "MIXED"
   },
   "key_drivers": [
-    "US-Israel Military Strikes on Iran (geopolitical risk surging, oil supply disruption, safe-haven bid for gold/JPY)",
-    "BoJ Hawkish Stance (rate hikes continuing, April hike on table, JPY strengthening vs USD/JPY at 157)",
-    "Fed Hawkish Hold at 3.50-3.75% (97.3% no-change probability at March 18-19 FOMC)",
-    "China Slowing (official PMI 49.0, 2026 GDP target 4.5-5% lowest in decades, AUD/copper bearish)",
-    "DXY Rising Short-Term (+1.17% 5-day) with VIX at 21.39 (risk-off) creating headwinds for risk assets"
+    "US-Iran war driving oil supply disruption risk (Hormuz) and safe-haven flows into gold and JPY",
+    "VIX elevated (21+) but falling from 28 spike; credit spreads narrowing and curve steepening support equities",
+    "GDPNow slowing to 3.0% Q1 from 4.2% Q4; Fed neutral hold; RBA hawkish hike and BoJ tightening bias reshape FX",
+    "Gold ETF inflows +$3.72B last week (GLD); real yields flat at 1.817% (CNBC US10YTIP); HY OAS 3.08% (tight)",
+    "China official PMI 49.0 (contraction) vs Caixin 52.1 (expansion); mixed signals for AUD and copper-linked assets"
   ],
   "data_quality": {
     "stale_sources": [
-      "Gold ETF flows: World Gold Council not directly accessed - estimated from price action and Iran war safe-haven demand"
+      "DFII10 (last obs 2026-03-03, 1 day lag; confirmed via CNBC US10YTIP real-time)",
+      "BAMLH0A0HYM2 (last obs 2026-03-03, 1 day lag)"
     ],
     "fallbacks_used": [
-      "Geopolitical data: Reuters/CNN/IISS/Brookings (primary GPR Index not accessed)",
-      "Oil price: MarketPulse/DailyForex (WTI ~$78 near 7-month high)",
-      "China PMI: Official NBS 49.0 (contraction) vs RatingDog 52.1 (expansion) - used NBS as primary"
+      "CNBC US10YTIP for real yields (1.817% at 7:41 AM EST, +1.3bps = FLAT)",
+      "Yahoo Finance ^MOVE for MOVE index (70.03, -9.92% on March 4)",
+      "Seeking Alpha/ETF flow data for Gold ETF flows (GLD +$3.72B last week)"
     ],
     "overnight_changes": [
-      "VIX at 21.39 (risk-off territory, above 20 threshold)",
+      "VIX at 21.39 (risk-off territory, falling from 28 spike)",
       "DXY rising +1.17% 5-day (short-term USD strength)",
       "WTI crude at ~$78 near 7-month high (Iran war supply disruption)",
-      "Gold at $5,195 (safe-haven demand, Iran war)",
+      "Gold at $5,195 (safe-haven demand, Iran war + ETF inflows)",
       "Silver at $85-86 (safe-haven + industrial)",
       "MOVE index fell -9.92% to 70.03 (rate volatility declining)",
-      "SOX rose +1.93% to 7,914 (semis recovering)"
+      "SOX rose +1.93% to 7,914 (semis recovering)",
+      "Trump offered tanker security on March 4 (partial Iran war relief)"
     ]
   },
   "catalyst_proximity": {
     "imminent": [
       "US-Iran War ongoing (active military conflict, Strait of Hormuz risk)",
       "FOMC March 18-19, 2026 (13 days away, 97.3% hold probability)",
-      "RBA March 16-17, 2026 (possible rate hike, Bullock hawkish)"
+      "RBA March 16-17, 2026 (possible rate hike, Bullock hawkish)",
+      "US CPI March 12, 2026 (Iran war energy shock could push higher)"
     ],
     "near_term": [
       "EIA Weekly Petroleum Report (March 11, 2026)",
-      "BoJ April rate decision (April hike on table per Bloomberg)",
+      "BoJ March 18-19 meeting (April hike on table per Bloomberg)",
       "China NPC economic targets (GDP 4.5-5% announced March 5)"
     ],
     "background": [
       "OPEC+ output increase 206k bpd from April 2026 (partially offset by Iran disruption)",
       "ECB holding rates through 2026 per Morgan Stanley forecast",
-      "Morgan Stanley: No ECB rate cuts in 2026 due to Middle East inflation risks"
+      "Eurozone Composite PMI 51.9 (3-month high) supportive of EUR"
     ]
   }
 }

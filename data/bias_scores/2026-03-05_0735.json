@@ -1,0 +1,30 @@
+{
+  "date": "2026-03-05",
+  "generated_at": "2026-03-05T12:35:00Z",
+  "scores": {
+    "GC": {"score": 3, "signal": "BULLISH", "confidence": 7},
+    "SI": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "CL": {"score": 3, "signal": "BULLISH", "confidence": 8},
+    "ES": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "YM": {"score": 4, "signal": "BULLISH", "confidence": 7},
+    "RTY": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
+    "M6E": {"score": -1, "signal": "NEUTRAL", "confidence": 6},
+    "6A": {"score": -1, "signal": "NEUTRAL", "confidence": 6},
+    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "MIXED"
+  },
+  "key_drivers": [
+    "US-Iran war driving oil supply disruption risk (Hormuz) and safe-haven flows into gold and JPY",
+    "VIX elevated (21+) but falling from 28 spike; credit spreads narrowing and curve steepening support equities",
+    "GDPNow slowing to 3.0% Q1 from 4.2% Q4; Fed neutral hold; RBA hawkish hike and BoJ tightening bias reshape FX"
+  ],
+  "data_quality": {
+    "stale_sources": ["DFII10 (last obs 2026-03-03, 1 day lag; confirmed via CNBC US10YTIP real-time)", "BAMLH0A0HYM2 (last obs 2026-03-03, 1 day lag)"],
+    "fallbacks_used": ["CNBC US10YTIP for real yields (1.817% at 7:41 AM EST, +1.3bps = FLAT)", "Yahoo Finance ^MOVE for MOVE index (70.03, -9.92% on March 4)", "Seeking Alpha/ETF flow data for Gold ETF flows (GLD +$3.72B last week)"]
+  }
+}
