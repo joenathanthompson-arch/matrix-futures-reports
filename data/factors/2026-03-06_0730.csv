@@ -1,0 +1,25 @@
+Factor,Value,Classification,Raw Score,Source,Notes
+Fed Stance,3.5-3.75% on hold,Dovish hold,+1,CME FedWatch / RBC GAM,50bps cuts expected H2 2026; next cut pencilled for summer
+Real Yields (10Y TIPS),~2.0% (inferred),Rising (>5bps),-2,FRED DFII10 (lagged) / Saxo,10Y nominal at 4.14% (3-week high); TIPS direction inferred
+DXY,99.31 (+0.25% today / +1.59% weekly),Strong/Rising,-1,TradingView,Best weekly performance since late 2024
+VIX,25.71 (+8.21% today),Risk-off (>20),+1,TradingView / CBOE,Spiked on Iran escalation
+Growth Narrative,Slowing (stagflation risk),Slowing,+1,Atlanta Fed GDPNow / Rio Times,Q4 productivity +2.8% but ULC +2.8%; stagflationary split
+Oil Supply Shock,Strait of Hormuz near-closed,Tightening/Disruption,+1,Saxo / Kpler,~20% of global oil supply at risk; WTI >$80 / Brent ~$85
+Gold ETF Flows,Flat (mixed signals),Flat,0,World Gold Council,Dollar strength suppressing inflows; login required for current week data
+Credit Spreads (HY OAS),Widening,Widening,-1,RBC GAM / FRED (lagged),Risk-off environment; historically narrow but widening under geopolitical stress
+VIX Direction,Rising sharply,Rising,-1,TradingView,+8.21% today; +20%+ weekly
+SOX (Semiconductors),7821 (-1.17%),Falling,-1,Yahoo Finance / Morningstar,-2.7% on 3/5 per Morningstar
+MOVE Index,Rising,Rising,-1,Saxo (inferred),Bund +9bps; UST 10Y +10bps; rate vol elevated
+Oil Inventories,+3.5M barrels (build),Build,-1,EIA Weekly (week ending Feb 27),Crude ex-SPR +3.5M; slightly above 5-yr average
+Geopolitical Risk,Iran war / Hormuz disruption,Rising,+1,Multiple sources,Day 6 of US-Israel attacks on Iran; escalation warnings
+2s10s Yield Curve,~56bps (2Y 3.58% / 10Y 4.14%),Flattening,-1,Saxo,Curve flattening as long end rises on inflation fears
+Copper,$5.78/lb (-1.2%),Falling,-1,Investing.com / Discovery Alert,Down from $6.00+ highs; bearish correction
+ECB Stance,On hold; hawkish pivot priced,Hawkish hold,-1,Bloomberg / Reuters,Hike now fully priced for 2026; pre-war dovish tilt stale
+RBA Stance,On hold at 3.85%,Hawkish hold,-1,PSNews / The Nightly,Feb hike completed; Westpac tips hold through 2026
+BoJ Stance,Hawkish,Hawkish/Tightening,+1,Reuters / Fintech Sportskeeda,Ueda hawkish in parliament March 4; 4 hikes completed
+Rate Differential EUR-USD,ECB ~3.15% vs Fed 3.5-3.75%,Narrowing vs USD,-1,ECB / Fed,Differential narrowing as ECB below Fed
+Rate Differential AUD-USD,RBA 3.85% vs Fed 3.5-3.75%,Stable,0,RBA / Fed,AUD rate slightly above USD; roughly stable
+Rate Differential JPY-USD,BoJ ~0.5% vs Fed 3.5-3.75%,Narrowing vs USD (BoJ hiking),+1,BoJ / Fed,Huge differential but BoJ hiking = narrowing trend
+Risk Sentiment (AUD),Risk-off,Risk-off,-1,VIX,VIX 25.71; geopolitical crisis environment
+China Growth,Official mfg PMI 49.0 / Caixin services 56.7,Stable,0,CNBC / Reuters,Divergent: official mfg contracting but Caixin services strong
+Eurozone Growth,Construction PMI 46.0 / Retail Sales -0.1%,Slowing,+1,Rio Times,EZ construction contracting; retail disappointing
