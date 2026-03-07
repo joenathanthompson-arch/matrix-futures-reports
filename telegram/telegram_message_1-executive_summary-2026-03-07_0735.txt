@@ -1,0 +1,25 @@
+MATRIX FUTURES DAILY BIAS REPORT
+Date: March 7, 2026 | Time: 07:35 EST
+
+OVERALL BIAS: MIXED (Commodities BULLISH, Equities/FX Uncertain)
+
+KEY DRIVERS:
+1. US-Iran war driving oil ~$90/bbl, sustained geopolitical risk premium
+2. VIX +24% to 29.49 (risk-off confirmed); MOVE +9% to 81.26 (rate vol spike)
+3. Real yields flat at 1.788% (CNBC fallback); DXY 5-day rising trend
+4. RBA hawkish hike to 3.85% offset by risk-off + China PMI contraction (NBS 49.0%)
+
+CONVICTION SUMMARY:
+- GC: BULLISH (+3, 7/10) — Safe-haven + ETF inflows + geo-risk premium
+- CL: BULLISH (+3, 7/10) — War supply disruption, OPEC+ insufficient offset
+- 6A: BEARISH (-4, 5/10) — Risk-off + China PMI contraction + copper weakness
+- ES/NQ: NEUTRAL (-1, 5/10) — NO_TRADE; VIX 29.49, wait for stabilization
+- RTY: SLIGHT_BULLISH (+1, 4/10) — NO_TRADE; credit stress overrides growth
+
+ASSET CLASS BIAS:
+- COMMODITIES: BULLISH (GC+3, SI+1, CL+3)
+- INDICES: MIXED (ES-1, NQ-1, YM+2, RTY+1)
+- FX: MIXED (6E-1, 6A-4, 6J 0)
+
+DATA QUALITY: 1 stale source (HY OAS, FRED Mar 5); 1 fallback used (CNBC US10YTIP)
+Avg confidence: 5.6/10
