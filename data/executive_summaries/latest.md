@@ -1,129 +1,58 @@
-# Matrix Futures Daily Bias Report
-**Date:** March 7, 2026 | **Time:** 02:30 EST (07:30 UTC) | **Session:** Overnight/Asia-Europe
+# Executive Summary - 2026-03-07 07:35 EST
 
----
+## Data Quality Notes
 
-## Overall Market Bias: MIXED (Commodity Bullish / Equity Cautious / FX Neutral)
+One data source required a fallback: the FRED DFII10 10-year TIPS yield was last updated on March 5 (2 business days stale), so the CNBC US10YTIP fallback was used, showing 1.788% at 5:05 PM EST on March 6 — a change of approximately -3.2bps from the FRED Mar 5 reading of 1.82%, which falls within the ±5bps flat threshold. The FRED BAMLH0A0HYM2 High Yield OAS reading (3.00%, March 5) is also stale; given the VIX's +24% surge to 29.49 on March 6, credit spreads are assessed as WIDENING. The official NBS China Manufacturing PMI of 49.0% (February 2026) was used in preference to the S&P Global RatingDog reading of 52.1%, as the NBS figure is the primary institutional benchmark for commodity-currency analysis.
 
-Global markets are navigating an extraordinary geopolitical shock as the US-Iran military conflict enters its second week, having driven WTI crude oil up 35.63% in a single week — the largest weekly gain in futures trading history. Simultaneously, Friday's February NFP report delivered a catastrophic miss of -92,000 jobs (vs. +50,000 expected), sending the VIX surging to 29.49 and confirming a sharp deterioration in the US growth narrative. The macro environment is deeply bifurcated: commodities (especially energy and gold) are surging on geopolitical premium and safe-haven demand, while equities face headwinds from rising volatility, slowing growth, and pre-FOMC uncertainty with the March 18-19 meeting just 11 days away.
+| Source | Status | Value Used |
+|--------|--------|------------|
+| FRED DFII10 (10Y TIPS) | Stale (Mar 5) | CNBC fallback: 1.788% |
+| FRED BAMLH0A0HYM2 (HY OAS) | Stale (Mar 5) | 3.00%, assessed WIDENING via VIX proxy |
+| All other sources | Fresh (Mar 6–7) | As reported |
 
----
+## Asset Class Overview
 
-## Asset Class Summary
+- **Commodities:** BULLISH — The US-Iran war is the dominant driver, pushing WTI crude toward $90/barrel and sustaining a geopolitical risk premium. Gold benefits from risk-off demand and continued ETF inflows ($5.3bn in February). Silver is a slight positive, caught between gold's safe-haven bid and copper's industrial weakness.
+- **Indices:** MIXED — US equity indices face a cross-current of slowing GDPNow growth (2.1%), a VIX spike to 29.49, widening credit spreads, and a falling SOX (-3.93%). The Dow (YM) and Russell (RTY) show slight positive readings from curve steepening and growth, but the overall picture is deeply uncertain. ES and NQ are effectively neutral with a bearish lean.
+- **FX:** MIXED — The Euro (M6E) is neutral, caught between ECB-Fed rate differential headwinds and improving eurozone PMIs. The Australian Dollar (6A) is bearish, overwhelmed by risk-off sentiment, China PMI contraction, and falling copper. The Japanese Yen (6J) is neutral, with BoJ's "prolonged hold" offsetting the safe-haven bid from risk-off conditions.
 
-| Asset Class | Bias | Key Driver |
-|-------------|------|------------|
-| Commodities | SLIGHT_BULLISH | US-Iran conflict driving oil surge; gold at ATH on safe-haven demand |
-| Indices | SLIGHT_BULLISH | Conflicting signals: slowing growth supports dovish Fed, but VIX at 29 caps upside |
-| FX | NEUTRAL | USD weakness post-NFP offset by risk-off headwinds for commodity currencies |
+## Symbol Analysis
 
----
+**GC (Gold):** Gold shows a BULLISH bias (+3, confidence 7/10), supported by a convergence of risk-off demand (VIX 29.49), continued ETF inflows ($5.3bn in February per World Gold Council), slowing US growth (GDPNow 2.1%), and an oil supply shock from the US-Iran war. Real yields are flat at 1.788% (CNBC fallback), providing neither headwind nor tailwind, while the rising DXY is the primary offset. The geopolitical backdrop — with Iranian attacks on oil infrastructure and markets pricing in sustained conflict — provides a persistent safe-haven bid. Recommended approach: IB_BREAKOUT long bias (7/10), with awareness that a DXY reversal higher could cap gains.
 
-## Highest Conviction Signals
+**SI (Silver):** Silver shows a SLIGHT_BULLISH bias (+1, confidence 6/10), reflecting a tug-of-war between its precious metal character (benefiting from risk-off and ETF inflows) and its industrial metal character (hurt by falling copper -4.17% weekly and China PMI contraction at 49.0%). The net result is a weak positive that could easily flip negative if risk-off deepens and copper continues to slide. Recommended approach: FADE_EXTREMES or reduced position sizing (6/10), given the hybrid nature and conflicting signals.
 
-| Instrument | Score | Signal | Confidence | Approach |
-|------------|-------|--------|------------|----------|
-| CL | +4 | BULLISH | 7/10 | TREND_FOLLOW (SWING) |
-| GC | +3 | BULLISH | 7/10 | TREND_FOLLOW (SWING) |
-| YM | +3 | BULLISH | 6/10 | TREND_FOLLOW (SWING) |
+**CL (WTI Crude):** Crude shows a BULLISH bias (+3, confidence 7/10), driven primarily by the US-Iran war disruption (oil supply tightening, oil ~$90/barrel) and slowing US growth which paradoxically supports energy demand narratives. The inventory build of +3.5M barrels (EIA week ending Feb 27) is a modest headwind, and the rising DXY adds a further offset, but the geopolitical risk premium and OPEC+'s modest production hike (only +206k bpd from April) are insufficient to cap the conflict-driven rally. Recommended approach: IB_BREAKOUT long bias (7/10), with tight stops given the binary nature of geopolitical catalysts.
 
----
+**ES (S&P 500):** The S&P 500 shows a NEUTRAL bias (-1, confidence 5/10), sitting at the boundary of neutral and slight bearish. The VIX surge to 29.49 (+24%), widening credit spreads, falling SOX (-3.93%), and a rising DXY all weigh on risk appetite. Offsetting factors include slowing growth (which supports a dovish Fed narrative) and the neutral hold stance. The high uncertainty environment (US-Iran war, tariff escalation with a 15% global tariff starting this week per Treasury Secretary Bessent) makes directional conviction low. Recommended approach: NO_TRADE or FADE_RALLIES (5/10) — wait for VIX to stabilize below 25 before establishing directional positions.
 
-## Full Instrument Breakdown
+**NQ (Nasdaq 100):** Nasdaq shows a NEUTRAL bias (-1, confidence 5/10), with the same cross-currents as ES but amplified by the SOX decline (-3.93% on the day, -6.50% weekly) and the MOVE index surge (+9% to 81.26). Real yields are flat rather than falling, removing the primary tailwind for growth stocks. The combination of rising rate volatility (MOVE) and semiconductor weakness is particularly damaging for tech-heavy NQ. Recommended approach: NO_TRADE (5/10) — the risk/reward is unfavorable given elevated vol and sector-specific headwinds. Note: Methodology specifies half-size on first NQ entry given its highest beta.
 
-### GC (Gold): +3 BULLISH (7/10)
-**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
+**YM (Dow Jones):** The Dow shows a SLIGHT_BULLISH bias (+2, confidence 5/10), benefiting from its lower-beta, value-oriented composition relative to NQ. The steepening yield curve (2s10s at +0.59%) supports financials and cyclicals, and slowing growth (GDPNow 2.1%) carries double weight in the YM scorer as a dovish signal. However, widening credit spreads and the rising DXY are headwinds. The Dow's relative outperformance vs NQ in risk-off environments is a key characteristic here. Recommended approach: FADE_EXTREMES with a slight long lean (5/10) — lower conviction than the score suggests given the stale HY OAS data.
 
-Gold is trading at all-time highs near $5,100/oz, supported by a powerful confluence of safe-haven demand from the US-Iran conflict, nine consecutive months of ETF inflows ($5.3 billion in February alone), and a weakening US dollar following the catastrophic NFP miss. The primary constraint on a higher score is that 10-year real yields (DFII10) remain flat at 1.82% rather than falling — if real yields break lower, GC could accelerate significantly. The macro setup strongly favors trend-following on the long side with a multi-day hold, as geopolitical risk premium is unlikely to dissipate quickly while active military operations continue.
+**RTY (Russell 2000):** Russell 2000 shows a SLIGHT_BULLISH bias (+1, confidence 4/10), but this is the lowest-conviction score in the report. Small caps are the most sensitive to credit conditions (weight 2x), and with HY OAS assessed as widening (stale data, but VIX proxy confirms stress), the credit headwind is significant. The steepening curve and slowing growth provide modest support, but the overall environment of risk-off, widening spreads, and a rising DXY is structurally negative for small caps. Recommended approach: NO_TRADE (4/10) — the low confidence and credit sensitivity argue for caution.
 
-### SI (Silver): +1 SLIGHT_BULLISH (6/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+**M6E (Micro Euro FX):** The Euro shows a NEUTRAL bias (-1, confidence 6/10), effectively sitting at the neutral/slight-bearish boundary. The dominant driver is the EUR-USD rate differential (weight 2x): with the ECB at ~2.5% and the Fed at 3.5-3.75%, and neither central bank expected to move at their next meetings, the differential remains unfavorable for EUR. The rising DXY (5-day +1.0%) adds further headwind. Partially offsetting these negatives are the solid eurozone PMI (composite 51.9 in February, manufacturing 50.8) and risk-off conditions which can sometimes support EUR as a funding currency. Recommended approach: FADE_RALLIES in EUR/USD (6/10) — the rate differential is the structural anchor.
 
-Silver presents a mixed picture that warrants caution. While it benefits from the same safe-haven and USD-weakness tailwinds as gold, its industrial character is undermined by falling copper prices (LME copper down 1.6% on March 6 to ~$13,131/ton) and the broader risk-off environment that typically suppresses industrial metals demand. The slight bullish bias reflects gold's gravitational pull on silver, but the conflicting industrial signals reduce conviction. An intraday IB_BREAKOUT approach is recommended, watching for gold's leadership to pull silver higher while remaining alert to a potential divergence if growth fears intensify.
+**6A (Australian Dollar):** The Australian Dollar shows a BEARISH bias (-4, confidence 5/10), the most negative score in the FX complex. The AUD is a high-beta risk currency that trades as a proxy for China growth and global risk appetite — both of which are negative today. Risk sentiment is risk-off (VIX 29.49, weight 2x), China's NBS manufacturing PMI is in contraction at 49.0% (weight 2x), and copper is falling (-4.17% weekly). Even the RBA's hawkish rate hike to 3.85% in February and a slightly positive AUD-USD rate differential cannot overcome the weight of these headwinds. Recommended approach: IB_BREAKOUT short bias (5/10) — the macro case is clear but confidence is reduced by the RBA's hawkish offset and potential China stimulus surprise.
 
-### CL (WTI Crude Oil): +4 BULLISH (7/10)
-**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 2-5 days
-
-Crude oil is the highest-conviction directional trade in the current environment. The US-Iran military conflict has created a genuine supply disruption threat, with Brent crude surpassing $90/barrel and WTI recording its largest weekly gain in futures trading history (+35.63%). The EIA data for the week ending February 27 showed a 3.5 million barrel inventory build, which provides a partial offset, but geopolitical supply risk overwhelms the inventory signal. The growth narrative (slowing, with NFP -92,000) provides an additional macro tailwind for the commodity complex. Signal decay risk is moderate — the geopolitical premium could unwind rapidly if ceasefire talks progress, so active monitoring of conflict developments is essential.
-
-### ES (S&P 500): 0 NEUTRAL (4/10)
-**Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
-
-The S&P 500 faces deeply conflicting macro forces that produce a neutral score with low confidence. On the bullish side, the catastrophic NFP miss (-92,000) has sharply increased market expectations for Fed rate cuts, which historically supports equity valuations. On the bearish side, VIX at 29.49 signals elevated fear, the MOVE index is rising (bond market volatility), and the geopolitical backdrop creates headline risk. With the March 18-19 FOMC meeting just 11 days away, directional conviction is low. A range-trading approach is recommended, fading extremes within the intraday session rather than taking directional swing positions.
-
-### NQ (Nasdaq 100): -1 SLIGHT_BEARISH (5/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
-
-The Nasdaq 100 carries a slight bearish bias driven by the SOX semiconductor index's sharp decline (SOXX ETF -4.22% on March 6) and the rising MOVE index, which signals elevated rate volatility that historically pressures growth/tech valuations. While flat real yields provide some support, the combination of a hawkish-hold Fed, rising bond volatility, and semiconductor weakness creates a modest headwind for the tech-heavy index. The IB_BREAKOUT approach is recommended with a bearish lean on the initial balance break, but traders should remain flexible given the pre-FOMC uncertainty and potential for sharp reversals on any Iran conflict de-escalation headlines.
-
-### YM (Dow Jones): +3 BULLISH (6/10)
-**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
-
-The Dow Jones shows the strongest equity bias among the indices, benefiting from its composition of value/cyclical names that tend to outperform in stagflationary environments. The steepening yield curve (+0.59% on 2s10s) is constructive for financials, which carry significant weight in the Dow. The slowing growth narrative (NFP miss) paradoxically supports the index by increasing Fed cut expectations, while flat credit spreads (HY OAS at 3.00%) confirm no imminent credit stress. The YM is recommended as the preferred equity vehicle when NQ is exhibiting volatility, consistent with the reference document's guidance.
-
-### RTY (Russell 2000): +2 SLIGHT_BULLISH (6/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
-
-The Russell 2000 shows a slight bullish bias, primarily driven by the steepening yield curve and slowing growth narrative that increases Fed cut expectations — historically very bullish for small caps. However, the hawkish-hold Fed stance and the risk-off environment (VIX 29.49) create meaningful headwinds. The key positive is that HY credit spreads remain flat at 3.00%, suggesting no credit stress that would typically devastate small-cap, high-leverage companies. An IB_BREAKOUT approach is recommended, with the bias leaning long on a break above the initial balance high, but position sizing should be conservative given the elevated VIX environment.
-
-### M6E (Micro Euro FX): +1 SLIGHT_BULLISH (6/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
-
-The Euro shows a slight bullish bias supported by improving Eurozone fundamentals — the composite PMI reached 51.9 in February (a 14-month growth streak) and manufacturing PMI hit a 44-month high of 50.8. The ECB is holding rates steady (unlikely to change at the March 19 meeting), while the Fed's hawkish hold is partially offset by the NFP-driven cut expectations. EUR/USD is trading near 1.1561-1.1623, well above its 2025 lows. The rate differential (EUR-USD) remains stable, providing no additional directional push. An IB_BREAKOUT approach is recommended, watching for a break above recent highs as the primary entry signal.
-
-### 6A (Australian Dollar): -2 SLIGHT_BEARISH (6/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
-
-The Australian Dollar faces the most conflicting signals of any instrument in the portfolio. The powerful China PMI surge (52.1 — strongest in over five years) and AUD rate differential advantage (RBA at 3.85% vs. Fed at 3.5-3.75%) are constructive, but these positives are overwhelmed by the risk-off environment (VIX 29.49), falling copper prices, and the RBA's hawkish stance (Governor Bullock signaled a possible March rate hike, which would further tighten financial conditions). AUD/USD is trading near 0.693-0.705. The IB_BREAKOUT approach is recommended with a bearish lean, watching for a break below the initial balance low as the primary entry signal. The China PMI data provides a meaningful upside risk that traders should monitor.
-
-### 6J (Japanese Yen): +2 SLIGHT_BULLISH (6/10)
-**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
-
-The Japanese Yen shows a slight bullish bias from two reinforcing themes: the BoJ's committed hawkish stance (Governor Ueda vowing to continue rate hikes) and the risk-off environment that historically drives safe-haven flows into JPY. USD/JPY has been declining from above 160 to the 155-158 range. However, the massive interest rate differential (BoJ at 0.5% vs. Fed at 3.5-3.75%) remains a structural headwind that limits the upside score. The rate differential factor scores neutral (0) as it remains wide but stable. An IB_BREAKOUT approach is recommended with a bullish lean (long 6J = short USD/JPY), particularly if risk-off sentiment intensifies on Iran conflict escalation.
-
----
+**6J (Japanese Yen):** The Japanese Yen shows a NEUTRAL bias (0, confidence 6/10), reflecting a genuine standoff between competing forces. The risk-off environment (VIX 29.49) provides a safe-haven bid for JPY, but the BoJ's "prolonged hold" stance (due to Middle East war uncertainty) removes the hawkish catalyst that would normally strengthen JPY. The JPY-USD rate differential remains stable (BoJ ~0.5% vs Fed 3.5-3.75%), and the rising DXY is a headwind. Note: 6J quotes are inverted — a bullish 6J score means USD/JPY falling (JPY strengthening). The neutral reading suggests range-bound USD/JPY. Recommended approach: NO_TRADE (6/10) — wait for BoJ policy clarity or a significant VIX move above 35 to establish a directional position.
 
 ## Key Macro Themes
 
-1. **US-Iran Military Conflict (Primary Driver)**: Active military operations have created a genuine geopolitical shock that is reshaping commodity markets. Oil's 35%+ weekly surge is the largest in futures history. The conflict creates persistent uncertainty across all asset classes, with safe-haven assets (gold, JPY, USD) benefiting while risk assets face headwinds. Signal decay risk is high — any ceasefire developments could rapidly reverse commodity gains.
+- **US-Iran War Dominates:** The ongoing military conflict between the US and Iran is the single most important macro driver this week. Iranian attacks on oil infrastructure have pushed WTI crude to ~$90/barrel, sustaining a geopolitical risk premium across energy and safe-haven assets (gold, JPY). OPEC+'s modest production increase (+206k bpd from April) is insufficient to offset supply disruption concerns.
 
-2. **US Growth Shock (February NFP -92,000)**: The catastrophic jobs miss confirms the US economy is slowing sharply, likely reflecting both the geopolitical uncertainty and the lagged effects of the Fed's restrictive policy. This increases the probability of Fed rate cuts, which is paradoxically bullish for risk assets but also signals genuine economic weakness. The unemployment rate rising to 4.4% is approaching levels that historically trigger more aggressive Fed action.
+- **Risk-Off Regime Confirmed:** The VIX's surge to 29.49 (+24% on March 6) and the MOVE index's rise to 81.26 (+9%) confirm a broad risk-off regime. This is supportive of gold and crude (via geo-risk premium) but damaging for equities, commodity currencies (AUD), and credit-sensitive instruments (RTY). The 15% global tariff announced by Treasury Secretary Bessent adds a further layer of macro uncertainty.
 
-3. **Bifurcated Market Environment (Stagflation Risk)**: The combination of surging energy prices (oil +35%), slowing growth (NFP -92K), and elevated inflation expectations creates a stagflationary backdrop. This environment historically favors commodities (especially gold and energy) while creating headwinds for growth-sensitive assets. The Dow (value/cyclical) is outperforming the Nasdaq (growth/tech) as a result.
+- **Commodities vs. Equities Divergence:** The macro environment is creating an unusual divergence where commodities (particularly gold and crude) are bullish while equities are neutral-to-bearish. This reflects the war-driven supply shock and safe-haven demand rather than a traditional risk-on/risk-off binary. Traders should be aware that this regime can shift rapidly if ceasefire news emerges.
 
----
+## Watch List
 
-## Upcoming Catalysts
-
-### Imminent (< 1 Week)
-- **RBA Rate Decision** (March 2026 meeting) — Governor Bullock signaled a hike is possible; a surprise hike would be bearish for 6A
-- **US-Iran Conflict Developments** (ongoing) — Any ceasefire talks would rapidly unwind oil and gold geopolitical premiums
-- **Iran Response to US Strikes** (ongoing) — Escalation risk remains elevated
-
-### Near-Term (1-4 Weeks)
-- **FOMC Meeting** (March 18-19, 2026) — Currently 96.3% probability of hold; NFP miss may shift this
-- **ECB Meeting** (March 19, 2026) — Unlikely to change rates; energy cost discussion key
-- **US CPI Data** (mid-March) — Energy price surge will likely push headline CPI higher
-- **BoJ Policy Meeting** (late March) — Rate hike possible but likely delayed to June-July
-
----
-
-## Data Quality
-- All data sources current as of March 6-7, 2026
-- DFII10 real yields: March 5, 2026 (1 day lag — acceptable)
-- HY OAS: March 5, 2026 (1 day lag — acceptable)
-- T10Y2Y: March 6, 2026 (current)
-- VIX: March 6, 2026 close (current)
-- DXY: March 6, 2026 (current via Investing.com)
-- MOVE Index: March 5, 2026 (1 day lag — acceptable)
-- Average confidence: 6.0/10
-- Confidence reduced for ES (4/10) due to pre-FOMC uncertainty and conflicting signals
-
----
-
-## Signal Decay Notes
-High-conviction commodity signals (CL, GC) carry elevated signal decay risk given the geopolitical catalyst. The US-Iran conflict is the primary driver, and any de-escalation (ceasefire talks, diplomatic resolution) could rapidly unwind the geopolitical premium embedded in oil and gold prices. Traders should monitor conflict developments closely and be prepared to exit swing positions quickly if the geopolitical situation changes materially.
-
----
-**End of Report**
-*Generated by Matrix Futures Bias System V3.0 | March 7, 2026 02:30 EST*
+| Event | Date | Impact |
+|-------|------|--------|
+| FOMC Meeting | March 18-19, 2026 | High — Fed rate decision; 96.3% probability of no change |
+| EIA Weekly Petroleum Report | March 11, 2026 | High — Next crude inventory data; key for CL bias |
+| US-Iran War Developments | Ongoing | Extreme — Ceasefire or escalation would sharply shift GC, CL, 6J |
+| US CPI (February) | ~March 12, 2026 | High — Inflation data will test Fed's neutral hold stance |
+| BoJ Policy Meeting | March 2026 | Medium — Any shift from "prolonged hold" would move 6J sharply |
+| China NPC Economic Targets | March 5-15, 2026 | Medium — Stimulus announcements could reverse 6A and copper bearish bias |
