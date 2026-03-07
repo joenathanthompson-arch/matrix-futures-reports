@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-07",
+  "generated_at": "2026-03-07T12:35:00Z",
+  "scores": {
+    "GC": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "SI": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7
+    },
+    "ES": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 5
+    },
+    "NQ": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 5
+    },
+    "YM": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5
+    },
+    "RTY": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 4
+    },
+    "M6E": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6
+    },
+    "6A": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 5
+    },
+    "6J": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "MIXED",
+    "FX": "MIXED"
+  },
+  "key_drivers": [
+    "US-Iran war driving oil price surge (~$90/bbl) and elevated geopolitical risk premium",
+    "VIX +24% to 29.49 signals broad risk-off; MOVE index +9% to 81.26 signals rate vol spike",
+    "Real yields flat at 1.788% (CNBC fallback); DXY 5-day rising trend pressuring commodities and FX"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "BAMLH0A0HYM2 (HY OAS, FRED Mar 5)"
+    ],
+    "fallbacks_used": [
+      "CNBC US10YTIP for 10Y real yields (1.788% at 5:05PM EST Mar 6)"
+    ],
+    "notes": "HY OAS assessed as WIDENING based on VIX +24% proxy; NBS China PMI 49.0 used over S&P Global 52.1"
+  }
+}
