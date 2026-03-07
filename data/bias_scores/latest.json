@@ -5,52 +5,82 @@
     "GC": {
       "score": 3,
       "signal": "BULLISH",
-      "confidence": 7
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "SI": {
       "score": 1,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 6
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "CL": {
       "score": 3,
       "signal": "BULLISH",
-      "confidence": 7
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "ES": {
       "score": -1,
       "signal": "NEUTRAL",
-      "confidence": 5
+      "confidence": 5,
+      "recommended_approach": "NO_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "NQ": {
       "score": -1,
       "signal": "NEUTRAL",
-      "confidence": 5
+      "confidence": 5,
+      "recommended_approach": "NO_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "YM": {
       "score": 2,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 5
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "RTY": {
       "score": 1,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 4
-    },
-    "M6E": {
-      "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 6
+      "confidence": 4,
+      "recommended_approach": "NO_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "6A": {
       "score": -4,
       "signal": "BEARISH",
-      "confidence": 5
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "6J": {
       "score": 0,
       "signal": "NEUTRAL",
-      "confidence": 6
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     }
   },
   "asset_class_bias": {
@@ -61,7 +91,8 @@
   "key_drivers": [
     "US-Iran war driving oil price surge (~$90/bbl) and elevated geopolitical risk premium",
     "VIX +24% to 29.49 signals broad risk-off; MOVE index +9% to 81.26 signals rate vol spike",
-    "Real yields flat at 1.788% (CNBC fallback); DXY 5-day rising trend pressuring commodities and FX"
+    "Real yields flat at 1.788% (CNBC fallback); DXY 5-day rising trend pressuring commodities and FX",
+    "RBA hawkish hike to 3.85% offset by risk-off and China PMI contraction (NBS 49.0%)"
   ],
   "data_quality": {
     "stale_sources": [
@@ -71,5 +102,21 @@
       "CNBC US10YTIP for 10Y real yields (1.788% at 5:05PM EST Mar 6)"
     ],
     "notes": "HY OAS assessed as WIDENING based on VIX +24% proxy; NBS China PMI 49.0 used over S&P Global 52.1"
+  },
+  "methodology_version": "3.0_STRATEGY",
+  "catalyst_proximity": {
+    "imminent": [
+      "US-Iran war developments (ongoing)",
+      "EIA Weekly Petroleum Report (Mar 11)",
+      "US CPI February (~Mar 12)"
+    ],
+    "near_term": [
+      "FOMC Meeting (Mar 18-19)",
+      "BoJ Policy Meeting (March 2026)"
+    ],
+    "background": [
+      "China NPC Economic Targets (Mar 5-15)",
+      "OPEC+ production hike effective April"
+    ]
   }
 }
