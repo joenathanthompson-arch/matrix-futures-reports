@@ -1,6 +1,6 @@
 # Executive Summary - 2026-03-08 07:38 EDT
 
-## Data Quality Notes
+---
 
 Two FRED series are lagged by 1-2 business days (standard for FRED weekend data), both confirmed via real-time fallbacks:
 
@@ -11,7 +11,7 @@ All other data sourced from Yahoo Finance, CME FedWatch, Atlanta Fed GDPNow, EIA
 
 ---
 
-## Asset Class Overview
+Global markets remain in a risk-off posture following the US-Israeli strikes on Iran on February 28, 2026, which have disrupted approximately 20% of global crude and natural gas supply. Safe haven assets (gold, JPY) are bid, while equities and risk-sensitive currencies (AUD) face headwinds. The VIX spiked to 29.49 (+24% on March 6), WTI crude is near $90.90 (Apr contract) and approaching $100/bbl, and the Fed remains on hold with a 96.3% probability of no change at the March 18-19 FOMC meeting. The dominant macro theme is geopolitical risk premium across energy and safe havens, partially offset by China PMI contraction (49.0) limiting commodity upside.
 
 - **Commodities:** MIXED — Crude oil is strongly bullish on Iran/Hormuz supply shock (+22% WoW), but gold and silver are slight bearish as rising real yields and USD strength offset safe-haven demand.
 - **Indices:** MIXED — Nasdaq is bearish (rising real yields + falling semis + rising rate vol), while Dow and Russell are slight bullish on narrowing credit spreads and growth narrative. S&P 500 is slight bearish.
@@ -19,7 +19,7 @@ All other data sourced from Yahoo Finance, CME FedWatch, Atlanta Fed GDPNow, EIA
 
 ---
 
-## Symbol Analysis
+## Asset Class Summary
 
 **GC (Gold):** Gold scores −3 (SLIGHT_BEARISH, confidence 8/10). The dominant headwind is rising real yields — the 10Y TIPS yield rose +6.8bps week-over-week to 1.788%, directly suppressing gold's opportunity cost advantage. A strengthening USD (DXY +1.28% WoW to 98.86) compounds the pressure. While the Iran conflict and VIX surge to 29.49 provide safe-haven support, gold ETFs saw their largest daily outflow in years on March 4 as investors took profits after gold's run to $5,294 on March 2. The oil supply shock factor is a mild positive. Net result: macro headwinds outweigh safe-haven tailwinds. Recommended approach: FADE_RALLIES or WAIT (8/10 conviction on bearish bias, but high volatility warrants caution on entry timing).
 
@@ -53,7 +53,7 @@ All other data sourced from Yahoo Finance, CME FedWatch, Atlanta Fed GDPNow, EIA
 
 ---
 
-## Watch List
+4. **China PMI Contraction Limiting Commodity Upside**: China's official manufacturing PMI fell to 49.0 in February (4-month low), limiting the upside for AUD and industrial metals (copper). This creates a divergence within commodities — energy (oil) and precious metals (gold) are bid on geopolitical/safe haven demand, while industrial metals face China demand headwinds.
 
 The following upcoming events could materially shift the bias scores:
 
