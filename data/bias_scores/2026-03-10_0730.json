@@ -1,0 +1,135 @@
+{
+  "date": "2026-03-10",
+  "generated_at": "2026-03-10T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 5,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 5,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "NQ": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "YM": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 4,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "M6E": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "MIXED",
+    "INDICES": "BEARISH",
+    "FX": "MIXED"
+  },
+  "key_drivers": [
+    "Rising Real Yields (10Y TIPS 1.80%, up ~15bps weekly) crushing risk assets and gold",
+    "US-Iran Military Conflict driving extreme risk-off (VIX 31.77, 98th percentile)",
+    "Weak US Growth (GDPNow 2.1%, NFP -92K Feb) supporting safe-haven flows to JPY",
+    "BoJ Hawkish Tightening (0.75%, 30-year high) driving structural JPY strength",
+    "Massive Gold ETF Outflows ($4.5B week) offsetting geopolitical safe-haven demand for GC/SI"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "EIA Weekly (data through Feb 27, next release Mar 11)",
+      "GDPNow (last updated Mar 6, next update Mar 12)"
+    ],
+    "fallbacks_used": [
+      "VIX from Investing.com historical data (31.77 as of Mar 9)",
+      "DXY from FXStreet/CoinDesk (~98.5-99.0)",
+      "Gold ETF flows from ETFAction/BullionVault (-$4.5B weekly)",
+      "SOX from Yahoo Finance/MacroMicro (7,810.40 as of Mar 9)",
+      "MOVE from Reuters/StreetStats (81.26 as of Mar 6)"
+    ],
+    "overnight_changes": [
+      "Oil reversed sharply (-7-10%) after Trump signals Iran war de-escalation",
+      "VIX elevated at 31.77 (up 83% from month ago, 98th percentile)",
+      "USD/JPY declining to 157.54 on BoJ hawkish signals and Japan GDP beat",
+      "US futures little changed as oil declines on de-escalation hopes"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "US CPI (February) - March 11, 2026 (TOMORROW - critical for all instruments)",
+      "EIA Weekly Petroleum Report - March 11, 2026"
+    ],
+    "near_term": [
+      "FOMC Meeting - March 18-19, 2026 (97% probability hold)",
+      "BoJ Policy Meeting - March 18-19, 2026 (hold expected, April hike on table)",
+      "RBA Rate Decision - March 17, 2026 (39% probability of hike to 4.10%)"
+    ],
+    "background": [
+      "BoJ continuing tightening cycle (0.75%, 30-year high, April hike on table)",
+      "ECB holding at 2.00% with hawkish tilt emerging (energy shock)",
+      "Iran War Resolution - Unknown timeline (Trump signals imminent end)",
+      "US tariff regime weighing on global growth and trade"
+    ]
+  }
+}
