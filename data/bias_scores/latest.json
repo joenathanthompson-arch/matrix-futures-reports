@@ -97,30 +97,126 @@
     "CPI Report Due Today (March 11): Pre-event uncertainty suppressing conviction"
   ],
   "macro_factors": {
-    "fed_stance": {"input": "Neutral hold", "raw_score": 0, "source": "CME FedWatch - 99.4% probability of no change at March 18-19 FOMC"},
-    "real_yields": {"input": "Falling (Down >5bps)", "raw_score": 2, "source": "FRED DFII10 - 1.78% as of 2026-03-09, down from ~2.1%"},
-    "dxy": {"input": "Flat", "raw_score": 0, "source": "TradingView TVC-DXY - 98.979, +0.06% on day"},
-    "vix_level": {"input": "Risk-off (VIX >20)", "raw_score": 1, "source": "CBOE - VIX at 25.22 as of March 11, 2026"},
-    "vix_direction": {"input": "Rising", "raw_score": -1, "source": "CBOE - VIX up from 24.93 prev close, trending higher"},
-    "gdpnow": {"input": "Slowing", "raw_score": 1, "source": "Atlanta Fed GDPNow - 2.1% Q1 2026 estimate (Mar 6), revised down"},
-    "credit_spreads": {"input": "Widening", "raw_score": -1, "source": "FRED BAMLH0A0HYM2 - HY OAS at 3.19% as of 2026-03-09, up from ~2.5%"},
-    "sox": {"input": "Flat", "raw_score": 0, "source": "TradingView NASDAQ:SOX - 7865.12, 5-day: -0.14%"},
-    "move": {"input": "Rising", "raw_score": -1, "source": "TradingView TVC:MOVE - 76.33, 5-day: +9.0%, 1-month: +22.81%"},
-    "yield_curve_2s10s": {"input": "Steepening", "raw_score": 1, "source": "FRED T10Y2Y - 0.58% as of 2026-03-10, up from ~0.40%"},
-    "copper": {"input": "Flat", "raw_score": 0, "source": "TradingEconomics - $5.81/lb, 1-month: +0.41%"},
-    "gold_etf_flows": {"input": "Outflows", "raw_score": -1, "source": "Bloomberg/SeekingAlpha - GLD saw $4.58B outflows week of Mar 9"},
-    "oil_inventories": {"input": "Build", "raw_score": -1, "source": "EIA - crude inventories rose +3.48M bbl week ending Feb 27, 2026"},
-    "geopolitical_risk": {"input": "Rising", "raw_score": 1, "source": "Multiple news sources - Middle East escalation, Strait of Hormuz concerns"},
-    "oil_supply": {"input": "Tightening/Disruption", "raw_score": 1, "source": "Geopolitical risk to Strait of Hormuz, OPEC+ discipline"},
-    "ecb_stance": {"input": "Neutral hold", "raw_score": 0, "source": "ECB/Reuters - expected to hold at 2.00% at March meeting, but hawkish tilt"},
-    "eur_rate_differential": {"input": "Widening vs USD", "raw_score": 1, "source": "ECB hawkish tilt vs Fed hold - markets pricing ECB hike in 2026"},
-    "eurozone_growth": {"input": "Stable", "raw_score": 0, "source": "Eurozone manufacturing PMI 50.8, services PMI 51.8 in Feb 2026"},
-    "rba_stance": {"input": "Hawkish/Tightening", "raw_score": 1, "source": "Bloomberg/Westpac - 75% probability of 25bp RBA hike on March 17"},
-    "aud_rate_differential": {"input": "Widening vs USD", "raw_score": 1, "source": "RBA hiking to 4.1% while Fed holds at 3.50-3.75%"},
-    "risk_sentiment_aud": {"input": "Risk-off", "raw_score": -1, "source": "VIX at 25.22, Middle East tensions"},
-    "china_growth": {"input": "Stable", "raw_score": 0, "source": "China mfg PMI 49.0 (Feb, contracting) but S&P Global PMI improving; net stable"},
-    "boj_stance": {"input": "Hawkish/Tightening", "raw_score": 1, "source": "BoJ Governor Ueda hawkish, rate at 0.75%, hike to 1.00% expected by June"},
-    "jpy_rate_differential": {"input": "Widening vs USD", "raw_score": 1, "source": "BoJ hiking cycle while Fed holds - JPY-USD differential narrowing (bullish JPY)"}
+    "fed_stance": {
+      "input": "Neutral hold",
+      "raw_score": 0,
+      "source": "CME FedWatch - 99.4% probability of no change at March 18-19 FOMC"
+    },
+    "real_yields": {
+      "input": "Falling (Down >5bps)",
+      "raw_score": 2,
+      "source": "FRED DFII10 - 1.78% as of 2026-03-09, down from ~2.1%"
+    },
+    "dxy": {
+      "input": "Flat",
+      "raw_score": 0,
+      "source": "TradingView TVC-DXY - 98.979, +0.06% on day"
+    },
+    "vix_level": {
+      "input": "Risk-off (VIX >20)",
+      "raw_score": 1,
+      "source": "CBOE - VIX at 25.22 as of March 11, 2026"
+    },
+    "vix_direction": {
+      "input": "Rising",
+      "raw_score": -1,
+      "source": "CBOE - VIX up from 24.93 prev close, trending higher"
+    },
+    "gdpnow": {
+      "input": "Slowing",
+      "raw_score": 1,
+      "source": "Atlanta Fed GDPNow - 2.1% Q1 2026 estimate (Mar 6), revised down"
+    },
+    "credit_spreads": {
+      "input": "Widening",
+      "raw_score": -1,
+      "source": "FRED BAMLH0A0HYM2 - HY OAS at 3.19% as of 2026-03-09, up from ~2.5%"
+    },
+    "sox": {
+      "input": "Flat",
+      "raw_score": 0,
+      "source": "TradingView NASDAQ:SOX - 7865.12, 5-day: -0.14%"
+    },
+    "move": {
+      "input": "Rising",
+      "raw_score": -1,
+      "source": "TradingView TVC:MOVE - 76.33, 5-day: +9.0%, 1-month: +22.81%"
+    },
+    "yield_curve_2s10s": {
+      "input": "Steepening",
+      "raw_score": 1,
+      "source": "FRED T10Y2Y - 0.58% as of 2026-03-10, up from ~0.40%"
+    },
+    "copper": {
+      "input": "Flat",
+      "raw_score": 0,
+      "source": "TradingEconomics - $5.81/lb, 1-month: +0.41%"
+    },
+    "gold_etf_flows": {
+      "input": "Outflows",
+      "raw_score": -1,
+      "source": "Bloomberg/SeekingAlpha - GLD saw $4.58B outflows week of Mar 9"
+    },
+    "oil_inventories": {
+      "input": "Build",
+      "raw_score": -1,
+      "source": "EIA - crude inventories rose +3.48M bbl week ending Feb 27, 2026"
+    },
+    "geopolitical_risk": {
+      "input": "Rising",
+      "raw_score": 1,
+      "source": "Multiple news sources - Middle East escalation, Strait of Hormuz concerns"
+    },
+    "oil_supply": {
+      "input": "Tightening/Disruption",
+      "raw_score": 1,
+      "source": "Geopolitical risk to Strait of Hormuz, OPEC+ discipline"
+    },
+    "ecb_stance": {
+      "input": "Neutral hold",
+      "raw_score": 0,
+      "source": "ECB/Reuters - expected to hold at 2.00% at March meeting, but hawkish tilt"
+    },
+    "eur_rate_differential": {
+      "input": "Widening vs USD",
+      "raw_score": 1,
+      "source": "ECB hawkish tilt vs Fed hold - markets pricing ECB hike in 2026"
+    },
+    "eurozone_growth": {
+      "input": "Stable",
+      "raw_score": 0,
+      "source": "Eurozone manufacturing PMI 50.8, services PMI 51.8 in Feb 2026"
+    },
+    "rba_stance": {
+      "input": "Hawkish/Tightening",
+      "raw_score": 1,
+      "source": "Bloomberg/Westpac - 75% probability of 25bp RBA hike on March 17"
+    },
+    "aud_rate_differential": {
+      "input": "Widening vs USD",
+      "raw_score": 1,
+      "source": "RBA hiking to 4.1% while Fed holds at 3.50-3.75%"
+    },
+    "risk_sentiment_aud": {
+      "input": "Risk-off",
+      "raw_score": -1,
+      "source": "VIX at 25.22, Middle East tensions"
+    },
+    "china_growth": {
+      "input": "Stable",
+      "raw_score": 0,
+      "source": "China mfg PMI 49.0 (Feb, contracting) but S&P Global PMI improving; net stable"
+    },
+    "boj_stance": {
+      "input": "Hawkish/Tightening",
+      "raw_score": 1,
+      "source": "BoJ Governor Ueda hawkish, rate at 0.75%, hike to 1.00% expected by June"
+    },
+    "jpy_rate_differential": {
+      "input": "Widening vs USD",
+      "raw_score": 1,
+      "source": "BoJ hiking cycle while Fed holds - JPY-USD differential narrowing (bullish JPY)"
+    }
   },
   "data_quality": {
     "stale_sources": [
