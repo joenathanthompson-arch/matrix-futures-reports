@@ -1,0 +1,130 @@
+{
+  "date": "2026-03-17",
+  "generated_at": "2026-03-17T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "ES": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "NQ": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "YM": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "M6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "NEUTRAL",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "US-Iran War: Strait of Hormuz disruption driving WTI crude to ~$97/bbl (+40% from pre-conflict)",
+    "Safe-Haven Demand: Gold at record $5,012/oz with record ETF inflows ($180B+ AUM)",
+    "Risk-Off Environment: VIX at 23.5 (elevated), credit spreads widening to 3.28%",
+    "Central Bank Divergence: RBA hawkish hike to 4.1%, BoJ hawkish hold at 0.75%",
+    "GDPNow 2.7% Q1 2026: US growth accelerating despite geopolitical headwinds"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "DFII10 (2026-03-13, 4 days old)",
+      "BAMLH0A0HYM2 (2026-03-13, 4 days old)"
+    ],
+    "fallbacks_used": [
+      "VIX from CBOE real-time",
+      "DXY from multiple sources ~100"
+    ],
+    "overnight_changes": [
+      "RBA hiked 25bps to 4.1% (March 17)",
+      "Oil +4% on renewed Iran attacks on UAE"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "FOMC Meeting March 31 (99.1% hold probability)",
+      "BoJ Meeting March 18-19 (hawkish hold expected)",
+      "ECB Meeting (holding at 2.0%)"
+    ],
+    "near_term": [
+      "Iran-US conflict escalation/de-escalation",
+      "EIA Weekly Oil Inventory Report (Wednesday)",
+      "US CPI data"
+    ],
+    "background": [
+      "BoJ hawkish stance - inflation rising toward 2% target",
+      "RBA hiking cycle resumed (second consecutive hike)",
+      "ECB holding through 2026-2027"
+    ]
+  }
+}
