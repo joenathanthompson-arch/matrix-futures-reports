@@ -1,0 +1,31 @@
+{
+  "date": "2026-03-18",
+  "generated_at": "2026-03-18T07:58:00Z",
+  "scores": {
+    "GC": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "SI": {"score": -1, "signal": "NEUTRAL", "confidence": 5},
+    "CL": {"score": 3, "signal": "BULLISH", "confidence": 8},
+    "ES": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "NQ": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "YM": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
+    "RTY": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
+    "M6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6},
+    "6A": {"score": -4, "signal": "BEARISH", "confidence": 7},
+    "6J": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "BEARISH"
+  },
+  "key_drivers": [
+    "Iran war driving WTI crude to $90.77 with geopolitical supply disruption (+3.8M barrel EIA build is a bearish counterpoint but structural disruption dominates); stagflation risk elevated",
+    "FOMC decision today (March 18) — near-certain hold at 3.50-3.75% (98.1% per CME FedWatch); dot plot expected to signal fewer 2026 cuts amid oil shock; VIX falling from 22.37 to 22.03 pre-open",
+    "RBA back-to-back hike to 4.1% (March 17) offset by China official PMI contraction (49.0 in February) and risk-off environment; AUD scores BEARISH (-4) as commodity-currency headwinds dominate"
+  ],
+  "data_quality": {
+    "stale_sources": ["FRED DFII10 (last updated 2026-03-16, 1 business day lag — acceptable; scored as FLAT at 1.87% ±5bps)", "FRED BAMLH0A0HYM2 (last updated 2026-03-16, 1 business day lag — scored as WIDENING at 3.27%)", "Atlanta Fed GDPNow (last updated 2026-03-13 — next update March 19; scored as SLOWING at 2.7%)"],
+    "fallbacks_used": ["TradingView HG1! for copper ($5.7145/lb, -0.79% on March 17) — Investing.com blocked by policy", "News sources (Reuters, Bloomberg, Yahoo Finance, ABC News) for Fed/ECB/RBA/BoJ stance verification", "TradingView NASDAQ:SOX for semiconductor index (7,836.83, +0.52% on March 17)", "TradingView TVC:MOVE for MOVE index (79.23, -7.06% on March 17)", "EIA weekly highlights PDF for official inventory data (week ending March 6, 2026)"],
+    "notes": "Report generated at 0758 EST on March 18, 2026 — pre-FOMC decision session. VIX direction scored as FALLING (22.37 → 22.03 pre-open, -1.52%). MOVE direction scored as FALLING (-7.06% on March 17). EIA official inventory data is from week ending March 6 (crude +3.8M barrel build); API data for week ending March 14 showed +6.56M build (per prior report). Gold ETF flows: Commerzbank and JPMorgan both noted ETF outflows since Iran war began; gold price ~$5,004-5,010/oz. EUR/USD at ~1.1480 (down from 2026 high of 1.2080). AUD/USD at ~0.7060 (rebounding from RBA hike). USD/JPY at ~158-159. BoJ holding steady; ECB holding at 2.0%. Pre-FOMC Day 2 uncertainty reduces confidence by 1 point on rate-sensitive instruments (ES, NQ, YM, RTY, M6E, 6J)."
+  }
+}
