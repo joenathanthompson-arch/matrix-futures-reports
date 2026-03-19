@@ -1,44 +1,44 @@
 {
   "date": "2026-03-19",
-  "generated_at": "2026-03-19T12:30:00Z",
+  "generated_at": "2026-03-19T07:30:00Z",
   "methodology_version": "3.0_STRATEGY",
   "scores": {
     "GC": {
+      "score": 6,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
       "score": 2,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 7,
+      "confidence": 4,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
-    "SI": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 6,
-      "recommended_approach": "RANGE_TRADE",
+    "CL": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
-    "CL": {
+    "ES": {
       "score": 2,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 9,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-3 days"
-    },
-    "ES": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 8,
+      "confidence": 5,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "NQ": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 8,
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
       "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
@@ -46,39 +46,39 @@
     "YM": {
       "score": 0,
       "signal": "NEUTRAL",
-      "confidence": 6,
+      "confidence": 4,
       "recommended_approach": "RANGE_TRADE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "RTY": {
       "score": -1,
-      "signal": "NEUTRAL",
-      "confidence": 7,
-      "recommended_approach": "RANGE_TRADE",
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 4,
+      "recommended_approach": "IB_BREAKOUT",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
     "6E": {
       "score": -3,
-      "signal": "SLIGHT_BEARISH",
+      "signal": "BEARISH",
       "confidence": 7,
       "recommended_approach": "TREND_FOLLOW",
       "recommended_mode": "SWING",
       "hold_expectation": "1-2 days"
     },
     "6A": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
+      "score": -4,
+      "signal": "BEARISH",
       "confidence": 7,
-      "recommended_approach": "RANGE_TRADE",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "6J": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 7,
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
       "recommended_approach": "RANGE_TRADE",
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
@@ -86,48 +86,49 @@
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",
-    "INDICES": "MIXED",
-    "FX": "BEARISH"
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "SLIGHT_BEARISH"
   },
   "key_drivers": [
-    "Iran attacks Qatar energy hub — Brent crude surges to $114-116 (+8%), sustaining geopolitical risk premium in CL and GC",
-    "Fed hawkish hold (11-1 vote, March 18): raised 2026 PCE forecast to 2.7%, ~48% probability of NO cut in 2026 — headwind for indices",
-    "Real yields FLAT at 1.83% (FRED DFII10, Mar 17) — neutral for GC/NQ vs prior bullish tailwind",
-    "VIX surging to 25.9 (+12.2%) on war escalation — risk-off environment weighing on indices and FX",
-    "ECB held 2.00%, BoJ held 0.75% — rate differentials continue to favor USD, all FX pairs bearish"
+    "Iran War Geopolitical Premium: WTI crude at $96.62, gold at $4,802 (record high), VIX rising to 26.02",
+    "Falling Real Yields (DFII10 1.92%→1.83%, -9bps): Primary bullish tailwind for GC and equities",
+    "Strong USD (DXY 100.12, +3.10% 1-month): Headwind for all FX pairs and commodities",
+    "ECB held at 2.00% today (hawkish tone), BoJ held at 0.75% — rate differentials favor USD",
+    "RBA hiked to 4.10% but AUD/USD bearish: China PMI 49.0 (2nd contraction month) + risk-off overwhelm"
   ],
   "data_quality": {
     "stale_sources": [
-      "GDPNow (Mar 13, 6 days old — next update expected today)",
-      "DFII10 (Mar 17, 2 days old — acceptable per staleness protocol)"
+      "DFII10 real yields (Mar 17 data, 2 days old — CNBC US10YTIP confirms same level 1.83%)",
+      "GDPNow (Mar 13, 6 days old — next update expected Mar 19)"
     ],
     "fallbacks_used": [
-      "Reuters/Bloomberg for VIX level (25.09-25.91), DXY (100.125), Brent crude ($114-116)",
-      "Reuters/Bloomberg for ECB/BoJ/RBA stances (all confirmed today Mar 19)",
-      "News sources for Iran war escalation and Qatar energy hub attack"
+      "Gold ETF flows: WGC February 2026 monthly data (most recent available)",
+      "MOVE index: 79.23 (Mar 17 data from investing.com)"
     ],
     "overnight_changes": [
-      "Iran attacks Qatar energy hub — Brent crude surges 8% to $114-116 (NEW since 0230 report)",
-      "VIX rose from 22.37 to 25.09-25.91 (+12.2%) — risk-off intensifying",
-      "Gold declined further from $4,802 to ~$4,685-4,830 range on post-FOMC selling",
-      "BoJ held at 0.75% as expected (confirmed this morning)",
-      "ECB held at 2.00% as expected (confirmed this morning)"
+      "ECB held rates at 2.00% as expected (announced Mar 19, hawkish tone on energy inflation)",
+      "BoJ held rates at 0.75% as expected (announced Mar 19, April hike on table but not confirmed)",
+      "VIX rose from 25.09 to 26.02 (+3.71%) in morning session",
+      "DXY: 100.12 (-0.11% today, but +3.10% 1-month trend remains bullish USD)",
+      "NQ upgraded to BULLISH (+4): MOVE index fell from 81.25 to 79.23 (rate vol easing)",
+      "6A downgraded to BEARISH (-4): China PMI 49.0 (2nd consecutive contraction month) double-weighted",
+      "6J moved to NEUTRAL (0): BoJ neutral hold (not hawkish), rate differential stable"
     ]
   },
   "catalyst_proximity": {
     "imminent": [
-      "Iran War Developments (ongoing — Qatar energy hub attack is today's dominant catalyst)",
-      "GDPNow Q1 2026 Update (expected today, Mar 19)"
+      "ECB Press Conference (March 19, 2026 - TODAY, ongoing)",
+      "Iran Response to US Strikes (imminent geopolitical risk)"
     ],
     "near_term": [
-      "EIA Weekly Petroleum Report (Mar 25, 2026)",
-      "NFP (Apr 3, 2026)",
-      "FOMC Minutes (Apr 8, 2026)"
+      "EIA Weekly Petroleum Report (March 25, 2026)",
+      "NFP (April 3, 2026)",
+      "FOMC Meeting (April 30, 2026)"
     ],
     "background": [
-      "BoJ June hike expectations building (Takata proposed 1.00%)",
-      "Iran war ceasefire negotiations — any progress = risk-on shift",
-      "Oil supply disruption risk from Strait of Hormuz"
+      "BoJ April rate hike possibility (April 30, 2026)",
+      "China PMI March data (end of March 2026)",
+      "US Q1 GDP first estimate (late April 2026)"
     ]
   }
 }
