@@ -1,0 +1,37 @@
+{
+  "date": "2026-03-20",
+  "generated_at": "2026-03-20T07:45:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "SI": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 4, "signal": "BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "ES": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 0, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6E": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6A": {"score": -4, "signal": "BEARISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 4, "signal": "BULLISH", "confidence": 8, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "NEUTRAL",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "Iran war driving massive oil supply shock (~12M bpd disruption) and broad risk-off sentiment (VIX > 24)",
+    "Hawkish central bank repricing (Fed dot plot shows only 1 cut, ECB raised inflation forecast, BoJ hawkish lean)",
+    "Real yields flattening but elevated, weighing on equities alongside widening credit spreads (HY OAS ~327bp)"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": ["TradingView for DXY, VIX, MOVE, SOX, Copper", "CNBC/Treasury for Real Yields"],
+    "overnight_changes": ["Netanyahu agrees to hold off on gas field attacks, slightly easing immediate oil supply panic"]
+  },
+  "catalyst_proximity": {
+    "imminent": ["Ongoing Iran war developments"],
+    "near_term": ["April central bank meetings (ECB, BoJ potential hikes)"],
+    "background": ["China economic slowdown (PMI 49.0)"]
+  }
+}
