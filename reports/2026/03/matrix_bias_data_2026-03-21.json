@@ -1,6 +1,6 @@
 {
   "date": "2026-03-21",
-  "generated_at": "2026-03-21T07:30:00Z",
+  "generated_at": "2026-03-21T11:38:23Z",
   "methodology_version": "3.0_STRATEGY",
   "scores": {
     "GC": {
@@ -59,7 +59,7 @@
       "recommended_mode": "INTRADAY",
       "hold_expectation": "session"
     },
-    "6E": {
+    "M6E": {
       "score": 0,
       "signal": "NEUTRAL",
       "confidence": 6,
@@ -91,10 +91,10 @@
   },
   "key_drivers": [
     "US-Iran War Geopolitical Risk (oil supply disruption, VIX spike to 26.78)",
-    "Real Yields Falling (DFII10 at 1.88%, supporting gold and safe-haven assets)",
+    "Real Yields Falling (DFII10 at 1.88%, supporting gold and growth assets)",
     "Risk-Off Environment (MOVE index +58% in 1 month, credit spreads widening to 3.27%)",
-    "BoJ Hawkish Hold (0.75%, April hike on table, JPY strengthening vs USD)",
-    "RBA Hawkish Hike (4.10%), offset by China PMI contraction (49.3) weighing on AUD"
+    "BoJ Hawkish Hold (0.75%, April hike on table, JPY strengthening)",
+    "RBA Hawkish Hike (4.10%, but China PMI 49.3 contraction weighing on AUD)"
   ],
   "data_quality": {
     "stale_sources": [],
@@ -102,26 +102,24 @@
       "Gold ETF flows estimated from price action (World Gold Council not accessed)"
     ],
     "overnight_changes": [
-      "MOVE index spiked +28% on March 20 (bond volatility surge post-ECB/BoJ)",
+      "MOVE index spiked +28% on March 20 (bond volatility surge)",
       "VIX spiked +11.31% to 26.78 on March 20",
-      "Gold fell to $4,643 from recent highs above $5,000 (position liquidation)",
-      "Copper down -1.73% on March 20, -7.02% over 1 month"
+      "Gold fell to $4,643 from recent highs above $5,000"
     ]
   },
   "catalyst_proximity": {
     "imminent": [
-      "EIA Weekly Petroleum Report (March 25, 2026)",
-      "Iran war escalation/de-escalation risk (ongoing)"
+      "FOMC Meeting (April 30, 2026 - 39 days away)",
+      "EIA Weekly Petroleum Report (March 25, 2026)"
     ],
     "near_term": [
-      "ECB potential rate hike discussion (April meeting)",
-      "BoJ April rate hike possibility",
-      "US Q1 GDP advance estimate (late April)"
+      "Iran war escalation/de-escalation risk",
+      "ECB potential rate hike discussion (April meeting)"
     ],
     "background": [
-      "FOMC Meeting (April 30, 2026)",
+      "BoJ April rate hike possibility",
       "China PMI recovery or further contraction",
-      "Strait of Hormuz shipping disruption risk"
+      "US Q1 GDP final estimate"
     ]
   }
 }
