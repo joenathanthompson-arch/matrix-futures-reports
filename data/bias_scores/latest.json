@@ -1,37 +1,107 @@
 {
   "date": "2026-03-22",
-  "generated_at": "2026-03-22T02:40:00Z",
+  "generated_at": "2026-03-22T07:30:00Z",
   "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "SI": {"score": -1, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "CL": {"score": 3, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
-    "ES": {"score": -1, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "NQ": {"score": -1, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "YM": {"score": 0, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "RTY": {"score": -1, "signal": "NEUTRAL", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "6E": {"score": 0, "signal": "NEUTRAL", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "6A": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
-    "6J": {"score": 0, "signal": "NEUTRAL", "confidence": 5, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"}
+    "GC": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6A": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    }
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",
-    "INDICES": "NEUTRAL",
-    "FX": "NEUTRAL"
+    "INDICES": "SLIGHT_BULLISH",
+    "FX": "BEARISH"
   },
   "key_drivers": [
-    "US-Israeli war against Iran (Day 25) driving oil supply disruption risk; Brent >$90/bbl with Strait of Hormuz risk elevated",
-    "Real yields FLAT week-over-week (DFII10 1.88%, -4bps vs Mar 13) — key shift from prior RISING assessment; equity bias upgrades to NEUTRAL",
-    "VIX at 26.78 and MOVE at 108.84 (both rising) signal persistent risk-off; gold ETF outflows ($6.3bn GLD in March) and falling copper (-7.58%) weigh on metals"
+    "Geopolitical Risk (US-Iran tensions supporting oil and gold)",
+    "Falling Real Yields (10Y TIPS down to 1.88%, bullish for risk assets and gold)",
+    "Dovish/Hawkish Divergence (RBA hikes to 4.10% while ECB and Fed hold)"
   ],
   "data_quality": {
-    "stale_sources": ["DFII10 (last updated 2026-03-19, 3 days old — confirmed via TradingView at 1.88% +0.02)", "BAMLH0A0HYM2 (last updated 2026-03-19)", "T10Y2Y (last updated 2026-03-20)"],
-    "fallbacks_used": ["TradingView FRED-DFII10 for real yields confirmation (1.88% +0.02)", "CBOE VIX (Mar 20 close 26.78)", "Investing.com MOVE (Mar 20 close 108.84)", "TradingView SOX (~7,670 Mar 21-22)", "BullionVault/Threads for gold ETF flows (GLD -$6.3bn March)", "Reuters for EIA inventory (week ending Mar 13, +6.2M barrels)"],
-    "overnight_changes": ["Real yields revised to FLAT from RISING: DFII10 week-over-week -4bps (1.92% Mar 13 to 1.88% Mar 19) is within ±5bps threshold"]
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": []
   },
   "catalyst_proximity": {
-    "imminent": ["EIA Weekly Petroleum Status Report (Mar 25, data for week ending Mar 20) — critical for CL bias"],
-    "near_term": ["FRED DFII10 real yield update (Mar 23) — confirm direction", "FOMC Meeting (Apr 30) — 93.8% probability hold"],
-    "background": ["Iran war ceasefire negotiations — any de-escalation would sharply reverse CL and GC biases", "BoJ communication — any explicit hike signal would shift 6J from NEUTRAL to BULLISH"]
+    "imminent": ["Geopolitical developments in Middle East"],
+    "near_term": ["Next FOMC Meeting Apr 30"],
+    "background": ["BoJ hawkish tilt", "China growth slowing"]
   }
 }
