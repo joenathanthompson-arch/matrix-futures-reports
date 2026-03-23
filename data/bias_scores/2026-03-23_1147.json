@@ -1,6 +1,6 @@
 {
   "date": "2026-03-23",
-  "generated_at": "2026-03-23T11:48:51Z",
+  "generated_at": "2026-03-23T11:47:48Z",
   "methodology_version": "3.0_STRATEGY",
   "scores": {
     "GC": {
@@ -105,16 +105,13 @@
   },
   "catalyst_proximity": {
     "imminent": [
-      "US-Iran conflict developments",
-      "Flash PMI (Mar 24)",
-      "EIA Inventories (Mar 25)"
+      "US-Iran conflict developments"
     ],
     "near_term": [
-      "BoJ Decision (April)",
-      "FOMC Meeting (Apr 30)"
+      "EIA Inventory Data (Mar 25)"
     ],
     "background": [
-      "Fed higher-for-longer due to oil inflation"
+      "Fed 'higher-for-longer' due to oil inflation"
     ]
   }
 }
