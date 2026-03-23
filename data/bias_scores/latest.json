@@ -1,120 +1,76 @@
 {
   "date": "2026-03-23",
-  "generated_at": "2026-03-23T11:48:51Z",
-  "methodology_version": "3.0_STRATEGY",
+  "generated_at": "2026-03-23T21:58:00Z",
   "scores": {
     "GC": {
-      "score": 7,
-      "signal": "STRONG_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "2-5 days"
+      "score": -5,
+      "signal": "BEARISH",
+      "confidence": 7
     },
     "SI": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
+      "score": -3,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6
     },
     "CL": {
-      "score": 7,
-      "signal": "STRONG_BULLISH",
-      "confidence": 7,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "2-5 days"
-    },
-    "ES": {
-      "score": 5,
-      "signal": "STRONG_BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "2-5 days"
-    },
-    "NQ": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "YM": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "RTY": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "6E": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "6A": {
       "score": -2,
       "signal": "SLIGHT_BEARISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "confidence": 5
     },
-    "6J": {
+    "ES": {
+      "score": -3,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7
+    },
+    "NQ": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 7
+    },
+    "YM": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6
+    },
+    "RTY": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7
+    },
+    "M6E": {
       "score": 2,
       "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
+      "confidence": 6
+    },
+    "6A": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 8
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7
     }
   },
   "asset_class_bias": {
-    "COMMODITIES": "STRONG_BULLISH",
-    "INDICES": "BULLISH",
-    "FX": "MIXED"
+    "COMMODITIES": "BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "BULLISH"
   },
   "key_drivers": [
-    "Elevated Geopolitical Risk (US-Iran tensions, Hormuz threat)",
-    "Oil Supply Disruption Fears (WTI highly volatile, tight supply)",
-    "Risk-Off Environment (VIX elevated despite recent drop, safe-haven flows)"
+    "Rising real yields (+15bps to 2.01%) and surging MOVE index (+28% to 108.84) are primary headwinds for equities and gold",
+    "US-Iran war driving geopolitical risk; oil inventory surprise build (+6.2M bbls) and Trump halt to strikes creating CL volatility and bearish tilt",
+    "BoJ hawkish pivot and ECB hold supporting JPY and EUR vs USD; AUD undermined by China PMI contraction (49.0) and risk-off sentiment (VIX 26-27)"
   ],
   "data_quality": {
-    "stale_sources": [],
+    "stale_sources": [
+      "DFII10 (FRED, last update March 20)",
+      "BAMLH0A0HYM2 (FRED, last update March 20)"
+    ],
     "fallbacks_used": [
-      "TradingView for real-time DXY/VIX context"
-    ],
-    "overnight_changes": [
-      "Extreme oil price volatility on Iran news"
-    ]
-  },
-  "catalyst_proximity": {
-    "imminent": [
-      "US-Iran conflict developments",
-      "Flash PMI (Mar 24)",
-      "EIA Inventories (Mar 25)"
-    ],
-    "near_term": [
-      "BoJ Decision (April)",
-      "FOMC Meeting (Apr 30)"
-    ],
-    "background": [
-      "Fed higher-for-longer due to oil inflation"
+      "10Y nominal yield (~4.375%) used to confirm real yield direction",
+      "FRED March 20 HY OAS data used as most recent available"
     ]
   }
 }
