@@ -1,17 +1,18 @@
 {
   "date": "2026-03-24",
   "generated_at": "2026-03-24T17:38:00Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "SI": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6},
-    "CL": {"score": 4, "signal": "BULLISH", "confidence": 7},
-    "ES": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "NQ": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "YM": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "RTY": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5},
-    "M6E": {"score": 3, "signal": "BULLISH", "confidence": 6},
-    "6A": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7}
+    "GC": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "FADE_RANGE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "SI": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "CL": {"score": 4, "signal": "BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "ES": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "NQ": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "YM": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "M6E": {"score": 3, "signal": "BULLISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6A": {"score": -3, "signal": "BEARISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "2-5 days"}
   },
   "asset_class_bias": {
     "COMMODITIES": "MIXED",
@@ -26,5 +27,22 @@
   "data_quality": {
     "stale_sources": ["BAMLH0A0HYM2 (latest: 2026-03-23, 1 day lag)"],
     "fallbacks_used": ["TradingView for SOX and MOVE (primary Yahoo Finance unavailable)", "News research for gold ETF flows, geopolitical risk, central bank stances"]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "EIA Weekly Petroleum Report (Mar 25, 2026)",
+      "US-Iran conflict developments (ongoing)",
+      "Japan FX intervention risk (USD/JPY near 160)"
+    ],
+    "near_term": [
+      "FOMC Meeting (Apr 29-30, 2026)",
+      "BoJ April meeting (potential rate hike)",
+      "US Q1 GDP advance estimate"
+    ],
+    "background": [
+      "ECB hawkish pivot (3 hikes priced in for 2026)",
+      "RBA hiking cycle (4.10% - hawkish)",
+      "China PMI contraction (official 49.0)"
+    ]
   }
 }
