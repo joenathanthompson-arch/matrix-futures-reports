@@ -1,0 +1,11 @@
+Symbol,Name,Score,Signal,Confidence,AssetClass,KeyDrivers
+GC,Gold,-4,BEARISH,7,Commodities,Rising real yields (-2) | Outflows from Gold ETFs (-1) | Weak DXY (+1)
+SI,Silver,-2,SLIGHT_BEARISH,6,Commodities,Rising real yields (-1) | Falling copper (-1) | Weak DXY (+1)
+CL,WTI Crude,-2,SLIGHT_BEARISH,7,Commodities,EIA inventory build (-1) | Oversupply signals (-2) | Weak DXY (+1)
+ES,S&P 500,-4,BEARISH,7,Indices,Rising real yields (-4) | Widening credit spreads (-1) | Rising VIX (-1)
+NQ,Nasdaq 100,-2,SLIGHT_BEARISH,6,Indices,Rising real yields (-4) | Falling SOX (-1) | Falling MOVE (+1)
+YM,Dow Jones,-2,SLIGHT_BEARISH,6,Indices,Rising real yields (-2) | Widening credit spreads (-1) | Flattening 2s10s (-1)
+RTY,Russell 2000,-3,SLIGHT_BEARISH,7,Indices,Widening credit spreads (-2) | Rising real yields (-2) | Flattening 2s10s (-1)
+M6E,Micro Euro FX,-1,NEUTRAL,6,FX,Hawkish ECB (-1) | Narrowing EUR-USD rate diff (-2) | Weak DXY (+1)
+6A,Australian Dollar,0,NEUTRAL,6,FX,Hawkish RBA (+1) | Risk-off sentiment (-2) | Falling copper (-1)
+6J,Japanese Yen,6,STRONG_BULLISH,8,FX,Hawkish BoJ (+2) | Narrowing JPY-USD rate diff (+2) | Risk-off sentiment (+1)

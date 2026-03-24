@@ -1,0 +1,11 @@
+MATRIX MACRO BIAS ALERT - 2026-03-24 0735
+========================================
+
+COMMODITIES: BEARISH
+INDICES: BEARISH
+FX: MIXED
+
+TOP SIGNALS:
+- 6J (Japanese Yen): STRONG_BULLISH (Score: 6)
+- GC (Gold): BEARISH (Score: -4)
+- ES (S&P 500): BEARISH (Score: -4)

@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-03-24T0735:00Z",
+  "asset_class_bias": {
+    "Commodities": "BEARISH",
+    "Indices": "BEARISH",
+    "FX": "MIXED"
+  },
+  "instruments": [
+    {
+      "symbol": "GC",
+      "name": "Gold",
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Rising real yields (-2)",
+        "Outflows from Gold ETFs (-1)",
+        "Weak DXY (+1)"
+      ],
+      "asset_class": "Commodities"
+    },
+    {
+      "symbol": "SI",
+      "name": "Silver",
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "key_drivers": [
+        "Rising real yields (-1)",
+        "Falling copper (-1)",
+        "Weak DXY (+1)"
+      ],
+      "asset_class": "Commodities"
+    },
+    {
+      "symbol": "CL",
+      "name": "WTI Crude",
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "key_drivers": [
+        "EIA inventory build (-1)",
+        "Oversupply signals (-2)",
+        "Weak DXY (+1)"
+      ],
+      "asset_class": "Commodities"
+    },
+    {
+      "symbol": "ES",
+      "name": "S&P 500",
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Rising real yields (-4)",
+        "Widening credit spreads (-1)",
+        "Rising VIX (-1)"
+      ],
+      "asset_class": "Indices"
+    },
+    {
+      "symbol": "NQ",
+      "name": "Nasdaq 100",
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "key_drivers": [
+        "Rising real yields (-4)",
+        "Falling SOX (-1)",
+        "Falling MOVE (+1)"
+      ],
+      "asset_class": "Indices"
+    },
+    {
+      "symbol": "YM",
+      "name": "Dow Jones",
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "key_drivers": [
+        "Rising real yields (-2)",
+        "Widening credit spreads (-1)",
+        "Flattening 2s10s (-1)"
+      ],
+      "asset_class": "Indices"
+    },
+    {
+      "symbol": "RTY",
+      "name": "Russell 2000",
+      "score": -3,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "key_drivers": [
+        "Widening credit spreads (-2)",
+        "Rising real yields (-2)",
+        "Flattening 2s10s (-1)"
+      ],
+      "asset_class": "Indices"
+    },
+    {
+      "symbol": "M6E",
+      "name": "Micro Euro FX",
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "key_drivers": [
+        "Hawkish ECB (-1)",
+        "Narrowing EUR-USD rate diff (-2)",
+        "Weak DXY (+1)"
+      ],
+      "asset_class": "FX"
+    },
+    {
+      "symbol": "6A",
+      "name": "Australian Dollar",
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "key_drivers": [
+        "Hawkish RBA (+1)",
+        "Risk-off sentiment (-2)",
+        "Falling copper (-1)"
+      ],
+      "asset_class": "FX"
+    },
+    {
+      "symbol": "6J",
+      "name": "Japanese Yen",
+      "score": 6,
+      "signal": "STRONG_BULLISH",
+      "confidence": 8,
+      "key_drivers": [
+        "Hawkish BoJ (+2)",
+        "Narrowing JPY-USD rate diff (+2)",
+        "Risk-off sentiment (+1)"
+      ],
+      "asset_class": "FX"
+    }
+  ]
+}
