@@ -1,30 +1,37 @@
 {
   "date": "2026-03-25",
-  "generated_at": "2026-03-25T07:36:00Z",
+  "generated_at": "2026-03-25T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
-    "GC": {"score": -5, "signal": "BEARISH", "confidence": 6},
-    "SI": {"score": -1, "signal": "NEUTRAL", "confidence": 6},
-    "CL": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
-    "ES": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "NQ": {"score": -3, "signal": "SLIGHT_BEARISH", "confidence": 7},
-    "YM": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
-    "RTY": {"score": -1, "signal": "NEUTRAL", "confidence": 6},
-    "M6E": {"score": -4, "signal": "BEARISH", "confidence": 7},
-    "6A": {"score": -5, "signal": "BEARISH", "confidence": 7},
-    "6J": {"score": 0, "signal": "NEUTRAL", "confidence": 6}
+    "GC": {"score": -3, "signal": "BEARISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "SI": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "CL": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "NQ": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "YM": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6E": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 4, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": -3, "signal": "BEARISH", "confidence": 5, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 4, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"}
   },
   "asset_class_bias": {
     "COMMODITIES": "BEARISH",
-    "INDICES": "SLIGHT_BEARISH",
+    "INDICES": "BEARISH",
     "FX": "BEARISH"
   },
   "key_drivers": [
-    "Rising real yields (DFII10 +6bps to 2.01%) and hawkish Fed hold creating headwinds for equities and gold",
-    "Iran-Israel war driving geopolitical risk and oil volatility; ceasefire hopes causing sharp oil selloff today",
-    "Gold ETF outflows (-62 tonnes in 3 weeks) and widening HY credit spreads signal risk-off but not safe-haven buying"
+    "Rising Geopolitical Risk (Iran war and Hormuz closure)",
+    "Rising Real Yields (10Y TIPS up to ~2.01%)",
+    "Widening Credit Spreads (HY OAS up to 3.19%)"
   ],
   "data_quality": {
-    "stale_sources": ["DFII10", "BAMLH0A0HYM2", "EIA Weekly"],
-    "fallbacks_used": ["None, waiting for today's releases"]
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": ["Gold ETF outflows of $4.5B recorded", "API reported surprise 2.3M crude build"]
+  },
+  "catalyst_proximity": {
+    "imminent": ["EIA Weekly Inventory Report (March 25)"],
+    "near_term": ["US GDP Q4 Final (March 26)", "PCE Inflation (March 27)"],
+    "background": ["Ongoing US-Iran ceasefire negotiations"]
   }
 }

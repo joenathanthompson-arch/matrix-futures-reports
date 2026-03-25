@@ -1,41 +1,103 @@
-# Executive Summary - 2026-03-25
+# Matrix Futures Daily Bias Report
+**Date:** March 25, 2026 | **Time:** 07:30 UTC
 
-## Data Quality Notes
-FRED data for DFII10 (real yields) and BAMLH0A0HYM2 (HY credit spreads) are 1 business day old (March 23), awaiting today's release. EIA Weekly Petroleum Status Report data is 1 week old (week ending March 13), awaiting today's release. Confidence scores are adjusted accordingly.
+---
 
-## Asset Class Overview
-- **Commodities:** BEARISH - Rising real yields and persistent gold ETF outflows outweigh near-term geopolitical risk premiums. Oil is highly volatile amid conflicting war and ceasefire narratives.
-- **Indices:** SLIGHT_BEARISH - Hawkish Fed hold, rising real yields, and widening credit spreads present a challenging macro backdrop for equities, despite resilient growth data.
-- **FX:** BEARISH - The US Dollar remains supported by hawkish Fed policy and rising yields, maintaining downward pressure on major currency pairs, particularly those with dovish or less aggressive central banks.
+## Overall Market Bias: BEARISH
 
-## Symbol Analysis
+The macro environment is predominantly bearish across most asset classes, driven by the escalating geopolitical risks from the Iran war and the closure of the Strait of Hormuz. Rising real yields and widening credit spreads are putting significant pressure on equities and precious metals, while safe-haven flows and oil supply disruptions dominate the narrative.
 
-**GC (Gold):** Gold shows a bearish bias (-5), primarily driven by rising real yields (DFII10 up ~6bps to 2.01%) and a hawkish Fed hold. Persistent ETF outflows (-62 tonnes over the past three weeks) signal institutional distribution despite retail safe-haven demand. Although spot prices are up today on geopolitical headlines, the structural macro headwinds remain strong. Recommended approach: FADE_RALLIES (6/10).
+---
 
-**SI (Silver):** Silver presents a neutral bias (-1), caught between conflicting forces. While rising copper prices (+1.66% today) offer industrial support, the metal faces the same structural headwinds as gold: rising real yields and a hawkish Fed. The lack of clear directional conviction suggests range-bound trading. Recommended approach: MEAN_REVERSION (6/10).
+## Asset Class Summary
 
-**CL (Crude):** WTI Crude exhibits a neutral bias (0), reflecting extreme volatility driven by geopolitical whiplash. Prices plunged over 5% today on reports of a US-brokered 15-point ceasefire proposal for the Iran-Israel war, completely offsetting the structural supply risks and recent inventory builds (+6.2mb). The market is currently trading headlines rather than fundamentals. Recommended approach: NEUTRAL/SIDELINES (6/10).
+| Asset Class | Bias | Key Driver |
+|-------------|------|------------|
+| Commodities | BEARISH | Gold ETF outflows and rising real yields outweighing oil supply shock |
+| Indices | BEARISH | Widening credit spreads, rising yields, and geopolitical risk-off sentiment |
+| FX | BEARISH | Broad USD strength against risk currencies (AUD) and EUR weakness |
 
-**ES (S&P 500):** The S&P 500 indicates a slight bearish bias (-3), pressured by rising real yields and widening high-yield credit spreads (up to 3.19%). While the VIX has fallen back to ~25, the broader risk-off mood and hawkish Fed stance limit upside potential. Resilient growth data (GDPNow at 2.0%) provides a floor, preventing a deeper bearish score. Recommended approach: SELL_RALLIES (7/10).
+---
 
-**NQ (Nasdaq):** The Nasdaq 100 shows a slight bearish bias (-3), highly sensitive to the rising real yield environment and elevated rate volatility (MOVE index surging +26% over 5 days). While the semiconductor sector (SOX) remains resilient, the macro backdrop of higher-for-longer rates creates a challenging environment for long-duration tech assets. Recommended approach: SELL_RALLIES (7/10).
+## Highest Conviction Signals
 
-**YM (Dow):** The Dow Jones Industrial Average maintains a neutral bias (0). It benefits from a steepening 2s10s yield curve (+0.49%), which supports value and cyclical sectors, but faces headwinds from widening credit spreads and a hawkish Fed. The balanced forces suggest sideways price action. Recommended approach: MEAN_REVERSION (6/10).
+| Instrument | Score | Signal | Confidence |
+|------------|-------|--------|------------|
+| GC | -3 | BEARISH | 7/10 |
+| CL | +2 | SLIGHT_BULLISH | 6/10 |
+| ES | -3 | BEARISH | 6/10 |
 
-**RTY (Russell 2000):** The Russell 2000 presents a neutral bias (-1), heavily impacted by widening credit spreads, which disproportionately affect smaller, debt-reliant companies. However, steady domestic growth expectations and a steepening yield curve provide counterbalancing support. Recommended approach: MEAN_REVERSION (6/10).
+---
 
-**M6E (Euro):** The Euro demonstrates a bearish bias (-4), driven by a narrowing interest rate differential versus the USD. The ECB's hawkish hold at 2.4% remains significantly below the Fed's 3.50-3.75% range. Furthermore, Eurozone growth is stalling, with the latest flash PMI dropping to a 10-month low of 50.5. Recommended approach: TREND_FOLLOWING_SHORT (7/10).
+## Full Instrument Breakdown
 
-**6A (Australian Dollar):** The Australian Dollar shows a bearish bias (-5), despite the RBA's recent hawkish hike to 4.10%. The currency is weighed down by slowing Chinese economic growth (manufacturing PMI at 49.0) and a broader global risk-off sentiment. These factors overshadow the positive interest rate differential against the USD. Recommended approach: TREND_FOLLOWING_SHORT (7/10).
+### GC (Gold): -3 BEARISH (7/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Gold faces significant headwinds from rising real yields (10Y TIPS up to ~2.01%) and recent massive ETF outflows (-$4.5B last week). Despite the geopolitical risk premium from the Iran war, the technical breakdown and liquidity stress are dominating price action. Recommended approach: TREND_FOLLOW (7/10) due to strong momentum. Note signal decay risk if ceasefire talks progress.
 
-**6J (Japanese Yen):** The Japanese Yen indicates a neutral bias (0). The Bank of Japan's hawkish tightening bias (holding at 0.75% but signaling further hikes) provides fundamental support, but the massive absolute rate differential versus the USD continues to cap significant Yen appreciation. The risk-off environment offers marginal safe-haven demand. Note: Bullish 6J = Bearish USD/JPY. Recommended approach: MEAN_REVERSION (6/10).
+### SI (Silver): -3 BEARISH (6/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Silver is being dragged down by the broader precious metals selloff and falling industrial metal prices (copper down 9.4%). The combination of rising yields and slowing growth expectations creates a challenging environment. Recommended approach: TREND_FOLLOW (6/10).
+
+### CL (Crude Oil): +2 SLIGHT_BULLISH (6/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+Crude oil is the only asset with a bullish bias, driven entirely by the severe supply disruption from the Strait of Hormuz closure (~20% of global supply blocked). However, a surprise 2.3M barrel build in US API inventories and ongoing ceasefire talks temper the upside conviction. Recommended approach: IB_BREAKOUT (6/10) to capture volatility spikes.
+
+### ES (S&P 500): -3 BEARISH (6/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Equities are under pressure from a toxic combination of rising real yields, widening credit spreads (HY OAS up to 3.19%), and a sharp increase in rate volatility (MOVE index surging). The risk-off environment (VIX > 20) supports a bearish stance. Recommended approach: TREND_FOLLOW (6/10).
+
+### NQ (Nasdaq 100): -3 BEARISH (6/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Tech stocks are particularly vulnerable to the surge in real yields and the spike in the MOVE index. While the SOX semiconductor index showed slight resilience recently, the broader macro backdrop remains hostile to long-duration assets. Recommended approach: TREND_FOLLOW (6/10).
+
+### YM (Dow Jones): -1 SLIGHT_BEARISH (5/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+The Dow shows slight relative strength compared to the Nasdaq, but remains pressured by widening credit spreads and the steepening yield curve. The bearish bias is less pronounced here, suggesting range-bound or choppy action. Recommended approach: IB_BREAKOUT (5/10).
+
+### RTY (Russell 2000): -3 BEARISH (6/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+Small caps are highly sensitive to the widening of high-yield credit spreads and the rising cost of capital. The risk-off environment and potential growth slowdown from the oil shock make RTY a clear short candidate. Recommended approach: TREND_FOLLOW (6/10).
+
+### 6E (Euro): -1 SLIGHT_BEARISH (4/10)
+**Approach:** RANGE_TRADE | **Mode:** INTRADAY | **Hold:** session
+The Euro is caught between an ECB hawkish hold and the negative growth implications of the oil shock. The interest rate differential continues to favor the USD, keeping the bias slightly bearish, but conviction is low. Recommended approach: RANGE_TRADE (4/10).
+
+### 6A (Australian Dollar): -3 BEARISH (5/10)
+**Approach:** TREND_FOLLOW | **Mode:** SWING | **Hold:** 1-2 days
+The Aussie dollar is suffering from the global risk-off sentiment, falling copper prices, and concerns over China's growth outlook (manufacturing PMI in contraction). Despite the RBA's hawkish rate hike, external macro factors dominate. Recommended approach: TREND_FOLLOW (5/10).
+
+### 6J (Japanese Yen): +1 SLIGHT_BULLISH (4/10)
+**Approach:** IB_BREAKOUT | **Mode:** INTRADAY | **Hold:** session
+The Yen benefits slightly from safe-haven flows and the BoJ's recent hawkish stance (maintaining 0.75% with tightening bias). However, the massive rate differential with the US and Japan's vulnerability to the oil shock keep conviction low. Remember 6J is inverted (Bullish = stronger JPY). Recommended approach: IB_BREAKOUT (4/10).
+
+---
 
 ## Key Macro Themes
-- **Higher for Longer Reinforced:** The Fed's hawkish hold and rising real yields (crossing back above 2.0%) are reasserting downward pressure on risk assets and non-yielding commodities.
-- **Geopolitical Whiplash:** The Iran-Israel conflict continues to dominate energy markets, with crude oil experiencing massive intraday swings based on ceasefire rumors versus escalation realities.
-- **Global Growth Divergence:** US growth remains resilient (GDPNow 2.0%), while the Eurozone (PMI 50.5) and China (PMI 49.0) show signs of stalling or contraction, supporting USD strength.
 
-## Watch List
-- **Today:** Fresh EIA Weekly Petroleum Status Report (critical for crude oil bias resolution).
-- **Today:** Updated FRED DFII10 and BAMLH0A0HYM2 data releases.
-- **Ongoing:** Geopolitical headlines regarding the US 15-point ceasefire proposal for the Middle East.
+1. **Geopolitical Energy Shock**: The Iran war and closure of the Strait of Hormuz have removed significant oil supply from the market, creating a stagflationary impulse (higher inflation, lower growth) globally.
+2. **Rising Yields and Volatility**: Real yields are surging (10Y TIPS > 2.0%) alongside a sharp spike in the MOVE index, creating severe headwinds for equities, gold, and risk assets.
+3. **Credit Market Stress**: High-yield OAS spreads are widening rapidly (up to 3.19%), signaling growing distress in corporate credit markets and pressuring small-cap equities (RTY).
+
+---
+
+## Upcoming Catalysts
+
+### Imminent (< 1 Week)
+- EIA Weekly Inventory Report (March 25)
+- US GDP Q4 Final (March 26)
+- PCE Inflation (March 27)
+
+### Near-Term (1-4 Weeks)
+- US Non-Farm Payrolls (Early April)
+- Next FOMC Meeting (Late April)
+
+---
+
+## Data Quality
+- All data sources current as of March 25, 2026
+- No stale data used
+- Average confidence: 5.6/10
+
+---
+**End of Report**
