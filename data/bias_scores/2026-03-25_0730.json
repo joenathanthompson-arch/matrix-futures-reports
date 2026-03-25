@@ -1,0 +1,37 @@
+{
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {"score": -3, "signal": "BEARISH", "confidence": 7, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "SI": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "CL": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "ES": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "NQ": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "YM": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 5, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "RTY": {"score": -3, "signal": "BEARISH", "confidence": 6, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6E": {"score": -1, "signal": "SLIGHT_BEARISH", "confidence": 4, "recommended_approach": "RANGE_TRADE", "recommended_mode": "INTRADAY", "hold_expectation": "session"},
+    "6A": {"score": -3, "signal": "BEARISH", "confidence": 5, "recommended_approach": "TREND_FOLLOW", "recommended_mode": "SWING", "hold_expectation": "1-2 days"},
+    "6J": {"score": 1, "signal": "SLIGHT_BULLISH", "confidence": 4, "recommended_approach": "IB_BREAKOUT", "recommended_mode": "INTRADAY", "hold_expectation": "session"}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "BEARISH"
+  },
+  "key_drivers": [
+    "Rising Geopolitical Risk (Iran war and Hormuz closure)",
+    "Rising Real Yields (10Y TIPS up to ~2.01%)",
+    "Widening Credit Spreads (HY OAS up to 3.19%)"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [],
+    "overnight_changes": ["Gold ETF outflows of $4.5B recorded", "API reported surprise 2.3M crude build"]
+  },
+  "catalyst_proximity": {
+    "imminent": ["EIA Weekly Inventory Report (March 25)"],
+    "near_term": ["US GDP Q4 Final (March 26)", "PCE Inflation (March 27)"],
+    "background": ["Ongoing US-Iran ceasefire negotiations"]
+  }
+}
