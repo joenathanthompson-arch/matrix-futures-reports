@@ -1,0 +1,135 @@
+{
+  "date": "2026-03-27",
+  "generated_at": "2026-03-28T06:51:28Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": -6,
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": -3,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": -6,
+      "signal": "STRONG_BEARISH",
+      "confidence": 8,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": -3,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -4,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "MIXED"
+  },
+  "key_drivers": [
+    "The dollar stayed firm into the U.S. close: TradingView showed DXY at 100.193, up 0.33% on March 27.",
+    "Volatility stayed decisively defensive: Cboe listed VIX spot at 31.05, up 13.16%, while CME FedWatch showed 95.9% odds of no change at the April 30, 2026 meeting.",
+    "Official U.S. macro rates moved against duration: DFII10 rose to 2.08 from 2.02 and HY OAS widened to 3.21 from 3.17, while GDPNow slowed to 2.0% from 2.33%.",
+    "Semiconductor leadership remained weak even as rate volatility eased intraday: SOX fell 1.69% to 7,457.67, while MOVE fell 2.67% to 111.9456.",
+    "Several cross-asset inputs remained carried forward from the repository factor snapshot, including oil inventories, gold ETF flows, some central-bank differentials, and China-growth proxies."
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "Gold ETF flows (carried forward from the repository factor snapshot rather than freshly re-verified in this run)",
+      "EIA crude inventories and oil supply classification (carried forward from the prior repository factor snapshot)",
+      "China-growth proxy and some FX rate-differential inputs (carried forward from the prior repository factor snapshot)",
+      "ECB, RBA, and BoJ stance inputs were reused from the repository factor snapshot rather than fully re-documented from fresh official pages in this run"
+    ],
+    "fallbacks_used": [
+      "TradingView for DXY, SOX, and MOVE live direction checks",
+      "Cboe VIX page for spot volatility level and daily move",
+      "Atlanta Fed GDPNow page plus chart extraction for current and prior Q1 growth nowcast values",
+      "FRED latest official prints for DFII10, HY OAS, and T10Y2Y",
+      "Repository factor snapshot for stale carried-forward oil, ETF-flow, and some FX-specific inputs"
+    ],
+    "overnight_changes": [
+      "Real yields rose 6 bps day over day, increasing pressure on duration-sensitive assets.",
+      "Credit spreads widened while the 2s10s curve steepened, leaving U.S. cyclicals mixed rather than uniformly weak.",
+      "The combination of stronger USD and a VIX above 30 kept the broader cross-asset regime defensive through the session."
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "Weekend calendar is light; macro focus shifts to Monday event risk and ongoing Iran / Strait of Hormuz headlines",
+      "Fed Chair Powell remarks due Monday, March 30, 2026"
+    ],
+    "near_term": [
+      "China PMI release (March 31, 2026)",
+      "Atlanta Fed GDPNow next update (April 1, 2026)",
+      "EIA Weekly Petroleum Status Report (April 1, 2026)"
+    ],
+    "background": [
+      "March U.S. payrolls report due next week",
+      "FOMC Minutes (April 8, 2026)",
+      "Next ECB / RBA / BoJ communication for FX-differential repricing"
+    ]
+  }
+}
