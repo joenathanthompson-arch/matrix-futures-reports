@@ -1,155 +1,129 @@
 {
   "date": "2026-03-29",
   "generated_at": "2026-03-29T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
   "scores": {
     "GC": {
       "score": -3,
-      "signal": "SLIGHT_BEARISH",
+      "signal": "BEARISH",
       "confidence": 6,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps (1.88->2.08%)", "raw": -2, "weight": 2, "weighted": -4},
-        "usd_dxy": {"input": "Strong/Rising (+2.67% month)", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing (GDPNow 2.0%, Iran war)", "raw": 1, "weight": 1, "weighted": 1},
-        "oil_supply_shock": {"input": "Tightening (Iran/Hormuz disruption)", "raw": 1, "weight": 1, "weighted": 1},
-        "gold_etf_flows": {"input": "Outflows (-$6.3B GLD March)", "raw": -1, "weight": 1, "weighted": -1}
-      }
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "SI": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 5,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps", "raw": -2, "weight": 1, "weighted": -2},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing", "raw": 1, "weight": 1, "weighted": 1},
-        "copper": {"input": "Flat/Mixed ($5.49/lb, -9.14% month)", "raw": 0, "weight": 1, "weighted": 0},
-        "gold_etf_flows": {"input": "Outflows (-$11B March)", "raw": -1, "weight": 1, "weighted": -1}
-      }
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     },
     "CL": {
       "score": 3,
       "signal": "BULLISH",
       "confidence": 8,
-      "factors": {
-        "oil_supply_shock": {"input": "Tightening (Iran war, Hormuz, IEA -8mb/d)", "raw": 1, "weight": 2, "weighted": 2},
-        "inventories": {"input": "Build (+6.9M barrels week ending Mar 20)", "raw": -1, "weight": 1, "weighted": -1},
-        "growth_narrative": {"input": "Slowing (GDPNow 2.0%)", "raw": 1, "weight": 2, "weighted": 2},
-        "geopolitical_risk": {"input": "Rising (Iran war active, Hormuz)", "raw": 1, "weight": 1, "weighted": 1},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1}
-      }
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
     },
     "ES": {
-      "score": -3,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 7,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps", "raw": -2, "weight": 2, "weighted": -4},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing", "raw": 1, "weight": 1, "weighted": 1},
-        "credit_spreads": {"input": "Narrowing (HY OAS 3.21%, from 3.28%)", "raw": 1, "weight": 1, "weighted": 1},
-        "vix_direction": {"input": "Rising (+13.16% day, +31.89% 5d)", "raw": -1, "weight": 1, "weighted": -1}
-      }
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "NQ": {
       "score": -5,
-      "signal": "BEARISH",
-      "confidence": 8,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps", "raw": -2, "weight": 2, "weighted": -4},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing", "raw": 1, "weight": 1, "weighted": 1},
-        "sox": {"input": "Falling (-5.15% 5d, -11.67% month)", "raw": -1, "weight": 1, "weighted": -1},
-        "move": {"input": "Rising (111.95, +31.89% 5d)", "raw": -1, "weight": 1, "weighted": -1}
-      }
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
     },
     "YM": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 5,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps", "raw": -2, "weight": 1, "weighted": -2},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing", "raw": 1, "weight": 2, "weighted": 2},
-        "credit_spreads": {"input": "Narrowing (HY OAS 3.21%)", "raw": 1, "weight": 1, "weighted": 1},
-        "yield_curve_2s10s": {"input": "Steepening (0.46->0.56%, +10bps)", "raw": 1, "weight": 1, "weighted": 1}
-      }
-    },
-    "RTY": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "real_yields": {"input": "Rising +20bps", "raw": -2, "weight": 1, "weighted": -2},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "growth_narrative": {"input": "Slowing", "raw": 1, "weight": 2, "weighted": 2},
-        "credit_spreads": {"input": "Narrowing (HY OAS 3.21%)", "raw": 1, "weight": 2, "weighted": 2},
-        "yield_curve_2s10s": {"input": "Steepening (0.46->0.56%)", "raw": 1, "weight": 1, "weighted": 1}
-      }
-    },
-    "M6E": {
-      "score": -3,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 7,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "ecb_stance": {"input": "Neutral hold (Mar 19, held at 2.0%)", "raw": 0, "weight": 1, "weighted": 0},
-        "rate_differential_eur_usd": {"input": "Narrowing vs USD (Fed 160bps above ECB)", "raw": -1, "weight": 2, "weighted": -2},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05)", "raw": 1, "weight": 1, "weighted": 1},
-        "eurozone_growth": {"input": "Slowing (PMI 50.5, ECB GDP 0.9% 2026)", "raw": -1, "weight": 1, "weighted": -1}
-      }
-    },
-    "6A": {
-      "score": -3,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 7,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "rba_stance": {"input": "Hawkish hike +25bps to 4.10% (Mar 17)", "raw": 1, "weight": 1, "weighted": 1},
-        "rate_differential_aud_usd": {"input": "Widening vs USD (AUD 4.10% > Fed 3.625%)", "raw": 1, "weight": 1, "weighted": 1},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_sentiment": {"input": "Risk-off (VIX 31.05, Iran war)", "raw": -1, "weight": 2, "weighted": -2},
-        "china_growth": {"input": "Slowing (NBS PMI 49.0, contracting)", "raw": -1, "weight": 2, "weighted": -2},
-        "copper": {"input": "Flat/Mixed", "raw": 0, "weight": 1, "weighted": 0}
-      }
-    },
-    "6J": {
       "score": 0,
       "signal": "NEUTRAL",
       "confidence": 5,
-      "factors": {
-        "fed_stance": {"input": "Neutral hold", "raw": 0, "weight": 1, "weighted": 0},
-        "boj_stance": {"input": "Neutral hold (hawkish bias, 0.75%)", "raw": 0, "weight": 2, "weighted": 0},
-        "rate_differential_jpy_usd": {"input": "Stable (287bps in USD favor, USD/JPY near 160)", "raw": 0, "weight": 2, "weighted": 0},
-        "usd_dxy": {"input": "Strong/Rising", "raw": -1, "weight": 1, "weighted": -1},
-        "risk_mood": {"input": "Risk-off (VIX 31.05, safe-haven JPY bid)", "raw": 1, "weight": 1, "weighted": 1}
-      }
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -6,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
     }
   },
   "asset_class_bias": {
-    "COMMODITIES": "MIXED",
-    "INDICES": "MIXED",
-    "FX": "BEARISH"
+    "COMMODITIES": "NEUTRAL",
+    "INDICES": "SLIGHT_BEARISH",
+    "FX": "NEUTRAL"
   },
   "key_drivers": [
-    "Iran war driving Strait of Hormuz disruption: IEA confirms ~8mb/d supply cut, WTI ~$94-100, Brent ~$105-110, supporting CL but creating stagflation headwinds for equities",
-    "Rising real yields (+20bps week, DFII10 at 2.08%) and strong USD (DXY 100.19, +2.67% month) creating headwinds for gold, tech, and FX",
-    "Risk-off environment (VIX 31.05, MOVE 112) with SOX -11.67% month; credit spreads surprisingly tight (HY OAS 3.21%) and steepening yield curve (2s10s +10bps) offer selective support"
+    "US-Iran War: Strait of Hormuz disruption driving oil to $100+ (WTI +40% since Feb 28)",
+    "Risk-off environment: VIX at 31, S&P 500 in correction (-7.4% in March), credit spreads widening",
+    "DXY strengthening (+2.67% in March) as USD safe-haven demand offsets geopolitical risk",
+    "Gold ETF outflows ($12B in March) as liquidity needs override safe-haven demand",
+    "BoJ hawkish pivot imminent (68% probability of April 28 rate hike)"
   ],
   "data_quality": {
-    "stale_sources": ["DFII10 (data through 2026-03-26, 3 days old - acceptable)", "BAMLH0A0HYM2 (data through 2026-03-26, 3 days old)"],
-    "fallbacks_used": ["VIX from CBOE (primary source, fresh)", "DXY from TradingView (fresh Mar 27)", "SOX from TradingView (fresh Mar 27)", "MOVE from TradingView (fresh Mar 27)", "Copper from TradingView (fresh Mar 27)", "EIA inventory from news sources (WSJ, pipexch.com - week ending Mar 20)", "Gold ETF flows from CoinDesk/BIS/JPMorgan reports (week of Mar 26)", "ECB stance from ECB press release Mar 19", "RBA stance from RBA media release Mar 17", "BoJ stance from BoJ statement Mar 19"]
+    "stale_sources": [
+      "GDPNow last updated March 23 (6 days ago)",
+      "EIA data for week ending March 20"
+    ],
+    "fallbacks_used": [
+      "VIX from CBOE (March 27)",
+      "DXY from TradingView (March 27)"
+    ],
+    "overnight_changes": [
+      "WTI crude volatile around $98-101 range",
+      "VIX spiked +13% on March 27"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "Iran war ceasefire/escalation (ongoing, Rubio says 'weeks not months')",
+      "FOMC April 30 (31 days away, 95.9% no change)"
+    ],
+    "near_term": [
+      "BoJ April 28 rate decision (68% hike probability)",
+      "GDPNow update April 1",
+      "EIA Weekly report April 1"
+    ],
+    "background": [
+      "ECB on hold through 2026 (90% probability)",
+      "RBA hiking cycle (raised to 4.10% on March 17)",
+      "China GDP target lowered to 4.5-5% (lowest in decades)"
+    ]
   }
 }
