@@ -1,0 +1,11 @@
+Ticker,Instrument,Numeric Bias,Signal,Confidence
+GC,Gold,-3,BEARISH,6
+SI,Silver,-3,BEARISH,6
+CL,Crude Oil,+3,BULLISH,8
+ES,S&P 500,-5,STRONG_BEARISH,6
+NQ,Nasdaq 100,-5,STRONG_BEARISH,6
+YM,Dow Jones,+0,NEUTRAL,5
+RTY,Russell 2000,-2,SLIGHT_BEARISH,5
+6E,Euro,-1,SLIGHT_BEARISH,5
+6A,Australian Dollar,-6,STRONG_BEARISH,7
+6J,Japanese Yen,+4,BULLISH,7
