@@ -1,0 +1,131 @@
+{
+  "date": "2026-04-01",
+  "generated_at": "2026-04-01T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "ES": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "NQ": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "RTY": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "Iran War Geopolitical Shock: OPEC output plunges 7M bpd, Brent >$100, Strait of Hormuz risk",
+    "Hawkish Central Banks: Fed on hold (hawkish), BoJ expected April hike, RBA hiking cycle",
+    "Elevated Real Yields: 10Y TIPS at 2.04%, weighing on growth assets and gold",
+    "Relief Rally Underway: Markets +2-3% on Iran war resolution hopes, VIX falling to 24.27",
+    "Credit Stress Building: HY OAS widening to 3.46%, credit conditions tightening"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "Gold ETF flows (JPMorgan estimate, not World Gold Council direct)"
+    ],
+    "fallbacks_used": [
+      "News sources for oil inventory context",
+      "TradingView for MOVE/DXY"
+    ],
+    "overnight_changes": [
+      "Markets rallying on Trump signals Iran war could end in 2-3 weeks",
+      "VIX fell 3.88% to 24.27",
+      "SOX +6.24% on Mar 31",
+      "MOVE index fell 11.33%"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "FOMC Meeting: Apr 30, 2026 (99.5% no-change priced)",
+      "BoJ Rate Decision: Expected 25bp hike in April",
+      "Iran War Resolution: Trump signals 2-3 week timeline"
+    ],
+    "near_term": [
+      "RBA Rate Decision: 60% probability of May hike",
+      "EIA Weekly Petroleum Report: Apr 1, 2026",
+      "US NFP: First Friday of April"
+    ],
+    "background": [
+      "ECB April meeting: Potential rate hike if energy prices persist",
+      "Iran war Strait of Hormuz reopening timeline",
+      "Q1 2026 GDP Advance Estimate (late April)"
+    ]
+  }
+}
