@@ -1,0 +1,30 @@
+{
+  "date": "2026-04-03",
+  "generated_at": "2026-04-03T11:45:00Z",
+  "scores": {
+    "GC": {"score": -4, "signal": "BEARISH", "confidence": 6},
+    "SI": {"score": -4, "signal": "BEARISH", "confidence": 6},
+    "CL": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 8},
+    "ES": {"score": -4, "signal": "BEARISH", "confidence": 7},
+    "NQ": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "YM": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "RTY": {"score": -4, "signal": "BEARISH", "confidence": 7},
+    "M6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "6A": {"score": -5, "signal": "BEARISH", "confidence": 7},
+    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "BEARISH"
+  },
+  "key_drivers": [
+    "Rising real yields pressuring gold, silver, and equities.",
+    "US-Iran war driving risk-off sentiment, supporting crude oil and safe-haven JPY.",
+    "Credit spreads widening and steepening yield curve negatively impacting Russell 2000 and broader indices."
+  ],
+  "data_quality": {
+    "stale_sources": ["FRED DFII10", "FRED BAMLH0A0HYM2", "World Gold Council ETF Flows"],
+    "fallbacks_used": ["Estimated real yields from nominal 10Y and BEI", "News search for HY OAS spreads", "News search for ETF flows"]
+  }
+}
