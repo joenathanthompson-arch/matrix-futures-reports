@@ -1,117 +1,30 @@
 {
   "date": "2026-04-03",
-  "generated_at": "2026-04-03T07:30:00Z",
-  "methodology_version": "3.0_STRATEGY",
+  "generated_at": "2026-04-03T11:45:00Z",
   "scores": {
-    "GC": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "SI": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "CL": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 6,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "ES": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "NQ": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "YM": {
-      "score": 0,
-      "signal": "NEUTRAL",
-      "confidence": 3,
-      "recommended_approach": "RANGE_TRADE",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "RTY": {
-      "score": -2,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "M6E": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "6A": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 4,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "6J": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 5,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    }
+    "GC": {"score": -4, "signal": "BEARISH", "confidence": 6},
+    "SI": {"score": -4, "signal": "BEARISH", "confidence": 6},
+    "CL": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 8},
+    "ES": {"score": -4, "signal": "BEARISH", "confidence": 7},
+    "NQ": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "YM": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "RTY": {"score": -4, "signal": "BEARISH", "confidence": 7},
+    "M6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 7},
+    "6A": {"score": -5, "signal": "BEARISH", "confidence": 7},
+    "6J": {"score": 4, "signal": "BULLISH", "confidence": 7}
   },
   "asset_class_bias": {
-    "COMMODITIES": "NEUTRAL",
-    "INDICES": "SLIGHT_BEARISH",
-    "FX": "BULLISH"
+    "COMMODITIES": "BEARISH",
+    "INDICES": "BEARISH",
+    "FX": "BEARISH"
   },
   "key_drivers": [
-    "Hawkish Central Banks vs Fed (BoJ, ECB, RBA all hawkish/hiking while Fed on hold)",
-    "Rising Geopolitical Risk (Iran war, Strait of Hormuz blockade driving oil)",
-    "Slowing US Growth & Rising Real Yields (GDPNow at 1.6%, 10Y TIPS at 2.02%)"
+    "Rising real yields pressuring gold, silver, and equities.",
+    "US-Iran war driving risk-off sentiment, supporting crude oil and safe-haven JPY.",
+    "Credit spreads widening and steepening yield curve negatively impacting Russell 2000 and broader indices."
   ],
   "data_quality": {
-    "stale_sources": [],
-    "fallbacks_used": [],
-    "overnight_changes": [
-      "VIX falling from open",
-      "DXY slightly weaker"
-    ]
-  },
-  "catalyst_proximity": {
-    "imminent": [
-      "US Non-Farm Payrolls (NFP) April 3"
-    ],
-    "near_term": [
-      "ECB Rate Decision April 30",
-      "FOMC Meeting April 30"
-    ],
-    "background": [
-      "Iran conflict and potential supply disruptions"
-    ]
+    "stale_sources": ["FRED DFII10", "FRED BAMLH0A0HYM2", "World Gold Council ETF Flows"],
+    "fallbacks_used": ["Estimated real yields from nominal 10Y and BEI", "News search for HY OAS spreads", "News search for ETF flows"]
   }
 }
