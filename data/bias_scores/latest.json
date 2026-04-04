@@ -1,115 +1,35 @@
 {
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T11:37:19Z",
-  "methodology_version": "3.0_STRATEGY",
+  "generated_at": "2026-04-04T11:36:00Z",
   "scores": {
-    "GC": {
-      "score": 4,
-      "signal": "BULLISH",
-      "confidence": 8,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "SI": {
-      "score": 3,
-      "signal": "BULLISH",
-      "confidence": 7,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    },
-    "CL": {
-      "score": 7,
-      "signal": "STRONG_BULLISH",
-      "confidence": 9,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "2-5 days"
-    },
-    "ES": {
-      "score": 1,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "NQ": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "YM": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 6,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "RTY": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "M6E": {
-      "score": 2,
-      "signal": "SLIGHT_BULLISH",
-      "confidence": 7,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "6A": {
-      "score": -1,
-      "signal": "SLIGHT_BEARISH",
-      "confidence": 5,
-      "recommended_approach": "IB_BREAKOUT",
-      "recommended_mode": "INTRADAY",
-      "hold_expectation": "session"
-    },
-    "6J": {
-      "score": 5,
-      "signal": "STRONG_BULLISH",
-      "confidence": 8,
-      "recommended_approach": "TREND_FOLLOW",
-      "recommended_mode": "SWING",
-      "hold_expectation": "1-2 days"
-    }
+    "GC": {"score": 8, "signal": "STRONG_BULLISH", "confidence": 8},
+    "SI": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7},
+    "CL": {"score": 4, "signal": "BULLISH", "confidence": 8},
+    "ES": {"score": 8, "signal": "STRONG_BULLISH", "confidence": 7},
+    "NQ": {"score": 8, "signal": "STRONG_BULLISH", "confidence": 7},
+    "YM": {"score": 6, "signal": "STRONG_BULLISH", "confidence": 7},
+    "RTY": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 7},
+    "M6E": {"score": -2, "signal": "SLIGHT_BEARISH", "confidence": 6},
+    "6A": {"score": -1, "signal": "NEUTRAL", "confidence": 6},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7}
   },
   "asset_class_bias": {
     "COMMODITIES": "BULLISH",
-    "INDICES": "NEUTRAL",
-    "FX": "SLIGHT_BULLISH"
+    "INDICES": "BULLISH",
+    "FX": "MIXED"
   },
   "key_drivers": [
-    "Iran war escalating, causing major oil supply disruptions and surging prices",
-    "Strong NFP jobs report (+178K) complicating Fed cut expectations",
-    "Safe haven flows benefiting Gold and JPY as risk-off sentiment takes hold"
+    "Real yields falling sharply (-16bps 5-day, DFII10 at 1.97%) is the dominant bullish driver for equities, gold, and tech",
+    "Iran war creating largest oil supply disruption in history - bullish CL and gold; geopolitical risk premium elevated",
+    "VIX falling from elevated levels (23.87, -6.41% day, -26.61% 5-day) signals risk appetite recovery",
+    "Credit spreads narrowing (-25bps 5-day, HY OAS at 3.17%) supports equities especially small caps",
+    "BoJ hawkish tilt with 70% April hike probability is dominant JPY bullish driver; IMF urging continued hikes",
+    "EUR-USD rate differential (-150bps, ECB 2.00% vs Fed 3.50-3.75%) is dominant M6E bearish driver"
   ],
   "data_quality": {
-    "stale_sources": [],
-    "fallbacks_used": [],
-    "overnight_changes": [
-      "US markets closed for Good Friday, lighter liquidity"
-    ]
-  },
-  "catalyst_proximity": {
-    "imminent": [
-      "NFP Jobs Report released"
-    ],
-    "near_term": [
-      "Next FOMC meeting in ~25 days"
-    ],
-    "background": [
-      "Ongoing Iran war and Hormuz Strait disruptions"
-    ]
+    "stale_sources": ["Gold ETF flows (WGC requires login - inferred from gold at record $4,677/oz)"],
+    "fallbacks_used": ["MOVE: TradingView TVC:MOVE (primary Yahoo Finance)", "SOX: TradingView NASDAQ:SOX"],
+    "data_as_of": "2026-04-04T11:36:00Z",
+    "notes": "All FRED data fresh (Apr 2-3, 2026). Iran war context sourced from Reuters, Brookings, CFR (Apr 3-4, 2026). EIA inventory data for week ending Mar 27, 2026 (released Apr 1, 2026)."
   }
 }
