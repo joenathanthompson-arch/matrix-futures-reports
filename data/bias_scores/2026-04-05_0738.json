@@ -1,0 +1,30 @@
+{
+  "date": "2026-04-05",
+  "generated_at": "2026-04-05T07:38:00Z",
+  "scores": {
+    "GC": {"score": 4, "signal": "BULLISH", "confidence": 7},
+    "SI": {"score": 3, "signal": "BULLISH", "confidence": 6},
+    "CL": {"score": 0, "signal": "NEUTRAL", "confidence": 6},
+    "ES": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 7},
+    "NQ": {"score": 7, "signal": "STRONG_BULLISH", "confidence": 7},
+    "YM": {"score": 4, "signal": "BULLISH", "confidence": 6},
+    "RTY": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 6},
+    "M6E": {"score": 4, "signal": "BULLISH", "confidence": 6},
+    "6A": {"score": 2, "signal": "SLIGHT_BULLISH", "confidence": 6},
+    "6J": {"score": 5, "signal": "STRONG_BULLISH", "confidence": 7}
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "STRONG_BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "Real yields falling sharply (-16bps over week to 1.97%) providing strong tailwind for gold, tech equities, and risk assets broadly",
+    "BoJ hawkish pivot with ~70% probability of April rate hike priced in, combined with risk-off VIX (23.87) driving strong JPY safe-haven bid",
+    "China manufacturing PMI recovered to 50.4 in March (first expansion in 5 months), supporting AUD and commodities; credit spreads narrowing from 3.46 to 3.17 HY OAS"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": []
+  }
+}
