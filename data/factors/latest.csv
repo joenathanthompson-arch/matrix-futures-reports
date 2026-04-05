@@ -1,25 +1,26 @@
-factor,score,source,timestamp
-fed_stance,-1,Federal Reserve statement (2026-03-18): target range held at 3.50%-3.75%; hawkish hold used because FedWatch table was not directly extractable.,2026-03-28T11:59:42Z
-real_yields,-2,MacroMicro U.S. 10Y TIPS yield at 2.08% on 2026-03-26 versus 2.02% previously; rising real yields.,2026-03-28T11:59:42Z
-usd_dxy,-1,"TradingView DXY closed 100.193 on 2026-03-27, up 0.33% day and higher over 5 days; strong/rising USD.",2026-03-28T11:59:42Z
-risk_mood,+1,TradingView VIX closed 31.05 on 2026-03-27; risk-off regime.,2026-03-28T11:59:42Z
-vix_direction,-1,TradingView VIX rose 13.16% on the day; VIX direction classified as rising.,2026-03-28T11:59:42Z
-growth_narrative,+1,Atlanta Fed GDPNow Q1 2026 estimate at 2.0% as of 2026-03-23; slowing versus earlier quarter highs.,2026-03-28T11:59:42Z
-credit_spreads,-1,"StreetStats HY spread at 3.21% on 2026-03-26, described as widened; widening spreads.",2026-03-28T11:59:42Z
-sox,-1,"Yahoo Finance ^SOX at 7,457.67 on 2026-03-27, down 1.69%; semiconductors falling.",2026-03-28T11:59:42Z
-move_index,+1,"StreetStats MOVE at 111.95 on 2026-03-27, down 0.73 on the day; MOVE falling.",2026-03-28T11:59:42Z
-yield_curve_2s10s,+1,StreetStats 10Y-2Y spread +0.52% on 2026-03-27; modestly steepening curve.,2026-03-28T11:59:42Z
-copper,+1,"Yahoo Finance HG=F at 5.4945 on 2026-03-27, up 0.32%; copper rising.",2026-03-28T11:59:42Z
-oil_inventories,-1,EIA weekly highlights: commercial crude inventories +6.9M bbl for week ending 2026-03-20; build.,2026-03-28T11:59:42Z
-oil_supply_shock,+1,"IEA Oil Market Report March 2026: largest supply disruption in history, Hormuz flows plunging; tightening/disruption.",2026-03-28T11:59:42Z
-geopolitical_risk,+1,IEA March 2026 report and war backdrop indicate rising geopolitical risk.,2026-03-28T11:59:42Z
-gold_etf_flows,+1,World Gold Council: February 2026 global physically backed gold ETFs added US$5.3bn; inflows.,2026-03-28T11:59:42Z
-ecb_stance,+1,ECB decision 2026-03-19: rates unchanged but communication remained hawkish; hawkish hold supportive for EUR.,2026-03-28T11:59:42Z
-rba_stance,+1,RBA decision 2026-03-17: cash rate raised 25 bps to 4.10%; hawkish hike supportive for AUD.,2026-03-28T11:59:42Z
-boj_stance,+1,BoJ statement 2026-03-19: overnight call rate around 0.75% with inflation expectations rising moderately; hawkish/normalizing hold.,2026-03-28T11:59:42Z
-china_growth,-1,Reuters report republished by The Manila Times: official China manufacturing PMI fell to 49.0 in February; slowing growth.,2026-03-28T11:59:42Z
-rate_diff_eur_usd,-1,"Fallback to repository factor convention: Fed-ECB nominal rate gap still favors USD materially, so EUR-USD rate differential remains USD-supportive.",2026-03-28T11:59:42Z
-rate_diff_aud_usd,+1,Derived from policy settings: RBA cash rate 4.10% versus Fed 3.50%-3.75%; AUD-USD differential supportive for AUD.,2026-03-28T11:59:42Z
-rate_diff_jpy_usd,+1,BoJ normalization versus Fed hold keeps the JPY differential improving for yen strength in the 6J framework.,2026-03-28T11:59:42Z
-risk_sentiment_aud,-1,"VIX above 30 implies risk-off conditions, negative for the risk-sensitive AUD.",2026-03-28T11:59:42Z
-eurozone_growth,-1,ECB March 2026 projections: 2026 euro area GDP growth revised down to 0.9%; eurozone growth slowing.,2026-03-28T11:59:42Z
+factor,value,assessment,score,source,date
+fed_stance,3.50-3.75%,NEUTRAL_HOLD,0,CME FedWatch,2026-04-05
+real_yields,1.97%,FALLING,2,FRED DFII10,2026-04-02
+dxy,100.1,FLAT,0,investing.com,2026-04-03
+vix,23.87,RISK_OFF,1,CBOE,2026-04-02
+vix_direction,falling,FALLING,1,CBOE,2026-04-02
+gdpnow,1.6%,SLOWING,1,Atlanta Fed,2026-04-02
+credit_spreads,3.17%,WIDENING,-1,FRED BAMLH0A0HYM2,2026-04-02
+sox,7833.39,RISING,1,MarketWatch,2026-04-02
+move,81.78,FALLING,1,MacroMicro BofAML,2026-04-03
+oil_inventories,+5.451M_bbls,BUILD,-1,EIA Weekly,2026-03-27
+oil_supply_shock,Hormuz_disruption,TIGHTENING,1,Reuters/Multiple,2026-04-05
+geopolitical_risk,Iran_war,RISING,1,Reuters/Multiple,2026-04-05
+gold_etf_flows,-2.92B_March,OUTFLOWS,-1,ETFdb.com,2026-03-31
+copper,12138,FLAT,0,MacroMicro LME,2026-04-03
+yield_curve_2s10s,0.51%,STEEPENING,1,FRED T10Y2Y,2026-04-03
+ecb_stance,hawkish_hold,HAWKISH_HOLD,1,ECB Bulletin,2026-03-19
+eur_usd_rate_diff,160bps_narrowing,NARROWING_VS_USD,1,investing.com,2026-04-01
+eurozone_growth,stable,STABLE,0,ECB Bulletin,2026-04-01
+rba_stance,hawkish_hiking,HAWKISH,1,Reuters/RBA,2026-03-31
+aud_usd_rate_diff,AUD_4.10_USD_3.625,WIDENING_VS_USD,1,StoneX,2026-04-01
+risk_sentiment_aud,vix_23.87,RISK_OFF,-1,CBOE,2026-04-02
+china_growth,mfg_50.4_svcs_52.0,STABLE,0,Reuters/CNBC,2026-03-31
+boj_stance,hawkish_70pct_apr_hike,HAWKISH,1,Reuters/Bloomberg,2026-04-03
+jpy_usd_rate_diff,narrowing_boj_hiking,NARROWING_VS_USD,1,Reuters,2026-04-03
+risk_mood_jpy,vix_23.87,RISK_OFF,1,CBOE,2026-04-02
