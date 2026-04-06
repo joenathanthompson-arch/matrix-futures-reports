@@ -1,11 +1,11 @@
-Ticker,Instrument,Numeric Bias,Signal,Confidence
-GC,Gold,+3,BULLISH,6
-SI,Silver,+3,BULLISH,5
-CL,Crude Oil,+4,BULLISH,7
-ES,S&P 500,0,NEUTRAL,5
-NQ,Nasdaq 100,+4,BULLISH,6
-YM,Dow Jones,+3,BULLISH,6
-RTY,Russell 2000,+2,SLIGHT_BULLISH,5
-M6E,Micro Euro FX,+5,STRONG_BULLISH,7
-6A,Australian Dollar,+3,BULLISH,6
-6J,Japanese Yen,+5,STRONG_BULLISH,8
+Ticker,Instrument,Raw Weighted Score,PM Code,Signal,Confidence,Recommended Approach,Mode,Hold Expectation
+GC,Gold Futures,-2,-1,SLIGHT_BEARISH,6,IB_BREAKOUT,INTRADAY,session
+SI,Silver Futures,-1,0,NEUTRAL,6,IB_BREAKOUT,INTRADAY,session
+CL,WTI Crude Oil,+5,+3,STRONG_BULLISH,7,TREND_FOLLOW,SWING,2-5 days
+ES,S&P 500 E-mini,-4,-2,BEARISH,7,TREND_FOLLOW,SWING,1-2 days
+NQ,Nasdaq 100 E-mini,0,0,NEUTRAL,5,RANGE_TRADE,INTRADAY,session
+YM,Dow Jones E-mini,0,0,NEUTRAL,5,RANGE_TRADE,INTRADAY,session
+RTY,Russell 2000 E-mini,-1,0,NEUTRAL,6,IB_BREAKOUT,INTRADAY,session
+6E,Euro FX,+5,+3,STRONG_BULLISH,7,TREND_FOLLOW,SWING,2-5 days
+6A,Australian Dollar,0,0,NEUTRAL,5,RANGE_TRADE,INTRADAY,session
+6J,Japanese Yen,+5,+3,STRONG_BULLISH,7,TREND_FOLLOW,SWING,2-5 days
