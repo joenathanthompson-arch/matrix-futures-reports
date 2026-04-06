@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-06",
+  "generated_at": "2026-04-06T11:42:54Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "YM": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6A": {
+      "score": -3,
+      "signal": "BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "NEUTRAL",
+    "INDICES": "SLIGHT_BEARISH",
+    "FX": "SLIGHT_BEARISH"
+  },
+  "key_drivers": [
+    "US-Israel-Iran War (Day 38): Strait of Hormuz disruption driving WTI to ~$114, supporting energy and safe havens",
+    "Rising Real Yields (1.97% 10Y TIPS): Headwind for gold, equities, and rate-sensitive assets",
+    "Widening HY Credit Spreads (3.17%): Risk-off signal, bearish for equities especially small caps",
+    "Fed on Hold (98.4% prob): No near-term easing; inflation spike expected from energy shock",
+    "BoJ Hawkish (~70% prob April hike): Supporting JPY strength vs USD"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "FRED DFII10 (Apr 2 data, 4 days old)",
+      "FRED BAMLH0A0HYM2 (Apr 2 data, 4 days old)"
+    ],
+    "fallbacks_used": [
+      "WTI price from Gulf News/Reuters (~$114 Apr 5-6)",
+      "VIX from Yahoo Finance/moomoo (~24.5-25)",
+      "DXY from Yahoo Finance (99.91)"
+    ],
+    "overnight_changes": [
+      "Iran rejected ceasefire proposal",
+      "Trump extended Strait of Hormuz deadline to Apr 7 8pm ET",
+      "Gold opened lower on strong jobs report"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "Iran Strait of Hormuz Deadline: Apr 7, 2026 (8pm ET) - BINARY RISK EVENT",
+      "US CPI March 2026 (expected +1% MoM, biggest spike since 2022)",
+      "BoJ Rate Decision: April 2026 meeting (~70% prob of hike to 1.0%)"
+    ],
+    "near_term": [
+      "Fed Meeting: April 29, 2026 (99.5% hold probability)",
+      "ECB Meeting: April 30, 2026 (81% hold, 15% cut probability)",
+      "US Q1 GDP Advance Estimate (late April)"
+    ],
+    "background": [
+      "Iran war resolution/escalation risk (binary outcome)",
+      "US tariff effective rate at 11.1% (Liberation Day anniversary)",
+      "BoJ normalization path (rate hike cycle ongoing)"
+    ]
+  }
+}
