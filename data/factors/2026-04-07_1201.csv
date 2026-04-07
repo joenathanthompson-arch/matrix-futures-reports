@@ -1,0 +1,20 @@
+factor,value,classification,score_hint,source
+Fed stance,April hold 98.4%; June hold 96.6%,Neutral hold,0,https://www.binance.com/en/square/post/04-05-2026-cme-reports-low-probability-of-fed-rate-changes-in-april-309395558215521
+10Y real yields,"DFII10: 2.04, 2.00, 2.02, 1.97, 1.99 from Mar 30 to Apr 3",Flat,0,https://fred.stlouisfed.org/series/DFII10
+USD,DXY 99.959; 5D +0.44%; 1M +0.98%,Strong/rising on multi-day basis,-1 for USD-sensitive assets,https://www.tradingview.com/symbols/TVC-DXY/
+Risk mood,VIX 25.80 and rising,Risk-off,Supports defensives / pressures cyclicals,https://www.cboe.com/tradable-products/vix/
+VIX direction,Up 6.74% on Apr 7,Rising,-1 for equities,https://www.cboe.com/tradable-products/vix/
+Growth narrative,"GDPNow 2026:Q1 at 1.6%, updated Apr 2",Slowing / softer growth impulse,"Defensive-positive, cyclical-negative",https://www.atlantafed.org/research-and-data/data/gdpnow
+Credit spreads,HY OAS 3.46 -> 3.13 by Apr 3,Narrowing,+1 for equities / small caps,https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+2s10s curve,0.52 -> 0.50 by Apr 6,Flattening,-1 for cyclical/value / small caps,https://fred.stlouisfed.org/series/T10Y2Y
+SOX,"^SOX 7,916.10, +1.06% on Apr 6",Rising,+1 for Nasdaq,https://finance.yahoo.com/quote/%5ESOX/
+MOVE,"^MOVE 81.68, -0.12% at Apr 6 close",Falling slightly,+1 for duration-sensitive tech,https://finance.yahoo.com/quote/%5EMOVE/
+Gold ETF flows,Physically backed gold ETF holdings fell by US$12.4B (~90t) in March,Outflows,-1 for gold / silver,https://www.ssga.com/library-content/products/fund-docs/etfs/us/insights-investment-ideas/monthly-gold-monitor.pdf
+Oil inventories,Commercial crude inventories +5.5M bbl to 461.6M,Build,-1 for crude,https://www.eia.gov/petroleum/supply/weekly/pdf/wpsrall.pdf
+Oil supply / geopolitics,Middle East energy shock remains central macro theme,Tightening/disruption risk elevated,+1 for crude / gold,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+ECB stance,Rates unchanged; inflation risks emphasized,Neutral to mildly hawkish,+1 for EUR relative stance,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+RBA stance,"Cash rate target 4.10%, effective Mar 18 after 25 bp increase",Hawkish,+1 for AUD,https://www.rba.gov.au/statistics/cash-rate/
+BoJ stance,Overnight call rate around 0.75%; latest meeting a hold,"Neutral hold, mildly hawkish vs pre-normalization regime",+1 for JPY relative stance,https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf
+Euro-area growth,March PMIs lower than February but still expansionary,Slowing but positive,-1 for EUR growth input,https://www.lseg.com/content/dam/ftse-russell/en_us/documents/market-insights/performance/monthly-performance-report-europe-april-2026.pdf
+China growth,China NBS manufacturing PMI rose to 50.4 from 49.0,Accelerating / improving,+1 for AUD / China-sensitive cyclicals,https://www.ig.com/sg/news-and-trade-ideas/week-ahead--6-april-2026-260402
+Copper,"HG=F 5.5815, -0.35% intraday on Apr 7",Falling,-1 for silver / AUD,https://finance.yahoo.com/quote/HG%3DF/
