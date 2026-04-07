@@ -1,0 +1,23 @@
+factor,source_value,classification,score_impact,source_url
+Fed stance,"FOMC held at 3.50%-3.75%; FedWatch April no-change near 99.5%",Neutral hold,0,https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm
+10Y real yields,"DFII10 1.99 on Apr 3 vs 1.98 on Apr 6",Flat,0,https://fred.stlouisfed.org/series/DFII10
+USD,"DXY 99.641, down 0.35% on day",Weak/falling,+1 for USD-sensitive assets,https://www.tradingview.com/symbols/TVC-DXY/
+Risk mood,"VIX 25.78, up 6.66% on day",Risk-off,Defensive-positive/cyclical-negative,https://www.cboe.com/tradable-products/vix/
+VIX direction,"25.78 vs 24.17 prior close",Rising,-1 for equities,https://www.cboe.com/tradable-products/vix/
+Growth narrative,"GDPNow 2026:Q1 1.3%, updated Apr 7",Slowing,Defensive-positive/cyclical-negative,https://www.atlantafed.org/research-and-data/data/gdpnow
+Credit spreads,"HY OAS 3.13 -> 3.05 by Apr 6",Narrowing,+1 for risk/credit-sensitive assets,https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+2s10s curve,"0.50 on Apr 6 -> 0.52 on Apr 7",Steepening,+1 for domestic cyclicals,https://fred.stlouisfed.org/series/T10Y2Y
+SOX,"8003.87, up 90.24 on Apr 7",Rising,+1 for Nasdaq,https://indexes.nasdaqomx.com/Index/Weighting/SOX
+MOVE,"81.68 prior-close fallback",Falling,+1 for duration-sensitive tech,https://finance.yahoo.com/quote/%5EMOVE/
+Gold ETF flows,"Monthly holdings down about 90t in March",Outflows,-1 for precious metals,https://www.ssga.com/library-content/products/fund-docs/etfs/us/insights-investment-ideas/monthly-gold-monitor.pdf
+Oil inventories,"Commercial crude inventories +5.5M bbl",Build,-1 for crude,https://www.eia.gov/petroleum/supply/weekly/pdf/wpsrall.pdf
+Oil supply shock,"Middle East energy shock remains active",Tightening/disruption,+1 for crude and defensive commodities,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+ECB stance,"Rates unchanged; upside inflation risks emphasized",Hawkish hold,+1 for EUR,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+RBA stance,"Cash rate target raised to 4.10% on Mar 17",Hawkish/tightening,+1 for AUD,https://www.rba.gov.au/media-releases/2026/mr-26-08.html
+BoJ stance,"Overnight call rate around 0.75%; further hikes still signaled",Hawkish/tightening,+1 for JPY,https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf
+Eurozone growth,"March activity softer than prior month",Slowing,-1 for EUR growth impulse,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+China growth,"Manufacturing PMI rose to 50.4 from 49.0",Accelerating,+1 for AUD/China-sensitive cyclicals,https://www.stats.gov.cn/english/PressRelease/202604/t20260401_1962920.html
+Copper,"HG=F down 0.35% intraday",Falling,-1 for silver and AUD,https://finance.yahoo.com/quote/HG%3DF/
+Rate differential EUR-USD,"ECB hawkish hold vs Fed neutral hold",Widening vs USD,+1 for EUR,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html
+Rate differential AUD-USD,"RBA tightening bias vs Fed neutral hold",Widening vs USD,+1 for AUD,https://www.rba.gov.au/media-releases/2026/mr-26-08.html
+Rate differential JPY-USD,"BoJ normalization continues vs Fed neutral hold",Widening vs USD,+1 for JPY,https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf
