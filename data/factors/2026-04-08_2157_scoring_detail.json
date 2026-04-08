@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T21:57:02Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": 1,
+    "risk_mood": 1,
+    "vix_direction": 1,
+    "growth_narrative": 0,
+    "credit_spreads": 0,
+    "sox": 1,
+    "move_index": 1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": -1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 1,
+    "ecb_stance": -1,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": -1,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": -1
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set retained Reuters-syndicated and EIA-linked reporting that Strait of Hormuz disruption continued to tighten effective global oil supply."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set used a World Gold Council weekly monitor reference showing global gold ETFs recorded a 21-tonne inflow at the start of April."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded HG1! at 5.7490 USD/lb, up 3.34% on the day and 2.20% over five days."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set used a World Gold Council weekly monitor reference showing global gold ETFs recorded a 21-tonne inflow at the start of April."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": 3,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Previously verified same-day repository factor set retained Reuters-syndicated and EIA-linked reporting that Strait of Hormuz disruption continued to tighten effective global oil supply."
+        },
+        "oil_inventories": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Previously verified same-day repository factor set used the EIA Weekly Petroleum Status Report showing commercial crude inventories rose by 5.5 million barrels to 461.6 million."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Middle East conflict and tanker-flow uncertainty continue to keep energy-market geopolitical risk elevated."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS remained available only with a lagged official print from 2026-04-06; absent a clearly verified directional change, the factor was kept FLAT."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a daily change of -18.39% (-4.74) on 2026-04-08, so the directional VIX signal is falling."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded SOX at 8,003.87, up 1.11% on the day and 6.08% over five days."
+        },
+        "move_index": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded MOVE at 83.1452, down 3.24% over 24 hours and down 27.04% over the past week."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS remained available only with a lagged official print from 2026-04-06; absent a clearly verified directional change, the factor was kept FLAT."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded FRED T10Y2Y at 0.52% on 2026-04-07, leaving the curve positively sloped and normalized from inversion."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED HY OAS remained available only with a lagged official print from 2026-04-06; absent a clearly verified directional change, the factor was kept FLAT."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded FRED T10Y2Y at 0.52% on 2026-04-07, leaving the curve positively sloped and normalized from inversion."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": -2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "ecb_stance": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "ECB key policy rates remain at 2.00% deposit, 2.15% MRO, and 2.40% marginal lending after a sequence of cuts, preserving an easing bias."
+        },
+        "rate_diff_eur_usd": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "A neutral Fed against an easing-biased ECB keeps the policy differential moving against EUR."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Previously verified same-day repository factor set retained euro area composite PMI at 50.7 in March, down from 51.9 in February."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA cash rate target remains 4.10% following the March 18, 2026 increase."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA policy at 4.10% versus Fed 3.50%-3.75% keeps the AUD rate differential supportive."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_sentiment_aud": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "AUD remains a pro-cyclical currency, and VIX above 20 keeps the risk-sentiment input mildly adverse."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Previously verified same-day repository factor set retained the official China NBS manufacturing PMI rebound to 50.4 in March from 49.0 in February."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Previously verified same-day repository factor set recorded HG1! at 5.7490 USD/lb, up 3.34% on the day and 2.20% over five days."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 6,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ policy remains around 0.75% with normalization still the dominant direction of travel, supporting a hawkish relative stance."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization keeps improving the JPY side of the rate-differential narrative versus a neutral Fed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off."
+        }
+      }
+    }
+  }
+}
