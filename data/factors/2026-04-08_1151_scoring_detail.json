@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T11:51:33Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": 1,
+    "risk_mood": 1,
+    "vix_direction": 1,
+    "growth_narrative": 1,
+    "credit_spreads": 0,
+    "sox": 1,
+    "move_index": 1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": -1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 1,
+    "ecb_stance": -1,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": -1,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": -1
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Anadolu/EIA STEO report: Strait of Hormuz disruption tightened supply, with outages estimated at 7.5m bpd in March and peaking near 9.1m bpd in April."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "World Gold Council Weekly Markets Monitor: global gold ETFs recorded a 21-tonne inflow to start April."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView HG1!: 5.7490 USD/lb, up 3.34% on the day and 2.20% over five days."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "World Gold Council Weekly Markets Monitor: global gold ETFs recorded a 21-tonne inflow to start April."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": 5,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Anadolu/EIA STEO report: Strait of Hormuz disruption tightened supply, with outages estimated at 7.5m bpd in March and peaking near 9.1m bpd in April."
+        },
+        "oil_inventories": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "EIA Weekly Petroleum Status Report: commercial crude inventories rose by 5.5 million barrels to 461.6 million."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Middle East conflict and Hormuz disruption keep geopolitical and energy-market risk elevated."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS: 3.05% on 2026-04-06; classified as flat / only modestly wider rather than decisively widening."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX daily change: -21.37% (-5.51), so the directional signal is falling."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView SOX: 8,003.87, up 1.11% on the day and 6.08% over five days."
+        },
+        "move_index": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView MOVE: 83.1452, down 3.24% in 24h and down 27.04% over the past week."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS: 3.05% on 2026-04-06; classified as flat / only modestly wider rather than decisively widening."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y: 0.52% on 2026-04-07; curve remains positively sloped and normalized from inversion."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10: 1.98% on 2026-04-06; treated as FLAT because a >5bp verified directional move was not confirmed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow: 1.3% for 2026:Q1, consistent with a slowing rather than accelerating growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED HY OAS: 3.05% on 2026-04-06; classified as flat / only modestly wider rather than decisively widening."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y: 0.52% on 2026-04-07; curve remains positively sloped and normalized from inversion."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": -2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "ecb_stance": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "ECB key policy rates remain at 2.00% deposit / 2.15% MRO / 2.40% marginal lending after a sequence of cuts, reflecting an easing bias."
+        },
+        "rate_diff_eur_usd": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "A neutral Fed versus an easing-biased ECB points to a differential moving against EUR."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Reuters-syndicated PMI coverage: euro zone composite PMI fell to 50.7 in March from 51.9 in February, a nine-month low."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA cash rate target is 4.10% as of 18 March 2026 following a 25bp increase."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA 4.10% versus Fed 3.50-3.75% leaves the AUD rate differential supportive."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_sentiment_aud": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "AUD remains a pro-cyclical risk currency; VIX above 20 implies a risk-off input for this factor."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China official NBS manufacturing PMI rose to 50.4 in March from 49.0 in February, returning to expansion."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView HG1!: 5.7490 USD/lb, up 3.34% on the day and 2.20% over five days."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 6,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch: Apr 2026 meeting shows 98.4% no change at 350-375, with only 1.6% hike pricing."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ statement dated 19 March 2026 maintained the overnight call rate around 0.75%, still a normalization-oriented stance."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization improves the JPY side of the rate differential versus a neutral Fed."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView DXY: 98.726, down 0.790 points (-0.79%) on the day."
+        },
+        "risk_mood": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX: 20.27 on 2026-04-08, which remains above the 20 threshold for a risk-off regime."
+        }
+      }
+    }
+  }
+}
