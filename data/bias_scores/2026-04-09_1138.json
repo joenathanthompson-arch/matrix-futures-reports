@@ -1,0 +1,117 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "2026-04-09T11:38:53Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "SI": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "ES": {
+      "score": -8,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "NQ": {
+      "score": -6,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "YM": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "RTY": {
+      "score": -5,
+      "signal": "STRONG_BEARISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "M6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "NEUTRAL",
+    "INDICES": "STRONG_BEARISH",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "Rising real yields (+30bps from pre-war) weighing heavily on equities",
+    "Geopolitical tensions (US-Iran) keeping safe-haven assets elevated",
+    "Hawkish shift from ECB and BoJ narrowing rate differentials vs USD"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [
+      "News searches for current real yields and credit spreads"
+    ],
+    "overnight_changes": [
+      "VIX rising above 21 on ceasefire doubts"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "US Inflation Data (CPI/PPI)"
+    ],
+    "near_term": [
+      "BoJ April Rate Decision"
+    ],
+    "background": [
+      "Middle East conflict ongoing"
+    ]
+  }
+}
