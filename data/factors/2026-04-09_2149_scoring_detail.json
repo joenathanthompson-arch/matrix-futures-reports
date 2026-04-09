@@ -1,0 +1,472 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "2026-04-09T21:49:30Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": 1,
+    "risk_mood": 0,
+    "vix_direction": 1,
+    "growth_narrative": 1,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": 1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": -1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 1,
+    "ecb_stance": 0,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": -1,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": 0
+  },
+  "detail": {
+    "GC": {
+      "name": "Gold",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Middle East shipping and supply uncertainty remains elevated despite ceasefire headlines, so the supply factor remains positive for crude and gold."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "World Gold Council reported a 21-tonne inflow into global gold ETFs to start April, a constructive precious-metals flow signal."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Copper futures rose 0.62% on the day and 3.08% over five days, supporting cyclical growth and commodity-linked FX."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "World Gold Council reported a 21-tonne inflow into global gold ETFs to start April, a constructive precious-metals flow signal."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Middle East shipping and supply uncertainty remains elevated despite ceasefire headlines, so the supply factor remains positive for crude and gold."
+        },
+        "oil_inventories": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Latest EIA-linked reporting showed U.S. crude inventories rising by 3.1 million barrels to 464.7 million, a mild bearish input for oil."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Regional tensions remain elevated enough to preserve a residual geopolitical-risk premium in energy."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS tightened to 2.94% on 2026-04-08 from 3.12% on 2026-04-07, a supportive signal for risk assets."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "VIX fell 7.37% on the day, a supportive directional volatility input for equity risk appetite."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "SOX rose 2.10% on the day and 10.93% over five days, supportive for tech-sensitive equity exposures."
+        },
+        "move_index": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "MOVE fell 6.00% on the day and 12.32% over five days, easing the rates-volatility headwind for growth assets."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS tightened to 2.94% on 2026-04-08 from 3.12% on 2026-04-07, a supportive signal for risk assets."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y printed +0.51 on 2026-04-09, keeping the curve positively sloped and mildly supportive."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96% on 2026-04-08, unchanged from the prior day, so real yields are treated as flat."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow remained at 1.3% for Q1 2026, signaling slower but still positive U.S. growth."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "FRED HY OAS tightened to 2.94% on 2026-04-08 from 3.12% on 2026-04-07, a supportive signal for risk assets."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y printed +0.51 on 2026-04-09, keeping the curve positively sloped and mildly supportive."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "ecb_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The ECB kept rates unchanged on 19 March 2026, which is treated as neutral for the euro in this run."
+        },
+        "rate_diff_eur_usd": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "The EUR-USD rate differential still leans toward USD support versus a neutral Fed and an ECB that is not overtly hawkish."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "March euro area composite PMI slowed to 50.7 from 51.9, a negative growth impulse for EUR."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The RBA raised the cash rate to 4.10% on 17 March 2026, a supportive hawkish input for AUD."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "AUD-USD rate differentials remain supportive after the March RBA hike."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_sentiment_aud": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Because VIX is below 20, the dedicated AUD risk-sentiment factor is treated as neutral rather than risk-off."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China official March manufacturing PMI rose to 50.4 from 49.0, indicating a return to expansion."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Copper futures rose 0.62% on the day and 3.08% over five days, supporting cyclical growth and commodity-linked FX."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Fed policy remains on hold, so the factor is scored neutral."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "The BoJ kept the overnight call rate around 0.75% on 19 March 2026 and said it would continue raising rates if the outlook is realized."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization continues to improve the medium-term JPY-USD rate differential."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Yahoo Finance showed DXY at 98.808, down 0.25% on the day and 1.17% over five days, a supportive weak-dollar input."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "VIX closed below the 20 threshold at 19.49, so the broad risk-mood regime is treated as neutral rather than risk-off."
+        }
+      }
+    }
+  }
+}
