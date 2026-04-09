@@ -12,20 +12,20 @@ FACTOR_DIR = BASE_DIR / "data" / "factors"
 for path in (BIAS_DIR, EXEC_DIR, FACTOR_DIR):
     path.mkdir(parents=True, exist_ok=True)
 
-# Refreshed April 8, 2026 inputs collected or confirmed during this session.
-# Where live sources were inaccessible, previously verified same-day repository notes were retained.
+# Refreshed April 9, 2026 UTC inputs collected or confirmed during this session.
+# Integer scoring conventions follow docs/Macro_Bias_Scorer_Reference.md.
 macro_data = {
     "fed_stance": 0,
     "real_yields": 0,
     "usd_dxy": 1,
-    "risk_mood": 1,
+    "risk_mood": 0,
     "vix_direction": 1,
     "growth_narrative": 0,
-    "credit_spreads": 0,
+    "credit_spreads": 1,
     "sox": 1,
     "move_index": 1,
     "yield_curve_2s10s": 1,
-    "copper": 1,
+    "copper": -1,
     "oil_inventories": -1,
     "oil_supply_shock": 1,
     "geopolitical_risk": 1,
@@ -38,7 +38,7 @@ macro_data = {
     "rate_diff_eur_usd": -1,
     "rate_diff_aud_usd": 1,
     "rate_diff_jpy_usd": 1,
-    "risk_sentiment_aud": -1,
+    "risk_sentiment_aud": 0,
 }
 
 instrument_configs = {
@@ -159,31 +159,114 @@ instrument_configs = {
     },
 }
 
+references = {
+    "1": {
+        "title": "TradingView DXY page",
+        "url": "https://www.tradingview.com/symbols/TVC-DXY/",
+    },
+    "2": {
+        "title": "Cboe VIX product page",
+        "url": "https://www.cboe.com/tradable-products/vix/",
+    },
+    "3": {
+        "title": "Atlanta Fed GDPNow",
+        "url": "https://www.atlantafed.org/cqer/research/gdpnow",
+    },
+    "4": {
+        "title": "TradingView SOX page",
+        "url": "https://www.tradingview.com/symbols/SOX/",
+    },
+    "5": {
+        "title": "TradingView MOVE page",
+        "url": "https://www.tradingview.com/symbols/TVC-MOVE/",
+    },
+    "6": {
+        "title": "TradingView Copper continuous futures page",
+        "url": "https://www.tradingview.com/symbols/COMEX-HG1!/",
+    },
+    "7": {
+        "title": "CME FedWatch Tool",
+        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+    },
+    "8": {
+        "title": "ECB key interest rates page",
+        "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+    },
+    "9": {
+        "title": "RBA cash rate page",
+        "url": "https://www.rba.gov.au/statistics/cash-rate/",
+    },
+    "10": {
+        "title": "FRED DFII10 series",
+        "url": "https://fred.stlouisfed.org/series/DFII10",
+    },
+    "11": {
+        "title": "FRED BAMLH0A0HYM2 series",
+        "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+    },
+    "12": {
+        "title": "FRED T10Y2Y series",
+        "url": "https://fred.stlouisfed.org/series/T10Y2Y",
+    },
+    "13": {
+        "title": "World Gold Council weekly markets monitor",
+        "url": "https://www.gold.org/goldhub/gold-focus/2026/04/weekly-markets-monitor-21-tonne-salute",
+    },
+    "14": {
+        "title": "Bank of Japan monetary policy schedule page",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+    },
+    "15": {
+        "title": "China NBS PMI press release",
+        "url": "https://www.stats.gov.cn/english/PressRelease/202604/t20260401_1962920.html",
+    },
+    "16": {
+        "title": "FXStreet eurozone PMI article",
+        "url": "https://www.fxstreet.com/news/eurozone-hcob-composite-pmi-above-expectations-505-in-march-actual-507-202604070800",
+    },
+    "17": {
+        "title": "EIA press release on Hormuz closure and production outages",
+        "url": "https://www.eia.gov/pressroom/releases/press586.php",
+    },
+    "18": {
+        "title": "Anadolu summary of the latest EIA crude inventory release",
+        "url": "https://www.aa.com.tr/en/energy/oil/us-crude-oil-inventories-up-by-07-for-week-ending-april-3/56257",
+    },
+    "19": {
+        "title": "AP market roundup on stocks and oil",
+        "url": "https://apnews.com/article/stock-markets-trump-iran-ceasefire-oil-857ae30b3be4441819b2848fd594a33d",
+    },
+    "20": {
+        "title": "Forex.com FX market article",
+        "url": "https://www.forex.com/en-us/news-and-analysis/oil-stocks-still-driving-fx-markets-as-ceasefire-hopes-push-into-eow/",
+    },
+}
+
 factor_notes = {
-    "fed_stance": "Repository-local CME FedWatch note dated April 8, 2026 showed 99.5% probability of no change for the April 30 FOMC meeting, supporting a neutral-hold classification.",
-    "real_yields": "FRED DFII10 page showed the latest official observation at 1.96% on 2026-04-07; because a machine-readable prior-close comparison could not be fully verified during this session, the factor was scored FLAT conservatively.",
-    "usd_dxy": "TradingView DXY page showed 99.024 on 2026-04-08, down 0.492 points (-0.49%) from a prior close of 99.516.",
-    "risk_mood": "Cboe VIX page showed a spot price of 21.04 on 2026-04-08, which remains above the 20 threshold and therefore keeps the regime risk-off.",
-    "vix_direction": "Cboe VIX page showed a daily change of -18.39% (-4.74) on 2026-04-08, so the directional VIX signal is falling.",
-    "growth_narrative": "Atlanta Fed GDPNow was 1.3% for 2026:Q1 on 2026-04-07, unchanged versus the repository's earlier same-day reference point, so the growth signal was classified as stable rather than slowing further.",
-    "credit_spreads": "FRED HY OAS remained available only with a lagged official print from 2026-04-06; absent a clearly verified directional change, the factor was kept FLAT.",
-    "sox": "Previously verified same-day repository factor set recorded SOX at 8,003.87, up 1.11% on the day and 6.08% over five days.",
-    "move_index": "Previously verified same-day repository factor set recorded MOVE at 83.1452, down 3.24% over 24 hours and down 27.04% over the past week.",
-    "yield_curve_2s10s": "Previously verified same-day repository factor set recorded FRED T10Y2Y at 0.52% on 2026-04-07, leaving the curve positively sloped and normalized from inversion.",
-    "copper": "Previously verified same-day repository factor set recorded HG1! at 5.7490 USD/lb, up 3.34% on the day and 2.20% over five days.",
-    "oil_inventories": "Previously verified same-day repository factor set used the EIA Weekly Petroleum Status Report showing commercial crude inventories rose by 5.5 million barrels to 461.6 million.",
-    "oil_supply_shock": "Previously verified same-day repository factor set retained Reuters-syndicated and EIA-linked reporting that Strait of Hormuz disruption continued to tighten effective global oil supply.",
-    "geopolitical_risk": "Middle East conflict and tanker-flow uncertainty continue to keep energy-market geopolitical risk elevated.",
-    "gold_etf_flows": "Previously verified same-day repository factor set used a World Gold Council weekly monitor reference showing global gold ETFs recorded a 21-tonne inflow at the start of April.",
-    "ecb_stance": "ECB key policy rates remain at 2.00% deposit, 2.15% MRO, and 2.40% marginal lending after a sequence of cuts, preserving an easing bias.",
-    "rba_stance": "RBA cash rate target remains 4.10% following the March 18, 2026 increase.",
-    "boj_stance": "BoJ policy remains around 0.75% with normalization still the dominant direction of travel, supporting a hawkish relative stance.",
-    "china_growth": "Previously verified same-day repository factor set retained the official China NBS manufacturing PMI rebound to 50.4 in March from 49.0 in February.",
-    "eurozone_growth": "Previously verified same-day repository factor set retained euro area composite PMI at 50.7 in March, down from 51.9 in February.",
-    "rate_diff_eur_usd": "A neutral Fed against an easing-biased ECB keeps the policy differential moving against EUR.",
-    "rate_diff_aud_usd": "RBA policy at 4.10% versus Fed 3.50%-3.75% keeps the AUD rate differential supportive.",
-    "rate_diff_jpy_usd": "BoJ normalization keeps improving the JPY side of the rate-differential narrative versus a neutral Fed.",
-    "risk_sentiment_aud": "AUD remains a pro-cyclical currency, and VIX above 20 keeps the risk-sentiment input mildly adverse.",
+    "fed_stance": "CME FedWatch showed 98.4% probability of no change and 1.6% probability of a hike for the April 30 FOMC meeting, so the Fed stance remains neutral [7].",
+    "real_yields": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10].",
+    "usd_dxy": "TradingView showed DXY at 98.795, down 0.203 points (-0.21%) from a 98.998 prior close, which keeps the dollar factor weak/falling [1].",
+    "risk_mood": "Cboe VIX was 19.49, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2].",
+    "vix_direction": "Cboe VIX fell 7.37% (-1.55) on the day from a 21.04 prior close, so the directional volatility signal remains supportive [2].",
+    "growth_narrative": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3].",
+    "credit_spreads": "FRED HY OAS narrowed to 2.94 on 2026-04-08 from 3.12 on 2026-04-07, which qualifies as tighter credit spreads on the latest official print [11].",
+    "sox": "TradingView showed SOX at 8,689.53, up 2.10% on the day from 8,510.92, keeping the semiconductor leadership factor positive [4].",
+    "move_index": "TradingView showed MOVE at 74.0129, down 6.00% on the day from 78.7357, reinforcing a friendlier Treasury-volatility backdrop [5].",
+    "yield_curve_2s10s": "FRED T10Y2Y remained positive at 0.51 on 2026-04-09 after 0.50 on 2026-04-08, so the curve stays normalized and positively sloped [12].",
+    "copper": "TradingView showed COMEX copper at 5.7475, down 0.29% on the day, flipping the copper direction factor to bearish [6].",
+    "oil_inventories": "Anadolu's summary of the latest EIA release said U.S. commercial crude inventories rose by 3.1 million barrels to 464.7 million in the week ending April 3, a bearish build for WTI [18].",
+    "oil_supply_shock": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17].",
+    "geopolitical_risk": "The Middle East energy conflict and continuing tanker-flow uncertainty keep geopolitical risk elevated, which remains supportive for oil risk premium [17] [19].",
+    "gold_etf_flows": "The World Gold Council weekly monitor reported a 21-tonne inflow into global gold ETFs at the start of April, preserving a positive investment-flow signal for gold and silver [13].",
+    "ecb_stance": "The ECB key rates page continues to show 2.00% deposit, 2.15% MRO, and 2.40% marginal lending, consistent with an easing-biased policy stance [8].",
+    "rba_stance": "The RBA cash rate page continues to show a 4.10% cash rate target effective March 18, 2026, preserving a supportive policy stance for AUD [9].",
+    "boj_stance": "The BoJ policy schedule still points back to the March 18-19 cycle as the latest completed meeting, consistent with retaining the repository's normalization bias [14].",
+    "china_growth": "China's official March manufacturing PMI rebounded to 50.4 from 49.0, confirming an improving China growth proxy [15].",
+    "eurozone_growth": "A fallback FXStreet report on the HCOB/S&P Global release put euro area composite PMI at 50.7 in March, below February's 51.9, which keeps the eurozone growth factor negative [16].",
+    "rate_diff_eur_usd": "A neutral Fed versus an easing-biased ECB continues to leave the policy-rate differential unfavorable for EUR [7] [8].",
+    "rate_diff_aud_usd": "A 4.10% RBA cash rate versus a 3.50%-3.75% Fed target range keeps the rate differential supportive for AUD [7] [9].",
+    "rate_diff_jpy_usd": "BoJ normalization still improves the JPY side of the rate-differential narrative against a neutral Fed [7] [14].",
+    "risk_sentiment_aud": "With VIX at 19.49, the broad risk tone is balanced rather than clearly adverse or clearly risk-on, so the AUD sentiment factor is neutral [2].",
 }
 
 instrument_display = {
@@ -200,17 +283,45 @@ instrument_display = {
 }
 
 analysis_paragraphs = {
-    "GC": "Gold holds a constructive bias because the dollar weakened and the volatility regime remains defensive with VIX still above 20. Conviction is moderated by flat rather than falling real yields and by the fact that the growth signal stabilized rather than deteriorated further, which keeps the setup positive without turning into a full high-conviction breakout call.",
-    "SI": "Silver also leans higher because a softer dollar and a previously verified rising copper tape continue to support the metal's industrial and precious-metal channels simultaneously. The signal is stronger than a marginal upside lean but still not an outright strong-trend regime because real yields were conservatively held flat and the macro growth signal is no longer worsening intraday.",
-    "CL": "WTI crude retains a bullish bias because supply-disruption and geopolitical-risk factors remain supportive while a weaker dollar helps the commodity complex at the margin. The score is held below the strongest tier because the latest verified U.S. inventory signal was still a bearish build and GDPNow was stable rather than accelerating.",
-    "ES": "The S&P 500 improves into a bullish but still moderate configuration because the VIX direction turned sharply supportive, the dollar softened, and real yields were not confirmed higher. Even so, the regime is not clean risk-on because the VIX level itself remains above 20 and high-yield spreads were only conservatively treated as flat.",
-    "NQ": "Nasdaq gains support from the weaker dollar, a sharply falling VIX direction, and previously verified strength in semiconductors and rates-volatility conditions. Because real yields were not confirmed lower and the VIX level remains elevated, the setup favors bullish participation but not an aggressive extended-duration trend call.",
-    "YM": "The Dow carries a bullish bias as the weaker dollar, still-positive curve shape, and stable growth backdrop leave the more cyclical large-cap complex in a better balance than earlier in the session. The signal remains moderate because neither credit spreads nor real yields delivered a freshly verified tailwind beyond flat.",
-    "RTY": "Russell 2000 also improves to bullish territory because small caps benefit from a weaker dollar, a normalized curve, and the absence of an additional GDPNow downgrade. Confidence remains only moderate because VIX is still above 20 and the credit-spread input was kept flat rather than positively re-rated.",
-    "6E": "The euro remains the main laggard in the basket because the softer dollar is outweighed by an ECB easing bias, a policy differential that still works against EUR, and weak euro-area growth data. That combination leaves the contract mildly bearish rather than neutral even though broad USD conditions were less hostile during the session.",
-    "6A": "The Australian dollar stays one of the clearer constructive setups because RBA policy remains supportive, China growth improved in the latest official PMI release, and copper direction remained firm in the previously verified same-day factor set. Risk sentiment is not fully clean with VIX still above 20, but the policy and commodity mix continues to favor AUD strength.",
-    "6J": "The Japanese yen remains the highest-conviction signal because the contract benefits simultaneously from dollar weakness, a still-defensive volatility regime, and the ongoing Bank of Japan normalization story. Since 6J rises when the yen strengthens, that combination continues to justify a strong bullish classification even though the Fed itself is only neutral.",
+    "GC": "Gold stays constructive because the dollar softened and ETF flows remain positive, while the Hormuz-related energy shock still supports hedging demand. The signal is no longer amplified by a clearly defensive VIX level because spot volatility slipped back below 20, which keeps the setup bullish but not extreme.",
+    "SI": "Silver retains only a marginally constructive stance because dollar weakness and gold ETF inflows still help, but the copper signal flipped lower on the day and removes an important industrial tailwind. With real yields flat and the growth narrative stable rather than re-accelerating, the contract is closer to a tactical upside lean than a full trend continuation.",
+    "CL": "WTI crude remains bullish because the official EIA supply-shock backdrop is still severe and geopolitical risk stays elevated. The latest U.S. inventory build prevents a stronger classification, but the weaker dollar and persistent Hormuz disruption still leave the net balance positive.",
+    "ES": "The S&P 500 remains bullish because a softer dollar, tighter credit spreads, and a falling VIX direction all improved the cross-asset backdrop. Even so, the VIX level itself only moved back into a balanced regime rather than a clearly complacent one, which argues for a moderate rather than aggressive bullish bias.",
+    "NQ": "Nasdaq 100 keeps a bullish bias because semiconductor leadership strengthened further and Treasury volatility continued to fall, while the weaker dollar also helped duration-sensitive growth assets. The signal is healthier than earlier in the week, but flat real yields mean the move still lacks a fresh rates-driven acceleration tailwind.",
+    "YM": "The Dow Jones contract is bullish because dollar weakness, tighter high-yield spreads, and a still-positive curve leave the cyclical large-cap backdrop more supportive. Stable rather than accelerating growth keeps the score in the middle bullish tier instead of the strongest category.",
+    "RTY": "Russell 2000 becomes one of the stronger equity expressions because it benefits most from tighter credit spreads and a normalized curve. The balanced VIX regime is less of a headwind than before, so small caps now screen as a higher-conviction pro-cyclical setup than the other major U.S. index futures.",
+    "6E": "Euro FX remains mildly bearish because a softer dollar is still outweighed by the ECB's easing bias, an unfavorable policy differential, and slowing euro-area growth momentum. The contract improved from a more hostile USD backdrop, but not enough to offset Europe-specific macro drag.",
+    "6A": "The Australian dollar improves to a clearer bullish configuration because RBA policy remains supportive, China's PMI rebound still helps the regional growth proxy, and the broader market tone is no longer outright risk-off with VIX back below 20. The one notable offset is copper's daily decline, which tempers but does not overturn the positive macro mix.",
+    "6J": "Japanese yen futures remain the highest-conviction setup because the contract combines BoJ normalization, a friendlier JPY rate-differential narrative, and ongoing dollar softness. Even though VIX fell back into a balanced rather than overtly defensive regime, the yen still has the cleanest macro alignment in the basket.",
 }
+
+futures_news = [
+    {
+        "headline": "US stocks rise and oil prices trim their gains on hopes for the ceasefire with Iran",
+        "url": references["19"]["url"],
+    },
+    {
+        "headline": "US crude oil inventories up by 0.7% for week ending April 3",
+        "url": references["18"]["url"],
+    },
+]
+
+currency_news = [
+    {
+        "headline": "Oil, Stocks Still Driving FX Markets as Ceasefire Hopes Push into EOW",
+        "url": references["20"]["url"],
+    },
+    {
+        "headline": "Eurozone HCOB Composite PMI above expectations: 50.7 in March",
+        "url": references["16"]["url"],
+    },
+]
+
+calendar_notes = [
+    "Preferred ForexFactory calendar page access was blocked in-browser during this session, so the schedule below uses confirmed session catalysts and near-dated releases rather than claiming direct calendar extraction.",
+    "April 9: U.S. weekly jobless claims and February core PCE-related market digestion remained in focus alongside the Atlanta Fed GDPNow refresh [3] [19].",
+    "April 10: China inflation data and the U.S. CPI report are the next immediate macro catalysts for futures and FX positioning [15] [20].",
+]
 
 
 def calculate_score(config: dict) -> tuple[int, dict]:
@@ -318,7 +429,7 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
         reverse=True,
     )[:3]
 
-    lines = []
+    lines: list[str] = []
     lines.append("# Matrix Futures Daily Bias Report")
     lines.append(f"**Date:** {date_label} | **Time:** {time_label} UTC")
     lines.append("")
@@ -326,7 +437,19 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("## Overall Market Bias: BULLISH")
     lines.append("")
-    lines.append("Macro conditions improved modestly through the April 8 session as dollar weakness and sharply falling equity volatility supported commodities and most risk assets at the margin. The growth signal stabilized rather than worsening further, which reduced recession-style defensiveness, but cross-currents remain visible in FX where euro weakness still contrasts with stronger AUD and JPY divergence themes.")
+    lines.append("Macro conditions on April 9 remained broadly constructive because the dollar weakened, credit spreads tightened, and both equity and Treasury volatility improved directionally. The regime is no longer clearly defensive after VIX slipped below 20, but it is not yet a full risk-on surge because growth merely stabilized, crude inventories still built, and Europe-specific macro data remain soft [1] [2] [3] [11] [18].")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Main Summary Table")
+    lines.append("")
+    lines.append("| Instrument | Name | Numeric Bias Score | Signal | Confidence | Approach | Mode | Hold |")
+    lines.append("|------------|------|--------------------|--------|------------|----------|------|------|")
+    for symbol in ["GC", "SI", "CL", "ES", "NQ", "YM", "RTY", "6E", "6A", "6J"]:
+        data = results[symbol]
+        lines.append(
+            f"| {symbol} | {instrument_display[symbol]} | {signed_score(data['score'])} | {data['signal']} | {data['confidence']}/10 | {data['recommended_approach']} | {data['recommended_mode']} | {data['hold_expectation']} |"
+        )
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -334,9 +457,9 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("| Asset Class | Bias | Key Driver |")
     lines.append("|-------------|------|------------|")
-    lines.append(f"| Commodities | {asset_class_bias['COMMODITIES']} | Weak USD and still-elevated energy and volatility hedging demand keep metals and crude supported |")
-    lines.append(f"| Indices | {asset_class_bias['INDICES']} | Falling VIX direction, softer USD, and stable rather than worsening growth conditions improved the index backdrop |")
-    lines.append(f"| FX | {asset_class_bias['FX']} | Dollar weakness helps broadly, but policy divergence still clearly favors AUD and JPY over EUR |")
+    lines.append(f"| Commodities | {asset_class_bias['COMMODITIES']} | Softer USD and continuing Hormuz-related supply stress keep the complex supported even after another bearish U.S. crude inventory build [1] [17] [18] |")
+    lines.append(f"| Indices | {asset_class_bias['INDICES']} | Tighter credit spreads, falling VIX direction, and stronger semiconductors improved the risk backdrop [2] [4] [11] |")
+    lines.append(f"| FX | {asset_class_bias['FX']} | Dollar weakness helps broadly, but policy divergence still favors JPY and AUD over EUR [1] [7] [8] [9] [14] |")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -359,32 +482,66 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
         lines.append("")
     lines.append("---")
     lines.append("")
+    lines.append("## Economic Calendar Context")
+    lines.append("")
+    for item in calendar_notes:
+        lines.append(f"- {item}")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Brief News Summary: Futures")
+    lines.append("")
+    for item in futures_news:
+        lines.append(f"- {item['headline']} | {item['url']}")
+    lines.append("")
+    lines.append("Futures headlines still revolve around two linked themes: crude remains underpinned by unresolved Strait of Hormuz disruption, while equity benchmarks continue to stabilize as ceasefire hopes reduce the probability of a deeper near-term growth shock [17] [18] [19].")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Brief News Summary: Currency")
+    lines.append("")
+    for item in currency_news:
+        lines.append(f"- {item['headline']} | {item['url']}")
+    lines.append("")
+    lines.append("Currency headlines continue to emphasize a weaker dollar backdrop, a still-fragile USD/JPY pressure point, and persistent euro underperformance against the backdrop of softer euro-area activity [1] [16] [20].")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
     lines.append("## Key Macro Themes")
     lines.append("")
-    lines.append("1. **The dollar is still the main cross-asset tailwind**: TradingView showed DXY at 99.024, down 0.49% on the session, which supported metals, crude, and non-USD FX.")
-    lines.append("2. **Volatility improved directionally, but not fully in level terms**: Cboe VIX fell 18.39% to 21.04, which helped equities and risk assets, yet the index still sits above the 20 threshold that keeps the regime defensively tinted.")
-    lines.append("3. **Growth stabilized rather than re-accelerated**: Atlanta Fed GDPNow remained at 1.3% for 2026:Q1, leaving the macro picture softer than trend but no worse than the earlier same-day reference point.")
+    lines.append("1. **The dollar remains a broad cross-asset tailwind** because DXY fell to 98.795, supporting commodities and non-USD FX [1].")
+    lines.append("2. **Risk conditions improved without becoming euphoric** because VIX fell sharply to 19.49 and MOVE dropped to 74.0129, yet the growth narrative only held steady at 1.3% GDPNow [2] [3] [5].")
+    lines.append("3. **Crude remains uniquely supported by supply stress** because EIA still describes severe Hormuz-related outages even as domestic inventories rose by 3.1 million barrels [17] [18].")
+    lines.append("4. **Policy divergence still matters most in FX** because ECB easing bias contrasts with still-supportive RBA settings and the BoJ normalization story [8] [9] [14].")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## Upcoming Catalysts")
     lines.append("")
     lines.append("### Imminent (< 1 Week)")
-    lines.append("- Atlanta Fed GDPNow refresh (Apr 9)")
-    lines.append("- China inflation data (Apr 10)")
-    lines.append("- Ongoing oil-market headlines tied to Strait of Hormuz shipping conditions")
+    lines.append("- U.S. CPI on April 10 [20]")
+    lines.append("- China inflation data on April 10 [15]")
+    lines.append("- Ongoing Strait of Hormuz and tanker-flow headlines [17] [19]")
     lines.append("")
     lines.append("### Near-Term (1-4 Weeks)")
-    lines.append("- Federal Reserve meeting (Apr 30)")
+    lines.append("- Federal Reserve meeting on April 30 [7]")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## Data Quality")
     lines.append("")
-    lines.append("- Live CME FedWatch probabilities were not readable from the public embed during this session, so the neutral-hold classification used a repository-local same-day FedWatch note showing 99.5% no change.")
-    lines.append("- FRED DFII10, HY OAS, and T10Y2Y official observations lagged the live session and were treated conservatively where a fresh prior-close comparison could not be fully verified.")
-    lines.append("- Several non-core factors, including SOX, MOVE, copper, gold ETF flows, and eurozone and China growth proxies, were carried forward from the repository's previously verified same-day April 8 factor set where direct source access was restricted.")
+    lines.append("- The preferred ForexFactory calendar page could not be opened directly in-browser because of access restrictions, so the calendar section uses fallback session catalysts and explicitly discloses that limitation.")
+    lines.append("- Reuters access to the eurozone PMI article was restricted, so the euro-area growth factor used an accessible FXStreet fallback tied to the HCOB/S&P Global release [16].")
+    lines.append("- FRED inputs are official but still slightly lagged relative to the live session; the model therefore uses the latest available official print for DFII10, HY OAS, and T10Y2Y [10] [11] [12].")
     lines.append(f"- Average confidence: {avg_conf:.1f}/10")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## References")
+    lines.append("")
+    for key in sorted(references, key=lambda x: int(x)):
+        ref = references[key]
+        lines.append(f"[{key}]: {ref['url']} \"{ref['title']}\"")
     lines.append("")
     lines.append("---")
     lines.append("**End of Report**")
@@ -435,44 +592,44 @@ def main() -> None:
         "scores": results,
         "asset_class_bias": asset_class_bias,
         "key_drivers": [
-            "TradingView showed DXY at 99.024 and down 0.49% on the session, improving the backdrop for commodities and non-USD FX.",
-            "Cboe VIX fell 18.39% to 21.04, improving directional risk tone even though the volatility regime remains above the 20 risk-off threshold.",
-            "Atlanta Fed GDPNow held at 1.3% for 2026:Q1, which stabilized the U.S. growth signal rather than worsening it further during the session.",
-            "Policy divergence remains strongest in FX, with ECB easing bias contrasting against still-supportive RBA and BoJ narratives."
+            "TradingView showed DXY at 98.795 and down 0.21% on the session, improving the backdrop for commodities and non-USD FX [1].",
+            "Cboe VIX fell 7.37% to 19.49, moving the volatility regime back to balanced while leaving direction supportive for risk assets [2].",
+            "FRED HY OAS tightened from 3.12 to 2.94 on the latest official print, improving the cross-asset credit backdrop [11].",
+            "EIA still describes severe Hormuz-related supply disruption even as U.S. crude inventories rose by 3.1 million barrels [17] [18].",
         ],
         "data_quality": {
             "stale_sources": [
-                "FRED DFII10 latest official observation available on-page: 2026-04-07",
-                "FRED HY OAS latest official observation remained lagged versus the live session",
-                "FRED T10Y2Y latest official observation remained 2026-04-07"
+                "FRED DFII10 latest official observation used: 2026-04-08 [10]",
+                "FRED HY OAS latest official observation used: 2026-04-08 [11]",
+                "Preferred ForexFactory calendar page inaccessible in browser during this session",
             ],
             "fallbacks_used": [
-                "Repository-local same-day FedWatch note for neutral-hold classification after the public CME embed failed",
-                "Repository's previously verified same-day April 8 factor set for SOX, MOVE, copper, oil inventories, gold ETF flows, China PMI, and eurozone PMI",
-                "Cboe VIX product page for live spot level and daily change",
-                "TradingView DXY page for live dollar direction"
+                "FXStreet fallback for eurozone PMI after Reuters access restriction [16]",
+                "Anadolu summary for the latest EIA crude inventory release [18]",
+                "Session catalyst fallback notes for calendar context after ForexFactory access restriction",
             ],
             "overnight_changes": [
-                "DXY down 0.49% on the day",
-                "VIX down 18.39% on the day",
-                "GDPNow unchanged at 1.3% versus the earlier same-day repository reference"
-            ]
+                "DXY down 0.21% on the day [1]",
+                "VIX down 7.37% on the day [2]",
+                "Copper down 0.29% on the day [6]",
+            ],
         },
         "catalyst_proximity": {
             "imminent": [
-                "Atlanta Fed GDPNow refresh on April 9",
-                "China inflation data on April 10",
-                "Ongoing Strait of Hormuz and tanker-flow headlines"
+                "U.S. CPI on April 10 [20]",
+                "China inflation data on April 10 [15]",
+                "Ongoing Strait of Hormuz and tanker-flow headlines [17] [19]",
             ],
             "near_term": [
-                "Federal Reserve meeting on April 30"
+                "Federal Reserve meeting on April 30 [7]",
             ],
             "background": [
-                "Persistent Middle East energy disruption risk",
-                "ECB easing bias amid softer euro-area growth",
-                "BoJ normalization and post-hike RBA policy divergence"
-            ]
-        }
+                "Persistent Middle East energy disruption risk [17] [19]",
+                "ECB easing bias amid softer euro-area growth [8] [16]",
+                "BoJ normalization and post-hike RBA policy divergence [9] [14]",
+            ],
+        },
+        "references": references,
     }
 
     markdown = build_markdown(date_label, time_label, results, asset_class_bias)
@@ -496,7 +653,8 @@ def main() -> None:
                 "scoring_detail": scoring_detail,
             },
             indent=2,
-        ) + "\n",
+        )
+        + "\n",
         encoding="utf-8",
     )
 
