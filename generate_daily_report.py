@@ -244,7 +244,7 @@ references = {
 
 factor_notes = {
     "fed_stance": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7].",
-    "real_yields": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10].",
+     "real_yields": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, which is only a 1bp move and therefore still scores as flat under the methodology [10].",
     "usd_dxy": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1].",
     "risk_mood": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2].",
     "vix_direction": "Cboe VIX fell 1.33% (-0.26) on the day from a 19.49 prior close, so the directional volatility signal remains supportive [2].",
@@ -252,7 +252,7 @@ factor_notes = {
     "credit_spreads": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11].",
     "sox": "TradingView showed SOX at 8,889.83, up 200.30 points (+2.31%) from an 8,689.53 prior close, keeping the semiconductor leadership factor positive [4].",
     "move_index": "TradingView showed MOVE at 72.1541, down 1.8588 points (-2.51%) from a 74.0129 prior close, reinforcing a friendlier Treasury-volatility backdrop [5].",
-    "yield_curve_2s10s": "FRED T10Y2Y remained positive at 0.51 on 2026-04-09 after 0.50 on 2026-04-08, so the curve stays normalized and positively sloped [12].",
+    "yield_curve_2s10s": "FRED T10Y2Y stood at 0.50 on 2026-04-10 after 0.51 on 2026-04-09, so the curve remains normalized and positively sloped even though the day-to-day change was slightly flatter [12].",
     "copper": "TradingView showed COMEX copper at 5.8860, up 0.1215 points (+2.11%) from a 5.7645 prior close, so the copper direction factor turns supportive again [6].",
     "oil_inventories": "Anadolu's summary of the latest EIA release said U.S. commercial crude inventories rose by 3.1 million barrels to 464.7 million in the week ending April 3, a bearish build for WTI [18].",
     "oil_supply_shock": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17].",
@@ -343,18 +343,18 @@ def calculate_score(config: dict) -> tuple[int, dict]:
 
 def get_signal(raw_weighted_score: int) -> tuple[str, int]:
     if raw_weighted_score >= 5:
-        return "STRONG_BULLISH", 3
+        return "STRONG_BULLISH", raw_weighted_score
     if raw_weighted_score >= 3:
-        return "BULLISH", 2
+        return "BULLISH", raw_weighted_score
     if raw_weighted_score >= 1:
-        return "SLIGHT_BULLISH", 1
-    if raw_weighted_score >= -1:
-        return "NEUTRAL", 0
-    if raw_weighted_score >= -3:
-        return "SLIGHT_BEARISH", -1
-    if raw_weighted_score >= -5:
-        return "BEARISH", -2
-    return "STRONG_BEARISH", -3
+        return "SLIGHT_BULLISH", raw_weighted_score
+    if raw_weighted_score == 0:
+        return "NEUTRAL", raw_weighted_score
+    if raw_weighted_score >= -2:
+        return "SLIGHT_BEARISH", raw_weighted_score
+    if raw_weighted_score >= -4:
+        return "BEARISH", raw_weighted_score
+    return "STRONG_BEARISH", raw_weighted_score
 
 
 
@@ -400,17 +400,17 @@ def get_strategy(raw_weighted_score: int, symbol: str) -> tuple[str, str, str]:
 
 def get_asset_class_bias(symbols: list[str], results: dict) -> str:
     avg_score = sum(results[s]["score"] for s in symbols) / len(symbols)
-    if avg_score >= 2.5:
+    if avg_score >= 5:
         return "STRONG_BULLISH"
-    if avg_score >= 1.5:
+    if avg_score >= 3:
         return "BULLISH"
-    if avg_score >= 0.5:
+    if avg_score >= 1:
         return "SLIGHT_BULLISH"
-    if avg_score >= -0.5:
+    if avg_score == 0:
         return "NEUTRAL"
-    if avg_score >= -1.5:
+    if avg_score >= -2:
         return "SLIGHT_BEARISH"
-    if avg_score >= -2.5:
+    if avg_score >= -4:
         return "BEARISH"
     return "STRONG_BEARISH"
 
@@ -599,7 +599,7 @@ def main() -> None:
         ],
         "data_quality": {
             "stale_sources": [
-                "FRED DFII10 latest official observation used: 2026-04-08 [10]",
+                "FRED DFII10 latest official observation used: 2026-04-09 [10]",
                 "FRED HY OAS latest official observation used: 2026-04-09 [11]",
                 "Preferred ForexFactory calendar page inaccessible in browser during this session",
             ],
