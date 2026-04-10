@@ -12,7 +12,7 @@ FACTOR_DIR = BASE_DIR / "data" / "factors"
 for path in (BIAS_DIR, EXEC_DIR, FACTOR_DIR):
     path.mkdir(parents=True, exist_ok=True)
 
-# Refreshed April 9, 2026 UTC inputs collected or confirmed during this session.
+# Refreshed April 10, 2026 UTC inputs collected or confirmed during this session.
 # Integer scoring conventions follow docs/Macro_Bias_Scorer_Reference.md.
 macro_data = {
     "fed_stance": 0,
@@ -25,7 +25,7 @@ macro_data = {
     "sox": 1,
     "move_index": 1,
     "yield_curve_2s10s": 1,
-    "copper": -1,
+    "copper": 1,
     "oil_inventories": -1,
     "oil_supply_shock": 1,
     "geopolitical_risk": 1,
@@ -243,17 +243,17 @@ references = {
 }
 
 factor_notes = {
-    "fed_stance": "CME FedWatch showed 98.4% probability of no change and 1.6% probability of a hike for the April 30 FOMC meeting, so the Fed stance remains neutral [7].",
+    "fed_stance": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7].",
     "real_yields": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10].",
-    "usd_dxy": "TradingView showed DXY at 98.795, down 0.203 points (-0.21%) from a 98.998 prior close, which keeps the dollar factor weak/falling [1].",
-    "risk_mood": "Cboe VIX was 19.49, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2].",
-    "vix_direction": "Cboe VIX fell 7.37% (-1.55) on the day from a 21.04 prior close, so the directional volatility signal remains supportive [2].",
+    "usd_dxy": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1].",
+    "risk_mood": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2].",
+    "vix_direction": "Cboe VIX fell 1.33% (-0.26) on the day from a 19.49 prior close, so the directional volatility signal remains supportive [2].",
     "growth_narrative": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3].",
-    "credit_spreads": "FRED HY OAS narrowed to 2.94 on 2026-04-08 from 3.12 on 2026-04-07, which qualifies as tighter credit spreads on the latest official print [11].",
-    "sox": "TradingView showed SOX at 8,689.53, up 2.10% on the day from 8,510.92, keeping the semiconductor leadership factor positive [4].",
-    "move_index": "TradingView showed MOVE at 74.0129, down 6.00% on the day from 78.7357, reinforcing a friendlier Treasury-volatility backdrop [5].",
+    "credit_spreads": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11].",
+    "sox": "TradingView showed SOX at 8,889.83, up 200.30 points (+2.31%) from an 8,689.53 prior close, keeping the semiconductor leadership factor positive [4].",
+    "move_index": "TradingView showed MOVE at 72.1541, down 1.8588 points (-2.51%) from a 74.0129 prior close, reinforcing a friendlier Treasury-volatility backdrop [5].",
     "yield_curve_2s10s": "FRED T10Y2Y remained positive at 0.51 on 2026-04-09 after 0.50 on 2026-04-08, so the curve stays normalized and positively sloped [12].",
-    "copper": "TradingView showed COMEX copper at 5.7475, down 0.29% on the day, flipping the copper direction factor to bearish [6].",
+    "copper": "TradingView showed COMEX copper at 5.8860, up 0.1215 points (+2.11%) from a 5.7645 prior close, so the copper direction factor turns supportive again [6].",
     "oil_inventories": "Anadolu's summary of the latest EIA release said U.S. commercial crude inventories rose by 3.1 million barrels to 464.7 million in the week ending April 3, a bearish build for WTI [18].",
     "oil_supply_shock": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17].",
     "geopolitical_risk": "The Middle East energy conflict and continuing tanker-flow uncertainty keep geopolitical risk elevated, which remains supportive for oil risk premium [17] [19].",
@@ -266,7 +266,7 @@ factor_notes = {
     "rate_diff_eur_usd": "A neutral Fed versus an easing-biased ECB continues to leave the policy-rate differential unfavorable for EUR [7] [8].",
     "rate_diff_aud_usd": "A 4.10% RBA cash rate versus a 3.50%-3.75% Fed target range keeps the rate differential supportive for AUD [7] [9].",
     "rate_diff_jpy_usd": "BoJ normalization still improves the JPY side of the rate-differential narrative against a neutral Fed [7] [14].",
-    "risk_sentiment_aud": "With VIX at 19.49, the broad risk tone is balanced rather than clearly adverse or clearly risk-on, so the AUD sentiment factor is neutral [2].",
+    "risk_sentiment_aud": "With VIX at 19.23, the broad risk tone is balanced rather than clearly adverse or clearly risk-on, so the AUD sentiment factor is neutral [2].",
 }
 
 instrument_display = {
@@ -284,14 +284,14 @@ instrument_display = {
 
 analysis_paragraphs = {
     "GC": "Gold stays constructive because the dollar softened and ETF flows remain positive, while the Hormuz-related energy shock still supports hedging demand. The signal is no longer amplified by a clearly defensive VIX level because spot volatility slipped back below 20, which keeps the setup bullish but not extreme.",
-    "SI": "Silver retains only a marginally constructive stance because dollar weakness and gold ETF inflows still help, but the copper signal flipped lower on the day and removes an important industrial tailwind. With real yields flat and the growth narrative stable rather than re-accelerating, the contract is closer to a tactical upside lean than a full trend continuation.",
+    "SI": "Silver improves to a firmer bullish stance because dollar weakness and gold ETF inflows still help, and copper's rebound restores an important industrial tailwind. With real yields flat and the growth narrative merely stable, the setup is constructive without yet becoming an extreme momentum condition.",
     "CL": "WTI crude remains bullish because the official EIA supply-shock backdrop is still severe and geopolitical risk stays elevated. The latest U.S. inventory build prevents a stronger classification, but the weaker dollar and persistent Hormuz disruption still leave the net balance positive.",
     "ES": "The S&P 500 remains bullish because a softer dollar, tighter credit spreads, and a falling VIX direction all improved the cross-asset backdrop. Even so, the VIX level itself only moved back into a balanced regime rather than a clearly complacent one, which argues for a moderate rather than aggressive bullish bias.",
-    "NQ": "Nasdaq 100 keeps a bullish bias because semiconductor leadership strengthened further and Treasury volatility continued to fall, while the weaker dollar also helped duration-sensitive growth assets. The signal is healthier than earlier in the week, but flat real yields mean the move still lacks a fresh rates-driven acceleration tailwind.",
+    "NQ": "Nasdaq 100 keeps a bullish bias because semiconductor leadership strengthened further and Treasury volatility continued to fall, while the weaker dollar also helped duration-sensitive growth assets. The signal remains constructive, but flat real yields mean the move still lacks a fresh rates-driven acceleration tailwind.",
     "YM": "The Dow Jones contract is bullish because dollar weakness, tighter high-yield spreads, and a still-positive curve leave the cyclical large-cap backdrop more supportive. Stable rather than accelerating growth keeps the score in the middle bullish tier instead of the strongest category.",
     "RTY": "Russell 2000 becomes one of the stronger equity expressions because it benefits most from tighter credit spreads and a normalized curve. The balanced VIX regime is less of a headwind than before, so small caps now screen as a higher-conviction pro-cyclical setup than the other major U.S. index futures.",
     "6E": "Euro FX remains mildly bearish because a softer dollar is still outweighed by the ECB's easing bias, an unfavorable policy differential, and slowing euro-area growth momentum. The contract improved from a more hostile USD backdrop, but not enough to offset Europe-specific macro drag.",
-    "6A": "The Australian dollar improves to a clearer bullish configuration because RBA policy remains supportive, China's PMI rebound still helps the regional growth proxy, and the broader market tone is no longer outright risk-off with VIX back below 20. The one notable offset is copper's daily decline, which tempers but does not overturn the positive macro mix.",
+    "6A": "The Australian dollar upgrades to a strong bullish configuration because RBA policy remains supportive, China's PMI rebound still helps the regional growth proxy, and copper's daily rebound now reinforces rather than offsets the positive macro mix. A balanced rather than euphoric global risk backdrop keeps the setup disciplined, but macro alignment is now among the strongest in the basket.",
     "6J": "Japanese yen futures remain the highest-conviction setup because the contract combines BoJ normalization, a friendlier JPY rate-differential narrative, and ongoing dollar softness. Even though VIX fell back into a balanced rather than overtly defensive regime, the yen still has the cleanest macro alignment in the basket.",
 }
 
@@ -437,7 +437,7 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("## Overall Market Bias: BULLISH")
     lines.append("")
-    lines.append("Macro conditions on April 9 remained broadly constructive because the dollar weakened, credit spreads tightened, and both equity and Treasury volatility improved directionally. The regime is no longer clearly defensive after VIX slipped below 20, but it is not yet a full risk-on surge because growth merely stabilized, crude inventories still built, and Europe-specific macro data remain soft [1] [2] [3] [11] [18].")
+    lines.append("Macro conditions on April 10 remained broadly constructive because the dollar stayed softer, credit spreads tightened again on the latest official print, and both equity and Treasury volatility continued to improve directionally. The regime is balanced rather than euphoric because growth merely stabilized, crude inventories still built, and Europe-specific macro data remain soft even as copper rebounded sharply [1] [2] [3] [6] [11] [18].")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -509,10 +509,10 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("## Key Macro Themes")
     lines.append("")
-    lines.append("1. **The dollar remains a broad cross-asset tailwind** because DXY fell to 98.795, supporting commodities and non-USD FX [1].")
-    lines.append("2. **Risk conditions improved without becoming euphoric** because VIX fell sharply to 19.49 and MOVE dropped to 74.0129, yet the growth narrative only held steady at 1.3% GDPNow [2] [3] [5].")
+    lines.append("1. **The dollar remains a broad cross-asset tailwind** because DXY fell to 98.697, supporting commodities and non-USD FX [1].")
+    lines.append("2. **Risk conditions improved without becoming euphoric** because VIX eased to 19.23 and MOVE dropped to 72.1541, yet the growth narrative only held steady at 1.3% GDPNow [2] [3] [5].")
     lines.append("3. **Crude remains uniquely supported by supply stress** because EIA still describes severe Hormuz-related outages even as domestic inventories rose by 3.1 million barrels [17] [18].")
-    lines.append("4. **Policy divergence still matters most in FX** because ECB easing bias contrasts with still-supportive RBA settings and the BoJ normalization story [8] [9] [14].")
+    lines.append("4. **Policy divergence and copper strength now matter most in FX** because ECB easing bias still weighs on EUR while supportive RBA settings, stronger China-linked proxies, and the BoJ normalization story favor AUD and JPY [6] [8] [9] [14] [15].")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -592,15 +592,15 @@ def main() -> None:
         "scores": results,
         "asset_class_bias": asset_class_bias,
         "key_drivers": [
-            "TradingView showed DXY at 98.795 and down 0.21% on the session, improving the backdrop for commodities and non-USD FX [1].",
-            "Cboe VIX fell 7.37% to 19.49, moving the volatility regime back to balanced while leaving direction supportive for risk assets [2].",
-            "FRED HY OAS tightened from 3.12 to 2.94 on the latest official print, improving the cross-asset credit backdrop [11].",
+            "TradingView showed DXY at 98.697 and down 0.10% on the session, improving the backdrop for commodities and non-USD FX [1].",
+            "Cboe VIX fell 1.33% to 19.23, keeping the volatility regime balanced while leaving direction supportive for risk assets [2].",
+            "FRED HY OAS tightened from 2.94 to 2.90 on the latest official print, improving the cross-asset credit backdrop [11].",
             "EIA still describes severe Hormuz-related supply disruption even as U.S. crude inventories rose by 3.1 million barrels [17] [18].",
         ],
         "data_quality": {
             "stale_sources": [
                 "FRED DFII10 latest official observation used: 2026-04-08 [10]",
-                "FRED HY OAS latest official observation used: 2026-04-08 [11]",
+                "FRED HY OAS latest official observation used: 2026-04-09 [11]",
                 "Preferred ForexFactory calendar page inaccessible in browser during this session",
             ],
             "fallbacks_used": [
@@ -609,9 +609,9 @@ def main() -> None:
                 "Session catalyst fallback notes for calendar context after ForexFactory access restriction",
             ],
             "overnight_changes": [
-                "DXY down 0.21% on the day [1]",
-                "VIX down 7.37% on the day [2]",
-                "Copper down 0.29% on the day [6]",
+                "DXY down 0.10% on the day [1]",
+                "VIX down 1.33% on the day [2]",
+                "Copper up 2.11% on the day [6]",
             ],
         },
         "catalyst_proximity": {

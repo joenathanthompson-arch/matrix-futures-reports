@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-10",
+  "generated_at": "2026-04-10T21:42:26Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": 1,
+    "risk_mood": 0,
+    "vix_direction": 1,
+    "growth_narrative": 0,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": 1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": -1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 1,
+    "ecb_stance": -1,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": -1,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": 0
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17]."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The World Gold Council weekly monitor reported a 21-tonne inflow into global gold ETFs at the start of April, preserving a positive investment-flow signal for gold and silver [13]."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed COMEX copper at 5.8860, up 0.1215 points (+2.11%) from a 5.7645 prior close, so the copper direction factor turns supportive again [6]."
+        },
+        "gold_etf_flows": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The World Gold Council weekly monitor reported a 21-tonne inflow into global gold ETFs at the start of April, preserving a positive investment-flow signal for gold and silver [13]."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": 3,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17]."
+        },
+        "oil_inventories": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Anadolu's summary of the latest EIA release said U.S. commercial crude inventories rose by 3.1 million barrels to 464.7 million in the week ending April 3, a bearish build for WTI [18]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The Middle East energy conflict and continuing tanker-flow uncertainty keep geopolitical risk elevated, which remains supportive for oil risk premium [17] [19]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11]."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX fell 1.33% (-0.26) on the day from a 19.49 prior close, so the directional volatility signal remains supportive [2]."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed SOX at 8,889.83, up 200.30 points (+2.31%) from an 8,689.53 prior close, keeping the semiconductor leadership factor positive [4]."
+        },
+        "move_index": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed MOVE at 72.1541, down 1.8588 points (-2.51%) from a 74.0129 prior close, reinforcing a friendlier Treasury-volatility backdrop [5]."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11]."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y remained positive at 0.51 on 2026-04-09 after 0.50 on 2026-04-08, so the curve stays normalized and positively sloped [12]."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.96 on both 2026-04-08 and 2026-04-07, so real yields were flat on the latest official reading [10]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11]."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y remained positive at 0.51 on 2026-04-09 after 0.50 on 2026-04-08, so the curve stays normalized and positively sloped [12]."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": -3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "ecb_stance": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "The ECB key rates page continues to show 2.00% deposit, 2.15% MRO, and 2.40% marginal lending, consistent with an easing-biased policy stance [8]."
+        },
+        "rate_diff_eur_usd": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "A neutral Fed versus an easing-biased ECB continues to leave the policy-rate differential unfavorable for EUR [7] [8]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "A fallback FXStreet report on the HCOB/S&P Global release put euro area composite PMI at 50.7 in March, below February's 51.9, which keeps the eurozone growth factor negative [16]."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 6,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The RBA cash rate page continues to show a 4.10% cash rate target effective March 18, 2026, preserving a supportive policy stance for AUD [9]."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "A 4.10% RBA cash rate versus a 3.50%-3.75% Fed target range keeps the rate differential supportive for AUD [7] [9]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_sentiment_aud": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "With VIX at 19.23, the broad risk tone is balanced rather than clearly adverse or clearly risk-on, so the AUD sentiment factor is neutral [2]."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China's official March manufacturing PMI rebounded to 50.4 from 49.0, confirming an improving China growth proxy [15]."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed COMEX copper at 5.8860, up 0.1215 points (+2.11%) from a 5.7645 prior close, so the copper direction factor turns supportive again [6]."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7]."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "The BoJ policy schedule still points back to the March 18-19 cycle as the latest completed meeting, consistent with retaining the repository's normalization bias [14]."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization still improves the JPY side of the rate-differential narrative against a neutral Fed [7] [14]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2]."
+        }
+      }
+    }
+  }
+}
