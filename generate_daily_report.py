@@ -12,261 +12,46 @@ FACTOR_DIR = BASE_DIR / "data" / "factors"
 for path in (BIAS_DIR, EXEC_DIR, FACTOR_DIR):
     path.mkdir(parents=True, exist_ok=True)
 
-# Refreshed April 10, 2026 UTC inputs collected or confirmed during this session.
-# Integer scoring conventions follow docs/Macro_Bias_Scorer_Reference.md.
+# Verified session inputs for the April 12, 2026 UTC report run.
+# Signs follow the methodology lookup already used by the repository.
 macro_data = {
     "fed_stance": 0,
     "real_yields": 0,
     "usd_dxy": 1,
     "risk_mood": 0,
     "vix_direction": 1,
-    "growth_narrative": 0,
+    "growth_narrative": 1,
     "credit_spreads": 1,
     "sox": 1,
     "move_index": 1,
-    "yield_curve_2s10s": 1,
+    "yield_curve_2s10s": -1,
     "copper": 1,
     "oil_inventories": -1,
-    "oil_supply_shock": 1,
-    "geopolitical_risk": 1,
-    "gold_etf_flows": 1,
-    "ecb_stance": -1,
+    "oil_supply_shock": -1,
+    "geopolitical_risk": -1,
+    "gold_etf_flows": -1,
+    "ecb_stance": 1,
     "rba_stance": 1,
     "boj_stance": 1,
     "china_growth": 1,
-    "eurozone_growth": -1,
-    "rate_diff_eur_usd": -1,
+    "eurozone_growth": 1,
+    "rate_diff_eur_usd": 1,
     "rate_diff_aud_usd": 1,
     "rate_diff_jpy_usd": 1,
     "risk_sentiment_aud": 0,
 }
 
 instrument_configs = {
-    "GC": {
-        "name": "Gold Futures",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 2,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 1,
-            "oil_supply_shock": 1,
-            "gold_etf_flows": 1,
-        },
-    },
-    "SI": {
-        "name": "Silver Futures",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 1,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 1,
-            "copper": 1,
-            "gold_etf_flows": 1,
-        },
-    },
-    "CL": {
-        "name": "WTI Crude Oil",
-        "factors": {
-            "oil_supply_shock": 2,
-            "oil_inventories": 1,
-            "growth_narrative": 2,
-            "geopolitical_risk": 1,
-            "usd_dxy": 1,
-        },
-    },
-    "ES": {
-        "name": "S&P 500 E-mini",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 2,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 1,
-            "credit_spreads": 1,
-            "vix_direction": 1,
-        },
-    },
-    "NQ": {
-        "name": "Nasdaq 100 E-mini",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 2,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 1,
-            "sox": 1,
-            "move_index": 1,
-        },
-    },
-    "YM": {
-        "name": "Dow Jones E-mini",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 1,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 2,
-            "credit_spreads": 1,
-            "yield_curve_2s10s": 1,
-        },
-    },
-    "RTY": {
-        "name": "Russell 2000 E-mini",
-        "factors": {
-            "fed_stance": 1,
-            "real_yields": 1,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "growth_narrative": 2,
-            "credit_spreads": 2,
-            "yield_curve_2s10s": 1,
-        },
-    },
-    "6E": {
-        "name": "Euro FX",
-        "factors": {
-            "fed_stance": 1,
-            "ecb_stance": 1,
-            "rate_diff_eur_usd": 2,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-            "eurozone_growth": 1,
-        },
-    },
-    "6A": {
-        "name": "Australian Dollar",
-        "factors": {
-            "fed_stance": 1,
-            "rba_stance": 1,
-            "rate_diff_aud_usd": 1,
-            "usd_dxy": 1,
-            "risk_sentiment_aud": 2,
-            "china_growth": 2,
-            "copper": 1,
-        },
-    },
-    "6J": {
-        "name": "Japanese Yen",
-        "factors": {
-            "fed_stance": 1,
-            "boj_stance": 2,
-            "rate_diff_jpy_usd": 2,
-            "usd_dxy": 1,
-            "risk_mood": 1,
-        },
-    },
-}
-
-references = {
-    "1": {
-        "title": "TradingView DXY page",
-        "url": "https://www.tradingview.com/symbols/TVC-DXY/",
-    },
-    "2": {
-        "title": "Cboe VIX product page",
-        "url": "https://www.cboe.com/tradable-products/vix/",
-    },
-    "3": {
-        "title": "Atlanta Fed GDPNow",
-        "url": "https://www.atlantafed.org/cqer/research/gdpnow",
-    },
-    "4": {
-        "title": "TradingView SOX page",
-        "url": "https://www.tradingview.com/symbols/SOX/",
-    },
-    "5": {
-        "title": "TradingView MOVE page",
-        "url": "https://www.tradingview.com/symbols/TVC-MOVE/",
-    },
-    "6": {
-        "title": "TradingView Copper continuous futures page",
-        "url": "https://www.tradingview.com/symbols/COMEX-HG1!/",
-    },
-    "7": {
-        "title": "CME FedWatch Tool",
-        "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
-    },
-    "8": {
-        "title": "ECB key interest rates page",
-        "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
-    },
-    "9": {
-        "title": "RBA cash rate page",
-        "url": "https://www.rba.gov.au/statistics/cash-rate/",
-    },
-    "10": {
-        "title": "FRED DFII10 series",
-        "url": "https://fred.stlouisfed.org/series/DFII10",
-    },
-    "11": {
-        "title": "FRED BAMLH0A0HYM2 series",
-        "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-    },
-    "12": {
-        "title": "FRED T10Y2Y series",
-        "url": "https://fred.stlouisfed.org/series/T10Y2Y",
-    },
-    "13": {
-        "title": "World Gold Council weekly markets monitor",
-        "url": "https://www.gold.org/goldhub/gold-focus/2026/04/weekly-markets-monitor-21-tonne-salute",
-    },
-    "14": {
-        "title": "Bank of Japan monetary policy schedule page",
-        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-    },
-    "15": {
-        "title": "China NBS PMI press release",
-        "url": "https://www.stats.gov.cn/english/PressRelease/202604/t20260401_1962920.html",
-    },
-    "16": {
-        "title": "FXStreet eurozone PMI article",
-        "url": "https://www.fxstreet.com/news/eurozone-hcob-composite-pmi-above-expectations-505-in-march-actual-507-202604070800",
-    },
-    "17": {
-        "title": "EIA press release on Hormuz closure and production outages",
-        "url": "https://www.eia.gov/pressroom/releases/press586.php",
-    },
-    "18": {
-        "title": "Anadolu summary of the latest EIA crude inventory release",
-        "url": "https://www.aa.com.tr/en/energy/oil/us-crude-oil-inventories-up-by-07-for-week-ending-april-3/56257",
-    },
-    "19": {
-        "title": "AP market roundup on stocks and oil",
-        "url": "https://apnews.com/article/stock-markets-trump-iran-ceasefire-oil-857ae30b3be4441819b2848fd594a33d",
-    },
-    "20": {
-        "title": "Forex.com FX market article",
-        "url": "https://www.forex.com/en-us/news-and-analysis/oil-stocks-still-driving-fx-markets-as-ceasefire-hopes-push-into-eow/",
-    },
-}
-
-factor_notes = {
-    "fed_stance": "CME FedWatch still points to an overwhelmingly unchanged April 30 FOMC outcome, so the Fed stance remains neutral rather than newly dovish or hawkish [7].",
-     "real_yields": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, which is only a 1bp move and therefore still scores as flat under the methodology [10].",
-    "usd_dxy": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) from a 98.795 prior close, which keeps the dollar factor weak/falling [1].",
-    "risk_mood": "Cboe VIX was 19.23, which lies in the methodology's balanced 15-20 zone rather than the defensive above-20 regime [2].",
-    "vix_direction": "Cboe VIX fell 1.33% (-0.26) on the day from a 19.49 prior close, so the directional volatility signal remains supportive [2].",
-    "growth_narrative": "Atlanta Fed GDPNow held at 1.3% for 2026:Q1 on April 9, leaving the growth narrative stable rather than re-accelerating or deteriorating further [3].",
-    "credit_spreads": "FRED HY OAS narrowed further to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which qualifies as tighter credit spreads on the latest official print [11].",
-    "sox": "TradingView showed SOX at 8,889.83, up 200.30 points (+2.31%) from an 8,689.53 prior close, keeping the semiconductor leadership factor positive [4].",
-    "move_index": "TradingView showed MOVE at 72.1541, down 1.8588 points (-2.51%) from a 74.0129 prior close, reinforcing a friendlier Treasury-volatility backdrop [5].",
-    "yield_curve_2s10s": "FRED T10Y2Y stood at 0.50 on 2026-04-10 after 0.51 on 2026-04-09, so the curve remains normalized and positively sloped even though the day-to-day change was slightly flatter [12].",
-    "copper": "TradingView showed COMEX copper at 5.8860, up 0.1215 points (+2.11%) from a 5.7645 prior close, so the copper direction factor turns supportive again [6].",
-    "oil_inventories": "Anadolu's summary of the latest EIA release said U.S. commercial crude inventories rose by 3.1 million barrels to 464.7 million in the week ending April 3, a bearish build for WTI [18].",
-    "oil_supply_shock": "EIA said oil flows through the Strait of Hormuz remain limited and estimated production shut-ins rising from 7.5 million b/d in March to 9.1 million b/d in April, preserving a bullish supply-shock factor for crude [17].",
-    "geopolitical_risk": "The Middle East energy conflict and continuing tanker-flow uncertainty keep geopolitical risk elevated, which remains supportive for oil risk premium [17] [19].",
-    "gold_etf_flows": "The World Gold Council weekly monitor reported a 21-tonne inflow into global gold ETFs at the start of April, preserving a positive investment-flow signal for gold and silver [13].",
-    "ecb_stance": "The ECB key rates page continues to show 2.00% deposit, 2.15% MRO, and 2.40% marginal lending, consistent with an easing-biased policy stance [8].",
-    "rba_stance": "The RBA cash rate page continues to show a 4.10% cash rate target effective March 18, 2026, preserving a supportive policy stance for AUD [9].",
-    "boj_stance": "The BoJ policy schedule still points back to the March 18-19 cycle as the latest completed meeting, consistent with retaining the repository's normalization bias [14].",
-    "china_growth": "China's official March manufacturing PMI rebounded to 50.4 from 49.0, confirming an improving China growth proxy [15].",
-    "eurozone_growth": "A fallback FXStreet report on the HCOB/S&P Global release put euro area composite PMI at 50.7 in March, below February's 51.9, which keeps the eurozone growth factor negative [16].",
-    "rate_diff_eur_usd": "A neutral Fed versus an easing-biased ECB continues to leave the policy-rate differential unfavorable for EUR [7] [8].",
-    "rate_diff_aud_usd": "A 4.10% RBA cash rate versus a 3.50%-3.75% Fed target range keeps the rate differential supportive for AUD [7] [9].",
-    "rate_diff_jpy_usd": "BoJ normalization still improves the JPY side of the rate-differential narrative against a neutral Fed [7] [14].",
-    "risk_sentiment_aud": "With VIX at 19.23, the broad risk tone is balanced rather than clearly adverse or clearly risk-on, so the AUD sentiment factor is neutral [2].",
+    "GC": {"name": "Gold Futures", "factors": {"fed_stance": 1, "real_yields": 2, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 1, "oil_supply_shock": 1, "gold_etf_flows": 1}},
+    "SI": {"name": "Silver Futures", "factors": {"fed_stance": 1, "real_yields": 1, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 1, "copper": 1, "gold_etf_flows": 1}},
+    "CL": {"name": "WTI Crude Oil", "factors": {"oil_supply_shock": 2, "oil_inventories": 1, "growth_narrative": 2, "geopolitical_risk": 1, "usd_dxy": 1}},
+    "ES": {"name": "S&P 500 E-mini", "factors": {"fed_stance": 1, "real_yields": 2, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 1, "credit_spreads": 1, "vix_direction": 1}},
+    "NQ": {"name": "Nasdaq 100 E-mini", "factors": {"fed_stance": 1, "real_yields": 2, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 1, "sox": 1, "move_index": 1}},
+    "YM": {"name": "Dow Jones E-mini", "factors": {"fed_stance": 1, "real_yields": 1, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 2, "credit_spreads": 1, "yield_curve_2s10s": 1}},
+    "RTY": {"name": "Russell 2000 E-mini", "factors": {"fed_stance": 1, "real_yields": 1, "usd_dxy": 1, "risk_mood": 1, "growth_narrative": 2, "credit_spreads": 2, "yield_curve_2s10s": 1}},
+    "6E": {"name": "Euro FX", "factors": {"fed_stance": 1, "ecb_stance": 1, "rate_diff_eur_usd": 2, "usd_dxy": 1, "risk_mood": 1, "eurozone_growth": 1}},
+    "6A": {"name": "Australian Dollar", "factors": {"fed_stance": 1, "rba_stance": 1, "rate_diff_aud_usd": 1, "usd_dxy": 1, "risk_sentiment_aud": 2, "china_growth": 2, "copper": 1}},
+    "6J": {"name": "Japanese Yen", "factors": {"fed_stance": 1, "boj_stance": 2, "rate_diff_jpy_usd": 2, "usd_dxy": 1, "risk_mood": 1}},
 }
 
 instrument_display = {
@@ -282,45 +67,79 @@ instrument_display = {
     "6J": "Japanese Yen",
 }
 
+references = {
+    "1": {"title": "TradingView DXY page", "url": "https://www.tradingview.com/symbols/TVC-DXY/"},
+    "2": {"title": "Cboe VIX product page", "url": "https://www.cboe.com/tradable-products/vix/"},
+    "3": {"title": "Atlanta Fed GDPNow", "url": "https://www.atlantafed.org/cqer/research/gdpnow"},
+    "4": {"title": "CME FedWatch Tool", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"},
+    "5": {"title": "World Gold Council ETF flows page", "url": "https://www.gold.org/goldhub/data/global-gold-backed-etf-holdings-and-flows"},
+    "6": {"title": "FRED DFII10 series", "url": "https://fred.stlouisfed.org/series/DFII10"},
+    "7": {"title": "FRED BAMLH0A0HYM2 series", "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"},
+    "8": {"title": "FRED T10Y2Y series", "url": "https://fred.stlouisfed.org/series/T10Y2Y"},
+    "9": {"title": "Swissinfo central bank roundup", "url": "https://www.swissinfo.ch/eng/global-rate-path-veers-higher-in-wake-of-another-trump-shock/91234542"},
+    "10": {"title": "FXStreet eurozone PMI article", "url": "https://www.fxstreet.com/news/eurozone-hcob-composite-pmi-above-expectations-505-in-march-actual-507-202604070800"},
+    "11": {"title": "SCIO China PMI article", "url": "https://english.scio.gov.cn/m/pressroom/2026-03/31/content_118411839.html"},
+    "12": {"title": "TradingView SOX page", "url": "https://www.tradingview.com/symbols/SOX/"},
+    "13": {"title": "TradingView MOVE page", "url": "https://www.tradingview.com/symbols/TVC-MOVE/"},
+    "14": {"title": "EIA Weekly Petroleum Status Report PDF", "url": "https://www.eia.gov/petroleum/supply/weekly/pdf/wpsrall.pdf"},
+    "15": {"title": "Yahoo Finance market report on US-Iran ceasefire", "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-surge-oil-plunges-after-us-iran-ceasefire-sparks-relief-rally-200305068.html"},
+    "16": {"title": "TradingEconomics copper coverage", "url": "https://tradingeconomics.com/commodity/copper"},
+}
+
+factor_notes = {
+    "fed_stance": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4].",
+    "real_yields": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6].",
+    "usd_dxy": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1].",
+    "risk_mood": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2].",
+    "vix_direction": "VIX fell 1.33% (-0.26) from the prior session, leaving the volatility-direction factor supportive [2].",
+    "growth_narrative": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3].",
+    "credit_spreads": "FRED high-yield OAS narrowed to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which counts as tighter credit spreads [7].",
+    "sox": "TradingView source inspection returned a positive daily change of roughly +2.31% for SOX, so semiconductor leadership remains supportive [12].",
+    "move_index": "TradingView source inspection returned a negative daily change of roughly -2.51% for MOVE, indicating falling rate volatility [13].",
+    "yield_curve_2s10s": "FRED T10Y2Y slipped to 0.50 on 2026-04-10 from 0.51 on 2026-04-09, so the curve signal is classified as flattening [8].",
+    "copper": "An accessible copper market page stated that copper rose to about 5.81 USD/lb and reached the highest level since March, so the industrial-metals direction remains positive [16].",
+    "oil_inventories": "The latest EIA weekly report window showed U.S. crude inventories rising by about 3.1 million barrels to 464.7 million, which is a bearish inventory build for WTI [14].",
+    "oil_supply_shock": "Session reporting shifted from acute disruption toward reopening expectations around Hormuz, so the oil supply-shock factor is now classified as easing rather than intensifying [14] [15].",
+    "geopolitical_risk": "Yahoo Finance reported that a US-Iran two-week ceasefire helped oil plunge and improved risk appetite, so the crude-specific geopolitical-risk factor is best classified as easing [15].",
+    "gold_etf_flows": "The World Gold Council page described March as a record month for global gold ETF outflows totaling about US$12 billion, leaving the flow signal negative [5].",
+    "ecb_stance": "The Swissinfo/Bloomberg roundup said the ECB deposit rate is 2.0% and markets are pricing two to three 25bp hikes in 2026, which supports a hawkish ECB classification [9].",
+    "rba_stance": "The same roundup said the RBA cash rate is 4.1% after back-to-back hikes and that markets still price further tightening, so the RBA stance remains hawkish [9].",
+    "boj_stance": "The Swissinfo/Bloomberg roundup said markets continue to price further BoJ tightening with some probability of action as soon as this month, supporting a hawkish BoJ classification [9].",
+    "china_growth": "China's official March manufacturing PMI rose to 50.4 from 49.0, returning to expansionary territory and supporting an accelerating China-growth classification [11].",
+    "eurozone_growth": "FXStreet reported the euro area composite PMI at 50.7 in March versus 50.5 expected, which supports an improving euro-area growth classification [10].",
+    "rate_diff_eur_usd": "A neutral Fed combined with a newly hawkish ECB narrative improves the EUR-USD policy differential from the euro's perspective [4] [9].",
+    "rate_diff_aud_usd": "A 4.10% RBA cash rate versus the Fed's 3.50%-3.75% target range keeps the AUD-USD rate differential supportive [4] [9].",
+    "rate_diff_jpy_usd": "BoJ normalization against a neutral Fed continues to improve the JPY-USD rate-differential narrative [4] [9].",
+    "risk_sentiment_aud": "Although ceasefire headlines improved sentiment, VIX at 19.23 still leaves the broad risk backdrop balanced rather than clearly risk-on, so AUD sentiment stays neutral [2] [15].",
+}
+
 analysis_paragraphs = {
-    "GC": "Gold stays constructive because the dollar softened and ETF flows remain positive, while the Hormuz-related energy shock still supports hedging demand. The signal is no longer amplified by a clearly defensive VIX level because spot volatility slipped back below 20, which keeps the setup bullish but not extreme.",
-    "SI": "Silver improves to a firmer bullish stance because dollar weakness and gold ETF inflows still help, and copper's rebound restores an important industrial tailwind. With real yields flat and the growth narrative merely stable, the setup is constructive without yet becoming an extreme momentum condition.",
-    "CL": "WTI crude remains bullish because the official EIA supply-shock backdrop is still severe and geopolitical risk stays elevated. The latest U.S. inventory build prevents a stronger classification, but the weaker dollar and persistent Hormuz disruption still leave the net balance positive.",
-    "ES": "The S&P 500 remains bullish because a softer dollar, tighter credit spreads, and a falling VIX direction all improved the cross-asset backdrop. Even so, the VIX level itself only moved back into a balanced regime rather than a clearly complacent one, which argues for a moderate rather than aggressive bullish bias.",
-    "NQ": "Nasdaq 100 keeps a bullish bias because semiconductor leadership strengthened further and Treasury volatility continued to fall, while the weaker dollar also helped duration-sensitive growth assets. The signal remains constructive, but flat real yields mean the move still lacks a fresh rates-driven acceleration tailwind.",
-    "YM": "The Dow Jones contract is bullish because dollar weakness, tighter high-yield spreads, and a still-positive curve leave the cyclical large-cap backdrop more supportive. Stable rather than accelerating growth keeps the score in the middle bullish tier instead of the strongest category.",
-    "RTY": "Russell 2000 becomes one of the stronger equity expressions because it benefits most from tighter credit spreads and a normalized curve. The balanced VIX regime is less of a headwind than before, so small caps now screen as a higher-conviction pro-cyclical setup than the other major U.S. index futures.",
-    "6E": "Euro FX remains mildly bearish because a softer dollar is still outweighed by the ECB's easing bias, an unfavorable policy differential, and slowing euro-area growth momentum. The contract improved from a more hostile USD backdrop, but not enough to offset Europe-specific macro drag.",
-    "6A": "The Australian dollar upgrades to a strong bullish configuration because RBA policy remains supportive, China's PMI rebound still helps the regional growth proxy, and copper's daily rebound now reinforces rather than offsets the positive macro mix. A balanced rather than euphoric global risk backdrop keeps the setup disciplined, but macro alignment is now among the strongest in the basket.",
-    "6J": "Japanese yen futures remain the highest-conviction setup because the contract combines BoJ normalization, a friendlier JPY rate-differential narrative, and ongoing dollar softness. Even though VIX fell back into a balanced rather than overtly defensive regime, the yen still has the cleanest macro alignment in the basket.",
+    "GC": "Gold moves back to a neutral macro stance because the weaker dollar and a slowing U.S. growth narrative are now offset by heavy March ETF outflows and an easing oil-and-geopolitics backdrop. With real yields still effectively flat and VIX only balanced rather than defensive, the model no longer shows a decisive precious-metals impulse.",
+    "SI": "Silver retains a slight bullish edge because the softer dollar and rising copper price offset the drag from negative gold ETF flows. The signal is constructive rather than aggressive because real yields remain flat and the broader risk regime is balanced.",
+    "CL": "WTI crude drops back to a neutral reading because an inventory build, easing Hormuz disruption expectations, and ceasefire-driven geopolitical relief offset the still-supportive weak-dollar backdrop. The model no longer sees the acute supply shock that had driven the earlier bullish oil bias.",
+    "ES": "The S&P 500 stays bullish because the dollar is softer, credit spreads have narrowed again, and VIX direction continues to improve even though the volatility regime itself is only balanced. The setup is positive, but not strong enough to justify a high-conviction momentum classification.",
+    "NQ": "Nasdaq 100 remains bullish as falling rate volatility and renewed semiconductor leadership reinforce the weaker-dollar backdrop. The signal is solid rather than extreme because real yields are flat and the broader growth picture is slowing rather than surging.",
+    "YM": "Dow futures remain bullish because tighter credit spreads and a weaker dollar continue to support cyclical large caps. A modest flattening in the curve prevents a stronger classification, but the aggregate macro mix still leans positive.",
+    "RTY": "Russell 2000 keeps a bullish bias because it benefits most from tighter credit spreads and still-supportive domestic financial conditions, even after the latest curve flattening. Small caps are not as cleanly aligned as the strongest FX setups, but the macro basket still leans constructive.",
+    "6E": "Euro FX flips into a strong bullish configuration because the softer dollar is now joined by a hawkish ECB signal, a more favorable policy-differential read, and a modest improvement in euro-area PMI data. This is the largest positive change versus the prior report.",
+    "6A": "The Australian dollar remains one of the strongest contracts in the basket because hawkish RBA expectations, a supportive rate differential, rebounding China PMI, and higher copper prices all point in the same direction. The only restraint is that the broader risk backdrop is balanced rather than euphoric.",
+    "6J": "Japanese yen futures remain strongly bullish because BoJ normalization and a friendlier rate-differential narrative continue to align with a softer U.S. dollar. Even without a fully defensive VIX regime, the macro mix still favors JPY over USD.",
 }
 
 futures_news = [
-    {
-        "headline": "US stocks rise and oil prices trim their gains on hopes for the ceasefire with Iran",
-        "url": references["19"]["url"],
-    },
-    {
-        "headline": "US crude oil inventories up by 0.7% for week ending April 3",
-        "url": references["18"]["url"],
-    },
+    {"headline": "US crude stocks rise to near three-year high as EIA reports another inventory build", "url": "https://www.reuters.com/business/energy/us-crude-stocks-rise-gasoline-distillate-inventories-fall-eia-says-2026-04-08/"},
+    {"headline": "Oil plunges after the US-Iran ceasefire sparks a relief rally", "url": references["15"]["url"]},
 ]
 
 currency_news = [
-    {
-        "headline": "Oil, Stocks Still Driving FX Markets as Ceasefire Hopes Push into EOW",
-        "url": references["20"]["url"],
-    },
-    {
-        "headline": "Eurozone HCOB Composite PMI above expectations: 50.7 in March",
-        "url": references["16"]["url"],
-    },
+    {"headline": "Eurozone HCOB Composite PMI above expectations: 50.7 in March", "url": references["10"]["url"]},
+    {"headline": "China's PMI returns to expansionary territory in March", "url": references["11"]["url"]},
 ]
 
 calendar_notes = [
-    "Preferred ForexFactory calendar page access was blocked in-browser during this session, so the schedule below uses confirmed session catalysts and near-dated releases rather than claiming direct calendar extraction.",
-    "April 9: U.S. weekly jobless claims and February core PCE-related market digestion remained in focus alongside the Atlanta Fed GDPNow refresh [3] [19].",
-    "April 10: China inflation data and the U.S. CPI report are the next immediate macro catalysts for futures and FX positioning [15] [20].",
+    "Preferred ForexFactory calendar extraction was not available in-browser during this session, so the schedule below focuses on directly verified catalysts and near-term macro events.",
+    "The next major U.S. macro catalyst remains the April 30 FOMC meeting, where FedWatch still implies an overwhelmingly unchanged outcome [4].",
+    "Near-term macro attention also remains on follow-through from the April 9 GDPNow update, China inflation data, and any fresh Strait of Hormuz or ceasefire headlines [3] [11] [15].",
 ]
 
 
@@ -341,25 +160,25 @@ def calculate_score(config: dict) -> tuple[int, dict]:
 
 
 
-def get_signal(raw_weighted_score: int) -> tuple[str, int]:
-    if raw_weighted_score >= 5:
-        return "STRONG_BULLISH", raw_weighted_score
-    if raw_weighted_score >= 3:
-        return "BULLISH", raw_weighted_score
-    if raw_weighted_score >= 1:
-        return "SLIGHT_BULLISH", raw_weighted_score
-    if raw_weighted_score == 0:
-        return "NEUTRAL", raw_weighted_score
-    if raw_weighted_score >= -2:
-        return "SLIGHT_BEARISH", raw_weighted_score
-    if raw_weighted_score >= -4:
-        return "BEARISH", raw_weighted_score
-    return "STRONG_BEARISH", raw_weighted_score
+def get_signal(score: int) -> str:
+    if score >= 5:
+        return "STRONG_BULLISH"
+    if score >= 3:
+        return "BULLISH"
+    if score >= 1:
+        return "SLIGHT_BULLISH"
+    if score >= -1:
+        return "NEUTRAL"
+    if score >= -3:
+        return "SLIGHT_BEARISH"
+    if score >= -5:
+        return "BEARISH"
+    return "STRONG_BEARISH"
 
 
 
-def get_confidence(symbol: str, raw_weighted_score: int) -> int:
-    abs_score = abs(raw_weighted_score)
+def get_confidence(symbol: str, score: int) -> int:
+    abs_score = abs(score)
     if abs_score >= 6:
         confidence = 8
     elif abs_score >= 4:
@@ -368,27 +187,17 @@ def get_confidence(symbol: str, raw_weighted_score: int) -> int:
         confidence = 6
     else:
         confidence = 5
-
     if symbol in {"GC", "SI", "ES", "NQ", "YM", "RTY"}:
         confidence -= 1
-
     return max(4, min(9, confidence))
 
 
 
-def get_strategy(raw_weighted_score: int, symbol: str) -> tuple[str, str, str]:
-    abs_score = abs(raw_weighted_score)
-
-    if symbol in {"GC", "SI", "CL", "6E", "6A", "6J"}:
-        if abs_score >= 5:
-            return "TREND_FOLLOW", "SWING", "2-5 days"
-        if abs_score >= 3:
-            return "TREND_FOLLOW", "SWING", "1-2 days"
-        if abs_score >= 1:
-            return "IB_BREAKOUT", "INTRADAY", "session"
-        return "RANGE_TRADE", "INTRADAY", "session"
-
+def get_strategy(score: int, symbol: str) -> tuple[str, str, str]:
+    abs_score = abs(score)
     if abs_score >= 5:
+        if symbol in {"GC", "SI", "CL", "6E", "6A", "6J"}:
+            return "TREND_FOLLOW", "SWING", "2-5 days"
         return "TREND_FOLLOW", "SWING", "1-2 days"
     if abs_score >= 3:
         return "TREND_FOLLOW", "SWING", "1-2 days"
@@ -398,21 +207,8 @@ def get_strategy(raw_weighted_score: int, symbol: str) -> tuple[str, str, str]:
 
 
 
-def get_asset_class_bias(symbols: list[str], results: dict) -> str:
-    avg_score = sum(results[s]["score"] for s in symbols) / len(symbols)
-    if avg_score >= 5:
-        return "STRONG_BULLISH"
-    if avg_score >= 3:
-        return "BULLISH"
-    if avg_score >= 1:
-        return "SLIGHT_BULLISH"
-    if avg_score == 0:
-        return "NEUTRAL"
-    if avg_score >= -2:
-        return "SLIGHT_BEARISH"
-    if avg_score >= -4:
-        return "BEARISH"
-    return "STRONG_BEARISH"
+def class_bias_from_score(score: int) -> str:
+    return get_signal(score)
 
 
 
@@ -422,12 +218,8 @@ def signed_score(value: int) -> str:
 
 
 def build_markdown(date_label: str, time_label: str, results: dict, asset_class_bias: dict) -> str:
-    avg_conf = sum(results[s]["confidence"] for s in results) / len(results)
-    top = sorted(
-        results.items(),
-        key=lambda kv: (kv[1]["confidence"], kv[1]["score"]),
-        reverse=True,
-    )[:3]
+    avg_conf = sum(v["confidence"] for v in results.values()) / len(results)
+    top = sorted(results.items(), key=lambda kv: (kv[1]["confidence"], kv[1]["score"]), reverse=True)[:3]
 
     lines: list[str] = []
     lines.append("# Matrix Futures Daily Bias Report")
@@ -435,9 +227,9 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("## Overall Market Bias: BULLISH")
+    lines.append("## Overall Market Bias: MIXED")
     lines.append("")
-    lines.append("Macro conditions on April 10 remained broadly constructive because the dollar stayed softer, credit spreads tightened again on the latest official print, and both equity and Treasury volatility continued to improve directionally. The regime is balanced rather than euphoric because growth merely stabilized, crude inventories still built, and Europe-specific macro data remain soft even as copper rebounded sharply [1] [2] [3] [6] [11] [18].")
+    lines.append("Macro conditions on April 12 are no longer one-directional. The dollar remains softer, credit spreads are tighter, and both equity and Treasury volatility continue to improve, which keeps the equity and FX backdrop constructive. However, gold lost ETF support and crude lost its earlier supply-shock premium as ceasefire headlines and reopening expectations weighed on oil, leaving commodities much less uniformly bullish than in the prior run [1] [2] [3] [5] [7] [15].")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -447,9 +239,7 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("|------------|------|--------------------|--------|------------|----------|------|------|")
     for symbol in ["GC", "SI", "CL", "ES", "NQ", "YM", "RTY", "6E", "6A", "6J"]:
         data = results[symbol]
-        lines.append(
-            f"| {symbol} | {instrument_display[symbol]} | {signed_score(data['score'])} | {data['signal']} | {data['confidence']}/10 | {data['recommended_approach']} | {data['recommended_mode']} | {data['hold_expectation']} |"
-        )
+        lines.append(f"| {symbol} | {instrument_display[symbol]} | {signed_score(data['score'])} | {data['signal']} | {data['confidence']}/10 | {data['recommended_approach']} | {data['recommended_mode']} | {data['hold_expectation']} |")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -457,9 +247,9 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("| Asset Class | Bias | Key Driver |")
     lines.append("|-------------|------|------------|")
-    lines.append(f"| Commodities | {asset_class_bias['COMMODITIES']} | Softer USD and continuing Hormuz-related supply stress keep the complex supported even after another bearish U.S. crude inventory build [1] [17] [18] |")
-    lines.append(f"| Indices | {asset_class_bias['INDICES']} | Tighter credit spreads, falling VIX direction, and stronger semiconductors improved the risk backdrop [2] [4] [11] |")
-    lines.append(f"| FX | {asset_class_bias['FX']} | Dollar weakness helps broadly, but policy divergence still favors JPY and AUD over EUR [1] [7] [8] [9] [14] |")
+    lines.append(f"| Commodities | {asset_class_bias['COMMODITIES']} | Gold ETF outflows and an easing crude risk premium offset the weaker USD backdrop [1] [5] [14] [15] |")
+    lines.append(f"| Indices | {asset_class_bias['INDICES']} | Tighter credit spreads, falling VIX direction, and stronger semiconductors keep the risk backdrop constructive [2] [7] [12] [13] |")
+    lines.append(f"| FX | {asset_class_bias['FX']} | The softer dollar now aligns with hawkish ECB, RBA, and BoJ narratives plus improving China and euro-area growth proxies [1] [9] [10] [11] |")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -484,8 +274,8 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     lines.append("")
     lines.append("## Economic Calendar Context")
     lines.append("")
-    for item in calendar_notes:
-        lines.append(f"- {item}")
+    for note in calendar_notes:
+        lines.append(f"- {note}")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -494,7 +284,7 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     for item in futures_news:
         lines.append(f"- {item['headline']} | {item['url']}")
     lines.append("")
-    lines.append("Futures headlines still revolve around two linked themes: crude remains underpinned by unresolved Strait of Hormuz disruption, while equity benchmarks continue to stabilize as ceasefire hopes reduce the probability of a deeper near-term growth shock [17] [18] [19].")
+    lines.append("Futures positioning is now dominated by the contrast between easier geopolitical conditions for oil and still-improving financial conditions for equities. That combination softens crude conviction while preserving a positive index backdrop [2] [7] [14] [15].")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -503,44 +293,43 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
     for item in currency_news:
         lines.append(f"- {item['headline']} | {item['url']}")
     lines.append("")
-    lines.append("Currency headlines continue to emphasize a weaker dollar backdrop, a still-fragile USD/JPY pressure point, and persistent euro underperformance against the backdrop of softer euro-area activity [1] [16] [20].")
+    lines.append("Currency markets remain centered on a weaker dollar and widening policy divergence in favor of EUR, AUD, and JPY. The euro improved the most because its growth proxy and central-bank narrative both turned more supportive in the current session's evidence set [1] [4] [9] [10] [11].")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## Key Macro Themes")
     lines.append("")
-    lines.append("1. **The dollar remains a broad cross-asset tailwind** because DXY fell to 98.697, supporting commodities and non-USD FX [1].")
-    lines.append("2. **Risk conditions improved without becoming euphoric** because VIX eased to 19.23 and MOVE dropped to 72.1541, yet the growth narrative only held steady at 1.3% GDPNow [2] [3] [5].")
-    lines.append("3. **Crude remains uniquely supported by supply stress** because EIA still describes severe Hormuz-related outages even as domestic inventories rose by 3.1 million barrels [17] [18].")
-    lines.append("4. **Policy divergence and copper strength now matter most in FX** because ECB easing bias still weighs on EUR while supportive RBA settings, stronger China-linked proxies, and the BoJ normalization story favor AUD and JPY [6] [8] [9] [14] [15].")
+    lines.append("1. **The dollar remains a cross-asset tailwind** because DXY fell to 98.697 and stayed directionally weak [1].")
+    lines.append("2. **Volatility conditions improved without turning euphoric** because VIX stayed in the balanced zone at 19.23 while MOVE also declined [2] [13].")
+    lines.append("3. **Oil lost its strongest macro support** because inventories built and ceasefire headlines eased the supply-risk narrative [14] [15].")
+    lines.append("4. **FX leadership strengthened further** because the ECB, RBA, and BoJ narratives all screened hawkish enough to complement the weaker dollar backdrop [4] [9] [10] [11].")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## Upcoming Catalysts")
     lines.append("")
     lines.append("### Imminent (< 1 Week)")
-    lines.append("- U.S. CPI on April 10 [20]")
-    lines.append("- China inflation data on April 10 [15]")
-    lines.append("- Ongoing Strait of Hormuz and tanker-flow headlines [17] [19]")
+    lines.append("- Follow-through from the April 9 GDPNow slowdown signal [3]")
+    lines.append("- China inflation and post-PMI macro follow-up [11]")
+    lines.append("- Any fresh Strait of Hormuz or ceasefire headlines [15]")
     lines.append("")
     lines.append("### Near-Term (1-4 Weeks)")
-    lines.append("- Federal Reserve meeting on April 30 [7]")
+    lines.append("- Federal Reserve meeting on April 30 [4]")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## Data Quality")
     lines.append("")
-    lines.append("- The preferred ForexFactory calendar page could not be opened directly in-browser because of access restrictions, so the calendar section uses fallback session catalysts and explicitly discloses that limitation.")
-    lines.append("- Reuters access to the eurozone PMI article was restricted, so the euro-area growth factor used an accessible FXStreet fallback tied to the HCOB/S&P Global release [16].")
-    lines.append("- FRED inputs are official but still slightly lagged relative to the live session; the model therefore uses the latest available official print for DFII10, HY OAS, and T10Y2Y [10] [11] [12].")
+    lines.append("- FRED inputs are official but lag live markets; the model therefore uses the latest available official DFII10, HY OAS, and T10Y2Y prints [6] [7] [8].")
+    lines.append("- Some market sites blocked direct browser extraction, so programmatic page-source checks and accessible alternatives were used for SOX, MOVE, copper, and parts of the oil narrative [12] [13] [14] [16].")
+    lines.append("- Gold ETF flows use the latest directly viewed World Gold Council summary and are therefore monthly rather than intraday [5].")
     lines.append(f"- Average confidence: {avg_conf:.1f}/10")
     lines.append("")
     lines.append("---")
     lines.append("")
     lines.append("## References")
     lines.append("")
-    for key in sorted(references, key=lambda x: int(x)):
-        ref = references[key]
+    for key, ref in references.items():
         lines.append(f"[{key}]: {ref['url']} \"{ref['title']}\"")
     lines.append("")
     lines.append("---")
@@ -551,22 +340,22 @@ def build_markdown(date_label: str, time_label: str, results: dict, asset_class_
 
 
 def main() -> None:
-    now_utc = datetime.now(timezone.utc)
-    date_str = now_utc.strftime("%Y-%m-%d")
-    time_str = now_utc.strftime("%H%M")
-    iso_str = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
-    date_label = now_utc.strftime("%B %-d, %Y")
-    time_label = now_utc.strftime("%H:%M")
+    now = datetime.now(timezone.utc)
+    date_str = now.strftime("%Y-%m-%d")
+    time_str = now.strftime("%H%M")
+    iso_str = now.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    date_label = now.strftime("%B %d, %Y")
+    time_label = now.strftime("%H:%M")
 
     results = {}
     scoring_detail = {}
     for symbol, config in instrument_configs.items():
-        raw_weighted_score, detail = calculate_score(config)
-        signal, pm_score = get_signal(raw_weighted_score)
-        confidence = get_confidence(symbol, raw_weighted_score)
-        approach, mode, hold = get_strategy(raw_weighted_score, symbol)
+        score, detail = calculate_score(config)
+        signal = get_signal(score)
+        confidence = get_confidence(symbol, score)
+        approach, mode, hold = get_strategy(score, symbol)
         results[symbol] = {
-            "score": pm_score,
+            "score": score,
             "signal": signal,
             "confidence": confidence,
             "recommended_approach": approach,
@@ -575,14 +364,14 @@ def main() -> None:
         }
         scoring_detail[symbol] = {
             "name": config["name"],
-            "raw_weighted_score": raw_weighted_score,
+            "raw_weighted_score": score,
             "factors": detail,
         }
 
     asset_class_bias = {
-        "COMMODITIES": get_asset_class_bias(["GC", "SI", "CL"], results),
-        "INDICES": get_asset_class_bias(["ES", "NQ", "YM", "RTY"], results),
-        "FX": get_asset_class_bias(["6E", "6A", "6J"], results),
+        "COMMODITIES": class_bias_from_score(round(sum(results[s]["score"] for s in ["GC", "SI", "CL"]) / 3)),
+        "INDICES": class_bias_from_score(round(sum(results[s]["score"] for s in ["ES", "NQ", "YM", "RTY"]) / 4)),
+        "FX": class_bias_from_score(round(sum(results[s]["score"] for s in ["6E", "6A", "6J"]) / 3)),
     }
 
     output = {
@@ -592,47 +381,45 @@ def main() -> None:
         "scores": results,
         "asset_class_bias": asset_class_bias,
         "key_drivers": [
-            "TradingView showed DXY at 98.697 and down 0.10% on the session, improving the backdrop for commodities and non-USD FX [1].",
-            "Cboe VIX fell 1.33% to 19.23, keeping the volatility regime balanced while leaving direction supportive for risk assets [2].",
-            "FRED HY OAS tightened from 2.94 to 2.90 on the latest official print, improving the cross-asset credit backdrop [11].",
-            "EIA still describes severe Hormuz-related supply disruption even as U.S. crude inventories rose by 3.1 million barrels [17] [18].",
+            "DXY remained weak at 98.697 and down 0.10%, preserving a constructive backdrop for non-USD assets [1].",
+            "VIX stayed balanced at 19.23 while falling on the day, and MOVE also declined, keeping financial conditions friendly for equity futures [2] [13].",
+            "Gold ETF flows turned into a headwind while oil inventories built and crude's geopolitical premium eased after ceasefire headlines [5] [14] [15].",
+            "The ECB, RBA, and BoJ all screened hawkish enough relative to a neutral Fed to strengthen the FX complex, with euro-area and China PMI data also improving [4] [9] [10] [11].",
         ],
         "data_quality": {
             "stale_sources": [
-                "FRED DFII10 latest official observation used: 2026-04-09 [10]",
-                "FRED HY OAS latest official observation used: 2026-04-09 [11]",
-                "Preferred ForexFactory calendar page inaccessible in browser during this session",
+                "FRED DFII10 latest official observation used: 2026-04-09 [6]",
+                "FRED HY OAS latest official observation used: 2026-04-09 [7]",
+                "FRED T10Y2Y latest official observation used: 2026-04-10 [8]",
             ],
             "fallbacks_used": [
-                "FXStreet fallback for eurozone PMI after Reuters access restriction [16]",
-                "Anadolu summary for the latest EIA crude inventory release [18]",
-                "Session catalyst fallback notes for calendar context after ForexFactory access restriction",
+                "Programmatic page-source checks for SOX and MOVE after market-site blocking [12] [13]",
+                "Accessible copper market page after browser blocks on MarketWatch and Investing.com [16]",
+                "Swissinfo/Bloomberg central-bank roundup after Reuters access restrictions [9]",
             ],
             "overnight_changes": [
-                "DXY down 0.10% on the day [1]",
-                "VIX down 1.33% on the day [2]",
-                "Copper up 2.11% on the day [6]",
+                "DXY down 0.10% on the session [1]",
+                "VIX down 1.33% on the session [2]",
+                "SOX up about 2.31% on the session [12]",
+                "MOVE down about 2.51% on the session [13]",
             ],
         },
         "catalyst_proximity": {
             "imminent": [
-                "U.S. CPI on April 10 [20]",
-                "China inflation data on April 10 [15]",
-                "Ongoing Strait of Hormuz and tanker-flow headlines [17] [19]",
+                "Ceasefire durability and Strait of Hormuz reopening headlines [15]",
+                "Post-PMI China macro follow-through [11]",
+                "Any fresh GDPNow revision after the slowdown from 1.6% to 1.3% [3]",
             ],
             "near_term": [
-                "Federal Reserve meeting on April 30 [7]",
+                "Federal Reserve meeting on April 30 [4]",
             ],
             "background": [
-                "Persistent Middle East energy disruption risk [17] [19]",
-                "ECB easing bias amid softer euro-area growth [8] [16]",
-                "BoJ normalization and post-hike RBA policy divergence [9] [14]",
+                "Hawkish ECB, RBA, and BoJ divergence versus a neutral Fed [4] [9]",
+                "Gold ETF outflows as a drag on the precious-metals complex [5]",
             ],
         },
         "references": references,
     }
-
-    markdown = build_markdown(date_label, time_label, results, asset_class_bias)
 
     timestamp_json = BIAS_DIR / f"{date_str}_{time_str}.json"
     latest_json = BIAS_DIR / "latest.json"
@@ -640,29 +427,33 @@ def main() -> None:
     latest_md = EXEC_DIR / "latest.md"
     detail_json = FACTOR_DIR / f"{date_str}_{time_str}_scoring_detail.json"
 
-    timestamp_json.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
-    latest_json.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
+    with open(timestamp_json, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+    with open(latest_json, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+
+    markdown = build_markdown(date_label, time_label, results, asset_class_bias)
     timestamp_md.write_text(markdown, encoding="utf-8")
     latest_md.write_text(markdown, encoding="utf-8")
-    detail_json.write_text(
-        json.dumps(
-            {
-                "date": date_str,
-                "generated_at": iso_str,
-                "macro_data": macro_data,
-                "scoring_detail": scoring_detail,
-            },
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
-    )
 
-    print(timestamp_json)
-    print(latest_json)
-    print(timestamp_md)
-    print(latest_md)
-    print(detail_json)
+    detail_json.write_text(json.dumps({
+        "date": date_str,
+        "generated_at": iso_str,
+        "macro_data": macro_data,
+        "scoring_detail": scoring_detail,
+    }, indent=2), encoding="utf-8")
+
+    print(json.dumps({
+        "date": date_str,
+        "generated_at": iso_str,
+        "timestamp_json": str(timestamp_json),
+        "latest_json": str(latest_json),
+        "timestamp_md": str(timestamp_md),
+        "latest_md": str(latest_md),
+        "detail_json": str(detail_json),
+        "scores": {k: v["score"] for k, v in results.items()},
+        "asset_class_bias": asset_class_bias,
+    }, indent=2))
 
 
 if __name__ == "__main__":

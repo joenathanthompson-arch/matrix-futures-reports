@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-12",
+  "generated_at": "2026-04-12T06:47:48Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": 1,
+    "risk_mood": 0,
+    "vix_direction": 1,
+    "growth_narrative": 1,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": 1,
+    "yield_curve_2s10s": -1,
+    "copper": 1,
+    "oil_inventories": -1,
+    "oil_supply_shock": -1,
+    "geopolitical_risk": -1,
+    "gold_etf_flows": -1,
+    "ecb_stance": 1,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": 1,
+    "rate_diff_eur_usd": 1,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": 0
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 0,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "oil_supply_shock": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Session reporting shifted from acute disruption toward reopening expectations around Hormuz, so the oil supply-shock factor is now classified as easing rather than intensifying [14] [15]."
+        },
+        "gold_etf_flows": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "The World Gold Council page described March as a record month for global gold ETF outflows totaling about US$12 billion, leaving the flow signal negative [5]."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": 2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "An accessible copper market page stated that copper rose to about 5.81 USD/lb and reached the highest level since March, so the industrial-metals direction remains positive [16]."
+        },
+        "gold_etf_flows": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "The World Gold Council page described March as a record month for global gold ETF outflows totaling about US$12 billion, leaving the flow signal negative [5]."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": -1,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": -1,
+          "weight": 2,
+          "weighted": -2,
+          "note": "Session reporting shifted from acute disruption toward reopening expectations around Hormuz, so the oil supply-shock factor is now classified as easing rather than intensifying [14] [15]."
+        },
+        "oil_inventories": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "The latest EIA weekly report window showed U.S. crude inventories rising by about 3.1 million barrels to 464.7 million, which is a bearish inventory build for WTI [14]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "geopolitical_risk": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Yahoo Finance reported that a US-Iran two-week ceasefire helped oil plunge and improved risk appetite, so the crude-specific geopolitical-risk factor is best classified as easing [15]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED high-yield OAS narrowed to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which counts as tighter credit spreads [7]."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "VIX fell 1.33% (-0.26) from the prior session, leaving the volatility-direction factor supportive [2]."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView source inspection returned a positive daily change of roughly +2.31% for SOX, so semiconductor leadership remains supportive [12]."
+        },
+        "move_index": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView source inspection returned a negative daily change of roughly -2.51% for MOVE, indicating falling rate volatility [13]."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED high-yield OAS narrowed to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which counts as tighter credit spreads [7]."
+        },
+        "yield_curve_2s10s": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "FRED T10Y2Y slipped to 0.50 on 2026-04-10 from 0.51 on 2026-04-09, so the curve signal is classified as flattening [8]."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.95 on 2026-04-09 versus 1.96 on 2026-04-08, a 1bp move that still classifies as flat under the methodology [6]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow stood at 1.3% on April 9, unchanged from April 7 and down from 1.6% on April 2, so the growth narrative is classified as slowing on a sequential basis [3]."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "FRED high-yield OAS narrowed to 2.90 on 2026-04-09 from 2.94 on 2026-04-08, which counts as tighter credit spreads [7]."
+        },
+        "yield_curve_2s10s": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "FRED T10Y2Y slipped to 0.50 on 2026-04-10 from 0.51 on 2026-04-09, so the curve signal is classified as flattening [8]."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "ecb_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The Swissinfo/Bloomberg roundup said the ECB deposit rate is 2.0% and markets are pricing two to three 25bp hikes in 2026, which supports a hawkish ECB classification [9]."
+        },
+        "rate_diff_eur_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "A neutral Fed combined with a newly hawkish ECB narrative improves the EUR-USD policy differential from the euro's perspective [4] [9]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        },
+        "eurozone_growth": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FXStreet reported the euro area composite PMI at 50.7 in March versus 50.5 expected, which supports an improving euro-area growth classification [10]."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 6,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The same roundup said the RBA cash rate is 4.1% after back-to-back hikes and that markets still price further tightening, so the RBA stance remains hawkish [9]."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "A 4.10% RBA cash rate versus the Fed's 3.50%-3.75% target range keeps the AUD-USD rate differential supportive [4] [9]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_sentiment_aud": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "Although ceasefire headlines improved sentiment, VIX at 19.23 still leaves the broad risk backdrop balanced rather than clearly risk-on, so AUD sentiment stays neutral [2] [15]."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China's official March manufacturing PMI rose to 50.4 from 49.0, returning to expansionary territory and supporting an accelerating China-growth classification [11]."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "An accessible copper market page stated that copper rose to about 5.81 USD/lb and reached the highest level since March, so the industrial-metals direction remains positive [16]."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 5,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch showed April 30, 2026 probabilities of 97.9% no change, 2.1% hike, and 0.0% ease with the current target range at 350-375, so the Fed factor remains neutral [4]."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "The Swissinfo/Bloomberg roundup said markets continue to price further BoJ tightening with some probability of action as soon as this month, supporting a hawkish BoJ classification [9]."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization against a neutral Fed continues to improve the JPY-USD rate-differential narrative [4] [9]."
+        },
+        "usd_dxy": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed DXY at 98.697, down 0.098 points (-0.10%) on the session, so the dollar signal remains weak/falling [1]."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX closed at 19.23, which stays inside the methodology's balanced 15-20 zone rather than a high-stress regime [2]."
+        }
+      }
+    }
+  }
+}
