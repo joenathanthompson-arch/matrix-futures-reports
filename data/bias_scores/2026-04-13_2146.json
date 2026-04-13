@@ -1,0 +1,185 @@
+{
+  "date": "2026-04-13",
+  "generated_at": "2026-04-13T21:46:25Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "SI": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "pm_code": 1,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "RTY": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6E": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 4,
+      "pm_code": 1,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "pm_code": 2,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "BULLISH",
+    "INDICES": "BULLISH",
+    "FX": "BULLISH"
+  },
+  "key_drivers": [
+    "A weak dollar, balanced VIX regime, and falling rate volatility kept the broad cross-asset backdrop constructive rather than defensive.",
+    "U.S. growth remained in a slowing regime via GDPNow at 1.3%, while China PMI re-entered expansion at 50.4 and central-bank divergence stayed supportive for several non-USD contracts.",
+    "Copper turned lower, which capped silver and reduced AUD enthusiasm, but crude stayed strongly supported by tightening supply conditions and the softer dollar."
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "FRED DFII10 still relied on the latest accessible official print dated 2026-04-09.",
+      "Credit-spread direction was kept neutral because a fresh narrowing or widening move could not be cleanly re-established from the accessible FRED page in this run."
+    ],
+    "fallbacks_used": [
+      "A TradingEconomics copper report page was used as the accessible fallback because the primary copper quote page was blocked.",
+      "Eurozone growth was held neutral because the preferred official PMI page and Reuters follow-up were not fully accessible in this run."
+    ],
+    "overnight_changes": [
+      "DXY remained weak on the latest captured TradingView session.",
+      "VIX direction remained lower on the latest captured session.",
+      "MOVE remained lower and SOX remained higher on the latest captured TradingView session.",
+      "FRED T10Y2Y was directly refreshed to 0.52 on 2026-04-13."
+    ]
+  },
+  "references": {
+    "1": {
+      "title": "CME FedWatch Tool",
+      "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    },
+    "2": {
+      "title": "FRED DFII10",
+      "url": "https://fred.stlouisfed.org/series/DFII10"
+    },
+    "3": {
+      "title": "Cboe VIX page",
+      "url": "https://www.cboe.com/tradable-products/vix/"
+    },
+    "4": {
+      "title": "Atlanta Fed GDPNow",
+      "url": "https://www.atlantafed.org/research-and-data/data/gdpnow"
+    },
+    "5": {
+      "title": "FRED HY OAS",
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    },
+    "6": {
+      "title": "FRED T10Y2Y",
+      "url": "https://fred.stlouisfed.org/series/T10Y2Y"
+    },
+    "7": {
+      "title": "TradingView DXY",
+      "url": "https://www.tradingview.com/symbols/TVC-DXY/"
+    },
+    "8": {
+      "title": "TradingView SOX",
+      "url": "https://www.tradingview.com/symbols/NASDAQ-SOX/"
+    },
+    "9": {
+      "title": "TradingView MOVE",
+      "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    "10": {
+      "title": "TradingEconomics Copper",
+      "url": "https://tradingeconomics.com/commodity/copper/news/541241"
+    },
+    "11": {
+      "title": "EIA Weekly Petroleum Status Report",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/"
+    },
+    "12": {
+      "title": "ECB March 19, 2026 monetary policy decision",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+    },
+    "13": {
+      "title": "RBA March 17, 2026 decision",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-08.html"
+    },
+    "14": {
+      "title": "BoJ March 19, 2026 statement",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+    },
+    "15": {
+      "title": "China NBS PMI for March 2026",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202604/t20260401_1962920.html"
+    }
+  }
+}
