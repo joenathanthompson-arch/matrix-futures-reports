@@ -1,0 +1,11 @@
+symbol,instrument,score,signal,confidence
+GC,Gold,+2,SLIGHT_BULLISH,5
+SI,Silver,+1,SLIGHT_BULLISH,4
+CL,Crude Oil,+5,STRONG_BULLISH,7
+ES,S&P 500,+2,SLIGHT_BULLISH,5
+NQ,Nasdaq 100,+2,SLIGHT_BULLISH,5
+YM,Dow Jones,+3,BULLISH,5
+RTY,Russell 2000,+2,SLIGHT_BULLISH,5
+6E,Euro,+1,SLIGHT_BULLISH,5
+6A,Australian Dollar,+5,STRONG_BULLISH,7
+6J,Japanese Yen,+3,BULLISH,6
