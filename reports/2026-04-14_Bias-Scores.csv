@@ -1,11 +1,11 @@
-symbol,instrument,score,signal,confidence
+Ticker,Instrument,Numeric Bias,Signal,Confidence
 GC,Gold,+2,SLIGHT_BULLISH,5
 SI,Silver,+1,SLIGHT_BULLISH,4
 CL,Crude Oil,+5,STRONG_BULLISH,7
-ES,S&P 500,+2,SLIGHT_BULLISH,5
-NQ,Nasdaq 100,+2,SLIGHT_BULLISH,5
-YM,Dow Jones,+3,BULLISH,5
-RTY,Russell 2000,+2,SLIGHT_BULLISH,5
+ES,S&P 500,+2,SLIGHT_BULLISH,4
+NQ,Nasdaq 100,+2,SLIGHT_BULLISH,4
+YM,Dow Jones,+1,SLIGHT_BULLISH,4
+RTY,Russell 2000,+0,NEUTRAL,4
 6E,Euro,+1,SLIGHT_BULLISH,5
 6A,Australian Dollar,+5,STRONG_BULLISH,7
 6J,Japanese Yen,+3,BULLISH,6
