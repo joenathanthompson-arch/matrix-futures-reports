@@ -234,3 +234,37 @@ Additional context:
 
 All macro indicators have been collected and assessed.
 
+
+## 2026-04-15 Methodology and GDPNow Refresh
+- Methodology re-read from the repository reference document on 2026-04-15 UTC.
+- Confirmed factor weights, integer-only scoring, required latest file rewrites, and mandatory post-push verification.
+- GDPNow source: https://www.atlantafed.org/cqer/research/gdpnow
+- Latest GDPNow estimate for 2026:Q1: 1.3%
+- Updated: 2026-04-09
+- Next update: 2026-04-21
+- Growth interpretation will be based on comparison with prior GDPNow reading or recent direction once historical reference is confirmed.
+
+## 2026-04-15 Live Market Checks
+- TradingView DXY: 98.243, up 0.138 (+0.14%) on the day as of 11:33 GMT; 5-day change was -0.64% and 1-month change was -2.18%.
+- DXY classification for the methodology is currently rising/strong on the day.
+- Cboe VIX: 18.18 as of 2026-04-15, down -0.18 (-0.98%) from a 18.36 previous close.
+- VIX risk mood classification is balanced because the spot level is inside the 15-20 band.
+- VIX direction classification is falling because the daily change is negative.
+
+- FRED DFII10 latest official print was 1.92 on 2026-04-13 versus 1.95 on 2026-04-10, a 3 bps move that stays within the flat band, but the series is stale relative to 2026-04-15.
+- CNBC fallback was attempted but blocked, so the next fallback source was used.
+- Trading Economics U.S. 10Y TIPS page showed 1.884 on 2026-04-15 with a +0.009 daily move, indicating real yields are modestly rising on the live fallback source.
+- Real-yield classification for the current run will therefore use the fallback and be treated as rising.
+- FRED HY OAS latest values: 2.94 on 2026-04-10 and 2.95 on 2026-04-13, indicating a slight widening move.
+- FRED 2s10s latest values: 0.52 on 2026-04-13 and 0.50 on 2026-04-14, indicating flattening on the latest update.
+
+- TradingView SOX closed at 9,224.12 on 2026-04-14, up 184.60 (+2.04%) on the day and up 7.74% over five days; the semiconductor factor is rising.
+- TradingView MOVE closed at 74.3509 on 2026-04-14, down 0.0676 (-0.09%) on the day and down 5.57% over five days; the rates-volatility factor is falling.
+
+- CME FedWatch page showed the next FOMC meeting is 14 days away and the visible probability table for 30 Apr 2026 displayed 0.0% ease, 99.5% no change, and 0.5% hike.
+- Fed stance classification is neutral hold because the market is overwhelmingly pricing no change rather than a cut or a hawkish hiking path.
+
+- EIA Weekly Petroleum Status Report page showed data for week ending 2026-04-03, released 2026-04-08, with the next release due 2026-04-15.
+- The EIA highlights PDF reported that U.S. commercial crude oil inventories increased by 3.1 million barrels to 464.7 million for the week ending 2026-04-03, a bearish inventory signal for crude.
+- The World Gold Council March 2026 ETF commentary, published 2026-04-08, stated that hefty outflows of US$12bn in March were the largest monthly outflow on record and that North America recorded sizeable outflows of US$13bn in March.
+- Gold ETF flow classification is therefore negative/outflows on the latest official monthly update.
