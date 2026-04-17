@@ -1,0 +1,830 @@
+{
+  "date": "2026-04-17",
+  "generated_at": "2026-04-17T11:53:07Z",
+  "macro_inputs": {
+    "fed_stance": {
+      "classification": "NEUTRAL_HOLD",
+      "score": 0,
+      "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+      "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    },
+    "real_yields": {
+      "classification": "FLAT",
+      "score": 0,
+      "value": 1.9,
+      "previous": 1.89,
+      "change_bps": 1.0,
+      "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+      "source": "https://fred.stlouisfed.org/series/DFII10"
+    },
+    "dxy": {
+      "classification": "WEAK_FALLING",
+      "score": 1,
+      "value": 98.087,
+      "day_change_pct": -0.09,
+      "five_day_change_pct": -0.79,
+      "one_month_change_pct": -1.47,
+      "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+      "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+    },
+    "risk_mood": {
+      "classification": "BALANCED",
+      "score": 0,
+      "vix": 17.87,
+      "note": "VIX remained in the 15-20 balanced band.",
+      "source": "https://www.cboe.com/tradable-products/vix/"
+    },
+    "vix_direction": {
+      "classification": "FALLING",
+      "score": 1,
+      "vix": 17.87,
+      "previous_close": 17.94,
+      "change_pct": -0.39,
+      "note": "Spot VIX was lower than the prior close, a mild tailwind for equities.",
+      "source": "https://www.cboe.com/tradable-products/vix/"
+    },
+    "growth": {
+      "classification": "STABLE_SOFT",
+      "score": 0,
+      "gdpnow": 1.3,
+      "updated": "2026-04-09",
+      "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+      "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+    },
+    "credit_spreads": {
+      "classification": "WIDENING",
+      "score": -1,
+      "value": 2.85,
+      "previous": 2.84,
+      "change_bps": 1.0,
+      "note": "HY OAS widened by 1 bp from 2.84 on 2026-04-14 to 2.85 on 2026-04-15.",
+      "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    },
+    "curve": {
+      "classification": "STEEPENING",
+      "score": 1,
+      "value": 0.54,
+      "previous": 0.53,
+      "change_bps": 1.0,
+      "note": "The 2s10s curve steepened modestly from 0.53 to 0.54.",
+      "source": "https://fred.stlouisfed.org/series/T10Y2Y"
+    },
+    "move": {
+      "classification": "FALLING",
+      "score": 1,
+      "value": 65.893,
+      "one_day_change_pct": -3.01,
+      "five_day_change_pct": -10.97,
+      "note": "Rates volatility continued to ease on both the daily and five-day view.",
+      "source": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    "sox": {
+      "classification": "RISING",
+      "score": 1,
+      "value": 9329.35,
+      "one_day_change_pct": 0.97,
+      "five_day_change_pct": 5.87,
+      "note": "Semiconductors remained decisively higher on both the one-day and five-day horizons.",
+      "source": "https://www.tradingview.com/symbols/SOX/"
+    },
+    "oil_supply": {
+      "classification": "TIGHTENING",
+      "score": 1,
+      "note": "The current EIA weekly package and ongoing Gulf supply-risk backdrop still point to a tightening supply impulse rather than easing physical balances.",
+      "source": "https://www.eia.gov/petroleum/supply/weekly/"
+    },
+    "inventories": {
+      "classification": "BUILD",
+      "score": -1,
+      "note": "The latest repository-verified weekly petroleum balance remained a crude build, which limits crude upside conviction.",
+      "source": "https://www.eia.gov/petroleum/supply/weekly/"
+    },
+    "geopolitical": {
+      "classification": "EASING",
+      "score": -1,
+      "note": "Same-day market coverage emphasized Iran-deal optimism and lower oil prices, indicating that the immediate war premium is easing even though regional risk remains present.",
+      "source": "https://tradingeconomics.com/china/manufacturing-pmi"
+    },
+    "gold_etf_flows": {
+      "classification": "OUTFLOWS",
+      "score": -1,
+      "note": "The World Gold Council page confirmed the latest update is ETF Flows: March 2026, and the repository-verified March reading remains one of heavy outflows.",
+      "source": "https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows"
+    },
+    "ecb_stance": {
+      "classification": "HAWKISH_HOLD",
+      "score": 1,
+      "note": "The ECB kept rates unchanged on 19 March 2026 while emphasizing upside inflation risks and no pre-commitment to a rate path.",
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+    },
+    "eurozone_growth": {
+      "classification": "STABLE",
+      "score": 0,
+      "note": "No fresh same-session euro-area growth impulse was verified in this run, so the eurozone growth input is kept neutral for conservatism.",
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+    },
+    "rba_stance": {
+      "classification": "HAWKISH",
+      "score": 1,
+      "note": "Recent official RBA communication said the Bank had to tighten policy in response to inflation that remains too high.",
+      "source": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-04-14.html"
+    },
+    "aud_rate_diff": {
+      "classification": "SUPPORTIVE",
+      "score": 1,
+      "note": "The RBA at 4.10% versus a neutral Fed backdrop keeps the AUD-USD rate differential supportive.",
+      "source": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-04-14.html"
+    },
+    "china_growth": {
+      "classification": "SLOWING",
+      "score": -1,
+      "value": 50.8,
+      "previous": 52.1,
+      "note": "China manufacturing PMI stayed above 50 but slowed materially from February to March.",
+      "source": "https://tradingeconomics.com/china/manufacturing-pmi"
+    },
+    "copper": {
+      "classification": "FALLING",
+      "score": -1,
+      "value": 6.0291,
+      "day_change_pct": -0.62,
+      "note": "Copper was lower on the latest session on the allowed fallback source.",
+      "source": "https://tradingeconomics.com/commodity/copper"
+    },
+    "boj_stance": {
+      "classification": "HAWKISH_NORMALIZATION",
+      "score": 1,
+      "note": "The BoJ kept the overnight call rate at 0.75% on 19 March 2026, but the regime remains one of normalization rather than ultra-easy policy.",
+      "source": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+    },
+    "jpy_rate_diff": {
+      "classification": "SUPPORTIVE",
+      "score": 1,
+      "note": "BoJ normalization versus a neutral Fed continues to support the JPY side of the rate differential.",
+      "source": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+    },
+    "eur_rate_diff": {
+      "classification": "SUPPORTIVE",
+      "score": 1,
+      "note": "A firm ECB hold against a neutral Fed leaves the EUR-USD rate backdrop supportive for the euro rather than hostile.",
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+    }
+  },
+  "instrument_scoring": {
+    "GC": {
+      "instrument": "Gold Futures",
+      "raw_weighted_score": 1,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Oil supply / inflation impulse",
+          "classification": "TIGHTENING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "The current EIA weekly package and ongoing Gulf supply-risk backdrop still point to a tightening supply impulse rather than easing physical balances.",
+          "source": "https://www.eia.gov/petroleum/supply/weekly/"
+        },
+        {
+          "factor": "Gold ETF flows",
+          "classification": "OUTFLOWS",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "The World Gold Council page confirmed the latest update is ETF Flows: March 2026, and the repository-verified March reading remains one of heavy outflows.",
+          "source": "https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows"
+        }
+      ],
+      "analysis": "Gold keeps only a slight bullish bias because the dollar remains weak and the oil-supply backdrop still carries some inflation sensitivity. Flat real yields and heavy March ETF outflows cap conviction, so GC is better treated as an opportunistic upside breakout than a high-conviction trend trade."
+    },
+    "SI": {
+      "instrument": "Silver Futures",
+      "raw_weighted_score": -1,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Copper",
+          "classification": "FALLING",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "Copper was lower on the latest session on the allowed fallback source.",
+          "source": "https://tradingeconomics.com/commodity/copper"
+        },
+        {
+          "factor": "Gold ETF flows",
+          "classification": "OUTFLOWS",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "The World Gold Council page confirmed the latest update is ETF Flows: March 2026, and the repository-verified March reading remains one of heavy outflows.",
+          "source": "https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows"
+        }
+      ],
+      "analysis": "Silver is neutral. The softer dollar helps, but the latest copper session was lower and gold ETF flow data still point to March outflows. That leaves SI without a clean macro edge despite a generally non-hostile rates backdrop."
+    },
+    "CL": {
+      "instrument": "WTI Crude Oil",
+      "raw_weighted_score": 1,
+      "factor_breakdown": [
+        {
+          "factor": "Oil supply / inflation impulse",
+          "classification": "TIGHTENING",
+          "raw_score": 1,
+          "weight": 2,
+          "weighted_score": 2,
+          "note": "The current EIA weekly package and ongoing Gulf supply-risk backdrop still point to a tightening supply impulse rather than easing physical balances.",
+          "source": "https://www.eia.gov/petroleum/supply/weekly/"
+        },
+        {
+          "factor": "Inventories",
+          "classification": "BUILD",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "The latest repository-verified weekly petroleum balance remained a crude build, which limits crude upside conviction.",
+          "source": "https://www.eia.gov/petroleum/supply/weekly/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Geopolitical risk",
+          "classification": "EASING",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "Same-day market coverage emphasized Iran-deal optimism and lower oil prices, indicating that the immediate war premium is easing even though regional risk remains present.",
+          "source": "https://tradingeconomics.com/china/manufacturing-pmi"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        }
+      ],
+      "analysis": "WTI crude remains mildly constructive rather than aggressively bullish. Tight supply risk and a weaker dollar are being offset by the latest crude-build signal and evidence that the immediate geopolitical premium has eased. The result is a low-energy upside bias rather than a strong trend call."
+    },
+    "ES": {
+      "instrument": "S&P 500 E-mini",
+      "raw_weighted_score": 1,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Credit spreads",
+          "classification": "WIDENING",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "HY OAS widened by 1 bp from 2.84 on 2026-04-14 to 2.85 on 2026-04-15.",
+          "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "factor": "VIX direction",
+          "classification": "FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "Spot VIX was lower than the prior close, a mild tailwind for equities.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        }
+      ],
+      "analysis": "The S&P 500 leans slightly bullish because a weaker dollar and a lower VIX offset mildly wider credit spreads. With real yields flat and GDPNow unchanged at a soft 1.3%, the setup favors selective upside continuation rather than an emphatic macro risk chase."
+    },
+    "NQ": {
+      "instrument": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 3,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "SOX",
+          "classification": "RISING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "Semiconductors remained decisively higher on both the one-day and five-day horizons.",
+          "source": "https://www.tradingview.com/symbols/SOX/"
+        },
+        {
+          "factor": "MOVE",
+          "classification": "FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "Rates volatility continued to ease on both the daily and five-day view.",
+          "source": "https://www.tradingview.com/symbols/TVC-MOVE/"
+        }
+      ],
+      "analysis": "Nasdaq remains one of the cleaner pro-risk expressions. SOX is still rising and the MOVE index is falling sharply, which is supportive for duration-sensitive growth equities. That combination keeps NQ in the bullish camp even though the broader macro growth pulse is only stable-soft."
+    },
+    "YM": {
+      "instrument": "Dow Jones E-mini",
+      "raw_weighted_score": 1,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Credit spreads",
+          "classification": "WIDENING",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "HY OAS widened by 1 bp from 2.84 on 2026-04-14 to 2.85 on 2026-04-15.",
+          "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "factor": "2s10s curve",
+          "classification": "STEEPENING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "The 2s10s curve steepened modestly from 0.53 to 0.54.",
+          "source": "https://fred.stlouisfed.org/series/T10Y2Y"
+        }
+      ],
+      "analysis": "Dow bias is slightly bullish. A softer dollar and a modestly steeper curve help cyclicals, but wider credit spreads keep conviction from moving higher. YM still looks more tactical than structural."
+    },
+    "RTY": {
+      "instrument": "Russell 2000 E-mini",
+      "raw_weighted_score": 0,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "Real yields",
+          "classification": "FLAT",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FRED DFII10 rose from 1.89 on 2026-04-14 to 1.90 on 2026-04-15, a 1 bp change that remains inside the flat band.",
+          "source": "https://fred.stlouisfed.org/series/DFII10"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Growth",
+          "classification": "STABLE_SOFT",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "GDPNow remains at 1.3% for 2026:Q1, which is soft but not a fresh re-acceleration or collapse.",
+          "source": "https://www.atlantafed.org/cqer/research/gdpnow"
+        },
+        {
+          "factor": "Credit spreads",
+          "classification": "WIDENING",
+          "raw_score": -1,
+          "weight": 2,
+          "weighted_score": -2,
+          "note": "HY OAS widened by 1 bp from 2.84 on 2026-04-14 to 2.85 on 2026-04-15.",
+          "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+        },
+        {
+          "factor": "2s10s curve",
+          "classification": "STEEPENING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "The 2s10s curve steepened modestly from 0.53 to 0.54.",
+          "source": "https://fred.stlouisfed.org/series/T10Y2Y"
+        }
+      ],
+      "analysis": "Russell 2000 is neutral. The weaker dollar and slightly steeper curve are offset by the small-cap complex's heavier sensitivity to wider credit spreads and the still-soft domestic growth pulse. That leaves RTY without a strong macro advantage."
+    },
+    "6E": {
+      "instrument": "Euro FX",
+      "raw_weighted_score": 4,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "ECB stance",
+          "classification": "HAWKISH_HOLD",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "The ECB kept rates unchanged on 19 March 2026 while emphasizing upside inflation risks and no pre-commitment to a rate path.",
+          "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+        },
+        {
+          "factor": "EUR-USD rate differential",
+          "classification": "SUPPORTIVE",
+          "raw_score": 1,
+          "weight": 2,
+          "weighted_score": 2,
+          "note": "A firm ECB hold against a neutral Fed leaves the EUR-USD rate backdrop supportive for the euro rather than hostile.",
+          "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "Eurozone growth",
+          "classification": "STABLE",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "No fresh same-session euro-area growth impulse was verified in this run, so the eurozone growth input is kept neutral for conservatism.",
+          "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+        }
+      ],
+      "analysis": "The euro remains bullish. The ECB's official March decision read as a firm hold with explicit upside inflation risks, and that combines with a weaker dollar to support EUR futures. Because euro-area growth was not freshly re-accelerating in this run, conviction is solid but not extreme."
+    },
+    "6A": {
+      "instrument": "Australian Dollar",
+      "raw_weighted_score": 0,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "RBA stance",
+          "classification": "HAWKISH",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "Recent official RBA communication said the Bank had to tighten policy in response to inflation that remains too high.",
+          "source": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-04-14.html"
+        },
+        {
+          "factor": "AUD-USD rate differential",
+          "classification": "SUPPORTIVE",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "The RBA at 4.10% versus a neutral Fed backdrop keeps the AUD-USD rate differential supportive.",
+          "source": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-04-14.html"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "AUD risk sentiment",
+          "classification": "NEUTRAL",
+          "raw_score": 0,
+          "weight": 2,
+          "weighted_score": 0,
+          "note": "With VIX at 17.87, the AUD-specific risk-sentiment input is kept neutral rather than risk-off.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "factor": "China growth",
+          "classification": "SLOWING",
+          "raw_score": -1,
+          "weight": 2,
+          "weighted_score": -2,
+          "note": "China manufacturing PMI stayed above 50 but slowed materially from February to March.",
+          "source": "https://tradingeconomics.com/china/manufacturing-pmi"
+        },
+        {
+          "factor": "Copper",
+          "classification": "FALLING",
+          "raw_score": -1,
+          "weight": 1,
+          "weighted_score": -1,
+          "note": "Copper was lower on the latest session on the allowed fallback source.",
+          "source": "https://tradingeconomics.com/commodity/copper"
+        }
+      ],
+      "analysis": "The Australian dollar is neutral in this refresh. A hawkish RBA and supportive rate differential are being offset by slower China PMI momentum and a lower copper session. Without a clearer pro-growth impulse from China or commodities, 6A loses the stronger upside alignment seen in earlier runs."
+    },
+    "6J": {
+      "instrument": "Japanese Yen",
+      "raw_weighted_score": 5,
+      "factor_breakdown": [
+        {
+          "factor": "Fed stance",
+          "classification": "NEUTRAL_HOLD",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "FedWatch direct probabilities were not accessible in-session, but the latest repository-verified same-week read remained overwhelmingly centered on no change for the April 28-29 FOMC meeting.",
+          "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+        },
+        {
+          "factor": "BoJ stance",
+          "classification": "HAWKISH_NORMALIZATION",
+          "raw_score": 1,
+          "weight": 2,
+          "weighted_score": 2,
+          "note": "The BoJ kept the overnight call rate at 0.75% on 19 March 2026, but the regime remains one of normalization rather than ultra-easy policy.",
+          "source": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+        },
+        {
+          "factor": "JPY-USD rate differential",
+          "classification": "SUPPORTIVE",
+          "raw_score": 1,
+          "weight": 2,
+          "weighted_score": 2,
+          "note": "BoJ normalization versus a neutral Fed continues to support the JPY side of the rate differential.",
+          "source": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+        },
+        {
+          "factor": "USD (DXY)",
+          "classification": "WEAK_FALLING",
+          "raw_score": 1,
+          "weight": 1,
+          "weighted_score": 1,
+          "note": "DXY was down on the day, down over five days, and down over one month on the TradingView page, keeping the broader dollar signal weak.",
+          "source": "https://www.tradingview.com/symbols/TVC-DXY/"
+        },
+        {
+          "factor": "Risk mood",
+          "classification": "BALANCED",
+          "raw_score": 0,
+          "weight": 1,
+          "weighted_score": 0,
+          "note": "VIX remained in the 15-20 balanced band.",
+          "source": "https://www.cboe.com/tradable-products/vix/"
+        }
+      ],
+      "analysis": "The yen remains the strongest FX expression in the report. BoJ policy is still in normalization mode, the rate-differential direction remains JPY-supportive, and the broader dollar trend is weaker. Even with VIX only balanced rather than risk-off, the macro mix still favors higher 6J."
+    }
+  }
+}
