@@ -1,0 +1,235 @@
+{
+  "date": "2026-04-18",
+  "generated_at": "2026-04-18T21:50:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "macro_inputs": {
+    "fed_stance": {
+      "classification": "HAWKISH_HOLD",
+      "score": -1,
+      "source": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+      "note": "CME FedWatch remained hard to extract directly, but the accessible April 15 fallback article reported a near-100% probability of no change at the April 29 FOMC meeting and only one projected cut in 2026, which supports a hawkish-hold classification rather than a dovish hold."
+    },
+    "real_yields": {
+      "classification": "FLAT",
+      "score": 0,
+      "value": 1.93,
+      "previous": 1.9,
+      "change_bps": 3.0,
+      "source": "https://fred.stlouisfed.org/series/DFII10",
+      "note": "DFII10 printed 1.93 for 2026-04-16 versus 1.90 on the prior verified repository snapshot, a +3 bp move that stays within the flat band of plus or minus 5 bps."
+    },
+    "dxy": {
+      "classification": "WEAK_FALLING",
+      "score": 1,
+      "value": 98.226,
+      "day_change_pct": 0.05,
+      "five_day_change_pct": -0.83,
+      "one_month_change_pct": -2.0,
+      "source": "https://www.tradingview.com/symbols/TVC-DXY/",
+      "note": "DXY was slightly higher on the day but still lower over both five days and one month, so the broader dollar signal remains weak/falling."
+    },
+    "risk_mood": {
+      "classification": "BALANCED",
+      "score": 0,
+      "vix": 17.48,
+      "source": "https://www.cboe.com/tradable-products/vix/",
+      "note": "VIX remained inside the methodology's balanced 15-20 band."
+    },
+    "vix_direction": {
+      "classification": "FALLING",
+      "score": 1,
+      "vix": 17.48,
+      "previous_close": 17.94,
+      "change_pct": -2.56,
+      "source": "https://www.cboe.com/tradable-products/vix/",
+      "note": "VIX fell from the prior close, which is a modest tailwind for equities."
+    },
+    "growth": {
+      "classification": "STABLE_SOFT",
+      "score": 0,
+      "gdpnow": 1.3,
+      "updated": "2026-04-09",
+      "source": "https://www.atlantafed.org/cqer/research/gdpnow",
+      "note": "GDPNow remains at 1.3% for 2026:Q1, supporting a stable-but-soft U.S. growth interpretation."
+    },
+    "credit_spreads": {
+      "classification": "WIDENING",
+      "score": -1,
+      "value": 2.86,
+      "previous": 2.85,
+      "change_bps": 1.0,
+      "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "note": "HY OAS widened from 2.85 to 2.86, a small but directionally negative move for equity beta, especially small caps."
+    },
+    "curve": {
+      "classification": "STEEPENING",
+      "score": 1,
+      "value": 0.55,
+      "previous": 0.54,
+      "change_bps": 1.0,
+      "source": "https://fred.stlouisfed.org/series/T10Y2Y",
+      "note": "The 2s10s spread steepened modestly from 0.54 to 0.55."
+    },
+    "move": {
+      "classification": "FALLING",
+      "score": 1,
+      "value": 65.6953,
+      "day_change_pct": -0.3,
+      "five_day_change_pct": -11.24,
+      "source": "https://www.tradingview.com/symbols/TVC-MOVE/",
+      "note": "Rates volatility eased on both the one-day and five-day views."
+    },
+    "sox": {
+      "classification": "RISING",
+      "score": 1,
+      "value": 9555.88,
+      "day_change_pct": 2.43,
+      "five_day_change_pct": 8.44,
+      "source": "https://www.tradingview.com/symbols/SOX/",
+      "note": "Semiconductors remained decisively higher across daily and weekly horizons, reinforcing Nasdaq leadership."
+    },
+    "oil_supply": {
+      "classification": "TIGHTENING",
+      "score": 1,
+      "source": "https://www.eia.gov/petroleum/supply/weekly/",
+      "note": "The latest repository-verified official EIA package plus persistent Gulf shipping risk still point to a tightening physical oil backdrop rather than clear oversupply."
+    },
+    "inventories": {
+      "classification": "DRAW",
+      "score": 1,
+      "source": "https://www.eia.gov/petroleum/supply/weekly/pdf/wpsrall.pdf",
+      "note": "The latest official weekly EIA read for the week ended 2026-04-10 showed a 0.9 million barrel draw in U.S. commercial crude inventories."
+    },
+    "geopolitical": {
+      "classification": "STABLE",
+      "score": 0,
+      "source": "https://www.eia.gov/petroleum/supply/weekly/",
+      "note": "Ceasefire and diplomacy headlines are easing the acute war premium, but shipping and supply-disruption language remain active enough to keep the current geopolitical input neutral rather than fully easing."
+    },
+    "gold_etf_flows": {
+      "classification": "OUTFLOWS",
+      "score": -1,
+      "source": "https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows",
+      "note": "The accessible World Gold Council materials remain current through March 2026, and the repository's recent verified read still points to heavy March outflows."
+    },
+    "ecb_stance": {
+      "classification": "HAWKISH_HOLD",
+      "score": 1,
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html",
+      "note": "The ECB held rates unchanged on 19 March 2026 while emphasizing upside inflation risks and a data-dependent but firm stance."
+    },
+    "eur_rate_diff": {
+      "classification": "STABLE",
+      "score": 0,
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html",
+      "note": "With the Fed also effectively on hold and still restrictive, the EUR-USD rate-differential impulse is treated conservatively as stable rather than clearly widening."
+    },
+    "eurozone_growth": {
+      "classification": "STABLE",
+      "score": 0,
+      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html",
+      "note": "No fully readable same-session euro-area growth release was confirmed during this run, so the eurozone growth factor stays neutral for conservatism."
+    },
+    "rba_stance": {
+      "classification": "HAWKISH",
+      "score": 1,
+      "source": "https://www.rba.gov.au/monetary-policy/int-rate-decisions/",
+      "note": "The latest repository-verified official RBA decision state remains hawkish, reflecting the March 17 move to a 4.10% cash-rate target and inflation-risk emphasis."
+    },
+    "aud_rate_diff": {
+      "classification": "SUPPORTIVE",
+      "score": 1,
+      "source": "https://www.rba.gov.au/monetary-policy/int-rate-decisions/",
+      "note": "Australia's policy rate remains above the Fed's current range, keeping the AUD-USD differential supportive."
+    },
+    "china_growth": {
+      "classification": "ACCELERATING",
+      "score": 1,
+      "source": "https://tradingview.com/symbols/COMEX-HG1!/",
+      "note": "Recent repository-verified official-China PMI evidence showed manufacturing returning to expansion in March, so the China-growth input remains supportive rather than contractionary."
+    },
+    "copper": {
+      "classification": "RISING",
+      "score": 1,
+      "value": 6.1145,
+      "day_change_pct": 0.63,
+      "five_day_change_pct": 5.11,
+      "source": "https://www.tradingview.com/symbols/COMEX-HG1!/",
+      "note": "Copper futures were higher on the day and strongly higher over five days, supporting a rising copper classification."
+    },
+    "boj_stance": {
+      "classification": "HAWKISH_NORMALIZATION",
+      "score": 1,
+      "source": "https://www.boj.or.jp/en/mopo/index.htm",
+      "note": "The repository's recent official BoJ read remains in a normalization regime rather than ultra-easy policy, so the BoJ stance stays hawkish for scoring purposes."
+    },
+    "jpy_rate_diff": {
+      "classification": "SUPPORTIVE",
+      "score": 1,
+      "source": "https://www.boj.or.jp/en/mopo/index.htm",
+      "note": "BoJ normalization against a still-holding Fed continues to narrow the policy-divergence headwind at the margin, which supports JPY."
+    }
+  },
+  "instrument_scores": {
+    "GC": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "calculation": "-1 + 0*2 + 1 + 0 + 0 + 1 - 1 = 0"
+    },
+    "SI": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "calculation": "-1 + 0 + 1 + 0 + 0 + 1 - 1 = 0"
+    },
+    "CL": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "calculation": "1*2 + 1 + 0*2 + 0 + 1 = 4"
+    },
+    "ES": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "calculation": "-1 + 0*2 + 1 + 0 + 0 - 1 + 1 = 0"
+    },
+    "NQ": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "calculation": "-1 + 0*2 + 1 + 0 + 0 + 1 + 1 = 2"
+    },
+    "YM": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 4,
+      "calculation": "-1 + 0 + 1 + 0 + 0*2 - 1 + 1 = 0"
+    },
+    "RTY": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 4,
+      "calculation": "-1 + 0 + 1 + 0 + 0*2 - 1*2 + 1 = -1"
+    },
+    "6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 5,
+      "calculation": "-1 + 1 + 0*2 + 1 + 0 + 0 = 1"
+    },
+    "6A": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "calculation": "-1 + 1 + 1 + 1 + 0*2 + 1*2 + 1 = 5"
+    },
+    "6J": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 6,
+      "calculation": "-1 + 1*2 + 1*2 + 1 + 0 = 4"
+    }
+  }
+}
