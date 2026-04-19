@@ -1,5 +1,88 @@
-# Matrix Futures Daily Bias Report
-**Date:** April 19, 2026 | **Time:** 06:51 UTC
+from datetime import datetime, timezone
+from pathlib import Path
+import json
+
+BASE = Path('/home/ubuntu/matrix-futures-reports')
+BIAS_DIR = BASE / 'data' / 'bias_scores'
+EXEC_DIR = BASE / 'data' / 'executive_summaries'
+REPORTS_DIR = BASE / 'reports'
+FACTORS_DIR = BASE / 'data' / 'factors'
+for d in [BIAS_DIR, EXEC_DIR, REPORTS_DIR, FACTORS_DIR]:
+    d.mkdir(parents=True, exist_ok=True)
+
+now = datetime.now(timezone.utc)
+date_str = now.strftime('%Y-%m-%d')
+time_hhmm = now.strftime('%H%M')
+iso_str = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+human_date = now.strftime('%B %d, %Y')
+
+scores = {
+    'GC': {'score': 0, 'signal': 'NEUTRAL', 'confidence': 4, 'recommended_approach': 'RANGE_TRADE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    'SI': {'score': 0, 'signal': 'NEUTRAL', 'confidence': 4, 'recommended_approach': 'RANGE_TRADE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    'CL': {'score': 4, 'signal': 'BULLISH', 'confidence': 6, 'recommended_approach': 'TREND_FOLLOW', 'recommended_mode': 'SWING', 'hold_expectation': '1-2 days'},
+    'ES': {'score': 0, 'signal': 'NEUTRAL', 'confidence': 4, 'recommended_approach': 'RANGE_TRADE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    'NQ': {'score': 2, 'signal': 'SLIGHT_BULLISH', 'confidence': 6, 'recommended_approach': 'IB_BREAKOUT', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    'YM': {'score': 0, 'signal': 'NEUTRAL', 'confidence': 4, 'recommended_approach': 'RANGE_TRADE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    'RTY': {'score': -1, 'signal': 'SLIGHT_BEARISH', 'confidence': 4, 'recommended_approach': 'FADE_RANGE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    '6E': {'score': 1, 'signal': 'SLIGHT_BULLISH', 'confidence': 5, 'recommended_approach': 'RANGE_TRADE', 'recommended_mode': 'INTRADAY', 'hold_expectation': 'session'},
+    '6A': {'score': 5, 'signal': 'STRONG_BULLISH', 'confidence': 6, 'recommended_approach': 'TREND_FOLLOW', 'recommended_mode': 'SWING', 'hold_expectation': '1-2 days'},
+    '6J': {'score': 4, 'signal': 'BULLISH', 'confidence': 6, 'recommended_approach': 'TREND_FOLLOW', 'recommended_mode': 'SWING', 'hold_expectation': '1-2 days'},
+}
+
+asset_class_bias = {
+    'COMMODITIES': 'MIXED',
+    'INDICES': 'MIXED',
+    'FX': 'BULLISH',
+}
+
+json_payload = {
+    'date': date_str,
+    'generated_at': iso_str,
+    'methodology_version': '3.0_STRATEGY',
+    'scores': scores,
+    'asset_class_bias': asset_class_bias,
+    'key_drivers': [
+        'The dollar remains a broad cross-asset tailwind: TradingView showed DXY near 98.23, still down on both five-day and one-month horizons despite only a small daily bounce.',
+        'Risk and duration conditions are constructive but not euphoric because VIX stayed balanced in the high teens while VIX direction fell, MOVE fell 11.24% over five days, and SOX surged 2.43% on the day and 8.44% over five days.',
+        'Crude retains the firmest commodity setup because the latest official EIA week ended April 10 still points to a crude draw and a tightening supply backdrop.',
+        'FX leadership is driven by policy divergence: the Fed is best treated as a hawkish hold, while the ECB remains firm, the RBA hiked to 4.10%, and the BoJ remains in a normalization regime.'
+    ],
+    'data_quality': {
+        'stale_sources': [
+            'Atlanta Fed GDPNow remains the April 9, 2026 official update at 1.3% for 2026:Q1.',
+            'FRED DFII10 and BAMLH0A0HYM2 latest official observations lag the report timestamp by normal publication delay.',
+            'World Gold Council ETF-flow evidence remains anchored to the March 2026 release.',
+            'Detailed CME FedWatch probabilities were not fully machine-readable in-session, so Fed stance used readable same-week visibility plus conservative interpretation.'
+        ],
+        'fallbacks_used': [
+            'TradingView was used for DXY, MOVE, SOX, and copper direction because some specified market pages were blocked or less accessible.',
+            'Repository-verified same-week source snapshots were used to retain explicit copper, China-growth, and gold-ETF classifications where direct live extraction was incomplete.',
+            'Direct official browser review confirmed the March 19 ECB hold, the March 17 RBA 25 bp hike to 4.10%, and the March 19 BoJ 0.75% hold.',
+            'A readable same-session FedWatch view confirmed near-total pricing for no change at the next Fed meeting.'
+        ],
+        'overnight_changes': [
+            'DXY remained broadly weak over both five-day and one-month horizons.',
+            'VIX and MOVE both eased, improving the macro backdrop for duration-sensitive risk assets.',
+            'SOX and copper both strengthened, reinforcing pro-cyclical and commodity-currency leadership.'
+        ]
+    },
+    'catalyst_proximity': {
+        'imminent': [
+            'Atlanta Fed GDPNow update on April 21, 2026'
+        ],
+        'near_term': [
+            'FOMC meeting on April 28-29, 2026',
+            'BoJ normalization communication remains an active FX catalyst'
+        ],
+        'background': [
+            'May RBA policy decision window',
+            'Ongoing Gulf shipping and energy-supply headlines'
+        ]
+    }
+}
+
+md = f'''# Matrix Futures Daily Bias Report
+**Date:** {human_date} | **Time:** {now.strftime("%H:%M")} UTC
 
 ---
 
@@ -102,3 +185,45 @@ JPY remains supported by **BoJ normalization**, a **supportive policy-differenti
 
 ---
 **End of Report**
+'''
+
+timestamped_json = BIAS_DIR / f'{date_str}_{time_hhmm}.json'
+latest_json = BIAS_DIR / 'latest.json'
+timestamped_md = EXEC_DIR / f'{date_str}_{time_hhmm}.md'
+latest_md = EXEC_DIR / 'latest.md'
+report_csv = REPORTS_DIR / 'latest.csv'
+factor_detail = FACTORS_DIR / f'{date_str}_{time_hhmm}_summary.json'
+
+for path, payload in [(timestamped_json, json_payload), (latest_json, json_payload)]:
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(payload, f, indent=2)
+        f.write('\n')
+
+for path, text in [(timestamped_md, md), (latest_md, md)]:
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(text)
+
+with open(report_csv, 'w', encoding='utf-8') as f:
+    f.write('symbol,instrument,bias_score,signal,confidence,recommended_approach,recommended_mode,hold_expectation\n')
+    names = {
+        'GC':'Gold','SI':'Silver','CL':'WTI Crude Oil','ES':'S&P 500 E-mini','NQ':'Nasdaq 100 E-mini','YM':'Dow Jones E-mini','RTY':'Russell 2000 E-mini','6E':'Euro FX','6A':'Australian Dollar','6J':'Japanese Yen'
+    }
+    for sym in ['GC','SI','CL','ES','NQ','YM','RTY','6E','6A','6J']:
+        d = scores[sym]
+        f.write(f"{sym},{names[sym]},{d['score']:+d},{d['signal']},{d['confidence']},{d['recommended_approach']},{d['recommended_mode']},{d['hold_expectation']}\n")
+
+with open(factor_detail, 'w', encoding='utf-8') as f:
+    json.dump({
+        'date': date_str,
+        'generated_at': iso_str,
+        'source_basis': '2026-04-19 live-source verification plus repository-verified same-week fallbacks',
+        'scoring_reference': str(BASE / 'scoring_calculations_2026-04-19.md')
+    }, f, indent=2)
+    f.write('\n')
+
+print(timestamped_json)
+print(latest_json)
+print(timestamped_md)
+print(latest_md)
+print(report_csv)
+print(factor_detail)
