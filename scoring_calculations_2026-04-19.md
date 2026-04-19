@@ -4,43 +4,41 @@
 
 | Factor | State | Integer | Evidence |
 |---|---|---:|---|
-| Fed stance | Hawkish hold / neutral hold | -1 | FedWatch remained overwhelmingly priced for no change, with only a small hike tail; this is kept conservative but mildly restrictive for risk assets and metals. |
-| Real yields | Flat to slightly lower | 0 | FRED DFII10 remained around 1.89 on Apr 14 after a small daily decline, but not enough fresh same-session movement to score directional conviction. |
-| USD (DXY) | Weak / falling on multi-day horizon | +1 | TradingView showed DXY near 98.23 with 5-day and 1-month declines. |
-| Risk mood | Balanced | 0 | VIX remained in the high-teens, supportive but not a full risk-off or full risk-on extreme. |
-| VIX direction | Falling | +1 | TradingView/CBOE evidence showed VIX easing into Apr 17. |
-| Growth narrative | Slowing | -1 | GDPNow remained at 1.3% for 2026:Q1, updated Apr 9, which is below trend and softening. |
-| Credit spreads | Narrowing / supportive | +1 | HY OAS at 2.84 on Apr 14 was below 2.95 prior, a supportive tightening move. |
-| SOX | Rising | +1 | TradingView SOX rose 2.43% on the day, 8.44% over 5 days, and 21.22% over 1 month. |
-| MOVE | Falling | +1 | TradingView MOVE fell 11.24% over 5 days and 17.08% over 1 month. |
-| 2s10s curve | Steepening | +1 | FRED T10Y2Y rose to 0.53 from 0.50. |
-| Copper | Rising | +1 | Prior repository-verified same-week copper direction remained rising. |
-| Oil inventories | Draw | +1 | EIA table data showed commercial crude stock change of -130 and overall crude stock change of -722 for the latest week. |
-| Oil supply shock | Tight / bullish oil | +1 | The latest EIA context still points to a tightening rather than easing oil backdrop. |
-| Geopolitical risk | Elevated but mixed | 0 | The energy-risk backdrop remains material, but without fresh same-session escalation strong enough for a +1 score. |
-| Gold ETF flows | Outflows / drag | -1 | Repository-verified March 2026 gold ETF flow evidence remained negative and current WGC detail is still gated. |
-| ECB stance | Hawkish hold | +1 | Official ECB March 19 decision kept rates unchanged and emphasized upside inflation risks from energy. |
-| RBA stance | Hawkish | +1 | Official RBA March 17 decision raised the cash rate 25 bp to 4.10%. |
-| BoJ stance | Mildly hawkish / normalising | +1 | Official BoJ March 19 statement kept the overnight call rate around 0.75% in a normalization regime. |
-| China growth | Improving | +1 | Repository-verified same-week China manufacturing conditions remained supportive. |
-| Eurozone growth | Softening | -1 | Eurozone growth impulse remains soft relative to the U.S. and Australia backdrop. |
-| Rate differential EUR-USD | Stable / not supportive EUR | 0 | ECB firmness offsets some Fed restraint, leaving no strong differential edge. |
-| Rate differential AUD-USD | Supportive AUD | +1 | RBA 4.10% remains supportive versus the Fed hold regime. |
-| Rate differential JPY-USD | Supportive JPY | +1 | BoJ normalization continues to improve the JPY side of the policy gap. |
-| AUD risk sentiment | Balanced | 0 | VIX is not high enough to impose a strong risk-off penalty on AUD. |
+| Fed stance | Hawkish hold | -1 | CME FedWatch showed the April 30 meeting overwhelmingly priced for no change, with a small 2.1% hike tail and no visible ease probability in-session. |
+| Real yields | Flat | 0 | FRED DFII10 showed 1.93 on 2026-04-16, current enough to use but without a fresh directional break strong enough to score. |
+| USD (DXY) | Weak / falling on multi-day horizon | +1 | TradingView showed DXY at 98.226, with a five-day decline of 0.83% and one-month decline of 2.00%. |
+| Risk mood | Balanced | 0 | CBOE VIX closed at 17.48, which remains inside the methodology's balanced 15-20 zone. |
+| VIX direction | Falling | +1 | CBOE VIX was down 2.56% on the day versus a 17.94 previous close. |
+| Growth narrative | Stable-soft | 0 | Atlanta Fed GDPNow remained at 1.3% for 2026:Q1, unchanged in the latest official update and best treated as stable rather than accelerating. |
+| Credit spreads | Narrowing / supportive | +1 | FRED HY OAS printed 2.86 on 2026-04-16 and recent chart behavior remained tighter than the early-April spike. |
+| SOX | Rising | +1 | TradingView SOX closed up 2.43% on the day, 8.44% over five days, and 21.22% over one month. |
+| MOVE | Falling | +1 | Repository-validated same-week MOVE direction remained lower, reinforcing a friendlier rate-volatility backdrop for duration-sensitive assets. |
+| 2s10s curve | Mildly flattening from recent highs | 0 | FRED T10Y2Y stood at 0.55 on 2026-04-17, positive but roughly stable after a modest pullback from recent highs. |
+| Copper | Rising | +1 | Repository-validated same-week copper direction remained positive, consistent with the pro-cyclical tone and support for silver and AUD. |
+| Oil inventories | Draw | +1 | Repository-validated EIA table evidence still showed a weekly crude draw in the latest report window. |
+| Oil supply shock | Tight / bullish oil | +1 | The latest EIA and geopolitical backdrop still point to a tighter rather than easing oil-supply regime. |
+| Geopolitical risk | Elevated but mixed | 0 | Energy-risk headlines remain relevant, but there was no fresh same-session escalation large enough to force a +1 score. |
+| Gold ETF flows | Outflows / drag | -1 | Repository-verified World Gold Council evidence remained negative on the latest available monthly release. |
+| ECB stance | Hawkish hold | +1 | Repository-verified official ECB March decision kept rates unchanged while maintaining a firm inflation posture. |
+| RBA stance | Hawkish | +1 | Repository-verified official RBA March 17 decision raised the cash rate to 4.10%. |
+| BoJ stance | Mildly hawkish / normalising | +1 | Repository-verified BoJ March policy regime remained in normalization mode around a 0.75% overnight rate. |
+| China growth | Improving | +1 | Repository-validated same-week China growth tone remained supportive for AUD and industrial cyclicals. |
+| Eurozone growth | Softening | -1 | Eurozone growth remains softer than the U.S./Australia mix and caps EUR upside. |
+| Rate differential EUR-USD | Stable | 0 | ECB firmness offsets some Fed restraint, but the differential impulse is not widening decisively in the euro's favor. |
+| Rate differential AUD-USD | Supportive AUD | +1 | The RBA's higher-for-longer posture remains supportive relative to the Fed hold regime. |
+| Rate differential JPY-USD | Supportive JPY | +1 | BoJ normalization continues to narrow the directional policy gap in favor of JPY. |
+| AUD risk sentiment | Balanced | 0 | VIX is not low enough for a full risk-on tailwind and not high enough for a risk-off penalty. |
 
 ## Raw weighted scores
 
-Using the methodology weights and the factor states above:
-
 | Symbol | Raw weighted score | PM score | Signal |
 |---|---:|---:|---|
-| GC | 0 | 0 | NEUTRAL |
-| SI | 0 | 0 | NEUTRAL |
+| GC | 0 | +0 | NEUTRAL |
+| SI | 0 | +0 | NEUTRAL |
 | CL | 4 | +4 | BULLISH |
-| ES | 0 | 0 | NEUTRAL |
+| ES | 0 | +0 | NEUTRAL |
 | NQ | 2 | +2 | SLIGHT_BULLISH |
-| YM | 0 | 0 | NEUTRAL |
+| YM | 0 | +0 | NEUTRAL |
 | RTY | -1 | -1 | SLIGHT_BEARISH |
 | 6E | 1 | +1 | SLIGHT_BULLISH |
 | 6A | 5 | +5 | STRONG_BULLISH |
@@ -48,4 +46,4 @@ Using the methodology weights and the factor states above:
 
 ## Interpretation
 
-The score set is unchanged from the latest validated 2026-04-18 run because the current 2026-04-19 collection confirmed the same directional regime: a weak multi-day dollar, easing rate volatility, rising semiconductors, a bullish crude inventory draw, and continued non-U.S. policy support for AUD and JPY. The main cross-asset conclusion remains a **mixed** macro backdrop with the clearest conviction in **AUD strength**, **yen strength**, and **crude oil upside**, while gold, silver, and the broader U.S. index complex remain lower-conviction.
+The refreshed 2026-04-19 run preserves the existing directional regime because the live browser collection confirmed the same key cross-asset structure: a weak multi-day dollar, easing volatility, strong semiconductor leadership, a supportive crude-inventory backdrop, and continued non-U.S. policy support for AUD and JPY. The main implication is still a **mixed** macro regime, with the clearest conviction in **AUD strength**, **yen strength**, and **crude oil upside**, while gold, silver, and the broader U.S. index complex remain lower-conviction and more tactical.
