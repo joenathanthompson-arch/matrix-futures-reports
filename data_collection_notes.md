@@ -268,3 +268,99 @@ All macro indicators have been collected and assessed.
 - The EIA highlights PDF reported that U.S. commercial crude oil inventories increased by 3.1 million barrels to 464.7 million for the week ending 2026-04-03, a bearish inventory signal for crude.
 - The World Gold Council March 2026 ETF commentary, published 2026-04-08, stated that hefty outflows of US$12bn in March were the largest monthly outflow on record and that North America recorded sizeable outflows of US$13bn in March.
 - Gold ETF flow classification is therefore negative/outflows on the latest official monthly update.
+
+## 2026-04-20 Live Macro Refresh
+
+### CME FedWatch
+- URL: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+- Observation time: 2026-04-20 07:33 UTC
+- From the rendered probability table visible on the page: **30 Apr 2026 meeting = 0.0% ease, 99.5% no change, 0.5% hike**.
+- Current classification for scoring: **Neutral hold / no-change Fed stance**.
+
+### Federal Reserve FOMC Calendar
+- URL: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+- Observation time: 2026-04-20 07:33 UTC
+- The page states: **The next FOMC meeting is scheduled for June 16-17, 2026.**
+- The 2026 calendar section also shows prior meetings in January, March, and April, which is consistent with the FedWatch row already visible for **30 Apr 2026**.
+
+### TradingView DXY
+- URL: https://www.tradingview.com/symbols/TVC-DXY/
+- Observation time: 2026-04-20 07:34 UTC
+- Current reading: **98.190** with **-0.036 (-0.04%)** on the day; previous close **98.226**.
+- Classification for scoring: **USD weak/falling** on the day.
+
+### Cboe VIX
+- URL: https://www.cboe.com/tradable-products/vix/
+- Observation time: 2026-04-20 07:34 UTC
+- Current VIX spot: **19.45** with **+11.27% (+1.97)** on the day; previous close **17.48**.
+- Classification for scoring: **Risk mood = balanced** (inside the 15-20 range), while **VIX direction = rising**.
+
+### Atlanta Fed GDPNow
+- URL: https://www.atlantafed.org/research-and-data/data/gdpnow
+- Observation time: 2026-04-20 07:34 UTC
+- Latest GDPNow estimate for **2026:Q1 = 1.3%**, updated **April 09, 2026**; next update **April 21, 2026**.
+- Working growth classification: **slowing / softening growth backdrop**, using the low nowcast and the prior repository notes that the estimate was revised down materially earlier in April.
+
+### FRED DFII10 (10Y Real Yield)
+- URL: https://fred.stlouisfed.org/series/DFII10
+- Observation time: 2026-04-20 07:34 UTC
+- Latest official observation: **1.93** for **2026-04-16**, updated **Apr 17, 2026 3:16 PM CDT**.
+- Data freshness note: the series is fresh enough for weekend use but not fully intraday; classification will be cross-checked in calculations against recent notes before assigning rising/flat/falling.
+
+### FRED HY OAS
+- URL: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+- Observation time: 2026-04-20 07:35 UTC
+- Latest official observation: **2.86** for **2026-04-16**, updated **Apr 17, 2026 9:22 AM CDT**.
+- Working classification: latest level remains relatively contained; direction will be finalized during calculation after comparison with the prior observation.
+
+### FRED 2s10s Curve (T10Y2Y)
+- URL: https://fred.stlouisfed.org/series/T10Y2Y
+- Observation time: 2026-04-20 07:35 UTC
+- Latest official observation: **0.55** for **2026-04-17**, updated **Apr 17, 2026 4:03 PM CDT**.
+- Working classification: the curve remains positively sloped; direction will be finalized during calculation after comparison with the prior observation.
+
+### ECB Press Releases Page
+- URL: https://www.ecb.europa.eu/press/pr/date/html/index.en.html
+- Observation time: 2026-04-20 07:35 UTC
+- Initial page load showed the news list still loading and a cookie banner blocking clean extraction.
+- Next step required: accept the cookie banner and isolate the latest monetary policy release before finalizing the ECB stance.
+
+### TradingView SOX
+- URL: https://www.tradingview.com/symbols/NASDAQ-SOX/
+- Observation time: 2026-04-20 07:36 UTC
+- Current reading: **9,555.88** with **+226.54 (+2.43%)** on the latest close; previous close **9,329.35**.
+- Classification for scoring: **SOX rising**.
+
+### TradingView MOVE
+- URL: https://www.tradingview.com/symbols/TVC-MOVE/
+- Observation time: 2026-04-20 07:36 UTC
+- Current reading: **65.6953** with **-0.1977 (-0.30%)** on the latest close; previous close **65.8930**.
+- Classification for scoring: **MOVE falling**.
+
+### RBA Monetary Policy Page
+- URL: https://www.rba.gov.au/monetary-policy/
+- Observation time: 2026-04-20 07:37 UTC
+- The main monetary policy page loaded successfully and exposed the decisions archive navigation, but the landing page itself did not surface the latest decision text in the extracted markdown.
+- Follow-up classification plan: use the revealed decision archive structure together with the existing recent policy context during calculation, and mark confidence lower if the latest headline cannot be extracted directly.
+
+### BoJ Monetary Policy Releases
+- URL: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/index.htm
+- Observation time: 2026-04-20 07:38 UTC
+- The 2026 releases archive shows the latest formal **Statement on Monetary Policy** dated **March 19, 2026**, following the earlier statement on **January 23, 2026**.
+- Working classification: the BoJ remains in an active policy-normalisation regime rather than an easing cycle, which supports a **hawkish/tightening** interpretation for JPY.
+
+### EIA Weekly Petroleum Status Report
+- URL: https://www.eia.gov/petroleum/supply/weekly/
+- Observation time: 2026-04-20 07:38 UTC
+- The page shows data for the week ending **April 10, 2026**, with **release date April 15, 2026** and **next release date April 22, 2026**.
+- The highlights PDF is available from the page and will be used as the latest official inventory reference during calculation.
+
+### World Gold Council ETF Flows
+- URL: https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows
+- Observation time: 2026-04-20 07:38 UTC
+- The page header references **ETF Flows: March 2026** and the page date is **13 April 2026**.
+- The chart data itself is gated behind sign-in, so the latest accessible official monthly reference is the March 2026 update; this will be treated as an official-but-partially-gated source and may lower confidence slightly.
+
+### Copper Source Access Note
+- The primary Investing.com copper page was blocked by access restrictions when attempting live collection on 2026-04-20.
+- A fallback source is required for the copper directional input.
