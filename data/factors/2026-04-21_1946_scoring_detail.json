@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-21T23:46:47Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": -1,
+    "risk_mood": 0,
+    "vix_direction": -1,
+    "growth_narrative": 1,
+    "credit_spreads": 0,
+    "sox": 1,
+    "move_index": -1,
+    "yield_curve_2s10s": 1,
+    "copper": 1,
+    "oil_inventories": 1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 0,
+    "ecb_stance": 0,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": 0,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": 0
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 1,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Middle East and Strait of Hormuz energy-risk headlines continue to imply a fragile and tightening supply backdrop."
+        },
+        "gold_etf_flows": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The World Gold Council page confirmed an updated March 2026 ETF flow release, but the detailed net-flow values were not readable in-session, so the factor is held neutral."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": 1,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed HG1! copper futures at 6.0150 USD/lb, up 0.07% on the day."
+        },
+        "gold_etf_flows": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The World Gold Council page confirmed an updated March 2026 ETF flow release, but the detailed net-flow values were not readable in-session, so the factor is held neutral."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": 5,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Middle East and Strait of Hormuz energy-risk headlines continue to imply a fragile and tightening supply backdrop."
+        },
+        "oil_inventories": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The official EIA weekly petroleum report for the week ended Apr 10 showed U.S. commercial crude inventories down 0.9 million barrels."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Geopolitical and energy-market risk remains elevated given unresolved Middle East shipping and supply concerns."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": -1,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS rose from 2.83 on Apr 17 to 2.87 on Apr 20, but the move is small enough to treat as flat rather than decisively widening."
+        },
+        "vix_direction": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Cboe VIX was up 3.34% on the day, making the daily volatility-direction input adverse for equities."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 0,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed SOX at 9,647.21, up 0.50% on the day and 4.68% over five days."
+        },
+        "move_index": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed MOVE at 70.7772, up 4.23% on the day, so rate volatility is rising."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED HY OAS rose from 2.83 on Apr 17 to 2.87 on Apr 20, but the move is small enough to treat as flat rather than decisively widening."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y was 0.52 on Apr 21, staying positively sloped and normalized relative to prior inversion."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 was 1.90 on Apr 17 and 1.91 on Apr 20, which remains flat under the methodology threshold."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Atlanta Fed GDPNow was 1.2% on Apr 21, consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED HY OAS rose from 2.83 on Apr 17 to 2.87 on Apr 20, but the move is small enough to treat as flat rather than decisively widening."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y was 0.52 on Apr 21, staying positively sloped and normalized relative to prior inversion."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": -2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "ecb_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Accessible April commentary still points to an ECB hold while awaiting more data, which is treated as neutral."
+        },
+        "rate_diff_eur_usd": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "With both the Fed and ECB essentially on hold, the EUR-USD policy differential is treated as stable."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Euro-area growth remains soft and uneven, so the eurozone-growth factor stays mildly negative."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The RBA March 17 decision raised the cash rate target by 25bp to 4.10%, preserving a hawkish stance."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA policy at 4.10% versus a neutral Fed keeps the AUD-U.S. rate differential supportive."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_sentiment_aud": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "With VIX still below 20, the commodity-currency risk sentiment input is neutral rather than outright risk-off."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China official manufacturing PMI returned to expansion in March at 50.4, keeping the China-growth input supportive."
+        },
+        "copper": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "TradingView showed HG1! copper futures at 6.0150 USD/lb, up 0.07% on the day."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still implies a neutral Fed hold around the current 3.50%-3.75% target range."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "The March 19 BoJ statement maintained a normalization-oriented bias, which is treated as hawkish for JPY."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization against a neutral Fed continues to improve the JPY side of the policy differential."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.408, up 0.36% on the day, so USD direction is rising/firm."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "Cboe VIX was 19.49, which remains inside the 15-20 neutral risk-regime band."
+        }
+      }
+    }
+  }
+}
