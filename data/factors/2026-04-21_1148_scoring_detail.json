@@ -1,0 +1,482 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-21T11:48:13Z",
+  "macro_data": {
+    "fed_stance": 0,
+    "real_yields": 0,
+    "usd_dxy": -1,
+    "risk_mood": 0,
+    "vix_direction": 1,
+    "growth_narrative": 1,
+    "credit_spreads": 1,
+    "sox": 1,
+    "move_index": -1,
+    "yield_curve_2s10s": 1,
+    "copper": -1,
+    "oil_inventories": 1,
+    "oil_supply_shock": 1,
+    "geopolitical_risk": 1,
+    "gold_etf_flows": 0,
+    "ecb_stance": 0,
+    "rba_stance": 1,
+    "boj_stance": 1,
+    "china_growth": 1,
+    "eurozone_growth": -1,
+    "rate_diff_eur_usd": 0,
+    "rate_diff_aud_usd": 1,
+    "rate_diff_jpy_usd": 1,
+    "risk_sentiment_aud": 0
+  },
+  "scoring_detail": {
+    "GC": {
+      "name": "Gold Futures",
+      "raw_weighted_score": 1,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Middle East energy headlines still imply a fragile supply backdrop, so the oil supply-shock factor remains supportive rather than eased away completely."
+        },
+        "gold_etf_flows": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The World Gold Council page confirmed fresh March 2026 flow material exists, but the detailed workbook was unavailable in-session, so the ETF-flow factor is scored neutral conservatively."
+        }
+      }
+    },
+    "SI": {
+      "name": "Silver Futures",
+      "raw_weighted_score": -1,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "copper": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Copper futures traded at 6.0385 USD/lb and were down 0.12% on the day and 0.62% over five days, which counts as falling copper."
+        },
+        "gold_etf_flows": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The World Gold Council page confirmed fresh March 2026 flow material exists, but the detailed workbook was unavailable in-session, so the ETF-flow factor is scored neutral conservatively."
+        }
+      }
+    },
+    "CL": {
+      "name": "WTI Crude Oil",
+      "raw_weighted_score": 5,
+      "factors": {
+        "oil_supply_shock": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "Middle East energy headlines still imply a fragile supply backdrop, so the oil supply-shock factor remains supportive rather than eased away completely."
+        },
+        "oil_inventories": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The latest accessible EIA weekly table showed crude-oil stock change at -722 thousand barrels, which is a draw and therefore supportive for WTI."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "geopolitical_risk": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Crude still screens as geopolitically supported because Gulf and Middle East supply headlines remain an active risk background."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        }
+      }
+    },
+    "ES": {
+      "name": "S&P 500 E-mini",
+      "raw_weighted_score": 2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS narrowed to 2.83 on Apr 17 from 2.95 on Apr 13, which counts as tighter credit spreads."
+        },
+        "vix_direction": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "Cboe VIX was down modestly on the day, so the direction factor remains supportive for risk assets."
+        }
+      }
+    },
+    "NQ": {
+      "name": "Nasdaq 100 E-mini",
+      "raw_weighted_score": 0,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "sox": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The SOX index was up 0.45% on the day and 4.46% over five days, keeping semiconductor leadership supportive."
+        },
+        "move_index": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "The MOVE index rose 3.36% on the day, which classifies as rising rate volatility and a headwind for duration-sensitive assets."
+        }
+      }
+    },
+    "YM": {
+      "name": "Dow Jones E-mini",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED HY OAS narrowed to 2.83 on Apr 17 from 2.95 on Apr 13, which counts as tighter credit spreads."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y remains positive near 0.54 and materially above the prior week, so the curve signal remains normalized/steepening."
+        }
+      }
+    },
+    "RTY": {
+      "name": "Russell 2000 E-mini",
+      "raw_weighted_score": 4,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "real_yields": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "FRED DFII10 printed 1.93 on Apr 16 and 1.90 on Apr 17, a 3bp move that remains flat under the methodology."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "growth_narrative": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "GDPNow remains at 1.3%, which is consistent with a slowing rather than accelerating U.S. growth impulse."
+        },
+        "credit_spreads": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "FRED HY OAS narrowed to 2.83 on Apr 17 from 2.95 on Apr 13, which counts as tighter credit spreads."
+        },
+        "yield_curve_2s10s": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "FRED T10Y2Y remains positive near 0.54 and materially above the prior week, so the curve signal remains normalized/steepening."
+        }
+      }
+    },
+    "6E": {
+      "name": "Euro FX",
+      "raw_weighted_score": -2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "ecb_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "An official ECB bulletin confirmed the Governing Council kept rates unchanged on March 19 and emphasized a data-dependent, meeting-by-meeting approach, which screens as neutral hold."
+        },
+        "rate_diff_eur_usd": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "With both the Fed and ECB effectively on hold, the EUR-USD rate differential is best treated as neutral."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        },
+        "eurozone_growth": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Euro-area growth remains soft and uneven, so the eurozone-growth input stays mildly negative even with the ECB on hold."
+        }
+      }
+    },
+    "6A": {
+      "name": "Australian Dollar",
+      "raw_weighted_score": 2,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "rba_stance": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "The official March 17 RBA decision raised the cash rate target by 25bp to 4.10% and highlighted upside inflation risks, which is hawkish."
+        },
+        "rate_diff_aud_usd": {
+          "raw": 1,
+          "weight": 1,
+          "weighted": 1,
+          "note": "RBA policy at 4.10% versus a neutral Fed leaves the AUD-U.S. rate differential supportive."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_sentiment_aud": {
+          "raw": 0,
+          "weight": 2,
+          "weighted": 0,
+          "note": "The VIX regime sits in the high teens rather than a true risk-off zone, so AUD risk sentiment is scored neutral rather than negative."
+        },
+        "china_growth": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "China official manufacturing PMI returned to expansion in March at 50.4, leaving the China-growth input supportive."
+        },
+        "copper": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "Copper futures traded at 6.0385 USD/lb and were down 0.12% on the day and 0.62% over five days, which counts as falling copper."
+        }
+      }
+    },
+    "6J": {
+      "name": "Japanese Yen",
+      "raw_weighted_score": 3,
+      "factors": {
+        "fed_stance": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "CME FedWatch still points to a neutral Fed hold, with the policy range centered at 3.50%-3.75% and no clean same-session shift away from no-change pricing."
+        },
+        "boj_stance": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "The official March 19 BoJ statement said the Bank would continue to raise the policy rate if its outlook is realized, maintaining a normalization-oriented hawkish tilt."
+        },
+        "rate_diff_jpy_usd": {
+          "raw": 1,
+          "weight": 2,
+          "weighted": 2,
+          "note": "BoJ normalization against a neutral Fed continues to improve the JPY side of the policy differential."
+        },
+        "usd_dxy": {
+          "raw": -1,
+          "weight": 1,
+          "weighted": -1,
+          "note": "TradingView showed DXY at 98.216, up 0.17% on the day, so the dollar factor is classified as firm/rising."
+        },
+        "risk_mood": {
+          "raw": 0,
+          "weight": 1,
+          "weighted": 0,
+          "note": "The VIX closed in the high teens rather than above 20, which supports a balanced risk-regime classification."
+        }
+      }
+    }
+  }
+}
