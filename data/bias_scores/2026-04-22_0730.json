@@ -1,0 +1,134 @@
+{
+  "date": "2026-04-22",
+  "generated_at": "2026-04-22T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "SI": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "CL": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "ES": {
+      "score": 0,
+      "signal": "NEUTRAL",
+      "confidence": 5,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "NQ": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "YM": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 5,
+      "recommended_approach": "FADE_RANGE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "RTY": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "MEAN_REVERSION",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "M6E": {
+      "score": -2,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": 2,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6J": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 6,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "SLIGHT_BULLISH",
+    "INDICES": "NEUTRAL",
+    "FX": "NEUTRAL"
+  },
+  "key_drivers": [
+    "Iran War / Hormuz Strait Disruption: Strait of Hormuz remains closed, causing largest-ever oil supply disruption (~5.1 mb/d draw Q2); Trump extended ceasefire indefinitely but no peace deal reached",
+    "Hawkish Fed Hold: FOMC April 28-29 meeting expected to hold rates at 3.50-3.75% (99.5% probability); J.P. Morgan sees no cuts in 2026, possible hike",
+    "Slowing US Growth: Atlanta Fed GDPNow Q1 2026 at 1.2% (down from 1.9% in April); growth headwind for risk assets and small caps",
+    "SOX Semiconductor Surge: SOX up 27% in April (best month ever) on Hormuz ceasefire hopes; record $5.45B inflows into SOXX/SMH ETFs",
+    "Flat DXY / Balanced VIX: Dollar flat at ~98.30 DXY; VIX at 19.16 (balanced zone 15-20); MOVE index falling (-4.81% weekly) = calming rate volatility"
+  ],
+  "data_quality": {
+    "stale_sources": [
+      "DFII10 (last obs: 2026-04-20, 2-day lag)"
+    ],
+    "fallbacks_used": [
+      "TradingEconomics for 10Y TIPS confirmation",
+      "Yahoo Finance for VIX real-time",
+      "World Gold Council for ETF flows"
+    ],
+    "overnight_changes": [
+      "Trump extended US-Iran ceasefire indefinitely (April 22 AM)",
+      "EIA crude inventory draw larger than expected (April 22 release)",
+      "SOX futures up pre-market on ceasefire extension"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "FOMC Meeting April 28-29, 2026 (rate decision expected: hold at 3.50-3.75%)",
+      "EIA Weekly Petroleum Report April 22, 2026 (crude draw larger than expected)",
+      "ECB Rate Decision April 30, 2026 (expected: hold at 2.00%)",
+      "BoJ Rate Decision April 28, 2026 (expected: hold at 0.75%, hawkish guidance)"
+    ],
+    "near_term": [
+      "US Q1 GDP Advance Estimate (April 30, 2026)",
+      "US Core PCE Inflation (April 30, 2026)",
+      "Strait of Hormuz reopening timeline (unknown; OPEC+ ready to boost output)",
+      "US-Iran peace negotiations (stalled; ceasefire extended indefinitely)"
+    ],
+    "background": [
+      "BoJ rate hike probability ~80% by June 2026",
+      "RBA hawkish cycle continuing (4.10%, two hikes in 2026)",
+      "IMF expects ECB to raise rates 50bps in 2026",
+      "US tariff rate still ~double pre-war levels"
+    ]
+  }
+}
