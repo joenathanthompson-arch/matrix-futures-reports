@@ -1,0 +1,347 @@
+{
+  "GC": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 2,
+      "weighted": 4
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Oil supply": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Gold ETF flows": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    }
+  },
+  "SI": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 1,
+      "weighted": 2
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Copper": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Gold ETF flows": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    }
+  },
+  "CL": {
+    "Oil supply": {
+      "raw": 1,
+      "weight": 2,
+      "weighted": 2
+    },
+    "Inventories": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 2,
+      "weighted": 2
+    },
+    "Geopolitical": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "ES": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 2,
+      "weighted": 4
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Credit spreads": {
+      "raw": -1,
+      "weight": 1,
+      "weighted": -1
+    },
+    "VIX direction": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "NQ": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 2,
+      "weighted": 4
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "SOX (Semis)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "MOVE (Rates vol)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "YM": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 1,
+      "weighted": 2
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 2,
+      "weighted": 2
+    },
+    "Credit spreads": {
+      "raw": -1,
+      "weight": 1,
+      "weighted": -1
+    },
+    "2s10s curve": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "RTY": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Real yields": {
+      "raw": 2,
+      "weight": 1,
+      "weighted": 2
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Growth": {
+      "raw": 1,
+      "weight": 2,
+      "weighted": 2
+    },
+    "Credit spreads": {
+      "raw": -1,
+      "weight": 2,
+      "weighted": -2
+    },
+    "2s10s curve": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "6E": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "ECB stance": {
+      "raw": -1,
+      "weight": 1,
+      "weighted": -1
+    },
+    "Rate diff EUR-USD": {
+      "raw": 0,
+      "weight": 2,
+      "weighted": 0
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "Eurozone growth": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    }
+  },
+  "6A": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "RBA stance": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Rate diff AUD-USD": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk sentiment": {
+      "raw": 0,
+      "weight": 2,
+      "weighted": 0
+    },
+    "China growth": {
+      "raw": 0,
+      "weight": 2,
+      "weighted": 0
+    },
+    "Copper": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    }
+  },
+  "6J": {
+    "Fed stance": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    },
+    "BoJ stance": {
+      "raw": 0,
+      "weight": 2,
+      "weighted": 0
+    },
+    "Rate diff JPY-USD": {
+      "raw": -1,
+      "weight": 2,
+      "weighted": -2
+    },
+    "USD (DXY)": {
+      "raw": 1,
+      "weight": 1,
+      "weighted": 1
+    },
+    "Risk mood": {
+      "raw": 0,
+      "weight": 1,
+      "weighted": 0
+    }
+  }
+}
