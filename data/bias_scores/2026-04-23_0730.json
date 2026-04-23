@@ -1,0 +1,125 @@
+{
+  "date": "2026-04-23",
+  "generated_at": "2026-04-23T07:30:00Z",
+  "methodology_version": "3.0_STRATEGY",
+  "scores": {
+    "GC": {
+      "score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "SI": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "CL": {
+      "score": 7,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "2-5 days"
+    },
+    "ES": {
+      "score": 6,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "NQ": {
+      "score": 8,
+      "signal": "STRONG_BULLISH",
+      "confidence": 7,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "YM": {
+      "score": 5,
+      "signal": "STRONG_BULLISH",
+      "confidence": 6,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "RTY": {
+      "score": 4,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6E": {
+      "score": 1,
+      "signal": "SLIGHT_BULLISH",
+      "confidence": 4,
+      "recommended_approach": "RANGE_TRADE",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    },
+    "6A": {
+      "score": 3,
+      "signal": "BULLISH",
+      "confidence": 5,
+      "recommended_approach": "TREND_FOLLOW",
+      "recommended_mode": "SWING",
+      "hold_expectation": "1-2 days"
+    },
+    "6J": {
+      "score": -1,
+      "signal": "SLIGHT_BEARISH",
+      "confidence": 4,
+      "recommended_approach": "IB_BREAKOUT",
+      "recommended_mode": "INTRADAY",
+      "hold_expectation": "session"
+    }
+  },
+  "asset_class_bias": {
+    "COMMODITIES": "STRONG_BULLISH",
+    "INDICES": "STRONG_BULLISH",
+    "FX": "SLIGHT_BULLISH"
+  },
+  "key_drivers": [
+    "Real yields falling (DFII10 at 1.92%, down ~15bps) - bullish for gold, tech",
+    "Weak USD (DXY ~98.65, down from 100+ in early April) - bullish commodities and FX",
+    "Oil supply tightening (Middle East conflict, global inventory draws to record lows)",
+    "FOMC meeting imminent (Apr 28-29) - reducing conviction on equity indices",
+    "BoJ expected to hold (Apr 27-28) - limiting JPY upside despite weak USD"
+  ],
+  "data_quality": {
+    "stale_sources": [],
+    "fallbacks_used": [
+      "VIX from CNBC/Yahoo Finance (real-time)",
+      "DXY from Yahoo Finance/TradingEconomics"
+    ],
+    "overnight_changes": [
+      "WTI crude up 1.65-2% overnight on Middle East tensions"
+    ]
+  },
+  "catalyst_proximity": {
+    "imminent": [
+      "BoJ Meeting: April 27-28, 2026 (expected hold)",
+      "FOMC Meeting: April 28-29, 2026 (99.5% probability hold)"
+    ],
+    "near_term": [
+      "EIA Weekly Petroleum Report: April 29, 2026",
+      "CPI Release: May 12, 2026",
+      "NFP Release: June 5, 2026"
+    ],
+    "background": [
+      "Middle East conflict ongoing - elevated geopolitical risk premium",
+      "RBA hawkish cycle (hiked to 4.10% on Mar 17)",
+      "ECB potential rate hikes in H2 2026"
+    ]
+  }
+}
